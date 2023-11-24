@@ -1,0 +1,464 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%****************************** Third Chapter **********************************
+%*******************************************************************************
+\chapter{Timing Resolution of Data Acquisition}
+
+% **************************** Define Graphics Path **************************
+\ifpdf
+    \graphicspath{{Chapter5/Figs/Raster/}{Chapter5/Figs/PDF/}{Chapter5/Figs/}}
+\else
+    \graphicspath{{Chapter5/Figs/Vector/}{Chapter5/Figs/}}
+\fi
+
+%********************************** %Opening  **************************************
+Data Acquisition (DAQ) describes the data flow from subsystems hardware to software data storage. 
+When a physics event is determined by the triggering system, the DAQ assembles physical signals from each subsystem into an event in real-time, and transports that event to storage for offline processing. 
+The DAQ for the Short-Baseline Near Detector (SBND) must also handle high data rate due to the close proximity of the detector to the Booster Neutrino Beam target.
+Failures during the DAQ will result in meaningless physics events, and potentially irrecoverable data loss. 
+
+Work performed to improve the performance of the DAQ is presented, specifically on evaluating the timing information of the electronic readout for the two detection subsystems: Cosmic Ray Taggers (CRTs) and Photomultiplier Tubes (PMTs). 
+These improvements target the timing precision of each individual subsystem, as well as the timing synchronisation across multiple subsystems when running the DAQ in conjunction. 
+This is vitally important as the DAQ uses the timing information to build event with the correct signals from different subsystems.
+
+An overview of the DAQ is first given in Section \ref{section5.1}, followed by a description of the timing reference system of the DAQ in Section \ref{section5.2}. 
+The evaluation of the timing resolution of the CRTs and PMTs readouts are detailed in Section \ref{section5.3} and \ref{section5.4} respectively. 
+
+These developments culminate in achieving the 1 nanosecond resolution and synchronisation of the CRT and PMT readouts. 
+The PMT hardware readout resolution will allow precise timing reconstruction of the BNB substructure, which enable identifying if an interaction occurs within a neutrino bucket. 
+This sets the path way towards the high timing precision physics, such as selecting Heavy Neutral Lepton events out-of-neutrino-bucket, as discussed in Chapter ??. 
+
+%********************************** %First Section  **************************************
+\section{Overview of Data Acquisition at SBND}
+\label{section5.1}
+
+%short description of daq
+Data Acquisition (DAQ) provides the data transportation from subsystem hardware to event builder machines.
+At the Short-Baseline Near Detector (SBND), the DAQ software framework is provided by the \textit{artdaq Toolkit}, developed by the Real-Time Systems Engineering Department of the Scientific Computing Division at Fermilab \cite{}.
+During the real-time data flow, the DAQ has the capabilities of event building, such that it assembles data from each subsystem hardware into a physics event.
+The DAQ must also be able to apply complex software metrics to filter events for different data streams as well as data monitoring.
+
+%describe daq component
+At SBND, the DAQ is made of six hardware subsystems as shown in Fig. \ref{fig:daq_overview}. 
+Four of which are the detection subsystems: Time Projection Chamber (TPC), Photomultiplier Tubes (PMTs), X-ARAPUCAs and Cosmic Ray Taggers (CRTs). 
+Each detection subsystem has specialised hardware components to digitize and to readout the physical signals. 
+The respective two subsystems are the Penn Trigger Board \cite{} and the SPEC-TDC \cite{}. 
+The Penn Trigger Board (PTB) is a logic hardware board that is responsible for providing triggering to each detection subsystem.
+The SPEC-TDC is a hardware module that is specialised in timestamping.
+
+%hardware of each subsystem??
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{DAQ_Overview}
+\caption[DAQ_Overview]{The DAQ system at SBND consists of six subsystems, four of which are the detection hardware readout and the remaining two hardware components provides triggering and additional timing. Each hardware component has a matching software boardreader that behaves as the connection between the hardware and the event builder machines. The boardreader is responsible to send the fragments from the hardware to the event builder machines for event building.}
+\label{fig:daq_overview}
+\end{figure}
+
+\subsection{Event Building}
+
+%describe boardreader fragment
+Under the \textit{artdaq} framework, each discrete hardware readout component has a corresponding software called boardreader that communicates between the hardware and the event builder machines.
+The boardreader reads the data directly from the hardware and package it in a digitized format called a fragment as depicted in Fig. \ref{fig:fragment_diagram}. 
+The fragment class consists of a header that contains experiment-defined information for event building, an optional metadata and a data payload that stores the hardware-defined data. 
+When a subsystem receives a trigger signal from the PTB, its boardreader will generate a fragment.
+The timestamp of the trigger arrival is then coded in the fragment header.
+This fragment timestamp is the key value when it comes to event building process.
+
+%what is push/pull
+Once fragments are generated, boardreaders can send the fragments to the event builders in either one of the two configurations: push or pull. 
+When running in the push configuration, the boardreader actively sends fragments continuously at a rate at which the fragments are generated.
+The sequence ID of the fragments will determine the sequence ID of the built event, such that every single fragment is built as a single event.
+For every fragment sent, the push boardreader also creates a request message, which is multicast to all other boardreaders currently in pull mode.
+This request message contains the timestamp of the push fragment. 
+
+Unlike the push configuration, the boardreader in pull configuration stores the fragments in its buffer as the fragments are being generated.
+The fragments are only sent to the event builders upon receiving a request message.
+The pull boardreader has a configurable parameter called pull window, which specifies a window in time.
+When receive a request message, the pull boardreader looks into its own buffer and picks the fragments with timestamps that fall within the time window centred around the timestamp of the request message.
+The set of fragments that meet the timestamp requirement are then sent to the event builders.
+The event builders then package this set of fragments in a single event, together with the fragment from the push boardreader that originally generates the request message.
+The sequence ID of the built event is determined by the push fragment.
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=0.6\textwidth]{Fragment_Diagram}
+\caption[Fragment_Diagram]{Diagram of the fragment class as defined by the \textit{artdaq Toolkit}. The header contains information needed for event building. The metadata is optional and typically contains readout hardware configuration. The payload stores the data from the readout hardware component, of which the data structure is pre-defined by the hardware. }
+\label{fig:fragment_diagram}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{SBND_Event_Structure}
+\caption[SBND_Event_Structure]{Diagram of the fragment class as defined by the \textit{artdaq Toolkit}. The header contains information needed for event building. The metadata is optional and typically contains readout hardware configuration. The payload stores the data from the readout hardware component, of which the data structure is pre-defined by the hardware. }
+\label{fig:sbnd_event_structure}
+\end{figure}
+
+%describe an event structure
+With this \textit{artdaq} knowledge, an event at SBND is designed to take the push and pull configuration to its advantage.
+An event will have structure as shown in Fig. \ref{fig:sbnd_event_structure} for the three detection systems: TPC, PMTs and CRTs.
+\footnote{13th November 2023: At the time of writing, the DAQ hardware and software for the XARAPUCAs is under development and not yet finalised. Therefore, it will not be included in this thesis. }
+The push boardreader that increments the event sequence ID counter is called the Nevis Trigger Board (NTB), which is a component of the hardware complex to readout the TPC data.
+Meanwhile, boardreaders for the PMTs and CRTs are in pull mode.
+During the DAQ, the PTB sends multiple Flash Triggers and CRT Triggers to the PMTs and CRTs hardware readout respectively throughout the beam spill.
+Once per beam spill, if the PTB determines a neutrino event occurs, it sends a single Event Trigger to the NTB.
+The Event Trigger timestamp is encoded in the NTB fragment header, and is used by the pull boardreaders to define a pull window of 3 ms centred on this timestamp (1.5 ms before and after).
+Boardreaders of the PMTs and CRTs are requested to send all the generated fragments within the pull window.
+The event builders then put the these fragments together to form a beam event.
+
+%event asymmetry
+Photon signals are relative faster than electron signals, such that photons travels at approximately 0.4 times the speed of light in LAr while electrons travel takes 1.3 ms to fully drift from cathode to anode.
+This introduces an asymmetry in the event since scintillation photons produced during beam spill are digitized earlier than electron signals.
+The former 1.5 ms of the pull window is to account for the light-charge time asymmetry. The latter 1.5 ms of the pull window is to fully include the whole readout window of the TPC.
+
+\subsection{Data Stream}
+
+%describe a data stream
+Once the event builders finish assembling an event, the event can be filtered and sent to different locations for different purposes
+This process is also known as data stream. 
+The \textit{artdaq Toolkit} provides options to add experiment-defined filtering steps in real-time, such that the event builders can apply complex software metrics based on the fragment contents of an event.
+Once an event passes the filter, the event builders send the data to a location defined by the filter, for example, to be written on tape.
+If an event does not pass the filters, it will be dropped in real-time.
+At SBND, data streams are still under development during commissioning stage to be finalised for physics run.
+%TODO: check on docdb
+Some notable data streams that will be implemented are:
+\begin{itemize}
+	\item Calibration stream: 
+	\item Golden neutrino stream: 
+	\item Neutrino stream:
+	\item In-time cosmics stream:
+	\item Supernova stream:
+\end{itemize}
+
+\subsection{Data Monitoring}
+%data monitoring?
+The \textit{artdaq Toolkit} also has a built-in process the bridges the event builder machines and online monitoring platforms.
+The DAQ can send an independent stream of events in real-time to the platforms for different monitoring purposes.
+SBND currently employs two online platforms that monitors the health of the DAQ: Grafana and Minargon.
+Grafana, as displayed in Fig. \ref{}, provides real-time monitoring of the status of software processes being run by boardreaders and event builders. 
+Grafana monitoring also extends to include some status of the respective hardware component for each boardreader.
+Minargon, as displayed in Fig. \ref{}, provides real-time the data quality monitoring. 
+This online monitoring process applies simple reconstruction and event display in order to quantitatively verify the physics characteristics of an event. 
+%TODO: Say something here???
+The author has worked extensively on developing the Grafana and Minargon monitoring platforms for the PMT DAQ during her PhD course. 
+
+%********************************** %Second Section  **************************************
+\section{Timing Reference System of the Data Acquisition}
+\label{section5.2}
+
+%short description of why need timing reference
+The event building process of the DAQ is fully dependent on the timestamps from the fragment header. 
+Thus, it is vitally important that the timestamp for each subsystem must be generated with a high level of precision and synchronisation.
+SBND aims to achieve the timing precision of the DAQ hardware and software readout component in the order of nanosecond, to fully leverage the physics capabilities. 
+The DAQ timing strategy is to utilise the White Rabbit (WR) timing system.
+
+%description of WR timing 
+The WR timing system is a collaborative project developed at the European Organisation for Nuclear Research (CERN) and is now a widely-used synchronisation solution in scientific community \ref{}.
+The key concept is that it is a network that can provide fully deterministic time transfer with sub-nanosecond accuracy over distance range above 80km.
+The system is currently installed at both ICARUS and SBND detector buildings, to ensure timing precision within a single experiment as well as to ensure timing synchronisation across the two experiments. The application of the WR timing system at SBND are detailed in section \ref{section5.2.1} and section \ref{section5.2.2} respectively.
+
+\subsection{Time and Frequency Transfer To Subsystems}
+\label{section5.2.1}
+
+%Time Transfer Concept
+The WR timing system consists of a Grandmaster WR switch that distributes time and frequency to all other WR switches within the WR network via optical fibre links.
+The WR switch has dynamic calibration and thus, is a very reliable and robust delivery system.
+The WR system ensures that the Pulse Per Second (PPS) signal from all the slave WR switches in the network are aligned to the Grandmaster's with sub-nanosecond accuracy and tens of picoseconds precision. 
+Moreover, the Grandmaster WR switch at the SBND Near Detector Building is connected to an atomic clock that is locked to a global navigation satellite system. 
+As a result, the time and frequency distributed by the WR are derived from the International Atomic Time (TAI) and the Coordinated Universal Time (UTC).
+
+The WR Grandmaster switch distributes time to two independent WR switches, located at two different servers in the DAQ system.
+One of the server houses several modules of SVEC-FD, which are Fine Delay (FD) cards carried by Simple VME FMC Carrier (SVEC).
+The SVEC-FD is a high precision pulse generator, with 10 ps resolution and timebase accuracy of 2.5 ppm when used on a WR network.
+Each module can output four independent pulses at a time.
+
+%description of timing provided to each subsystem: PPS/ 10 MHz Clock?
+The modules are used to generate clock frequencies to subsystem hardware components, which behave as the master clock that the internal clocks of the subsystem hardware can latch onto.
+Since the modules are part of the WR network, the clock frequencies are synchronised with each other, and thus, so are the subsystem internal clock.
+The standard clock frequency is PPS (1 Hz) and 10 MHz. 
+Depends on the specification, each subsystem hardware can take either the PPS clock or the 10 MHz clock or both. The clocks for the CRT and PMT hardware readouts are detailed in section \ref{section5.3} and section \ref{section5.4}
+
+\subsection{Precise Timestamping}
+\label{section5.2.2}
+
+%Precision Timestamp concept
+%description of SPEC TDC
+The Grandmaster switch is also connected to server node that hosts the SPEC-TDC module, which is short for a FMC Time to Digital Converter (TDC) carried by a Simple PCIe FMC Carrier (SPEC).
+The SPEC-TDC can timestamp five input signals independently with a precision of 700 ps.
+The output timestamps are by UTC standard such that it contains the last whole second in UTC format and the number of nanoseconds since the last whole second.
+Thus, the timestamps are in the timing reference with respect to the PPS signal.
+Moreover, the SPEC-TDC also has its own boardreader so that the recorded timestamps can be built within an event, and available for downstream analysis.
+
+% SPEC TDC 
+Following Fig. \ref{}, one key application is to time synchronise the DAQ system with respect to the beam signals.
+At the SBND Near Detector building, there is a Multi-Function Timing Unit (MFTU) hardware interface that distribute various warning signals in TTL format about the status of the BNB beam.
+Two of which are timestamped by the SPEC-TDC.
+The first one is Booster Extraction Signal (BES) which is an early warning signal is indicates when protons are extracted in the Booster cycles.
+The second signal is called Resistor Wall Monitor (RWM) signal, which measures the instantaneous beam current onto the BNB target.
+The RWM signal arrives at the building almost simultaneously with the beam itself, and thus is used to signify when the beam is at the building.
+The typical delay between the BES and the RWM signal is approximately 333 us.
+For every beam event, the SPEC-TDC can precisely record the timestamps of the arrival of the beam signals.
+By recording the timestamps of the beam signals, the SPEC-TDC provides an additional tools to monitor the beam for data quality purposes.
+Moreover, it also provides a timing reference with respect to the beam itself.
+
+Another application of the SPEC-TDC is to timestamping the trigger signals. 
+Referencing back to Fig. \ref{}, an event contains three types of trigger: a single Event Trigger, multiple Flash Triggers and CRT Triggers. 
+The Event Trigger and the Flash Triggers are issued relative to the beam, such that the PTB only issues triggers within the beam window.   
+The SPEC-TDC is set up to record specifically the timestamps of the Event Trigger and the Flash Triggers.
+
+The last available channel of the SPEC-TDC used to record the clock reset signals for the CRT. 
+Upon receiving this signal, the CRT hardware readouts reset the counters of its internal clocks.
+Thus, monitoring this signal provides direct measurement of the resolution of the CRT clocks.
+This study was carried out by the author and is described in section \ref{}.
+
+SPEC-TDC capabilities of high precision timestamping can be leveraged for physics application.
+Recording both the timestamps of the beam and trigger signal in a single event opens up venues for various physics applications. 
+One example is the characterisation of timing resolution the DAQ hardware readouts, by directly comparing the timestamps produced by the hardware against the timestamps of the SPEC-TDC given that both share the common time reference to the PPS signal.
+Furthermore, it also provides additional useful timing information for downstream analysis, for example, applying timing correction for hardware resolution and providing alternative method for event timing reconstruction. 
+The SPEC-TDC applications are to be explored in the future includes nanosecond timing reconstruction, allowing for physics application such as cosmics rejection and physics searches between neutrino bucket.
+
+The author has worked extensively on installing, testing and calibrating the SPEC-TDC.
+The author carried out the hardware installations of the SPEC-TDC, by testing out two different PCIe connections on two different servers. 
+One server can hold the SPEC-TDC horizontally whilst the other can hold the SPEC-TDC vertically. 
+The latter was chosen due to better structural support and ventilation to host the SPEC-TDC.
+The author also worked on refining the boardreader of the SPEC-TDC. Some notable improvements are correcting timestamp values and increasing the rate at which the boardreader empties its buffer so that it can process higher data rate.
+The calibration work included measuring a constant offset introduced by the SPEC-TDC hardware to be 58 ns.
+
+%********************************** %Second Section  **************************************
+\section{Timing Precision of the Cosmic Ray Tagger DAQ}
+\label{section5.3}
+
+%CRT FEB
+The CRT detection system consists of 7 CRT planes, and is readout by 144 Front End Board (FEB) modules. 
+A single FEB module a multifunctional board and is capable to serve 32 channels, one channel per SiPM (silicon photomultiplier). 
+First it can provide a bias voltage which can be adjustable for individual SiPM.
+It also provides signal amplification and shaping for each channel.
+Once the signal is shaped, the FEB can apply signal discrimination and basic signal coincidence for each pair of SiPM as well as coincidence with other FEBs.
+Once the signal passes the trigger, it is digitised and timestamped with reference pulse.
+The data is stored in a buffer and can be readout via Ethernet connection.
+The following section focuses on the characterisation on the timing resolution of the FEB module.
+
+%Do I need to explain what CRT panel is made of? Or should I explain it in the detector chapter?
+
+\subsection{Front End Board Clock}
+
+The clock of the FEB module is a TDC unit that is composed of a coarse counter of 4 ns per tick (250 MHz frequency). 
+A high resolution time interpolation method is implemented within the system clock cycle to improve the clock counter to 1 ns per tick \ref{}.
+The clock resets its counter upon receiving a input reference pulse.  
+The timestamp of an event of interest is the number of ticks since the clock last resets, or in other words, the time interval since the input reference pulse.
+
+The FEB module has two internal clock counters, of which each can be reset independently via external TTL signal into LEMO inputs of the module.
+The first internal clock is known as the T0 clock, which is reset by the PPS pulse issued by the SVEC-FD cards. 
+Thus, this clock is referenced to the WR timing system.
+The second internal clock is known as the T1 clock, which is reset by BES signal issued by the MFTU hardware interface\footnote{21st November 2023: At the time of writing, there is consideration to use the BES signal issued by the PTB hardware instead of the MFTU hardware. However, it is not yet finalised. }.
+This signal is of higher frequency, averaged at 5.5 Hz.
+It resets the T1 clock more frequently which means the output timestamps are expected to be more accurate, however, it is not referenced to the WR timing system.
+
+Because in this clock system, the FEB module generates two independent timestamps with respect to the T0 and T1 clock for every event of interest, T0 timestamp and T1 timestamp.
+An event of interest can be a data event produced by a charged particle crossing a scintillator strip, and generates scintillator lights detected by SiPM located at both ends of the strip. 
+The FEB is also able to flag and store non-data event, such as the arrival timestamp of the input reference pulses. 
+These special events are known as clock reset events.
+
+\subsection{Evaluation of Timing Resolution}
+
+%CRT Sharp Set Up
+Over the summer of 2022, the author has travelled to Fermilab to conduct the following work.
+It was conducted using a temporary set up for commissioning usage, called CRT Sharps \ref{}.
+The CRT Sharps was made of two sets of four CRT panels. 
+Each set of panels was placed upstream and downstream of the SBND detector cryostat, centred on the BNB location.
+The CRT Sharps was commissioned during the period at which the BNB was on. 
+The triggering condition was to have signal coincidences between the upstream and downstream panels during the beam spill.
+This was to ensure that CRT Sharps setup only recorded events produced by muons from beam neutrinos and therefore, functioned as a beam telescope.
+The CRT Sharps was a testing ground for various DAQ activities, including the evaluation of the timing resolution of the FEB module. 
+The analysis described below used dataset recorded by the CRT Sharps during the summer and fall of 2022.
+
+%TODO: Photo of CRT Sharps
+
+%T0 Clock
+As previously described, the FEB can store the timestamps of clock reset events, which are the timestamps at which the input reference signals arrive at the FEB module.
+For the T0 clock characterisation, the T0 clock reset events were of interest.
+The timestamp T0 of the T0 clock reset event is the number of nanosecond since the FEB module last receives a PPS to reset its T0 clock.
+To measure the clock variation, one can simply compare this timestamp with respect to a single second.
+An example is shown in Fig. \ref{} for a single FEB module numbered 79.
+The T0 timestamp of the T0 clock reset event showed variation within roughly 2 ns of every second. 
+The standard deviation of this timestamp distribution is the direct measurement of the T0 clock variation.
+This indicated that the FEB module 79 consistently received the PPS signal to reset its T0 clock and the resolution of the T0 clock of the FEB is of the order $\mathcal{O}$(2 ns).
+
+%TODO: Plot
+
+%T1 Clock 
+As shown previously, the T1 clock of the FEB module is reset by the BES signal.
+The T1 clock reset event were selected and their timestamps were examined, specifically the T0 timestamps.
+The SPEC-TDC also records the arrival of BES signal with respect to the PPS signal.
+Since the SPEC-TDC is much more precise compared to the clocks of the FEB modules, comparing the T0 timestamps against the SPEC-TDC provides some insights about the clock characteristics.
+The comparison is plotted in Fig. \ref{} shown for FEB module 79, where the T0 timestamps of the T1 reset events are compared against the SPEC-TDC timestamps of the BES signals.
+The plot indicates that the T1 reset events are created consistently and thus, the T1 clock is reset regularly.
+The standard deviation of the distribution does not give direct measurement of the resolution of the T1 clock since the T0 timestamps are being examined. 
+In fact, the standard deviation is smeared out by the resolution of the T0 clock, and thus, also of the order $\mathcal{O}$(2 ns).
+The resolution of the T1 clock is expected to be lower due to more frequently reset at roughly 5.5 Hz.
+
+The T1 reset events also provided an additional method to further characterise the T0 clock of the FEB module. 
+This can be done by plotting the T0 timestamps variation against the T0 timestamps itself, as shown in Fig. \ref{} for the FEB module 79.
+The plot indicated the T0 clock can drift.
+For example, the T0 timestamp shows little variation when the T0 counter is low, such that the T0 clock recently receives a PPS signal to reset.
+Meanwhile, the T0 timestamp shows much a larger variation when the T0 is high, such that the T0 clock is close to a full second.
+It is possible that the counter can overflow.
+When this happens, the FEB modules can flag these events and their timestamps need to be invalidated.
+
+These plots are useful diagnostic tools to characterise the timing of the FEB modules: to examine whether the T0 and T1 clock resolution are of the order $\mathcal{O}$(2 ns) and if the T0 clock drift can be monitored.
+It is important to note that the T0 and T1 clocks of the FEB can potentially vary from run to run, and sensitive to external noise. 
+The plots have been reproduced by the CRT working group of SBND during the CRT installation periods.
+They will also be produced for online monitoring purposes in order to track the clock stability and resolution of the FEB modules.
+
+\subsection{Alternative Timing Reconstruction}
+
+Having the SPEC-TDC also opens up opportunities for alternative timing reconstruction method. 
+The following section explores how having additional timing information recorded by the SPEC-TDC can be used together with T0 timestamps of the FEB modules.
+The data set recorded by the CRT Sharps contained about 9000 beam events. 
+The CRT 2D hit time is reconstructed from coincidental hits of 2 cross scintillator strips, and corrected for cable and propagation delay.
+The CRT Hit Time T0 is reconstructed using the T0 timestamp whilst the CRT Hit T1 is reconstructed using the T1 timestamp. 
+
+The first timing reconstruction object is the beam spill as shown in Fig. \ref{} using CRT Hit Time T0 and CRT Hit Time T1 respectively.
+Since the CRT Hit Time T1 is in the timing reference with respect to the BES signal, the beam spill structure can be plotted directly.
+The BNB beam spill arrives 333 us after the BES signal and lasts of 1.6 $\mu$s.
+The CRT Hit Time T1 shows a clear peak at 333 us, which indicates the events are indeed produced by the neutrino beam.
+In the case of the CRT Hit Time T0, the timing reference is with respect to the PPS signal, and thus, it needs to shifted relative to the beam time in order to reconstruct the beam spill structure.
+This can be done by subtracting the BES timestamp measured by the SPEC-TDC, adjusted for cable lengths.
+As a result, the beam spill structure can also be plotted using the CRT Hit Time T0 and the SPEC-TDC timestamps, showing a clear peak at 333 us.
+It is important to note that the beam spill structure is of the order $\mathcal{O}$(us) and thus, both the CRT Hit Time T0 and T1 surpasses this.
+
+The next step was to push the timing reconstruction further by reconstructing the substructure of the BNB beam, to see whether it is possible to resolve the beam buckets.
+The BNB beam spill is made of 81 Gaussian neutrino buckets of width 1.3 ns and period of 19 ns.
+Given the limited statistics of the sample to fully plot 81 buckets, the buckets are overlay on top of each other by taking the modulo of 18.94 ns of the CRT Hit Time distribution.
+The period value of 18.94 ns was measured from data taken between 2017 - 2018, using CRT panels set up inside the empty SBND pit then.
+
+The result using CRT Hit Time T1 and CRT Hit Time T0 combined with SPEC-TDC timestamp of the BES signal are shown in Fig. {}.
+The CRT Hit Time T1 distribution is able to resolve the beam bucket structure even with only 9000 events.
+The CRT Hit Time T0 distribution can also resolve the bucket structure however with less precision. 
+The Gaussian shape is more smeared out due to the intrinsic resolution of the T0 clock of the order $\mathcal{O}$(2 n).
+This alternative timing reconstruction method using CRT Hit Time T0 still leaves more room for improvement however, shows promises at this early stage that the timestamps recorded by the SPEC-TDC can be exploited for multiple purposes.
+
+%********************************** %Third Section  **************************************
+\section{Timing Precision of the Photomultiplier Tube DAQ}
+\label{section5.4}
+
+%CAEN digitizer
+SBND has 120 PMTs as part the Photon Detection System. 
+The PMTs are readout by 8 CAENV1730 digitizers \cite{}.
+The CAENV1730 digitizer is capable of recording waveforms for 16 channels independently with a sampling rate of 500 MHz.
+SBND currently uses the model V1730SB which has a deeper buffer to save longer waveform as well as higher data rate.
+The model also offers better waveform baseline stability against temperature fluctuation.
+Multiple CAEN digitizers can be synchronised to build up a complex system to behave as a single digitizer.
+The following section focuses on the characterisation and synchronisation of multiple CAEN digitizers.
+
+\subsection{CAEN Digitizer Clock}
+
+%clock of a single digitizer
+The clock distribution of the CAEN digitizer is a complex system \cite{}.
+There are two clock domains in the hardware: OSC-CLK and REF-CLK.
+The OSC-CLK is a fixed internal oscillator that has a frequency of 50 MHz. 
+This clock is responsible for handling communication between the mother and the mezzanines such as local bus, universal serial bus and optical link.
+The REF-CLK is the one that handles sampling and triggering frequency via a clock chain.
+The source of the REF-CLK can either be internal or external.
+For internal mode, the REF-CLK is referenced to the OSC-CLK of frequency 50 MHz.
+For external mode, the REF-CLK is fed by an external frequency via the CLK-IN connector. 
+
+%What are the clocks
+The REF-CLK is the clock of interest to ensure synchronous sampling and triggering rate, and thus the timing precision of the CAEN digitizers.
+The REF-CLK frequency is input to a phase-locked-loop and clock distribution device AD9510 to generate three types of frequencies: the ADC sampling clock, the trigger logic clock and the output clock via the CLK-OUT connector.
+The ADC sampling frequency is 500 MHz and handles the sampling rate of the waveform such that every tick of the waveform is 2 ns. 
+The trigger clock is 125 MHz is responsible for handling the triggering and synchronisation logic.
+It produces a timestamp object called Trigger Time Tag (TTT), which is the number of ticks since the trigger clock last resets where a tick is 8 ns.
+The trigger clock is readout every two clock cycles and thus, can introduce fluctuation up to 16 ns.
+The third clock is a frequency that is output via the CLK-OUT connector and can be propagated to another CAEN digitizer for synchronisation purposes.
+This frequency is programmable and the standard configuration is 62.5 MHz, which is in phase with both the sampling and trigger clock.
+The AD9510 device must be programmed for a specific input frequency to the REF-CLK, to ensure that the frequencies of the sampling trigger and the output clock is locked in phase with the input.
+
+%What are input to the clocks
+At SBND, the CAEN digitizers are configured to use an external clock fed to the REF-CLK, such that their internal clocks are referenced to the WR timing system. 
+Each CAEN Digitizer takes two external inputs: one is the PPS clock that goes into the S-IN connector and one is an external frequency that goes to the CLK-IN connector.
+The PPS signal resets the counter of the trigger clock, such that the TTT is with respect to the PPS signal.
+The frequency input to the CLK-IN connector changes depending on the clock synchronisation scheme. 
+It can be either from the SVEC-FD cards which is the 10 MHz frequency, or can be from another CAEN digitizer CLK-OUT which is the 62.5 MHz frequency.
+
+%clock synchronisation
+As previously stated, multiple CAEN digitizers can be synchronised. 
+This can be done via two different clock synchronisation scheme: fan out mode or daisy chain mode as shown in Fig. \ref{}.
+In fan out mode, each individual digitizer is input with the same 10 MHz clock.
+The 10 MHz clock is produced by the SVEC-FD card, input to a LVDS fan out and then the CLK-IN connector of each digitizer.
+In this configuration, every CAEN digitizer should receive identical external frequency for the REF-CLK that generates the sampling and trigger clock.
+In daisy chain mode, the first digitizer in the daisy chain receives the 10 MHz clock, known as the master clock.
+Its clock is propagated to next digitizer in the chain, known as the slave clock.
+The master clock can be programmed with a precise delay to account for cable length such that the master and slave clock are in phase with each other.
+The clock propagation continues from one digitizer to the next digitizer in the chain, until the last digitizer in the chain is in the same clock phase as the first digitizer in the chain. (See Appendix ?? for more details) 
+
+\subsection{Evaluation of Timing Synchronisation}
+
+Over the summer of 2023, the author has travelled to Fermilab for the second time to conduct the work on evaluating the timing resolution and synchronisation of the CAEN digitizers.
+The first task was to determine which clock scheme to be used for physics run. 
+The goal was to achieve synchronisation across all 8 CAEN digitizers and with respect to other DAQ subsystems.
+
+%set up
+The set up for the study consisted of 8 CAEN digitizers as shown in Fig. \ref{}. 
+Each digitizer received an identical signal into the TRG-IN connector directly from the PTB board, with the same cable length such that every digitizer was triggered simultaneously.
+The trigger rate was set as 1 Hz.
+To evaluate metric whether the CAEN digitizers are synchronised with each other, the timestamps of every triggered event from every digitizer should be identical with respect to each other. 
+
+The trigger signal was also input to the SPEC-TDC for timestamping.
+Thus, timestamps recorded by the CAEN digitizers and the SPEC-TDC can be compared against each other since they are both with respect to the PPS signal.
+The SPEC-TDC has a higher level of precision compared to the CAEN digitizer and thus, the comparison help characterising the resolution of the timestamps produced the CAEN digitizer. 
+This also allowed to evaluate whether each CAEN digitizer is synchronised with respect to WR timing system.
+
+%CAEN Timestamp
+In order to compare the CAEN timestamps against the SPEC-TDC timestamp directly, one needs to understand the CAEN digitizer timestamp is constructed and differs to other hardware.
+Both the SPEC-TDC and the FEB modules construct the timestamps instantaneously as they receive a trigger.
+Fig. \ref{} illustrates how a CAEN digitizes construct the timestamp since it is not an instantaneous process.
+Upon receiving a trigger, the digitizer has a fixed buffer time before generating the timestamps.
+The generated timestamp also pointed to the end of the waveform such that it is the timestamp value is the last tick on the waveform.
+Therefore, the timestamp of the CAEN digitizer and the SPEC-TDC are corrected to the same reference frame and it was chosen to be the time at which the trigger leaves the PTB front face.
+If all the hardware are synchronised with each other, the difference in the timestamp is 0.
+
+%Result from daisy chain
+The daisy chain clock was tested out for multiple DAQ runs over a few days. 
+An example run result is shown in Fig. \ref{} for run 7980 and run 8060.
+Run 7980 result showed perfect synchronisation across all the 8 CAEN digitizers, as well as synchronisation with respect to the SPEC-TDC.
+All the timestamps agreed within a single nanosecond and remained stable during the full run.
+Run 8060 was measured 4 days after the run 7980 and showed interesting effects.
+The board 7 in the daisy chain drifted by 8 ns, and thus, all subsequent boards in the daisy chain also drifted but remained synchronised with each other. 
+Moreover, board 5 also some straddling effect such that the timestamps jittered 8 ns.
+This behaviour is expected since the trigger clock is readout every 2 clock cycle with 8 ns per tick.
+All the timestamps were stable during the full run.
+
+%Result from fan out
+The same test was repeated for the fan out clock fan scheme, where multiple DAQ runs were carried out over a few days.
+An example run result is shown in Fig. \ref{} for run 8178 and run 8196.
+Both of these runs showed the same straddling effect for board 5, such that the timestamps jittered 8 ns.
+Moreover, the key difference in this clock scheme is that the timestamps recorded by each CAEN digitizer varied randomly from digitizer to digitizer, and also from one run to another.
+This was due to the fact that the input frequency to the CLK-IN is 10 MHz.
+As explained previously, the trigger clock is generated by the AD9510 chip, which produces frequency in phase with the input.
+The trigger clock is of frequency 125 MHz whilst the input frequency is of 10 MHz, which are not multiples of each other and therefore are not in phase.
+To produce out-of-phase frequency, the AD9510 latches to the first rising edge of the input frequency upon the digitizer initialisation. 
+This means that for every DAQ run, the digitizer is initialised which introduces a new random phase offset and thus the timestamp can vary from run to run.
+The 10 MHz clock is distributed in fan out configuration to every digitizer, and thus, the trigger clock of each digitize independently has a different offset.
+This results in the timestamp variation from one digitizer to another.
+
+%settle for daisy chain over fan
+Comparing between the two clock scheme, the daisy chain mode offers better synchronisation across the 8 CAEN digitizers compared to the fan out mode.
+This is due to only the first CAEN in the daisy chain receives the external 10 MHz clock.
+The master clock CAEN digitizer can have a random phase offset and it will be propagated down the daisy chain, resulting in all digitizers in synchronisation with each other.
+Although it is important to note that the some clock drift effects has been observed when testing out the daisy chain scheme, which requires monitoring during the commissioning period to understand the impacts of the clock drift.
+
+\subsection{Clock Jittering Correction}
+
+%two different modes to compare timestamp
+To further characterise the timing resolution 
+
+%adc clock
+
+%digitize flash trig
+
+%how to deal with jittering correction
+
+%********************************** %Third Section  **************************************
+\section{Concluding Remarks}
+\label{section5.5}
