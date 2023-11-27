@@ -450,15 +450,80 @@ Although it is important to note that the some clock drift effects has been obse
 
 \subsection{Clock Jittering Correction}
 
+To further characterise the timing resolution of the CAEN digitizer, an additional step is added to understand how the board digitizes the waveform.
+The CAEN digitizer saves the waveform as an array of ADC values.
+To add the timing context to waveform, one needs to use the Trigger Time Tag value produced by the trigger clock.
+As demonstrate in Fig. \ref{}, the TTT is the timestamp of the last tick of waveform, and thus, this provides the timing information to construct the rest of the ticks on the waveform.
+From the manuals of the digitizer, it points out that the trigger clock and the ADC sampling clock are synchronised with respect to each other.
+Thus, this task aimed to test whether all 8 CAEN digitizers can digitize waveform in synchronisation with each other within a nanosecond. 
+
+%setup
+This study used the same set up as described in the previous section.
+An additional setup was to input the trigger into channel 15 of every CAEN digitizer with the same amount of cable length so that all triggers would arrive simultaneously.
+With this setup, every CAEN digitizer would also receive simultaneous trigger signals to the S-IN connectors as well as simultaneous signals to channel 15 for digitizing.
+
+The daisy chain clock programming was also re-visited for this study.
+As described in earlier section, the clock propagation from the master clock to the slave clock needs to be delayed with a precise amount such that their clocks are exactly in phase.
+This calibration process was improved to ensure that not only every digitizer would produce identical timestamps for simultaneous triggers, but also every digitizer would digitize the trigger signals simultaneously.
+The result after the process is demonstrated in Fig. \ref{}.
+This shows that every digitizer have the same timestamp, as well we digitize the trigger signal at the exact same tick position on the waveform.
+This results in identical timestamps of the tick value on the rising edge of trigger signals across all 8 CAEN digitizers.
+
 %two different modes to compare timestamp
-To further characterise the timing resolution 
+This presents two types of timestamps produced by the CAEN digitizer.
+This is illustrated in Fig. \ref {}.
+One is the timestamp comes from the TTT value produced by the trigger clock of the CAEN, and were examined in the synchronisation study in section \ref {}.
+This timestamp is now referred as the TTT-derived timestamp.
+The timestamp of the tick value on the rising edge of the trigger signal is referred as the tick-derived timestamp, since this timestamp requires the knowledge of the tick position of the trigger on the waveform.
+Both these timestamps are compared against the SPEC-TDC timestamps of the trigger signals, to the same reference frame at which the trigger leaves the PTB front face.
+Corrections were applied, including cable length differences.
 
-%adc clock
+Multiple DAQ runs were taken for this study over a period of one month.
+Each run duration varied from less than an hour up to 10 hours.
+The purpose for this was also to test the stability of the synchronisation of the daisy chain and its effects on the resolution of the produced timestamps. 
+The study analysis was conducted on 30 runs data set.
 
-%digitize flash trig
+%TTT timestamps
+The TTT-derived timestamps distribution is plotted in Fig. \ref {} for 6 CAEN digitizers.
+Since these timestamps are plotted with respect to when the trigger signals leave the PTB, this shows the buffer time that CAEN digitizer takes upon receiving a trigger is approximately between 30 to 40 ns.
+This distribution also shows a large spread up to 24 ns wide, which indicates that TTT-derived timestamp has a variation larger than what was suggested by than manuals, that the trigger clock resolution was only 16 ns.
+The tick-derived timestamps distribution is plotted in Fig. \ref {}.
+This however, shows a much small spread of only 8 ns.
 
-%how to deal with jittering correction
+To understand the differences between the two types of timestamps, the tick position of the rising edge of the digitized trigger signal is also plotted in Fig. \ref {}.
+The distribution shows a large spread up to 10 ticks, equivalent to 20 ns.
+This behaviour indicates that the CAEN digitizer does not digitize waveform simultaneously and it can vary from event to event, run to run and board to board.
+This means that not only the trigger clock can jitter, but also the ADC sampling clock of the CAEN digitizer can also jitter and introduce smearing.
+
+However, it has been pointed out in the CAEN manuals such that the trigger clock and the ADC clock are correlated to each other, such that the TTT-derived timestamp points to the last tick of the waveform.
+This key point means that the trigger clock is in synchronised with the ADC sampling clock, and thus, it can track and resolve the jittering of the ADC sampling clock.
+This explained the 24 ns spread of the TTT-derived timestamps since it contains the smearing from both the trigger clock and the ADC sampling clocks.
+Meanwhile, the tick-derived timestamps distribution shows a much smaller spread of 8 ns, such that the timestamp produced using both the TTT value and tick value has a high level of precision.
+
+%jittering cases
+This understanding of the clock behaviour of the CAEN digitizer opens up venues for correcting for the timestamp jittering.
+The tick-derived timestamp dataset were further examined in order to understand how to apply the correction to completely remove the 8 ns spread.
+Three cases of jittering were identified and illustrated in Fig. \ref{}.
+The first case is were the trigger clock can jitter whilst the ADC sampling clock does not jitter.
+This results in the tick-derived timestamp smeared up by the trigger clock tick value of 8 ns.
+The second case is vice verse, resulting in the tick-derived timestamp smeared out by the tick value of the ADC sampling clock of 2 ns.
+The last case is the combination of both clocks, such that the smearing amount can be a sum of the trigger and ADC sampling clock value, such as 10 ns.
+
+%how to correct for jittering:
+By digitising the trigger signal synchronously on every digitizer, the recorded waveform of the trigger provides the necessary information to apply correction.
+One can simply derive the correction amount by comparing the tick-derived timestamp of the trigger signal from one event to another.
+Once this correction is applied to all events within the same run, one can also correct for the random clock phase initialisation across multiple runs within the same CAEN digitizer.
+This order of correction results in the perfect synchronisation across all events and all runs from different periods of time.
+
+This study has resulted in a new hardware proposal by the author for physics run at SBND.
+The proposal suggested to digitize the trigger signal in all channel 15 of every CAEN digitizer such that this will provide the necessary timing information for downstream correction.
+This new cable connection requires an additional CAEN digitizer since the original plan was to digitize beam signals in channel 15.
+The new CAEN digitizer will be used solely for recording beam signals such as the BES and RWM signal.
+The installation of the new hardware setup was carried out by the author during her time at Fermilab and this is photographed in Fig. \ref {}.
 
 %********************************** %Third Section  **************************************
 \section{Concluding Remarks}
 \label{section5.5}
+
+The DAQ system of the SBND experiment has been described, outlining the overall process with how a physics event is built and constructed from different hardware subsystems.
+The characterisation of the timing resolution of two hardware subsystms
