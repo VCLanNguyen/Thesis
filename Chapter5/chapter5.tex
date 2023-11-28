@@ -33,129 +33,148 @@ This sets the path way towards the high timing precision physics, such as select
 \label{section5.1}
 
 %short description of daq
-Data Acquisition (DAQ) provides the data transportation from subsystem hardware to event builder machines.
-At the Short-Baseline Near Detector (SBND), the DAQ software framework is provided by the \textit{artdaq Toolkit}, developed by the Real-Time Systems Engineering Department of the Scientific Computing Division at Fermilab \cite{}.
-During the real-time data flow, the DAQ has the capabilities of event building, such that it assembles data from each subsystem hardware into a physics event.
-The DAQ must also be able to apply complex software metrics to filter events for different data streams as well as data monitoring.
+Data Acquisition (DAQ) is responsible for transporting data from subsystem hardware to event builder machines.
+During real-time data flow, the DAQ must have the capability for event building by assembling data from each subsystem hardware into a cohesive physics event. 
+Additionally, the DAQ must be able to apply complex software metrics to filter events for various data streams and data monitoring purposes.
 
 %describe daq component
-At SBND, the DAQ is made of six hardware subsystems as shown in Fig. \ref{fig:daq_overview}. 
-Four of which are the detection subsystems: Time Projection Chamber (TPC), Photomultiplier Tubes (PMTs), X-ARAPUCAs and Cosmic Ray Taggers (CRTs). 
-Each detection subsystem has specialised hardware components to digitize and to readout the physical signals. 
-The respective two subsystems are the Penn Trigger Board \cite{} and the SPEC-TDC \cite{}. 
-The Penn Trigger Board (PTB) is a logic hardware board that is responsible for providing triggering to each detection subsystem.
-The SPEC-TDC is a hardware module that is specialised in timestamping.
-
-%hardware of each subsystem??
+At SBND, the DAQ comprises six hardware subsystems illustrated in Fig. \ref{fig:daq_overview}.
+Among these, four are the detection subsystems: the Time Projection Chamber (TPC), Photomultiplier Tubes (PMTs), X-ARAPUCAs, and Cosmic Ray Taggers (CRTs).
+Each detection subsystem incorporates specialized hardware components for digitizing and reading out the physical signals. 
+Moreover, two other subsystems are the Penn Trigger Board (PTB) \cite{ptb_gvs} and the SPEC-TDC. 
+The PTB, as a hardware board within the SBND trigger system, is responsible to provide triggering signals to each detection subsystem independently.
+The SPEC-TDC is a specialised timing mezzanine module designed specifically for timestamping purposes.
+Further details about its functionality are outlined in section \ref{section5.2.2}.
 
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{DAQ_Overview}
-\caption[DAQ_Overview]{The DAQ system at SBND consists of six subsystems, four of which are the detection hardware readout and the remaining two hardware components provides triggering and additional timing. Each hardware component has a matching software boardreader that behaves as the connection between the hardware and the event builder machines. The boardreader is responsible to send the fragments from the hardware to the event builder machines for event building.}
+\caption[DAQ_Overview]{The DAQ system at SBND consists of six subsystems, with four dedicated to detection subsystem readouts for the TPC, CRTs, PMTs and X-ARAPUCAs, while the remaining two facilitate triggering and timing functionalities.
+Each hardware component is accompanied by a corresponding software boardreader, serving as a communication bridge between the hardware and the event builder machines.
+The event builders assemble a physics events and send it to different data streams for storage.
+}
 \label{fig:daq_overview}
 \end{figure}
 
-\subsection{Event Building}
+The DAQ software framework is provided by the \textit{artdaq Toolkit}, developed by the Real-Time Systems Engineering Department of Fermilab's Scientific Computing Division \cite{artdaq_note}.
+The software acts as the backbone of the communication between the hardware components and the event builder machines.
+The following section provides an overview of the DAQ workflow at SBND as illustrated in Fig. \ref{fig:daq_overview}, describing how signals are acquired from the detection hardware and subsequently digitized by boardreaders and assembled into a physics event.
 
 %describe boardreader fragment
-Under the \textit{artdaq} framework, each discrete hardware readout component has a corresponding software called boardreader that communicates between the hardware and the event builder machines.
-The boardreader reads the data directly from the hardware and package it in a digitized format called a fragment as depicted in Fig. \ref{fig:fragment_diagram}. 
-The fragment class consists of a header that contains experiment-defined information for event building, an optional metadata and a data payload that stores the hardware-defined data. 
-When a subsystem receives a trigger signal from the PTB, its boardreader will generate a fragment.
-The timestamp of the trigger arrival is then coded in the fragment header.
-This fragment timestamp is the key value when it comes to event building process.
-
-%what is push/pull
-Once fragments are generated, boardreaders can send the fragments to the event builders in either one of the two configurations: push or pull. 
-When running in the push configuration, the boardreader actively sends fragments continuously at a rate at which the fragments are generated.
-The sequence ID of the fragments will determine the sequence ID of the built event, such that every single fragment is built as a single event.
-For every fragment sent, the push boardreader also creates a request message, which is multicast to all other boardreaders currently in pull mode.
-This request message contains the timestamp of the push fragment. 
-
-Unlike the push configuration, the boardreader in pull configuration stores the fragments in its buffer as the fragments are being generated.
-The fragments are only sent to the event builders upon receiving a request message.
-The pull boardreader has a configurable parameter called pull window, which specifies a window in time.
-When receive a request message, the pull boardreader looks into its own buffer and picks the fragments with timestamps that fall within the time window centred around the timestamp of the request message.
-The set of fragments that meet the timestamp requirement are then sent to the event builders.
-The event builders then package this set of fragments in a single event, together with the fragment from the push boardreader that originally generates the request message.
-The sequence ID of the built event is determined by the push fragment.
+Within the \textit{artdaq} framework, each discrete hardware readout component has a corresponding software, known as a boardreader, facilitating communication between the readout electronics and the event builder machines.
+The boardreader can send configurations directly to the hardware in one direction and retrieves data from the hardware in the opposite direction.
+The data is packaged into a digitized format called a fragment as depicted in Fig. \ref{fig:fragment_diagram}. 
+The fragment class includes a header containing experiment-specific information essential for event building, an optional metadata, and a data payload storing the hardware-defined data.
+A fragment is generated by the boardreader when its corresponding hardware readout receives a trigger.
+The timestamp of the trigger arrival is encoded in the fragment header, which is known as the fragment timestamp.
+This timestamp is the crucial value in the event building process.
 
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=0.6\textwidth]{Fragment_Diagram}
-\caption[Fragment_Diagram]{Diagram of the fragment class as defined by the \textit{artdaq Toolkit}. The header contains information needed for event building. The metadata is optional and typically contains readout hardware configuration. The payload stores the data from the readout hardware component, of which the data structure is pre-defined by the hardware. }
+\caption[Fragment_Diagram]{This diagram illustrates the fragment class defined by the \textit{artdaq Toolkit}. The header contains information needed for event building, of which the key information is the fragment timestamp. Optionally, the metadata structure contains hardware configurations. The payload is designated for storing data from the hardware readout, of which the data structure is pre-defined by the hardware. }
 \label{fig:fragment_diagram}
 \end{figure}
+
+%what is push/pull
+Once fragments are generated, boardreaders can send them to the event builders in either one of the two configurations: push or pull. 
+When operating in the push configuration, the boardreader actively sends fragments continuously at the rate at which the fragments are generated.
+The sequence ID of the fragments determines the sequence ID of the built event, ensuring  that every fragment is built as a single event.
+With each fragment sent, the push boardreader also creates a request message, which is multicast to all other boardreaders currently in pull mode.
+This request message contains the timestamp of the push fragment. 
+
+In contrast to the push configuration, the boardreader in the pull configuration stores the fragments in its buffer as the fragments are being generated.
+These fragments are sent to the event builders only upon receiving a request message.
+To determine which fragments to send, the boardreader has a configurable parameter called pull window, which specifies a time window relative to the timestamp of the request message.
+The pull boardreader checks its buffer and selects the fragments with timestamps falling within this defined time window.
+The selected fragments that meet the timestamp requirement are then dispatched to the event builders.
+Subsequently, the event builder machines compile this set of fragments, together with one single fragment from the push boardreader that initially generated the request message, into a single event.
+The sequence ID of the resulting event is determined by the push fragment.
 
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{SBND_Event_Structure}
-\caption[SBND_Event_Structure]{Diagram of the fragment class as defined by the \textit{artdaq Toolkit}. The header contains information needed for event building. The metadata is optional and typically contains readout hardware configuration. The payload stores the data from the readout hardware component, of which the data structure is pre-defined by the hardware. }
+\caption[SBND_Event_Structure]{This cartoon depicts a physics event structure at SBND, where the time axis is centred at 0 for when the beam spill begins. The event contains TPC fragments of readout length 1.7 ms to fully cover the drift window of an ionised electron from cathode to anode. The fragments generated by the PMTs and CRTs readouts are included 1.5 ms before and after the beam spill starts. The time asymmetry of the event structure is due to scintillation photon signals are produced and digitised much faster compared to electron signals.}
 \label{fig:sbnd_event_structure}
 \end{figure}
 
 %describe an event structure
-With this \textit{artdaq} knowledge, an event at SBND is designed to take the push and pull configuration to its advantage.
-An event will have structure as shown in Fig. \ref{fig:sbnd_event_structure} for the three detection systems: TPC, PMTs and CRTs.
-\footnote{13th November 2023: At the time of writing, the DAQ hardware and software for the XARAPUCAs is under development and not yet finalised. Therefore, it will not be included in this thesis. }
-The push boardreader that increments the event sequence ID counter is called the Nevis Trigger Board (NTB), which is a component of the hardware complex to readout the TPC data.
-Meanwhile, boardreaders for the PMTs and CRTs are in pull mode.
-During the DAQ, the PTB sends multiple Flash Triggers and CRT Triggers to the PMTs and CRTs hardware readout respectively throughout the beam spill.
-Once per beam spill, if the PTB determines a neutrino event occurs, it sends a single Event Trigger to the NTB.
-The Event Trigger timestamp is encoded in the NTB fragment header, and is used by the pull boardreaders to define a pull window of 3 ms centred on this timestamp (1.5 ms before and after).
-Boardreaders of the PMTs and CRTs are requested to send all the generated fragments within the pull window.
-The event builders then put the these fragments together to form a beam event.
+A physics event during at beam spill at SBND is built based on the structure shown in Fig. \ref{fig:sbnd_event_structure}, using the fragments from the three detection systems: TPC, PMTs and CRTs.
+\footnote{13th November 2023: The DAQ hardware and software for the X-ARAPUCAs is under development and therefore, not be included in this thesis. }
+Within this structure, there is only one push boardreader that increments the event sequence ID counter whilst the remaining boardreaders run in pull configuration.
+The push boardreader is called the Nevis Trigger Board (NTB), which is a component of the hardware complex to readout the TPC data. 
+The PTB sends a single Event trigger to the NTB that coincides with the start of the BNB beam spill if it determines a neutrino event occurs.
+This generates a TPC fragment has a readout length of 1.7 ms, that fully covers the TPC drift length of 1.3 ms, and includes a padding of 0.2 ms before and after the drift.
+The Event trigger timestamp is encoded in the NTB fragment header.
+
+Meanwhile, the boardreaders for the PMTs and CRTs are in pull mode.
+The PTB sends multiple Flash triggers to the PMTs readouts throughout the beam spill and CRTs readouts are self-triggered independently.
+The fragment readout lengths from the PMTs and CRTs readouts are much shorter compared to TPC fragments, in the order of $\mu$s and ns respectively.
+The pull window is defined to be 3 ms centred on the timestamp of the NTB fragment, to include PMTs and CRTs fragments generated 1.5 ms before and after the beam spill starts.
+The event builders then package all the these fragments together to form a physics event.
 
 %event asymmetry
-Photon signals are relative faster than electron signals, such that photons travels at approximately 0.4 times the speed of light in LAr while electrons travel takes 1.3 ms to fully drift from cathode to anode.
-This introduces an asymmetry in the event since scintillation photons produced during beam spill are digitized earlier than electron signals.
-The former 1.5 ms of the pull window is to account for the light-charge time asymmetry. The latter 1.5 ms of the pull window is to fully include the whole readout window of the TPC.
-
-\subsection{Data Stream}
+The event structure has an asymmetry in time due to the physics characteristics of photon signals, detected by the CRTs and PMTs, and electron signals, detected by the TPC wires.
+Photon signals are much faster than electron signals.
+A photon produced in CRT scintillator strip takes approximate 5 ns to travel from the far end of the strip until the readouts.
+A photon produced in the TPC takes maximum 15 ns to arrive at the PMTs from the scintillation location.
+An ionised electron produced at the same time in the TPC takes 1.3 ms to fully drift from the cathode to the anode.
+Therefore, scintillation photon signals produced during the beam spill need be digitized and readout much earlier compared to the electron signals.
 
 %describe a data stream
-Once the event builders finish assembling an event, the event can be filtered and sent to different locations for different purposes
-This process is also known as data stream. 
-The \textit{artdaq Toolkit} provides options to add experiment-defined filtering steps in real-time, such that the event builders can apply complex software metrics based on the fragment contents of an event.
-Once an event passes the filter, the event builders send the data to a location defined by the filter, for example, to be written on tape.
+After the event builder machines complete building a physics event, the resulting event can be filtered and sent to various locations for serving different downstream analysis purposes. 
+This process is commonly referred to as data streaming.
+The \textit{artdaq Toolkit} provides options to add customisable filtering steps in real-time, such that the event builders can apply complex software metrics based on the fragment contents of an event.
+Once an event passes the filter, the event builders send it to a location defined by the filter.
 If an event does not pass the filters, it will be dropped in real-time.
-At SBND, data streams are still under development during commissioning stage to be finalised for physics run.
-%TODO: check on docdb
-Some notable data streams that will be implemented are:
-\begin{itemize}
-	\item Calibration stream: 
-	\item Golden neutrino stream: 
-	\item Neutrino stream:
-	\item In-time cosmics stream:
-	\item Supernova stream:
-\end{itemize}
 
-\subsection{Data Monitoring}
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{Grafana}
+\caption[Grafana]{
+This screenshot displays a section of the Grafana monitoring website for the boardreaders of the PMT DAQ.
+Some key information to quickly evaluate the status of the PMT boardreaders are shown.
+For example, the fragment generation rate is expected be consistent with the trigger rate sent by the PTB whilst the empty fragment rate and the missing fragment rate stay flat at zero.
+}
+\label{fig:Grafana}
+ \end{figure}
+
 %data monitoring?
 The \textit{artdaq Toolkit} also has a built-in process the bridges the event builder machines and online monitoring platforms.
-The DAQ can send an independent stream of events in real-time to the platforms for different monitoring purposes.
+Whilst running in real-time, fragments from boardreaders and physics events can be sent to the platforms for different monitoring purposes.
 SBND currently employs two online platforms that monitors the health of the DAQ: Grafana and Minargon.
-Grafana, as displayed in Fig. \ref{}, provides real-time monitoring of the status of software processes being run by boardreaders and event builders. 
+Grafana, as displayed in Fig. \ref{fig:Grafana}, provides real-time monitoring of the status of processes being run by boardreaders and event builders. 
 Grafana monitoring also extends to include some status of the respective hardware component for each boardreader.
-Minargon, as displayed in Fig. \ref{}, provides real-time the data quality monitoring. 
+Minargon, as displayed in Fig. \ref{fig:Minargon}, provides real-time the data quality monitoring. 
 This online monitoring process applies simple reconstruction and event display in order to quantitatively verify the physics characteristics of an event. 
-%TODO: Say something here???
-The author has worked extensively on developing the Grafana and Minargon monitoring platforms for the PMT DAQ during her PhD course. 
+The author has worked extensively on developing the monitoring processes for the DAQ of the PMTs on both Grafana and Minargon monitoring platforms during her PhD course. 
 
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{Minargon}
+\caption[Minargon]{
+This screenshot displays a section of the Minargon monitoring website to evaluate the quality of data acquired by the PMT DAQ.
+For example, a metric shown here is the waveform baseline RMS, plotted as a histogram (left) and plotted with respect to the fragment timestamp (right).
+This metric provides monitoring of the baseline equalisation and stability over time.
+}
+\label{fig:Minargon}
+\end{figure}
 %********************************** %Second Section  **************************************
 \section{Timing Reference System of the Data Acquisition}
 \label{section5.2}
 
 %short description of why need timing reference
-The event building process of the DAQ is fully dependent on the timestamps from the fragment header. 
-Thus, it is vitally important that the timestamp for each subsystem must be generated with a high level of precision and synchronisation.
-SBND aims to achieve the timing precision of the DAQ hardware and software readout component in the order of nanosecond, to fully leverage the physics capabilities. 
-The DAQ timing strategy is to utilise the White Rabbit (WR) timing system.
+The event building process of the DAQ relies entirely on timestamps from the fragment headers to construct a meaningful physics event.
+Hence, it is crucial that the timestamp generated by each subsystem readout electronic is generated with a high level of precision and synchronisation.
+SBND aims to achieve timing precision of the DAQ hardware and software readout components in the order of nanoseconds to fully leverage the physics capabilities.
+The strategy is to utilise the White Rabbit (WR) timing system.
 
 %description of WR timing 
-The WR timing system is a collaborative project developed at the European Organisation for Nuclear Research (CERN) and is now a widely-used synchronisation solution in scientific community \ref{}.
-The key concept is that it is a network that can provide fully deterministic time transfer with sub-nanosecond accuracy over distance range above 80km.
-The system is currently installed at both ICARUS and SBND detector buildings, to ensure timing precision within a single experiment as well as to ensure timing synchronisation across the two experiments. The application of the WR timing system at SBND are detailed in section \ref{section5.2.1} and section \ref{section5.2.2} respectively.
+The WR timing system is a collaborative project developed at the European Organisation for Nuclear Research (CERN) and is now a widely-used synchronisation solution in scientific community \cite{WR_paper}.
+The WR has the capability to offer fully deterministic time transfer with sub-nanosecond accuracy over distances exceeding 80 kilometers.
+The system is currently installed in both the ICARUS and SBND detector buildings.
+The installation serves the dual purpose of ensuring timing precision within a single experiment as well as timing synchronisation across the two experiments. 
+The application of the WR timing system at SBND for time transferring and timestamping are detailed in section \ref{section5.2.1} and section \ref{section5.2.2} respectively.
 
 \subsection{Time and Frequency Transfer To Subsystems}
 \label{section5.2.1}
@@ -163,20 +182,40 @@ The system is currently installed at both ICARUS and SBND detector buildings, to
 %Time Transfer Concept
 The WR timing system consists of a Grandmaster WR switch that distributes time and frequency to all other WR switches within the WR network via optical fibre links.
 The WR switch has dynamic calibration and thus, is a very reliable and robust delivery system.
-The WR system ensures that the Pulse Per Second (PPS) signal from all the slave WR switches in the network are aligned to the Grandmaster's with sub-nanosecond accuracy and tens of picoseconds precision. 
-Moreover, the Grandmaster WR switch at the SBND Near Detector Building is connected to an atomic clock that is locked to a global navigation satellite system. 
-As a result, the time and frequency distributed by the WR are derived from the International Atomic Time (TAI) and the Coordinated Universal Time (UTC).
+The system ensures that the Pulse Per Second (PPS) signal, which has the frequency of 1 Hz, from all the slave WR switches in the network are aligned to the Grandmaster's PPS signal with sub-nanosecond accuracy and tens of picoseconds precision. 
+Moreover, the Grandmaster WR switch installed at the SBND detector Building is connected to an atomic clock that is locked to a global navigation satellite system. 
+As a result, the time and frequency distributed by the WR system are derived from the International Atomic Time (TAI) and the Coordinated Universal Time (UTC).
 
-The WR Grandmaster switch distributes time to two independent WR switches, located at two different servers in the DAQ system.
-One of the server houses several modules of SVEC-FD, which are Fine Delay (FD) cards carried by Simple VME FMC Carrier (SVEC).
-The SVEC-FD is a high precision pulse generator, with 10 ps resolution and timebase accuracy of 2.5 ppm when used on a WR network.
+The Grandmaster switch currently distributes time to two independent WR switches, located at two different servers in the DAQ system.
+One of the server houses several SVEC-FD modules, which are Fine Delay (FD) cards carried by Simple VME FMC Carrier (SVEC).
+The SVEC-FD module is a high precision pulse generator, with 10 ps resolution and timebase accuracy of 2.5 ppm when used on a WR network.
 Each module can output four independent pulses at a time.
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{time_transfer}
+\caption[time_transfer]{
+This cartoon displays timing distribution from the WR Grandmaster switch to the electronic readouts for the PMTs and CRTs.
+From the Grandmaster switch, the time is transferred to the SVEC-FD modules, which generates highly precise PPS signals and 10 MHz clock.
+These frequencies are input to the electronic readouts to that produce clock ticks since the last PPS arrived.
+The fragment timestamp is then generated by the boardreader using the clock ticks information, which is used by the event builders to assemble fragments into a physics event.
+}
+\label{fig:time_transfer}
+\end{figure}
 
 %description of timing provided to each subsystem: PPS/ 10 MHz Clock?
 The modules are used to generate clock frequencies to subsystem hardware components, which behave as the master clock that the internal clocks of the subsystem hardware can latch onto.
 Since the modules are part of the WR network, the clock frequencies are synchronised with each other, and thus, so are the subsystem internal clock.
-The standard clock frequency is PPS (1 Hz) and 10 MHz. 
-Depends on the specification, each subsystem hardware can take either the PPS clock or the 10 MHz clock or both. The clocks for the CRT and PMT hardware readouts are detailed in section \ref{section5.3} and section \ref{section5.4}
+The standard clock frequency is the PPS signal and 10 MHz. 
+Depends on the specification, each subsystem hardware readouts must have an input for the PPS signal, an optionally an input for the 10 MHz clock.
+
+As illustrated in Fig. \ref{fig:time_transfer}, this set up ensures that clock ticks generated by each electronic board is reference with respect to the last PPS arrived, and thus sharing the same time frame of reference to the PPS.
+As the boardreader packages the data into fragment format, it creates the timestamp in the fragment header.
+The timestamp is in UTC format and its structure consists of two parts, the second part and the nanosecond part.
+The second part is the total of number of seconds since the Unix Epoch on 1st of January 1970 at UTC, which is generated by the server hosting the boardreader under the Network Time Protocol (NTP).
+The nanosecond part is the number of nanosecond since the last PPS arrived, derived from the clock ticks since the PPS generated by the readout electronics.
+This timestamp is subsequently used by the event builders to put the fragments together into an event.
+Thus, the DAQ workflow places a vital importance on the internal clocks of each hardware readout, which are further explored in section \ref{section5.3} and section \ref{section5.4} for the CRTs and PMTs electronics respectively.
 
 \subsection{Precise Timestamping}
 \label{section5.2.2}
@@ -185,43 +224,50 @@ Depends on the specification, each subsystem hardware can take either the PPS cl
 %description of SPEC TDC
 The Grandmaster switch is also connected to server node that hosts the SPEC-TDC module, which is short for a FMC Time to Digital Converter (TDC) carried by a Simple PCIe FMC Carrier (SPEC).
 The SPEC-TDC can timestamp five input signals independently with a precision of 700 ps.
-The output timestamps are by UTC standard such that it contains the last whole second in UTC format and the number of nanoseconds since the last whole second.
-Thus, the timestamps are in the timing reference with respect to the PPS signal.
+The output timestamps are in UTC standard such that it contains the last whole second in UTC format and the number of nanoseconds since the last whole second.
+Thus, the timestamps are in the same time frame of reference with respect to the PPS signal.
 Moreover, the SPEC-TDC also has its own boardreader so that the recorded timestamps can be built within an event, and available for downstream analysis.
 
 % SPEC TDC 
-Following Fig. \ref{}, one key application is to time synchronise the DAQ system with respect to the beam signals.
-At the SBND Near Detector building, there is a Multi-Function Timing Unit (MFTU) hardware interface that distribute various warning signals in TTL format about the status of the BNB beam.
-Two of which are timestamped by the SPEC-TDC.
-The first one is Booster Extraction Signal (BES) which is an early warning signal is indicates when protons are extracted in the Booster cycles.
-The second signal is called Resistor Wall Monitor (RWM) signal, which measures the instantaneous beam current onto the BNB target.
-The RWM signal arrives at the building almost simultaneously with the beam itself, and thus is used to signify when the beam is at the building.
-The typical delay between the BES and the RWM signal is approximately 333 us.
-For every beam event, the SPEC-TDC can precisely record the timestamps of the arrival of the beam signals.
-By recording the timestamps of the beam signals, the SPEC-TDC provides an additional tools to monitor the beam for data quality purposes.
-Moreover, it also provides a timing reference with respect to the beam itself.
+Following Fig. \ref{}, one application of the SPEC-TDC is to synchronise the DAQ system with respect to the beam.
+This can be done by employing the SPEC-TDC to timestamp two important beam signals, that can provide status of the BNB beam.
+The first one is the Booster Extraction Signal (BES), which is an early warning signalling when protons are extracted in the Booster cycles.
+The second one is the Resistor Wall Monitor (RWM), which measures the instantaneous beam current onto the BNB target.
+The RWM signal arrives at the SBND detector building almost simultaneously with the beam itself, and thus is used to signify when the beam arrives.
+The delay between the BES and the RWM signal is approximately 333 us.
+Recording the timestamps of these beam signals provides valuable tools for various monitoring purposes. 
 
-Another application of the SPEC-TDC is to timestamping the trigger signals. 
-Referencing back to Fig. \ref{}, an event contains three types of trigger: a single Event Trigger, multiple Flash Triggers and CRT Triggers. 
-The Event Trigger and the Flash Triggers are issued relative to the beam, such that the PTB only issues triggers within the beam window.   
-The SPEC-TDC is set up to record specifically the timestamps of the Event Trigger and the Flash Triggers.
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{SPEC_TDC}
+\caption[SPEC_TDC]{
+The photograph on the left shows the SPEC-TDC module installed at the sbnd-clk01 server.
+The diagram on the right shows the input signals into the module for timestamping purposes.
+}
+\label{fig:SPEC_TDC}
+\end{figure}
 
-The last available channel of the SPEC-TDC used to record the clock reset signals for the CRT. 
-Upon receiving this signal, the CRT hardware readouts reset the counters of its internal clocks.
-Thus, monitoring this signal provides direct measurement of the resolution of the CRT clocks.
-This study was carried out by the author and is described in section \ref{}.
+Additionally, the SPEC-TDC timestamps the trigger signals, which offer insights of the DAQ synchronisation with respect to the triggers. 
+Referencing back to Fig. \ref{fig:daq_overview}, an event contains two types of trigger: a single Event trigger and multiple Flash triggers. 
+Both types of triggers are issued relative to the beam, such that the PTB only issues triggers within the beam spill window.   
+The recorded trigger timestamps can be cross referenced to the beam timestamps, and thus, enabling monitoring of the triggering synchronisation to the beam in real-time.
+
+The last available channel of the SPEC-TDC used to record the clock reset signals for the CRT readouts. 
+Upon receiving this signal, the CRT readouts reset the counters of its internal clocks.
+Thus, monitoring this signal provides direct measurement of the resolution of the CRT readouts clocks.
+This study was carried out by the author and is described in section \ref{section5.3}.
 
 SPEC-TDC capabilities of high precision timestamping can be leveraged for physics application.
 Recording both the timestamps of the beam and trigger signal in a single event opens up venues for various physics applications. 
 One example is the characterisation of timing resolution the DAQ hardware readouts, by directly comparing the timestamps produced by the hardware against the timestamps of the SPEC-TDC given that both share the common time reference to the PPS signal.
-Furthermore, it also provides additional useful timing information for downstream analysis, for example, applying timing correction for hardware resolution and providing alternative method for event timing reconstruction. 
+Furthermore, it provides useful timing information for downstream analysis, for example, applying timing correction for hardware resolution and providing alternative method for event timing reconstruction. 
 The SPEC-TDC applications are to be explored in the future includes nanosecond timing reconstruction, allowing for physics application such as cosmics rejection and physics searches between neutrino bucket.
 
-The author has worked extensively on installing, testing and calibrating the SPEC-TDC.
-The author carried out the hardware installations of the SPEC-TDC, by testing out two different PCIe connections on two different servers. 
+The author has worked extensively on installing, testing and calibrating the SPEC-TDC over her visits at Fermilab.
+The  conducted work included the hardware installations of the SPEC-TDC, by testing out two different PCIe connections on two different servers. 
 One server can hold the SPEC-TDC horizontally whilst the other can hold the SPEC-TDC vertically. 
 The latter was chosen due to better structural support and ventilation to host the SPEC-TDC.
-The author also worked on refining the boardreader of the SPEC-TDC. Some notable improvements are correcting timestamp values and increasing the rate at which the boardreader empties its buffer so that it can process higher data rate.
+The software boardreader of the SPEC-TDC also had some improvements implemented by the author, namely, better timestamp correction and higher data processing rate.
 The calibration work included measuring a constant offset introduced by the SPEC-TDC hardware to be 58 ns.
 
 %********************************** %Second Section  **************************************
@@ -229,13 +275,12 @@ The calibration work included measuring a constant offset introduced by the SPEC
 \label{section5.3}
 
 %CRT FEB
-The CRT detection system consists of 7 CRT planes, and is readout by 144 Front End Board (FEB) modules. 
-A single FEB module a multifunctional board and is capable to serve 32 channels, one channel per SiPM (silicon photomultiplier). 
-First it can provide a bias voltage which can be adjustable for individual SiPM.
-It also provides signal amplification and shaping for each channel.
-Once the signal is shaped, the FEB can apply signal discrimination and basic signal coincidence for each pair of SiPM as well as coincidence with other FEBs.
-Once the signal passes the trigger, it is digitised and timestamped with reference pulse.
-The data is stored in a buffer and can be readout via Ethernet connection.
+The CRT detection system consists of 7 CRT planes, and is readout by 144 Front End Board (FEB) modules \cite{}. 
+A single FEB module a multifunctional board and is capable to serve 32 channels, one channel per Silicon PhotoMultiplier (SiPM). 
+First it can provide a bias voltage which can be adjustable for individual SiPM as well as signal amplification and shaping.
+Once the signal is shaped, the FEB can apply signal discrimination and self-triggering, such as coincidence for each pair of SiPM and coincidence across multiple FEBs.
+Once the signal passes the trigger, it is digitised and timestamped with respect to the reference clock.
+The data is stored in a buffer and readout via Ethernet connection.
 The following section focuses on the characterisation on the timing resolution of the FEB module.
 
 %Do I need to explain what CRT panel is made of? Or should I explain it in the detector chapter?
@@ -287,6 +332,7 @@ This indicated that the FEB module 79 consistently received the PPS signal to re
 %TODO: Plot
 
 %T1 Clock 
+%Furthermore, these timestamps can also be used to evaluate the timing resolution of the CRT electronics, which use the BES signals for internal clock resets.
 As shown previously, the T1 clock of the FEB module is reset by the BES signal.
 The T1 clock reset event were selected and their timestamps were examined, specifically the T0 timestamps.
 The SPEC-TDC also records the arrival of BES signal with respect to the PPS signal.
