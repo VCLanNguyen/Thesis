@@ -472,60 +472,77 @@ Additionally, combining timestamps recorded by the SPEC-TDC with other hardware 
 \label{section5.4}
 
 %CAEN digitizer
-SBND has 120 PMTs as part the Photon Detection System. 
-The PMTs are readout by 8 CAENV1730 digitizers \cite{}.
+SBND has 120 PMTs as part the Photon Detection System and they are readout by 8 CAENV1730 digitizers \cite{caen_manuals}.
 The CAENV1730 digitizer is capable of recording waveforms for 16 channels independently with a sampling rate of 500 MHz.
-SBND currently uses the model V1730SB which has a deeper buffer to save longer waveform as well as higher data rate.
+SBND currently uses the model V1730SB which has a deeper buffer to save longer waveform as well as to handle higher data rate.
 The model also offers better waveform baseline stability against temperature fluctuation.
-Multiple CAEN digitizers can be synchronised to build up a complex system to behave as a single digitizer.
-The following section focuses on the characterisation and synchronisation of multiple CAEN digitizers.
+Multiple CAEN digitizers can be synchronised to make up one complex system, such that they all behave as a single digitizer.
+Thus, the following section evaluates the timing precision of CAEN digitizer by characterising the synchronisation across multiple digitizers.
 
 \subsection{CAEN Digitizer Clock}
-
+\label{section5.4.1}
 %clock of a single digitizer
-The clock distribution of the CAEN digitizer is a complex system \cite{}.
-There are two clock domains in the hardware: OSC-CLK and REF-CLK.
+The clock distribution of the CAEN digitizer is made up of two clock domains in the hardware: OSC-CLK and REF-CLK.
 The OSC-CLK is a fixed internal oscillator that has a frequency of 50 MHz. 
-This clock is responsible for handling communication between the mother and the mezzanines such as local bus, universal serial bus and optical link.
-The REF-CLK is the one that handles sampling and triggering frequency via a clock chain.
+This clock is responsible for handling communication between the motherboard and the mezzanines such as local bus, universal serial bus and optical link.
+The REF-CLK handles sampling and triggering frequency via a clock chain.
 The source of the REF-CLK can either be internal or external.
 For internal mode, the REF-CLK is referenced to the OSC-CLK of frequency 50 MHz.
 For external mode, the REF-CLK is fed by an external frequency via the CLK-IN connector. 
 
 %What are the clocks
 The REF-CLK is the clock of interest to ensure synchronous sampling and triggering rate, and thus the timing precision of the CAEN digitizers.
-The REF-CLK frequency is input to a phase-locked-loop and clock distribution device AD9510 to generate three types of frequencies: the ADC sampling clock, the trigger logic clock and the output clock via the CLK-OUT connector.
-The ADC sampling frequency is 500 MHz and handles the sampling rate of the waveform such that every tick of the waveform is 2 ns. 
-The trigger clock is 125 MHz is responsible for handling the triggering and synchronisation logic.
-It produces a timestamp object called Trigger Time Tag (TTT), which is the number of ticks since the trigger clock last resets where a tick is 8 ns.
-The trigger clock is readout every two clock cycles and thus, can introduce fluctuation up to 16 ns.
-The third clock is a frequency that is output via the CLK-OUT connector and can be propagated to another CAEN digitizer for synchronisation purposes.
-This frequency is programmable and the standard configuration is 62.5 MHz, which is in phase with both the sampling and trigger clock.
-The AD9510 device must be programmed for a specific input frequency to the REF-CLK, to ensure that the frequencies of the sampling trigger and the output clock is locked in phase with the input.
+The REF-CLK frequency serves as an input to a phase-locked-loop and clock distribution device AD9510, generating three types of frequencies: the ADC sampling clock, the trigger logic clock and the output clock via the CLK-OUT connector.
+The ADC sampling frequency, set as 500 MHz, handles the sampling rate of waveforms and therefore, the tick value of recorded waveforms is 2 ns. 
+The trigger clock operates at 125 MHz and is responsible for handling the triggering and synchronisation logic.
+For every waveform recorded, it generates a timestamp object associated with the waveform, called Trigger Time Tag (TTT)
+This timestamp is equivalent to the number of ticks since the trigger clock last resets, where each tick is 8 ns.
+The trigger clock is read every two clock cycles, potentially introducing fluctuations up to 16 ns.
+The third clock is a frequency that is output via the CLK-OUT connector and can be propagated to another CAEN digitizer for synchronisation purpose.
+This frequency is programmable, with the standard configuration set as 62.5 MHz, which the frequency value in phase with both the sampling and trigger clocks.
+The AD9510 device must be programmed for a specific input frequency to the REF-CLK, to ensure that the frequencies of the sampling, the trigger and the output clock is locked in phase with the input.
 
 %What are input to the clocks
 At SBND, the CAEN digitizers are configured to use an external clock fed to the REF-CLK, such that their internal clocks are referenced to the WR timing system. 
-Each CAEN Digitizer takes two external inputs: one is the PPS clock that goes into the S-IN connector and one is an external frequency that goes to the CLK-IN connector.
-The PPS signal resets the counter of the trigger clock, such that the TTT is with respect to the PPS signal.
-The frequency input to the CLK-IN connector changes depending on the clock synchronisation scheme. 
-It can be either from the SVEC-FD cards which is the 10 MHz frequency, or can be from another CAEN digitizer CLK-OUT which is the 62.5 MHz frequency.
+Each CAEN Digitizer receives two external inputs: one is the PPS signal that is input into the S-IN connector, and the other is an external frequency that goes to the CLK-IN connector.
+The PPS signal resets the counter of the trigger clock, such that the generated TTT value is with respect to the PPS signal.
+The frequency input to the CLK-IN connector varies based on the clock synchronisation scheme. 
+It can be either from the SVEC-FD modules, which make the standard 10 MHz clock, or can be from another CAEN digitizer CLK-OUT, which make the standard 62.5 MHz frequency.
 
 %clock synchronisation
 As previously stated, multiple CAEN digitizers can be synchronised. 
-This can be done via two different clock synchronisation scheme: fan out mode or daisy chain mode as shown in Fig. \ref{}.
+This can be achieved through two different clock synchronisation schemes: fan out mode or daisy chain mode as shown in Fig. \ref{fig:clock_scheme}.
 In fan out mode, each individual digitizer is input with the same 10 MHz clock.
-The 10 MHz clock is produced by the SVEC-FD card, input to a LVDS fan out and then the CLK-IN connector of each digitizer.
+The 10 MHz clock is produced by the SVEC-FD card, input to an LVDS fan out, and then into the CLK-IN connector of each digitizer.
 In this configuration, every CAEN digitizer should receive identical external frequency for the REF-CLK that generates the sampling and trigger clock.
 In daisy chain mode, the first digitizer in the daisy chain receives the 10 MHz clock, known as the master clock.
-Its clock is propagated to next digitizer in the chain, known as the slave clock.
-The master clock can be programmed with a precise delay to account for cable length such that the master and slave clock are in phase with each other.
-The clock propagation continues from one digitizer to the next digitizer in the chain, until the last digitizer in the chain is in the same clock phase as the first digitizer in the chain. (See Appendix ?? for more details) 
+Its clock is then propagated to the next digitizer in the chain, known as the slave clock.
+The master clock can be precisely programmed with a delay to account for cable lengths, ensuring that the master and slave clocks are in phase with each other.
+The clock propagation continues from one digitizer to the next digitizer in the chain, until the last digitizer in the chain is in the same clock phase as the first digitizer in the chain.  
+
+\begin{figure}[htbp!]
+\begin{subfigure}[h]{0.49\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{daisychain}
+\caption{Daisy Chain}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{0.49\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{fanout}
+\caption{Fan Out}
+\end{subfigure}%
+\caption{
+This diagram illustrates two different synchronisation clock schemes for the CAEN digitizers, daisy chain (left) and fan out (right).
+}
+\label{fig:clock_scheme}
+\end{figure}
 
 \subsection{Evaluation of Timing Synchronisation}
-
+\label{section5.4.2}
 Over the summer of 2023, the author has travelled to Fermilab for the second time to conduct the work on evaluating the timing resolution and synchronisation of the CAEN digitizers.
 The first task was to determine which clock scheme to be used for physics run. 
-The goal was to achieve synchronisation across all 8 CAEN digitizers and with respect to other DAQ subsystems.
+The goal was to achieve synchronisation across all 8 CAEN digitizers and with respect the timing system of the DAQ.
 
 %set up
 The set up for the study consisted of 8 CAEN digitizers as shown in Fig. \ref{}. 
@@ -534,95 +551,198 @@ The trigger rate was set as 1 Hz.
 To evaluate metric whether the CAEN digitizers are synchronised with each other, the timestamps of every triggered event from every digitizer should be identical with respect to each other. 
 
 The trigger signal was also input to the SPEC-TDC for timestamping.
-Thus, timestamps recorded by the CAEN digitizers and the SPEC-TDC can be compared against each other since they are both with respect to the PPS signal.
-The SPEC-TDC has a higher level of precision compared to the CAEN digitizer and thus, the comparison help characterising the resolution of the timestamps produced the CAEN digitizer. 
-This also allowed to evaluate whether each CAEN digitizer is synchronised with respect to WR timing system.
+Timestamps of the trigger recorded by the CAEN digitizers and the SPEC-TDC can be compared against each other since both are referenced to the PPS signal.
+The SPEC-TDC offers a higher level of precision compared to the CAEN digitizer.
+Therefore, the comparison helps characterising the resolution of the timestamps produced the CAEN digitizer. 
+This comparison also evaluates whether each CAEN digitizer is synchronised with respect to the PPS signal.
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{TTT_diagram}
+\caption[TTT_diagram]{
+The diagram illustrate the how the CAEN digitizer constructs a Trigger Time Tag object upon receiving a trigger.
+The timestamp embedded in the Trigger Time Tag accounts for a fixed buffer time the digitizer takes to generate the Trigger Time Tag upon receiving a trigger.
+This timestamp also points the end the recorded waveform.
+}
+\label{fig:TTT_diagram}
+\end{figure}
 
 %CAEN Timestamp
-In order to compare the CAEN timestamps against the SPEC-TDC timestamp directly, one needs to understand the CAEN digitizer timestamp is constructed and differs to other hardware.
-Both the SPEC-TDC and the FEB modules construct the timestamps instantaneously as they receive a trigger.
-Fig. \ref{} illustrates how a CAEN digitizes construct the timestamp since it is not an instantaneous process.
-Upon receiving a trigger, the digitizer has a fixed buffer time before generating the timestamps.
-The generated timestamp also pointed to the end of the waveform such that it is the timestamp value is the last tick on the waveform.
-Therefore, the timestamp of the CAEN digitizer and the SPEC-TDC are corrected to the same reference frame and it was chosen to be the time at which the trigger leaves the PTB front face.
-If all the hardware are synchronised with each other, the difference in the timestamp is 0.
+In the previous section, the timestamps generated by the FEB module only needed adjustedment for cable lengths before being compared against the SPEC-TDC timestamps, since both the FEB modules and SPEC-TDC instantaneously generate timestamps upon receiving a trigger.
+Meanwhile, the CAEN digitizer generates a timestamp object called TTT associated with every trigger, and this timestamp is not instantaneous upon the trigger arrival time, as illustrated in Fig. \ref{fig:TTT_diagram}. 
+Upon receiving a trigger at the TRG-IN connector, the digitizer has a fixed buffer time before the trigger action occurs and generates a TTT.
+The generated TTT also points to the end of the waveform, such that it is the timestamp value of the last tick on the waveform.
+Therefore, to ensure consistency in comparing the timestamps of the CAEN digitizer and the SPEC-TDC, they need to be corrected to the same reference frame, which was chosen to be the time at which the trigger leaves the PTB front face.
+If both the CAEN digitizers and the SPEC-TDC synchronised with each other, the difference in the timestamps should be 0.
+
+\begin{figure}[htbp!]
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{TTT_SPEC_diff_run7980}
+\caption{Run7980}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{TTT_SPEC_diff_run8060}
+\caption{Run 8060}
+\end{subfigure}%
+\caption{
+The comparison of the timestamps produced by the CAEN digitizer against those produced by the SPEC-TDC with the CAEN digitizers employing the daisy chain clock scheme.
+Run 7980 shows perfect synchronisation whilst run 8060 shows the effect of clock drifting in a daisy chain clock scheme.
+}
+\label{fig:daisychain_spec}
+\end{figure}
 
 %Result from daisy chain
-The daisy chain clock was tested out for multiple DAQ runs over a few days. 
-An example run result is shown in Fig. \ref{} for run 7980 and run 8060.
-Run 7980 result showed perfect synchronisation across all the 8 CAEN digitizers, as well as synchronisation with respect to the SPEC-TDC.
-All the timestamps agreed within a single nanosecond and remained stable during the full run.
-Run 8060 was measured 4 days after the run 7980 and showed interesting effects.
-The board 7 in the daisy chain drifted by 8 ns, and thus, all subsequent boards in the daisy chain also drifted but remained synchronised with each other. 
-Moreover, board 5 also some straddling effect such that the timestamps jittered 8 ns.
-This behaviour is expected since the trigger clock is readout every 2 clock cycle with 8 ns per tick.
-All the timestamps were stable during the full run.
+The daisy chain clock scheme underwent testing across multiple DAQ runs over a few days. 
+An example of the results is shown in Fig. \ref{fig:daisychain_spec} for run 7980 and run 8060.
+The results for run 7980 demonstrates perfect synchronisation across all 8 CAEN digitizers, as well as synchronisation with respect to the SPEC-TDC, and thus the PPS signal.
+All the timestamps agree within a single nanosecond and remain stable during the full run.
+In contrast, run 8060 was taken 4 days after run 7980 and exhibited interesting effects.
+Board 7 in the daisy chain drifted by 8 ns, causing all subsequent boards in the daisy chain to also drift, yet they remained synchronised with each other. 
+Moreover, board 5 also shows a straddling effect, resulting in a jittering of 8 ns.
+This straddling behaviour is expected since the trigger clock of CAEN digitizer is read every 2 clock cycles, introducing fluctuations twice the tick value of 8 ns.
+Both these runs also show that board 18 stopped taking data a while into the DAQ run, which was found to be due to a malfunctioning temperature sensor in this CAEN digitizer.
+This digitizer was sent away to the manufacturer for repair.
+
+\begin{figure}[htbp!]
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{TTT_SPEC_diff_run8178}
+\caption{Run8178}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{TTT_SPEC_diff_run8196}
+\caption{Run 8196}
+\end{subfigure}%
+\caption{
+The comparison of the timestamps produced by the CAEN digitizer against those produced by the SPEC-TDC with the CAEN digitizers employing the fan out clock scheme.
+Since the input frequency of 10 MHz is not phase with the trigger clock frequency of 125 MHz, this introduces a random phase offset in timestamps across all the digitizers and different runs. 
+}
+\label{fig:fanout_spec}
+\end{figure}
 
 %Result from fan out
-The same test was repeated for the fan out clock fan scheme, where multiple DAQ runs were carried out over a few days.
-An example run result is shown in Fig. \ref{} for run 8178 and run 8196.
-Both of these runs showed the same straddling effect for board 5, such that the timestamps jittered 8 ns.
-Moreover, the key difference in this clock scheme is that the timestamps recorded by each CAEN digitizer varied randomly from digitizer to digitizer, and also from one run to another.
-This was due to the fact that the input frequency to the CLK-IN is 10 MHz.
-As explained previously, the trigger clock is generated by the AD9510 chip, which produces frequency in phase with the input.
-The trigger clock is of frequency 125 MHz whilst the input frequency is of 10 MHz, which are not multiples of each other and therefore are not in phase.
-To produce out-of-phase frequency, the AD9510 latches to the first rising edge of the input frequency upon the digitizer initialisation. 
-This means that for every DAQ run, the digitizer is initialised which introduces a new random phase offset and thus the timestamp can vary from run to run.
-The 10 MHz clock is distributed in fan out configuration to every digitizer, and thus, the trigger clock of each digitize independently has a different offset.
-This results in the timestamp variation from one digitizer to another.
+The same test was repeated for the fan out clock fan scheme, where multiple DAQ runs were conducted over a few days.
+An example of the run results is shown in Fig. \ref{fig:fanout_spec} for run 8178 and run 8196.
+In both of these runs, board 5 shows the same straddling effect, causing timestamps to jitter by 8 ns.
+One key difference in this clock scheme is that the timestamps recorded by each CAEN digitizer varies randomly between digitizers and across different runs. 
+This variation is due to the input frequency to the CLK-IN connector set at 10 MHz.
+As previously explained, the trigger clock is generated by the AD9510 chip, which must be in phase with the input frequency. 
+However, the trigger clock operates at a frequency of 125 MHz, while the input frequency remains at 10 MHz. 
+Since these frequency values are not multiples of each other, they do not agree in phase.
+To generate an out-of-phase frequency, the AD9510 chip latches onto the first rising edge of the input frequency upon the digitizer initialisation. 
+Consequently, when the CAEN digitizer is initialised at the beginning of every DAQ, a random phase offset is introduced, causing the timestamps to vary from run to run.
+Moreover, the 10 MHz clock is distributed in fan out scheme to every digitizer resulting in the phase offset varies randomly from one digitizer to another.
 
 %settle for daisy chain over fan
-Comparing between the two clock scheme, the daisy chain mode offers better synchronisation across the 8 CAEN digitizers compared to the fan out mode.
-This is due to only the first CAEN in the daisy chain receives the external 10 MHz clock.
-The master clock CAEN digitizer can have a random phase offset and it will be propagated down the daisy chain, resulting in all digitizers in synchronisation with each other.
-Although it is important to note that the some clock drift effects has been observed when testing out the daisy chain scheme, which requires monitoring during the commissioning period to understand the impacts of the clock drift.
+Comparing between the two clock schemes, the daisy chain mode offers better synchronisation across the 8 CAEN digitizers compared to the fan out mode.
+In the daisy chain scheme, only the first CAEN in the daisy chain receives the external 10 MHz clock.
+The master clock CAEN digitizer can have a random phase offset that propagtes down the daisy chain, resulting in synchronisation across all digitizers.
+However, it is important to note that the clock drift effect has been observed while testing the daisy chain scheme
+Monitoring these effects during the commissioning period is necessary to understand the impacts of the clock drift."
 
 \subsection{Clock Jittering Correction}
 
-To further characterise the timing resolution of the CAEN digitizer, an additional step is added to understand how the board digitizes the waveform.
-The CAEN digitizer saves the waveform as an array of ADC values.
-To add the timing context to waveform, one needs to use the Trigger Time Tag value produced by the trigger clock.
-As demonstrate in Fig. \ref{}, the TTT is the timestamp of the last tick of waveform, and thus, this provides the timing information to construct the rest of the ticks on the waveform.
-From the manuals of the digitizer, it points out that the trigger clock and the ADC sampling clock are synchronised with respect to each other.
-Thus, this task aimed to test whether all 8 CAEN digitizers can digitize waveform in synchronisation with each other within a nanosecond. 
+To further characterise the timing resolution of the CAEN digitizer, an additional test was added to understand how precisely the board digitizes the waveform.
+As demonstrate in Fig. \ref{fig:TTT_diagram}, the TTT object is the timestamp of the last tick of waveform, and thus, this provides the timing information to construct the timing of the waveform.
+From the manuals of the digitizer, it is indicated that the trigger clock and the ADC sampling clock are synchronised with respect to each other.
+Thus, this test aimed to test whether all 8 CAEN digitizers can digitize waveform in synchronisation with each other within a nanosecond. 
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{digitize_ftrig}
+\caption[digitize_ftrig]{
+The set up for study the synchronisation of the CAEN digitizers and their timing resolution.
+In this set up, the 1 Hz trigger is produced from the PTB, and input into the TRG-IN channel of each CAEN for simultaneous triggering.
+The timestamp of the trigger is embedded in the Trigger Time Tag object.
+The trigger is also propagate to a fan out module, and input into channel 15 of every CAEN digitizer.
+The waveform of the trigger signals is expected to be digitized simultaneously. 
+}
+\label{fig:digitize_ftrig}
+\end{figure}
 
 %setup
 This study used the same set up as described in the previous section.
-An additional setup was to input the trigger into channel 15 of every CAEN digitizer with the same amount of cable length so that all triggers would arrive simultaneously.
-With this setup, every CAEN digitizer would also receive simultaneous trigger signals to the S-IN connectors as well as simultaneous signals to channel 15 for digitizing.
-
-The daisy chain clock programming was also re-visited for this study.
-As described in earlier section, the clock propagation from the master clock to the slave clock needs to be delayed with a precise amount such that their clocks are exactly in phase.
-This calibration process was improved to ensure that not only every digitizer would produce identical timestamps for simultaneous triggers, but also every digitizer would digitize the trigger signals simultaneously.
-The result after the process is demonstrated in Fig. \ref{}.
-This shows that every digitizer have the same timestamp, as well we digitize the trigger signal at the exact same tick position on the waveform.
-This results in identical timestamps of the tick value on the rising edge of trigger signals across all 8 CAEN digitizers.
+An additional setup was to input the trigger into channel 15 of every CAEN digitizer with the same amount of cable length so that all triggers would be digitized simultaneously as shown in Fig. \ref{fig:digitize_ftrig}.
+In this configuration, the trigger would be timestamped in the TTT object, as well digitized as a waveform. 
 
 %two different modes to compare timestamp
-This presents two types of timestamps produced by the CAEN digitizer.
-This is illustrated in Fig. \ref {}.
-One is the timestamp comes from the TTT value produced by the trigger clock of the CAEN, and were examined in the synchronisation study in section \ref {}.
-This timestamp is now referred as the TTT-derived timestamp.
-The timestamp of the tick value on the rising edge of the trigger signal is referred as the tick-derived timestamp, since this timestamp requires the knowledge of the tick position of the trigger on the waveform.
+This set up presents two types of timestamps produced by the CAEN digitizer.
+As illustrated in Fig. \ref {fig:TTT_diagram}, one timestamp is derived from the TTT value produced by the trigger clock of the CAEN digitizer.
+These timestamps were examined in the synchronisation study in section \ref{section5.4.2}.
+This type of timestamp is now referred as the TTT-derived timestamp.
+Given that the waveform of the trigger signal is now digitized, one can determine the rising edge of the trigger signal.
+This gives a tick value on the waveform and thus, the timestamp associated to this tick which can be derived from the TTT value.
+This type of timestamp is referred as the tick-derived timestamp, since this timestamp requires the knowledge of the tick position of the trigger on the waveform as well as the TTT value.
 Both these timestamps are compared against the SPEC-TDC timestamps of the trigger signals, to the same reference frame at which the trigger leaves the PTB front face.
-Corrections were applied, including cable length differences.
+Cable length corrections were also applied.
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{daisychain_calib}
+\caption[daisychain_calib]{
+After the daisy chain calibration, the waveforms of the simultaneous triggers are plotted to check for synchronisation.
+The TTT values associated with the each waveform are identical, showing that the digitizers receive triggers at the same time.
+The waveforms of the triggers are zoomed around the rising edge, showing the identical tick value of the rising edge, showing that all the boards also digitize the trigger at the same time.
+Board 17 is an exception because it has a different firmware compared to the rest of the digitizers and digitizes the waveform slightly different.
+}
+\label{fig:daisychain_calib}
+\end{figure}
+
+The daisy chain clock scheme was also re-calibrated before conducting this study.
+As described in section \ref{section5.4.1} on the overview of the CAEN digitizer clock, the clock propagation from the master clock to the slave clock needs to be delayed with a precise amount such that their clocks are exactly in phase.
+This calibration process was to ensure that not only every digitizer would produce identical timestamps for simultaneous triggers, but also would digitize the trigger signals simultaneously.
+The result after the process is demonstrated in Fig. \ref{fig:daisychain_calib}, showing that every digitizer has the same timestamp and digitizes the trigger signal at the exact same tick position on the waveform.As a result, the timestamps of the tick value on the rising edge of trigger signals, or the tick-rived timestamps, are identical across all 8 CAEN digitizers.
 
 Multiple DAQ runs were taken for this study over a period of one month.
 Each run duration varied from less than an hour up to 10 hours.
-The purpose for this was also to test the stability of the synchronisation of the daisy chain and its effects on the resolution of the produced timestamps. 
-The study analysis was conducted on 30 runs data set.
+The purpose of this was also to test the stability of the synchronisation of the daisy chain and its impact on the resolution of the produced timestamps.
+This timing resolution study was conducted on a dataset of 30 runs.
+
+\begin{figure}[htbp!]
+
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{TTTts_spec}
+\caption{TTT-derived timestamps}
+\label{subfig:TTTts_spec}
+\end{subfigure}
+
+\hfill
+\begin{subfigure}[h]{1.00\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{Tickts_spec}
+\caption{Tick-derived timestamps}
+\label{subfig:Tickts_spec}
+\end{subfigure}%
+
+\caption{
+Th two timestamps distributions generated by the CAEN digitizers, compared against the SPEC-TDC timestamps.
+The TTT-derived timestamps show a large spread up to 24 ns whilst the Tick-derived timestamps show a much smaller spread of only 8 ns.
+}
+\end{figure}
 
 %TTT timestamps
-The TTT-derived timestamps distribution is plotted in Fig. \ref {} for 6 CAEN digitizers.
-Since these timestamps are plotted with respect to when the trigger signals leave the PTB, this shows the buffer time that CAEN digitizer takes upon receiving a trigger is approximately between 30 to 40 ns.
-This distribution also shows a large spread up to 24 ns wide, which indicates that TTT-derived timestamp has a variation larger than what was suggested by than manuals, that the trigger clock resolution was only 16 ns.
-The tick-derived timestamps distribution is plotted in Fig. \ref {}.
-This however, shows a much small spread of only 8 ns.
+The TTT-derived timestamps distribution is plotted in Fig. \ref {subfig:TTTts_spec} for 7 CAEN digitizers, compared against the SPEC-TDC timestamps.
+This distribution shows a large spread up to 24 ns, which indicates that TTT-derived timestamp has a variation larger than what is stated in the manuals, that the trigger clock resolution is 16 ns.
+The tick-derived timestamps distribution is plotted in Fig. \ref {subfig:Tickts_spec}.
+This distribution, however, shows a much small spread of only 8 ns.
 
-To understand the differences between the two types of timestamps, the tick position of the rising edge of the digitized trigger signal is also plotted in Fig. \ref {}.
-The distribution shows a large spread up to 10 ticks, equivalent to 20 ns.
-This behaviour indicates that the CAEN digitizer does not digitize waveform simultaneously and it can vary from event to event, run to run and board to board.
-This means that not only the trigger clock can jitter, but also the ADC sampling clock of the CAEN digitizer can also jitter and introduce smearing.
+To understand the differences between the two types of timestamps, the tick position of the rising edge of the trigger waveform is also plotted in Fig. \ref {Tick_spec}.
+The distribution shows a large spread up to 5 ticks, equivalent to 10 ns.
+This illustrates that the CAEN digitizer does not consistently digitize the trigger waveform, causing variations in the tick position of the rising edge between different events, run and digitizers.
+This implies that not only can the trigger clock of the CAEN digitizer jitter, but its ADC sampling clock can also fluctuate, potentially introducing additional smearing.
+
+\begin{figure}[htbp!]
+\centering    
+\includegraphics[width=\linewidth]{Tick_spec}
+\caption{}
+\label{fig:Tick_spec}
+\end{figure}
 
 However, it has been pointed out in the CAEN manuals such that the trigger clock and the ADC clock are correlated to each other, such that the TTT-derived timestamp points to the last tick of the waveform.
 This key point means that the trigger clock is in synchronised with the ADC sampling clock, and thus, it can track and resolve the jittering of the ADC sampling clock.
