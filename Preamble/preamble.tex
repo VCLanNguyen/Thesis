@@ -25,7 +25,7 @@
 \ifsetCustomFont
   % Set your custom font here and use `customfont' in options. Leave empty to
   % load computer modern font (default LaTeX font).
-  %\RequirePackage{helvet}
+  \RequirePackage{Fourier}
 
   % For use with XeLaTeX
   %  \setmainfont[
@@ -56,7 +56,6 @@
 
 \RequirePackage[labelsep=space,tableposition=top]{caption}
 \renewcommand{\figurename}{Fig.} %to support older versions of captions.sty
-\usepackage{hyperref}
 
 % *************************** Graphics and figures *****************************
 
@@ -73,7 +72,7 @@
 % This is for people stuck with older versions of texlive
 %\usepackage{sty/caption/subcaption}
 \usepackage{subcaption}
-
+\usepackage{graphicx}
 % ********************************** Tables ************************************
 \usepackage{booktabs} % For professional looking tables
 \usepackage{multirow}
@@ -113,12 +112,28 @@
 
 % Add `custombib' in the document class option to use this section
 \ifuseCustomBib
-   \RequirePackage[square, sort, numbers, authoryear]{natbib} % CustomBib
+%\RequirePackage[square, sort, numbers]{natbib} % CustomBib
 
 % If you would like to use biblatex for your reference management, as opposed to the default `natbibpackage` pass the option `custombib` in the document class. Comment out the previous line to make sure you don't load the natbib package. Uncomment the following lines and specify the location of references.bib file
-
-%\RequirePackage[backend=biber, style=numeric-comp, citestyle=numeric, sorting=nty, natbib=true]{biblatex}
-%\addbibresource{References/references} %Location of references.bib only for biblatex, Do not omit the .bib extension from the filename.
+\usepackage[%
+    style=phys
+    ,backend=biber
+    ,natbib=true
+    ,maxbibnames=1
+    ,biblabel=brackets
+    %,giveninits=true
+    %,abbreviate=false
+    ,doi=false 
+    ,url=false 
+    ,isbn=false
+    ,eprint=true
+    %,block=space
+    %,backref=true
+    %,backrefstyle=two
+    %,hyperref=true
+]
+{biblatex}
+\addbibresource{References/references.bib} %Location of references.bib only for biblatex, Do not omit the .bib extension from the filename.
 
 \fi
 

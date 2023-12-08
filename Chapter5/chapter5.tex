@@ -139,16 +139,6 @@ For example, the fragment generation rate is expected be consistent with the tri
 \label{fig:Grafana}
  \end{figure}
 
-%data monitoring?
-The \textit{artdaq Toolkit} also has a built-in process the bridges the event builder machines and online monitoring platforms.
-Whilst running in real-time, fragments from boardreaders and physics events can be sent to the platforms for different monitoring purposes.
-SBND currently employs two online platforms that monitors the health of the DAQ: Grafana and Minargon.
-Grafana, as displayed in Fig. \ref{fig:Grafana}, provides real-time monitoring of the status of processes being run by boardreaders and event builders. 
-Grafana monitoring also extends to include some status of the respective hardware component for each boardreader.
-Minargon, as displayed in Fig. \ref{fig:Minargon}, provides real-time the data quality monitoring. 
-This online monitoring process applies simple reconstruction and event display in order to quantitatively verify the physics characteristics of an event. 
-The author has worked extensively on developing the monitoring processes for the DAQ of the PMTs on both Grafana and Minargon monitoring platforms during her PhD course. 
-
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{Minargon}
@@ -159,6 +149,17 @@ This metric provides monitoring of the baseline equalisation and stability over 
 }
 \label{fig:Minargon}
 \end{figure}
+
+%data monitoring?
+The \textit{artdaq Toolkit} also has a built-in process the bridges the event builder machines and online monitoring platforms.
+Whilst running in real-time, fragments from boardreaders and physics events can be sent to the platforms for different monitoring purposes.
+SBND currently employs two online platforms that monitors the health of the DAQ: Grafana and Minargon.
+Grafana, as displayed in Fig. \ref{fig:Grafana}, provides real-time monitoring of the status of processes being run by boardreaders and event builders. 
+Grafana monitoring also extends to include some status of the respective hardware component for each boardreader.
+Minargon, as displayed in Fig. \ref{fig:Minargon}, provides real-time the data quality monitoring. 
+This online monitoring process applies simple reconstruction and event display in order to quantitatively verify the physics characteristics of an event. 
+The author has worked extensively on developing the monitoring processes for the DAQ of the PMTs on both Grafana and Minargon monitoring platforms during her PhD course. 
+
 %********************************** %Second Section  **************************************
 \section{Timing Reference System of the Data Acquisition}
 \label{section5.2}

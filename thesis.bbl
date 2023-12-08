@@ -1,37 +1,294 @@
-\begin{thebibliography}{}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Abramovich et~al., 1995]{AAB95}
-Abramovich, Y.~A., Aliprantis, C.~D., and Burkinshaw, O. (1995).
-\newblock Another characterization of the invariant subspace problem.
-\newblock {\em Operator Theory in Function Spaces and Banach Lattices. {\em The
-  A.C.\,Zaanen Anniversary Volume}, Operator Theory: Advances and
-  Applications}, 75:15--31.
-\newblock Birkh\"auser Verlag.
 
-\bibitem[Ancey et~al., 1996]{Ancey1996}
-Ancey, C., Coussot, P., and Evesque, P. (1996).
-\newblock Examination of the possibility of a fluid-mechanics treatment of
-  dense granular flows.
-\newblock {\em Mechanics of Cohesive-frictional Materials}, 1(4):385--403.
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{ptb_gvs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b426239cbe24741c047dd25597d19bc6}{%
+           family={Stenico},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi V.},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{fullhash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{bibnamehash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{authorbibnamehash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{authornamehash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{authorfullhash}{b426239cbe24741c047dd25597d19bc6}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2673-9984}
+      \field{journaltitle}{Physical Sciences Forum}
+      \field{number}{1}
+      \field{title}{{SBND Trigger System: Status and MTC/A Configuration}}
+      \field{volume}{8}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2673-9984/8/1/60
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2673-9984/8/1/60
+      \endverb
+    \endentry
+    \entry{artdaq_note}{article}{}
+      \name{author}{10}{}{%
+        {{hash=e874b535c7c886bbd3370b2226bbe00a}{%
+           family={Biery},
+           familyi={B\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8f508e59087210b36bc070ce8de6bbee}{%
+           family={Flumerfelt},
+           familyi={F\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c60e5cdd7e33ee322455fe4f59d30a68}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=158789e089512456210a83316835065d}{%
+           family={Ketchum},
+           familyi={K\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a60206a6ba445928a118629e8f5aef7b}{%
+           family={Lukhanin},
+           familyi={L\bibinitperiod},
+           given={Gennadiy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2fd4b13a7daf7a91c24f293939fb8190}{%
+           family={Lyon},
+           familyi={L\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=552031ffee7948352e20eb24efe9c772}{%
+           family={Rechenmacher},
+           familyi={R\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=916629c09687668f93f6ba89b50e4b14}{%
+           family={Rivera},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d10df0d934d1e5a633d89a35e3c66f20}{%
+           family={Uplegger},
+           familyi={U\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=eebe8264ff3f2b95d3ce4e57a0eaab34}{%
+           family={Votava},
+           familyi={V\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{dff0c071fd3bc2c4ec39458d09b3240c}
+      \strng{fullhash}{3dbcf2ecfd107b9c3e868b5074148efa}
+      \strng{bibnamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
+      \strng{authorbibnamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
+      \strng{authornamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
+      \strng{authorfullhash}{3dbcf2ecfd107b9c3e868b5074148efa}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Flexible and Scalable Data-Acquisition Using the artdaq Toolkit}}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1806.07250
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1460789
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1460789
+      \endverb
+    \endentry
+    \entry{WR_paper}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=65232f20c7d3005f725ec544cc78b9bd}{%
+           family={Serrano},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0ca5602e65a3913d602b07e6ec0db86f}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=866ccff7186fa233668fb4e1959addb4}{%
+           family={Cattin},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=656da732850464fc80ed77591f92456f}{%
+           family={Cota},
+           familyi={C\bibinitperiod},
+           given={E.\bibnamedelimi G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e640fd88016661a84e90213ee7bd0757}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={P.\bibnamedelimi M.\bibnamedelimi J.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2c63a9ca1ea8ffe9e6ea5f7dc5c12ba7}{%
+           family={T.Włostowski},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{32cea9e2e3335493479484e6364cb2c0}
+      \strng{fullhash}{6664cb0375024e060f2bce5850c604a4}
+      \strng{bibnamehash}{32cea9e2e3335493479484e6364cb2c0}
+      \strng{authorbibnamehash}{32cea9e2e3335493479484e6364cb2c0}
+      \strng{authornamehash}{32cea9e2e3335493479484e6364cb2c0}
+      \strng{authorfullhash}{6664cb0375024e060f2bce5850c604a4}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings of the 12th International Conference on Accelerator and Large Experimental Physics Control Systems}}
+      \field{isbn}{978-4-9905391-0-8}
+      \field{title}{{The White Rabbit Project}}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{pages}{93}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://accelconf.web.cern.ch/icalepcs2009/papers/tuc004.pdf
+      \endverb
+      \verb{url}
+      \verb https://accelconf.web.cern.ch/icalepcs2009/papers/tuc004.pdf
+      \endverb
+    \endentry
+    \entry{crt_note}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e50ccecf29175fc95d4a77a6679d8ed7}{%
+           family={Kreslor},
+           familyi={K\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \strng{fullhash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \strng{bibnamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \strng{authorbibnamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \strng{authornamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \strng{authorfullhash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{{SBND Collaboration}}
+      \field{title}{{SBND CRT Technical Note}}
+      \field{type}{techreport}
+      \field{year}{2016}
+    \endentry
+    \entry{crt_clock}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=88031e20a59504023839a1d3eb2d62ea}{%
+           family={Aloisio},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=52ef1951ac75d1a1f6a016bc92315729}{%
+           family={Branchini},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=501e0527ff5355ffb5da57b693f5fb12}{%
+           family={Cicalese},
+           familyi={C\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ab3d1ffaefbba85725b6bb850a398509}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Raffaele},
+           giveni={R\bibinitperiod}}}%
+        {{hash=42d89712cc051f95159999e49a8c323d}{%
+           family={Izzo},
+           familyi={I\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2229a965b9e752db63f5d1a93997e6bd}{%
+           family={Loffredo},
+           familyi={L\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e1603dccee81a707524ea249e577338}
+      \strng{fullhash}{21c8bc417cf0b5624ec8d3fa90cde7d7}
+      \strng{bibnamehash}{4e1603dccee81a707524ea249e577338}
+      \strng{authorbibnamehash}{4e1603dccee81a707524ea249e577338}
+      \strng{authornamehash}{4e1603dccee81a707524ea249e577338}
+      \strng{authorfullhash}{21c8bc417cf0b5624ec8d3fa90cde7d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{2007 IEEE Nuclear Science Symposium Conference Record}}
+      \field{title}{{FPGA implementation of a high-resolution time-to-digital converter}}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{pages}{504}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/NSSMIC.2007.4436379
+      \endverb
+    \endentry
+    \entry{caen_manuals}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1aa25e67cbd936d2815ee689ff17bb6e}{%
+           family={{CAEN SpA}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{fullhash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{bibnamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{authorbibnamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{authornamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{authorfullhash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{V1730/VX1730 \& V1725/VX1725 User Manual}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.caen.it/products/v1730/
+      \endverb
+      \verb{url}
+      \verb https://www.caen.it/products/v1730/
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{AAB95}
+  \missing{Ancey1996}
+  \missing{Aup91}
+  \missing{Con90}
+  \missing{LM65}
+  \missing{Rea85}
+\endrefsection
+\endinput
 
-\bibitem[Aupetit, 1991]{Aup91}
-Aupetit, B. (1991).
-\newblock {\em A {Primer} on {Spectral} {Theory}}.
-\newblock Springer-Verlag, New York.
-
-\bibitem[Conway, 1990]{Con90}
-Conway, J.~B. (1990).
-\newblock {\em A {Course} in {Functional} {Analysis}}.
-\newblock Springer-Verlag, New York, second edition.
-
-\bibitem[Ljubi\v{c} and Macaev, 1965]{LM65}
-Ljubi\v{c}, J.~I. and Macaev, V.~I. (1965).
-\newblock On operators with a separable spectrum.
-\newblock {\em Amer. Math. Soc. Transl. (2)}, 47:89--129.
-
-\bibitem[Read, 1985]{Rea85}
-Read, C.~J. (1985).
-\newblock A solution to the invariant subspace problem on the space $l_1$.
-\newblock {\em Bull. London Math. Soc.}, 17:305--317.
-
-\end{thebibliography}
