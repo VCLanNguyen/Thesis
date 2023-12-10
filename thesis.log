@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  8 DEC 2023 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  10 DEC 2023 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -13,6 +13,9 @@ LaTeX Warning: You have requested document class `Classes/PhDThesisPSnPDF',
 
 Document Class: PhDThesisPSnPDF 2016/04/23 A PhD thesis class file by Krishna Kumar (v2.3.1)
 https://github.com/kks32/phd-thesis-template/
+
+Class PhDThesisPSnPDF Warning: You have chosen an option that generates only selected chapters with references, if this was intentional, ignore this warning. If not, please remove the option `chapter' from the document class and recompile. Good luck with your writing! on input line 238.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -479,15 +482,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip56
 )
-Package hyperref Info: Option `final' set `true' on input line 621.
-Package hyperref Info: Option `plainpages' set `false' on input line 621.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 621.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 621.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 621.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 621.
-Package hyperref Info: Option `breaklinks' set `true' on input line 621.
-Package hyperref Info: Option `linktocpage' set `true' on input line 621.
-Package hyperref Info: Option `colorlinks' set `true' on input line 621.
+Package hyperref Info: Option `final' set `true' on input line 652.
+Package hyperref Info: Option `plainpages' set `false' on input line 652.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 652.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 652.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 652.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 652.
+Package hyperref Info: Option `breaklinks' set `true' on input line 652.
+Package hyperref Info: Option `linktocpage' set `true' on input line 652.
+Package hyperref Info: Option `colorlinks' set `true' on input line 652.
  (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -537,7 +540,7 @@ Package tocbasic Info: setting babel extension for `nls' on input line 164.
 \@nomenclaturefile=\write3
 \openout3 = `thesis.nlo'.
 
-Package nomencl Info: Writing nomenclature file thesis.nlo on input line 1025.
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 1029.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
@@ -547,7 +550,34 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 
 Writing index file thesis.idx
-) (./Preamble/preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+)) (./Preamble/preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
@@ -903,46 +933,46 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 ) (./thesis-info.tex)
 \@quotelevel=\count464
 \@quotereset=\count465
- (./thesis.aux (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
+ (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+(./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 119.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 119.
-
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 118.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 118.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 119.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 119.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 118.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 119.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 119.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 118.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count466
@@ -959,16 +989,16 @@ LaTeX Font Info:    ... okay on input line 119.
 ) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 119.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 119.
-LaTeX Info: Redefining \microtypecontext on input line 119.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 118.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 118.
+LaTeX Info: Redefining \microtypecontext on input line 118.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 119.
+LaTeX Info: Redefining \showhyphens on input line 118.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -977,7 +1007,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 119.
+Package hyperref Info: Link coloring ON on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -987,9 +1017,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count472
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 118.
+LaTeX Info: Redefining \pageref on input line 118.
+LaTeX Info: Redefining \nameref on input line 118.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
@@ -1004,16 +1034,15 @@ LaTeX Info: Redefining \nameref on input line 119.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
 * vratio: 1:1
-* bindingoffset: 14.22636pt
 * modes: twoside 
-* h-part:(L,W,R)=(72.91019pt, 437.46112pt, 72.9102pt)
+* h-part:(L,W,R)=(74.68848pt, 448.1309pt, 74.68849pt)
 * v-part:(T,H,B)=(105.63086pt, 633.78513pt, 105.63086pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=437.46112pt
+* \textwidth=448.1309pt
 * \textheight=633.78513pt
-* \oddsidemargin=14.86656pt
-* \evensidemargin=0.64021pt
+* \oddsidemargin=2.41849pt
+* \evensidemargin=2.4185pt
 * \topmargin=1.48708pt
 * \headheight=14.5pt
 * \headsep=19.8738pt
@@ -1031,6 +1060,10 @@ LaTeX Info: Redefining \nameref on input line 119.
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\newline' on input line 118.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1051,75 +1084,32 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (./thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                AAB95
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Ancey1996
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Aup91
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Con90
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                LM65
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Rea85
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 119.
-Package biblatex Info: Reference segment=0 on input line 119.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 119.
+ (./thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 118.
+Package biblatex Info: Reference segment=0 on input line 118.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 119.
+(Font)              scaled to size 11.03998pt on input line 118.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 119.
+(Font)              scaled to size 8.27998pt on input line 118.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 119.
+(Font)              scaled to size 6.43999pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 119.
+(Font)              scaled to size 11.03998pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 119.
+(Font)              scaled to size 8.27998pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 119.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 119.
+(Font)              scaled to size 6.43999pt on input line 118.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 119.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1133,1438 +1123,240 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\PHD@Title=\box61
-\PHD@crest=\box62
-<Figs/University_Crest.png, id=164, 1423.3175pt x 1423.3175pt>
-File: Figs/University_Crest.png Graphic file (type png)
-<use Figs/University_Crest.png>
-Package pdftex.def Info: Figs/University_Crest.png  used on input line 123.
-(pdftex.def)             Requested size: 174.98177pt x 174.96059pt.
-\PHD@collegecrest=\box63
-\PHD@author=\box64
-\PHD@supervisor=\box65
-\PHD@advisor=\box66
-\PHD@dept=\box67
-\PHD@submission=\box68
-\PHD@collegedate=\box69
-\PHD@titlepagespacing=\skip99
- [1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figs/University_Crest.png>]
-\openout2 = `Dedication/dedication.aux'.
-
- (./Dedication/dedication.tex [2
-
-
-]) [3]
-\openout2 = `Declaration/declaration.aux'.
-
- (./Declaration/declaration.tex [4
-
-
-
-]) [5
-
-]
-\openout2 = `Acknowledgement/acknowledgement.aux'.
-
- (./Acknowledgement/acknowledgement.tex [6
-
-
-
-]) [7
-
-]
-\openout2 = `Abstract/abstract.aux'.
-
- (./Abstract/abstract.tex [8
-
-
-
-]) [9
-
-] [10
-
-
-] (./thesis.toc [11
-
-])
-\tf@toc=\write7
-\openout7 = `thesis.toc'.
-
- [12] (./thesis.lof
-./thesis.lof:7: Missing $ inserted.
-<inserted text> 
-                $
-l.7 ...paces DAQ_Overview}}{14}{figure.caption.10}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:7: Extra }, or forgotten $.
-<argument> ...ne {5.1}{\ignorespaces DAQ_Overview}
-                                                  }
-l.7 ...paces DAQ_Overview}}{14}{figure.caption.10}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:7: Extra }, or forgotten $.
-<argument> ...e {5.1}{\ignorespaces DAQ_Overview}}
-                                                  
-l.7 ...paces DAQ_Overview}}{14}{figure.caption.10}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:7: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.7 ...paces DAQ_Overview}}{14}{figure.caption.10}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:7: Missing $ inserted.
-<inserted text> 
-                $
-l.7 ...paces DAQ_Overview}}{14}{figure.caption.10}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:8: Missing $ inserted.
-<inserted text> 
-                $
-l.8 ...s Fragment_Diagram}}{15}{figure.caption.11}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:8: Extra }, or forgotten $.
-<argument> ...5.2}{\ignorespaces Fragment_Diagram}
-                                                  }
-l.8 ...s Fragment_Diagram}}{15}{figure.caption.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:8: Extra }, or forgotten $.
-<argument> ....2}{\ignorespaces Fragment_Diagram}}
-                                                  
-l.8 ...s Fragment_Diagram}}{15}{figure.caption.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:8: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.8 ...s Fragment_Diagram}}{15}{figure.caption.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:8: Missing $ inserted.
-<inserted text> 
-                $
-l.8 ...s Fragment_Diagram}}{15}{figure.caption.11}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:9: Missing $ inserted.
-<inserted text> 
-                $
-l.9 ...ND_Event_Structure}}{16}{figure.caption.12}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:9: Extra }, or forgotten $.
-<argument> ...{\ignorespaces SBND_Event_Structure}
-                                                  }
-l.9 ...ND_Event_Structure}}{16}{figure.caption.12}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:9: Extra }, or forgotten $.
-<argument> ...\ignorespaces SBND_Event_Structure}}
-                                                  
-l.9 ...ND_Event_Structure}}{16}{figure.caption.12}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:9: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.9 ...ND_Event_Structure}}{16}{figure.caption.12}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:9: Missing $ inserted.
-<inserted text> 
-                $
-l.9 ...ND_Event_Structure}}{16}{figure.caption.12}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:12: Missing $ inserted.
-<inserted text> 
-                $
-l.12 ...ces time_transfer}}{20}{figure.caption.15}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:12: Extra }, or forgotten $.
-<argument> ...e {5.6}{\ignorespaces time_transfer}
-                                                  }
-l.12 ...ces time_transfer}}{20}{figure.caption.15}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:12: Extra }, or forgotten $.
-<argument> ... {5.6}{\ignorespaces time_transfer}}
-                                                  
-l.12 ...ces time_transfer}}{20}{figure.caption.15}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:12: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.12 ...ces time_transfer}}{20}{figure.caption.15}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:12: Missing $ inserted.
-<inserted text> 
-                $
-l.12 ...ces time_transfer}}{20}{figure.caption.15}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:13: Missing $ inserted.
-<inserted text> 
-                $
-l.13 ...respaces SPEC_TDC}}{22}{figure.caption.16}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:13: Extra }, or forgotten $.
-<argument> ...erline {5.7}{\ignorespaces SPEC_TDC}
-                                                  }
-l.13 ...respaces SPEC_TDC}}{22}{figure.caption.16}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:13: Extra }, or forgotten $.
-<argument> ...rline {5.7}{\ignorespaces SPEC_TDC}}
-                                                  
-l.13 ...respaces SPEC_TDC}}{22}{figure.caption.16}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:13: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.13 ...respaces SPEC_TDC}}{22}{figure.caption.16}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:13: Missing $ inserted.
-<inserted text> 
-                $
-l.13 ...respaces SPEC_TDC}}{22}{figure.caption.16}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:14: Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...spaces crt_sharps}}{25}{figure.caption.17}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:14: Extra }, or forgotten $.
-<argument> ...line {5.8}{\ignorespaces crt_sharps}
-                                                  }
-l.14 ...spaces crt_sharps}}{25}{figure.caption.17}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:14: Extra }, or forgotten $.
-<argument> ...ine {5.8}{\ignorespaces crt_sharps}}
-                                                  
-l.14 ...spaces crt_sharps}}{25}{figure.caption.17}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:14: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.14 ...spaces crt_sharps}}{25}{figure.caption.17}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:14: Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...spaces crt_sharps}}{25}{figure.caption.17}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:15: Missing $ inserted.
-<inserted text> 
-                $
-l.15 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:15: Extra }, or forgotten $.
-<argument> ...stream_T0stability_combined_board79}
-                                                  }
-l.15 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:15: Extra }, or forgotten $.
-<argument> ...tream_T0stability_combined_board79}}
-                                                  
-l.15 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:15: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.15 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:15: Missing $ inserted.
-<inserted text> 
-                $
-l.15 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:16: Missing $ inserted.
-<inserted text> 
-                $
-l.16 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:16: Extra }, or forgotten $.
-<argument> ...stream_T1stability_combined_board79}
-                                                  }
-l.16 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:16: Extra }, or forgotten $.
-<argument> ...tream_T1stability_combined_board79}}
-                                                  
-l.16 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:16: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.16 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:16: Missing $ inserted.
-<inserted text> 
-                $
-l.16 ..._combined_board79}}{26}{figure.caption.18}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:17: Missing $ inserted.
-<inserted text> 
-                $
-l.17 ...oard79_T1drift_2d}}{27}{figure.caption.19}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:17: Extra }, or forgotten $.
-<argument> ...1}{\ignorespaces board79_T1drift_2d}
-                                                  }
-l.17 ...oard79_T1drift_2d}}{27}{figure.caption.19}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:17: Extra }, or forgotten $.
-<argument> ...}{\ignorespaces board79_T1drift_2d}}
-                                                  
-l.17 ...oard79_T1drift_2d}}{27}{figure.caption.19}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:17: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.17 ...oard79_T1drift_2d}}{27}{figure.caption.19}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:17: Missing $ inserted.
-<inserted text> 
-                $
-l.17 ...oard79_T1drift_2d}}{27}{figure.caption.19}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:21: Missing $ inserted.
-<inserted text> 
-                $
-l.21 ...paces TTT_diagram}}{33}{figure.caption.23}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:21: Extra }, or forgotten $.
-<argument> ...ne {5.15}{\ignorespaces TTT_diagram}
-                                                  }
-l.21 ...paces TTT_diagram}}{33}{figure.caption.23}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:21: Extra }, or forgotten $.
-<argument> ...e {5.15}{\ignorespaces TTT_diagram}}
-                                                  
-l.21 ...paces TTT_diagram}}{33}{figure.caption.23}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:21: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.21 ...paces TTT_diagram}}{33}{figure.caption.23}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:21: Missing $ inserted.
-<inserted text> 
-                $
-l.21 ...paces TTT_diagram}}{33}{figure.caption.23}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[13
-
-]
-./thesis.lof:24: Missing $ inserted.
-<inserted text> 
-                $
-l.24 ...es digitize_ftrig}}{37}{figure.caption.26}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:24: Extra }, or forgotten $.
-<argument> ...{5.18}{\ignorespaces digitize_ftrig}
-                                                  }
-l.24 ...es digitize_ftrig}}{37}{figure.caption.26}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:24: Extra }, or forgotten $.
-<argument> ...5.18}{\ignorespaces digitize_ftrig}}
-                                                  
-l.24 ...es digitize_ftrig}}{37}{figure.caption.26}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:24: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.24 ...es digitize_ftrig}}{37}{figure.caption.26}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:24: Missing $ inserted.
-<inserted text> 
-                $
-l.24 ...es digitize_ftrig}}{37}{figure.caption.26}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:25: Missing $ inserted.
-<inserted text> 
-                $
-l.25 ... daisychain_calib}}{38}{figure.caption.27}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:25: Extra }, or forgotten $.
-<argument> ....19}{\ignorespaces daisychain_calib}
-                                                  }
-l.25 ... daisychain_calib}}{38}{figure.caption.27}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:25: Extra }, or forgotten $.
-<argument> ...19}{\ignorespaces daisychain_calib}}
-                                                  
-l.25 ... daisychain_calib}}{38}{figure.caption.27}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:25: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.25 ... daisychain_calib}}{38}{figure.caption.27}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:25: Missing $ inserted.
-<inserted text> 
-                $
-l.25 ... daisychain_calib}}{38}{figure.caption.27}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:30: Missing $ inserted.
-<inserted text> 
-                $
-l.30 ...norespaces pds_r0}}{44}{figure.caption.32}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./thesis.lof:30: Extra }, or forgotten $.
-<argument> ...berline {5.24}{\ignorespaces pds_r0}
-                                                  }
-l.30 ...norespaces pds_r0}}{44}{figure.caption.32}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:30: Extra }, or forgotten $.
-<argument> ...erline {5.24}{\ignorespaces pds_r0}}
-                                                  
-l.30 ...norespaces pds_r0}}{44}{figure.caption.32}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:30: Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.30 ...norespaces pds_r0}}{44}{figure.caption.32}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./thesis.lof:30: Missing $ inserted.
-<inserted text> 
-                $
-l.30 ...norespaces pds_r0}}{44}{figure.caption.32}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-)
-\tf@lof=\write8
-\openout8 = `thesis.lof'.
-
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./thesis.tex:134: Missing } inserted.
-<inserted text> 
-                }
-l.134 \listoffigures
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[14] (./thesis.lot)
-\tf@lot=\write9
-\openout9 = `thesis.lot'.
-
 
 No file thesis.nls.
-[15
-
-] [16
-
-]
-\openout2 = `Chapter1/chapter1.aux'.
-
- (./Chapter1/chapter1.tex
-Chapter 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 16.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 16.
-[1
+[10
 
 
-] [2]) [3] [4]
-\openout2 = `Chapter2/chapter2.aux'.
 
- (./Chapter2/chapter2.tex
-Chapter 2.
-) [5
+
 
 
 
 ]
-\openout2 = `Chapter3/chapter3.aux'.
-
- (./Chapter3/chapter3.tex [6
-
-
-
-]
-Chapter 3.
-[7]) [8] [9]
-\openout2 = `Chapter4/chapter4.aux'.
-
- (./Chapter4/chapter4.tex [10
-
-
-
-]
-Chapter 4.
-) [11]
 \openout2 = `Chapter5/chapter5.aux'.
 
- (./Chapter5/chapter5.tex [12
+ (./Chapter5/chapter5.tex [8
+
+
+
 
 
 
 ]
 Chapter 5.
 
-LaTeX Warning: Reference `' on page 13 undefined on input line 29.
+LaTeX Warning: Reference `ChapterSelection' on page 9 undefined on input line 34.
 
-[13]
-<Chapter5/Figs/DAQ_Overview.png, id=411, 1235.61626pt x 686.565pt>
+[9{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<Chapter5/Figs/DAQ_Overview.png, id=86, 1235.61626pt x 686.565pt>
 File: Chapter5/Figs/DAQ_Overview.png Graphic file (type png)
 <use Chapter5/Figs/DAQ_Overview.png>
-Package pdftex.def Info: Chapter5/Figs/DAQ_Overview.png  used on input line 51.
-(pdftex.def)             Requested size: 437.46112pt x 243.06705pt.
- [14 <./Chapter5/Figs/DAQ_Overview.png>]
-<Chapter5/Figs/Fragment_Diagram.png, id=422, 1223.57124pt x 660.4675pt>
+Package pdftex.def Info: Chapter5/Figs/DAQ_Overview.png  used on input line 57.
+(pdftex.def)             Requested size: 448.1309pt x 248.99654pt.
+<Chapter5/Figs/Fragment_Diagram.png, id=91, 1223.57124pt x 660.4675pt>
 File: Chapter5/Figs/Fragment_Diagram.png Graphic file (type png)
 <use Chapter5/Figs/Fragment_Diagram.png>
-Package pdftex.def Info: Chapter5/Figs/Fragment_Diagram.png  used on input line 74.
-(pdftex.def)             Requested size: 262.47934pt x 141.67525pt.
- [15 <./Chapter5/Figs/Fragment_Diagram.png>]
-<Chapter5/Figs/SBND_Event_Structure.png, id=430, 1231.60126pt x 683.55376pt>
+Package pdftex.def Info: Chapter5/Figs/Fragment_Diagram.png  used on input line 81.
+(pdftex.def)             Requested size: 268.88127pt x 145.13197pt.
+ [10] [11 <./Chapter5/Figs/DAQ_Overview.png> <./Chapter5/Figs/Fragment_Diagram.png>]
+<Chapter5/Figs/SBND_Event_Structure.png, id=107, 1231.60126pt x 683.55376pt>
 File: Chapter5/Figs/SBND_Event_Structure.png Graphic file (type png)
 <use Chapter5/Figs/SBND_Event_Structure.png>
-Package pdftex.def Info: Chapter5/Figs/SBND_Event_Structure.png  used on input line 96.
-(pdftex.def)             Requested size: 437.46112pt x 242.79366pt.
+Package pdftex.def Info: Chapter5/Figs/SBND_Event_Structure.png  used on input line 103.
+(pdftex.def)             Requested size: 448.1309pt x 248.718pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 103.
+(Font)              scaled to size 9.19998pt on input line 114.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 103.
+(Font)              scaled to size 6.99199pt on input line 114.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 103.
+(Font)              scaled to size 5.51999pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 103.
+(Font)              scaled to size 9.19998pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 103.
+(Font)              scaled to size 6.99199pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 103.
- [16 <./Chapter5/Figs/SBND_Event_Structure.png>]
-<Chapter5/Figs/Grafana.png, id=438, 1250.6725pt x 464.73625pt>
+(Font)              scaled to size 5.51999pt on input line 114.
+ [12] [13 <./Chapter5/Figs/SBND_Event_Structure.png>]
+<Chapter5/Figs/Grafana.png, id=123, 1250.6725pt x 464.73625pt>
 File: Chapter5/Figs/Grafana.png Graphic file (type png)
 <use Chapter5/Figs/Grafana.png>
-Package pdftex.def Info: Chapter5/Figs/Grafana.png  used on input line 133.
-(pdftex.def)             Requested size: 437.46112pt x 162.55374pt.
-<Chapter5/Figs/Minargon.png, id=439, 1422.31375pt x 500.87125pt>
+Package pdftex.def Info: Chapter5/Figs/Grafana.png  used on input line 144.
+(pdftex.def)             Requested size: 448.1309pt x 166.51778pt.
+<Chapter5/Figs/Minargon.png, id=124, 1422.31375pt x 500.87125pt>
 File: Chapter5/Figs/Minargon.png Graphic file (type png)
 <use Chapter5/Figs/Minargon.png>
-Package pdftex.def Info: Chapter5/Figs/Minargon.png  used on input line 144.
-(pdftex.def)             Requested size: 437.46112pt x 154.05328pt.
- [17] [18 <./Chapter5/Figs/Grafana.png> <./Chapter5/Figs/Minargon.png>] [19]
-<Chapter5/Figs/time_transfer.png, id=462, 1256.695pt x 533.995pt>
+Package pdftex.def Info: Chapter5/Figs/Minargon.png  used on input line 155.
+(pdftex.def)             Requested size: 448.1309pt x 157.81348pt.
+ [14 <./Chapter5/Figs/Grafana.png>] [15 <./Chapter5/Figs/Minargon.png>]
+<Chapter5/Figs/time_transfer.png, id=143, 1256.695pt x 533.995pt>
 File: Chapter5/Figs/time_transfer.png Graphic file (type png)
 <use Chapter5/Figs/time_transfer.png>
-Package pdftex.def Info: Chapter5/Figs/time_transfer.png  used on input line 197.
-(pdftex.def)             Requested size: 437.46112pt x 185.88254pt.
- [20 <./Chapter5/Figs/time_transfer.png>]
-<Chapter5/Figs/SPEC_TDC.png, id=472, 1039.885pt x 406.51875pt>
+Package pdftex.def Info: Chapter5/Figs/time_transfer.png  used on input line 208.
+(pdftex.def)             Requested size: 448.1309pt x 190.41287pt.
+ [16] [17 <./Chapter5/Figs/time_transfer.png>]
+<Chapter5/Figs/SPEC_TDC.png, id=158, 1039.885pt x 406.51875pt>
 File: Chapter5/Figs/SPEC_TDC.png Graphic file (type png)
 <use Chapter5/Figs/SPEC_TDC.png>
-Package pdftex.def Info: Chapter5/Figs/SPEC_TDC.png  used on input line 244.
-(pdftex.def)             Requested size: 437.46112pt x 171.01584pt.
- [21] [22 <./Chapter5/Figs/SPEC_TDC.png>] [23]
-<Chapter5/Figs/crt_sharps.png, id=494, 893.3375pt x 702.625pt>
+Package pdftex.def Info: Chapter5/Figs/SPEC_TDC.png  used on input line 255.
+(pdftex.def)             Requested size: 448.1309pt x 175.18423pt.
+ [18] [19 <./Chapter5/Figs/SPEC_TDC.png>] [20]
+<Chapter5/Figs/crt_sharps.png, id=183, 893.3375pt x 702.625pt>
 File: Chapter5/Figs/crt_sharps.png Graphic file (type png)
 <use Chapter5/Figs/crt_sharps.png>
-Package pdftex.def Info: Chapter5/Figs/crt_sharps.png  used on input line 324.
-(pdftex.def)             Requested size: 262.47934pt x 206.44704pt.
-<Chapter5/Figs/upstream_T0stability_combined_board79.png, id=496, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/crt_sharps.png  used on input line 335.
+(pdftex.def)             Requested size: 268.88127pt x 211.47528pt.
+<Chapter5/Figs/upstream_T0stability_combined_board79.png, id=185, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/upstream_T0stability_combined_board79.png Graphic file (type png)
 <use Chapter5/Figs/upstream_T0stability_combined_board79.png>
-Package pdftex.def Info: Chapter5/Figs/upstream_T0stability_combined_board79.png  used on input line 345.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/upstream_T1stability_combined_board79.png, id=497, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/upstream_T0stability_combined_board79.png  used on input line 356.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/upstream_T1stability_combined_board79.png, id=186, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/upstream_T1stability_combined_board79.png Graphic file (type png)
 <use Chapter5/Figs/upstream_T1stability_combined_board79.png>
-Package pdftex.def Info: Chapter5/Figs/upstream_T1stability_combined_board79.png  used on input line 356.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
- [24] [25 <./Chapter5/Figs/crt_sharps.png>] [26 <./Chapter5/Figs/upstream_T0stability_combined_board79.png> <./Chapter5/Figs/upstream_T1stability_combined_board79.png>]
-<Chapter5/Figs/board79_T1drift_2d.png, id=517, 1156.32pt x 578.16pt>
+Package pdftex.def Info: Chapter5/Figs/upstream_T1stability_combined_board79.png  used on input line 367.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+
+
+LaTeX Warning: Float too large for page by 23.83716pt on input line 375.
+
+[21] [22 <./Chapter5/Figs/crt_sharps.png>] [23 <./Chapter5/Figs/upstream_T0stability_combined_board79.png> <./Chapter5/Figs/upstream_T1stability_combined_board79.png>]
+<Chapter5/Figs/board79_T1drift_2d.png, id=209, 1156.32pt x 578.16pt>
 File: Chapter5/Figs/board79_T1drift_2d.png Graphic file (type png)
 <use Chapter5/Figs/board79_T1drift_2d.png>
-Package pdftex.def Info: Chapter5/Figs/board79_T1drift_2d.png  used on input line 391.
-(pdftex.def)             Requested size: 306.22144pt x 153.1058pt.
-<Chapter5/Figs/CRTT0_SPEC_TopHat.png, id=518, 722.7pt x 722.7pt>
+Package pdftex.def Info: Chapter5/Figs/board79_T1drift_2d.png  used on input line 402.
+(pdftex.def)             Requested size: 313.69026pt x 156.83751pt.
+<Chapter5/Figs/CRTT0_SPEC_TopHat.png, id=210, 722.7pt x 722.7pt>
 File: Chapter5/Figs/CRTT0_SPEC_TopHat.png Graphic file (type png)
 <use Chapter5/Figs/CRTT0_SPEC_TopHat.png>
-Package pdftex.def Info: Chapter5/Figs/CRTT0_SPEC_TopHat.png  used on input line 416.
-(pdftex.def)             Requested size: 214.35834pt x 214.35254pt.
-<Chapter5/Figs/CRT_T1_TopHat.png, id=519, 722.7pt x 722.7pt>
+Package pdftex.def Info: Chapter5/Figs/CRTT0_SPEC_TopHat.png  used on input line 427.
+(pdftex.def)             Requested size: 219.5866pt x 219.57957pt.
+<Chapter5/Figs/CRT_T1_TopHat.png, id=211, 722.7pt x 722.7pt>
 File: Chapter5/Figs/CRT_T1_TopHat.png Graphic file (type png)
 <use Chapter5/Figs/CRT_T1_TopHat.png>
-Package pdftex.def Info: Chapter5/Figs/CRT_T1_TopHat.png  used on input line 422.
-(pdftex.def)             Requested size: 214.35834pt x 214.35254pt.
- [27 <./Chapter5/Figs/board79_T1drift_2d.png>]
-<Chapter5/Figs/CRTT0_SPEC_Bucket.png, id=527, 722.7pt x 722.7pt>
+Package pdftex.def Info: Chapter5/Figs/CRT_T1_TopHat.png  used on input line 433.
+(pdftex.def)             Requested size: 219.5866pt x 219.57957pt.
+ [24 <./Chapter5/Figs/board79_T1drift_2d.png>]
+<Chapter5/Figs/CRTT0_SPEC_Bucket.png, id=218, 722.7pt x 722.7pt>
 File: Chapter5/Figs/CRTT0_SPEC_Bucket.png Graphic file (type png)
 <use Chapter5/Figs/CRTT0_SPEC_Bucket.png>
-Package pdftex.def Info: Chapter5/Figs/CRTT0_SPEC_Bucket.png  used on input line 444.
-(pdftex.def)             Requested size: 214.35834pt x 214.35254pt.
-<Chapter5/Figs/CRT_T1_Bucket.png, id=528, 722.7pt x 722.7pt>
+Package pdftex.def Info: Chapter5/Figs/CRTT0_SPEC_Bucket.png  used on input line 455.
+(pdftex.def)             Requested size: 219.5866pt x 219.57957pt.
+<Chapter5/Figs/CRT_T1_Bucket.png, id=219, 722.7pt x 722.7pt>
 File: Chapter5/Figs/CRT_T1_Bucket.png Graphic file (type png)
 <use Chapter5/Figs/CRT_T1_Bucket.png>
-Package pdftex.def Info: Chapter5/Figs/CRT_T1_Bucket.png  used on input line 450.
-(pdftex.def)             Requested size: 214.35834pt x 214.35254pt.
- [28 <./Chapter5/Figs/CRTT0_SPEC_TopHat.png> <./Chapter5/Figs/CRT_T1_TopHat.png>] [29 <./Chapter5/Figs/CRTT0_SPEC_Bucket.png> <./Chapter5/Figs/CRT_T1_Bucket.png>] [30]
-<Chapter5/Figs/daisychain.png, id=549, 492.84125pt x 630.355pt>
+Package pdftex.def Info: Chapter5/Figs/CRT_T1_Bucket.png  used on input line 461.
+(pdftex.def)             Requested size: 219.5866pt x 219.57957pt.
+ [25 <./Chapter5/Figs/CRTT0_SPEC_TopHat.png> <./Chapter5/Figs/CRT_T1_TopHat.png>] [26 <./Chapter5/Figs/CRTT0_SPEC_Bucket.png> <./Chapter5/Figs/CRT_T1_Bucket.png>] [27]
+<Chapter5/Figs/daisychain.png, id=243, 492.84125pt x 630.355pt>
 File: Chapter5/Figs/daisychain.png Graphic file (type png)
 <use Chapter5/Figs/daisychain.png>
-Package pdftex.def Info: Chapter5/Figs/daisychain.png  used on input line 528.
-(pdftex.def)             Requested size: 214.35834pt x 274.17336pt.
-<Chapter5/Figs/fanout.png, id=550, 496.85625pt x 627.34375pt>
+Package pdftex.def Info: Chapter5/Figs/daisychain.png  used on input line 539.
+(pdftex.def)             Requested size: 219.5866pt x 280.85815pt.
+<Chapter5/Figs/fanout.png, id=244, 496.85625pt x 627.34375pt>
 File: Chapter5/Figs/fanout.png Graphic file (type png)
 <use Chapter5/Figs/fanout.png>
-Package pdftex.def Info: Chapter5/Figs/fanout.png  used on input line 534.
-(pdftex.def)             Requested size: 214.35834pt x 270.65236pt.
- [31] [32 <./Chapter5/Figs/daisychain.png> <./Chapter5/Figs/fanout.png>]
-<Chapter5/Figs/TTT_diagram.png, id=561, 626.34pt x 212.795pt>
+Package pdftex.def Info: Chapter5/Figs/fanout.png  used on input line 545.
+(pdftex.def)             Requested size: 219.5866pt x 277.25737pt.
+ [28] [29 <./Chapter5/Figs/daisychain.png> <./Chapter5/Figs/fanout.png>]
+<Chapter5/Figs/TTT_diagram.png, id=256, 626.34pt x 212.795pt>
 File: Chapter5/Figs/TTT_diagram.png Graphic file (type png)
 <use Chapter5/Figs/TTT_diagram.png>
-Package pdftex.def Info: Chapter5/Figs/TTT_diagram.png  used on input line 563.
-(pdftex.def)             Requested size: 437.46112pt x 148.62752pt.
-<Chapter5/Figs/TTT_SPEC_diff_run7980.png, id=563, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/TTT_diagram.png  used on input line 574.
+(pdftex.def)             Requested size: 448.1309pt x 152.25441pt.
+<Chapter5/Figs/TTT_SPEC_diff_run7980.png, id=258, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/TTT_SPEC_diff_run7980.png Graphic file (type png)
 <use Chapter5/Figs/TTT_SPEC_diff_run7980.png>
-Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run7980.png  used on input line 583.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/TTT_SPEC_diff_run8060.png, id=564, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run7980.png  used on input line 594.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/TTT_SPEC_diff_run8060.png, id=259, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/TTT_SPEC_diff_run8060.png Graphic file (type png)
 <use Chapter5/Figs/TTT_SPEC_diff_run8060.png>
-Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8060.png  used on input line 589.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
- [33 <./Chapter5/Figs/TTT_diagram.png>] [34 <./Chapter5/Figs/TTT_SPEC_diff_run7980.png> <./Chapter5/Figs/TTT_SPEC_diff_run8060.png>]
-<Chapter5/Figs/TTT_SPEC_diff_run8178.png, id=579, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8060.png  used on input line 600.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+ [30 <./Chapter5/Figs/TTT_diagram.png>] [31 <./Chapter5/Figs/TTT_SPEC_diff_run7980.png> <./Chapter5/Figs/TTT_SPEC_diff_run8060.png>]
+<Chapter5/Figs/TTT_SPEC_diff_run8178.png, id=275, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/TTT_SPEC_diff_run8178.png Graphic file (type png)
 <use Chapter5/Figs/TTT_SPEC_diff_run8178.png>
-Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8178.png  used on input line 614.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/TTT_SPEC_diff_run8196.png, id=580, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8178.png  used on input line 625.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/TTT_SPEC_diff_run8196.png, id=276, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/TTT_SPEC_diff_run8196.png Graphic file (type png)
 <use Chapter5/Figs/TTT_SPEC_diff_run8196.png>
-Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8196.png  used on input line 620.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
- [35] [36 <./Chapter5/Figs/TTT_SPEC_diff_run8178.png> <./Chapter5/Figs/TTT_SPEC_diff_run8196.png>]
-<Chapter5/Figs/digitize_ftrig.png, id=593, 885.3075pt x 385.44pt>
+Package pdftex.def Info: Chapter5/Figs/TTT_SPEC_diff_run8196.png  used on input line 631.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+ [32] [33 <./Chapter5/Figs/TTT_SPEC_diff_run8178.png> <./Chapter5/Figs/TTT_SPEC_diff_run8196.png>]
+<Chapter5/Figs/digitize_ftrig.png, id=290, 885.3075pt x 385.44pt>
 File: Chapter5/Figs/digitize_ftrig.png Graphic file (type png)
 <use Chapter5/Figs/digitize_ftrig.png>
-Package pdftex.def Info: Chapter5/Figs/digitize_ftrig.png  used on input line 659.
-(pdftex.def)             Requested size: 437.46112pt x 190.46109pt.
- [37 <./Chapter5/Figs/digitize_ftrig.png>]
-<Chapter5/Figs/daisychain_calib.png, id=602, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/digitize_ftrig.png  used on input line 670.
+(pdftex.def)             Requested size: 448.1309pt x 195.10735pt.
+ [34 <./Chapter5/Figs/digitize_ftrig.png>]
+<Chapter5/Figs/daisychain_calib.png, id=300, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/daisychain_calib.png Graphic file (type png)
 <use Chapter5/Figs/daisychain_calib.png>
-Package pdftex.def Info: Chapter5/Figs/daisychain_calib.png  used on input line 688.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
- [38 <./Chapter5/Figs/daisychain_calib.png>]
-<Chapter5/Figs/TTTts_spec.png, id=610, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/daisychain_calib.png  used on input line 699.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+ [35 <./Chapter5/Figs/daisychain_calib.png>]
+<Chapter5/Figs/TTTts_spec.png, id=309, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/TTTts_spec.png Graphic file (type png)
 <use Chapter5/Figs/TTTts_spec.png>
-Package pdftex.def Info: Chapter5/Figs/TTTts_spec.png  used on input line 712.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/Tickts_spec.png, id=611, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/TTTts_spec.png  used on input line 723.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/Tickts_spec.png, id=310, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/Tickts_spec.png Graphic file (type png)
 <use Chapter5/Figs/Tickts_spec.png>
-Package pdftex.def Info: Chapter5/Figs/Tickts_spec.png  used on input line 720.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/Tick_spec.png, id=615, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/Tickts_spec.png  used on input line 731.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/Tick_spec.png, id=314, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/Tick_spec.png Graphic file (type png)
 <use Chapter5/Figs/Tick_spec.png>
-Package pdftex.def Info: Chapter5/Figs/Tick_spec.png  used on input line 744.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
- [39] [40 <./Chapter5/Figs/TTTts_spec.png> <./Chapter5/Figs/Tickts_spec.png>]
-<Chapter5/Figs/jitter_before.png, id=628, 1734.48pt x 433.62pt>
+Package pdftex.def Info: Chapter5/Figs/Tick_spec.png  used on input line 755.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+ [36] [37 <./Chapter5/Figs/TTTts_spec.png> <./Chapter5/Figs/Tickts_spec.png>]
+<Chapter5/Figs/jitter_before.png, id=331, 1734.48pt x 433.62pt>
 File: Chapter5/Figs/jitter_before.png Graphic file (type png)
 <use Chapter5/Figs/jitter_before.png>
-Package pdftex.def Info: Chapter5/Figs/jitter_before.png  used on input line 770.
-(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter5/Figs/jitter_after.png, id=629, 1734.48pt x 433.62pt>
+Package pdftex.def Info: Chapter5/Figs/jitter_before.png  used on input line 781.
+(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
+<Chapter5/Figs/jitter_after.png, id=332, 1734.48pt x 433.62pt>
 File: Chapter5/Figs/jitter_after.png Graphic file (type png)
 <use Chapter5/Figs/jitter_after.png>
-Package pdftex.def Info: Chapter5/Figs/jitter_after.png  used on input line 778.
-(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter5/Figs/Tickts_spec_corrEbyE.png, id=630, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/jitter_after.png  used on input line 789.
+(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
+<Chapter5/Figs/Tickts_spec_corrEbyE.png, id=333, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/Tickts_spec_corrEbyE.png Graphic file (type png)
 <use Chapter5/Figs/Tickts_spec_corrEbyE.png>
-Package pdftex.def Info: Chapter5/Figs/Tickts_spec_corrEbyE.png  used on input line 798.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/Tickts_spec_corrRbyR.png, id=631, 1734.48pt x 867.24pt>
+Package pdftex.def Info: Chapter5/Figs/Tickts_spec_corrEbyE.png  used on input line 809.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/Tickts_spec_corrRbyR.png, id=334, 1734.48pt x 867.24pt>
 File: Chapter5/Figs/Tickts_spec_corrRbyR.png Graphic file (type png)
 <use Chapter5/Figs/Tickts_spec_corrRbyR.png>
-Package pdftex.def Info: Chapter5/Figs/Tickts_spec_corrRbyR.png  used on input line 806.
-(pdftex.def)             Requested size: 437.46112pt x 218.72826pt.
-<Chapter5/Figs/pds_r0.jpg, id=635, 3035.34pt x 2028.57875pt>
+Package pdftex.def Info: Chapter5/Figs/Tickts_spec_corrRbyR.png  used on input line 817.
+(pdftex.def)             Requested size: 448.1309pt x 224.06116pt.
+<Chapter5/Figs/pds_r0.jpg, id=338, 3035.34pt x 2028.57875pt>
 File: Chapter5/Figs/pds_r0.jpg Graphic file (type jpg)
 <use Chapter5/Figs/pds_r0.jpg>
-Package pdftex.def Info: Chapter5/Figs/pds_r0.jpg  used on input line 831.
-(pdftex.def)             Requested size: 262.47934pt x 175.41393pt.
- [41 <./Chapter5/Figs/Tick_spec.png>] [42 <./Chapter5/Figs/jitter_before.png> <./Chapter5/Figs/jitter_after.png>] [43 <./Chapter5/Figs/Tickts_spec_corrEbyE.png> <./Chapter5/Figs/Tickts_spec_corrRbyR.png>]) [44 <./Chapter5/Figs/pds_r0.jpg>] [45]
-\openout2 = `Chapter6/chapter6.aux'.
-
- (./Chapter6/chapter6.tex [46
+Package pdftex.def Info: Chapter5/Figs/pds_r0.jpg  used on input line 842.
+(pdftex.def)             Requested size: 268.88127pt x 179.68553pt.
+ [38 <./Chapter5/Figs/Tick_spec.png>] [39 <./Chapter5/Figs/jitter_before.png> <./Chapter5/Figs/jitter_after.png>] [40 <./Chapter5/Figs/Tickts_spec_corrEbyE.png> <./Chapter5/Figs/Tickts_spec_corrRbyR.png>]) [41 <./Chapter5/Figs/pds_r0.jpg>] [42] [48
 
 
 
-]
-Chapter 6.
-) [47]
-\openout2 = `Chapter7/chapter7.aux'.
-
- (./Chapter7/chapter7.tex [48
-
-
-
-]
-Chapter 7.
-) [49]
-\openout2 = `Chapter8/chapter8.aux'.
-
- (./Chapter8/chapter8.tex [50
-
-
-
-]
-Chapter 8.
-) [51] [52
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
- [53
+ [49
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
  (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3DC9D3E6C70B7BCA6AC0C6827BB28250;3814.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 4E278AB34CB27BCD65775521B37A79B7;8950
-(rerunfilecheck)             After:  0776AD0B801A439678B8D7596825FC30;8950.
 
 LaTeX Warning: There were undefined references.
 
@@ -2576,32 +1368,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26775 strings out of 483065
- 475153 string characters out of 5963550
- 1190010 words of memory out of 5000000
- 40859 multiletter control sequences out of 15000+600000
- 655361 words of font info for 317 fonts, out of 8000000 for 9000
+ 27074 strings out of 483065
+ 478378 string characters out of 5963550
+ 1206471 words of memory out of 5000000
+ 41289 multiletter control sequences out of 15000+600000
+ 643244 words of font info for 284 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,12n,109p,1084b,1499s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.9} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.8} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.7} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.33} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (69 pages, 7561242 bytes).
+ 60i,12n,109p,989b,1507s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (38 pages, 7245897 bytes).
 PDF statistics:
- 779 PDF objects out of 1000 (max. 8388607)
- 622 compressed objects within 7 object streams
- 164 named destinations out of 1000 (max. 500000)
- 53222 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 41753 words of extra memory for PDF output out of 42996 (max. 10000000)
 

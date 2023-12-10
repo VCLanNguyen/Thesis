@@ -772,12 +772,16 @@ wish to left align your text}
   \else
   % Default Style: Sets Page Number at the Top (LE/RO) with Chapter/Section Name
   % on LO/RE and an empty footer
-    \renewcommand{\chaptermark}[1]{\markboth {##1}{}}
+	  
+    \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+    \renewcommand{\headrule}{\color{DeepViolet100}\oldheadrule}% Add colour to \headrule
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\chaptermark}[1]{\markboth { ##1}{}}
     \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
     \fancyhf{}
-    \fancyhead[LO]{\nouppercase \rightmark}
-    \fancyhead[LE,RO]{\bfseries\thepage}
-    \fancyhead[RE]{\nouppercase \leftmark}
+    \fancyhead[LO]{\textcolor{DeepViolet60}{\nouppercase \rightmark}}
+    \fancyhead[RE]{\textcolor{DeepViolet60}{\nouppercase \leftmark}}
+    \fancyfoot[C]{\textcolor{DeepViolet100}{\bfseries\thepage}}
   \fi
 \fi
 }
@@ -1258,4 +1262,32 @@ wish to left align your text}
 			- \totalheightof{\usebox{\PHD@collegedate}}
 }
 }
+
+% ******************** Define Customised Colour *******************
+\RequirePackage{xcolor}
+\usepackage{sectsty}
+
+% Change the colours if you want to
+\definecolor{DeepViolet100}{HTML}{440099}
+\definecolor{DeepViolet90}{HTML}{5719A3}
+\definecolor{DeepViolet80}{HTML}{6933AD}
+\definecolor{DeepViolet70}{HTML}{7C4DB8}
+\definecolor{DeepViolet60}{HTML}{8F66C2}
+
+\definecolor{Teal}{HTML}{005A8F}
+\definecolor{Aqua}{HTML}{00BBCC}
+\definecolor{SkyBlue}{HTML}{64CBE8}
+\definecolor{MintGreen}{HTML}{00CE7C}
+\definecolor{Spearmint}{HTML}{3BD4AE}
+\definecolor{PastelGreen}{HTML}{A1DED2}
+\definecolor{Mauve}{HTML}{663DB3}
+\definecolor{Purple}{HTML}{981F92}
+\definecolor{Lavender}{HTML}{DAA8E2}
+\definecolor{Coral}{HTML}{E7004C}
+\definecolor{Flamingo}{HTML}{FF6371}
+\definecolor{Peach}{HTML}{FF9664}
+
+\chapterfont{\color{DeepViolet100}}  % sets colour of chapters
+\sectionfont{\color{DeepViolet100}}  % sets colour of sections
+\subsectionfont{\color{DeepViolet80}}  % sets colour of sections
 
