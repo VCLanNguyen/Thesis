@@ -774,13 +774,13 @@ wish to left align your text}
   % on LO/RE and an empty footer
 	  
     \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
-    \renewcommand{\headrule}{\color{DeepViolet100}\oldheadrule}% Add colour to \headrule
+    \renewcommand{\headrule}{\color{DeepViolet40}\oldheadrule}% Add colour to \headrule
     \renewcommand{\headrulewidth}{0.5pt}
     \renewcommand{\chaptermark}[1]{\markboth { ##1}{}}
     \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
     \fancyhf{}
-    \fancyhead[LO]{\textcolor{DeepViolet60}{\nouppercase \rightmark}}
-    \fancyhead[RE]{\textcolor{DeepViolet60}{\nouppercase \leftmark}}
+    \fancyhead[LO]{\textcolor{DeepViolet40}{\nouppercase \rightmark}}
+    \fancyhead[RE]{\textcolor{DeepViolet40}{\nouppercase \leftmark}}
     \fancyfoot[C]{\textcolor{DeepViolet100}{\bfseries\thepage}}
   \fi
 \fi
@@ -1273,6 +1273,10 @@ wish to left align your text}
 \definecolor{DeepViolet80}{HTML}{6933AD}
 \definecolor{DeepViolet70}{HTML}{7C4DB8}
 \definecolor{DeepViolet60}{HTML}{8F66C2}
+\definecolor{DeepViolet50}{HTML}{A280CC}
+\definecolor{DeepViolet40}{HTML}{B499D6}
+\definecolor{DeepViolet30}{HTML}{C7B3E0}
+\definecolor{DeepViolet20}{HTML}{DACCEB}
 
 \definecolor{Teal}{HTML}{005A8F}
 \definecolor{Aqua}{HTML}{00BBCC}
@@ -1290,4 +1294,5 @@ wish to left align your text}
 \chapterfont{\color{DeepViolet100}}  % sets colour of chapters
 \sectionfont{\color{DeepViolet100}}  % sets colour of sections
 \subsectionfont{\color{DeepViolet80}}  % sets colour of sections
+\subsubsectionfont{\color{DeepViolet70}}  % sets colour of sections
 

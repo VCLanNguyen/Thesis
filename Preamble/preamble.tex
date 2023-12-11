@@ -126,7 +126,7 @@
     ,doi=false 
     ,url=false 
     ,isbn=false
-    ,eprint=true
+    ,eprint=false
     %,block=space
     %,backref=true
     %,backrefstyle=two
@@ -208,3 +208,6 @@
 % *****************************************************************************
 % ******************* Better enumeration my MB*************
 \usepackage{enumitem}
+\newlist{coloritemize}{itemize}{1}
+\setlist[coloritemize]{label=\textcolor{DeepViolet70}{\textbullet}}
+

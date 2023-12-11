@@ -19,267 +19,853 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{ptb_gvs}{article}{}
-      \name{author}{1}{}{%
-        {{hash=b426239cbe24741c047dd25597d19bc6}{%
-           family={Stenico},
+    \entry{SIN1}{article}{}
+      \name{author}{7}{}{%
+        {{hash=f9f8d2186bc5ccf6e7e70dd9ee4f0f75}{%
+           family={Abela},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e0ff74f7e41c412d69d97fb129abd9ab}{%
+           family={Daum},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af575f88e5c3665c9ec0113bdcdfca5c}{%
+           family={Eaton},
+           familyi={E\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=41833219173d80f7a1c8f71ff5e96d7d}{%
+           family={Frosch},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07eef4c5c7a9f008bffb8f8022968ff4}{%
+           family={Jost},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4fc68da36e9ce97790a5491005ffcef3}{%
+           family={Kettle},
+           familyi={K\bibinitperiod},
+           given={P.\bibnamedelimi R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=013f8d69bfbfb2cd29891a72c8ac898b}{%
+           family={Steiner},
            familyi={S\bibinitperiod},
-           given={G.\bibnamedelimi V.},
-           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           given={E.},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{b426239cbe24741c047dd25597d19bc6}
-      \strng{fullhash}{b426239cbe24741c047dd25597d19bc6}
-      \strng{bibnamehash}{b426239cbe24741c047dd25597d19bc6}
-      \strng{authorbibnamehash}{b426239cbe24741c047dd25597d19bc6}
-      \strng{authornamehash}{b426239cbe24741c047dd25597d19bc6}
-      \strng{authorfullhash}{b426239cbe24741c047dd25597d19bc6}
+      \strng{namehash}{8c44a639dcfb8ce39247f343587a37e4}
+      \strng{fullhash}{0196a72086ac054abe3b21cc9d9b99ac}
+      \strng{bibnamehash}{8c44a639dcfb8ce39247f343587a37e4}
+      \strng{authorbibnamehash}{8c44a639dcfb8ce39247f343587a37e4}
+      \strng{authornamehash}{8c44a639dcfb8ce39247f343587a37e4}
+      \strng{authorfullhash}{0196a72086ac054abe3b21cc9d9b99ac}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2673-9984}
-      \field{journaltitle}{Physical Sciences Forum}
-      \field{number}{1}
-      \field{title}{{SBND Trigger System: Status and MTC/A Configuration}}
-      \field{volume}{8}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://www.mdpi.com/2673-9984/8/1/60
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/2673-9984/8/1/60
+      \field{journaltitle}{Phys. Lett. B}
+      \field{note}{[Erratum: Phys.Lett.B 106, 513 (1981)]}
+      \field{title}{{Search for an Admixture of Heavy Neutrino in Pion Decay}}
+      \field{volume}{105}
+      \field{year}{1981}
+      \field{pages}{263\bibrangedash 266}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/0370-2693(81)90884-4
       \endverb
     \endentry
-    \entry{artdaq_note}{article}{}
-      \name{author}{10}{}{%
-        {{hash=e874b535c7c886bbd3370b2226bbe00a}{%
-           family={Biery},
-           familyi={B\bibinitperiod},
-           given={Kurt},
-           giveni={K\bibinitperiod}}}%
-        {{hash=8f508e59087210b36bc070ce8de6bbee}{%
-           family={Flumerfelt},
-           familyi={F\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod}}}%
-        {{hash=c60e5cdd7e33ee322455fe4f59d30a68}{%
-           family={Freeman},
-           familyi={F\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=158789e089512456210a83316835065d}{%
-           family={Ketchum},
-           familyi={K\bibinitperiod},
-           given={Wesley},
-           giveni={W\bibinitperiod}}}%
-        {{hash=a60206a6ba445928a118629e8f5aef7b}{%
-           family={Lukhanin},
-           familyi={L\bibinitperiod},
-           given={Gennadiy},
-           giveni={G\bibinitperiod}}}%
-        {{hash=2fd4b13a7daf7a91c24f293939fb8190}{%
-           family={Lyon},
-           familyi={L\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod}}}%
-        {{hash=552031ffee7948352e20eb24efe9c772}{%
-           family={Rechenmacher},
-           familyi={R\bibinitperiod},
-           given={Ron},
+    \entry{SIN2}{article}{}
+      \name{author}{7}{}{%
+        {{hash=e2d5aba2f27d4565e50665bbb805a794}{%
+           family={Minehart},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9e4340fefbfb8409d84b7ea00b912f19}{%
+           family={Ziock},
+           familyi={Z\bibinitperiod},
+           given={K.\bibnamedelimi O.\bibnamedelimi H.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=61ed1f369daf36e0de20dc83e5c9f0e0}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={R.},
            giveni={R\bibinitperiod}}}%
-        {{hash=916629c09687668f93f6ba89b50e4b14}{%
-           family={Rivera},
-           familyi={R\bibinitperiod},
-           given={Ryan},
-           giveni={R\bibinitperiod}}}%
-        {{hash=d10df0d934d1e5a633d89a35e3c66f20}{%
-           family={Uplegger},
-           familyi={U\bibinitperiod},
-           given={Lorenzo},
-           giveni={L\bibinitperiod}}}%
-        {{hash=eebe8264ff3f2b95d3ce4e57a0eaab34}{%
-           family={Votava},
-           familyi={V\bibinitperiod},
-           given={Margaret},
+        {{hash=fa2a4320d3cedbf96eaf96db8b491494}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e0ff74f7e41c412d69d97fb129abd9ab}{%
+           family={Daum},
+           familyi={D\bibinitperiod},
+           given={M.},
            giveni={M\bibinitperiod}}}%
+        {{hash=07eef4c5c7a9f008bffb8f8022968ff4}{%
+           family={Jost},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5b7c1e00f043277dc134e5793e66677c}{%
+           family={Kettle},
+           familyi={K\bibinitperiod},
+           given={P.\bibnamedelimi -R.},
+           giveni={P\bibinitperiod\bibinitdelim \bibinithyphendelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{dff0c071fd3bc2c4ec39458d09b3240c}
-      \strng{fullhash}{3dbcf2ecfd107b9c3e868b5074148efa}
-      \strng{bibnamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
-      \strng{authorbibnamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
-      \strng{authornamehash}{dff0c071fd3bc2c4ec39458d09b3240c}
-      \strng{authorfullhash}{3dbcf2ecfd107b9c3e868b5074148efa}
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5fbfef9ac2973336c6a825207124c921}
+      \strng{fullhash}{b3aa242b04c1437e6494fb4f2d554587}
+      \strng{bibnamehash}{5fbfef9ac2973336c6a825207124c921}
+      \strng{authorbibnamehash}{5fbfef9ac2973336c6a825207124c921}
+      \strng{authornamehash}{5fbfef9ac2973336c6a825207124c921}
+      \strng{authorfullhash}{b3aa242b04c1437e6494fb4f2d554587}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{3}
+      \field{title}{{Search for Admixtures of Massive Neutrinos in the Decay ${\ensuremath{\pi}}^+\ensuremath{\rightarrow}{\ensuremath{\mu}}^++\overline{\ensuremath{\nu}}$}}
+      \field{volume}{52}
+      \field{year}{1984}
+      \field{pages}{804\bibrangedash 807}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.52.804
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.52.804
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.52.804
+      \endverb
+    \endentry
+    \entry{SIN3}{article}{}
+      \name{author}{7}{}{%
+        {{hash=e0ff74f7e41c412d69d97fb129abd9ab}{%
+           family={Daum},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5b7c1e00f043277dc134e5793e66677c}{%
+           family={Kettle},
+           familyi={K\bibinitperiod},
+           given={P.-R.},
+           giveni={P\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=07eef4c5c7a9f008bffb8f8022968ff4}{%
+           family={Jost},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1ad9637012947fad886a4a92179e17d5}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e2d5aba2f27d4565e50665bbb805a794}{%
+           family={Minehart},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=fa2a4320d3cedbf96eaf96db8b491494}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9e4340fefbfb8409d84b7ea00b912f19}{%
+           family={Ziock},
+           familyi={Z\bibinitperiod},
+           given={K.\bibnamedelimi O.\bibnamedelimi H.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{4b68278594b63718648b96bac85440ad}
+      \strng{fullhash}{ccd3ed2711ca0c955df0b5b8ce6b7b83}
+      \strng{bibnamehash}{4b68278594b63718648b96bac85440ad}
+      \strng{authorbibnamehash}{4b68278594b63718648b96bac85440ad}
+      \strng{authornamehash}{4b68278594b63718648b96bac85440ad}
+      \strng{authorfullhash}{ccd3ed2711ca0c955df0b5b8ce6b7b83}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{9}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{11}
+      \field{title}{{Search for admixtures of massive neutrinos in the decay ${\ensuremath{\pi}}^+\ensuremath{\rightarrow}{\ensuremath{\mu}}^++\ensuremath{\nu}$}}
+      \field{volume}{36}
+      \field{year}{1987}
+      \field{pages}{2624\bibrangedash 2632}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.36.2624
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.36.2624
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.36.2624
+      \endverb
+    \endentry
+    \entry{PIENU}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b40891b6dd22e6bdc19adae020a257e6}{%
+           family={Aguilar-Arevalo},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bb964eae547bac8ea53c0b210516c81}
+      \strng{fullhash}{1bb964eae547bac8ea53c0b210516c81}
+      \strng{bibnamehash}{1bb964eae547bac8ea53c0b210516c81}
+      \strng{authorbibnamehash}{1bb964eae547bac8ea53c0b210516c81}
+      \strng{authornamehash}{1bb964eae547bac8ea53c0b210516c81}
+      \strng{authorfullhash}{1bb964eae547bac8ea53c0b210516c81}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{collaboration}{PIENU}
+      \field{eprintclass}{hep-ex}
       \field{eprinttype}{arXiv}
-      \field{title}{{Flexible and Scalable Data-Acquisition Using the artdaq Toolkit}}
-      \field{year}{2018}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Search for heavy neutrinos in $\pi \to \mu\nu$ decay}}
+      \field{volume}{798}
+      \field{year}{2019}
+      \field{pages}{134980}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2019.134980
+      \endverb
       \verb{eprint}
-      \verb 1806.07250
-      \endverb
-      \verb{urlraw}
-      \verb https://www.osti.gov/biblio/1460789
-      \endverb
-      \verb{url}
-      \verb https://www.osti.gov/biblio/1460789
+      \verb 1904.03269
       \endverb
     \endentry
-    \entry{WR_paper}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=65232f20c7d3005f725ec544cc78b9bd}{%
-           family={Serrano},
-           familyi={S\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=0ca5602e65a3913d602b07e6ec0db86f}{%
-           family={Alvarez},
+    \entry{KEK1}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=435e1f3dc40429e29c830395b689328c}{%
+           family={Asano},
            familyi={A\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=866ccff7186fa233668fb4e1959addb4}{%
-           family={Cattin},
-           familyi={C\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=656da732850464fc80ed77591f92456f}{%
-           family={Cota},
-           familyi={C\bibinitperiod},
-           given={E.\bibnamedelimi G.},
-           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=e640fd88016661a84e90213ee7bd0757}{%
-           family={Lewis},
-           familyi={L\bibinitperiod},
-           given={P.\bibnamedelimi M.\bibnamedelimi J.\bibnamedelimi H.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=2c63a9ca1ea8ffe9e6ea5f7dc5c12ba7}{%
-           family={T.Włostowski},
-           familyi={T\bibinitperiod}}}%
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{32cea9e2e3335493479484e6364cb2c0}
-      \strng{fullhash}{6664cb0375024e060f2bce5850c604a4}
-      \strng{bibnamehash}{32cea9e2e3335493479484e6364cb2c0}
-      \strng{authorbibnamehash}{32cea9e2e3335493479484e6364cb2c0}
-      \strng{authornamehash}{32cea9e2e3335493479484e6364cb2c0}
-      \strng{authorfullhash}{6664cb0375024e060f2bce5850c604a4}
+      \strng{namehash}{3e92ae0b46222cfaa7eda65b3a4172ac}
+      \strng{fullhash}{3e92ae0b46222cfaa7eda65b3a4172ac}
+      \strng{bibnamehash}{3e92ae0b46222cfaa7eda65b3a4172ac}
+      \strng{authorbibnamehash}{3e92ae0b46222cfaa7eda65b3a4172ac}
+      \strng{authornamehash}{3e92ae0b46222cfaa7eda65b3a4172ac}
+      \strng{authorfullhash}{3e92ae0b46222cfaa7eda65b3a4172ac}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Proceedings of the 12th International Conference on Accelerator and Large Experimental Physics Control Systems}}
-      \field{isbn}{978-4-9905391-0-8}
-      \field{title}{{The White Rabbit Project}}
-      \field{volume}{1}
-      \field{year}{2009}
-      \field{pages}{93}
-      \range{pages}{1}
-      \verb{urlraw}
-      \verb https://accelconf.web.cern.ch/icalepcs2009/papers/tuc004.pdf
-      \endverb
-      \verb{url}
-      \verb https://accelconf.web.cern.ch/icalepcs2009/papers/tuc004.pdf
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Search for a Heavy Neutrino Emitted in $K^+ \to \mu^+$ Neutrino Decay}}
+      \field{volume}{104}
+      \field{year}{1981}
+      \field{pages}{84\bibrangedash 88}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/0370-2693(81)90860-1
       \endverb
     \endentry
-    \entry{crt_note}{report}{}
-      \name{author}{1}{}{%
-        {{hash=e50ccecf29175fc95d4a77a6679d8ed7}{%
-           family={Kreslor},
+    \entry{KEK2}{article}{}
+      \name{author}{13}{}{%
+        {{hash=59535255036f330b5e65a466967b56b0}{%
+           family={Hayano},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4488630ad673cc4884e8a1f4996898bd}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=16dc852b540ade0658d390224f3f8dfc}{%
+           family={Yamanaka},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=95b358dca8ad0cfa107410e754b3c6cc}{%
+           family={Tanimori},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=733b2056bb26f9b7aae60a55692bfcf0}{%
+           family={Enomoto},
+           familyi={E\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bd8547a95833afbecffac9303b463c47}{%
+           family={Ishibashi},
+           familyi={I\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=be1cac0123d935c7e698751e4f8d7607}{%
+           family={Ishikawa},
+           familyi={I\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5548c9f420c4e97704e65eb2177bef28}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3f634efdd1a6956254d692c3723e2c54}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=62fe0168743c8894fe5df1e923e529fd}{%
+           family={Yamazaki},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e9747ca880ac12a4dda39ce7fc639caf}{%
+           family={Kurokawa},
            familyi={K\bibinitperiod},
-           given={Igor},
-           giveni={I\bibinitperiod}}}%
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=081587441a650f55bc99570512b3a5cb}{%
+           family={Schnetzer},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=724947753e079847eed05eb9eebf090b}{%
+           family={Takada},
+           familyi={T\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{e50ccecf29175fc95d4a77a6679d8ed7}
-      \strng{fullhash}{e50ccecf29175fc95d4a77a6679d8ed7}
-      \strng{bibnamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
-      \strng{authorbibnamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
-      \strng{authornamehash}{e50ccecf29175fc95d4a77a6679d8ed7}
-      \strng{authorfullhash}{e50ccecf29175fc95d4a77a6679d8ed7}
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{01b4cb382bb77543032af646220d27f7}
+      \strng{fullhash}{82f72666ed8af7aab87fa6cee8340acc}
+      \strng{bibnamehash}{01b4cb382bb77543032af646220d27f7}
+      \strng{authorbibnamehash}{01b4cb382bb77543032af646220d27f7}
+      \strng{authornamehash}{01b4cb382bb77543032af646220d27f7}
+      \strng{authorfullhash}{82f72666ed8af7aab87fa6cee8340acc}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{18}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{11}
+      \field{title}{{Heavy-Neutrino Search Using ${K}_{\ensuremath{\mu}2}$ Decay}}
+      \field{volume}{49}
+      \field{year}{1982}
+      \field{pages}{1305\bibrangedash 1309}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.49.1305
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.49.1305
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.49.1305
+      \endverb
+    \endentry
+    \entry{E949}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=8daa29cb9336046baed9d5bf299c5fde}{%
+           family={Artamonov},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9b163f9962aa8427d79540147979b0b}
+      \strng{fullhash}{d9b163f9962aa8427d79540147979b0b}
+      \strng{bibnamehash}{d9b163f9962aa8427d79540147979b0b}
+      \strng{authorbibnamehash}{d9b163f9962aa8427d79540147979b0b}
+      \strng{authornamehash}{d9b163f9962aa8427d79540147979b0b}
+      \strng{authorfullhash}{d9b163f9962aa8427d79540147979b0b}
       \field{sortinit}{4}
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{{SBND Collaboration}}
-      \field{title}{{SBND CRT Technical Note}}
-      \field{type}{techreport}
-      \field{year}{2016}
+      \field{collaboration}{E949}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{note}{[Erratum: Phys.Rev.D 91, 059903 (2015)]}
+      \field{number}{5}
+      \field{title}{{Search for heavy neutrinos in $K^+\to\mu^+\nu_H$ decays}}
+      \field{volume}{91}
+      \field{year}{2015}
+      \field{pages}{052001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.91.052001
+      \endverb
+      \verb{eprint}
+      \verb 1411.3963
+      \endverb
     \endentry
-    \entry{crt_clock}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=88031e20a59504023839a1d3eb2d62ea}{%
-           family={Aloisio},
-           familyi={A\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod}}}%
-        {{hash=52ef1951ac75d1a1f6a016bc92315729}{%
-           family={Branchini},
-           familyi={B\bibinitperiod},
-           given={Paolo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=501e0527ff5355ffb5da57b693f5fb12}{%
-           family={Cicalese},
-           familyi={C\bibinitperiod},
-           given={Roberta},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ab3d1ffaefbba85725b6bb850a398509}{%
-           family={Giordano},
-           familyi={G\bibinitperiod},
-           given={Raffaele},
-           giveni={R\bibinitperiod}}}%
-        {{hash=42d89712cc051f95159999e49a8c323d}{%
-           family={Izzo},
-           familyi={I\bibinitperiod},
-           given={Vincenzo},
-           giveni={V\bibinitperiod}}}%
-        {{hash=2229a965b9e752db63f5d1a93997e6bd}{%
-           family={Loffredo},
-           familyi={L\bibinitperiod},
-           given={Salvatore},
-           giveni={S\bibinitperiod}}}%
+    \entry{NA62A}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=c3e61248415ce46d07236902d5555901}{%
+           family={Cortina\bibnamedelima Gil},
+           familyi={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{4e1603dccee81a707524ea249e577338}
-      \strng{fullhash}{21c8bc417cf0b5624ec8d3fa90cde7d7}
-      \strng{bibnamehash}{4e1603dccee81a707524ea249e577338}
-      \strng{authorbibnamehash}{4e1603dccee81a707524ea249e577338}
-      \strng{authornamehash}{4e1603dccee81a707524ea249e577338}
-      \strng{authorfullhash}{21c8bc417cf0b5624ec8d3fa90cde7d7}
+      \strng{namehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{fullhash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{bibnamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authorbibnamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authornamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authorfullhash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{2007 IEEE Nuclear Science Symposium Conference Record}}
-      \field{title}{{FPGA implementation of a high-resolution time-to-digital converter}}
-      \field{volume}{1}
-      \field{year}{2007}
-      \field{pages}{504}
-      \range{pages}{1}
+      \field{collaboration}{NA62}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Search for heavy neutral lepton production in $K^+$ decays}}
+      \field{volume}{778}
+      \field{year}{2018}
+      \field{pages}{137\bibrangedash 145}
+      \range{pages}{9}
       \verb{doi}
-      \verb 10.1109/NSSMIC.2007.4436379
+      \verb 10.1016/j.physletb.2018.01.031
+      \endverb
+      \verb{eprint}
+      \verb 1712.00297
       \endverb
     \endentry
-    \entry{caen_manuals}{misc}{}
+    \entry{NA62B}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=1aa25e67cbd936d2815ee689ff17bb6e}{%
-           family={{CAEN SpA}},
-           familyi={C\bibinitperiod}}}%
+        {{hash=c3e61248415ce46d07236902d5555901}{%
+           family={Cortina\bibnamedelima Gil},
+           familyi={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{1aa25e67cbd936d2815ee689ff17bb6e}
-      \strng{fullhash}{1aa25e67cbd936d2815ee689ff17bb6e}
-      \strng{bibnamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
-      \strng{authorbibnamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
-      \strng{authornamehash}{1aa25e67cbd936d2815ee689ff17bb6e}
-      \strng{authorfullhash}{1aa25e67cbd936d2815ee689ff17bb6e}
+      \strng{namehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{fullhash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{bibnamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authorbibnamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authornamehash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \strng{authorfullhash}{fcc004d8313205fb67f18d8a3712ecbb}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{NA62}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Search for $K^+$ decays to a muon and invisible particles}}
+      \field{volume}{816}
+      \field{year}{2021}
+      \field{pages}{136259}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2021.136259
+      \endverb
+      \verb{eprint}
+      \verb 2101.12304
+      \endverb
+    \endentry
+    \entry{PS191A}{article}{}
+      \name{author}{13}{}{%
+        {{hash=77b3dd09192a43359e92862ec60dbc7b}{%
+           family={Bernardi},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8b34a4bf3cb3d313b9b42fc7e0fa9e37}{%
+           family={Carugno},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bc1a80ad2fb801c8178f8c0d254bd86b}{%
+           family={Chauveau},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=61d515e1d52d4e8f144804d0861a7dbe}{%
+           family={Dicarlo},
+           familyi={D\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=173493da6f875fade404ef0cdb85a05f}{%
+           family={Dris},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=76028df93ea89f58ba5583d5dcfd9951}{%
+           family={Dumarchez},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=841a753d048ce498584bd5083d10ef12}{%
+           family={Ferro-Luzzi},
+           familyi={F\bibinithyphendelim L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2ea114ba1c6817ee8b0254fac1d41b3c}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={J.-M.},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=ab7bc73fa2a15611601461679de9412b}{%
+           family={Lukas},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9971bc8b6c98b10e63ffac361531ed87}{%
+           family={Perreau},
+           familyi={P\bibinitperiod},
+           given={J.-M.},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=3300b5ec0fb826811c5a0c9028a58989}{%
+           family={Pons},
+           familyi={P\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d99d6a91df052c8836f35de857053336}{%
+           family={Touchard},
+           familyi={T\bibinitperiod},
+           given={A.-M.},
+           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=dc0eeb5ccdcf6de05e17186786a485b0}{%
+           family={Vannucci},
+           familyi={V\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{fullhash}{b21c1f8c4f0de89e580a2df3133622ab}
+      \strng{bibnamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authorbibnamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authornamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authorfullhash}{b21c1f8c4f0de89e580a2df3133622ab}
+      \field{extraname}{1}
       \field{sortinit}{6}
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{V1730/VX1730 \& V1725/VX1725 User Manual}}
-      \field{year}{2023}
+      \field{abstract}{A search to observe neutrino decays has been performed. Its results are used to set limits on the couplings of a hypothetical massive neutrino with the ordinary ve and vμ. An improvement of about two orders of magnitude is obtained over previous limits in a wide range of neutrino masses.}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{4}
+      \field{title}{{Search for neutrino decay}}
+      \field{volume}{166}
+      \field{year}{1986}
+      \field{pages}{479\bibrangedash 483}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0370-2693(86)91602-3
+      \endverb
       \verb{urlraw}
-      \verb https://www.caen.it/products/v1730/
+      \verb https://www.sciencedirect.com/science/article/pii/0370269386916023
       \endverb
       \verb{url}
-      \verb https://www.caen.it/products/v1730/
+      \verb https://www.sciencedirect.com/science/article/pii/0370269386916023
+      \endverb
+    \endentry
+    \entry{PS191B}{article}{}
+      \name{author}{13}{}{%
+        {{hash=77b3dd09192a43359e92862ec60dbc7b}{%
+           family={Bernardi},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8b34a4bf3cb3d313b9b42fc7e0fa9e37}{%
+           family={Carugno},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bc1a80ad2fb801c8178f8c0d254bd86b}{%
+           family={Chauveau},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=61d515e1d52d4e8f144804d0861a7dbe}{%
+           family={Dicarlo},
+           familyi={D\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=173493da6f875fade404ef0cdb85a05f}{%
+           family={Dris},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=76028df93ea89f58ba5583d5dcfd9951}{%
+           family={Dumarchez},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=841a753d048ce498584bd5083d10ef12}{%
+           family={Ferro-Luzzi},
+           familyi={F\bibinithyphendelim L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2ea114ba1c6817ee8b0254fac1d41b3c}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={J.-M.},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=ab7bc73fa2a15611601461679de9412b}{%
+           family={Lukas},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9971bc8b6c98b10e63ffac361531ed87}{%
+           family={Perreau},
+           familyi={P\bibinitperiod},
+           given={J.-M.},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=3300b5ec0fb826811c5a0c9028a58989}{%
+           family={Pons},
+           familyi={P\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d99d6a91df052c8836f35de857053336}{%
+           family={Touchard},
+           familyi={T\bibinitperiod},
+           given={A.-M.},
+           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=dc0eeb5ccdcf6de05e17186786a485b0}{%
+           family={Vannucci},
+           familyi={V\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{fullhash}{b21c1f8c4f0de89e580a2df3133622ab}
+      \strng{bibnamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authorbibnamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authornamehash}{5a72049d6b9bb7d94861c03877b52542}
+      \strng{authorfullhash}{b21c1f8c4f0de89e580a2df3133622ab}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Limits on leptonic mixing matrix elements are inferred from the results of a dedicated neutrino-decay search; an improvement of more than two orders of magnitude is achieved over previous results for a wide range of the neutrino mass.}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{3}
+      \field{title}{{Further limits on heavy neutrino couplings}}
+      \field{volume}{203}
+      \field{year}{1988}
+      \field{pages}{332\bibrangedash 334}
+      \range{pages}{3}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0370-2693(88)90563-1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0370269388905631
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0370269388905631
+      \endverb
+    \endentry
+    \entry{T2KHNL}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=87ca4e44d6c1beeda93993a24d605806}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{fullhash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{bibnamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authorbibnamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authornamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authorfullhash}{98b84219bd20ba283086d9d7219006ed}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{T2K}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{number}{5}
+      \field{title}{{Search for heavy neutrinos with the T2K near detector ND280}}
+      \field{volume}{100}
+      \field{year}{2019}
+      \field{pages}{052006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.100.052006
+      \endverb
+      \verb{eprint}
+      \verb 1902.07598
+      \endverb
+    \endentry
+    \entry{NuTeV}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e2b4b2c5da643c7bc28159dfb802335a}{%
+           family={Vaitaitis},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \strng{fullhash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \strng{bibnamehash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \strng{authorbibnamehash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \strng{authornamehash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \strng{authorfullhash}{d9d97430b4e47d51c34d5a93c7c18623}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{NuTeV, E815}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{{Search for neutral heavy leptons in a high-energy neutrino beam}}
+      \field{volume}{83}
+      \field{year}{1999}
+      \field{pages}{4943\bibrangedash 4946}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.83.4943
+      \endverb
+      \verb{eprint}
+      \verb hep-ex/9908011
+      \endverb
+    \endentry
+    \entry{uboone1}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{MicroBooNE}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{number}{5}
+      \field{title}{{Search for Heavy Neutral Leptons Decaying into Muon-Pion Pairs in the MicroBooNE Detector}}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{052001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.101.052001
+      \endverb
+      \verb{eprint}
+      \verb 1911.10545
+      \endverb
+    \endentry
+    \entry{uboone2}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{MicroBooNE}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{number}{9}
+      \field{title}{{Search for long-lived heavy neutral leptons and Higgs portal scalars decaying in the MicroBooNE detector}}
+      \field{volume}{106}
+      \field{year}{2022}
+      \field{pages}{092006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.106.092006
+      \endverb
+      \verb{eprint}
+      \verb 2207.03840
+      \endverb
+    \endentry
+    \entry{uboone3}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{MicroBooNE}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{{Search for heavy neutral leptons in electron-positron and neutral-pion final states with the MicroBooNE detector}}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2310.07660
       \endverb
     \endentry
   \enddatalist
