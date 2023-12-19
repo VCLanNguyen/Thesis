@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  18 DEC 2023 21:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  19 DEC 2023 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1145,26 +1145,45 @@ No file thesis.nls.
 ]
 Chapter 2.
 [3{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [4] [5]
-<Chapter2/Figs/kaon_to_SMnu.png, id=74, 454.69875pt x 225.84375pt>
-File: Chapter2/Figs/kaon_to_SMnu.png Graphic file (type png)
-<use Chapter2/Figs/kaon_to_SMnu.png>
-Package pdftex.def Info: Chapter2/Figs/kaon_to_SMnu.png  used on input line 114.
-(pdftex.def)             Requested size: 179.24962pt x 89.02982pt.
-<Chapter2/Figs/kaon_to_HNL.png, id=76, 454.69875pt x 223.83624pt>
-File: Chapter2/Figs/kaon_to_HNL.png Graphic file (type png)
-<use Chapter2/Figs/kaon_to_HNL.png>
-Package pdftex.def Info: Chapter2/Figs/kaon_to_HNL.png  used on input line 120.
-(pdftex.def)             Requested size: 179.24962pt x 88.23845pt.
+<Chapter2/Figs/K_to_nu.png, id=70, 521.95pt x 296.10625pt>
+File: Chapter2/Figs/K_to_nu.png Graphic file (type png)
+<use Chapter2/Figs/K_to_nu.png>
+Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 114.
+(pdftex.def)             Requested size: 179.24962pt x 101.69138pt.
+<Chapter2/Figs/K_to_HNL.png, id=72, 521.95pt x 285.065pt>
+File: Chapter2/Figs/K_to_HNL.png Graphic file (type png)
+<use Chapter2/Figs/K_to_HNL.png>
+Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 120.
+(pdftex.def)             Requested size: 179.24962pt x 97.8995pt.
+ [6 <./Chapter2/Figs/K_to_nu.png> <./Chapter2/Figs/K_to_HNL.png>]
+<Chapter2/Figs/kinematics_factor.png, id=84, 722.7pt x 433.62pt>
+File: Chapter2/Figs/kinematics_factor.png Graphic file (type png)
+<use Chapter2/Figs/kinematics_factor.png>
+Package pdftex.def Info: Chapter2/Figs/kinematics_factor.png  used on input line 166.
+(pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
+ [7 <./Chapter2/Figs/kinematics_factor.png>]
+<Chapter2/Figs/branching_ratio.png, id=95, 722.7pt x 433.62pt>
+File: Chapter2/Figs/branching_ratio.png Graphic file (type png)
+<use Chapter2/Figs/branching_ratio.png>
+Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 200.
+(pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
+ [8 <./Chapter2/Figs/branching_ratio.png>]
+<Chapter2/Figs/N_to_pi0_edit.png, id=105, 951.555pt x 476.78125pt>
+File: Chapter2/Figs/N_to_pi0_edit.png Graphic file (type png)
+<use Chapter2/Figs/N_to_pi0_edit.png>
+Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 237.
+(pdftex.def)             Requested size: 219.5866pt x 110.02113pt.
+<Chapter2/Figs/pi0_to_gam.png, id=106, 635.37375pt x 282.05376pt>
+File: Chapter2/Figs/pi0_to_gam.png Graphic file (type png)
+<use Chapter2/Figs/pi0_to_gam.png>
+Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 243.
+(pdftex.def)             Requested size: 219.5866pt x 97.47649pt.
 
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 137.
+LaTeX Warning: Reference `' on page 9 undefined on input line 258.
 
-[6 <./Chapter2/Figs/kaon_to_SMnu.png> <./Chapter2/Figs/kaon_to_HNL.png>]
-
-LaTeX Warning: Reference `' on page 7 undefined on input line 154.
-
-[7]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 201.
+[9 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>] [10]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 300.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -1172,7 +1191,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [8] [9]) [10] [48
+ [11] [12]) [13] [48
 
 
 
@@ -1191,7 +1210,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 23CB3F87CCC1100C9541706DD7908AA3;1505.
+(rerunfilecheck)             Checksum: E5BF9AAC39AB058773DA2815C4FE022B;1299.
 
 
 LaTeX Warning: There were undefined references.
@@ -1201,18 +1220,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26813 strings out of 483065
- 471980 string characters out of 5963550
- 1206492 words of memory out of 5000000
- 41100 multiletter control sequences out of 15000+600000
- 618825 words of font info for 232 fonts, out of 8000000 for 9000
+ 26850 strings out of 483065
+ 472840 string characters out of 5963550
+ 1206709 words of memory out of 5000000
+ 41128 multiletter control sequences out of 15000+600000
+ 618737 words of font info for 233 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,12n,109p,989b,1896s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (13 pages, 117670 bytes).
+ 60i,15n,109p,989b,1896s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (16 pages, 468062 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 26195 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 26207 words of extra memory for PDF output out of 29859 (max. 10000000)
 

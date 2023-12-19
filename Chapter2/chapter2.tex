@@ -89,7 +89,7 @@ The mass range of the HNLs can span over many orders many orders of magnitudes a
 Different theoretical models of HNLs have been developed and a comprehensive review has been discussed, see Ref. \cite{}. 
 In this thesis, the existence of HNLs will be explored in a minimal way, assuming an addition of a single HNL to the SM.  
 The HNL mass range of interest must be able to be produced from the Booster Neutrino Beam (BNB) and directly detected by the Short-Baseline Near Detector (SBND), which limits the mass to $m_{N}=\mathcal{O}$(100 MeV).
-At this mass range, the HNLs lose coherence with SM neutrinos and thus, do not oscillate \cite{}.
+At this mass range over the baseline distance of 110 m, oscillation with the active neutrinos results in coherence loss \cite{}.
 Instead, the HNLs are expected to travel over a long distance before decaying into SM observables via mass mixing.
 
 %This thesis: simple phenomenological model
@@ -111,13 +111,13 @@ An example diagram of such decay is depicted in Fig. \ref{fig:kaonDiagram}, show
 %\hfill
 \begin{subfigure}[h]{0.4\linewidth}
 \centering    
-\includegraphics[width=\linewidth]{kaon_to_SMnu}
+\includegraphics[width=\linewidth]{K_to_nu}
 \caption{}
 \end{subfigure}
 \hfill
 \begin{subfigure}[h]{0.4\linewidth}
 \centering    
-\includegraphics[width=\linewidth]{kaon_to_HNL}
+\includegraphics[width=\linewidth]{K_to_HNL}
 \caption{}
 \end{subfigure}%
 %\hfill
@@ -134,7 +134,13 @@ In general, the branching ratio of a two-body charged kaon decay into a HNL can 
 \begin{equation}
 	Br(K^{+}\rightarrow l^{+}_{\alpha}N) = Br(K^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})\left(\frac{|U_{\alpha 4}|^{2}}{1 - |U_{\alpha 4}|^{2}}\right)\rho_{N}\left(\frac{m^{2}_{l_{\alpha}}}{m^{2}_{K}}, \frac{m^{2}_{N}}{m^{2}_{K}} \right) 
 \end{equation}
-where $Br(K^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the two-body branching ratio into SM neutrinos and $\rho_{N}$ is a function accounting for the available phase space in the decay \cite{} (See Appendix \ref{} for the complete expansion of $\rho_{N}$).
+where $Br(K^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the two-body branching ratio into SM neutrinos and $\rho_{N}$ is a kinematics factor accounting for the available phase space in the decay \cite{}. The complete expansion of the function $\rho_{N}$ is as following
+
+\begin{equation}
+	\rho_{N}(x,y) = \frac{(x+y-(x-y)^{2})\sqrt{1+x^{2}+y^{2}-2(x+y+xy)}}{x(1-x)^{2}}
+\label{eq:KinematicsFactor}
+\end{equation}
+
 
 The available phase space of the HNL is constrained by the mass of the charged kaon.
 Since the mass of a charged kaon ($m_{K} = 494 $ MeV) is smaller than the mass of a tau ($m_{\tau}=1777 $ MeV), $\tau$-flavour leptons cannot be produced from the decay.  
@@ -149,37 +155,130 @@ Therefore, the maximum mass $m_{N}$ can be probed is $\sim493$ MeV  and $\sim388
 %Helicity Unsuppression i.e. K ->Ne and K->Nmu
 %Enahancement factor??
 %TODO: describe the plots
-Furthermore, helicity suppression that occurs in the case of mesons decaying into a SM neutrino has minimal effects in the case of mesons decaying into HNLs due to HNLs being massive \cite{}.
+Furthermore, helicity suppression that occurs in the case of mesons decaying into a SM neutrino has minimal effects in the same case of HNLs due to HNLs being massive \cite{}.
 The contribution from helicity suppression can be greater than one compared to the neutrino production, which indicates helicity \textit{enhancement} in the HNL production.
-The available phase space function $\rho_{N}$, accounting for helicity enhancement, is plotted in Fig. \ref{} for the HNL production from the charged kaon. 
+The kinematics factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, also accounting for this enhancement in the available phase space, is plotted against the mass of HNLs as shown in Fig. \ref{fig:KinematicsFactor}.
+Significant enhancement can be seen for the rate of $K^{+}\rightarrow e^{+}N$ by a factor of $10^{5}$.
+For the production of HNL of interest from the BNB beam, the kinematics factor for the $K^{+}\rightarrow \mu^{+}N$ channel varies between 1.5 and 4.
 
-%TODO: plot available kinematics phase space as a function of HNL mass.
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{kinematics_factor}
+\caption[KinematicsFactor]{
+Kinematics factor of HNL production rate from meson decays compared to analogous SM neutrino production, given by function $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}.
+The pink line shows the enhancement associated with the production from kaons via the mixing angle $|U_{e4}|^{2}$ whilst the blue line shows the enhancement associated with the mixing angle $|U_{\mu4}|^{2}$.
+The vertical dashed gray lines indicate limit on the HNL mass from each mixing angle. 
+}
+\label{fig:KinematicsFactor}
+\end{figure}
 
 \section{Decay}
 
 %DIF with coupling
+HNLs are unstable particles and therefore decay in flight with a lifetime proportional to the mixing angle $|U_{\alpha4}|^{2}$ $(\alpha=e,\mu,\tau)$, such that HNLs must survive long enough to reach the detector before decaying into observable particles.
+Since $|U_{\alpha4}|^{2}$ is the same coupling responsible for the HNL production, the observed event rate at the detector scale with $|U_{\alpha4}|^{4}$.
+At the mass $\mathcal{O}$(100 MeV), the tau-flavour mixing angle is kinematically forbidden and thus, the possible decay channels for HNLs are \cite{}
 
 %Possible decay channel
-
-%Branching Ratio
+\begin{equation}
+\begin{split}
+	N\rightarrow e^{-}\pi^{+},\qquad 
+	N\rightarrow \mu^{-}\pi^{+},\qquad
+	N\rightarrow \nu \pi^{0},\qquad 
+	N\rightarrow \nu \gamma,\qquad \\ 
+	N\rightarrow \nu e^{-} e^{+},\qquad 
+	N\rightarrow \nu \mu^{-} \mu^{+},\qquad 
+	N\rightarrow \nu \mu^{-}e^{+},\qquad
+	N\rightarrow \nu \nu \nu. 
+\end{split}
+\end{equation}
+In the case of HNLs are Majorana, the charge conjugates for the decays are also available.
 
 %TODO: branching diagram plots
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{branching_ratio}
+\caption[branching_ratio]{
+The branching ratio of decay channels of a Majorana HNL as a function of its mass.
+The decay widths of each channel is taken from Ref. \cite{}.
+Solid lines are branching ratios via the muon-flavour mixing angle ($[U_{e4}:U_{\mu4}:U_{\tau4}]=[0:1:0]$) and dashed lines are branching ratios via the electron-flavour mixing angle ($[U_{e4}:U_{\mu4}:U_{\tau4}]=[1:0:0]$).
+In pink and thicker line width is the decay channel studied in this thesis $N\rightarrow \nu \pi^{0}.$
+}
+\label{fig:branching_ratio}
+\end{figure}
 
 %Overall description of each BR channel
+The branching ratio of decay channels for a Majorana HNL is shown in Fig. \ref{fig:branching_ratio}, with decay widths reference taken from \cite {}.
+For $m_{N} < 135$ MeV, the branching ratio is dominated by the channel $N\rightarrow \nu\nu\nu$, however is experimentally unobservable.
+Whilst the channel $N\rightarrow \nu \gamma$ is highly suppressed, the channel $N\rightarrow \nu e^{-}e^{+}$ provides the best sensitivity at this mass range.
+For $m_{N} > 135$ MeV, such that a HNL has sufficient mass to decay into a neutral pion, the channel $N\rightarrow \nu \pi^{0}$ dominates the muon-flavour mixing angle, whilst the channel $N\rightarrow e^{-}\pi^{+}$ dominates the electron-flavou mixing angle.
+For $m_{N} > 245$ MeV, equivalent to the mass of a muon and a charged pion combined, the lepton-pion channels are the leading decays. 
+Both channels $N\rightarrow \nu \mu^{-}e^{+}$ and $N\rightarrow \nu \mu^{-}\mu^{+}$ are not competitive in relative to all other channels at the same mass value.  
 
 %Desciption on the specific decay channel of thesis: HNL -> nu + pi0
+%TODO: what mass range am I looking for.
+This thesis searches for the existence of HNL via $N\rightarrow\nu \pi^{0}$, which is the leading channel the muon-flavour mixing angle in the mass range $ 135 < m_{N} < 245 $ MeV.
+In the same mass range of the electron-flavour mixing angle, this region has been well-explored.
+Therefore, this thesis focuses on non-zero $|U_{\mu4}|$, assuming $|U_{e4}| = |U_{\tau4}| = 0$.  
+In this case, the decay width of this channel is modelled as \cite{}:
+\begin{equation}
+	\Gamma(N\rightarrow \nu \pi^{0}) = \frac{G_{F}^{2}m_{N}^{3}}{32\pi}f^{2}_{\pi^{0}}|U_{\mu4}|^{2}\left(1-\left(\frac{m_{\pi^{0}}}{m_{N}}\right)^{2}\right)^{2}
+\label{eq:pi0}
+\end{equation}
+where $G_{F}$ is the Fermi constant, $f_{\pi^{0}}$ is the decay constant of a neutral pion and $m_{\pi^{0}}$ is the mass of a neutral pion.
+It is important to note that this decay width expression has been derived several times in various literature with slightly different variations. 
+Eq. \ref{eq:pi0} does not contain an additional factor of 2 in the denominator compared to Ref. \cite{} and \cite{}.
+The resulting event rate still agrees within the same order of magnitude.
 
-\section{Dirac or Majorana Nature}
+\begin{figure}[htbp!]
+%\hfill
+\begin{subfigure}[h]{0.49\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{N_to_pi0_edit}
+\caption{}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{0.49\linewidth}
+\centering    
+\includegraphics[width=\linewidth]{pi0_to_gam}
+\caption{}
+\end{subfigure}%
+%\hfill
+\caption[decayDiagram]{
+Diagrams of a HNL decaying into a neutrino and a neutral pion mediated by $|U_{\mu4}|^{2}$ (a) and a neutral pion decaying into two photons (b).
+}\label{fig:decayDiagram}
+\end{figure}
 
-This condition implies that the Majorana particle is its own antiparticle, which can violate lepton number conservation.
+%Decay signature in TPC
+%TODO: neutral pion BR 
+Once a HNL decays into a neutrino and a neutral pion inside the detector, the neutrino escapes the detector undetected whilst the neutral pion decays into two photons with a branching ratio of 0.988 \cite{}. 
+Diagrams of the decays are shown in Fig. \ref{fig:decayDiagram}.
+This decay results into a particular event topology inside a LArTPC: two photon showers originating from the same vertex without any hadronic activities.
+Neutral-current neutrino interactions resulting into a neutral pion also share the same final state particles and thus, represent the main background of this search.
+However, different event kinematics and precise timing resolution, as detailed in Section \ref{}, provide a good separation between HNL decays and neutrino interactions. 
+
+%Dirac or Majorana Nature
+HNLs can be either Dirac or Majorana in nature.
+Majorana HNLs would violate the conservation of lepton number, whereas Dirac HNLs would perserves it.
+Therefore the expected event rate of Majorana HNLs is double the rate of Dirac HNLs.
+Moreover, a Majorana HNL would decay isotropically whilst in the case of a Dirac HNL, the helicity of the produced neutrino would determine the direction of the decay products \cite{}.
+Ref \cite{} has demonstrated that a HNL decaying into a neutral meson is isotropic in the rest frame, and thus, does not depend on helicity of the partner neutrino.
+This means that the decay channel $N\rightarrow \nu \pi^{0}$ is insensitive to the Dirac nature of HNLs.
+This thesis therefore assumes HNLs are Majorana particles for the search.
 
 \section{Previous Experimental Searches}
 
 %Number of fermion families = Z boson decay for LH neutrinos, RH neutrinos is not constrained
 
 %Overview of different types of searches
+HNLs have been searched by experiments over the decades, across a large range of mass.
+While oscillation experiments and precise $\beta$ decay experiments can probe HNL at the mass range of eV and keV, collider experiments have set limits on on GeV-scale HNLs.
+No evidence of HNLs existence has been found, and thus, experiments have set upper limits on to the mixing angle $|U_{\alpha4}|^{4}$ $(\alpha=e,\mu,\tau)$.
+The sensitivity limits are often expressed in terms of the mixing angle $|U_{\alpha4}|^{4}$ as a function of the HNL mass.
 
-The focus is on HNLs of the MeV-scale coupling to $|U_{\mu4}|^{2}$, probed by two experimental methods: peak searches and decay searches.
+Here, the existing experimental limits on HNLs of $\mathcal{O}$ (100 MeV) are presented, specifically between $ 0 < m_{N} < 245 $ MeV which is relevant to the final states $\nu\pi^{0}$.
+At this mass range, the primary experimental methods are peak searches and decay searches.
+Peak searches probe only the production rate of HNL whilst decay searches probe both production and decay rates.
 
 \subsection{Peak Searches}
 
