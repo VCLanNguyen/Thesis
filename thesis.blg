@@ -1,22 +1,28 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[57] biber:322> INFO - === Wed Dec 20, 2023, 13:01:32
-[67] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[119] Biber.pm:943> INFO - Found 29 citekeys in bib section 0
-[129] Biber.pm:4256> INFO - Processing section 0
-[130] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
-[130] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
-[137] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
-[139] bibtex.pm:1653> INFO - LaTeX decoding ...
-[183] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
-[367] Utils.pm:293> WARN - month field 'Jan' in entry 'pi0' is not an integer - this will probably not sort properly.
-[387] Utils.pm:293> WARN - month field 'Mar' in entry 'SIN2' is not an integer - this will probably not sort properly.
-[395] Utils.pm:293> WARN - month field 'Nov' in entry 'SIN3' is not an integer - this will probably not sort properly.
-[413] Utils.pm:293> WARN - month field 'Nov' in entry 'KEK2' is not an integer - this will probably not sort properly.
-[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[491] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[491] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[507] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[574] bbl.pm:755> INFO - Output to thesis.bbl
-[574] Biber.pm:128> INFO - WARNINGS: 4
+[46] biber:322> INFO - === Mon Jan  1, 2024, 23:19:18
+[55] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[99] Biber.pm:943> INFO - Found 35 citekeys in bib section 0
+[107] Biber.pm:4256> INFO - Processing section 0
+[107] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
+[107] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
+[113] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
+[115] bibtex.pm:1653> INFO - LaTeX decoding ...
+[163] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
+[178] Utils.pm:293> WARN - month field 'May' in entry 'Homestake' is not an integer - this will probably not sort properly.
+[211] Utils.pm:293> WARN - month field 'Sep' in entry 'Kamiokande' is not an integer - this will probably not sort properly.
+[236] Utils.pm:293> WARN - month field 'Dec' in entry 'SAGE' is not an integer - this will probably not sort properly.
+[528] Utils.pm:293> WARN - month field 'Jul' in entry 'SNO' is not an integer - this will probably not sort properly.
+[616] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBFlux' is not an integer - this will probably not sort properly.
+[637] Utils.pm:293> WARN - month field 'Jan' in entry 'pi0' is not an integer - this will probably not sort properly.
+[656] Utils.pm:293> WARN - month field 'Mar' in entry 'SIN2' is not an integer - this will probably not sort properly.
+[664] Utils.pm:293> WARN - month field 'Nov' in entry 'SIN3' is not an integer - this will probably not sort properly.
+[681] Utils.pm:293> WARN - month field 'Nov' in entry 'KEK2' is not an integer - this will probably not sort properly.
+[724] Utils.pm:293> WARN - month field 'May' in entry 'PS191C' is not an integer - this will probably not sort properly.
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[770] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[770] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[796] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1022] bbl.pm:755> INFO - Output to thesis.bbl
+[1022] Biber.pm:128> INFO - WARNINGS: 10

@@ -13,23 +13,33 @@
 
 %********************************** %Opening  **************************************
 
-Chapter 2 Opening
+Neutrino oscillation is the key evidence suggesting that neutrinos have mass, a phenomenon that cannot currently be explained by the Standard Model.
+An additional right-handed neutral state is required to explain the generation of neutrino mass, constructed via either Dirac or Majorana mass term.
+Since this new state is much heavier than neutrinos, it is commonly referred to as the \textit{Heavy Neutral Lepton} (HNL).
+
+In Section \ref{sec2Overview} of this chapter, an overview of HNL as a minimal extension to the Standard Model is presented.
+Section \ref{sec2Production} explains the production mechanism of HNLs from meson decays, enabling HNL searches using the charged kaons produced from the Booster Neutrino Beam.
+Following this, Section \ref{sec2Decay} details the decay of the HNLs into Standard Model observables. 
+This thesis particularly focuses on the decay channel of HNLs into a neutrino and a neutral pion, where the neutral pion subsequently decays into two photons inside the Short-Baseline Near Detector.
+Lastly, Section \ref{sec2Previous} summarizes the existing sensitivity limits on the available mixing angle and mass phase space of HNLs through two different experimental methods: peak searches and decay searches.
 
 %********************************** %First Section  **************************************
 \newpage
 \section{Right-Handed Heavy Neutral States}
-
+\label{sec2Overview}
 %Motivation for HNL theory: neutrino oscillation -> right handed Dirac mass term
-%TODO: Ref more neutrino experiments
-The discovery of neutrino oscillation has been well established by the Super Kamiokande collaboration in 1998 \cite{superK} and the SNO collaboration in 2001 \cite{SNO}. 
-The neutrinos can convert from one flavour to another and therefore, clearly indicates the existence of non-zero mass for at least two out of three flavours of the neutrinos.
-However, there is currently no mass generation mechanism for neutrinos in the Standard Model (SM).
-The SM neutrinos only interact weakly, which indicates the existence of left-handed chiral neutrino fields but the right-handed counterparts still remain absent.
+The first hints of neutrino oscillation emerged in 1968, when an anomaly in solar neutrino was observed by Davis et al. in the Homestake experiment \cite{Homestake}.
+Subsequent reinforcing results quickly came from Kamiokande \cite{Kamiokande}, SAGE \cite{SAGE} and GALLEX \cite{GALLEX} experiments.
+It was not until 1998 that neutrino oscillation was conclusively measured by the Super Kamiokande collaboration \cite{superK}, followed by confirmation from the SNO collaboration in 2001 \cite{SNO}. 
+This phenomenon of neutrinos oscillating from one flavour to another affirms the existence of non-zero mass for at least two out of the three neutrino flavours.
+
+However, the Standard Model (SM) is incomplete, and currently provides no mass generation for the neutrinos.
+SM neutrinos interact weakly, indicating the existence of left-handed chiral neutrino fields, but their right-handed counterparts still remain absent. 
 Thus, no Dirac mass of neutrinos can be built via the Yukawa coupling of the Higgs to the opposite chirality fields. 
 
 %RH Mass mechanism i.e. Dirac mass term
-This motivates an introduction of a right-handed chiral neutrino fields, such that the Dirac mass term for the neutrinos resulting from the Yukawa coupling to the Higgs field can be constructed using the same recipe as all other SM particles.
-The Dirac mass term in the neutrino Lagrangian is as follows \cite{Thomson}
+This motivates the introduction of right-handed chiral neutrino fields, enabling the construction of a Dirac mass term for neutrinos through the Yukawa coupling to the Higgs field.
+Using the same recipe as all other SM particles, the Dirac mass term in the neutrino Lagrangian is as follows \cite{Thomson}
 \begin{equation}
 \mathcal{L}_{D} = -m_{D} (\overline{\nu_{R}}\nu_{L} + \overline{\nu_{L}}\nu_{R}) 
 \label{eq:dirac}
@@ -38,14 +48,14 @@ where $m_{D} = Yv/\sqrt{2}$ is the Dirac mass, $Y$ is the Yukawa coupling, $v$ i
 
 %Majorana Mechanism
 Due to the neutral nature of the neutrinos, an additional solution to the Eq. \ref{eq:dirac} is available, as proposed by Ettore Majorana in 1937 \cite{Majorana}.
-While the Dirac mass term requires the existence of both left and right-handed chiral states, the Majorana mass term requires only one chiral state, under the condition that a particle is its own anti-particle.
+While the Dirac mass term requires the existence of both left- and right-handed chiral states, the Majorana mass term requires only one chiral state, under the condition that a particle is its own antiparticle.
 As such, the left-handed component can be written in terms of the right-handed component as $\nu^{c}_{R}=C\overline{\nu_{R}}^{T}$, where $C$ is the charge conjugation operator.
-In this case, the Majorana mass terms in the neutrino Lagrangian is as follows \cite{Thomson}
+In this case, the Majorana mass term in the neutrino Lagrangian is as follows \cite{Thomson}
 \begin{equation}
 	\mathcal{L}_{M} = -\frac{1}{2}m_{M}(\overline{\nu_{R}}\nu_{R}^{c} + \overline{\nu_{R}^{c}}\nu_{R})
 \end{equation}
 where $m_{M}$ is the hypothesised Majorana mass. 
-The factor of a half is introduced to account for double counting since the hermitian conjugate is identical.
+The factor of a half is introduced to account for double counting, since the hermitian conjugate is identical.
 
 %Motivation of large mass
 Thus, the right-handed neutrinos provide a mass generation mechanism for the SM (or active) neutrinos via either Dirac or Majorana mass terms.
@@ -53,14 +63,14 @@ Moreover, for having masses $\gg$ eV , the new particles can explain the extreme
 
 %Larger mass than eV neutrino --> Heavy Neutral Lepton
 %HNL characteristisc: no charge, mass mixing, weaker-than-weak
-The neutral nature of the right-handed neutrinos require all the SM charges to be zero and therefore, will not interact directly via the strong, electromagnetic or weak forces.
+The neutral nature of the right-handed neutrinos require all the SM charges to be zero, and therefore, they will not interact directly via the strong, electromagnetic, or weak forces.
 The only possible interaction is via mass mixing with the active neutrinos \cite{SBNHNL}.
 These weaker-than-weak right-handed particles are often referred in text as \textit{sterile neutrinos}.
-Since their masses are significantly massive compared to the active neutrinos, this also gains them the name \textit{Heavy Neutral Leptons} (HNLs), which will be used in this thesis.
+Since their masses are significantly more massive compared to the active neutrinos, this also gains them the name \textit{Heavy Neutral Leptons} (HNLs), which will be used in this thesis.
 
 %PMNS matrix mixing
 From a generic phenomenological approach, HNLs can be added to the SM by extending the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix.
-The PMNS matrix describing the mixing of the SM neutrino flavour eigenstates, $\nu_{\alpha}$ ($\alpha=e,\mu,\tau$) and the mass eigenstates $\nu_{i}$ ($i=1,2,3$) is 
+The PMNS matrix, describing the mixing of the SM neutrino flavour eigenstates $\nu_{\alpha}$ ($\alpha=e,\mu,\tau$), and the mass eigenstates $\nu_{i}$ ($i=1,2,3$), is as follows 
 \begin{equation}
 	U_{PMNS} =
 	\begin{pmatrix}
@@ -69,8 +79,8 @@ The PMNS matrix describing the mixing of the SM neutrino flavour eigenstates, $\
 		U_{\tau1} & U_{\tau2} & U_{\tau3}\\
 	\end{pmatrix}
 \end{equation}
-The flavour eigenstates $\nu_{\alpha}$ undergo weak interaction whilst the mass eigenstates $\nu_{i}$ describe the neutrino propagation in space and time.
-For an addition of a single HNL with mass $m_{N}$, the PMNS can be extended to describe the mass mixing between the SM neutrinos and the new heavy eigenstate $N$ as 
+The flavour eigenstates $\nu_{\alpha}$ undergo weak interaction, whilst the mass eigenstates $\nu_{i}$ describe the neutrino propagation in space and time.
+For an addition of a single HNL with mass $m_{N}$, the PMNS matrix can be extended to describe the mass mixing between the SM neutrinos and the new heavy eigenstate $N$ as follows 
 \begin{equation}
 	U_{PMNS}^{Extended} =
 	\begin{pmatrix}
@@ -81,18 +91,18 @@ For an addition of a single HNL with mass $m_{N}$, the PMNS can be extended to d
 	\end{pmatrix}
 \end{equation}
 where the index 4 is reserved for the newly added $N$.
-Then, the flavour eigenstates  $\nu_{\alpha}$ of the SM neutrinos can be written as the linear combination of the mass eigenstates $\nu_{i}$ and the HNL eigenstate $N$ as  
+Then, the flavour eigenstates  $\nu_{\alpha}$ of the SM neutrinos can be written as the linear combination of the mass eigenstates $\nu_{i}$ and the HNL eigenstate $N$ as follows 
 \begin{equation}
 	\nu_{\alpha}=\sum U_{\alpha i}\nu_{i} + U_{\alpha 4}N
 \end{equation}
-where the mixing angles $U_{\alpha i }$ ($\alpha=e,\mu,\tau$ and $i=1,2,3$) are elements of the SM PMNS matrix and the mixing angles $U_{\alpha 4}$ are the extension.
+where the mixing angles $U_{\alpha i }$ ($\alpha=e,\mu,\tau$ and $i=1,2,3$) are elements of the SM PMNS matrix, and the mixing angles $U_{\alpha 4}$ are the extension.
 
 %Available mass range 
-The mass range of the HNLs can span over many orders many orders of magnitudes and the number of HNLs are unconstrained.
-Different theoretical models of HNLs have been developed and a comprehensive review has been discussed, see Ref. \cite{HNLWhitePaper}. 
+The mass range of the HNLs can span over many orders of magnitudes, and the number of HNLs are unconstrained.
+Different theoretical models of HNLs have been developed, and a comprehensive review has been discussed (See Ref. \cite{HNLWhitePaper}). 
 In this thesis, the existence of HNLs will be explored in a minimal way, assuming an addition of a single HNL to the SM.  
-The HNL mass range of interest must be able to be produced from the Booster Neutrino Beam (BNB) and directly detected by the Short-Baseline Near Detector (SBND), which limits probable mass range to $\mathcal{O}$(100 MeV).
-At this mass range over a short baseline distance of 110 m, oscillation with the active neutrinos results in coherence loss \cite{SBNHNL}.
+The HNL mass range of interest must be able to be produced from the Booster Neutrino Beam (BNB) and directly detected by the Short-Baseline Near Detector (SBND), which limits the probable mass range to $\mathcal{O}$(100 MeV).
+At this mass range over a baseline distance of 110 m, oscillation with the active neutrinos results in coherence loss \cite{SBNHNL}.
 Instead, the HNLs are expected to travel over a long distance before decaying into SM observables via mass mixing.
 
 %This thesis: simple phenomenological model
@@ -104,11 +114,12 @@ Instead, the HNLs are expected to travel over a long distance before decaying in
 %$\nu$MSM also accounts for the currently observed matter-antimatter asymmetry for having the heavy HNLs oscillating in a charge and parity violating manner during the early universe, dubbed leptogenesis via neutrino oscillations. 
  
 \section{Production}
-
+\label{sec2Production}
 %Decay mechanism: replace SM with a HNL -> mixing angle
-In any neutrino-producing processes, HNLs can be produced in substitute of neutrinos with a rate proportional to $|U_{\alpha4}|^{2}$ if kinematically allowed. 
-This means that HNLs can be produced via meson decays, which can be probed experimentally.
-An example diagram of such decay is depicted in Fig. \ref{fig:kaonDiagram}, showing a two-body decay of a charged kaon into a muon with either an active neutrino or a HNL.
+In any neutrino-producing processes, HNLs can be produced in place of neutrinos with a rate proportional to $|U_{\alpha4}|^{2}$, if kinematically allowed. 
+This implies that HNLs can be produced via meson decays, and therefore they can be probed experimentally.
+Particularly, the BNB at Fermilab produces an abundance of mesons, primarily consisting of charged kaons and charged pions \cite{BNBFlux}, allowing for HNL searches.
+An example diagram of a two-body decay of a charged kaon is depicted in Fig. \ref{fig:kaonDiagram}, illustrating the production of SM neutrino and the production of a HNL mediated by $|U_{\alpha4}|^{2}$.
 
 \begin{figure}[htbp!]
 %\hfill
@@ -125,62 +136,56 @@ An example diagram of such decay is depicted in Fig. \ref{fig:kaonDiagram}, show
 \end{subfigure}%
 %\hfill
 \caption[kaonDiagram]{
-Diagrams for the production of an active neutrino (a) and a HNL mediated by $|U_{\mu4}|^{2}$ (b) from a two-body decay of a charged kaon.
+Diagrams of the production of an active neutrino (a) and the production of a HNL mediated by $|U_{\mu4}|^{2}$ (b) from a two-body decay of a charged kaon.
 }\label{fig:kaonDiagram}
 \end{figure}
 
 %HNL from BNB beam
-%TODO: add rho function to appendix
-HNLs can be probed directly via meson decay produced from the BNB beam.
-The dominant production channel of the HNL flux comes from charged kaon decays, whilst the contributions from charged and neutral pion decays are negligible. 
-In general, the branching ratio of a two-body charged kaon decay into a HNL can be expressed as \cite{HNLKelly}
+In general, the branching ratio $Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}N)$ of a two-body decay of a charged meson $\text{m}^{+}$ into a lepton and a HNL can be expressed in terms of the analogous branching ratio into a SM neutrino as follows \cite{HNLKelly}
+
 \begin{equation}
-	Br(K^{+}\rightarrow l^{+}_{\alpha}N) = Br(K^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})\left(\frac{|U_{\alpha 4}|^{2}}{1 - |U_{\alpha 4}|^{2}}\right)\rho_{N}\left(\frac{m^{2}_{l_{\alpha}}}{m^{2}_{K}}, \frac{m^{2}_{N}}{m^{2}_{K}} \right) 
+	Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}N) = Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})\left(\frac{|U_{\alpha 4}|^{2}}{1 - |U_{\alpha 4}|^{2}}\right)\rho_{N}\left(\frac{m^{2}_{l_{\alpha}}}{m^{2}_{\text{m}^{+}}}, \frac{m^{2}_{N}}{m^{2}_{\text{m}^{+}}} \right) 
 \end{equation}
-where $Br(K^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the two-body branching ratio into SM neutrinos and $\rho_{N}$ is a kinematics factor accounting for the available phase space in the decay. The complete expansion of the function $\rho_{N}$ is as following 
+where $Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the branching ratio of a charged meson into a lepton and a SM neutrino, $\rho_{N}$ is a kinematic factor accounting for the available phase space of the daughter HNL in the decay, $m_{\text{m}^{+}}$ is the mass of the charged meson, $m_{l_{\alpha}}$ is the mass of the daughter lepton and $m_{N}$ is the mass of the daughter HNL.
+The complete expansion of the function $\rho_{N}$ is as follows \cite{HNLKelly}
 
 \begin{equation}
 	\rho_{N}(x,y) = \frac{(x+y-(x-y)^{2})\sqrt{1+x^{2}+y^{2}-2(x+y+xy)}}{x(1-x)^{2}}
 \label{eq:KinematicsFactor}
 \end{equation}
 
-
-The available phase space of the HNL is constrained by the mass of the charged kaon.
-Since the mass of a charged kaon ($m_{K} = 494 $ MeV) is smaller than the mass of a tau ($m_{\tau}=1777 $ MeV), $\tau$-flavour leptons cannot be produced from the decay.  
-This means the final state leptons can be either electrons and muons, which determines the flavours of the mixing angle $|U_{\alpha4}|^{2}$ that can be probed to be $\alpha = e, \mu$.
-The two-body decay of a charged kaon sets the upper limit of the HNL mass such that
-\begin{equation}
-	m_{N} = m_{K} - m_{l_{\alpha}}
-\end{equation}
-where, $m_{e}= 0.511 $ MeV and $m_{\mu}= 106 $ MeV.
-Therefore, the maximum mass $m_{N}$ can be probed is $\sim493$ MeV  and $\sim388$ MeV via the mixing angle $|U_{e4}|^{2}$ and $|U_{\mu4}|^{2}$ respectively.
-
+%TODO: Remove s in kinematic
 \begin{figure}[t] 
 \centering    
 \includegraphics[width=1.0\textwidth]{kinematics_factor}
 \caption[KinematicsFactor]{
-Kinematics factor of HNL production rate from meson decays compared to analogous SM neutrino production, given by function $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}.
-The pink line shows the enhancement associated with the production from kaons via the mixing angle $|U_{e4}|^{2}$ whilst the blue line shows the enhancement associated with the mixing angle $|U_{\mu4}|^{2}$.
-The vertical dashed gray lines indicate limit on the HNL mass from each mixing angle. 
+The kinematic factor of HNL production rate from meson decays compared to analogous SM neutrino production, given by function $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}.
+Dashed lines depict the enhancement associated with production from mesons via the mixing angle $|U_{e4}|^{2}$, whilst solid lines depict the enhancement associated with the mixing angle $|U_{\mu4}|^{2}$.
+The vertical dashed grey lines indicate the mass limit on HNLs from each mixing angle.
+Highlighted in pink with a thicker line width is the main production channel of HNLs studied in this thesis.
 }
 \label{fig:KinematicsFactor}
 \end{figure}
 
+The available phase space of HNLs is constrained by the mass of the parent meson.
+Given the smaller masses of both a charged pion ($m_{\pi} = 140 $ MeV) and a charged kaon ($m_{K} = 494 $ MeV) compared to a tau ($m_{\tau}=1777 $ MeV), taus cannot be produced from meson decays in the BNB.
+Consequently, only electrons and muons are produced, limiting the flavours in the mixing angles $|U_{\alpha4}|^{2}$ to $\alpha = e, \mu$.
+The upper limit of the probable mass of a HNL from a two-body decay of a meson can thus be expressed as $m_{N} = m_{\text{m}^{+}} - m_{l_{\alpha}}$.
+
 %Helicity Unsuppression i.e. K ->Ne and K->Nmu
 %Enahancement factor??
-%TODO: describe the plots
-Furthermore, helicity suppression that occurs in the case of mesons decaying into a SM neutrino has minimal effects in the same case of HNLs due to HNLs being massive \cite{HNLKelly}.
-The contribution from helicity suppression can be greater than one compared to the neutrino production, which indicates helicity \textit{enhancement} in the HNL production.
-The kinematics factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, also accounting for this enhancement in the available phase space, is plotted against the mass of HNLs as shown in Fig. \ref{fig:KinematicsFactor}.
-Significant enhancement can be seen for the rate of $K^{+}\rightarrow e^{+}N$ by a factor of $10^{5}$.
-For the production of HNL of interest from the BNB beam, the kinematics factor for the $K^{+}\rightarrow \mu^{+}N$ channel varies between 1.5 and 4.
-
+Furthermore, the helicity suppression observed in mesons decaying into a SM neutrino has minimal effect in the same case of HNLs due to their significant mass \cite{HNLKelly}.
+The contribution from helicity suppression in HNL production can be greater than one compared to neutrino production, signifying a helicity \textit{enhancement} instead.
+The kinematic factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, which also accounts for this enhancement, is plotted against the mass of HNLs in Fig. \ref{fig:KinematicsFactor}.
+Significant enhancement is evident in the mixing angle $|U_{e4}|^{2}$, where the rate of $K^{+}\rightarrow e^{+}N$ is enhanced by a factor of $10^{5}$ and the rate of $\pi^{+}\rightarrow e^{+}N$ is enhanced by a factor of $10^{4}$.
+Regarding the mixing angle $|U_{\mu4}|^{2}$, the kinematic factor for the $K^{+}\rightarrow \mu^{+}N$ channel varies between 1.5 and 4, while staying flat at 1 for the $\pi^{+}\rightarrow \mu^{+}N$ channel.
 
 \section{Decay}
+\label{sec2Decay}
 
 %DIF with coupling
-HNLs are unstable particles and therefore decay in flight with a lifetime proportional to the mixing angle $|U_{\alpha4}|^{2}$ $(\alpha=e,\mu,\tau)$, such that HNLs must survive long enough to reach the detector before decaying into observable particles.
-Since $|U_{\alpha4}|^{2}$ is the same coupling responsible for the HNL production, the observed event rate at the detector scale with $|U_{\alpha4}|^{4}$.
+HNLs are unstable particles and therefore decay in flight with a lifetime proportional to the mixing angle $|U_{\alpha4}|^{2}$ $(\alpha=e,\mu,\tau)$, such that HNLs must survive long enough to reach the detector before decaying into SM observable particles.
+Since $|U_{\alpha4}|^{2}$ is the same coupling responsible for the HNL production, the observed event rate at the detector scales with $|U_{\alpha4}|^{4}$.
 At the mass $\mathcal{O}$(100 MeV), the tau-flavour mixing angle is kinematically forbidden and thus, the possible decay channels for HNLs are \cite{SBNHNL}
 
 %Possible decay channel
@@ -196,42 +201,43 @@ At the mass $\mathcal{O}$(100 MeV), the tau-flavour mixing angle is kinematicall
 	N\rightarrow \nu \nu \nu. 
 \end{split}
 \end{equation}
-In the case of HNLs are Majorana, the charge conjugates for the decays are also available.
+In the case of HNLs are Majorana particles, the charge conjugates for the decays are also available.
 
-%TODO: branching diagram plots
 \begin{figure}[t] 
 \centering    
 \includegraphics[width=1.0\textwidth]{branching_ratio}
 \caption[branching_ratio]{
 The branching ratio of decay channels of a Majorana HNL as a function of its mass.
-The decay widths of each channel is taken from Ref. \cite{HNLBin, SBNHNL, HNLZarko}.
+The decay widths are taken from Ref. \cite{HNLBin, SBNHNL, HNLZarko}.
 Solid lines are branching ratios via the muon-flavour mixing angle ($[U_{e4}:U_{\mu4}:U_{\tau4}]=[0:1:0]$) and dashed lines are branching ratios via the electron-flavour mixing angle ($[U_{e4}:U_{\mu4}:U_{\tau4}]=[1:0:0]$).
-In pink and thicker line width is the decay channel studied in this thesis $N\rightarrow \nu \pi^{0}.$
+Highlighted in pink with a thicker line width is the decay channel studied in this thesis $N\rightarrow \nu \pi^{0}.$
 }
 \label{fig:branching_ratio}
 \end{figure}
 
 %Overall description of each BR channel
-The branching ratio of decay channels for a Majorana HNL is shown in Fig. \ref{fig:branching_ratio}, with decay widths reference taken from \cite {HNLBin, SBNHNL, HNLZarko}\footnote{The decay widths of HNLs have been derived independently across multiple literature. An overview of the discrepancies can be found in Ref. \cite{HNLZarko}. The literature used in this thesis has been found to be in good agreement with each other.}.
-For $m_{N} < 135$ MeV, the branching ratio is dominated by the channel $N\rightarrow \nu\nu\nu$, however is experimentally unobservable.
-Whilst the channel $N\rightarrow \nu \gamma$ is highly suppressed, the channel $N\rightarrow \nu e^{-}e^{+}$ provides the best sensitivity at this mass range.
-For $m_{N} > 135$ MeV, such that a HNL has sufficient mass to decay into a neutral pion, the channel $N\rightarrow \nu \pi^{0}$ dominates the muon-flavour mixing angle, whilst the channel $N\rightarrow e^{-}\pi^{+}$ dominates the electron-flavou mixing angle.
-For $m_{N} > 245$ MeV, equivalent to the mass of a muon and a charged pion combined, the lepton-pion channels are the leading decays. 
-Both channels $N\rightarrow \nu \mu^{-}e^{+}$ and $N\rightarrow \nu \mu^{-}\mu^{+}$ are not competitive in relative to all other channels at the same mass value.  
+The branching ratio of decay channels for a Majorana HNL is depicted in Fig. \ref{fig:branching_ratio}, referencing decay widths from \cite {HNLBin, SBNHNL, HNLZarko}\footnote{Decay widths of HNLs have been derived independently across various literature sources. An overview of discrepancies can be found in Ref. \cite{HNLZarko}. The literature used in this thesis have been found to be in good agreement with each other.}.
+For $m_{N} < 135$ MeV, the dominant branching ratio occurs in the channel $N\rightarrow \nu\nu\nu$, however this is experimentally unobservable.
+Since the channel $N\rightarrow \nu \gamma$ is highly suppressed, the channel $N\rightarrow \nu e^{-}e^{+}$ provides the best sensitivity within this mass range.
+In the mass range of $m_{N} > 140$ MeV for the electron-flavour mixing angle, such that a HNL has sufficient mass to decay into either a neutral pion ($m_{\pi^{0}}=135$ MeV) or a charged pion ($m_{\pi^{+}}=140$ MeV), the channel $N\rightarrow e^{-}\pi^{+}$ dominates over the channel $N\rightarrow \nu \pi^{0}$.
+In the case of the muon-flavour mixing angle, the leading channel is $N\rightarrow \nu \pi^{0}$ within the mass range of $135 < m_{N} < 245 $ MeV.
+Beyond $m_{N} > 245$ MeV, equivalent to the mass of a muon and a charged pion, the primary decay shifts to $N\rightarrow \mu^{-}\pi^{+}$ channel. 
+Lastly, both channels $N\rightarrow \nu \mu^{-}e^{+}$ and $N\rightarrow \nu \mu^{-}\mu^{+}$ are not competitive compared to all other channels at the same mass value.  
 
 %Desciption on the specific decay channel of thesis: HNL -> nu + pi0
-%TODO: what mass range am I looking for.
-This thesis searches for the existence of HNL via $N\rightarrow\nu \pi^{0}$, which is the leading channel the muon-flavour mixing angle in the mass range $ 135 < m_{N} < 245 $ MeV.
-In the same mass range of the electron-flavour mixing angle, this region has been well-explored.
-Therefore, this thesis focuses on non-zero $|U_{\mu4}|$, assuming $|U_{e4}| = |U_{\tau4}| = 0$.  
-In this case, the decay width of this channel is modelled as \cite{HNLZarko}
+This thesis searches for the existence of HNL through the decay channel $N\rightarrow\nu \pi^{0}$, which is the leading channel the muon-flavour mixing angle within the mass range of $ 135 < m_{N} < 245 $ MeV.
+Sensitivity in the same mass range of the electron-flavour mixing angle has been extensively explored, prompting a focus in this thesis on a non-zero $|U_{\mu4}|$, while assuming $|U_{e4}| = |U_{\tau4}| = 0$.  
+In this mass range, the primary mode of HNL production comes from  the decay of charged kaon, due to the kinematic constrains (See Sec. \ref{sec2Production}). 
+
+The decay width for the $N\rightarrow\nu \pi^{0}$ channel is modelled as follows \cite{HNLZarko}
+
 \begin{equation}
 	\Gamma(N\rightarrow \nu \pi^{0}) = \frac{G_{F}^{2}m_{N}^{3}}{32\pi}f^{2}_{\pi^{0}}|U_{\mu4}|^{2}\left(1-\left(\frac{m_{\pi^{0}}}{m_{N}}\right)^{2}\right)^{2}
 \label{eq:pi0}
 \end{equation}
 where $G_{F}$ is the Fermi constant, $f_{\pi^{0}}$ is the decay constant of a neutral pion and $m_{\pi^{0}}$ is the mass of a neutral pion.
-Eq. \ref{eq:pi0} from Ref. \cite{HNLZarko} does not contain an additional factor of 2 in the denominator compared to Ref. \cite{SBNHNL} and \cite{HNLBin}.
-The resulting event rate still agrees within the same order of magnitude.
+Eq. \ref{eq:pi0} taken from Ref. \cite{HNLZarko} does not contain an additional factor of 2 in the denominator as compared to Ref. \cite{SBNHNL} and \cite{HNLBin}.
+The resulting event rate still agrees to the same order of magnitude.
 
 \begin{figure}[htbp!]
 %\hfill
@@ -253,117 +259,130 @@ Diagrams of a HNL decaying into a neutrino and a neutral pion mediated by $|U_{\
 \end{figure}
 
 %Decay signature in TPC
-%TODO: neutral pion BR 
-Once a HNL decays into a neutrino and a neutral pion inside the detector, the neutrino escapes the detector undetected whilst the neutral pion decays into two photons with a branching ratio of 0.988 \cite{pi0}. 
+When a HNL decays into a neutrino and a neutral pion inside a detector, the neutrino escapes the detector undetected.
+Meanwhile the neutral pion decays into two photons, with a branching ratio of 0.988 \cite{pi0}. 
 Diagrams of the decays are shown in Fig. \ref{fig:decayDiagram}.
-This decay results into a particular event topology inside a LArTPC: two photon showers originating from the same vertex without any hadronic activities.
-Neutral-current neutrino interactions resulting into a neutral pion also share the same final state particles and thus, represent the main background of this search.
-However, different event kinematics and precise timing resolution, as detailed in Section \ref{}, provide a good separation between HNL decays and neutrino interactions. 
+This decay results into a signature event topology inside a Liquid Argon Time Projection Chamber (LArTPC): two photon showers originating from the same vertex without any associated hadronic activities.
+Neutral-current neutrino interactions that result in a neutral pion also share the same final state particles and thus, constituting the main background for this search.
+Nonetheless, differences in event kinematics and precise timing resolution, as detailed in Sec. \ref{}, enable an effective separation between the HNL signals and the neutrino backgrounds. 
 
 %Dirac or Majorana Nature
-HNLs can be either Dirac or Majorana in nature.
-Majorana HNLs would violate the conservation of lepton number, whereas Dirac HNLs would perserves it.
-Therefore the expected event rate of Majorana HNLs is double the rate of Dirac HNLs.
-Moreover, a Majorana HNL would decay isotropically whilst in the case of a Dirac HNL, the helicity of the produced neutrino would determine the direction of the decay products \cite{HNLSilvia}.
-HNL decaying into a neutral meson is isotropic in the rest frame, and thus, does not depend on helicity of the partner neutrino.
-This means that the decay channel $N\rightarrow \nu \pi^{0}$ is insensitive to the Dirac nature of HNLs.
-This thesis therefore assumes HNLs are Majorana particles for the search.
+As discussed in Sec. \ref{sec2Overview}, HNL can be either a Dirac or Majorana particle in nature.
+Majorana HNLs violate the conservation of lepton numbers, whereas Dirac HNLs preserve it.
+Consequently, the expected event rate of Majorana HNLs is double that of Dirac HNLs.
+Moreover, the helicity of decay products differs between Majorana and Dirac HNLs.
+Majorana HNLs decay isotropically, whereas in the case of Dirac HNLs, the helicity of the daughter neutrino determines the direction of the other daughter particles \cite{HNLSilvia}.
+A HNL decaying into a neutrino and a neutral meson is isotropic in the rest frame, and thus, this channel is insensitive to the Dirac nature of HNLs.
+As a result, this thesis assumes HNLs are Majorana particles for purpose of this search.
 
 \section{Previous Experimental Searches}
+\label{sec2Previous}
 
 %Number of fermion families = Z boson decay for LH neutrinos, RH neutrinos is not constrained
 
 %Overview of different types of searches
-HNLs have been searched by experiments over the decades, across a large range of mass.
-While oscillation experiments and precise $\beta$ decay experiments can probe HNL at the mass range of eV and keV, collider experiments have set limits on on GeV-scale HNLs.
-No evidence of HNLs existence has been found, and thus, experiments have set upper limits on to the mixing angle $|U_{\alpha4}|^{4}$ $(\alpha=e,\mu,\tau)$.
-The sensitivity limits are often expressed in terms of the mixing angle $|U_{\alpha4}|^{4}$ as a function of the HNL mass.
+HNLs have been searched by experiments over the decades, across a wide range of mass.
+Oscillation experiments and precise $\beta$ decay experiments have probed HNLs in the mass range between eV and keV, while collider experiments have primarily explored GeV-scale HNLs.
+To date, no evidence of HNLs existence has been found, and thus, experiments have set upper limits on to the coupling $|U_{\alpha4}|^{2}$ $(\alpha=e,\mu,\tau)$.
+The sensitivity contour of HNL is commonly expressed in terms of the mixing angle $|U_{\alpha4}|^{2}$ as a function of the HNL mass.
 
-Here, the existing experimental limits on HNLs of $\mathcal{O}$ (100 MeV) are presented, specifically between $ 0 < m_{N} < 245 $ MeV which is relevant to the final states $\nu\pi^{0}$.
-At this mass range, the primary experimental methods are peak searches and decay searches.
-Peak searches probe only the production rate of HNL whilst decay searches probe both production and decay rates.
+Here, the current experimental limits on HNLs around $\mathcal{O}$ (100 MeV) are presented, focusing specifically on the mass range of $ 0 < m_{N} < 245 $ MeV, which is relevant to the final states $\nu\pi^{0}$.
+The summary is plotted in Fig. \ref{fig:Sensitivity}.
+In this mass range, two key experimental methods are peak searches and decay searches.
+Peak searches probe only the production rate of HNLs, whereas decay searches probe both production and decay rates.
+
 
 \subsection{Peak Searches}
 
-Peak search experiments measure the energy spectrum of a meson decay that would produce a HNL. 
-The leptonic decay of a meson can be modelled as $P\rightarrow l + Invisble$, where $P$ is the parent meson (a pion or a kaon) and $l$ is the daughter particle (a pion or a lepton).
-The $Invisble$ decay products are attributed to HNLs and SM neutrinos.
-The produced HNLs are expected to exit the detector before decaying whilst the SM neutrinos can also escape before interacting, which act as the main background of the search.
-Since the momenta of $P$ and $l$ can be precisely measured, the missing invariant mass can therefore be derived from the momenta as $m^{2}_{miss} = (P_{p} - P_{l})^{2}$, where $P_{p}$ and $P_{l}$ are the parent and daughter 4-momentum.
-Given that the neutrinos are nearly massless, the mass of the HNL can be treated as $m_{HNL} = m_{miss}$ and an excess over background will be presence at $m_{miss}$.
+Peak search experiments measure the energy spectrum  resulting from the decay of meson decay that would produce a HNL. 
+Typically, the two-body leptonic decay of a meson is modelled as $\text{m}\rightarrow l + Missing$, where $\text{m}$ is the parent meson (a pion or a kaon) and $l$ is the daughter particle (a pion or a lepton) \cite{OwenPhD}.
+The \textit{missing} decay products are attributed to either HNLs or SM neutrinos.
+HNLs are expected to exit the detector before decaying, whereas SM neutrinos escape the detector before interacting, serving as the primary background for this search.
+Since the momenta of m and $l$ are precisely measured, the missing invariant mass can therefore be derived as $m^{2}_{miss} = (P_{\text{m}} - P_{l})^{2}$, where $P_{\text{m}}$ and $P_{l}$ are the 4-momentum of the parent and daughter particles.
+Given the near-zero mass of SM neutrinos, the mass of the daughter HNL can be treated as $m_{N} = m_{miss}$.
+Consequently, an excess over the background at $m_{miss}$ would indicate potential existence of HNLs.
 
-To infer the sensitivity contour, the flavour of the lepton $l$ determines the flavour of the coupling whilst the amplitude of the decay spectrum at $m_{miss}$ determines the upper limit on the coupling.
-Limited placed by the peak search experiment are independent of whether the HNL is Dirac or Majorana since it does not affect the kinematics of the meson decay.
-For $|U_{\mu4}|^{2}$, the most competitive limits have been set by the following experiments, on pion and kaon decay spectrum:
-
+To infer the sensitivity contour, the flavour of the daughter lepton determines the flavour of the mixing angle, while the amplitude of the decay spectrum at $m_{miss}$ determines  its upper limit.
+Limits placed by the peak searches are insensitive to the Dirac or Majorana nature of HNLs as it does not impact the kinematics of the meson decay.
+For the mixing angle $|U_{\mu4}|^{2}$, the most competitive limits have been established by the following experiments, particularly on pion and kaon decay spectrum.
 
 \subsubsection{Pion Decay Spectrum Peak Searches}
 
 \begin{coloritemize}
-\item \textbf{SIN} (Swiss Institute for Nuclear Research) performed a peak search using stopped positive pions decay via $\pi^{+} \rightarrow \mu^{+} + Invisible$, using a scintillator in 1981 and a germanium detector in 1987.
-The pion enables probing HNLs in the low mass range of $\mathcal{O}$(10 MeV).
-Upper limits of $|U_{\mu4}|^{2}$ were placed in the mass range 1--30 MeV at $10^{-5}$ \cite{SIN1, SIN2, SIN3}.
+\item \textbf{SIN} (Swiss Institute for Nuclear Research) performed a peak search using stopped positive pions decay via the channel $\pi^{+} \rightarrow \mu^{+} + Missing$, using a scintillator in 1981 and a germanium detector in 1987.
+The pion enables probing HNLs within the low mass range of $\mathcal{O}$(10 MeV).
+Upper limits of $|U_{\mu4}|^{2}$ were placed in the mass range 1--20 MeV at $10^{-4}$ \cite{SIN1, SIN2, SIN3}.
 
-\item The \textbf{PIENU} collaboration at TRIUMF \cite{PIENU} also searched for HNLs using stopped pions.
-The most recent result in 2019 set the most stringent limits on $|U_{\mu4}|^{2}$ in the range $10^{-6}$--$10^{-5}$ in the mass range of 15--34 MeV, extending beyond result reported by SIN.
+\item The \textbf{PIENU} collaboration at TRIUMF also searched for HNLs using stopped pions.
+The most recent result in 2019 set the most stringent limits on $|U_{\mu4}|^{2}$ in the range $10^{-5}$ in the mass range of 15--34 MeV \cite{PIENU}, extending beyond result reported by SIN.
 
 \end{coloritemize}
 
 \subsubsection{Kaon Decay Spectrum Peak Searches}
 
 \begin{coloritemize}
-\item The \textbf{KEK} collaboration conducted an experiment called E89 to search for HNLs using the muon range spectrum from stopped kaon decay in 1981--1982. Experiment E104 in 1983 was carried subsequently with improved momentum resolution and background supression.
-The kaons were produced using a 0.5 GeV proton beam and $3 \times 10^{6}$ muons from kaon decay were analysed using magnetic spectrograph.
-The results from E89 constrained the limits of $|U_{\mu4}|^{2}$ in the range of 10$^{-4}$--10$^{-6}$ for the HNL mass between 70--300 MeV.
-The combined results from E89 and E104 furthered the sensitivity towards the lower mass range between 45--300 MeV, however currently unpublished \cite{KEK1, KEK2, KEK3}.
+\item The \textbf{KEK} collaboration conducted an experiment known as E89, which aimed to search for HNLs using the muon range spectrum resulting from stopped kaon decays during 1981--1982. 
+Following this, experiment E104 in 1983 was carried out with improved momentum resolution and background suppression.
+The kaons were produced using a 0.5 GeV proton beam, and $3 \times 10^{6}$ muons from kaon decays were analysed using magnetic spectrograph.
+The outcomes from the E89 experiment constrained the limits of $|U_{\mu4}|^{2}$ between 10$^{-4}$--10$^{-6}$ within the mass range of 70--300 MeV.
+Additionally, the combined results from the E89 and E104 experiments extended the sensitivity towards the lower mass range between 45--300 MeV, although these findings are currently unpublished \cite{KEK1, KEK2, KEK3}.
 
 \item The \textbf{E949} collaboration at Brookhaven National Laboratory performed a kaon decay experiment using 21.5 GeV protons in 2002.
-The analysis on the decays of $2 \times 10^{21}$ stopped kaons resulted in the limits on $|U_{\mu4}|^{2}$ for the range of mass between 175--300 MeV at the level 10$^{-7}$--10$^{-9}$ \cite{E949}.
-\item The \textbf{NA62} collaboration is a kaon decay experiment at the CERN super proton synchrotron.
-The collaboration analysed $10^{8}$ stopped kaons from 400 GeV protons extracted from the synchrotron.
-The first results, using data set in 2015, placed the upper limits on $|U_{\mu4}|^{2}$ in the range of 10$^{-7}$--10$^{-6}$ for HNL mass in the range 250--373 MeV.
-Updated results using a larger dataset collected in 2016--2018 improved the coupling limits by an order of magnitude to 10$^{-8}$--10$^{-7}$ and extended the mass range to 250--384 MeV \cite{NA62A, NA62B}.
+The analysis on the decays of $2 \times 10^{21}$ stopped kaons resulted in limits on $|U_{\mu4}|^{2}$  within the mass range between 175--300 MeV, constraining at 10$^{-7}$--10$^{-9}$ \cite{E949}.
+
+\item The \textbf{NA62} collaboration, a kaon decay experiment at the CERN super proton synchrotron, analysed $10^{8}$ stopped kaons from 400 GeV protons extracted from the synchrotron.
+The first results from a data set in 2015 set upper limits on $|U_{\mu4}|^{2}$ in the range of 10$^{-7}$--10$^{-6}$ for HNL masses in the range 250--373 MeV.
+Updated results using a larger dataset collected in 2016--2018 significantly improved the limits by an order of magnitude to 10$^{-8}$--10$^{-7}$, and extended the mass range to 200--384 MeV \cite{NA62A, NA62B}.
 \end{coloritemize}
 
 \subsection{Decay Searches}
 
 Decay searches look for decay products of the HNLs.
-The HNLs are typically produced outside of the detector before reaching it, potentially decaying into observable SM particles within the detector.
-Different combinations of production and decay channel yield distinct expected event rates and therefore, can probe different sensitivity regions associated with different mixing angles.
-Decay searches have been historically performed in beam-dump experiments, which are explicitly designed to suppress the background from SM interactions in order to search for rare decay processes.
-Recently, modern neutrino experiments with improved resolution can function as competitive beam-dump experiments alongside their neutrino physics programme.
-For $|U_{\mu4}|^{2}$, the most competitive limits have been set by the following experiments:
+HNLs are typically produced outside of the detector before reaching it, potentially decaying into SM observables inside the detector.
+Different combinations of production and decay channels yield different expected event rates, allowing for exploring different sensitivity regions associated with different mixing angles.
+Decay searches have been historically performed in beam-dump experiments, designed explicitly to suppress background from SM interactions, thereby enabling the search for rare decay processes.
+Recently, modern neutrino oscillation experiments with enhanced resolution have emerged as competitive beam-dump experiments alongside their neutrino physics programme.
+For $|U_{\mu4}|^{2}$ within the mass range of 0--245 MeV, the most competitive limits have been set by the following experiments.
 
 \begin{coloritemize}
-%TODO: PS191 Check with David Marsden
-\item The CERN \textbf{PS191} experiment was conducted in 1984 with an exposure of 19.2 GeV protons on a beryllium target, resulting in $10^{19}$ POT.
-The detector was located at 128 m from the target at an off-axis angle of $2.3^{\circ}$ with respect to the beam direction.
-It was designed specifically to search for HNLs by maximising the signal rates and minimising the background rates.
+\item The CERN \textbf{PS191} experiment in 1984 utilised $10^{}$ an exposure of 19.2 GeV protons on a beryllium target, generating $10^{19}$ Proton On Target (POT).
+The detector was positioned at 128 m from the target at an off-axis angle of $2.3^{\circ}$ with respect to the beam direction.
+It was designed specifically to search for HNLs by maximising the signal rates while minimising the background rates.
 The 216 m$^{3}$ volume (12 m long and a cross-sectional area of 18 m$^{2}$) was filled with helium.
-The sparse medium minimises the background rate coming from the SM neutrino interactions whilst the large volume provides a high rate of HNL events. 
-Limits were set in the mass range 120--350 MeV for $|U_{\mu4}|^{2}$ in the range of 10$^{-5}$--10$^{-9}$ \cite{PS191A, PS191B}.
+The sparse medium was chosen to reduce background rates arising from SM neutrino interactions, leveraging the large volume to provide a high rate of HNL signals. 
+Limits for $|U_{\mu4}|^{2}$ in the mass range of 120--350 MeV were placed in the range of 10$^{-5}$--10$^{-9}$ \cite{PS191A, PS191B}.
+A re-evaluation in 2022 has found the limits to be lower than the original published results \cite{PS191C}.
 	
-\item The \textbf{T2K} collaboration recently searched for HNLs using the near detector ND280, located 280 m from the beam target at an off-axis angle of $2.04^{\circ}$.
-The analysis was performed on the data collected from 2010-2017, with a beam intensity of 30 GeV proton on graphite target and an exposure of $\approx 2 \times 10^{21}$ POT.
-The search was limited to the three argon gas TPC volumes, which minimised the neutrino background rate due to the low gas density.
-The results constrained the limits of $|U_{\mu4}|^{2}$ in the range of 10$^{-8}$--10$^{-9}$ for the HNL mass between 250--380 MeV \cite{T2KHNL}.
+%\item The \textbf{T2K} collaboration recently searched for HNLs using the near detector ND280, located 280 m from the beam target at an off-axis angle of $2.04^{\circ}$.
+%The analysis was performed on the data collected from 2010-2017, with a beam intensity of 30 GeV proton on graphite target and an exposure of $\approx 2 \times 10^{21}$ POT.
+%The search was limited to the three argon gas TPC volumes, which minimised the neutrino background rate due to the low gas density.
+%The results constrained the limits of $|U_{\mu4}|^{2}$ in the range of 10$^{-8}$--10$^{-9}$ for the HNL mass between 250--380 MeV \cite{T2KHNL}.
 %The T2K collaboration has also presented results on $|U_{\mu4}|$ in the case where $|U_{e4}|$ and $|U_{\tau4}|$ are assumed to be non-zero and marginalised using results from other channels.
 
-\item The \textbf{NuTeV} collaboration at Fermilab conducted the search for HNLs in 1996 using a high energy neutrino beam produced by protons accelerated from the Tevatron ring.
-The dataset consisted of $3 \times 10^{18}$ POT exposure with an energy of 800 GeV.
-HNLs were produced from the $D$ mesons produced from protons colliding with the target.
-This allowed the HNL mass to reach up to 2000 MeV, surpassing any other beam-dump experiments described here.
-The limits on $|U_{\mu4}|^{2}$ in the range 10$^{-6}$--10$^{-7}$ were placed in the mass range of 225--2000 MeV \cite{NuTeV}.
+\item The \textbf{NuTeV} collaboration at Fermilab conducted HNLs searches in 1996 using a high energy neutrino beam produced by protons accelerated from the Tevatron ring.
+The dataset comprised of an exposure of $3 \times 10^{18}$ POT with an energy of 800 GeV.
+HNLs were produced from the $D$ mesons resulting from proton collisions with the target.
+This enabled exploration of HNL masses up to 2000 MeV, surpassing any other beam-dump experiments described here.
+The experiment established limits for $|U_{\mu4}|^{2}$ in the range 10$^{-6}$--10$^{-7}$ within the mass range of 225--2000 MeV \cite{NuTeV}.
 
-\item The \textbf{MicroBooNE} collaboration presented the first HNLs search using a LArTPC in 2020, followed by two more publications in 2022 and 2023.
-The first analysis was performed on data collected from $2 \times 10^{20}$ POT from the on-axis BNB beam, using a delayed trigger to identify HNLs arriving at the detector after the SM neutrino background.
-This produced a limits on $|U_{\mu4}|^{2}$ in the range (4.7--0.7)$\times 10^{-7}$ for HNL masses between 260--385 MeV.
-The latter two searches focused on HNLs coming from kaons decays in the NuMI absorber, which would enter the detector at an angle to the BNB beam neutrino.
+\item The \textbf{MicroBooNE} collaboration conducted a series of searches for HNLs using a LArTPC, beginning with the first result in 2020 and subsequent publications in 2022 and 2023.
+The initial analysis was performed using an exposure of $2 \times 10^{20}$ POT obtained from the on-axis BNB.
+A special delayed trigger was implemented to identify HNLs arriving at the detector later than SM neutrinos.
+Limits on $|U_{\mu4}|^{2}$ were set in the range of $10^{-7}$ for HNL masses spanning between 260--385 MeV.
+The latter two searches focused on HNLs arising from kaons decays in the NuMI absorber, which arrived at the detector at an angle to SM neutrinos from the BNB.
 The dataset comprised of two runs with an exposure of $2 \times 10^{20}$ and $5.01 \times 10^{20}$ POT.
-The combined results is made of multiple HNL decay channels, probing a wide mass range between 10--385 MeV.
-This currently set the most stringent limits on $|U_{\mu4}|^{2}$ in the range 10$^{-2}$--10$^{-8}$ for low MeV-scale HNLs, extending the results from 2019.
-\cite{uboone1, uboone2, uboone3}
+The combined results incorporated multiple HNL decay channels, probing a wide mass spectrum between 10--385 MeV.
+Notably, these recent results have set the most stringent limits to date on $|U_{\mu4}|^{2}$, ranging between in the range 10$^{-4}$--10$^{-7}$ within the mass range of 34--175 MeV, thus extending the findings from 2019 \cite{uboone1, uboone2, uboone3}.
 
 \end{coloritemize}
 
-%TODO: PLOT of ALL experiments limits!!
+\begin{figure}[t] 
+\centering    
+\includegraphics[width=1.0\textwidth]{sensitivity}
+\caption[Sensitivity]{
+Sensitivity contour on the upper limits of the mixing angle $|U_{\mu4}|^{2}$ for a Majorana HNL, within the mass range of $0 < m_{N} < 245$ MeV.
+Dashed lines show the constraints derived from peak searches, whilst solid lines show the limits set by decay searches.
+The dotted line shows the unpublished limit from the KEK E89/E104 experiments.
+}
+\label{fig:Sensitivity}
+\end{figure}

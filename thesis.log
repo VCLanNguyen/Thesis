@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  20 DEC 2023 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.11.5)  2 JAN 2024 00:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1145,57 +1145,57 @@ No file thesis.nls.
 ]
 Chapter 2.
 [3{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [4] [5]
-<Chapter2/Figs/K_to_nu.png, id=87, 521.95pt x 296.10625pt>
+<Chapter2/Figs/K_to_nu.png, id=100, 521.95pt x 296.10625pt>
 File: Chapter2/Figs/K_to_nu.png Graphic file (type png)
 <use Chapter2/Figs/K_to_nu.png>
-Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 117.
+Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 128.
 (pdftex.def)             Requested size: 179.24962pt x 101.69138pt.
-<Chapter2/Figs/K_to_HNL.png, id=89, 521.95pt x 285.065pt>
+<Chapter2/Figs/K_to_HNL.png, id=102, 521.95pt x 285.065pt>
 File: Chapter2/Figs/K_to_HNL.png Graphic file (type png)
 <use Chapter2/Figs/K_to_HNL.png>
-Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 123.
+Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 134.
 (pdftex.def)             Requested size: 179.24962pt x 97.8995pt.
  [6 <./Chapter2/Figs/K_to_nu.png> <./Chapter2/Figs/K_to_HNL.png>]
-<Chapter2/Figs/kinematics_factor.png, id=101, 722.7pt x 433.62pt>
+<Chapter2/Figs/kinematics_factor.png, id=115, 722.7pt x 433.62pt>
 File: Chapter2/Figs/kinematics_factor.png Graphic file (type png)
 <use Chapter2/Figs/kinematics_factor.png>
 Package pdftex.def Info: Chapter2/Figs/kinematics_factor.png  used on input line 160.
 (pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
  [7 <./Chapter2/Figs/kinematics_factor.png>]
-<Chapter2/Figs/branching_ratio.png, id=116, 722.7pt x 433.62pt>
+<Chapter2/Figs/branching_ratio.png, id=130, 722.7pt x 433.62pt>
 File: Chapter2/Figs/branching_ratio.png Graphic file (type png)
 <use Chapter2/Figs/branching_ratio.png>
-Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 204.
+Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 208.
 (pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 215.
+(Font)              scaled to size 9.19998pt on input line 219.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 215.
+(Font)              scaled to size 6.99199pt on input line 219.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 215.
+(Font)              scaled to size 5.51999pt on input line 219.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 215.
+(Font)              scaled to size 9.19998pt on input line 219.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 215.
+(Font)              scaled to size 6.99199pt on input line 219.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 215.
- [8]
-<Chapter2/Figs/N_to_pi0_edit.png, id=143, 951.555pt x 476.78125pt>
+(Font)              scaled to size 5.51999pt on input line 219.
+ [8] [9 <./Chapter2/Figs/branching_ratio.png>]
+<Chapter2/Figs/N_to_pi0_edit.png, id=166, 951.555pt x 476.78125pt>
 File: Chapter2/Figs/N_to_pi0_edit.png Graphic file (type png)
 <use Chapter2/Figs/N_to_pi0_edit.png>
-Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 240.
+Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 246.
 (pdftex.def)             Requested size: 219.5866pt x 110.02113pt.
-<Chapter2/Figs/pi0_to_gam.png, id=144, 635.37375pt x 282.05376pt>
+<Chapter2/Figs/pi0_to_gam.png, id=167, 635.37375pt x 282.05376pt>
 File: Chapter2/Figs/pi0_to_gam.png Graphic file (type png)
 <use Chapter2/Figs/pi0_to_gam.png>
-Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 246.
+Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 252.
 (pdftex.def)             Requested size: 219.5866pt x 97.47649pt.
 
 
-LaTeX Warning: Reference `' on page 9 undefined on input line 261.
+LaTeX Warning: Reference `' on page 10 undefined on input line 267.
 
-[9 <./Chapter2/Figs/branching_ratio.png>] [10 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 303.
+[10 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 312.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -1203,7 +1203,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [11] [12]) [13] [48
+ [11] [12] [13]
+<Chapter2/Figs/sensitivity.png, id=226, 722.7pt x 433.62pt>
+File: Chapter2/Figs/sensitivity.png Graphic file (type png)
+<use Chapter2/Figs/sensitivity.png>
+Package pdftex.def Info: Chapter2/Figs/sensitivity.png  used on input line 381.
+(pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
+) [14 <./Chapter2/Figs/sensitivity.png>] [48
 
 
 
@@ -1212,7 +1218,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-] [49
+]
+Overfull \hbox (8.679pt too wide) in paragraph at lines 178--178
+[]\T1/futs/m/n/12 (-20) A. I. Abazov et al., ``Search for neu-tri-nos from the Sun us-ing the re-ac-tion $[][]$($\FML/futmi/m/it/12 ^^W[]$\T1/futs/m/n/12 (-20) ,$\T1/futs/m/it/12 (-20) e[]$$\T1/futs/m/n/12 (-20) )[]$Ge'',
+ []
+
+[49
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
@@ -1222,7 +1233,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E5BF9AAC39AB058773DA2815C4FE022B;1299.
+(rerunfilecheck)             Checksum: E0DA0134D52ED7688C29742BFFA302C5;1299.
 
 
 LaTeX Warning: There were undefined references.
@@ -1232,18 +1243,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26968 strings out of 483065
- 475331 string characters out of 5963550
- 1207299 words of memory out of 5000000
- 41217 multiletter control sequences out of 15000+600000
- 644094 words of font info for 271 fonts, out of 8000000 for 9000
+ 27019 strings out of 483065
+ 476439 string characters out of 5963550
+ 1208793 words of memory out of 5000000
+ 41246 multiletter control sequences out of 15000+600000
+ 653696 words of font info for 286 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,15n,109p,989b,1958s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,109p,1191b,1954s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (16 pages, 472517 bytes).
+Output written on thesis.pdf (17 pages, 676709 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 37983 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 39012 words of extra memory for PDF output out of 42996 (max. 10000000)
 
