@@ -3,11 +3,11 @@
 
 \documentclass[a4paper
 		, 12pt
-		, index
+		, fourier
 		%, print
 		, chapter
 		, custombib
-		, fourier
+		, index
 		]{Classes/PhDThesisPSnPDF}
 
 % ******************************************************************************
@@ -111,6 +111,8 @@
 
 \ifdefineChapter
  \includeonly{Chapter2/chapter2}
+ %\includeonly{Chapter3/chapter3}
+ %\includeonly{Chapter4/chapter4}
  %\includeonly{Chapter5/chapter5}
 \fi
 
@@ -134,9 +136,14 @@
 
 \listoftables
 
+% *********************** Adding Nomenclature ***********************
+
+\include{Nomenclature/nomenclature}
+
 %\printnomenclature[space] space can be set as 2em between symbol and description
-%\printnomenclature[3em]
-\printnomenclature
+
+\printnomenclature[3em]
+%\printnomenclature
 
 % ******************************** Main Matter *********************************
 \mainmatter

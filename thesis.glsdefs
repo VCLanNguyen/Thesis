@@ -1,0 +1,90 @@
+\ifglsentryexists{SM}{}%
+{%
+\gls@defglossaryentry{SM}%
+{%
+name={SM},%
+sort={SM},%
+type={main},%
+first={SM},%
+firstplural={SMs},%
+text={SM},%
+plural={SMs},%
+description={The Standard Model},%
+descriptionplural={The Standard Model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BNB}{}%
+{%
+\gls@defglossaryentry{BNB}%
+{%
+name={BNB},%
+sort={BNB},%
+type={main},%
+first={BNB},%
+firstplural={BNBs},%
+text={BNB},%
+plural={BNBs},%
+description={The Booster Neutrino Beam},%
+descriptionplural={The Booster Neutrino Beam},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{HNL}{}%
+{%
+\gls@defglossaryentry{HNL}%
+{%
+name={HNL},%
+sort={HNL},%
+type={main},%
+first={HNL},%
+firstplural={HNLs},%
+text={HNL},%
+plural={HNLs},%
+description={Heavy Neutral Lepton},%
+descriptionplural={Heavy Neutral Lepton},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

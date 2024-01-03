@@ -1027,20 +1027,21 @@ wish to left align your text}
 % ******************************* Nomenclature *********************************
 \RequirePackage[intoc]{nomencl}
 \makenomenclature
-\renewcommand{\nomgroup}[1]{%
-\ifthenelse{\equal{#1}{A}}{\item[\textbf{Roman Symbols}]}{%
-\ifthenelse{\equal{#1}{G}}{\item[\textbf{Greek Symbols}]}{%
-\ifthenelse{\equal{#1}{Z}}{\item[\textbf{Acronyms / Abbreviations}]}{%
-\ifthenelse{\equal{#1}{R}}{\item[\textbf{Superscripts}]}{%
-\ifthenelse{\equal{#1}{S}}{\item[\textbf{Subscripts}]}{%
-\ifthenelse{\equal{#1}{X}}{\item[\textbf{Other Symbols}]}
-{}
-}% matches mathematical symbols > X
-}% matches Subscripts           > S
-}% matches Superscripts         > R
-}% matches Abbreviations        > Z
-}% matches Greek Symbols        > G
-}% matches Roman Symbols        > A
+
+%\renewcommand{\nomgroup}[1]{%
+%\ifthenelse{\equal{#1}{A}}{\item[\textbf{Roman Symbols}]}{%
+%\ifthenelse{\equal{#1}{G}}{\item[\textbf{Greek Symbols}]}{%
+%\ifthenelse{\equal{#1}{Z}}{\item[\textbf{Acronyms / Abbreviations}]}{%
+%\ifthenelse{\equal{#1}{R}}{\item[\textbf{Superscripts}]}{%
+%\ifthenelse{\equal{#1}{S}}{\item[\textbf{Subscripts}]}{%
+%\ifthenelse{\equal{#1}{X}}{\item[\textbf{Other Symbols}]}
+%{}
+%}% matches mathematical symbols > X
+%}% matches Subscripts           > S
+%}% matches Superscripts         > R
+%}% matches Abbreviations        > Z
+%}% matches Greek Symbols        > G
+%}% matches Roman Symbols        > A
 
 % To add nomenclature in the header
 \renewcommand{\nompreamble}{\markboth{\nomname}{\nomname}}
@@ -1052,7 +1053,6 @@ wish to left align your text}
 {\printnomenclature[#1]}
 %\addcontentsline{toc}{chapter}{\nomname}
 }
-
 
 % ***************************** Create the index *******************************
 \ifPHD@index
@@ -1295,4 +1295,15 @@ wish to left align your text}
 \sectionfont{\color{DeepViolet100}}  % sets colour of sections
 \subsectionfont{\color{DeepViolet80}}  % sets colour of sections
 \subsubsectionfont{\color{DeepViolet70}}  % sets colour of sections
+\newcommand\boldvio[1]{\textcolor{DeepViolet80}{\textbf{#1}}}
+
+\makeatletter
+\newcounter{ToCchapter}
+\let\old@l@chapter\l@chapter
+\renewcommand{\l@chapter}[2]{%
+  \stepcounter{ToCchapter}%
+  \old@l@chapter{\color{\chaptercolour}#1}{#2}}
+\makeatother
+
+\newcommand{\chaptercolour}{DeepViolet80}
 
