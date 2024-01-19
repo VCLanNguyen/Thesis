@@ -98,8 +98,9 @@ The time-dependent probability of light emission in pure liquid argon can theref
 where $A_{S}$ and $A_{T}$ are the decay amplitudes of the singlet and triplet states respectively. For a MIP muon, the ratio of singlet-to-triplet state is $\approx 1:3$, where $A_{S} \approx 0.25$ and $A_{T} \approx 0.75$ \cite{}.
 
 %Quenching
-Liquid argon is an excellent medium to produce scintillation light, emits $\mathcal{O}(2000)$ photons per MeV of deposited energy at 500 V/cm \cite{}.
-However, the number of scintillation photons are subject to quenching, where argon excitons and excimers produce heat in place of light, of which the rate is dependent by impurities in the liquid argon such as oxygen and nitrogen \cite{}.
+Liquid argon is an excellent medium to produce scintillation light, emits about 20000 photons per MeV of deposited energy at 500 V/cm \cite{}.
+However, the number of emitted photons are subject to quenching.
+Quenching can be caused by ionisation density \cite{} or contaminants in the liquid argon such as oxygen and nitrogen absorb the energy without emitting any photons \cite{}.
 
 \subsubsection{Recombination}
 
@@ -108,9 +109,9 @@ However, the number of scintillation photons are subject to quenching, where arg
 The electron-ion recombination, one of the two processes to produce scintillation photon, occurs immediately within 1-2 ns following the electron ionisation process.
 As shown in Fig. \ref{}, the resulting number of ionisation electrons and photons are anti-correlated, driven by the recombination $R$ 
 \begin{equation}
-	R=\frac{W_{ion} dE/dx}{dQ/dx}
+	R=W_{ion} \cdot \frac{dE/dx}{dQ/dx}
 \end{equation}
-where $W_{ion} = 23.6$ eV is the energy required to ionise and argon and $dQ/dx$ and $dE/dx$ is the charge and energy loss per unit length respectively \cite{}. 
+where $W_{ion} = 23.6$ eV is the energy required to ionise and argon and $\frac{dQ}{dx}$ and $\frac{dE}{dx}$ is the charge and energy loss per unit length respectively \cite{}. 
 If not taken into account, the recombination can result in underestimating energy loss due to ionisation.
 
 A popular model to describe this effect is the Box Model \cite{}, which the inverse Box Model equation is modelled as \cite{}
@@ -128,10 +129,91 @@ The resulting ``Modified Box Model" with parameter $\alpha = 0.93$ and $\beta = 
 
 %Transportation of ionised electrons, diffusions, impurities
 
-%The timescale of the of the singlet state light travel to detection
+\subsubsection{Electron Diffusion}
 
+%Electron drift under electric field
+Ionised electrons that do not recombine are drifted towards the anodes under the effects of electric field, by applying a high negative voltage to the cathode.
+Under the conditions of SBND with a drift field of 500 V/cm and a temperature of 87 K, the drift velocity of electrons is 0.16 cm/$\mu$s.
+
+%diffusion
+As the ionised electrons drift, they undergo diffusion, which perturbs the trajectory of the electrons due to various effects, such as inelastic collisions.
+Diffusion causes the shape of of a cloud of electrons produced in a point like energy deposition to grow in volume while drifting.
+The effects increase with respect to the drift distance and smear both spatial and temporal resolutions.
+
+The Gaussian profile resulting from the response function of the charge deposition on the wire can therefore be modelled as 
+
+\begin{equation}
+	\sigma^{2} (t) = \sigma^{2}_{0} + \left(\frac{2D}{v^{2}_{d}}\right)t
+\end{equation}
+The observed profile $\sigma$ depends on the initial profile (no diffusion) $\sigma_{0}$, the drift velocity $v_{d}$, the drift time $t$ and the diffusion coefficient $D$ \cite{}.
+Diffusion is parameterised in both longitudinal direction $D_{L}$ (parallel to the drift ad field direction) and transverse direction $D_{T}$ (perpendicular to the drift and field direction).
+Longitudinal diffusion is due to individual electron arriving on the wire earlier and later within the electron cloud moving at the drift velocity.
+Transverse diffusion broadens the cross section of the electron cloud arriving the anode plane, causing electrons migrating to neighbouring wires.
+Under the same conditions as the SBND detector, the diffusion coefficients have been measured to be $D_{L} = 7.2 $ cm$^{2}$/s and $D_T = 12.0 $ cm$^{2}$/s \cite{}.
+
+%TODO: Add how SBND measure diffusion?
+
+\subsubsection{Electron Attenuation}
+%impurity: electron lifetime
+Moreover, drifting electrons can be captured by electronegative impurities present in the argon medium, mostly commonly oxygen and water \cite{}.
+This results in attenuation of the electrons arriving at the wire, proportional to the drift distance. 
+The amplitude of the electrons arriving at the wire is generally modelled as a decay function as following
+
+\begin{equation}
+	Q_{Wire} (t) = Q_{Dep} \cdot \exp\left(\frac{-t}{\tau}\right)
+\end{equation}
+where $Q_{wire}$ is the charge collected on the wires at the anode plane, $Q_{Dep}$ is the original deposited charge, $t$ is the drift time and $\tau$ is the electron lifetime characterising the level of charge attenuation.
+A high electron lifetime, resulting from a low level of contamination is an extremely important operation parameter for a high efficiency energy reconstruction.
+Recently reported from ProtoDUNE, which utilised the same membrane cryostat technology as SBND, the experiment measured a lifetime of $\approx$ 10 ms, equivalent to an oxygen purity of 3.4 ppt \cite{}.
+This is much larger than the drift time of SBND (1.25 ms), making this effect almost negligible. 
+
+%TODO: Add how SBND measures electron lifetime
+
+\subsubsection{Space Charge Effect}
+%space charge effect
+An addition, argon ions produced as part of the ionisation process drift towards the cathode at a much slower velocity of $8 \times 10^{-7}$ cm$^{2}$/s \cite{}.
+As SBND is a surface detector without an overburden, high exposure to cosmics rays results in a high rate of ionisation, and hence argon ions.
+The build up the argon ions causes a distortion in intensity and direction of the electric field, modifying the electron drift trajectory.
+This consequently impacts the charge deposition both spatially and calorimetrically.
+This effect is referred as Space Charge Effect (SCE) \cite{}.
+The calorimetry effect is due to the dependence of the recombination factor on the local distortion of the electric field.
+The spatial effect is due to the deformation of tracks drifting in distorted electric field, as shown in Fig. \ref{}.
+SCE leads to tracks appearing bowed and bent away from the detector edges.
+
+%TODO: something sounds fudgy
+Therefore, SCE worsens the spatial as well as energy resolution of a track reconstruction and consequently, particle identification.
+SBND will implement a dedicated laser calibration system \cite{}, as well as calibration using cosmics track crossing cathode and anode \cite{} to model the distorted electric field.
+Once measured, correction will be applied in the reconstruction. 
+
+\subsubsection{Photon Propagation}
+
+%TODO: Check length
+Scintillation photons undergo different physical process as they propagate: Rayleigh scattering, reflections and refractions in the detector material boundaries, absorption on contaminants and wavelength shifting.
+Rayleigh scattering is the first order effect, where photons elastically scatter off a nuclei, modifying their trajectories.
+The Rayleigh scattering length in LAr has been predicted and reported between 50$\gg$110 cm, which is comparable to the size of SBND \cite{}.
+Reflection off solid surfaces in the detector volume is a second order effect.
+Both of these effects do not change the number of photons, however lengthens their paths from the creation point to the detection location.
+This consequently leads to a non-trivial and broader arrival time distribution at the Photon Detection System (PDS) of the fast component of the scintillation light.
+
+Furthermore, scintillation photons are can be absorbed by contaminants, particularly nitrogen has a high cross section with VUV photons \cite{}.
+Other elemenents such as ?? have also been observed in commercial argon.
+The total absorption can be modelled as an exponential suppression of the number of photons as a function of the travelled distance, wiht absorption length as a paramerter. 
+
+Moreover at SBND, TetraPhenyl Butadiene (TPB) is employed to wavelength shift the 128 nm wavelength photon to 430 - 450 nm, which is the visible light range.
+This the maximum efficiency detection range of optical detectors used in such as PMTs.
+Due to high refractive index of liquid argon at VUV wavelenghts of ?? \cite{}, the group velocity of VUV photons is about twice slower than visible wavelengths photons, resulting in different arrival time distributions.
+
+%The timescale of the of the singlet state light travel to detection
+%See SBND paper
+
+%Quenching 
+
+
+%Absorption
 \subsection{Detection of Charge and Light}
+
 \label{sec3:detection}
+
 
 %Readout detection
 
@@ -147,6 +229,9 @@ The resulting ``Modified Box Model" with parameter $\alpha = 0.93$ and $\beta = 
 \subsection{Photon Detection System}
 
 \subsubsection{Photomultiplier Tubes}
+is coated on foils placed on the cathode
+, which reflect the incident photon back towards the PDS located behind the anode. 
+This also shifts the wavelength of the photon which 
 
 \subsubsection{X-ARAPUCAs}
 
