@@ -16,5 +16,114 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{SBNProgram}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a17112a156b4a4708095dcf01750051c}{%
+           family={Machado},
+           familyi={M\bibinitperiod},
+           given={Pedro\bibnamedelima A.N.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=494880c1c330ca2df7f13d3b132d564c}{%
+           family={Palamara},
+           familyi={P\bibinitperiod},
+           given={Ornella},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2b4822b2ff1889b3db5a4c4834ce911e}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4e36e4f202fa7f16b610594da1930c8}
+      \strng{fullhash}{cb5884acb370c55051e3c5ca4fbf5cf9}
+      \strng{bibnamehash}{c4e36e4f202fa7f16b610594da1930c8}
+      \strng{authorbibnamehash}{c4e36e4f202fa7f16b610594da1930c8}
+      \strng{authornamehash}{c4e36e4f202fa7f16b610594da1930c8}
+      \strng{authorfullhash}{cb5884acb370c55051e3c5ca4fbf5cf9}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Short-Baseline Neutrino (SBN) program consists of three liquid argon time-projection chamber detectors located along the Booster Neutrino Beam at Fermi National Accelerator Laboratory. Its main goals include searches for New Physics—particularly eV-scale sterile neutrinos, detailed studies of neutrino–nucleus interactions at the GeV energy scale, and the advancement of the liquid argon detector technology that will also be used in the DUNE/LBNF long-baseline neutrino experiment in the next decade. We review these science goals and the current experimental status of SBN.}
+      \field{journaltitle}{Annual Review of Nuclear and Particle Science}
+      \field{number}{1}
+      \field{title}{The Short-Baseline Neutrino Program at Fermilab}
+      \field{volume}{69}
+      \field{year}{2019}
+      \field{pages}{363\bibrangedash 387}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1146/annurev-nucl-101917-020949
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1146/annurev-nucl-101917-020949
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1146/annurev-nucl-101917-020949
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1146/annurev-nucl-101917-020949
+      \endverb
+    \endentry
+    \entry{DUNE}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=dda70a3eb38a1ee4eb8e7628000b971c}{%
+           family={Abi},
+           familyi={A\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8c2833f14f94a62af641c70d9e28c03}
+      \strng{fullhash}{f8c2833f14f94a62af641c70d9e28c03}
+      \strng{bibnamehash}{f8c2833f14f94a62af641c70d9e28c03}
+      \strng{authorbibnamehash}{f8c2833f14f94a62af641c70d9e28c03}
+      \strng{authornamehash}{f8c2833f14f94a62af641c70d9e28c03}
+      \strng{authorfullhash}{f8c2833f14f94a62af641c70d9e28c03}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{DUNE}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{month}{2}
+      \field{title}{{Deep Underground Neutrino Experiment (DUNE), Far Detector Technical Design Report, Volume II: DUNE Physics}}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2002.03005
+      \endverb
+    \endentry
+    \entry{RhiannonPhD}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=65fbda7f3bd7b3986b5c3e184ca9b6ae}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {The University of Liverpool}%
+      }
+      \strng{namehash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \strng{fullhash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \strng{bibnamehash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \strng{authorbibnamehash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \strng{authornamehash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \strng{authorfullhash}{65fbda7f3bd7b3986b5c3e184ca9b6ae}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Muon-neutrino disappearance with multiple liquid argon time projection chambers in the Fermilab Booster neutrino beam}}
+      \field{type}{phdthesis}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

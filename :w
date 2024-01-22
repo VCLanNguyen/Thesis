@@ -18,45 +18,37 @@ Chapter 3 Opening
 \newpage
 
 %********************************** %First Section  **************************************
-\section{Overview of LArTPC}
+\section{Operation Principles}
 
-%1: Introduction
-The Liquid Argon Time Projection Chamber (LArTPC) is the technology of choice for Fermilab's neutrino program, due to its ability to facilitate a high rate of neutrino interactions while maintaining exceptional spatial, calorimetry, and timing resolution. 
-Moreover, the abundant availability of argon is ideal for scaling detectors to a large target mass, reaching up to tens of kilotons of liquid argon.
-Notably, the Short-Baseline Neutrino (SBN) programme comprises of three LArTPC experiments of sizes in the hundreds of tons, located along the Booster Neutrino Beam (BNB): the Short-Baseline Near Detector (SBND), MicroBooNE, and ICARUS \cite{SBNProgram}.
-This novel technology will also be utilised at the upcoming long baseline Deep Underground Neutrino Experiment (DUNE), of which its far detector is composed of four LArTPCs, boasting a total volume of 70 kilotons \cite{DUNE}.
+%1: Overview of LArTPC, why LArTPC and what LArTPC does
+The Liquid Argon Time Projection Chamber (LArTPC) is the technology of choice for Fermilab's neutrino program.
+Specifically designed for the precise measurement of neutrino cross sections, LArTPC employs a liquefied medium of argon to facilitate a high rate of neutrino interactions while maintaining exceptional spatial, calorimetry, and timing resolution. 
+Additionally, the abundant availability of argon allows for the scaling of detectors to a large target mass, reaching up to tens of kilotons.
+Notably, the Short-Baseline Neutrino (SBN) programme comprises three LArTPC experiments of sizes in the hundreds of tons, located along the Booster Neutrino Beam (BNB): the Short-Baseline Near Detector (SBND), MicroBooNE, and ICARUS \cite{SBNProgram}.
+The technology will also be utilised at the upcoming Deep Underground Neutrino Experiment (DUNE), of which the far detector is composed of four LArTPCs, with a total volume of 70 kilotons \cite{DUNE}.
+
 
 %2: LArTPC description and figure 
-A diagram illustrating the general operation principle of a LArTPC is provided in Fig. \ref{fig:LARTPC}.
-Charged particles resulting from a neutrino interaction ionise argon atoms as they traverse through the detector medium, also producing scintillation photons in the process.
-A high negative voltage is applied at the cathode plane, creating an electric field under which the ionisation electrons drift towards the anode.
-Once arrive at the anode, the ionisation electrons induce signals on the inner wire planes and finally collected on the outermost plane.
-The combination signals from these planes result in a high granularity three dimensional image of the interaction.
-Since the wire planes are transparent to the scintillation photons, an additional Photon Detection System (PDS) is installed behind the wire planes, gaining precise timing information of the interaction.
+A diagram depicting a general operation principle of a LArTPC can be seen in Fig. \ref{LARTPC}.
+Particles resulting from a neutrino interaction ionise the argon as they traverse the detector medium.
+A high negative voltage is applied at the cathode plane, creating an electric field under which the ionised electrons drift towards the anode.
+The drifting electrons induce signals on the three readout wire planes located at the anode, yielding a high granularity image of the interaction.
+Since the wire planes are transparent to the scintillation photons resulting from particles propagation inside liquid argon, an additional Photon Detection System (PDS) is located behind the wire planes.
+The information from the photons gains precise timing information of the interaction.
 
 \begin{figure}[h] 
 \centering    
 \includegraphics[width=1.0\textwidth]{LARTPC}
 \caption[LARTPC]{
-Illustration of a general-purpose LArTPC. An example neutrino interaction is shown, which produces two charged tracks (solid lines) and a neutral track (dashed line). The charged tracks produce ionisation electrons, which drift under an electric field towards the anode. The neutral track does not ionise the argon atoms and thus not directly visible in the detector. \cite{RhiannonPhD}.
+	Fig. from \cite{}.
 }
 \label{fig:LARTPC}
 \end{figure}
 
-%add why argon as target material
-Specifically chosen for the precise measurement of neutrino cross sections, liquid argon has a high density of 1.39 gcm$^{-3}$, and a high atomic mass of 40.
-The probability of neutrino interactions increases with the number of nucleons in the detector volume, and liquid argon, therefore, enables a high rate of neutrino interactions.
-Furthermore, given that argon is a noble element, the energy deposited by particles traversing through the medium can only be used for ionising electrons and producing scintillation photons.
-This maximises the efficiency of energy transfer into observable signals for detection.
-Additionally, liquid argon has a very high electron mobility, allowing for ionisation electrons to quickly drift under an electric field.
-Recent technology advancements in purifying argon has resulted in stable and ultra pure argon, which ensures that electrons can transverse the drift distance towards detection without being captured \cite{}.
-Consequently, liquid argon continues to stand out as an advantageous target material for neutrino experiments. 
-
-%overview
-The following sections will delve into the details of the principle operations of a LArPTC.
-In Sec. \ref{sec3:creation}, a comprehensive discussion is presented on particle interactions with the liquid argon to produce ionisation electrons and scintillation photons.
-Following that, Sec. \ref{sec3:propagation} outlines the propagation of the resultant electrons and photons through the liquid argon medium.
-Finally, Sec. \ref{sec3:detection} provides an insight into the detection mechanism of the ionisation electrons and scintillation photons using the wire planes and a complex PDS respectively.
+This following section will delve into the details of operation principle of a LArPTC.
+Sec. \ref{sec3:creation} provides the technical details of how a particle can ionise to produce drifting electrons, and then recombine to produce scintillation photons.
+Sec. \ref{sec3:propagation} then describes how the produced drifting electrons and scintillation photons propagate across the liquid argon medium, and their detection is included in Sec. \ref{sec3:detection}.
+Lastly, Sec. \ref{sec3:pid} explains how the measured signals can be used for calorimetry, and hence, particle identification.
 
 \section{Particle Interactions in Liquid Argon}
 \label{sec3:creation}
@@ -153,7 +145,7 @@ SBND detector has an electric field of 500 V/cm, which is the region where the e
 
 
 \section{Transportation of Particles in Liquid Argon}
-\label{sec3:propagation}
+\label{sec3:propagration}
 
 %Transportation of ionised electrons, diffusions, impurities
 \subsection{Electrons Drift}
