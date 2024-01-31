@@ -1,20 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[58] biber:322> INFO - === Wed Jan 31, 2024, 13:23:14
-[68] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[119] Biber.pm:943> INFO - Found 38 citekeys in bib section 0
-[128] Biber.pm:4256> INFO - Processing section 0
-[129] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
-[129] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
-[135] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
-[139] bibtex.pm:1653> INFO - LaTeX decoding ...
-[248] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
-[280] Utils.pm:293> WARN - month field 'feb' in entry 'ubooneDet' is not an integer - this will probably not sort properly.
-[498] Utils.pm:293> WARN - month field 'oct' in entry 'argoneut' is not an integer - this will probably not sort properly.
-[531] Utils.pm:293> WARN - month field 'feb' in entry 'uboone_gamma' is not an integer - this will probably not sort properly.
-[746] Utils.pm:293> WARN - month field 'Jan' in entry 'Lariat' is not an integer - this will probably not sort properly.
-[753] Utils.pm:293> WARN - month field 'May' in entry 'photon_lifetime' is not an integer - this will probably not sort properly.
-[772] Utils.pm:293> WARN - month field 'Mar' in entry 'ion_e' is not an integer - this will probably not sort properly.
-[773] Utils.pm:293> WARN - month field 'aug' in entry 'argoneut_recomb' is not an integer - this will probably not sort properly.
-[806] Utils.pm:293> WARN - month field 'Oct' in entry 'QLAnti' is not an integer - this will probably not sort properly.
-[818] Utils.pm:293> WARN - month field 'sep' in entry 'uboone_diff' is not an integer - this will probably not sort properly.
+[69] biber:322> INFO - === Wed Jan 31, 2024, 17:09:30
+[82] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[145] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[150] Utils.pm:293> WARN - The file 'thesis.bcf' does not contain any citations!
+[157] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[157] bbl.pm:755> INFO - Output to thesis.bbl
+[157] Biber.pm:128> INFO - WARNINGS: 1
