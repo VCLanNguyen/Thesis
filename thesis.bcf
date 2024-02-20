@@ -2187,6 +2187,17 @@
     <bcf:datasource type="file" datatype="bibtex">References/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">SBNProgram</bcf:citekey>
+    <bcf:citekey order="2">LSND_anomaly</bcf:citekey>
+    <bcf:citekey order="3">Miniboone_anomaly</bcf:citekey>
+    <bcf:citekey order="4">reactor_anomaly_1</bcf:citekey>
+    <bcf:citekey order="4">reactor_anomaly_2</bcf:citekey>
+    <bcf:citekey order="5">reactor_anomaly_3</bcf:citekey>
+    <bcf:citekey order="5">reactor_anomaly_4</bcf:citekey>
+    <bcf:citekey order="6">SBNProgram</bcf:citekey>
+    <bcf:citekey order="7">SBNProgram</bcf:citekey>
+    <bcf:citekey order="23">ptb_gvs</bcf:citekey>
+    <bcf:citekey order="24">artdaq_note</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
