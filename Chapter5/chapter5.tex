@@ -152,15 +152,6 @@ The calibration work included measuring a constant offset introduced by the SPEC
 \section{Timing Precision of the Cosmic Ray Tagger DAQ}
 \label{sec4InternalClock}
 
-The timing resolution of the CRT readout electronics is evaluated in the following section.
-%CRT FEB
-The CRT detection system consists of 7 CRT planes, and is readout by 144 Front End Board (FEB) modules \cite{crt_note}. 
-A single FEB module a multifunctional board and is capable to serve 32 channels, one channel per Silicon PhotoMultiplier (SiPM). 
-First it can provide a bias voltage which can be adjustable for individual SiPM as well as signal amplification and shaping.
-Once the signal is shaped, the FEB can apply signal discrimination and self-triggering, such as coincidence for each pair of SiPM and coincidence across multiple FEBs.
-Once the signal passes the trigger, it is digitised and timestamped with respect to the reference clock.
-The data is stored in a buffer and readout via Ethernet connection.
-The following section focuses on the characterisation on the timing resolution of the FEB module.
 
 %Do I need to explain what CRT panel is made of? Or should I explain it in the detector chapter?
 
@@ -349,13 +340,6 @@ Additionally, combining timestamps recorded by the SPEC-TDC with other hardware 
 \section{Timing Precision of the Photomultiplier Tube DAQ}
 \label{sec4PMT}
 
-%CAEN digitizer
-SBND has 120 PMTs as part the Photon Detection System and they are readout by 8 CAENV1730 digitizers \cite{caen_manuals}.
-The CAENV1730 digitizer is capable of recording waveforms for 16 channels independently with a sampling rate of 500 MHz.
-SBND currently uses the model V1730SB which has a deeper buffer to save longer waveform as well as to handle higher data rate.
-The model also offers better waveform baseline stability against temperature fluctuation.
-Multiple CAEN digitizers can be synchronised to make up one complex system, such that they all behave as a single digitizer.
-Thus, the following section evaluates the timing precision of CAEN digitizer by characterising the synchronisation across multiple digitizers.
 
 \subsection{CAEN Digitizer Clock}
 \label{subsec41PMT}
