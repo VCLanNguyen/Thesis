@@ -188,6 +188,7 @@ The electron-ion recombination, as depicted in Fig. \ref{fig:recomb_diagram}, oc
 The electron recombination survival probability, also known as \textit{recombination factor} $R$, is defined as following 
 \begin{equation}
 	R=W_{ion} \cdot \frac{dE/dx}{dQ/dx}
+	\label{eq:recomb}
 \end{equation}
 where $W_{ion} = 23.6$ eV is the energy required to ionise an argon \cite{ion_e} and $dQ/dx$ and $dE/dx$ is the charge and energy loss per unit length respectively. 
 In Fig. \ref{fig:recomb_graph}, a comparison of various recombination models with a non-linear dependence on $dE/dx$ is presented.
@@ -228,8 +229,10 @@ Fig. from \cite{QLAnti}.
 
 The dependence of recombination on the electric field leads to an anti-correlation between the charge and light yield $Q$ and $L$ respectively, such that \cite{argoneut_recomb}
 \begin{gather}
+	\label{eq:QL}
 	Q = N_{i}R \\ 
 	L = N_{ex} + N_{i}(1 - R)
+
 \end{gather}
 where $N_{i}$ is the number of electron-ion pairs and $N_{ex}$ is the number of argon excitons.
 A stronger electric field results in a higher number of ionization electrons being separated from the argon ions and drifted towards the anode for detection before recombination can occur. 

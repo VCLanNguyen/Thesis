@@ -225,28 +225,4 @@
       \strng{bibnamehash}{05859a920a7c441f260e368365faf18d}
       \strng{authorbibnamehash}{05859a920a7c441f260e368365faf18d}
       \strng{authornamehash}{05859a920a7c441f260e368365faf18d}
-      \strng{authorfullhash}{05859a920a7c441f260e368365faf18d}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{hep-ex}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Instruments}
-      \field{number}{1}
-      \field{title}{{A Review of Basic Energy Reconstruction Techniques in Liquid Xenon and Argon Detectors for Dark Matter and Neutrino Physics Using NEST}}
-      \field{volume}{5}
-      \field{year}{2021}
-      \field{pages}{13}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/instruments5010013
-      \endverb
-      \verb{eprint}
-      \verb 2102.10209
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
-\endinput
-
+      \strng{authorfullhash}{05859a920a7c441f260e3
