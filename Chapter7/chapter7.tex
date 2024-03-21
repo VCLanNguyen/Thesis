@@ -33,53 +33,44 @@ Finally, Sec. \ref{sec:concludeDeltaRay} provides suggestions for measurements t
 % purity monitoring by SBND + calibration
 Drifting electrons can be captured by electronegative impurities present in LAr, as previously described in Sec. \ref{sec:edrift}.
 At SBND, three purity monitors were installed, two internal to the cryostat and one external, to provide quick and real-time monitoring of the LAr purity.
-Meanwhile, calibration will require a dedicated procedure to model electron attenuation using the charge collected by the wires.
-Electron attenuation is modelled as an exponential suppression as Eq. \ref{eq:etime}, where $\tau$ is the electron lifetime constant to be measured.
-The lifetime constant must be accurately measured, to recover the original charge deposition before drifting to the wires.
+Meanwhile, calibration will require a dedicated procedure to model electron attenuation using the charge measured by the wires.
+Electron attenuation is modelled as an exponential decay function as Eq. \ref{eq:etime}, where $\tau$ is the electron lifetime constant to be measured.
+The lifetime constant must be accurately measured, to recover the original charge deposition inside the detector before drifting to the wires.
 
 The MicroBooNE experiment has previously used anode-to-cathode-crossing cosmic tracks for electron lifetime measurement \cite{uboone_calib}.
 These tracks enter the detector from either the cathode or anode and exit through the opposite plane.
-Since they fully traverse the whole drift distance of the TPC,   a good sample to study the measured charge per unit length $dQ/dx$ dependency on the drift distance.
+Since they fully traverse the whole drift distance of the TPC, they make a good sample to study the measured charge per unit length $dQ/dx$ dependency on the drift distance.
 For the calibration run of SBND in the summer of 2024, a calibration trigger will be deployed to tag tracks of this topology and produce a dedicated sample for electron lifetime measurement.
 Within the scope of this study, a sample of crossing cosmic tracks was simulated to perform the lifetime measurement.
 
 The study aims to develop a procedure to measure electron lifetime and investigate detector effects that can introduce biases on the lifetime, such as diffusion and Space Charge Effect (SCE).
-The procedure for electron lifetime measurement is outlined in Sec. \ref{sec7:etime_procedure}, followed by Sec. \ref{sec7:etime_bias} describing biases in lifetime measurement due to detector effect
-s.
+The procedure for electron lifetime measurement is outlined in Sec. \ref{sec7:etime_procedure}, followed by Sec. \ref{sec7:etime_bias} describing biases in lifetime measurement due to detector effects.
 Finally, Sec. \ref{sec7:etime_remark} provides recent updates and improvements to carry on the electron lifetime measurement with data.
 
 \subsection{Procedure}
 \label{sec7:etime_procedure}
 
-The electron lifetime measurement requires information on the measured charge per unit length $dQ/dx$ and the respective drift time $t_{drift}$ of that charge cluster collected on the wire.
-The charge reconstruction follows the signal processing workflow described in Chapter \ref{Chapter6}, whilst additional calculation is required to deduce the drift time.     
-The drift time is defined as follows                                                                                          
+%TODO: add ref
+The electron lifetime measurement requires information on the measured charge per unit length $dQ/dx$ and the respective drift time $t_{drift}$ of that charge cluster measured by the wire.
+The charge reconstruction follows the signal processing workflow described in Sec. \ref{}, whilst additional calculation is required to deduce the drift time.     
+The drift time is defined as 
 \begin{equation}
         t_{drift} = \frac{x}{v_{d}}
 \end{equation}
-where $x$ is the drift coordinate of the charge deposition relative to the APA and $v_{d}$ is the drift velocity.
-For the TPCs of SBND, the drift velocity is 0.1563 cm/$\mu$s at an electric field of 0.5 kV/cm and liquid argon temperature of 88.4 K.
+where $x$ is the drift coordinate of the charge deposition relative to the anode and $v_{d}$ is the drift velocity.
+For the two TPCs of SBND, the drift velocity is expected to be at 0.1563 cm/$\mu$s at an electric field of 0.5 kV/cm and liquid argon temperature of 88.4 K.
 The drift time can be calculated using the measured time $t_{m}$ recorded by the TPC readout when a charge cluster arrives at a wire, which is defined as \cite{pandora_protodune}
 \begin{equation}
 \label{eq:t0}
         t_{m} = t_{0} - t_{trigger} + t_{drift} 
 \end{equation}
 where $t_{0}$ is the time when the particle enters the detector and $t_{trigger}$ is the time when the TPC readout is triggered.
-For a beam neutrino that triggers the TPC readout, the readout is configured to align with when the beam arrives at the detector hall such that $t_{trigger} = t_{0}$ by definition.
+For a beam neutrino that triggers the TPC readout, the readout window is configured to align with when the beam arrives at the detector hall such that $t_{trigger} = t_{0}$.
 Meanwhile, a cosmic track can occur anytime within the readout window, and the time when it enters the detector $t_{0}$ is ambiguous.
 
-A \textit{stitching} process was developed by the ProtoDUNE and Pandora collaboration to resolve the ambiguous $t_{0}$ of cosmic tracks that cross the cathode \cite{pandora_protodune}.
-This medthod can be applied to any LArTPC experiments that have two TPCs sharing the same cathode.
-Fig. \ref{fig:cosmic_stitch} depicts the \textit{stitching} process.
-Two cosmic track segments, in red and blue lines, were reconstructed under an initial assumption of $t_{0} = 0$, and thus, they appear at the wrong positions in both drift volumes.
-The reconstruction algorithm then shifts the drift coordinate in each TPC by an equal and opposite amount until the two segments are \textit{stitched} at the cathode, in black line, recovering 
-the correct $t_{0}$.                                                                                                                                                                                   
-This method has been implemented in the reconstruction workflow of SBND, and it was applied to reconstruct the sample of anode-to-cathode-crossing tracks in this study.
-%Once $t_{0}$ is determined, the drift time can then be calculated using Eq. \ref{eq:t0}. 
-
-\begin{figure}[htbp!] 
+\begin{figure}[bp!] 
 \centering    
-\includegraphics[width=0.5\textwidth]{cosmic_stitch}
+\includegraphics[width=0.45\textwidth]{cosmic_stitch}
 \caption[cosmic_stitch]{
 	Diagram depicting the \textit{cathode stictching} process to determine the $t_{0}$ of cathode-crossing tracks.
 	Fig. from \cite{pandora_protodune}.
@@ -87,24 +78,30 @@ This method has been implemented in the reconstruction workflow of SBND, and it 
 \label{fig:cosmic_stitch}
 \end{figure}
 
-One can then construct the 1D profile of $dQ/dx$ for the charge collected on the collection plane for a given bin of drift time as shown in Fig. \ref{fig:dqdxMPV}, for an example $dQ/dx$ profile of the drift
- time bin from 0.925 to 0.95 ms.                                                                                                                                                                       
+A \textit{stitching} process was developed by the ProtoDUNE and Pandora collaboration to resolve the ambiguous $t_{0}$ of cosmic tracks that cross the cathode \cite{pandora_protodune}.
+This medthod can be applied to any LArTPC experiments that have two TPCs sharing the same cathode.
+Fig. \ref{fig:cosmic_stitch} depicts the \textit{stitching} process.
+Two cosmic track segments, in red and blue lines, were reconstructed under an initial assumption of $t_{0} = 0$, and thus, they appear at the wrong positions in both drift volumes.
+The reconstruction algorithm then shifts the drift coordinate in each TPC by an equal and opposite amount until the two segments are \textit{stitched} at the cathode, in black line, recovering the correct $t_{0}$.
+This method has been implemented in the reconstruction workflow of SBND, and it was applied to reconstruct the sample of anode-to-cathode-crossing tracks in this study.
+%Once $t_{0}$ is determined, the drift time can then be calculated using Eq. \ref{eq:t0}. 
+
+One can then construct the $dQ/dx$ profile for the charge collected on the collection plane for a given bin of drift time as shown in Fig. \ref{fig:dqdxMPV}, for an example $dQ/dx$ profile of the drift time bin from 0.925 to 0.95 ms.
 A Landau convoluted with a Gaussian distribution \cite{Passage} is fitted to the profile to extract the Most Probable Value (MPV) of $dQ/dx$.                                 
 The MPV $dQ/dx$ is then plotted with respect to its drift time as shown in Fig. \ref{fig:etime_tpc}, for TPC 0 and 1 of SBND.                                                                          
-Bins of drift time less than 0.25 ms and larger than 1.15 ms are excluded due to the close proximity to the anode and cathode respectively, which can introduce boundary effects to the charge clusters
-.                                                                                                                                                                                                      
-The MPV $dQ/dx$ distribution is fitted with Eq. \ref{eq:etime} to determine the electron lifetime constant.                                                                                            
+Bins of drift time less than 0.25 ms and larger than 1.15 ms are excluded due to the close proximity to the anode and cathode respectively, which can introduce boundary effects to the charge clusters.
+The MPV $dQ/dx$ distribution is fitted with Eq. \ref{eq:etime} to determine the electron lifetime constant.
 The sample input to Fig. \ref{fig:etime_tpc} was simulated with a lifetime of 10 ms and no detector effects enabled to validate the procedure.                                       
 The measured lifetimes of 10.12 and 10.40 ms, for TPC 0 and 1 respectively, show a good agreement with simulation. 
-\begin{figure}[htbp!] 
+\begin{figure}[bp!] 
 \centering    
 \includegraphics[width=0.55\textwidth]{dqdxMPV}
 \caption[dqdxMPV]{
-$dQ/dx$ profile for the drift time from 0.925 to 0.95 ms, fitted with a Landau convoluted with Gaussian distribution to determine the MPV $dQ/dx$.
+An example of $dQ/dx$ profile for the drift time from 0.925 to 0.95 ms, fitted with a Landau$*$Gaussian distribution to determine the MPV $dQ/dx$.
 }
 \label{fig:dqdxMPV}
-\end{figure}
-\begin{figure}[htbp!]
+%\end{figure}
+%\begin{figure}[htbp!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -128,8 +125,8 @@ $dQ/dx$ profile for the drift time from 0.925 to 0.95 ms, fitted with a Landau c
 
 Some detector effects can introduce biases to the electron lifetime measurement, specifically those that can influence the propagation path of drifting electrons such as diffusion and SCE, as detailed
  in Sec. \ref{sec3:diffusion}.
-Diffusion can smear both spatial and temporal resolution of the drifting electrons, and consequently the measured time of charge collected on the wires.
-Meanwhile, SCE impacts both the amplitude of the charge collected on the wire as well as the temporal and spatial resolution of the drifting coordinates due to electric field distortion.
+Diffusion can smear both spatial and temporal resolution of the drifting electrons, and consequently the number of wires seen by the charge and the arrival time of charge measured by the wires.
+Meanwhile, SCE impacts both the amplitude of the measured charge as well as the temporal and spatial resolution of the drifting coordinates due to electric field distortion.
 This study aims to understand how individual effect introduces biases to the measured electron lifetime.
 Dedicated samples were simulated, with neither nor only one detector effect enabled at a time, and electron lifetime was measured for each sample.
 
@@ -142,11 +139,12 @@ Biases in measured electron lifetimes compared to simulated values, due to diffu
 \label{fig:etime_biases_compare}
 \end{figure}
 
-Biases in the measured lifetime compared to the simulated lifetime are shown in Fig. \ref{fig:etime_biases_compare}, for two simulated electron lifetimes at 3 ms and 10 ms.
-When neither diffusion nor SCE were enabled in the simulation, the measured lifetimes were unbiased compared to the simulated lifetimes.
+Biases in the measured lifetime compared to the simulated lifetime are shown in Fig. \ref{fig:etime_biases_compare}, for two simulated electron lifetimes at 3 ms (top) and 10 ms (bottom).
+When no detector effects were enabled in the simulation, the measured lifetimes were unbiased compared to the simulated lifetimes.
 At both simulated values of electron lifetimes, the observed biases are well below the 5\% level.
 When either diffusion or SCE was enabled in the simulation, biases in the measured lifetimes can be seen.
-The magnitude of the biases due to SCE is much greater than due to diffusion, which is consistent with the observations from an electron lifetime measurement carried out by MicroBooNE \cite{ubooneEtime}. 
+The magnitude of the biases due to SCE is much greater than due to diffusion at both simulated lifetimes.
+This is consistent with the observations from an electron lifetime measurement carried out by MicroBooNE \cite{ubooneEtime}. 
 The paper demonstrated that the traverse component of diffusion causes similar biases in the measured lifetime as SCE however, at a smaller magnitude.
 The paper also pointed out that the longitudinal component of diffusion causes insignificant biases in the measured lifetime.
 Moreover, the comparison between the two simulated lifetimes at 3 ms and 10 ms shows that the longer the lifetime, the larger the biases.
@@ -157,12 +155,13 @@ It could be due to more drifting electrons surviving with longer lifetimes and t
 
 %New model of diffusion
 The study demonstrates a method to measure electron lifetime using a sample of anode-to-cathode crossing cosmic tracks, that have the advantage of spanning over a full drift distance and a reconstructable $t_{0}$ time when the particle enters the detector.
-Furthermore, the bias study shows that the measured electron lifetime by this method is the most affected by SCE, followed by diffusion, which is consistent with the observed results from MicroBooNE.
+Furthermore, the bias study shows that the measured electron lifetime by this method is the most affected by SCE, followed by diffusion, which is consistent with the results from MicroBooNE.
 This procedure has now been replicated in preparation for the calibration run of SBND in the summer of 2024, where a calibration trigger will be deployed to tag crossing tracks for lifetime measurement.
 
-Since this simulated study was carried out in 2021, the understanding of detector effects on observed energy deposition in LArTPC, and consequently electron attenuation, has been greatly improved.
-An investigation carried out by Putnam and Schmitz at the ICARUS experiment demonstrated that traverse diffusion breaks down the Landau MPV approximation \cite{GrayDiffusion} of measured charge.
-The paper recommends using an averaged $dQ/dx$ from a group of wires instead of $dQ/dx$ from a single wire to mitigate the effect of traverse diffusion smearing charge deposition across multiple wires.
+Since this simulated study was carried out in 2021, the understanding of detector effects on energy deposition in LArTPC has been greatly improved.
+An investigation carried out by Putnam and Schmitz at the ICARUS experiment demonstrated that traverse diffusion breaks down the Landau$*$Gaussian MPV approximation of the measured charge \cite{GrayDiffusion}, which was employed in this study.
+The is due to traverse diffusion smearing the charge cluster across multiple wires.
+The paper recommends using an averaged $dQ/dx$ from a group of wires instead of $dQ/dx$ from a single wire to mitigate the effect.
 The suggestion has now been implemented in the calibration workflow of SBND.
 
 %********************************** %First Section  **************************************
@@ -178,15 +177,15 @@ As described in Sec. \ref{sec:recomb}, the recombination model employed at SBND 
 The Modified Box (ModBox) model approximates the recombination probability based on a cylindrical column surrounding a track-like charge deposition.
 This volume treatment effectively accounts for microphysics processes produced along the track, such as delta rays, as some additional charges of the track itself.
 This approximation has proven to work well for the MeV to GeV-scale interactions, however, breaks down when applied to keV-scale interactions.
-The NEST collaboration pointed out non-linear fluctuations in recombination at increasingly smaller scales, which is currently not well-described by the ModBox model \cite{NEST}.   
+Szydagis et al pointed out non-linear fluctuations in recombination at increasingly smaller scales, which is currently not well-described by the ModBox model \cite{NEST}.   
 Moreover, the ArgoNeuT collaboration also proposed that microphysics effects could lead to disagreements in recombination theory, simulation and measurement \cite{argoneut_recomb}.
 
-One microphysics process that can affect recombination, highlighted by both NEST and ArgoNeuT collaborations, is delta ray.
-Delta rays are high $dE/dx$ knock-out electrons with energy as low as 1 keV.
+One microphysics process that can affect recombination, highlighted by both Szydagis et al and ArgoNeuT, is delta ray.
+Delta rays are knock-out electrons with low energy but high $dE/dx$.
 As shown in Fig. \ref{fig:delta_ray_evd}, delta rays can be seen as short tracks produced along a longer primary track, in this case, a cosmic muon.                      
 Since delta rays have high $dE/dx$, they are associated with a smaller recombination factor, producing more scintillation photons while quenching ionisation electrons.
 This simulation investigation examines how fluctuation in delta rays impacts the recombination simulation, and consequently, the energy-charge scales of different particle types.
-Sec. \ref{sec:simDeltaRay} explains the simulation framework of delta rays and recombination, and expresses some concerns with the current framework.
+Sec. \ref{sec:simDeltaRay} provides an overview of the simulation framework of delta rays and recombination, and some concerns with the current framework.
 Sec. \ref{sec:impactDeltaRayMag}, \ref{sec:impactDeltaRaySmear} and \ref{sec:impactStepLimit} describe the impacts of varying simulation handles associated with delta rays on particle calorimetry.
 Finally, Sec. \ref{sec:concludeDeltaRay} suggests recommendations for measurements at SBND to improve the recombination model.             
                                                                                                                        
@@ -215,7 +214,7 @@ Meanwhile, the total cross-section of the delta ray production is computed using
 The energy threshold defines the lower limit of the kinetic energy of the generated delta rays such that only delta rays with sufficient energy can be produced.
 This is to suppress the generation and tracking of all low energy delta rays that would exhaust computation resources.
 This also means that the energy of the non-produced delta rays is transferred to the continuous energy loss component of the primary particle.
-This is equivalent to setting the energy threshold as the upper limit for the primary particle so that its mean energy loss is less than the threshold.
+This is equivalent to setting the energy threshold as the upper limit for the primary particle, so that its mean continuous energy loss is less than the threshold.
 In other words, the energy threshold determines how much energy deposition is shared between the primary particle and the delta rays. 
 The lower the threshold, the more energy deposition is carried away by the delta rays instead of the primary particle. 
 
@@ -223,18 +222,18 @@ In LArG4 terminology, this energy threshold is also known as the secondary produ
 For the standard simulation in SBND, the secondary production threshold for delta rays in a LAr medium is set as 700 $\mu$m, equivalent to a delta ray having a kinetic energy of 273 keV.
 %This also means that the secondary production threshold also limits the interaction length of delta rays with LAr. 
 Moreover, the maximum length $dx$ that the particle can propagate per step is configured as 0.3 mm, one order of magnitude smaller than the wire pitch.
-This setup allows for a more feasible computation of generating delta rays.
+This setup allows for a feasible computation of generating delta rays.
 
 %Describe ionandscint module
 Recombination is then simulated for each step to determine the charge and light yield.
-SBND employs the ModBox model, describing the energy-charge scale as follows
+SBND employs the ModBox model, describing the energy-charge scale, $dE/dx$ to $dQ/dx$, as follows
 \begin{equation}
 	\label{eq:recomb_modbox}
 	\frac{dE}{dx} = \frac{1}{\beta}\left[ \exp{\left( \beta W_{ion}  \frac{dQ}{dx}\right)} -\alpha \right]
 \end{equation}
 where $\alpha = 0.93\pm0.02$ and $\beta = 0.212\pm0.002$ (kV/cm)(g/cm$^{2}$)/MeV, which are parameters that have been experimentally derived by ArgoNeuT \cite{argoneut_recomb}.
 Recombination is highly dependent on the electric field and the local charge density, and therefore a parameter for the electric field is folded into the $\beta$ parameter.
-By re-arranging Eq. \ref{eq:recomb_modbox}, one can derive the formalism of the recombination factor $R$ as a function of $dE/dx$ as
+By re-arranging Eq. \ref{eq:recomb_modbox}, the recombination factor $R$ as a function of $dE/dx$ is derived as
 \begin{equation}
 	\label{eq:R_factor}
 	R = \frac{\log{ \left( \alpha + \left(\beta \cdot dE/dx\right)/\varepsilon \right)}}{\left(\beta \cdot dE/dx\right)/\varepsilon} 
@@ -256,7 +255,7 @@ The simulation investigation was set up to address individual concerns as well a
 A truth comparison was carried out on two identical samples of muons and protons, to investigate if recombination is particle-dependent.
 The particles were generated with a fixed energy of 1 GeV, uniform in positional and angular distributions.
 The LArG4 stage was configured such that the particle can only deposit energy via ionisation.
-Then, charge-based calorimetry was performed by reconstructing deposited energy $dE/dx$ from deposited charge $dQ/dx$ using Eq. \ref{eq:recomb_modbox}.
+Then, charge-based calorimetry was performed by reconstructing deposited energy $dE/dx$ from charge $dQ/dx$ collected on collection planes using Eq. \ref{eq:recomb_modbox}.
 
 \subsection{Impacts of Delta Ray Fluctuations On Recombination Magnitude}
 \label{sec:impactDeltaRayMag}
@@ -265,7 +264,7 @@ Fluctuations in delta rays were examined at different values of the secondary pr
 This is equivalent to generating delta rays of minimum kinetic energy ranging from 273 keV to as low as 1 keV.
 The energy-charge plots of $dQ/dx$ to $dE/dx$ for proton are shown in Fig. \ref{fig:proton_2d}, for the secondary production threshold at 700 $\mu$m and 1 $\mu$m.
 The calorimetry is plotted for the proton residual range from 1 cm to 90 cm, which covers the full track length. 
-The proton $dE/dx$ proton ranges from 2 MeV/cm to 18 MeV/cm, allowing for the examination of delta ray fluctuation impacts at both low and high spectrum of $dE/dx$. 
+The proton $dE/dx$ ranges from 2 MeV/cm to 18 MeV/cm, allowing for the examination of delta ray fluctuation impacts at both low and high spectrum of $dE/dx$. 
 For the secondary production threshold of 700 um, shown in Fig. \ref{fig:proton_2d_700}, the calorimetry distribution precisely follows the ModBox model with the ArgoNeuT parameters.
 Good agreement is expected since the standard simulation of SBND is similar to the described simulation framework by ArgoNeuT \cite{argoneut_recomb}: (1) the maximum step length $dx$ was restricted to be 0.3 mm and (2) the energy loss due to delta rays was not included in recombination.
   
@@ -295,7 +294,7 @@ At the low $dE/dx$ spectrum of the proton, delta rays have higher $dE/dx$ than t
 The opposite effect is seen at the high $dE/dx$ spectrum of the proton, resulting in the effective recombination factor increases.
 
 %This then allows the determination of the output simulated recombination factor, given as $dE/dx / (W \times dQ/dx)$.
-The energy-charge scale of proton at the secondary production thresholds at 700, 10, 5, and 1 $\mu$m, equivalent to delta rays with a minimum kinetic energy of 272.58, 14.60, 2.58, 1.06, and 0.99 keV are plotted in Fig. \ref{fig:proton_range_delta}. 
+The proton energy-charge scale at the secondary production thresholds at 700, 10, 5, and 1 $\mu$m, equivalent to delta rays with a minimum kinetic energy of 272.58, 14.60, 2.58, 1.06, and 0.99 keV are plotted in Fig. \ref{fig:proton_range_delta}. 
 To compare $dQ/dx$ quantitatively at the same $dE/dx$ bin, the mean $dQ/dx$ is calculated per bin as shown in Fig. \ref{fig:proton_range_delta_magnitude}.
 The percentage difference of the mean $dQ/dx$ relative to the ModBox model is plotted in Fig. \ref{fig:proton_range_delta_diff} to examine the magnitude of impacts from delta rays fluctuations on the energy-charge scale. 
 Lowering the kinetic energy of delta rays results in two key trends.                                                           
@@ -336,7 +335,7 @@ The same behaviour as proton is observed such that the magnitude of the effectiv
 Nonetheless, the magnitude of the quenching is larger for muon compared to proton.
 The difference is driven by how each particle type is \textit{dressed} in a different amount of delta rays even at the same simulation configuration for delta rays.
 
-\begin{figure}[htbp!]
+\begin{figure}[tbp!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -401,12 +400,12 @@ The same set of plots are also computed for the case of muon as shown in Fig. \r
 
 When delta rays are included in the energy deposition, the $dE/dx$ distribution agrees with the Landau-Vavilov distribution with smearing in $dE/dx$ across all bins of the residual range.
 The distributions are indistinguishable between the secondary production threshold at the default secondary production threshold of 700 $\mu$m and 1 $\mu$m, comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1} for proton and comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_delta_1} for muon. 
-The behavior is expected since the total energy deposition of the primary particle and the delta rays stay the same at different values of the secondary production threshold.
+The behaviour is expected since the total energy deposition of the primary particle and the delta rays stay the same at different values of the secondary production threshold.
 Comparing between the case of proton and muon, including delta rays in the energy deposition introduces greater smearing in the $dE/dx$ distribution for muon than that of proton.
 
 For the secondary production threshold of 700 $\mu$m, the $dE/dx$ distribution of only the primary particle follows closely the Landau-Vavilov distribution, however with less smearing in $dE/dx$ compared to when delta rays are included in the energy loss.
 This can be seen comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_only_700} for proton, and comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_only_700} for muon. 
-The majority of the energy deposition is carried away by the primary particle, and LArG4 already accounts for fluctuations when sampling the mean energy loss of the primary particle.
+At this configuration, the majority of the energy deposition is carried away by the primary particle, and LArG4 already accounts for delta ray fluctuations when sampling the mean energy loss of the primary particle \cite{geant4}.
 Introducing delta rays only adds some additional smearing to the $dE/dx$ distribution.
 %As stated previously, the secondary production threshold changes how much the energy loss is shared between the primary particle and the associated delta rays.
 %This is evident when considering only the energy deposition of from the primary particle. 
@@ -497,7 +496,7 @@ Finally, the magnitude of the quenching and smearing effects vary between proton
 The step limit study here aims to investigate the impacts of simulating a phenomenological model at a microphysics scale.
 The length $dx$, corresponding to the maximum distance the primary particle can travel per step, was studied at two configurable values: 0.3 mm and 3 mm.     
 The former is the standard value employed in the simulation workflow of SBND as well as ArgoNeuT, which is one order of magnitude smaller than the wire pitch. 
-The latter is the value of the wire pitch, which is the distance resolution observed by both detectors.
+The latter is the value of the wire pitch, which is the spatial resolution of both detectors.
 
 \begin{figure}[bp!]
         \begin{subfigure}[b]{0.495\textwidth}   
@@ -524,8 +523,8 @@ On the other hand, at the secondary production threshold of 1 $\mu$m, the effect
 The step limit increase affects the primary particle more than the delta rays.
 This is due to the track length of the primary particle being significantly longer than that of delta rays, and therefore, more likely to propagate with a step length up to 3 mm.
 
-This result demonstrates that even though the recombination model was simulated at the observed wire pitch distance of 3 mm, the resulting simulation does not return the input ModBox recombination model.
-This is because the ArgoNeuT parameters were tuned using a simulation with the step length $dx$ configured at 0.3 mm.
+This result demonstrates that even though the recombination model was simulated at the observed wire pitch of 3 mm, the resulting simulation does not return the input ModBox recombination model.
+The ArgoNeuT $\alpha$ and $\beta$ parameters were tuned using a simulation with the step length $dx$ configured at 0.3 mm.
 Therefore, the simulation workflow of SBND likely only shows a good agreement when using the same configuration as ArgoNeuT.
 This shows a strong inter-dependency between the detector simulation and experimental data, particularly when it comes to tuning a phenomenological parameter for a simulation workflow.
 
@@ -547,7 +546,8 @@ Fig. from \cite{icarus_recomb}.
 %ICARUS paper and why using 700 um
 The simulated study shows that fluctuations in delta rays can influence the recombination factor.
 A similar simulation-data comparison study of recombination was carried out by the ICARUS collaboration \cite{icarus_recomb}.
-The result is shown in Fig. \ref{fig:icarus_recomb}, showing a quenching effect of the recombination factor at both low and high values of secondary production thresholds.
+The result is shown in Fig. \ref{fig:icarus_recomb}, showing the recombination factor as a function of the delta ray production threshold. 
+The quenching effect of the recombination factor can be seen at both low and high values of secondary production thresholds.
 The experiment proposed a few different approaches toward recombination simulation.
 The first approach is to simulate \textit{as microscopic as possible}, by generating low energy delta rays with kinetic energy as low as 1 eV and a range of order tens of nm, which was done in this study.
 However, it was concluded this method would not work for the same reasons that have been verified in this study.
