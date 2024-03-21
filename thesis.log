@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  16 MAR 2024 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  20 MAR 2024 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -937,7 +937,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 ) (./thesis-info.tex)
 \@quotelevel=\count466
 \@quotereset=\count467
- (./thesis.aux)
+ (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
+(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -1023,6 +1024,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 122.
 LaTeX Info: Redefining \pageref on input line 122.
 LaTeX Info: Redefining \nameref on input line 122.
+ (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -1125,339 +1127,123 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ (./thesis.nls) [20
 
-No file thesis.nls.
-\openout2 = `Chapter7/chapter7.aux'.
 
-(./Chapter7/chapter7.tex
-Chapter 1.
-[1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `Chapter6' on page 2 undefined on input line 41.
-
-
-LaTeX Warning: Reference `sec:recomb' on page 2 undefined on input line 44.
-
-
-LaTeX Warning: Reference `fig:delta_ray_evd' on page 2 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:simDeltaRay' on page 2 undefined on input line 56.
-
-
-LaTeX Warning: Reference `sec:impactDeltaRayMag' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:impactDeltaRaySmear' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:impactStepLimit' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:concludeDeltaRay' on page 2 undefined on input line 58.
-
-[2]
-<Chapter7/Figs/delta_ray_evd.png, id=30, 1205.50375pt x 384.43625pt>
-File: Chapter7/Figs/delta_ray_evd.png Graphic file (type png)
-<use Chapter7/Figs/delta_ray_evd.png>
-Package pdftex.def Info: Chapter7/Figs/delta_ray_evd.png  used on input line 62.
-(pdftex.def)             Requested size: 380.914pt x 121.47348pt.
-
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 73.
-
-[3 <./Chapter7/Figs/delta_ray_evd.png>]
-
-LaTeX Warning: Reference `eq:recomb_modbox' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Reference `eq:R_factor' on page 4 undefined on input line 103.
-
-
-LaTeX Warning: Reference `eq:QL' on page 4 undefined on input line 103.
-
-
-LaTeX Warning: Reference `eq:recomb_modbox' on page 4 undefined on input line 106.
-
-
-LaTeX Warning: Reference `eq:recomb_modbox' on page 4 undefined on input line 117.
-
-[4]
-
-LaTeX Warning: Reference `fig:proton_2d' on page 5 undefined on input line 126.
-
-<Chapter7/Figs/proton_700um.png, id=50, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_700um.png Graphic file (type png)
-<use Chapter7/Figs/proton_700um.png>
-Package pdftex.def Info: Chapter7/Figs/proton_700um.png  used on input line 136.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 137.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 137.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 137.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 137.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 137.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 137.
-<Chapter7/Figs/proton_1um.png, id=51, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_1um.png Graphic file (type png)
-<use Chapter7/Figs/proton_1um.png>
-Package pdftex.def Info: Chapter7/Figs/proton_1um.png  used on input line 143.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-[5 <./Chapter7/Figs/proton_700um.png> <./Chapter7/Figs/proton_1um.png>]
-
-LaTeX Warning: Reference `fig:proton_range_delta' on page 6 undefined on input line 158.
-
-
-LaTeX Warning: Reference `fig:proton_range_delta_magnitude' on page 6 undefined on input line 159.
-
-
-LaTeX Warning: Reference `fig:proton_range_delta_diff' on page 6 undefined on input line 160.
-
-<Chapter7/Figs/proton_profile.png, id=58, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_profile.png Graphic file (type png)
-<use Chapter7/Figs/proton_profile.png>
-Package pdftex.def Info: Chapter7/Figs/proton_profile.png  used on input line 164.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/proton_profile_diff.png, id=59, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_profile_diff.png Graphic file (type png)
-<use Chapter7/Figs/proton_profile_diff.png>
-Package pdftex.def Info: Chapter7/Figs/proton_profile_diff.png  used on input line 171.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-[6 <./Chapter7/Figs/proton_profile.png> <./Chapter7/Figs/proton_profile_diff.png>]
-
-LaTeX Warning: Reference `fig:muon_2d' on page 7 undefined on input line 185.
-
-
-LaTeX Warning: Reference `fig:mu_2d_700' on page 7 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:mu_2d_1' on page 7 undefined on input line 186.
-
-<Chapter7/Figs/mu_700um.png, id=65, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_700um.png Graphic file (type png)
-<use Chapter7/Figs/mu_700um.png>
-Package pdftex.def Info: Chapter7/Figs/mu_700um.png  used on input line 195.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/mu_1um.png, id=66, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_1um.png Graphic file (type png)
-<use Chapter7/Figs/mu_1um.png>
-Package pdftex.def Info: Chapter7/Figs/mu_1um.png  used on input line 202.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/mu_700um_lowRR.png, id=67, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_700um_lowRR.png Graphic file (type png)
-<use Chapter7/Figs/mu_700um_lowRR.png>
-Package pdftex.def Info: Chapter7/Figs/mu_700um_lowRR.png  used on input line 209.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/mu_1um_lowRR.png, id=68, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_1um_lowRR.png Graphic file (type png)
-<use Chapter7/Figs/mu_1um_lowRR.png>
-Package pdftex.def Info: Chapter7/Figs/mu_1um_lowRR.png  used on input line 216.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-
-LaTeX Warning: Reference `fig:mu_2d_700_lowRR' on page 7 undefined on input line 226.
-
-
-LaTeX Warning: Reference `fig:mu_2d_1_lowRR' on page 7 undefined on input line 226.
-
-
-LaTeX Warning: Reference `fig:mu_range_delta' on page 7 undefined on input line 229.
-
-<Chapter7/Figs/mu_profile.png, id=69, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_profile.png Graphic file (type png)
-<use Chapter7/Figs/mu_profile.png>
-Package pdftex.def Info: Chapter7/Figs/mu_profile.png  used on input line 236.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/mu_profile_diff.png, id=70, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/mu_profile_diff.png Graphic file (type png)
-<use Chapter7/Figs/mu_profile_diff.png>
-Package pdftex.def Info: Chapter7/Figs/mu_profile_diff.png  used on input line 243.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-[7 <./Chapter7/Figs/mu_700um.png> <./Chapter7/Figs/mu_1um.png> <./Chapter7/Figs/mu_700um_lowRR.png> <./Chapter7/Figs/mu_1um_lowRR.png>]
-
-LaTeX Warning: Reference `fig:proton_derr' on page 8 undefined on input line 256.
-
-
-LaTeX Warning: Reference `fig:derr_proton_delta_700' on page 8 undefined on input line 257.
-
-
-LaTeX Warning: Reference `fig:derr_proton_delta_1' on page 8 undefined on input line 257.
-
-
-LaTeX Warning: Reference `fig:derr_proton_only_700' on page 8 undefined on input line 258.
-
-
-LaTeX Warning: Reference `fig:derr_proton_only_1' on page 8 undefined on input line 258.
-
-
-LaTeX Warning: Reference `fig:mu_derr' on page 8 undefined on input line 259.
-
-
-LaTeX Warning: Reference `fig:derr_proton_delta_700' on page 8 undefined on input line 262.
-
-
-LaTeX Warning: Reference `fig:derr_proton_delta_1' on page 8 undefined on input line 262.
-
-
-LaTeX Warning: Reference `fig:derr_mu_delta_700' on page 8 undefined on input line 262.
-
-
-LaTeX Warning: Reference `fig:derr_mu_delta_1' on page 8 undefined on input line 262.
-
-[8 <./Chapter7/Figs/mu_profile.png> <./Chapter7/Figs/mu_profile_diff.png>]
-<Chapter7/Figs/derr_proton_delta_700um.png, id=83, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_proton_delta_700um.png Graphic file (type png)
-<use Chapter7/Figs/derr_proton_delta_700um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_proton_delta_700um.png  used on input line 269.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_proton_delta_1um.png, id=84, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_proton_delta_1um.png Graphic file (type png)
-<use Chapter7/Figs/derr_proton_delta_1um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_proton_delta_1um.png  used on input line 276.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_proton_only_700um.png, id=85, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_proton_only_700um.png Graphic file (type png)
-<use Chapter7/Figs/derr_proton_only_700um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_proton_only_700um.png  used on input line 282.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_proton_only_1um.png, id=86, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_proton_only_1um.png Graphic file (type png)
-<use Chapter7/Figs/derr_proton_only_1um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_proton_only_1um.png  used on input line 289.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-
-
-LaTeX Warning: Reference `fig:derr_proton_delta_700' on page 9 undefined on input line 304.
-
-
-LaTeX Warning: Reference `fig:derr_proton_only_700' on page 9 undefined on input line 304.
-
-
-LaTeX Warning: Reference `fig:derr_mu_delta_700' on page 9 undefined on input line 304.
-
-
-LaTeX Warning: Reference `fig:derr_mu_only_700' on page 9 undefined on input line 304.
-
-
-LaTeX Warning: Reference `fig:derr_proton_only_1' on page 9 undefined on input line 305.
-
-
-LaTeX Warning: Reference `fig:derr_mu_only_1' on page 9 undefined on input line 305.
-
-[9 <./Chapter7/Figs/derr_proton_delta_700um.png> <./Chapter7/Figs/derr_proton_delta_1um.png> <./Chapter7/Figs/derr_proton_only_700um.png> <./Chapter7/Figs/derr_proton_only_1um.png>]
-<Chapter7/Figs/derr_mu_delta_700um.png, id=92, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_mu_delta_700um.png Graphic file (type png)
-<use Chapter7/Figs/derr_mu_delta_700um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_mu_delta_700um.png  used on input line 310.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_mu_delta_1um.png, id=93, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_mu_delta_1um.png Graphic file (type png)
-<use Chapter7/Figs/derr_mu_delta_1um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_mu_delta_1um.png  used on input line 317.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_mu_only_700um.png, id=94, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_mu_only_700um.png Graphic file (type png)
-<use Chapter7/Figs/derr_mu_only_700um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_mu_only_700um.png  used on input line 323.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/derr_mu_only_1um.png, id=95, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/derr_mu_only_1um.png Graphic file (type png)
-<use Chapter7/Figs/derr_mu_only_1um.png>
-Package pdftex.def Info: Chapter7/Figs/derr_mu_only_1um.png  used on input line 330.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
- [10 <./Chapter7/Figs/derr_mu_delta_700um.png> <./Chapter7/Figs/derr_mu_delta_1um.png> <./Chapter7/Figs/derr_mu_only_700um.png> <./Chapter7/Figs/derr_mu_only_1um.png>] [11]
-
-LaTeX Warning: Reference `fig:proton_steplim' on page 12 undefined on input line 370.
-
-<Chapter7/Figs/proton_profile_steplim.png, id=106, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_profile_steplim.png Graphic file (type png)
-<use Chapter7/Figs/proton_profile_steplim.png>
-Package pdftex.def Info: Chapter7/Figs/proton_profile_steplim.png  used on input line 379.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-<Chapter7/Figs/proton_profile_diff_steplim.png, id=107, 700.6175pt x 477.785pt>
-File: Chapter7/Figs/proton_profile_diff_steplim.png Graphic file (type png)
-<use Chapter7/Figs/proton_profile_diff_steplim.png>
-Package pdftex.def Info: Chapter7/Figs/proton_profile_diff_steplim.png  used on input line 386.
-(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
-[12 <./Chapter7/Figs/proton_profile_steplim.png> <./Chapter7/Figs/proton_profile_diff_steplim.png>]
-
-LaTeX Warning: Reference `fig:icarus_recomb' on page 13 undefined on input line 406.
-
-<Chapter7/Figs/icarus_recomb.png, id=114, 814.04124pt x 782.925pt>
-File: Chapter7/Figs/icarus_recomb.png Graphic file (type png)
-<use Chapter7/Figs/icarus_recomb.png>
-Package pdftex.def Info: Chapter7/Figs/icarus_recomb.png  used on input line 416.
-(pdftex.def)             Requested size: 224.06544pt x 215.50215pt.
-) [13 <./Chapter7/Figs/icarus_recomb.png>] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
- [15
 
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
- (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+\openout2 = `Chapter7/chapter7.aux'.
+
+ (./Chapter7/chapter7.tex [88
 
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E139DCCE72555FC40ED977797E4C0303;3699.
-
-LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-\openout1 = `thesis.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 27039 strings out of 483065
- 477466 string characters out of 5963550
- 1171285 words of memory out of 5000000
- 41331 multiletter control sequences out of 15000+600000
- 639804 words of font info for 278 fonts, out of 8000000 for 9000
- 81 hyphenation exceptions out of 8191
- 60i,12n,109p,989b,1646s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (15 pages, 518469 bytes).
-PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 35439 words of extra memory for PDF output out of 35830 (max. 10000000)
-
+]
+Chapter 7.
+[89{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [90]
+<Chapter7/Figs/cosmic_stitch.png, id=113, 603.25375pt x 585.18625pt>
+File: Chapter7/Figs/cosmic_stitch.png Graphic file (type png)
+<use Chapter7/Figs/cosmic_stitch.png>
+Package pdftex.def Info: Chapter7/Figs/cosmic_stitch.png  used on input line 82.
+(pdftex.def)             Requested size: 224.06544pt x 217.35486pt.
+<Chapter7/Figs/dqdxMPV.png, id=122, 520.94624pt x 317.185pt>
+File: Chapter7/Figs/dqdxMPV.png Graphic file (type png)
+<use Chapter7/Figs/dqdxMPV.png>
+Package pdftex.def Info: Chapter7/Figs/dqdxMPV.png  used on input line 101.
+(pdftex.def)             Requested size: 246.47336pt x 150.06912pt.
+<Chapter7/Figs/etime_tpc0.png, id=123, 1170.3725pt x 815.045pt>
+File: Chapter7/Figs/etime_tpc0.png Graphic file (type png)
+<use Chapter7/Figs/etime_tpc0.png>
+Package pdftex.def Info: Chapter7/Figs/etime_tpc0.png  used on input line 111.
+(pdftex.def)             Requested size: 221.8226pt x 154.47462pt.
+<Chapter7/Figs/etime_tpc1.png, id=124, 1178.4025pt x 822.07124pt>
+File: Chapter7/Figs/etime_tpc1.png Graphic file (type png)
+<use Chapter7/Figs/etime_tpc1.png>
+Package pdftex.def Info: Chapter7/Figs/etime_tpc1.png  used on input line 118.
+(pdftex.def)             Requested size: 221.8226pt x 154.74008pt.
+ [91 <./Chapter7/Figs/cosmic_stitch.png>] [92 <./Chapter7/Figs/dqdxMPV.png> <./Chapter7/Figs/etime_tpc0.png> <./Chapter7/Figs/etime_tpc1.png>]
+<Chapter7/Figs/etime_biases_compare.png, id=141, 722.7pt x 578.16pt>
+File: Chapter7/Figs/etime_biases_compare.png Graphic file (type png)
+<use Chapter7/Figs/etime_biases_compare.png>
+Package pdftex.def Info: Chapter7/Figs/etime_biases_compare.png  used on input line 138.
+(pdftex.def)             Requested size: 336.09818pt x 268.8769pt.
+ [93 <./Chapter7/Figs/etime_biases_compare.png>] [94]
+<Chapter7/Figs/delta_ray_evd.png, id=173, 1205.50375pt x 384.43625pt>
+File: Chapter7/Figs/delta_ray_evd.png Graphic file (type png)
+<use Chapter7/Figs/delta_ray_evd.png>
+Package pdftex.def Info: Chapter7/Figs/delta_ray_evd.png  used on input line 195.
+(pdftex.def)             Requested size: 380.914pt x 121.47348pt.
+ [95 <./Chapter7/Figs/delta_ray_evd.png>] [96] [97]
+<Chapter7/Figs/proton_700um.png, id=217, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/proton_700um.png Graphic file (type png)
+<use Chapter7/Figs/proton_700um.png>
+Package pdftex.def Info: Chapter7/Figs/proton_700um.png  used on input line 276.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 277.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 277.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 277.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 277.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 277.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 277.
+<Chapter7/Figs/proton_1um.png, id=218, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/proton_1um.png Graphic file (type png)
+<use Chapter7/Figs/proton_1um.png>
+Package pdftex.def Info: Chapter7/Figs/proton_1um.png  used on input line 283.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/proton_profile.png, id=223, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/proton_profile.png Graphic file (type png)
+<use Chapter7/Figs/proton_profile.png>
+Package pdftex.def Info: Chapter7/Figs/proton_profile.png  used on input line 310.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/proton_profile_diff.png, id=224, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/proton_profile_diff.png Graphic file (type png)
+<use Chapter7/Figs/proton_profile_diff.png>
+Package pdftex.def Info: Chapter7/Figs/proton_profile_diff.png  used on input line 317.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+ [98 <./Chapter7/Figs/proton_700um.png> <./Chapter7/Figs/proton_1um.png>] [99 <./Chapter7/Figs/proton_profile.png> <./Chapter7/Figs/proton_profile_diff.png>]
+<Chapter7/Figs/mu_700um.png, id=245, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_700um.png Graphic file (type png)
+<use Chapter7/Figs/mu_700um.png>
+Package pdftex.def Info: Chapter7/Figs/mu_700um.png  used on input line 343.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/mu_1um.png, id=246, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_1um.png Graphic file (type png)
+<use Chapter7/Figs/mu_1um.png>
+Package pdftex.def Info: Chapter7/Figs/mu_1um.png  used on input line 350.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/mu_700um_lowRR.png, id=247, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_700um_lowRR.png Graphic file (type png)
+<use Chapter7/Figs/mu_700um_lowRR.png>
+Package pdftex.def Info: Chapter7/Figs/mu_700um_lowRR.png  used on input line 357.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/mu_1um_lowRR.png, id=248, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_1um_lowRR.png Graphic file (type png)
+<use Chapter7/Figs/mu_1um_lowRR.png>
+Package pdftex.def Info: Chapter7/Figs/mu_1um_lowRR.png  used on input line 364.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/mu_profile.png, id=249, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_profile.png Graphic file (type png)
+<use Chapter7/Figs/mu_profile.png>
+Package pdftex.def Info: Chapter7/Figs/mu_profile.png  used on input line 377.
+(pdftex.def)             Requested size: 221.8226pt x 151.26855pt.
+<Chapter7/Figs/mu_profile_diff.png, id=250, 700.6175pt x 477.785pt>
+File: Chapter7/Figs/mu_profile_diff.png Graphic file (type png)
+<use Chapter7/Figs/mu_profile_diff.png>
+Package pdftex.def Info: Chapter7/Figs/mu_profile_diff.png  used on input line 384.
+(pdfte
