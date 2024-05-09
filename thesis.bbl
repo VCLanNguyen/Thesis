@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{DavidePhD}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=c0d52af51563b118b00145e14752741d}{%
+           family={Porzio},
+           familyi={P\bibinitperiod},
+           given={Salvatore\bibnamedelima Davide},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {The University of Manchester}%
+      }
+      \strng{namehash}{c0d52af51563b118b00145e14752741d}
+      \strng{fullhash}{c0d52af51563b118b00145e14752741d}
+      \strng{bibnamehash}{c0d52af51563b118b00145e14752741d}
+      \strng{authorbibnamehash}{c0d52af51563b118b00145e14752741d}
+      \strng{authornamehash}{c0d52af51563b118b00145e14752741d}
+      \strng{authorfullhash}{c0d52af51563b118b00145e14752741d}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Searches for Heavy Neutral Lepton Decays in the MicroBooNE Detector}}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.2172/1576526
+      \endverb
+    \endentry
     \entry{genie}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -35,8 +63,8 @@
       \strng{authorbibnamehash}{99a9e03bda6b405f4cbab04cf2556813}
       \strng{authornamehash}{99a9e03bda6b405f4cbab04cf2556813}
       \strng{authorfullhash}{99a9e03bda6b405f4cbab04cf2556813}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{GENIE}
@@ -183,8 +211,8 @@
       \strng{authorbibnamehash}{89657b0aa095a02ff1f1b2c21bbd8be5}
       \strng{authornamehash}{89657b0aa095a02ff1f1b2c21bbd8be5}
       \strng{authorfullhash}{69fb4c24e66ccbf6016d4b6fb6827cbb}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{GENIE Collaboration}

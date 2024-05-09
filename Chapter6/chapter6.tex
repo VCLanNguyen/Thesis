@@ -78,22 +78,149 @@ Overview of the workflow of the MeVPrtl generator.
 \end{figure}
 
 %Each stage validation
-For the purpose of generating HNLs coming from the BNB, the generator begins with sampling the long-lived $K^{+}$ fluxes of the BNB, which is previously shown in Fig. \ref{fig:BNB_Meson_Flux}.
-Instead of decaying into a SM neutrino, the kaons decay into a HNL, with branching ratio defined by Eq. \ref{eq:kaon_decay_hnl}.
-The resulting HNL is then propagated to detector by ray forcing.
-This method forces the HNL to hit the SBND detector by picking a direction that impinges the particle at the detector front face, and then calculates the probability of this direction. 
-Then, the HNL decays back into the SM observables.
+For the purpose of generating HNLs coming from the BNB, the generator begins with sampling the charged kaons $K^{+}$ fluxes of the BNB.
+Instead of decaying into a SM neutrino, the kaons decay either in-flight or at rest into a HNL, with branching ratio defined by Eq. \ref{eq:kaon_decay_hnl}.
+The daughter HNL and lepton are simulated from a two-body decay at rest in the centre of mass frame of the kaon, and then boosted to the parent's lab frame by Lorentz boost.
+Due to the HNL having mass, the HNL has less transverse momentum than SM neutrinos and therefore more collimated, travelling preferably to the parent kaon direction \cite{DavidePhD}.  
+The HNL is then propagated to detector by the ray tracing method, which forces the HNL to hit the SBND detector by picking a direction that impinges the particle at the detector front face.
+The probability for enforcing the detector intersection is also computed.
+Example angular distribution in lab frame of the parent kaons and the HNLs that arrive at the SBND detector is shown in Fig. \ref{fig:kaon_hnl_angle2beam}.
+For plotting completeness, the selected parent kaons have energies peaking approximately $0.5\sim1$ GeV, and evenly distributed in the angle with respect to the beam direction, as shown in Fig. \ref{fig:kaon_angle2beam}.
+The resulting HNLs of mass 240 MeV and their angles to the beam direction is shown in Fig. \ref{fig:hnl_angle2beam}.
+The first observation is that HNL from low energy kaons can potentially be emitted backwards.
+However, the Lorentz boost can flip the direction of HNL towards the detector.  
+The second observation is that through ray tracing method, the acceptance angle of the HNLs to hit the detector is very small ($\theta < 5^\circ$), such that only very forward-going HNLs are most likely to intersect detector.
+
+\begin{figure}[tbp!]
+        \centering
+        \begin{subfigure}[b]{0.495\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{kaon_angle}
+            \caption{Kaons}%
+            \label{fig:kaon_angle2beam}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.495\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{hnl_angle}
+            \caption{HNLs}%
+            \label{fig:hnl_angle2beam}
+        \end{subfigure}
+        \caption[kaon_hnl_angle2beam]{Example distributions of angle to the beam direction, for the parent kaons and for the resulting HNLs that arrive at the detector.}
+        \label{fig:kaon_hnl_angle2beam}
+\end{figure}
+
+The resulting fluxes of HNL arriving at the SBND detector is depicted in Fig. \ref{fig:HNL_Energy_Spectrum} for the mass range between 140 and 240 MeV.
+The fluxes are normalised to the same mixing angle $|U_{\mu4}|^{2} = 1 \times 10^{-7}$ and 3 years of data taking, equivalent to $1 \times 10^{21}$ POT.
+At the same mixing angle, the expected HNL rate decreases with lower mass since the branching  ratio of $N \rightarrow \nu\pi^0$ decreases with lower mass, as previously shown in Fig. \ref{fig:branchingRatio}.
+Since the $K^{+}$ flux peaks around 0.5 GeV and decreases at higher energy, as previously shown in Fig. \ref{fig:BNB_Meson_Flux}, the HNL fluxes also mainly concentrate in the low energy region, and substantially decrease at higher energy. 
+Moreover, across the HNL mass range, there are more energetic HNLs at a lower mass than at a higher mass.
+This is due to HNLs coming from a kaon decay and therefore, the lighter the HNL mass, the more kinetic energy is available.
+Finally, all the HNL fluxes have a sharp peak near zero, corresponding the HNLs resulting from kaons decay at rest.
+
+Once arrive at the detector, the HNL decays back into the SM observables.
 For example of the $\nu\pi^{0}$ final state, the decay width is defined by Eq. \ref{eq:pi0}.
-The kinematics of the decay products is simulated for a Majorana HNL isotropically decays in the rest frame, and is subsequently boosted to the lab frame. 
-The decay products are then propagated through the detector by Geant4, which will be described in the upcoming section.
+\begin{figure}[tbp!] 
+\centering    
+\includegraphics[width=0.65\textwidth]{HNL_Energy_Spectrum}
+\caption[HNL_Energy_Spectrum]{
+Simulated HNL fluxes for mass ranging from 140 to 240 MeV, normalised to the mixing angle $|U_{\mu4}|^{2} = 1 \times 10^{-7}$ and $1 \times 10^{21}$ POT.
+}
+\label{fig:HNL_Energy_Spectrum}
+
+%\end{figure}
+%\begin{figure}[bp!]
+
+        \centering
+        \begin{subfigure}[b]{0.495\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{pi0_energy}
+            \caption{Energy Distribution}%
+            %\label{fig:kaon_angle2beam}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.495\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{pi0_angle2Beam}
+            \caption{Angle to the Beam Direction Distribution}%
+            %\label{fig:hnl_angle2beam}
+        \end{subfigure}
+        \caption[pi0_distribution]{Kinematic distributions for neutral pions resulting from HNLs decaying inside the SBND detector.}
+        \label{fig:pi0_distribution}
+\end{figure}
+The kinematics of the decay products is simulated for a HNL isotropically decays in its rest frame, and the boosted to its lab frame by Lorentz boost.
+Since the parent HNL is very forward-going, the daughter $\pi^0$ is also forward-going, with momenta dependency on the mass of the parent HNL. 
+Fig \ref{fig:pi0_distribution} shows the energy and angle to the beam distributions for the daughter $\pi^0$.
+The plots are area-normalised for comparison across the mass range of the parent HNL from 140 to 240 MeV. 
+The energy distribution of the $\pi^0$ decreases as the HNL mass increases since heavier HNLs are less energetic and therefore, less energy available for the $\pi^0$.
+As a result, the angle to the beam of $\pi^0$ also widens with heavier HNL.
+Even so, at the HNL mass of 240 MeV, the $\pi^0$ is still collimated with angular distribution dominate in the region $< 30^\circ$. 
+Therefore, the di-photon showers from the HNL-originated $\pi^0$ are expected to be more forward-going with respect to the those originate from SM neutrinos.
+Finally, the peak in the angular distribution come from low energy HNL resulting from kaons decay at rest.
 
 %Timing
-The key motivation of the HNL search is the timing delay between a HNL compared to a SM neutrino.  
-The key implementation of this generator is the consistency of simulating the time of flight between the MeVPrtl generator for HNLs and the GENIE generator for SM neutrinos.
+One key motivation of the HNL search is the timing delay between a HNL compared to a SM neutrino, due to a HNL being massive compared to a SM neutrino.
+The total time of flight for a HNL or a SM neutrino from the BNB to the SBND detector is illustrated in Fig. \ref{fig:tof_beam_to_detector}.
+The first component is the spill time of the protons from the Booster synchrotron, $t_{spill}$, which is the same for both a HNL and a SM neutrino.
+The structure of $t_{spill}$ is the beam bucket structure made up of 81 Gaussian buckets with a width of 1.308 ns and a spacing of 19 ns, which was previously detailed in Sec. \ref{sec4BNB}.   
 
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{tof_beam_to_detector}
+\caption[tof_beam_to_detector]{
+Diagram of the time of flight for a SM neutrino or a HNL, starting from the Booster synchrotron until the interaction time inside the SBND detector.
+}
+\label{fig:tof_beam_to_detector}
+\end{figure}
 
-%Some truth distribution: Energy spectrum/ Daughter kinematics distribution/ Timing distribution
+The second component is the time of the secondary mesons, $t_{meson}$, which is the time from when the mesons are produced until they decay into a HNL or a SM neutrino.
+This time accounts for the time the mesons travelling down the decay pipe, and might interact, re-scatter or decay into other mesons.
+In the case of the HNL, $t_{meson}$ is primarily the time of flight of the charged kaons $K^+$ before decaying into a HNL.
+On the other hands, the SM neutrinos comes from a variety of parent mesons $t_{meson}$, previously listed in Fig. \ref{fig:BNB_neutrino_flux}.
+In both cases, $t_{meson}$ introduces some smearing to the nanosecond-bucket structure of $t_{spill}$.
 
+The last component is the time of flight of the SM neutrino or the HNL from the creation point to the interaction point inside the SBND detector.
+In the case of the SM neutrinos, since neutrinos are nearly massless, their velocity can be approximated as a speed of light. 
+Then, the time of flight of the neutrino is  
+\begin{equation}
+	t_{\nu} = \frac{d_{\nu}}{c}
+\end{equation}
+where $d_{\nu}$ is the distance of a neutrino from creation to interaction inside the detector.
+Meanwhile, HNLs are massive and therefore, travel at a velocity $v_N < c$.
+The time of flight of the HNL is
+\begin{equation}
+	t_{N} = \frac{d_{N}}{v_N}
+\end{equation}
+where $d_N$ is the distance of a HNL from creation to decay inside the detector.
+Additionally, since the energy of the HNL decreases with its mass, the heavier it is, the slower its velocity.
+One relation arises is that the heavier the HNL, the less kinetic it is.
+Thus, heavier HNLs arrive even later compared to lighter HNLs.
+
+The advantage the MeVPrtl generator is the consistency of simulating the time of flight described above, for a HNL using the MeVPrtl generator and for a SM neutrino using the GENIE generator.
+Fig. \ref{fig:full_beam} shows the arrival time of the SM neutrinos and 240 MeV HNLs at the front face of the SBND detector, recovering the beam spill structure of the BNB.
+The plot is area-normalised to enable the comparison between the two particles. 
+Since the SM neutrinos travel nearly at the speed of light, less smearing is introduced and the timing distribution shows sharp Gaussian peaks.
+\begin{figure}[bp!] 
+\centering    
+\includegraphics[width=1.0\textwidth]{full_beam}
+\caption[full_beam]{
+Distribution of the arrival time at the front face of the SBND detector for SM neutrinos simulated by the GENIE generator and for HNLs simulated by the MeVPrtl. 
+}
+\label{fig:full_beam}
+\end{figure}
+On the other hands, the HNLs travel slower and therefore, add additional smearing and delay tails to the Gaussian peaks.
+For clarity, 81 Gaussian peaks are overlay into one by taking the modulus of 19 ns, as shown in Fig. \ref{fig:beam_modulus}.
+The timing distribution of the HNLs show a clear distinction to the SM neutrinos, where delay tails on either sides of the Gaussian peak can be seen.
+Across the mass range of HNL from 140 to 240 MeV, the delay tails however do not increase significantly with mass. 
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=0.65\textwidth]{beam_modulus}
+\caption[beam_modulus]{
+Modulus of the of arrival time distribution of SM neutrinos and HNLs with mass ranging from 140 to 240 MeV. 
+}
+\label{fig:beam_modulus}
+\end{figure}
 
 \subsection{Neutrino Generator: GENIE}
 \label{sec:gen_genie}
