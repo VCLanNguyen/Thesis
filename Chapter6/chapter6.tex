@@ -32,9 +32,9 @@ This framework enables sharing common simulation, reconstruction and analysis to
 An overview of the simulation workflow is depicted in Fig. \ref{fig:Sim_Workflow}.
 The process begins with a generator to produce primary particles that enter the detector, shown by the purple box.
 The primary particles can be neutrinos, cosmic muons or BSM particles depending on the type of generator.
-The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using Geant4 \cite{}, shown by the green boxes.
+The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using Geant4 \cite{geant4}, shown by the green boxes.
 For interactions inside the detector, the charge and light yield is calculated from the energy deposition.
-The number of ionisation electrons from charge yield are propagated through the detector to the wire planes using Wirecell \cite{}, shown by the red boxes.
+The number of ionisation electrons from charge yield are propagated through the detector to the wire planes using Wirecell \cite{wirecell}, shown by the red boxes.
 The number of scintillation photons from light yield are propagating to the photodetectors using a semi-analytical light library \cite{}, shown by the blue boxes.
 For interactions outside of the detector, only the energy depositions within the CRT strips is converted into light yield, shown by the orange box.
 The detector response is then simulated for each detector subsystem.
@@ -81,15 +81,14 @@ Overview of the workflow of the MeVPrtl generator.
 For the purpose of generating HNLs coming from the BNB, the generator begins with sampling the charged kaons $K^{+}$ fluxes of the BNB.
 Instead of decaying into a SM neutrino, the kaons decay either in-flight or at rest into a HNL, with branching ratio defined by Eq. \ref{eq:kaon_decay_hnl}.
 The daughter HNL and lepton are simulated from a two-body decay at rest in the centre of mass frame of the kaon, and then boosted to the parent's lab frame by Lorentz boost.
-Due to the HNL having mass, the HNL has less transverse momentum than SM neutrinos and therefore more collimated, travelling preferably to the parent kaon direction \cite{DavidePhD}.  
+Due to the HNL having mass, the HNL has less transverse momentum than SM neutrinos and therefore more collimated, travelling preferably to the parent kaon direction.
+The Lorentz boost can flip the directions of HNLs from low energy kaons that are originally emitted backwards \cite{DavidePhD}.
 The HNL is then propagated to detector by the ray tracing method, which forces the HNL to hit the SBND detector by picking a direction that impinges the particle at the detector front face.
 The probability for enforcing the detector intersection is also computed.
 Example angular distribution in lab frame of the parent kaons and the HNLs that arrive at the SBND detector is shown in Fig. \ref{fig:kaon_hnl_angle2beam}.
 For plotting completeness, the selected parent kaons have energies peaking approximately $0.5\sim1$ GeV, and evenly distributed in the angle with respect to the beam direction, as shown in Fig. \ref{fig:kaon_angle2beam}.
 The resulting HNLs of mass 240 MeV and their angles to the beam direction is shown in Fig. \ref{fig:hnl_angle2beam}.
-The first observation is that HNL from low energy kaons can potentially be emitted backwards.
-However, the Lorentz boost can flip the direction of HNL towards the detector.  
-The second observation is that through ray tracing method, the acceptance angle of the HNLs to hit the detector is very small ($\theta < 5^\circ$), such that only very forward-going HNLs are most likely to intersect detector.
+This demonstrates that the acceptance angle of the HNLs to hit the SBND detector is very small ($\theta < 5^\circ$), such that only very forward-going HNLs are most likely to intersect detector.
 
 \begin{figure}[tbp!]
         \centering
@@ -193,7 +192,6 @@ The time of flight of the HNL is
 \end{equation}
 where $d_N$ is the distance of a HNL from creation to decay inside the detector.
 Additionally, since the energy of the HNL decreases with its mass, the heavier it is, the slower its velocity.
-One relation arises is that the heavier the HNL, the less kinetic it is.
 Thus, heavier HNLs arrive even later compared to lighter HNLs.
 
 The advantage the MeVPrtl generator is the consistency of simulating the time of flight described above, for a HNL using the MeVPrtl generator and for a SM neutrino using the GENIE generator.
@@ -293,10 +291,36 @@ Moreover, it also provides an expected cosmic rate given a triggering condition,
 \subsection{Particle Propagation Simulation}
 \label{sec:gen_g4}
 
+Once a particle is simulated inside the detector, it is propagated through the detector using the Geant4 tool kit \cite{geant4}.
+Geant4 propagates the particle by each step $dx$, where the step length is randomised and capped at 0.3 mm (one order of magnitude less than the wire pitch).
+At each step, physics processes are applied to the particle, such as energy deposition, interaction, decay and so on.
+The step propagation also accounts for the electric field distortion due to space charge effects, given that the SBND detector is overground and has a high exposure to cosmic.
+
+The main physics process is energy deposition in the detector is ionisation by charged particles.
+Similarly to the theory detailed in Sec. \ref{sec3:creation}, the Geant4 tool kit simulates the ionisation process following the Bethe-Bloch formalism tuned to data \cite{geant4_ions}.
+The number of ionisation electrons and scintillation photons from the deposited energy are computed using the ModBox recombination model with ArgoNeuT parameters \cite{argoneut_recomb}, and the charge-light anti-correlation from Eq. \ref{eq:Q} and \ref{eq:L}. 
+Further discussion about the simulation of recombination, and the impacts of delta ray fluctuations on recombination will be detailed in Sec. \ref{sec7:delta}.
+The result from the Geant4 tool kit is a complete set of charge and light yield along the primary particle trajectories through the detector, and the hierarchy of the daughter particles produced from the primary.
+The propagation of the charge and light yield to the corresponding detection subsystem are then simulated, to be covered in the upcoming section.
+
 \subsection{Detector Response Simulation}
 \label{sec:gen_response}
 
 \subsubsection{Wire Response}
+
+The simulation of the ionisation electrons drifting to the wire planes are done by the WireCell tool kit \cite{wirecell}.
+The simulation transports the electrons, and introduces smearing due to detector effects for transporting electrons though liquid argon under an electric field, which is previously discussed in Sec. \ref{sec:edrift}.
+This includes charge attenuation due to impurities, smearing of the electron deposition in timing and spatial dimensions due to longitudinal diffusion, transverse diffusion and space charge effect combined.
+
+Once the electrons arrive at the wire plane, a convolution of the field response and the electronic response is performed.
+The field response describes the current induced on wires due to ionisation electrons drifting past the induction planes.
+Meanwhile the electronic response describes amplification and shaping by pre-amplifiers of wires.
+The response functions are in 2-dimensions, one dimension is in time and the other is in wire.
+This is to account for long range charge induction effects on wire signal shapes.
+A digitisation step is then applied to produce ADC-level, time-domain waveform for each wire channel.
+The waveform is parameterised by the ADC resolution, voltage range and baseline specification of the wire readouts. 
+Finally, inherent electronics noise is added to the waveform to better match to observed data.
+The output simulated waveforms at this stage ideally represent real data waveforms record by the wire readouts, therefore from this point onwards, Monte Carlo and data waveforms shoud.
 
 \subsubsection{PDS Response}
 
