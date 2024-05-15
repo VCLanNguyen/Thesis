@@ -2075,6 +2075,31 @@
       \verb https://dx.doi.org/10.1088/1748-0221/8/08/P08005
       \endverb
     \endentry
+    \entry{gaushitfinder}{software}{}
+      \name{author}{1}{}{%
+        {{hash=68a1ff4fbe67614c09999f2a619d456d}{%
+           family={LArSoft},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{68a1ff4fbe67614c09999f2a619d456d}
+      \strng{fullhash}{68a1ff4fbe67614c09999f2a619d456d}
+      \strng{bibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
+      \strng{authorbibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
+      \strng{authornamehash}{68a1ff4fbe67614c09999f2a619d456d}
+      \strng{authorfullhash}{68a1ff4fbe67614c09999f2a619d456d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Last accessed 3 April 2024}
+      \field{title}{GausHitFinder}
+      \verb{urlraw}
+      \verb https://github.com/LArSoft/larreco/blob/86b7154f11685e67d424b40fe1be97a41bb87473/larreco/HitFinder/GausHitFinder_module.cc
+      \endverb
+      \verb{url}
+      \verb https://github.com/LArSoft/larreco/blob/86b7154f11685e67d424b40fe1be97a41bb87473/larreco/HitFinder/GausHitFinder_module.cc
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

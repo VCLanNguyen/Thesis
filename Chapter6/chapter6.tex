@@ -34,7 +34,7 @@ The process begins with a generator to produce primary particles that enter the 
 The primary particles can be neutrinos, cosmic muons or BSM particles depending on the type of generator.
 The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using Geant4 \cite{geant4}, shown by the green boxes.
 For interactions inside the detector, the charge and light yield is calculated from the energy deposition.
-The number of ionisation electrons from charge yield are propagated through the detector to the wire planes using Wirecell \cite{wirecell}, shown by the red boxes.
+The number of ionisation electrons from charge yield are propagated through the detector to the wire planes using Wirecell tool kit \cite{wirecell}, shown by the red boxes.
 The number of scintillation photons from light yield are propagating to the photodetectors using a semi-analytical light library \cite{}, shown by the blue boxes.
 For interactions outside of the detector, only the energy depositions within the CRT strips is converted into light yield, shown by the orange box.
 The detector response is then simulated for each detector subsystem.
@@ -320,21 +320,101 @@ This is to account for long range charge induction effects on wire signal shapes
 A digitisation step is then applied to produce ADC-level, time-domain waveform for each wire channel.
 The waveform is parameterised by the ADC resolution, voltage range and baseline specification of the wire readouts. 
 Finally, inherent electronics noise is added to the waveform to better match to observed data.
-The output simulated waveforms at this stage ideally represent real data waveforms record by the wire readouts, therefore from this point onwards, Monte Carlo and data waveforms shoud.
+The output simulated waveforms at this stage ideally represent real data waveforms record by the wire readouts, therefore from this point onwards, Monte Carlo and data waveforms should.
 
 \subsubsection{PDS Response}
 
-\subsubsection{Cosmic Ray Tagger Simulation}
-By the end of the detector simulation simulated events have been produced in the
-same format as raw data coming from the real detector, from this point onwards,
-Monte Carlo and data can, and should, be treated in the same way.
+The simulation of the scintillation photons to the optical detectors, including the transport effects previously detailed in Sec. \ref{sec:photonprop}, are simulated using a combination of semi-analytical model described in Ref. \cite{}, and optical library model available in LArSoft \cite{}.
+The choice of which model to use depends on the location of the photon production.
+The semi-analytical model is used for those produced inside the active volume of the SBND detector, whilst the optical library model is used to those originate outside of this volume.
+
+The semi-analytical model calculates on-the-flight the geometrical aperture for each optical detector to a scintillation point, given that emission of scintillation photons is isotropic.
+The model also extends to not only the direct light component (visible photons), but also the reflected component (VUV photons). 
+Corrections for photon transport effects, including Rayleigh scattering and boundary effects, are then applied, to compute the number of photons detected by an optical detector.
+
+However, the semi-analytical method is limited by the geometrical information and do not include scintillation  points outside of the active volume, for example, cosmic tracks crossing behind an optical detector can produce non-negligible light constituting a trigger.
+Since the PMTs are the primary subsystems for triggering, it is vital to consider the second order contribution of light produced outside of the active volume for triggering efficiency studies.
+The optical library stores a information of the fraction of incident photons for each optical detector for a given scintillation location, which can be looked up for any detector-location pairs during regular simulation. 
+
+For each type of optical detectors, PMTs and X-ARAPUCAs , a respective photon detection efficiency is applied to the number of detected photons.
+Then, signal amplification and digitization are simulated, converting photon into an output signal known as single electron response.
+Signal shaping such as overshoot and undershoot due to the circuit of the detectors are also simulated.
+Finally, random fluctuation in the signal integral are applied to better mimic data.
+The final output is simulated optical waveforms for each type of optical detector, ideally the same as data. 
+
+\subsubsection{Cosmic Ray Tagger Response}
+
+The energy deposition outside of the cryostat from the Geant4 simulation stage is considered for simulating the CRT's response.
+For the deposits that cross the CRT strips, the energy into light yield within a strip.
+The collection efficiency per SiPM is accounted for by dividing the light yield between the fibres on either side of the strip, based on the lateral position of the energy deposition within the strip. 
+The time of the hit is estimated using the time of the energy deposition, accounting for signal attenuation and light propagation delay down the strip towards the SiPM.
+Finally, the electronic response is simulated for the CRT readout, by assessing if a pair of SiPMs within a strip goes above a threshold within a pre-defined coincidence window.
+The output is a single ADC value per SiPM, where 32 SiPMs per CRT readout are readout simultaneously. 
+
 %********************************** %First Section  **************************************
 
 \section{TPC Signal Reconstruction}
 
 \subsection{Signal Processing}
+%Signal Processing
+Signal processing is the first crucial step of TPC reconstruction, which is to deconvolve digitised raw waveforms and remove detector effects such as noise, electronics response and field response. 
+At SBND, signal processing is implemented using the WireCell tool kit \cite{wirecell}.
+The tool has been used by other various LArTPC experiments such as MicroBooNE and ProtoDUNE and has demonstrated the excellent performance to acquire deconvolved charge by performing deconvolution in time and wire dimension over the traditional deconvolution in time dimension only. 
+
+Fig. \ref{fig:signal_processing_steps} \cite{} demonstrates the step by step of the signal processing.
+In grey is the true charge deposition on a wire, and in red is the corresponding raw waveform containing signal convolved with noise, electronics response, field response and noise.
+The first step in the chain is noise filtering to remove the excess and correlated noise from raw waveforms.
+Then, the measured charge is deconvolved from the electronics and field response to recover the original charge deposited on the wire, as shown in orange.
+The deconvolution is 2D, where response functions consider the time response of a single wire as well as responses of neighbouring wires.
+This step is particularly important for the induction planes to convert bipolar into unipolar signals, such that the integral of the waveform can be used for charge estimation.
+Filter functions are applied subsequently to attenuate noise that are artificially amplified.
+This includes high frequency filters to remove high frequency noise, where a Gaussian or Weiner filters can be used depending on if the signal is unipolar or bipolar.
+Example shown here is a bipolar signal waveform, and therefore has both Gaussian and Weiner filters applied.
+Then, low frequency filters are utilised for region-of-interest finding and local baseline removal, shown in blue.
+Finally, the deconvolved waveform per wire after baseline removal is shown in purple.
+\begin{figure}[tbp!] 
+\centering    
+\includegraphics[width=0.5\textwidth]{signal_processing_steps}
+\caption[signal_processing_steps]{
+Example demonstrating the steps of signal processing applied to a bipolar raw waveform to acquire the final deconvolved waveform.
+Fig. from Ref. \cite{}.
+}
+\label{fig:signal_processing_steps}
+\end{figure}
+
+Fig. \ref{fig:signal_processing_waveform} depicts event displays of a simulated neutrino event as recorded by wires on the u plane.
+The left event display are made using the true charges on wire, the middle event display is made using raw waveforms and the right event display is made using deconvolved waveforms.
+Recently, the deconvolution and filters have been optimised particularly for the SBND detector conditions.
+The resulting event display shows clean signals, where two tracks and two showers can be observed, closely resemblance the true charges. 
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=0.85\textwidth]{signal_processing_waveform}
+\caption[signal_processing_waveform]{
+Event display of a simulated neutrino event using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
+Fig. from Ref. \cite{}.
+}
+\label{fig:signal_processing_waveform}
+\end{figure}
 
 \subsection{Hit Finding Processing}
+After signal processing, hit finding is performed on deconvolved waveforms to search for Gaussian-shaped pulses above a threshold.
+This is done by the \texttt{GausHitFinder} module \cite{gaushitfinder} by fitting a series of Gaussians to the waveform.
+Fig. \ref{fig:gaushit} 
+The number of pulses is determined by the number of maximas found when differentiating the waveform, where each pulse represents a hit.
+Once the hits are fitted, information describing the hit are extracted and used by downstream pattern recognition and reconstruction.
+The peak time represents the time at which the charge arrives at the wire, used for determining the drift position and matching hit coincidence across wire planes.
+The height and the width of the Gaussian are used to calculate the integral of the pulse, representing thee deposited charge on the wire, subsequently used for calorimetry.
+
+\begin{figure}[htbp!] 
+\centering    
+\includegraphics[width=0.55\textwidth]{gaushit}
+\caption[gaushit]{
+Event display of a simulated neutrino event using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
+Fig. from Ref. \cite{}.
+}
+\label{fig:gaushit}
+\end{figure}
 
 \subsection{Pandora Pattern Recognition}
 
