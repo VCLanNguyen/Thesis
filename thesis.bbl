@@ -2075,6 +2075,45 @@
       \verb https://dx.doi.org/10.1088/1748-0221/8/08/P08005
       \endverb
     \endentry
+    \entry{pandora}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a9b51f178c7db4e7ed8fd2a3455c530b}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=31a01405f79c7f39fc362f40a8047154}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a13a79a8cf293b09d5dda144e105403f}
+      \strng{fullhash}{a13a79a8cf293b09d5dda144e105403f}
+      \strng{bibnamehash}{f2ab33e138b72b4a79654e85ad9c43b4}
+      \strng{authorbibnamehash}{f2ab33e138b72b4a79654e85ad9c43b4}
+      \strng{authornamehash}{a13a79a8cf293b09d5dda144e105403f}
+      \strng{authorfullhash}{a13a79a8cf293b09d5dda144e105403f}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.data-an}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{number}{9}
+      \field{title}{{The Pandora Software Development Kit for Pattern Recognition}}
+      \field{volume}{75}
+      \field{year}{2015}
+      \field{pages}{439}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-015-3659-3
+      \endverb
+      \verb{eprint}
+      \verb 1506.05348
+      \endverb
+    \endentry
     \entry{gaushitfinder}{software}{}
       \name{author}{1}{}{%
         {{hash=68a1ff4fbe67614c09999f2a619d456d}{%
@@ -2098,6 +2137,37 @@
       \endverb
       \verb{url}
       \verb https://github.com/LArSoft/larreco/blob/86b7154f11685e67d424b40fe1be97a41bb87473/larreco/HitFinder/GausHitFinder_module.cc
+      \endverb
+    \endentry
+    \entry{EdPhD}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=60f77f1c5d1f17857a6d7aed77e17559}{%
+           family={Tyley},
+           familyi={T\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {The University of Sheffield}%
+      }
+      \strng{namehash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \strng{fullhash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \strng{bibnamehash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \strng{authorbibnamehash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \strng{authornamehash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \strng{authorfullhash}{60f77f1c5d1f17857a6d7aed77e17559}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Reconstructing and Selecting Electron Neutrino and Anti-Neutrino Interactions on Argon in the Short-Baseline Near Detector}}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://etheses.whiterose.ac.uk/32440/
+      \endverb
+      \verb{url}
+      \verb https://etheses.whiterose.ac.uk/32440/
       \endverb
     \endentry
   \enddatalist

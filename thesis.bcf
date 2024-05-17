@@ -2199,7 +2199,14 @@
     <bcf:citekey order="16">argoneut_recomb</bcf:citekey>
     <bcf:citekey order="17">wirecell</bcf:citekey>
     <bcf:citekey order="20">wirecell</bcf:citekey>
-    <bcf:citekey order="26">gaushitfinder</bcf:citekey>
+    <bcf:citekey order="21">pandora</bcf:citekey>
+    <bcf:citekey order="22">wirecell</bcf:citekey>
+    <bcf:citekey order="28">gaushitfinder</bcf:citekey>
+    <bcf:citekey order="29">EdPhD</bcf:citekey>
+    <bcf:citekey order="30">EdPhD</bcf:citekey>
+    <bcf:citekey order="31">EdPhD</bcf:citekey>
+    <bcf:citekey order="32">pandora</bcf:citekey>
+    <bcf:citekey order="34">EdPhD</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
