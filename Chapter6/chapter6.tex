@@ -339,7 +339,7 @@ The optical library stores a information of the fraction of incident photons for
 For each type of optical detectors, PMTs and X-ARAPUCAs , a respective photon detection efficiency is applied to the number of detected photons.
 Then, signal amplification and digitization are simulated, converting photon into an output signal known as single electron response.
 Signal shaping such as overshoot and undershoot due to the circuit of the detectors are also simulated.
-Finally, random fluctuation in the signal integral are applied to better mimic data.
+Finally, random fluctuation in the signal integral and non-linearity response at high light intensities are applied to better mimic data.
 The final output is simulated optical waveforms for each type of optical detector, ideally the same as data. 
 
 \subsubsection{Cosmic Ray Tagger Response}
@@ -353,13 +353,13 @@ The output is a single ADC value per SiPM, where 32 SiPMs per CRT readout are re
 
 %********************************** %First Section  **************************************
 
-\section{Reconstructing SBND: TPC}
+\section{Reconstructing SBND: TPC Subsystem}
 \label{sec:reco_tpc}
 %Describe the overall workflow
 The output raw data from each detection requires a dedicated reconstruction workflow, as illustrated in Fig. \ref{fig:Reco_Workflow}.
 The raw wire waveforms go through the process of signal processing performed by the Wirecell tool kit \cite{wirecell}, followed by a hit finding algorithm to identify hits on the waveform.
 The output hits are then used by the Pandora package \cite{pandora} to 3D reconstruct an interaction, denoted as a \textit{slice}.
-The raw PDS waveforms also require a similar process of waveform deconvolution, followed by hit finding and reconstruction, outputting reconstructed light-objects denoted as \textit{flashes}.
+The raw PDS waveforms also require a similar process of waveform deconvolution, followed by hit finding and reconstruction, outputting reconstructed light-objects denoted as \textit{flash}.
 The reconstruction for the CRTs is much simpler compared to other two subsystems, consisting of only a hit finding and a reconstruction step. 
 The following Sec. \ref{sec:reco_tpc} will provide the details of the TPC reconstruction workflow from start to end.
 Meanwhile, the reconstruction of the PDS and CRT subsystem will be summarised in the next Sec. \ref{sec:reco_others}.
@@ -414,7 +414,7 @@ The left event display are made using the true charges on wire, the middle event
 Recently, the deconvolution and filters have been optimised particularly for the SBND detector conditions.
 The resulting event display shows clean signals, where two tracks and two showers can be observed, closely resemblance the true charges. 
 
-\subsection{Hit Finding Processing}
+\subsection{TPC Hit Finding}
 After signal processing, hit finding is performed on deconvolved waveforms to search for Gaussian-shaped pulses above a threshold.
 This is done by the \texttt{GausHitFinder} module \cite{gaushitfinder} by fitting a series of Gaussians to the waveform.
 The number of pulses is determined by the number of maximas found when differentiating the waveform, where each pulse represents a hit.
@@ -455,7 +455,7 @@ A series of pattern matching algorithms grows the interaction out of a neutrino 
 The output 3D reconstructed object associated with a vertex ideally represent a \textit{particle} produced from an interaction.
 
 At this stage, a track score is assigned to a particle if it has a track-like or a shower-like topology, which is determined by a dedicated Boosted Decision Tree (BDT).
-The development work on the track and shower separation BDT and its importance not only in the reconstruction workflow but also in the analysis workflow will be covered in the upcoming section.
+The development work on the track and shower separation BDT and its importance not only in the reconstruction workflow but also in the analysis workflow will be covered in the next Sec. \ref{sec:trkshwbdt}.
 Both track and shower reconstruction tools are then performed on the particle under the assumption if it is track-like or shower-like respectively. 
 Finally, a hierarchy algorithm is performed to classify the hierarchy of particles in a slice, starting with a neutrino parent vertex, and other particles are children, grandchildren, etc. of the parent.
 
@@ -468,7 +468,7 @@ Once the SBND detector is operational, the calibration constants will be measure
 The charge calibration constant is expected to be computed from using a sample of anode to cathode crossing muon tracks while the shower calibration constant can be acquired from using standard candle of the neutral pion invariant mass \cite{}.
 
 \subsection{Track-Shower Separation Boosted Decision Tree}
-
+\label{sec:trkshwbdt}
 As previously discussed, reconstructed particles from Pandora are assigned with a track score determined by Boosted Decision Tree (BDT), which is a binary classification machine learning tools.
 The track score spans between 0 and 1 such that if a particle has a very high track score close to 1, then the particle is track-like.
 Otherwise, if the track score is very close to 0, then the particle is shower-like.
@@ -592,28 +592,81 @@ The track-shower separation score distribution will be used in downstream high l
         \label{fig:bdt_score}
 \end{figure}
 
-\section{Reconstructing SBND: Other Subsystems}
+\section{Reconstructing SBND: PDS and CRT Subsystems}
 \label{sec:reco_others}
 
 \subsection{PDS Reconstruction}
-%distinguish refelcted vs direct 
-%The timescale of the of the singlet state light travel to detection
-is coated on foils placed on the cathode
-, which reflect the incident photon back towards the PDS located behind the anode. 
-This also shifts the wavelength of the photon which 
 
-%See SBND paper
+The reconstructions for the photodetectors, PMTs and X-ARAPUCAs, share the same steps of waveform deconvolution, hit finding and light reconstruction.
+However, different algorithms and parameters settings are required for each photodetector type due to their difference in response.
+More details on the PDS reconstruction at the SBND detector can be found in Ref. \cite{}.
+The following focuses more on the reconstruction of PMTs which has an averaged Single Electron Response (SER) pulse peaking at $\sim 25$ ADC and a full width at half maximum of $\sim$ 10 ns.
+The fast response of PMT plays the key role in the nanosecond timing resolution requirement for the HNL search.
+
+Similarly to the signal processing in TPC reconstruction, the PMT waveform deconvolution also aims to remove noise and determine the waveform baseline.
+Fig. \ref{fig:pds_reco_deconvolution} \cite{} depicts an example PMT waveform before and after the deconvolution.
+The top figures shows the MC photons arrived at a given PMT in green.
+The middle figure shows the simulated raw PMT waveform in blue, convolved with PMT response and noise.
+The AC circuits of the PMTs lead to over/undershoots features across the waveform with respect to the baseline shown in red.
+The waveform deconvolution step consists of a 1D deconvolution and an application of Gaussian filter to remove high frequency noise.
+The resulting waveform is shown in orange in the bottom figure.
+The bipolarity of the signals are fully removed while the integral and temporal position of the peaks are well-maintained.
+
+\begin{figure}[tbp!]
+        \centering
+        \begin{subfigure}[b]{0.59\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{pds_reco_deconvolution}
+            \caption{Waveform Deconvolution}
+            \label{fig:pds_reco_deconvolution}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.4\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{pds_reco_hit_finding}
+            \caption{Hit Finding}
+            \label{fig:pds_reco_hit_finding}
+        \end{subfigure}
+        \caption[pds_reco]{
+	Both figures from Ref. \cite{}.
+	}
+        \label{fig:pds_reco}
+\end{figure}
+
+Then, the next step is to perform hit finding on the deconvolved PMT waveform as demonstrated in Fig. \ref{fig:pds_reco_hit_finding}.
+The hit finding begins with a baseline subtraction, which is calculated using a 400 ns portion at the start and end of the deconvolved waveform, resulting in the waveform shown in orange.
+Optical hits are identified by finding pulse goes above a threshold of $1/4$ the amplitude of the deconvolved SER and 3 standard deviations away from the baseline RMS.
+The example shows 4 identified optical hits, with peak times denoted with red triangles.
+The first optical hit contains multiple peaks merged into a single optical hit due to multiple photons arrive very closely to the PMT.
+The rise time of an optical hit is then estimated as the time at which the pulse goes above 15\% of the peak  amplitude, denoted with blue stars, results in a resolution of 1.6 ns  in estimating the arrival time of the first photon contributing to the optical hit.
+The integral of the optical hit are then computed to estimate the number of photoelectrons (PEs) of the hit.
+
+After the hit finding, the light reconstruction algorithm then clusters optical hits into an \textit{optical flash}.
+The length of an optical flash is set as 8 $\mu$s to account for the total light produced in an interaction, from both prompt and slow components of scintillation photons.
+The clustering algorithm is based on several conditions on the calorimetry of the hits, timing distribution between hits and geometrical location of the PMTs.
+The number of PEs in an optical flash is the sum of PEs of optical hits clustered in that flash, ideally represent the total light generated by an interaction. 
+
+The start time of the optical flash represents the start time of an interaction, $t_0$, which is the key variable of the HNL search, and therefore requires great care in reconstruction.
+The flash start time is the average of the rise time of optical hits in a flash for the PMTs that contribute 50\% of the prompt light in the 30 ns window of the largest PE pulse. 
+Then, a correction is applied for the propagation of the photons from the scintillation position in the TPC to the PMTs, i.e. in the drift or $x$-direction.
+This can done by exploiting the high density of PMTs as well as having PMTs sensitive to either or both direct and reflected light component.
+As previously shown in Fig. \ref{fig:light_yield_Diego} with some discussions in Sec. \ref{sec:wls}, the arrival time distribution for the direct VUV and reflected visible photons varies with the drift distance.
+For a given scintillation position, and therefore a drift position, the resulting amount of direct and visible photons can lead to a specific ratio of the two components seen by the PMTs.
+And therefore, the ratio of the number of photons seen by TPB-coated PMTs to those seen by the uncoated PMTs can be used to compute the correction for the propagation effect.
+The timing resolution of the flash time after propagation correction varies $\sim 2$ ns across the entire drfit distance, demonstrating the excellent capability of the PDS at SBND.
 
 \subsection{Cosmic Ray Tagger Reconstruction}
 
-The CRT reconstruction begins with a hit finding algorithm, which identifies which pair of SiPM per 32 channels of CRT readout goes above a threshold. 
-Then, the lateral position of the identified hit is reconstructed by \textit{balancing} the measured ADC values shared between the SiPM pair.
-A clustering algorithm then groups hits of the same wall within a 50 ns window, where two overlapping orthogonal hits yield a 3D space point.
-The photoelectron count of the space point is calculated and corrected for the longitudinal distance from the hit position to the SiPM.
-The time information of the space point is also reconstructed and accounted for the propagation delay and time walk effect.
-The final step is to match space points from multiple walls to form a CRT track.
+The reconstruction workflow for the CRT subsystem is the simplest compared to the TPC and the PDS procedure.
+As previously detailed, the output data of the CRT readouts are in group of 32 ADC values, for a single ADC per SiPM.
+The reconstruction begins with a hit finding algorithm to identify which pair of SiPM in the group of 32 goes above a threshold.
+The SiPM pair determines the lateral position of a cosmic muon hit within a CRT strip.
+Then, a clustering algorithm groups hits from orthogonal CRT strips of the same wall within a 50 ns window to yield 3D space points.
+For each CRT space point, the timing and calorimetry information is calculated and corrected for the propagation effect due to the longitudinal distance from the hit position to to the SiPM.
+The final step of the reconstruction is to match space points from multiple CRT walls to form a CRT track.
 Candidate tracks are evaluated from any combinations of space points from different taggers within a 100 ns coincidence window.
 The best track candidate is selected by the goodness of timing agreement and prioritising three-point tracks over two-point tracks. 
+The outputs of the CRT reconstruction are both CRT space points and CRT tracks. 
 
 %********************************** %First Section  **************************************
 \section{High Level Analysis Tools}
