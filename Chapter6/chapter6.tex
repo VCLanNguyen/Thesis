@@ -3,8 +3,8 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{Simulating and Reconstructing SBND}
-\label{Chapter6}
+\chapter{Simulating SBND}
+\label{ChapterSim}
 
 % **************************** Define Graphics Path **************************
 \ifpdf
@@ -15,30 +15,40 @@
 
 %********************************** %Opening  **************************************
 
-Chapter 6 Opening
+%Modern physics experiments and MC
+Many modern particle physics experiments heavily rely on simulations, of which many employs the Monte Carlo (MC) technique by random sampling from a predefined distributions.
+Simulation is particularly useful for an early stage experiment like SBND where the detector is not yet operational to record data.
+Simulation enables for study of the physics capabilities of the detector as well as to develop reconstruction and analysis tools in preparation for data.
+The search for HNLs at SBND presented here is an exploration of the detector physics capabilities in the BSM regime, given that the detector timing resolution is able to achieve nanosecond resolution.
+
+The following chapter provides a detailed description of the simulation workflow at SBND to output simulated product that ideally represents real data.
+The chapter begins with an overview of the workflow in Sec. \ref{sec:overview_sim}.
+Meanwhile, Sec. \ref{sec:gen_mevprtl} includes the details of the generator employed to generate a signal event of HNLs and Sec. \ref{sec:gen_sm} provides the summary of the generator used to generate background events from SM neutrinos and cosmic muons.
+Furthermore, details in Sec. \ref{sec:gen_response} follows the simulation of energy deposition as the particle propagates through the detector, and consequently the simulation of the detector response to the energy.
+Finally, some concluding remarks are provided in Sec. \ref{sec:sim_concluding_remarks}.
 
 \newpage
 
 %********************************** %First Section  **************************************
-\section{Simulating SBND}
+\section{Overview of Simulating SBND}
+\label{sec:overview_sim}
 
-%Modern physics experiments and MC
-Many modern physics experiments heavily relies on simulations to develop reconstruction and analysis tools, as well as to understand the physics capabilities of the detector.
-Monte Carlo (MC) simulations is the most general and widely used method that use random sampling from a predefined distributions. 
-At SBND, the workflow for simulation and reconstruction is provided by the LArSoft framework \cite{}, which has been employed by many other LArTPC experiments.
-This framework enables sharing common simulation, reconstruction and analysis tools across collaborations including ArgoNeuT, MicroBooNE, DUNE, SBND and ICARUS.
+Similar to many other LArTPCs, the software framework for simulation, reconstruction and analysis of SBND is provided by the LArSoft framework \cite{larsoft}.
+The framework was built for neutrino experiments sharing the same common feature of having LArTPCs, while still allowing for detector-specific customisation.
+This enables easy sharing software tools across many collaborations including ArgoNeuT, MicroBooNE, ICARUS, SBND and DUNE.
+For example, the generator used to simulate HNLs, to be discussed in the next section, has been developed and shared across the SBND and ICARUS collaboration.
 
 %Describe the overall workflow
-An overview of the simulation workflow is depicted in Fig. \ref{fig:Sim_Workflow}.
+The simulation workflow of SBND under the LArSoft framework is depicted in Fig. \ref{fig:Sim_Workflow}.
 The process begins with a generator to produce primary particles that enter the detector, shown by the purple box.
 The primary particles can be neutrinos, cosmic muons or BSM particles depending on the type of generator.
-The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using Geant4 \cite{geant4}, shown by the green boxes.
+The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using the Geant4 tool kit \cite{geant4}, shown by the green boxes.
 For interactions inside the detector, the charge and light yield is calculated from the energy deposition.
-The number of ionisation electrons from charge yield are propagated through the detector to the wire planes using Wirecell tool kit \cite{wirecell}, shown by the red boxes.
-The number of scintillation photons from light yield are propagating to the photodetectors using a semi-analytical light library \cite{}, shown by the blue boxes.
-For interactions outside of the detector, only the energy depositions within the CRT strips is converted into light yield, shown by the orange box.
+The number of ionisation electrons from the charge yield are propagated through the detector to the wire planes using Wirecell tool kit \cite{wirecell}, shown by the red boxes.
+The number of scintillation photons from the light yield are propagated to the photodetectors using a combination of semi-analytical model and light libray \cite{sbnd_pds_paper}, shown by the blue boxes.
+For interactions outside of the detector, only the energy depositions within the CRT strips are converted converted into light yield, shown by the orange box.
 The detector response is then simulated for each detector subsystem.
-By the end of this stage, the waveforms from each subsystem ideally represent real data.
+By the end of this stage, the outputs from each detection subsystem ideally represent real data.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -49,14 +59,7 @@ Overview of the workflow to simulate the SBND detector.
 \label{fig:Sim_Workflow}
 \end{figure}
 
-The following section covers the simulation workflow for the SBND detector.
-Sec. \ref{sec:gen_mevprtl}, \ref{sec:gen_genie} and \ref{sec:gen_corsika} provides the details of the three particle generators to simulate HNLs, neutrinos and cosmic muons respectively.
-The simulation of the primary particle propagation using the Geant4 tool kit is outlined in Sec. \ref{sec:gen_g4}.
-The propagation of the resulting ionisation electrons and scintillation photons to the respective detection subsystems and their responses are discussed in Sec. \ref{sec:gen_response}. 
-
-%Introduce different types of event generator
-
-\subsection{HNL Generator: MeVPrtl}
+\section{HNL Generator: MeVPrtl}
 \label{sec:gen_mevprtl}
 
 %MeVPrtl Workflow
@@ -220,6 +223,9 @@ Modulus of the of arrival time distribution of SM neutrinos and HNLs with mass r
 \label{fig:beam_modulus}
 \end{figure}
 
+\section{Other SM Generators}
+\label{sec:gen_sm}
+
 \subsection{Neutrino Generator: GENIE}
 \label{sec:gen_genie}
 
@@ -288,6 +294,9 @@ This is equivalent to measure the rate of cosmic muons that produce sufficient e
 This measurement allows for validation against the CORSIKA generator sampling of the cosmic topology and kinematic distribution. 
 Moreover, it also provides an expected cosmic rate given a triggering condition, which can be subsequently added in the simulation workflow to better constrain the cosmic background.
 
+\section{Particle Propagation and Detector Response Simulation}
+\label{sec:gen_response}
+
 \subsection{Particle Propagation Simulation}
 \label{sec:gen_g4}
 
@@ -303,10 +312,7 @@ Further discussion about the simulation of recombination, and the impacts of del
 The result from the Geant4 tool kit is a complete set of charge and light yield along the primary particle trajectories through the detector, and the hierarchy of the daughter particles produced from the primary.
 The propagation of the charge and light yield to the corresponding detection subsystem are then simulated, to be covered in the upcoming section.
 
-\subsection{Detector Response Simulation}
-\label{sec:gen_response}
-
-\subsubsection{Wire Response}
+\subsection{Wire Response}
 
 The simulation of the ionisation electrons drifting to the wire planes are done by the WireCell tool kit \cite{wirecell}.
 The simulation transports the electrons, and introduces smearing due to detector effects for transporting electrons though liquid argon under an electric field, which is previously discussed in Sec. \ref{sec:edrift}.
@@ -322,7 +328,7 @@ The waveform is parameterised by the ADC resolution, voltage range and baseline 
 Finally, inherent electronics noise is added to the waveform to better match to observed data.
 The output simulated waveforms at this stage ideally represent real data waveforms record by the wire readouts, therefore from this point onwards, Monte Carlo and data waveforms should.
 
-\subsubsection{PDS Response}
+\subsection{PDS Response}
 
 The simulation of the scintillation photons to the optical detectors, including the transport effects previously detailed in Sec. \ref{sec:photonprop}, are simulated using a combination of semi-analytical model described in Ref. \cite{}, and optical library model available in LArSoft \cite{}.
 The choice of which model to use depends on the location of the photon production.
@@ -342,7 +348,7 @@ Signal shaping such as overshoot and undershoot due to the circuit of the detect
 Finally, random fluctuation in the signal integral and non-linearity response at high light intensities are applied to better mimic data.
 The final output is simulated optical waveforms for each type of optical detector, ideally the same as data. 
 
-\subsubsection{Cosmic Ray Tagger Response}
+\subsection{Cosmic Ray Tagger Response}
 
 The energy deposition outside of the cryostat from the Geant4 simulation stage is considered for simulating the CRT's response.
 For the deposits that cross the CRT strips, the energy into light yield within a strip.
@@ -351,332 +357,13 @@ The time of the hit is estimated using the time of the energy deposition, accoun
 Finally, the electronic response is simulated for the CRT readout, by assessing if a pair of SiPMs within a strip goes above a threshold within a pre-defined coincidence window.
 The output is a single ADC value per SiPM, where 32 SiPMs per CRT readout are readout simultaneously. 
 
-%********************************** %First Section  **************************************
-
-\section{Reconstructing SBND: TPC Subsystem}
-\label{sec:reco_tpc}
-%Describe the overall workflow
-The output raw data from each detection requires a dedicated reconstruction workflow, as illustrated in Fig. \ref{fig:Reco_Workflow}.
-The raw wire waveforms go through the process of signal processing performed by the Wirecell tool kit \cite{wirecell}, followed by a hit finding algorithm to identify hits on the waveform.
-The output hits are then used by the Pandora package \cite{pandora} to 3D reconstruct an interaction, denoted as a \textit{slice}.
-The raw PDS waveforms also require a similar process of waveform deconvolution, followed by hit finding and reconstruction, outputting reconstructed light-objects denoted as \textit{flash}.
-The reconstruction for the CRTs is much simpler compared to other two subsystems, consisting of only a hit finding and a reconstruction step. 
-The following Sec. \ref{sec:reco_tpc} will provide the details of the TPC reconstruction workflow from start to end.
-Meanwhile, the reconstruction of the PDS and CRT subsystem will be summarised in the next Sec. \ref{sec:reco_others}.
-
-\begin{figure}[htbp!] 
-\centering    
-\includegraphics[width=1.0\textwidth]{Reco_Workflow}
-\caption[Reco_Workflow]{
-Overview of the reconstruction workflow for each detection subsystem of SBND.
-}
-\label{fig:Reco_Workflow}
-\end{figure}
-
-\subsection{TPC Signal Processing}
-%Signal Processing
-Signal processing is the first crucial step of TPC reconstruction, which is to deconvolve digitised raw waveforms and remove detector effects such as noise, electronics response and field response. 
-At SBND, signal processing is implemented using the WireCell tool kit \cite{wirecell}.
-The tool has been used by other various LArTPC experiments such as MicroBooNE and ProtoDUNE and has demonstrated the excellent performance to acquire deconvolved charge by performing deconvolution in time and wire dimension over the traditional deconvolution in time dimension only. 
-
-Fig. \ref{fig:signal_processing_steps} \cite{} demonstrates the step by step of the signal processing.
-In grey is the true charge deposition on a wire, and in red is the corresponding raw waveform containing signal convolved with noise, electronics response, field response and noise.
-The first step in the chain is noise filtering to remove the excess and correlated noise from raw waveforms.
-Then, the measured charge is deconvolved from the electronics and field response to recover the original charge deposited on the wire, as shown in orange.
-The deconvolution is 2D, where response functions consider the time response of a single wire as well as responses of neighbouring wires.
-This step is particularly important for the induction planes to convert bipolar into unipolar signals, such that the integral of the waveform can be used for charge estimation.
-\begin{figure}[tbp!] 
-\centering    
-\includegraphics[width=0.45\textwidth]{signal_processing_steps}
-\caption[signal_processing_steps]{
-Example demonstrating the steps of signal processing applied to a bipolar raw waveform to acquire the final deconvolved waveform.
-Fig. from Ref. \cite{}.
-}
-\label{fig:signal_processing_steps}
-%\end{figure}
-%\begin{figure}[htbp!] 
-\centering    
-\includegraphics[width=0.75\textwidth]{signal_processing_waveform}
-\caption[signal_processing_waveform]{
-Event display of a simulated neutrino event using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
-Fig. from Ref. \cite{}.
-}
-\label{fig:signal_processing_waveform}
-\end{figure}
-Filter functions are applied subsequently to attenuate noise that are artificially amplified.
-This includes high frequency filters to remove high frequency noise, where a Gaussian or Weiner filters can be used depending on if the signal is unipolar or bipolar.
-Example shown here is a bipolar signal waveform, and therefore has both Gaussian and Weiner filters applied.
-Then, low frequency filters are utilised for region-of-interest finding and local baseline removal, shown in blue.
-Finally, the deconvolved waveform per wire after baseline removal is shown in purple.
-
-Fig. \ref{fig:signal_processing_waveform} depicts event displays of a simulated neutrino event as recorded by wires on the u plane.
-The left event display are made using the true charges on wire, the middle event display is made using raw waveforms and the right event display is made using deconvolved waveforms.
-Recently, the deconvolution and filters have been optimised particularly for the SBND detector conditions.
-The resulting event display shows clean signals, where two tracks and two showers can be observed, closely resemblance the true charges. 
-
-\subsection{TPC Hit Finding}
-After signal processing, hit finding is performed on deconvolved waveforms to search for Gaussian-shaped pulses above a threshold.
-This is done by the \texttt{GausHitFinder} module \cite{gaushitfinder} by fitting a series of Gaussians to the waveform.
-The number of pulses is determined by the number of maximas found when differentiating the waveform, where each pulse represents a hit.
-Fig. \ref{fig:gaushit} \cite{EdPhD} demonstrates the hit finding process for a deconvolved waveform, showing four hits have been identified and fitted with a Gaussian.
-Once the hits are fitted, information describing the hit are extracted and used by downstream pattern recognition and reconstruction.
-The peak time represents the time at which the charge arrives at the wire, used for determining the drift position and matching hit coincidence across wire planes.
-The height and the width of the Gaussian are used to calculate the integral of the pulse, representing thee deposited charge on the wire, subsequently used in downstream analysis for calorimetry computation.
-
-\begin{figure}[htbp!] 
-\centering    
-\includegraphics[width=0.55\textwidth]{gaushit}
-\caption[gaushit]{
-Event display of a simulated neutrino event, and a using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
-Fig. from Ref. \cite{EdPhD}.
-}
-\label{fig:gaushit}
-\end{figure}
-
-\subsection{Pandora Pattern Recognition}
-
-%Pattern Recognition: Pandora
-The output hits from the hit finding process are then used to perform 3D reconstruction, which is performed with the Pandora pattern recognition package\cite{pandora}. 
-The package was first developed for the International Linear Collider, and later extended to other LArTPC experiments.
-It is made up of over 100 individual algorithms, performing a specific task along the reconstruction chain.
-The output from Pandora represents an interaction, containing a hierarchy of particles starting with a neutrino parent at the interaction vertex.
-This reconstructed object is referred to as a \textit{slice}.  
-
-The reconstruction begins with a workflow to reconstruct cosmic-like objects that leave long tracks inside the detector.
-This workflow performs a 2D clustering on each wire plane independently, followed by 3D reconstruction under the assumption that all clusters are track-like.
-Then, a cosmic rejection is performed to to identify if a cluster is cosmic-like or neutrino-like.
-The cosmic removal at this stage is deliberately cautious such that only very unambiguous cosmic muons in nature are removed.
-
-The remaining clusters are then input into a second workflow dedicated towards neutrino reconstruction.
-This workflow begins with a slicing algorithm that divides the clusters into \textit{slices}, where each slice encapsulates hits coming from a single origin, representing an interaction.
-Then, 2D clustering is re-performed on each wire plan independently, however, with a new assumption that clusters can be both track-like and shower-like.
-A vertexing algorithm then identifies the interaction vertex of the slice and its associated clusters.
-A series of pattern matching algorithms grows the interaction out of a neutrino vertex, and performs 3D reconstruction by matching 2D clusters across different planes.
-The output 3D reconstructed object associated with a vertex ideally represent a \textit{particle} produced from an interaction.
-
-At this stage, a track score is assigned to a particle if it has a track-like or a shower-like topology, which is determined by a dedicated Boosted Decision Tree (BDT).
-The development work on the track and shower separation BDT and its importance not only in the reconstruction workflow but also in the analysis workflow will be covered in the next Sec. \ref{sec:trkshwbdt}.
-Both track and shower reconstruction tools are then performed on the particle under the assumption if it is track-like or shower-like respectively. 
-Finally, a hierarchy algorithm is performed to classify the hierarchy of particles in a slice, starting with a neutrino parent vertex, and other particles are children, grandchildren, etc. of the parent.
-
-%Calorimetry reconstruction
-The last stage of reconstruction is calorimetry computation for the output slices, and its associated particles.
-Both track and shower calorimetry computations first convert ADC units to charge, or number of electrons, via multiplying a charge calibration constant.
-The track calorimetry then computes the energy from charge using the Argoneut-parametrised ModBox recombination formalism, factoring in the electric distortion due the space charge effect.
-Meanwhile, the shower calorimetry reconstruction converts the measured charge to energy by multiplying a shower calibration constant.
-Once the SBND detector is operational, the calibration constants will be measured via dedicated calibration physics runs.
-The charge calibration constant is expected to be computed from using a sample of anode to cathode crossing muon tracks while the shower calibration constant can be acquired from using standard candle of the neutral pion invariant mass \cite{}.
-
-\subsection{Track-Shower Separation Boosted Decision Tree}
-\label{sec:trkshwbdt}
-As previously discussed, reconstructed particles from Pandora are assigned with a track score determined by Boosted Decision Tree (BDT), which is a binary classification machine learning tools.
-The track score spans between 0 and 1 such that if a particle has a very high track score close to 1, then the particle is track-like.
-Otherwise, if the track score is very close to 0, then the particle is shower-like.
-
-The track-shower BDT has become more important in the reconstruction as well as the analysis workflow due to a new reconstruction paradigm introduced by Pandora.
-The traditional reconstruction approach was to perform only either track or shower reconstruction on a particle based on its track score.
-Meanwhile, the new paradigm performs both track and shower reconstruction on a particle regardless of the track score.
-All reconstructed particles now have two sets of reconstruction variables for track-like and shower-like.
-The analyzers have the freedom to decide which variables to use depending on their signal topology, and thus not pre-determined by Pandora.
-The track score provides the necessary information if the signal topology is more track-like or shower-like and therefore, which appropriate reconstruction variables should be used for the analysis. 
-
-The track-shower BDT was trained trained on series of reconstruction variables, has been recently updated to include new variables for the training.
-The original BDT includes variables describing the geometrical topology of the particle such as its length, distance and direction with respect to the parent vertex, as well as calorimetry variables describing the charge distribution of the particle.
-More details of the input variables and the training of the BDT can be found in Ref. \cite{EdPhD}.
-The update extended beyond the original work to include a brand new set of variables describing how cone-like the charge distribution of a particle as well as a new set of variables describing the particle hierarchy.
-
-The cone variables were first developed by the Pandora Warwick team \cite{}, which consist of three variables: (1) Halo total ratio, (2) concentration and (3) conicalness as depicted in Fig. \ref{fig:cone_variables}.
-The diagrams depict hit distribution of a hypothetical particle, where each circle represents a hit associated with a charge value and the star represents the neutrino vertex.
-The illustration is in 2D however the variables are computed in 3D.
-The first variable is the halo-total ratio, illustrated in Fig. \ref{fig:halototalratio}.
-The region outside of the Moliere radius, defined such that 90\% of the cluster energy is contained within this radius, is considered the halo region.
-The halo hits are shown as green circles whereas hits inside the Moliere radius are shown as grey circles.
-The halo-total ratio is then defined as 
-\begin{equation}
-	Halo\ Total\ Ratio = \frac{Charges\ in\ The\ Halo}{Total\ Charges}
-\end{equation}
-The second variable is called concentration, accounting for how concentrated the charge distribution to the centre of the cluster.
-This is depicted in Fig. \ref{fig:concentration}, where each hit is assigned with a colour showing how weighted it is with respect to its orthogonal distance to the cluster direction.
-The closer the hit to the centre, the more weighted it is.
-The concentration variable is defined the total weighted charges divided by the total charge as following
-\begin{equation}
-	Concentration = \frac{\sum Charge \times Weight}{Total\ Charges}
-\end{equation}
-Finally, the conicalness variable examines the hit distribution at the end and the start of the cluster as depicted in Fig. \ref{fig:conicalness}. 
-It is defined the ratio between the concentration at the end of the cluster compared to at the start of the cluster
-\begin{equation}
-	Conincalness = \frac{Concentration\ at\ The\ End}{Concentration\ at\ The\ Start}
-\end{equation}
-\begin{figure}[htbp!]
-        \centering
-        \begin{subfigure}[b]{0.329\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{HaloTotalRatio}
-            \caption{Halo Total Ratio}%
-            \label{fig:halototalratio}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.329\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Concentration}
-            \caption{Concentration}%
-            \label{fig:concentration}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.329\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Conicalness}
-            \caption{Conicalness}%
-            \label{fig:conicalness}
-        \end{subfigure}
-        \caption[cone_variables]{
-	Diagrams illustrating the variables describing how cone-like the charge distribution of a particle .
-	}
-        \label{fig:cone_variables}
-\end{figure}
-
-One new variable introduced to the track-shower separation BDT that describes the hierarchy of the particle within the reconstructed interaction or slice.
-For a given particle, the daughters originating from that particle are identified and their number of hits are counted.
-The distributions of the four new variables for a track-like and shower-like particle are shown in Fig. \ref{fig:bdt_features}.
-The concentration and conicalness variables display the strongest separation power between tracks and showers compared to the halo total ratio and the number of daughter hits variables.
-
-\begin{figure}[htbp!]
-        \centering
-        \begin{subfigure}[b]{0.45\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Feature_Halo_Total_Ratio}
-            \caption{Halo Total Ratio}%
-            \label{fig:feature_halototalratio}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Feature_Concentration}
-            \caption{Concentration}%
-            \label{fig:feature_concentration}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Feature_Conicalness}
-            \caption{Conicalness}%
-            \label{fig:feature_conicalness}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Feature_Number_Of_Daughter_Hits}
-            \caption{Number of Daughter Hits}%
-            \label{fig:feature_nDaughterHits}
-        \end{subfigure}
-        \caption[bdt_features]{
-	Distributions of the new variables input into the track-shower separation BDT, plotted for track-like and shower-like particles.
-	}
-        \label{fig:bdt_features}
-\end{figure}
-
-Fig. \ref{fig:bdt_score} shows the score distribution of the BDT retrained with the four new variables.
-The left figure shows two distinct distributions in red and blue for showers and tracks respectively.
-This demonstrates a good separation power of the BDT, where particles with score less than 0.5 closely resemblance showers whilst particles with score more than 0.5 are more track-like.
-The score distribution is broken down into different particle type as shown in the right figure.
-The distribution is expected given that electrons and photons leave electromagnetic shower activities inside the detector whilst charged particles like muons, pions and protons leave track-like signatures. 
-The updated BDT resulted in $0.1\sim2.0\%$ improvement in correctly classifies particle type as shower-like or track-like.
-The track-shower separation score distribution will be used in downstream high level analysis tools, to be detailed in Sec. \ref{}, as well as will be employed as a cut variable in the HNL selection, to be detailed in Sec. \ref{}.
-
-\begin{figure}[htbp!]
-        \centering
-        \includegraphics[width=\textwidth]{bdt_score}
-        \caption[bdt_score]{
-	Score distribution of the updated track-shower separation BDT, plotted for track-like and shower-like particles (left) and plotted for individual particle type (right).
-	}
-        \label{fig:bdt_score}
-\end{figure}
-
-\section{Reconstructing SBND: PDS and CRT Subsystems}
-\label{sec:reco_others}
-
-\subsection{PDS Reconstruction}
-
-The reconstructions for the photodetectors, PMTs and X-ARAPUCAs, share the same steps of waveform deconvolution, hit finding and light reconstruction.
-However, different algorithms and parameters settings are required for each photodetector type due to their difference in response.
-More details on the PDS reconstruction at the SBND detector can be found in Ref. \cite{}.
-The following focuses more on the reconstruction of PMTs which has an averaged Single Electron Response (SER) pulse peaking at $\sim 25$ ADC and a full width at half maximum of $\sim$ 10 ns.
-The fast response of PMT plays the key role in the nanosecond timing resolution requirement for the HNL search.
-
-Similarly to the signal processing in TPC reconstruction, the PMT waveform deconvolution also aims to remove noise and determine the waveform baseline.
-Fig. \ref{fig:pds_reco_deconvolution} \cite{} depicts an example PMT waveform before and after the deconvolution.
-The top figures shows the MC photons arrived at a given PMT in green.
-The middle figure shows the simulated raw PMT waveform in blue, convolved with PMT response and noise.
-The AC circuits of the PMTs lead to over/undershoots features across the waveform with respect to the baseline shown in red.
-The waveform deconvolution step consists of a 1D deconvolution and an application of Gaussian filter to remove high frequency noise.
-The resulting waveform is shown in orange in the bottom figure.
-The bipolarity of the signals are fully removed while the integral and temporal position of the peaks are well-maintained.
-
-\begin{figure}[tbp!]
-        \centering
-        \begin{subfigure}[b]{0.59\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{pds_reco_deconvolution}
-            \caption{Waveform Deconvolution}
-            \label{fig:pds_reco_deconvolution}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.4\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{pds_reco_hit_finding}
-            \caption{Hit Finding}
-            \label{fig:pds_reco_hit_finding}
-        \end{subfigure}
-        \caption[pds_reco]{
-	Both figures from Ref. \cite{}.
-	}
-        \label{fig:pds_reco}
-\end{figure}
-
-Then, the next step is to perform hit finding on the deconvolved PMT waveform as demonstrated in Fig. \ref{fig:pds_reco_hit_finding}.
-The hit finding begins with a baseline subtraction, which is calculated using a 400 ns portion at the start and end of the deconvolved waveform, resulting in the waveform shown in orange.
-Optical hits are identified by finding pulse goes above a threshold of $1/4$ the amplitude of the deconvolved SER and 3 standard deviations away from the baseline RMS.
-The example shows 4 identified optical hits, with peak times denoted with red triangles.
-The first optical hit contains multiple peaks merged into a single optical hit due to multiple photons arrive very closely to the PMT.
-The rise time of an optical hit is then estimated as the time at which the pulse goes above 15\% of the peak  amplitude, denoted with blue stars, results in a resolution of 1.6 ns  in estimating the arrival time of the first photon contributing to the optical hit.
-The integral of the optical hit are then computed to estimate the number of photoelectrons (PEs) of the hit.
-
-After the hit finding, the light reconstruction algorithm then clusters optical hits into an \textit{optical flash}.
-The length of an optical flash is set as 8 $\mu$s to account for the total light produced in an interaction, from both prompt and slow components of scintillation photons.
-The clustering algorithm is based on several conditions on the calorimetry of the hits, timing distribution between hits and geometrical location of the PMTs.
-The number of PEs in an optical flash is the sum of PEs of optical hits clustered in that flash, ideally represent the total light generated by an interaction. 
-
-The start time of the optical flash represents the start time of an interaction, $t_0$, which is the key variable of the HNL search, and therefore requires great care in reconstruction.
-The flash start time is the average of the rise time of optical hits in a flash for the PMTs that contribute 50\% of the prompt light in the 30 ns window of the largest PE pulse. 
-Then, a correction is applied for the propagation of the photons from the scintillation position in the TPC to the PMTs, i.e. in the drift or $x$-direction.
-This can done by exploiting the high density of PMTs as well as having PMTs sensitive to either or both direct and reflected light component.
-As previously shown in Fig. \ref{fig:light_yield_Diego} with some discussions in Sec. \ref{sec:wls}, the arrival time distribution for the direct VUV and reflected visible photons varies with the drift distance.
-For a given scintillation position, and therefore a drift position, the resulting amount of direct and visible photons can lead to a specific ratio of the two components seen by the PMTs.
-And therefore, the ratio of the number of photons seen by TPB-coated PMTs to those seen by the uncoated PMTs can be used to compute the correction for the propagation effect.
-The timing resolution of the flash time after propagation correction varies $\sim 2$ ns across the entire drfit distance, demonstrating the excellent capability of the PDS at SBND.
-
-\subsection{Cosmic Ray Tagger Reconstruction}
-
-The reconstruction workflow for the CRT subsystem is the simplest compared to the TPC and the PDS procedure.
-As previously detailed, the output data of the CRT readouts are in group of 32 ADC values, for a single ADC per SiPM.
-The reconstruction begins with a hit finding algorithm to identify which pair of SiPM in the group of 32 goes above a threshold.
-The SiPM pair determines the lateral position of a cosmic muon hit within a CRT strip.
-Then, a clustering algorithm groups hits from orthogonal CRT strips of the same wall within a 50 ns window to yield 3D space points.
-For each CRT space point, the timing and calorimetry information is calculated and corrected for the propagation effect due to the longitudinal distance from the hit position to to the SiPM.
-The final step of the reconstruction is to match space points from multiple CRT walls to form a CRT track.
-Candidate tracks are evaluated from any combinations of space points from different taggers within a 100 ns coincidence window.
-The best track candidate is selected by the goodness of timing agreement and prioritising three-point tracks over two-point tracks. 
-The outputs of the CRT reconstruction are both CRT space points and CRT tracks. 
-
-%********************************** %First Section  **************************************
-\section{High Level Analysis Tools}
-
-\subsection{Subsystems Matching}
-
-\subsection{CRUMBS: Cosmic Rejection}
-
-\subsection{Charge to Light Conversion}
-
-\subsection{Particle Identification Tools}
 
 \section{Concluding Remarks}
+\label{sec:sim_concluding_remarks}
+
+The simulation workflow of SBND described here shares the same purpose as with many other modern particle physics experiments, to help understanding and improving the detector performance and physics capabilities.
+This is done by simulating the end-to-end process from when a particle is produced, to how it deposits energy inside inside the detector and consequently, the detector response to the energy deposition.
+The MC output of the simulation ideally mimics data, providing the foundations to perform different types of exploratory studies before SBND becomes operational.
+For example, the upcoming Chapter \ref{ChapterReco} will provide a description of the reconstruction framework at SBND, of which many algorithms have been developed from using MC samples.
+Furthermore, the calibration studies, to be presented in Chapter \ref{ChapterCalib}, was carried out using MC samples of cosmic tracks as well as protons and muons to better understand particle-dependence energy deposition.
+Finally, the search on HNLs, to be presented in the forthcoming Chapter \ref{ChapterSelect} and \ref{ChapterResult}, was also performed using MC samples to explore the capability of SBND in the BSM regime.
