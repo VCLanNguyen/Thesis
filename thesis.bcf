@@ -2187,18 +2187,23 @@
     <bcf:datasource type="file" datatype="bibtex">References/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">wirecell</bcf:citekey>
-    <bcf:citekey order="2">pandora</bcf:citekey>
+    <bcf:citekey order="1">larsoft</bcf:citekey>
+    <bcf:citekey order="2">geant4</bcf:citekey>
     <bcf:citekey order="3">wirecell</bcf:citekey>
-    <bcf:citekey order="9">gaushitfinder</bcf:citekey>
-    <bcf:citekey order="10">EdPhD</bcf:citekey>
-    <bcf:citekey order="11">EdPhD</bcf:citekey>
-    <bcf:citekey order="12">EdPhD</bcf:citekey>
-    <bcf:citekey order="13">pandora</bcf:citekey>
-    <bcf:citekey order="15">EdPhD</bcf:citekey>
-    <bcf:citekey order="22">tmva</bcf:citekey>
-    <bcf:citekey order="23">tmva</bcf:citekey>
-    <bcf:citekey order="24">EdPhD</bcf:citekey>
+    <bcf:citekey order="4">sbnd_pds_paper</bcf:citekey>
+    <bcf:citekey order="5">higgs_scalar</bcf:citekey>
+    <bcf:citekey order="6">qcd_axion</bcf:citekey>
+    <bcf:citekey order="7">DavidePhD</bcf:citekey>
+    <bcf:citekey order="8">genie</bcf:citekey>
+    <bcf:citekey order="9">genie_tune</bcf:citekey>
+    <bcf:citekey order="10">genie_tune_github</bcf:citekey>
+    <bcf:citekey order="11">corsika</bcf:citekey>
+    <bcf:citekey order="12">geant4</bcf:citekey>
+    <bcf:citekey order="13">geant4_ions</bcf:citekey>
+    <bcf:citekey order="14">argoneut_recomb</bcf:citekey>
+    <bcf:citekey order="15">wirecell</bcf:citekey>
+    <bcf:citekey order="16">pds_sim</bcf:citekey>
+    <bcf:citekey order="17">sbnd_pds_paper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
