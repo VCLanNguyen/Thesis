@@ -17,17 +17,17 @@
 
 Reconstruction is the process of extracting physics quantities from the raw detector data.
 For SBND, the goal of reconstruction is to reconstruct particles that deposit energy within the detection subsystems.
-A contained particle inside the TPC might deposit energy resulting in only waveforms recorded by the TPC wire planes and the PDS, meanwhile, an exiting particle might deposit addition energy in the CRT walls surrounding the TPC.
-For a given particle, the TPC reconstruction is able to extract various quantities describing its topology and charge calorimetry and kinematics.
-The PDS reconstruction can provide additional high resolution timing information of the particle on top of its light calorimetry.
+A contained particle inside the TPC might deposit energy resulting in only waveforms recorded by the TPC wire planes and the PDS, meanwhile, an exiting particle might deposit additional energy in CRT walls surrounding the TPC.
+For a given particle, the TPC reconstruction can extract various quantities describing its topology, calorimetry and kinematics.
+The PDS reconstruction can provide additional high resolution timing information of the particle on the top of its light calorimetry.
 The CRT reconstruction can indicate if the particle is fully contained inside the detector.
-As a result, the reconstruction variables from all three detection subsystems are complementary to each other can be exploited for different analysis purposes such as cosmic rejection or particle identification. 
+As a result, the reconstruction variables from all three detection subsystems are complementary to each other and can be exploited for different analysis purposes such as cosmic rejection or particle identification.
 
 This chapter provides a summary of the reconstruction framework at SBND.
 The first Sec. \ref{sec:reco_overview} gives an overview of the reconstruction workflow for each detection subsystem. 
 The following Sec. \ref{sec:reco_tpc} provides the details of the TPC reconstruction workflow from start to end.
-Meanwhile, the reconstruction of the PDS and CRT subsystem will be summarised in Sec. \ref{sec:reco_others}.
-Furthermore, descriptions of some high-level analysis tools using the reconstruction variables collectively from each detection subsystems are included in Sec. \ref{sec:reco_ana_tools}.
+Meanwhile, the reconstruction of the PDS and CRT subsystem are summarised in Sec. \ref{sec:reco_others}.
+Furthermore, descriptions of some high-level analysis tools using the reconstruction variables collectively from each detection subsystem are included in Sec. \ref{sec:reco_ana_tools}.                 
 Finally, the chapter is concluded in Sec. \ref{sec:reco_concluding_remarks} with some remarks.
 
 \newpage
@@ -41,26 +41,28 @@ Finally, the chapter is concluded in Sec. \ref{sec:reco_concluding_remarks} with
 Each detection subsystem in SBND requires a dedicated reconstruction workflow.
 An overview of each workflow is illustrated in Fig. \ref{fig:Reco_Workflow}.
 The TPC reconstruction workflow is shown by the red boxes.
-This process begins with the raw wire waveforms going through the signal processing performed by the Wirecell tool kit \cite{wirecell}.
+This process begins with raw wire waveforms going through the signal processing performed by the Wirecell tool kit \cite{wirecell}.
 This is followed by a hit finding algorithm to identify hits on the waveform.
-The output hits are then used by the Pandora package \cite{pandora} to output a 3D-reconstructed interaction, denoted as a \textit{slice}.
-The PDS reconstruction workflow also follows a similar process to the TPC, shown by the blue boxes.
-A waveform deconvolution is first performed on the raw PDS waveforms to filter noise.
-Then, a hit finding algorithm identifies optical hits on the waveform and a reconstruction is performed on the hits.
-The equivalent output to a TPC-reconstructed interaction from the PDS reconstruction is referred to as a \textit{flash}.
-Finally, the reconstruction for the CRTs is much simpler compared to other two subsystems, consisting of only a hit finding and a reconstruction step, as shown in the orange boxes.
+Output hits are then used by the Pandora package \cite{pandora} to produce a 3D-reconstructed interaction, denoted as a \textit{slice}.
+The PDS reconstruction workflow also follows a similar process to the TPC, as shown by the blue boxes.
+A waveform deconvolution is first performed on raw PDS waveforms to filter noise.
+Then, a hit finding algorithm identifies optical hits on the waveform and reconstruction is performed on the hits.
+The equivalent output to the TPC-reconstructed interaction from the PDS reconstruction is referred to as a \textit{flash}.
+Finally, the reconstruction for the CRTs is much simpler compared to the other two subsystems, consisting of only a hit finding and a reconstruction algorithm, as shown by the orange boxes.
 The reconstruction variables from each detection subsystem are produced independently and can be matched together if they originate from the same interaction. 
-The variables can also be combined and input into different high-level analysis tools to extract more complex properties of the underlying interaction. 
+The variables can also be combined and input into different high-level analysis tools to extract more
+ complex properties of the underlying interaction. 
 
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{Reco_Workflow}
 \caption[Reco_Workflow]{
-Overview of the reconstruction workflow for each detection subsystem of SBND.
+Overview of the reconstruction workflow of the SBND detector.
 }
 \label{fig:Reco_Workflow}
 \end{figure}
 
+\newpage
 \section{TPC Reconstruction}
 \label{sec:reco_tpc}
 
@@ -68,57 +70,61 @@ Overview of the reconstruction workflow for each detection subsystem of SBND.
 %Signal Processing
 Signal processing is the first crucial step of TPC reconstruction, which is to deconvolve digitised raw waveforms and remove detector effects such as noise, electronics response and field response. 
 At SBND, signal processing is implemented using the WireCell tool kit \cite{wirecell}.
-The tool has been used by other various LArTPC experiments such as MicroBooNE and ProtoDUNE and has demonstrated the excellent performance to acquire deconvolved charge by performing deconvolution in time and wire dimension over the traditional deconvolution in time dimension only. 
+The tool has been used by other various LArTPC experiments such as MicroBooNE and ProtoDUNE and has demonstrated excellent performance to acquire deconvolved charge by performing deconvolution in time and wire dimension over the traditional deconvolution in time dimension only. 
 
-Fig. \ref{fig:signal_processing_steps} \cite{} demonstrates the step by step of the signal processing.
-In grey is the true charge deposition on a wire, and in red is the corresponding raw waveform containing signal convolved with noise, electronics response, field response and noise.
+Fig. \ref{fig:signal_processing_steps} \cite{LynnSignal} demonstrates the step by step of the signal processing.
+In grey is the true charge deposition on a wire, and in red is the corresponding raw waveform containing the signal convolved with noise, electronics response, field response and noise.
 The first step in the chain is noise filtering to remove the excess and correlated noise from raw waveforms.
 Then, the measured charge is deconvolved from the electronics and field response to recover the original charge deposited on the wire, as shown in orange.
-The deconvolution is 2D, where response functions consider the time response of a single wire as well as responses of neighbouring wires.
+The deconvolution is 2D, where response functions consider the time response of a single wire as well as the responses of neighbouring wires.
 This step is particularly important for the induction planes to convert bipolar into unipolar signals, such that the integral of the waveform can be used for charge estimation.
 \begin{figure}[tbp!] 
 \centering    
 \includegraphics[width=0.45\textwidth]{signal_processing_steps}
 \caption[signal_processing_steps]{
-Example demonstrating the steps of signal processing applied to a bipolar raw waveform to acquire the final deconvolved waveform.
-Fig. from Ref. \cite{}.
+Example demonstrating the steps of signal processing applied to a bipolar raw waveform.
+Fig. from Ref. \cite{LynnSignal}.
 }
 \label{fig:signal_processing_steps}
 %\end{figure}
-%\begin{figure}[htbp!] 
+%\begin{figure}[htbp!]
+\vspace{1cm}
 \centering    
 \includegraphics[width=0.75\textwidth]{signal_processing_waveform}
 \caption[signal_processing_waveform]{
-Event display of a simulated neutrino event using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
-Fig. from Ref. \cite{}.
+Event display of a simulated neutrino event using true ionisation charges (left), raw waveforms (middle) and deconvolved waveforms (right).
+Fig. from Ref. \cite{LynnSignal}.
 }
 \label{fig:signal_processing_waveform}
 \end{figure}
-Filter functions are applied subsequently to attenuate noise that are artificially amplified.
-This includes high frequency filters to remove high frequency noise, where a Gaussian or Weiner filters can be used depending on if the signal is unipolar or bipolar.
-Example shown here is a bipolar signal waveform, and therefore has both Gaussian and Weiner filters applied.
-Then, low frequency filters are utilised for region-of-interest finding and local baseline removal, shown in blue.
+Filter functions are applied subsequently to attenuate noise that is artificially amplified.
+This includes high frequency filters to remove high frequency noise, whereas Gaussian or Weiner filters can be used depending on whether the signal is unipolar or bipolar.
+The example shown here is a bipolar signal waveform and therefore has both Gaussian and Weiner filters applied.
+Then, low frequency filters are utilised for region-of-interest finding and local baseline removal, as shown in blue.
 Finally, the deconvolved waveform per wire after baseline removal is shown in purple.
 
 Fig. \ref{fig:signal_processing_waveform} depicts event displays of a simulated neutrino event as recorded by wires on the u plane.
-The left event display are made using the true charges on wire, the middle event display is made using raw waveforms and the right event display is made using deconvolved waveforms.
-Recently, the deconvolution and filters have been optimised particularly for the SBND detector conditions.
-The resulting event display shows clean signals, where two tracks and two showers can be observed, closely resemblance the true charges. 
+The left figure displays the event using true charge depositions on wires.
+The middle figure shows the event using raw waveforms, whilst the right figure shows the same event using deconvolved waveforms.
+Recently, the deconvolution and filtering algorithms have been optimised specifically for the SBND detector.
+This is demonstrated in the right event display showing clean signals.
+Two tracks and two showers can be observed, closely resemblance the true charge deposition. 
 
 \subsection{TPC Hit Finding}
+
 After signal processing, hit finding is performed on deconvolved waveforms to search for Gaussian-shaped pulses above a threshold.
-This is done by the \texttt{GausHitFinder} module \cite{gaushitfinder} by fitting a series of Gaussians to the waveform.
-The number of pulses is determined by the number of maximas found when differentiating the waveform, where each pulse represents a hit.
+This is done by the \texttt{GausHitFinder} module \cite{gaushitfinder} by fitting a series of Gaussians to the waveform.                                                                                  
+The number of pulses is determined by the number of maxima found when differentiating the waveform, where each pulse represents a hit.                                                                   
 Fig. \ref{fig:gaushit} \cite{EdPhD} demonstrates the hit finding process for a deconvolved waveform, showing four hits have been identified and fitted with a Gaussian.
-Once the hits are fitted, information describing the hit are extracted and used by downstream pattern recognition and reconstruction.
+Once the hits are fitted, information describing the hit is extracted and used by downstream pattern recognition and reconstruction.
 The peak time represents the time at which the charge arrives at the wire, used for determining the drift position and matching hit coincidence across wire planes.
-The height and the width of the Gaussian are used to calculate the integral of the pulse, representing thee deposited charge on the wire, subsequently used in downstream analysis for calorimetry computation.
+The height and the width of the Gaussian are used to calculate the integral of the pulse, representing the deposited charge on the wire, subsequently used in downstream analysis for calorimetry computation.
 
 \begin{figure}[htbp!] 
 \centering    
-\includegraphics[width=0.55\textwidth]{gaushit}
+\includegraphics[width=0.5\textwidth]{gaushit}
 \caption[gaushit]{
-Event display of a simulated neutrino event, and a using the true ionisation charge (left), raw waveforms (middle) and deconvolved waveforms (right).
+Diagram illustrating the hit finding algorithm performance on a single wire.
 Fig. from Ref. \cite{EdPhD}.
 }
 \label{fig:gaushit}
@@ -127,40 +133,40 @@ Fig. from Ref. \cite{EdPhD}.
 \subsection{Pandora Pattern Recognition}
 
 %Pattern Recognition: Pandora
-The output hits from the hit finding process are then used to perform 3D reconstruction, which is performed with the Pandora pattern recognition package\cite{pandora}. 
-The package was first developed for the International Linear Collider, and later extended to other LArTPC experiments.
+The output hits from the hit finding process are then used to perform 3D reconstruction, which is performed with the Pandora pattern recognition package\cite{pandora}.
+The package was first developed for the International Linear Collider and later extended to other LArTPC experiments.
 It is made up of over 100 individual algorithms, performing a specific task along the reconstruction chain.
 The output from Pandora represents an interaction, containing a hierarchy of particles starting with a neutrino parent at the interaction vertex.
-This reconstructed object is referred to as a \textit{slice}.  
+This reconstructed object is referred to as a \textit{slice}.
 
 The reconstruction begins with a workflow to reconstruct cosmic-like objects that leave long tracks inside the detector.
 This workflow performs a 2D clustering on each wire plane independently, followed by 3D reconstruction under the assumption that all clusters are track-like.
-Then, a cosmic rejection is performed to to identify if a cluster is cosmic-like or neutrino-like.
+Then, a cosmic rejection is performed to identify if a cluster is cosmic-like or neutrino-like.
 The cosmic removal at this stage is deliberately cautious such that only very unambiguous cosmic muons in nature are removed.
 
 The remaining clusters are then input into a second workflow dedicated towards neutrino reconstruction.
-This workflow begins with a slicing algorithm that divides the clusters into \textit{slices}, where each slice encapsulates hits coming from a single origin, representing an interaction.
-Then, 2D clustering is re-performed on each wire plan independently, however, with a new assumption that clusters can be both track-like and shower-like.
+This workflow begins with a slicing algorithm that divides clusters into \textit{slices}, where each slice encapsulates hits coming from a single origin, representing an interaction.
+Then, 2D clustering is re-performed on each wire plane independently, however, with a new assumption that clusters can be both track-like and shower-like.
 A vertexing algorithm then identifies the interaction vertex of the slice and its associated clusters.
-A series of pattern matching algorithms grows the interaction out of a neutrino vertex, and performs 3D reconstruction by matching 2D clusters across different planes.
-The output 3D reconstructed object associated with a vertex ideally represent a \textit{particle} produced from an interaction.
+A series of pattern matching algorithms grows the interaction out of the neutrino vertex and performs 3D reconstruction by matching 2D clusters across different planes.
+The output 3D reconstructed object associated with a vertex ideally represents a \textit{particle} produced from an interaction.
 
-At this stage, a track score is assigned to a particle if it has a track-like or a shower-like topology, which is determined by a dedicated Boosted Decision Tree (BDT).
-The development work on the track and shower separation BDT and its importance not only in the reconstruction workflow but also in the analysis workflow will be covered in the next Sec. \ref{sec:trkshwbdt}.
-Both track and shower reconstruction tools are then performed on the particle under the assumption if it is track-like or shower-like respectively. 
-Finally, a hierarchy algorithm is performed to classify the hierarchy of particles in a slice, starting with a neutrino parent vertex, and other particles are children, grandchildren, etc. of the parent.
+At this stage, a \textit{track score} is assigned to a particle if it has a track-like or a shower-like topology, which is determined by a dedicated Boosted Decision Tree (BDT).
+The development work on the track-shower separation BDT and its importance not only in the reconstruction workflow but also in the analysis workflow will be covered in the next Sec. \ref{sec:trkshwbdt}.
+Both track and shower reconstruction tools are then performed on the particle. 
+Finally, a hierarchy algorithm is performed to classify the hierarchy of particles in a slice, starting with a neutrino parent vertex, and other particles are children, grandchildren, etc. of the parent.                             
 
 %Calorimetry reconstruction
-The last stage of reconstruction is calorimetry computation for the output slices, and its associated particles.
-Both track and shower calorimetry computations first convert ADC units to charge, or number of electrons, via multiplying a charge calibration constant.
-The track calorimetry then computes the energy from charge using the Argoneut-parametrised ModBox recombination formalism, factoring in the electric distortion due the space charge effect.
-Meanwhile, the shower calorimetry reconstruction converts the measured charge to energy by multiplying a shower calibration constant.
+The last stage of reconstruction is calorimetry computation for the output slices and their associated particles.
+Both track and shower calorimetry computations first convert ADC units to charges, or number of electrons, via multiplying by a charge calibration constant.
+The track calorimetry then computes the energy from the charge using the ModBox recombination formalism, factoring in the electric field distortion.
+Meanwhile, the shower calorimetry reconstruction converts the measured charge to energy by multiplying it by a shower calibration constant, factoring in an averaged recombination factor. 
 Once the SBND detector is operational, the calibration constants will be measured via dedicated calibration physics runs.
-The charge calibration constant is expected to be computed from using a sample of anode to cathode crossing muon tracks while the shower calibration constant can be acquired from using standard candle of the neutral pion invariant mass \cite{}.
+The charge calibration constant is expected to be computed by using a sample of the anode to cathode crossing muon tracks while the shower calibration constant can be acquired from using a standard candle of the neutral pion invariant mass \cite{uboone_gamma}.
 
 \subsection{Track-Shower Separation Boosted Decision Tree}
 \label{sec:trkshwbdt}
-As previously discussed, reconstructed particles from Pandora are assigned with a track score determined by Boosted Decision Tree (BDT), which is a binary classification machine learning tools.
+As previously discussed, reconstructed particles from Pandora are assigned with a track score determined by Boosted Decision Tree (BDT), which is a binary classification machine learning tool.
 The track score spans between 0 and 1 such that if a particle has a very high track score close to 1, then the particle is track-like.
 Otherwise, if the track score is very close to 0, then the particle is shower-like.
 
@@ -168,37 +174,21 @@ The track-shower BDT has become more important in the reconstruction as well as 
 The traditional reconstruction approach was to perform only either track or shower reconstruction on a particle based on its track score.
 Meanwhile, the new paradigm performs both track and shower reconstruction on a particle regardless of the track score.
 All reconstructed particles now have two sets of reconstruction variables for track-like and shower-like.
-The analyzers have the freedom to decide which variables to use depending on their signal topology, and thus not pre-determined by Pandora.
-The track score provides the necessary information if the signal topology is more track-like or shower-like and therefore, which appropriate reconstruction variables should be used for the analysis. 
+The users have the freedom to decide which variables to use depending on their signal topology, and thus not pre-determined by Pandora.
+The track score can inform on which appropriate reconstruction variables should be used for the analysis. 
 
-The track-shower BDT was trained trained on series of reconstruction variables, has been recently updated to include new variables for the training.
+The track-shower separation BDT was trained on a series of reconstruction variables and was updated to include new variables in the training.
 The original BDT includes variables describing the geometrical topology of the particle such as its length, distance and direction with respect to the parent vertex, as well as calorimetry variables describing the charge distribution of the particle.
 More details of the input variables and the training of the BDT can be found in Ref. \cite{EdPhD}.
-The update extended beyond the original work to include a brand new set of variables describing how cone-like the charge distribution of a particle as well as a new set of variables describing the particle hierarchy.
+The update extended beyond the original work to include a brand new set of variables describing how cone-like the charge distribution of a particle as well as a new variable describing the particle hierarchy.
 
-The cone variables were first developed by the Pandora Warwick team \cite{}, which consist of three variables: (1) Halo total ratio, (2) concentration and (3) conicalness as depicted in Fig. \ref{fig:cone_variables}.
-The diagrams depict hit distribution of a hypothetical particle, where each circle represents a hit associated with a charge value and the star represents the neutrino vertex.
+The cone variables were first developed by the M. Haigh for particle identification \cite{warwick_pid}, and now imported into Pandora for reconstruction purposes.
+There are three variables: (1) halo-total ratio, (2) concentration and (3) conicalness as depicted in Fig. \ref{fig:cone_variables}.
+The diagrams depict the hit distribution of a hypothetical particle, where each circle represents a hit associated with a charge value and the star represents the vertex of the hit cluster.
 The illustration is in 2D however the variables are computed in 3D.
 The first variable is the halo-total ratio, illustrated in Fig. \ref{fig:halototalratio}.
 The region outside of the Moliere radius, defined such that 90\% of the cluster energy is contained within this radius, is considered the halo region.
-The halo hits are shown as green circles whereas hits inside the Moliere radius are shown as grey circles.
-The halo-total ratio is then defined as 
-\begin{equation}
-	Halo\ Total\ Ratio = \frac{Charges\ in\ The\ Halo}{Total\ Charges}
-\end{equation}
-The second variable is called concentration, accounting for how concentrated the charge distribution to the centre of the cluster.
-This is depicted in Fig. \ref{fig:concentration}, where each hit is assigned with a colour showing how weighted it is with respect to its orthogonal distance to the cluster direction.
-The closer the hit to the centre, the more weighted it is.
-The concentration variable is defined the total weighted charges divided by the total charge as following
-\begin{equation}
-	Concentration = \frac{\sum Charge \times Weight}{Total\ Charges}
-\end{equation}
-Finally, the conicalness variable examines the hit distribution at the end and the start of the cluster as depicted in Fig. \ref{fig:conicalness}. 
-It is defined the ratio between the concentration at the end of the cluster compared to at the start of the cluster
-\begin{equation}
-	Conincalness = \frac{Concentration\ at\ The\ End}{Concentration\ at\ The\ Start}
-\end{equation}
-\begin{figure}[htbp!]
+\begin{figure}[bp!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -225,11 +215,28 @@ It is defined the ratio between the concentration at the end of the cluster comp
 	}
         \label{fig:cone_variables}
 \end{figure}
+The hits in the halo are shown as green circles whereas any other hits are shown as grey circles.
+The halo-total ratio is then defined as 
+\begin{equation}
+	Halo\ Total\ Ratio = \frac{Charges\ in\ The\ Halo}{Total\ Charges}
+\end{equation}
+The second variable is called concentration, accounting for how concentrated the charge distribution is to the centre of the cluster.
+This is depicted in Fig. \ref{fig:concentration}, where each hit is assigned a colour showing how weighted it is with respect to its orthogonal distance to the cluster direction.
+The closer the hit to the centre, the more weighted it is.
+The concentration variable is defined as the total weighted charges divided by the total charge as following
+\begin{equation}
+	Concentration = \frac{\sum Charge \times Weight}{Total\ Charges}
+\end{equation}
+Finally, the conicalness variable examines the hit distribution at the end and the start of the cluster as depicted in Fig. \ref{fig:conicalness}. 
+It is defined as the ratio between the concentration at the end of the cluster compared to at the start of the cluster
+\begin{equation}
+	Conincalness = \frac{Concentration\ at\ The\ End}{Concentration\ at\ The\ Start}
+\end{equation}
 
-One new variable introduced to the track-shower separation BDT that describes the hierarchy of the particle within the reconstructed interaction or slice.
+On top of the cone variables, another new variable was introduced to the track-shower separation BDT to describe the hierarchy of the particle within the reconstructed interaction or slice.
 For a given particle, the daughters originating from that particle are identified and their number of hits are counted.
 The distributions of the four new variables for a track-like and shower-like particle are shown in Fig. \ref{fig:bdt_features}.
-The concentration and conicalness variables display the strongest separation power between tracks and showers compared to the halo total ratio and the number of daughter hits variables.
+The concentration and conicalness variables display the strongest separation power between tracks and showers compared to the halo-total ratio and the number of daughter hits variables.
 
 \begin{figure}[htbp!]
         \centering
@@ -268,17 +275,17 @@ The concentration and conicalness variables display the strongest separation pow
 
 Fig. \ref{fig:bdt_score} shows the score distribution of the BDT retrained with the four new variables.
 The left figure shows two distinct distributions in red and blue for showers and tracks respectively.
-This demonstrates a good separation power of the BDT, where particles with score less than 0.5 closely resemblance showers whilst particles with score more than 0.5 are more track-like.
-The score distribution is broken down into different particle type as shown in the right figure.
+This demonstrates a good separation power of the BDT, where particles with a score less than 0.5 closely resemble showers whilst particles with a score more than 0.5 are more track-like.
+The score distribution is broken down into different particle types as shown in the right figure.
 The distribution is expected given that electrons and photons leave electromagnetic shower activities inside the detector whilst charged particles like muons, pions and protons leave track-like signatures. 
-The updated BDT resulted in $0.1\sim2.0\%$ improvement in correctly classifies particle type as shower-like or track-like.
-The track-shower separation score distribution will be used in downstream high level analysis tools, to be detailed in Sec. \ref{sec:subsystem_match}, as well as will be employed as a cut variable in the HNL selection, to be detailed in Sec. \ref{}.
+The updated BDT resulted in $0.1\sim2.0\%$ improvement in correctly classifying particle type as shower-like or track-like.
+The track-shower separation score distribution will be used in downstream high level analysis tools, to be detailed in Sec. \ref{sec:subsystem_match}, as well as will be employed as a cut variable in the HNL selection, to be detailed in Chapter \ref{ChapterSelect}.
 
 \begin{figure}[htbp!]
         \centering
         \includegraphics[width=\textwidth]{bdt_score}
         \caption[bdt_score]{
-	Score distribution of the updated track-shower separation BDT, plotted for track-like and shower-like particles (left) and plotted for individual particle type (right).
+	Score distribution of the updated track-shower separation BDT, plotted for track-like and shower-like particles (left) and for particle type (right).
 	}
         \label{fig:bdt_score}
 \end{figure}
