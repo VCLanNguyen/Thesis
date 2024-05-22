@@ -970,7 +970,6 @@
       \strng{authorbibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
       \strng{authornamehash}{68a1ff4fbe67614c09999f2a619d456d}
       \strng{authorfullhash}{68a1ff4fbe67614c09999f2a619d456d}
-      \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
@@ -1996,17 +1995,18 @@
     \endentry
     \entry{warwick_pid}{article}{}
       \name{author}{1}{}{%
-        {{hash=68a1ff4fbe67614c09999f2a619d456d}{%
-           family={LArSoft},
-           familyi={L\bibinitperiod}}}%
+        {{hash=9214dfc0b404fc31aa053c13714e7df7}{%
+           family={Haigh},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{fullhash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{bibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authorbibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authornamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authorfullhash}{68a1ff4fbe67614c09999f2a619d456d}
-      \field{extraname}{2}
+      \strng{namehash}{9214dfc0b404fc31aa053c13714e7df7}
+      \strng{fullhash}{9214dfc0b404fc31aa053c13714e7df7}
+      \strng{bibnamehash}{9214dfc0b404fc31aa053c13714e7df7}
+      \strng{authorbibnamehash}{9214dfc0b404fc31aa053c13714e7df7}
+      \strng{authornamehash}{9214dfc0b404fc31aa053c13714e7df7}
+      \strng{authorfullhash}{9214dfc0b404fc31aa053c13714e7df7}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
@@ -2018,6 +2018,65 @@
       \endverb
       \verb{url}
       \verb https://github.com/LArSoft/larana/blob/develop/larana/ParticleIdentification/MVAAlg.cxx
+      \endverb
+    \endentry
+    \entry{opt0finder_module}{article}{}
+      \name{author}{2}{}{%
+        {{hash=430e9101981f5029194e4e842f0925e5}{%
+           family={Tung},
+           familyi={T\bibinitperiod},
+           given={Lynn},
+           giveni={L\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{144b9da5b5788564bf3db047a0879a52}
+      \strng{fullhash}{144b9da5b5788564bf3db047a0879a52}
+      \strng{bibnamehash}{089eec2b218dd726d8e4f86b6238e69e}
+      \strng{authorbibnamehash}{089eec2b218dd726d8e4f86b6238e69e}
+      \strng{authornamehash}{144b9da5b5788564bf3db047a0879a52}
+      \strng{authorfullhash}{144b9da5b5788564bf3db047a0879a52}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Visited 22/05/2024)}
+      \field{title}{{OpT0Finder module}}
+      \verb{urlraw}
+      \verb https://github.com/SBNSoftware/sbndcode/blob/fc6ccd23afe1d8ffaf88dbe33784160768726aff/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
+      \endverb
+      \verb{url}
+      \verb https://github.com/SBNSoftware/sbndcode/blob/fc6ccd23afe1d8ffaf88dbe33784160768726aff/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
+      \endverb
+    \endentry
+    \entry{crumbs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=60ad0bf4ed7332f50b0aa37f2888a209}{%
+           family={Lay},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \strng{fullhash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \strng{bibnamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \strng{authorbibnamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \strng{authornamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \strng{authorfullhash}{60ad0bf4ed7332f50b0aa37f2888a209}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Visited 22/05/2024)}
+      \field{title}{{CRUMBS module}}
+      \verb{urlraw}
+      \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/CosmicID/CRUMBS_module.cc
+      \endverb
+      \verb{url}
+      \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/CosmicID/CRUMBS_module.cc
       \endverb
     \endentry
     \entry{tmva}{article}{}
@@ -2049,7 +2108,40 @@
       \verb physics/0703039
       \endverb
     \endentry
+    \entry{razzled}{article}{}
+      \name{author}{2}{}{%
+        {{hash=60ad0bf4ed7332f50b0aa37f2888a209}{%
+           family={Lay},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=60f77f1c5d1f17857a6d7aed77e17559}{%
+           family={Tyley},
+           familyi={T\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
+      \strng{fullhash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
+      \strng{bibnamehash}{8143f626fb67c736800d6756dfa97a47}
+      \strng{authorbibnamehash}{8143f626fb67c736800d6756dfa97a47}
+      \strng{authornamehash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
+      \strng{authorfullhash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Visited 22/05/2024)}
+      \field{title}{{Razzled module}}
+      \verb{urlraw}
+      \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/PID/Razzled_module.cc
+      \endverb
+      \verb{url}
+      \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/PID/Razzled_module.cc
+      \endverb
+    \endentry
   \enddatalist
+  \missing{sbnd_pds_paper}
 \endrefsection
 \endinput
 
