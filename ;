@@ -660,49 +660,49 @@ This \textit{timing cut} will be applied at a later analysis stage, as it will b
 
 \subsection{Cut Efficiency}
 
-The following table summarises the cuts applied for the lenient and stringent selection.
+\subsection{Cut Summary}
 
 \begin{table}[htbp!]
 \centering
 \begin{center}
-\begin{tabular}{| p{7.75cm} | m{3.25cm} | m{3.25cm} |} 
+\begin{tabular}{| m{7.25cm} | m{3.5cm} | m{3.5cm} |} 
  \hline
-  & \multicolumn{2}{c|}{\textbf{Common Cut}} \\ [1ex] 
+  & \multicolumn{2}{|c|}{\textbf{Common Cut}} \\ [1ex] 
  \hline
- \textbf{Cosmic Removal}: & \multicolumn{2}{c|}{} \\ [1ex] 
- Slices reconstructed as neutrino by Pandora & \multicolumn{2}{c|}{True} \\ 
- Flash time inside the beam spill & \multicolumn{2}{c|}{[0.367, 1.967] $\mu$s} \\ 
- CRUMBS score  & \multicolumn{2}{c|}{$\geq 0$} \\ [1ex] 
+ \textbf{Cosmic Removal}: & \multicolumn{2}{|c|}{} \\ [1ex] 
+ Pandora unambiguous cosmic removal  & \multicolumn{2}{|c|}{neutrino slice = True} \\ 
+ Flash time inside the beam spill & \multicolumn{2}{|c|}{[0.367, 1.967] $\mu$s} \\ 
+ CRUMBS score  & \multicolumn{2}{|c|}{$\geq 0$} \\ [1ex] 
  \hline
- \textbf{SM Neutrino Removal}: & \multicolumn{2}{c|}{} \\ [1ex] 
- Reconstructed vertex inside the FV & \multicolumn{2}{c|}{True} \\
- \# of hits in the primary shower & \multicolumn{2}{c|}{$\geq 50$} \\ [1ex]
- \# of Razzled muons & \multicolumn{2}{c|}{0} \\
- Razzled muon score of particles in slices & \multicolumn{2}{c|}{$< 0.04$} \\ [1ex]
- \# of Razzled protons with KE $>$ 32.7 MeV & \multicolumn{2}{c|}{0} \\
- Razzled proton score of particles in slices & \multicolumn{2}{c|}{$< 0.96$} \\ [1ex]
- \# of Razzled pions with KE $>$ 31.2 MeV & \multicolumn{2}{c|}{0} \\
- Razzled pion score of particles in slices & \multicolumn{2}{c|}{$< 0.82$} \\ [1ex]
+ \textbf{SM Neutrino Removal}: & \multicolumn{2}{|c|}{} \\ [1ex] 
+ Reconstructed vertex inside the FV & \multicolumn{2}{|c|}{True} \\
+ \# of hits in the primary shower & \multicolumn{2}{|c|}{$\geq 50$} \\ [1ex]
+ \# of Razzled muons & \multicolumn{2}{|c|}{0} \\
+ Razzled muon score of particles in slices & \multicolumn{2}{|c|}{$< 0.04$} \\ [1ex]
+ \# of Razzled protons with KE $>$ 32.7 MeV & \multicolumn{2}{|c|}{0} \\
+ Razzled proton score of particles in slices & \multicolumn{2}{|c|}{$< 0.96$} \\ [1ex]
+ \# of Razzled pions with KE $>$ 31.2 MeV & \multicolumn{2}{|c|}{0} \\
+ Razzled pion score of particles in slices & \multicolumn{2}{|c|}{$< 0.82$} \\ [1ex]
  \hline
- \textbf{HNL Shower Selection}: & \multicolumn{2}{c|}{} \\ [1ex] 
- Razzled electron score of primary showers & \multicolumn{2}{c|}{$< 0.96$} \\ [1ex]
- Track score of primary showers & \multicolumn{2}{c|}{} \\
- \hspace{0.5cm}1 shower case & \multicolumn{2}{c|}{$0.225 <$ score $< 0.5$} \\
- \hspace{0.5cm}2+ shower case & \multicolumn{2}{c|}{$0.250 <$ score $< 0.5$} \\
+ \textbf{HNL Shower Selection}: & \multicolumn{2}{|c|}{} \\ [1ex] 
+ Razzled electron score of primary showers & \multicolumn{2}{|c|}{$< 0.96$} \\ [1ex]
+ Track score of primary showers & \multicolumn{2}{|c|}{} \\
+ 1 shower case & \multicolumn{2}{|c|}{$0.225 <$ score $< 0.5$} \\
+ 2+ shower case & \multicolumn{2}{|c|}{$0.250 <$ score $< 0.5$} \\
  \cline{2-3}
- & \multicolumn{1}{c|}{\textbf{Lenient Cut}}  & \multicolumn{1}{c|}{\textbf{Stringent Cut}} \\  
+ & \textbf{Lenient Cut}  & \textbf{Stringent Cut} \\ [1ex] 
  \cline{2-3}
   Opt0 fraction of slices &  &  \\
-  \hspace{0.5cm} 1 shower case & $-0.12 <$ frac $< 0.40$ & $-0.10 <$ frac $< 0.40$ \\
-  \hspace{0.5cm} 2+ showers case & $0.00 <$ frac $< 0.40$ & $0.04 <$ frac $< 0.30$ \\ [1ex]
+  1 shower case & $-0.12 <$ frac $< 0.40$ & $-0.10 <$ frac $< 0.40$ \\
+  2+ shower case & $0.00 <$ frac $< 0.40$ & $0.04 <$ frac $< 0.30$ \\ [1ex]
   Theta angle of primary showers &  &  \\
-  \hspace{0.5cm}1 shower case & $\leq 25^\circ$ & $\leq20^\circ$ \\
-  \hspace{0.5cm}2+ showers case & $\leq 35^\circ$ & $\leq 30^\circ$ \\ [1ex]
-  \cline{2-3} 
-  $\pi^0$ invariant mass of any 2 showers in a slice  & \multicolumn{2}{c|}{$\leq 300$ MeV} \\ [1ex]
+  1 shower case & $\leq 25^\circ$ & $\leq20^\circ$ \\
+  2+ showers case & $\leq 35^\circ$ & $\leq 30^\circ$ \\ [1ex]
+ \cline{2-3}
+  $\pi^0$ mass of any 2 showers in a slice  & \multicolumn{2}{|c|}{$\leq 300$ MeV} \\ [1ex]
  \hline
- \textbf{Timing Cut* (applied when setting limits)}: &  \multicolumn{2}{c|}{} \\ [1ex] 
- Arrival time within the beam bucket  & \multicolumn{2}{c|}{$0 \leq t \leq 4$ and $15 \leq t \leq 19$} \\ [1ex]
+ \textbf{Timing Cut* (applied at setting limits)}: &  \multicolumn{2}{|c|}{} \\ [1ex] 
+ Arrival time within the beam bucket  & \multicolumn{2}{|c|}{$0 \leq t \leq 4$ and $15 \leq t \leq 19$} \\ [1ex]
  \hline
 \end{tabular}
 \end{center}
