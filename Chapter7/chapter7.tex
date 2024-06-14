@@ -414,26 +414,26 @@ This matching is vitally important since the flash time matched to a slice repre
 Therefore, it is the key variable separating the showers resulting from HNL decays from other SM observables.
 
 The matching of the TPC to the PDS is done with the \texttt{Opt0Finder} module \cite{opt0finder_module}.
-The matching is based on the estimation of charge yield in a slice seen by the wires to predict the light yield seen by the PMTs, and whether the prediction is in good agreement with the measured light yield.
+The matching is based on the estimation of charge yield in a slice seen by the wires to predict the light yield, and whether the prediction is in good agreement with the measured light yield seen by PMTs.
 For a given slice, the charge yield is converted to energy to light yield based on the topology of particles in the slice.
 The track score of the particles in the slice, assigned by the track-shower separation BDT, is used to indicate whether the particle is track-like or shower-like and therefore, which appropriate calorimetry computation to use.
 If the particle is track-like, the calorimetry computation uses the ModBox recombination formalism with 
 the charge-light anti-correlation. 
 Otherwise, the calorimetry computation uses a charge-to-light conversion by multiplying a constant.     
 From the estimated light yield, a hypothesis of the number of PE seen by each PMT is constructed by re-running the semi-analytical light library.
-Finally, the hypothesis PE is compared to the measured PE for any given flash through a $\chi^2$ computation.
+Finally, the hypothesis PE is compared to the measured PE for any given flash by a $\chi^2$ computation.
 The flash that is best matched to a slice is the one with the lowest $\chi^2$.
 Only one-to-one match is allowed such that only a single optical flash is matched to a slice.
 
-A useful outcome variable from this matching process is the comparison between the hypothesis PE to the measured PE in the matched flash.
-This variable is defined as Opt0 fraction as follows
+A useful variable from this matching process is the comparison between the hypothesis PE predicted from the measured charges, denoted as $L_{\mathrm{Q}}$, and the measured PE seen by PMTs, denoted as $L$.
+The variable is defined as follows
 \begin{equation}
 \label{eq:opt0fraction}
-Opt\textit{0}\ fraction = \frac{Hypothesis\ PE - Measured\ PE}{Measured PE}
+	\frac{L_{\mathrm{Q}} - L}{L}
 \end{equation}
-This variable indicates the level of agreement between the number of PEs hypothesised from the deposited charge in a slice and the number of PEs of the matched flash.
-If the fraction is positive, the hypothesis is overestimated, otherwise, the hypothesis is underestimated.
-This variable is particularly useful in the selection of HNLs where it does not only provide calorimetry information from both the TPC and PDS but also their level of agreement.
+This fraction indicates the level of agreement between $L_{\mathrm{Q}}$ and $L$, and thus, the level of agreement in calorimetry measurement for the same interaction using the charge yield or the light yield. 
+If the fraction is positive, the hypothesis PE from charge $L_{\mathrm{Q}}$ is over predicted, otherwise, it is underestimated.
+This variable is particularly useful in the selection of HNL showers due to their forward-going topology, which will be detailed in Chapter \ref{ChapterSelect}.
 
 \subsection{Cosmic Rejection Tools}
 \label{sec:crumbs}
