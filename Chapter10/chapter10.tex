@@ -2,7 +2,7 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{Setting Sensitivity Limits On HNLs}
+\chapter{Setting The Upper Limits on The Mixing Angle of HNL}
 \label{ChapterResult}
 
 % **************************** Define Graphics Path **************************
@@ -17,10 +17,82 @@
 Chapter 9 Opening
 
 \clearpage
+
 %********************************** %First Section  **************************************
 \section{Systematic Uncertainties}
 
+%describe reweighting
+The impact of systematic uncertainties on a physics measurement can be assessed by simulating and reconstructing a number of different samples, referred to as \textit{universes}, each with a physics parameter tweaked within its uncertainty range.
+The physics measurement is then performed in each universe in the same manner as done on the Central Value (CV) sample that does not have any parameters tweaked.
+The variation of the result across universes compared to the CV sample describes the uncertainty that the tweaked parameter has on the measurement.
+However, fully simulating and reconstructing a large MC sample for multiple systematic parameters can be computationally intensive, the \textit{reweighting} technique is used instead by producing a weight associated with the tweaked parameter per universe.
+The weight can be applied to smear the physics result by an amount as expected by the tweaked parameter.
+Or vice versa, the smeared physics result can be unweighted to recover the original result without any uncertainties from the tweaked parameter \cite{cowan_stat}.
+
+%define weight
+The reweighting technique begins with transforming a physics parameter $x$ to $x'$ as follows
+\begin{equation}
+	x' = x \cdot f(x)
+\end{equation}
+where $f(x)$ describes some transformation functions as a function of $x$. 
+If $f(x) = 1$, then $x'$ is equal to the unweighted $x$.
+A common form of the transformation function  is a Gaussian function, where the physics parameter $x$ is thrown to $x'$ by randomly sampling from a unit Gaussian with its mean and sigma is set as 1.
+Another common formalism is the Delta function, where $x'$ can take only take the value of 0 or 1. 
+
+%\begin{equation}
+%	x' = x \times f\left( 1 + n_\sigma \frac{\sigma_x}{x} \right)
+%\end{equation}
+%where $\sigma_x$ is the standard deviation of $x$ and $n_\sigma$ is the number of standard deviations to shift the parameter $x$.
+%If $n_\sigma = 0$, then $x'$ is equal to the unweighted $x$.
+
+Then, from the probability $P(x)$ describing some physic properties parameterised by the physics parameter $x$, the weight $w$ can be computed as
+\begin{equation}
+\label{eq:prob_w}
+	w = \frac{P(x')}{P(x)}
+\end{equation}
+%TODO: Add stuff and weight computing from multisim/multisigma/unisim
+The weight $w$ describes whether the probability $P(x')$ is more or less likely to occur given the transformed parameter $x'$ compared to the CV parameter $x$.
+The distribution of $w$ therefore describes the Probability Density Function (PDF) of the parameter $x$.
+A universe associated with a weight $w$ therefore represents an outcome sampled from the PDF.
+The weight example shown in Eq. \ref{eq:prob_w} is associated with a single physics parameter non-correlated to any other parameters, however, a weight associated with multiple correlated parameters can also be computed in the same manner.
+
+The reweighting framework provides a quick way to compute the PDFs, allowing for the assessment of the impact of systematic uncertainties without the computational expense of simulating and reconstructing the sample multiple times.
+A series of universes is first simulated and weights for every interaction, whether SM neutrino or HNL, are then calculated from the PDFs for each universe.
+The variation of the physics result across universes are used to quantify the uncertainties of the weighted physics parameters have on the physics measurement, of which the error propagation is formalised in Sec. \ref{sec:error_prop}.  
+
+%detector systematic
+In some cases, reweighting is not applicable such as evaluating uncertainties due to detector effects.
+For example, recombination, as detailed in Sec. \ref{sec7:delta}, influences not only the charge and light yield but also the charge deposition on wires non-uniformly. 
+Consequently, it is non-trivial to quantify analytically the downstream impacts due to the variation in recombination parameters on the charge reconstruction by Pandora or any high level analysis tools using the reconstructed charge information.
+A full simulation and reconstruction of a single universe using the varied recombination parameters is needed to fully assess the impact on the physics measurement. 
+This method is commonly used for detector systematic uncertainties.
+However, since the SBND detector not yet operational, it is still undetermined which detector parameters are the most relevant in the analysis.
+Thus, detector systematics are not included in the scope of this thesis.
+
 \subsection{Error Propagation Formulation}
+\label{sec:error_prop}
+
+The impact of uncertainties can be evaluated by constructing the covariance matrix $V$ of a series of observations $N$.
+The matrix describes the average deviation of the value in bins $i$ and $j$ from the CV away from the universe $n$, totalling $U$ universes.
+The matrix is computed as follows
+\begin{equation}
+	V_{ij} = \frac{1}{U}\sum^{U}_{n} \left( N^n_{i} - N^{CV}_{i} \right) \left( N^n_{j} - N^{CV}_{j} \right)
+\end{equation}
+The diagonal term of the covariance matrix represents the variance in a given bin and the error $\sigma$ can be derived as
+\begin{equation}
+\label{eq:diag_cov}
+	V_{ii} = \sigma^2_i
+\end{equation}
+
+Since there are multiple sources of error, as detailed in the forthcoming sections, the total covariance matrix is computed by summing the covariance matrix from each error source together, effectively adding the errors in quadrature as follows
+\begin{equation}
+	V^{Total}_{ij} = \sum_{Sources} V_{ij}^{Source} = V_{ij}^{Stat} + V_{ij}^{Flux} +V_{ij}^{Cross\ Section} + ...
+\end{equation}
+The total error is then computed from the total covariance matrix using Eq. \ref{eq:diag_cov}.
+Additionally, the fractional matrix describing the relative error in each bin is computed, allowing for easy and direct comparison across bins of signal and background samples. 
+\begin{equation}
+	V_{ij}^{Frac} = \frac{V_{ij}}{N_i^{CV}N_j^{CV}}
+\end{equation}
 
 \subsection{Signal Uncertainties}
 
