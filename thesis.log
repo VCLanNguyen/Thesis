@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  22 JUN 2024 05:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  27 JUN 2024 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1156,7 +1156,7 @@ Chapter 9.
 [163{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [164
 
 ] [165] [166]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 132.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -1165,26 +1165,259 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [167]
-<Chapter10/Figs/hnl_statistics_error.png, id=136, 433.62pt x 289.08pt>
+<Chapter10/Figs/hnl_statistics_error.png, id=148, 433.62pt x 289.08pt>
 File: Chapter10/Figs/hnl_statistics_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_statistics_error.png>
-Package pdftex.def Info: Chapter10/Figs/hnl_statistics_error.png  used on input line 153.
+Package pdftex.def Info: Chapter10/Figs/hnl_statistics_error.png  used on input line 170.
 (pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
-<Chapter10/Figs/hnl_mistagging_error.png, id=138, 433.62pt x 289.08pt>
+<Chapter10/Figs/hnl_mistagging_error.png, id=150, 433.62pt x 289.08pt>
 File: Chapter10/Figs/hnl_mistagging_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_mistagging_error.png>
-Package pdftex.def Info: Chapter10/Figs/hnl_mistagging_error.png  used on input line 160.
+Package pdftex.def Info: Chapter10/Figs/hnl_mistagging_error.png  used on input line 177.
 (pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
-<Chapter10/Figs/hnl_flux_error.png, id=139, 433.62pt x 289.08pt>
+<Chapter10/Figs/hnl_flux_error.png, id=151, 433.62pt x 289.08pt>
 File: Chapter10/Figs/hnl_flux_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_flux_error.png>
-Package pdftex.def Info: Chapter10/Figs/hnl_flux_error.png  used on input line 167.
+Package pdftex.def Info: Chapter10/Figs/hnl_flux_error.png  used on input line 184.
 (pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
-<Chapter10/Figs/hnl_error.png, id=140, 433.62pt x 433.62pt>
+<Chapter10/Figs/hnl_error.png, id=152, 433.62pt x 433.62pt>
 File: Chapter10/Figs/hnl_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_error.png>
-Package pdftex.def Info: Chapter10/Figs/hnl_error.png  used on input line 179.
+Package pdftex.def Info: Chapter10/Figs/hnl_error.png  used on input line 196.
 (pdftex.def)             Requested size: 224.06544pt x 224.06776pt.
 
 
-LaTeX Warning: Float too large f
+LaTeX Warning: Float too large for page by 4.97531pt on input line 201.
+
+[168] [169 <./Chapter10/Figs/hnl_statistics_error.png> <./Chapter10/Figs/hnl_mistagging_error.png> <./Chapter10/Figs/hnl_flux_error.png> <./Chapter10/Figs/hnl_error.png>] [170]
+<Chapter10/Figs/bkg_statistics_error.png, id=181, 433.62pt x 289.08pt>
+File: Chapter10/Figs/bkg_statistics_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_statistics_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_statistics_error.png  used on input line 266.
+(pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
+<Chapter10/Figs/bkg_flx_error.png, id=182, 433.62pt x 289.08pt>
+File: Chapter10/Figs/bkg_flx_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_flx_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_flx_error.png  used on input line 273.
+(pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
+<Chapter10/Figs/bkg_xsec_error.png, id=183, 433.62pt x 289.08pt>
+File: Chapter10/Figs/bkg_xsec_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_xsec_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_xsec_error.png  used on input line 280.
+(pdftex.def)             Requested size: 221.8226pt x 147.88318pt.
+<Chapter10/Figs/bkg_error.png, id=184, 433.62pt x 433.62pt>
+File: Chapter10/Figs/bkg_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_error.png  used on input line 292.
+(pdftex.def)             Requested size: 224.06544pt x 224.06776pt.
+
+
+LaTeX Warning: Float too large for page by 4.97531pt on input line 297.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 304.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [171] [172 <./Chapter10/Figs/bkg_statistics_error.png> <./Chapter10/Figs/bkg_flx_error.png> <./Chapter10/Figs/bkg_xsec_error.png> <./Chapter10/Figs/bkg_error.png>] [173] [174]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 400.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 400.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 400.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 400.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 400.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 400.
+
+[175]
+<Chapter10/Figs/toy.png, id=240, 433.62pt x 289.08pt>
+File: Chapter10/Figs/toy.png Graphic file (type png)
+<use Chapter10/Figs/toy.png>
+Package pdftex.def Info: Chapter10/Figs/toy.png  used on input line 453.
+(pdftex.def)             Requested size: 291.28235pt x 194.19867pt.
+ [176]
+<Chapter10/Figs/asymtotic.png, id=252, 433.62pt x 289.08pt>
+File: Chapter10/Figs/asymtotic.png Graphic file (type png)
+<use Chapter10/Figs/asymtotic.png>
+Package pdftex.def Info: Chapter10/Figs/asymtotic.png  used on input line 474.
+(pdftex.def)             Requested size: 291.28235pt x 194.19867pt.
+ [177 <./Chapter10/Figs/toy.png>]
+
+LaTeX Warning: Reference `' on page 178 undefined on input line 492.
+
+
+LaTeX Warning: Reference `' on page 178 undefined on input line 492.
+
+
+LaTeX Warning: Reference `' on page 178 undefined on input line 493.
+
+[178 <./Chapter10/Figs/asymtotic.png>]
+Overfull \vbox (9.13782pt too high) detected at line 517
+ []
+
+
+Overfull \hbox (10.43416pt too wide) in paragraph at lines 527--527
+ []\T1/futs/b/n/12 Background 
+ []
+
+
+Overfull \vbox (9.13782pt too high) detected at line 527
+ []
+
+[179]
+<Chapter10/Figs/relaxed_cut.png, id=285, 433.62pt x 289.08pt>
+File: Chapter10/Figs/relaxed_cut.png Graphic file (type png)
+<use Chapter10/Figs/relaxed_cut.png>
+Package pdftex.def Info: Chapter10/Figs/relaxed_cut.png  used on input line 559.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+<Chapter10/Figs/relaxed_cut_edge.png, id=286, 433.62pt x 289.08pt>
+File: Chapter10/Figs/relaxed_cut_edge.png Graphic file (type png)
+<use Chapter10/Figs/relaxed_cut_edge.png>
+Package pdftex.def Info: Chapter10/Figs/relaxed_cut_edge.png  used on input line 560.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 559--561
+[][] [] 
+ []
+
+<Chapter10/Figs/strict_cut.png, id=287, 433.62pt x 289.08pt>
+File: Chapter10/Figs/strict_cut.png Graphic file (type png)
+<use Chapter10/Figs/strict_cut.png>
+Package pdftex.def Info: Chapter10/Figs/strict_cut.png  used on input line 566.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+<Chapter10/Figs/strict_cut_edge.png, id=288, 433.62pt x 289.08pt>
+File: Chapter10/Figs/strict_cut_edge.png Graphic file (type png)
+<use Chapter10/Figs/strict_cut_edge.png>
+Package pdftex.def Info: Chapter10/Figs/strict_cut_edge.png  used on input line 567.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 566--568
+[][] [] 
+ []
+
+<Chapter10/Figs/smeared_truth.png, id=289, 433.62pt x 289.08pt>
+File: Chapter10/Figs/smeared_truth.png Graphic file (type png)
+<use Chapter10/Figs/smeared_truth.png>
+Package pdftex.def Info: Chapter10/Figs/smeared_truth.png  used on input line 573.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+<Chapter10/Figs/smeared_truth_edge.png, id=290, 433.62pt x 289.08pt>
+File: Chapter10/Figs/smeared_truth_edge.png Graphic file (type png)
+<use Chapter10/Figs/smeared_truth_edge.png>
+Package pdftex.def Info: Chapter10/Figs/smeared_truth_edge.png  used on input line 574.
+(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
+
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 573--575
+[][] [] 
+ []
+
+[180] [181 <./Chapter10/Figs/relaxed_cut.png> <./Chapter10/Figs/relaxed_cut_edge.png> <./Chapter10/Figs/strict_cut.png> <./Chapter10/Figs/strict_cut_edge.png> <./Chapter10/Figs/smeared_truth.png> <./Chapter10/Figs/smeared_truth_edge.png>]
+<Chapter10/Figs/sensitivity_strict_loose.png, id=312, 1011.78pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_strict_loose.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_strict_loose.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_loose.png  used on input line 602.
+(pdftex.def)             Requested size: 448.1309pt x 160.0476pt.
+<Chapter10/Figs/sensitivity_full_edge.png, id=315, 1011.78pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_full_edge.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_full_edge.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_full_edge.png  used on input line 612.
+(pdftex.def)             Requested size: 448.1309pt x 160.0476pt.
+ [182 <./Chapter10/Figs/sensitivity_strict_loose.png> <./Chapter10/Figs/sensitivity_full_edge.png>]
+<Chapter10/Figs/sensitivity_strict_loose_truth.png, id=326, 505.89pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_strict_loose_truth.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_strict_loose_truth.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_loose_truth.png  used on input line 632.
+(pdftex.def)             Requested size: 336.09818pt x 240.07419pt.
+ [183 <./Chapter10/Figs/sensitivity_strict_loose_truth.png>]
+<Chapter10/Figs/sensitivity.png, id=335, 722.7pt x 433.62pt>
+File: Chapter10/Figs/sensitivity.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity.png  used on input line 648.
+(pdftex.def)             Requested size: 448.1309pt x 268.88132pt.
+ [184 <./Chapter10/Figs/sensitivity.png>]) [185]pdfTeX warning (ext4): destination with the same identifier (name{page.184}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \cleardoublepage
+                       [184
+
+
+
+]
+Overfull \hbox (55.9117pt too wide) in paragraph at lines 195--195
+[]\T1/futs/m/n/12 (-20) L. Hein-rich et al., \T1/futs/m/it/12 (-20) pyhf: v0.7.6\T1/futs/m/n/12 (-20) , ver-sion 0.7.6, https://github.com/scikit-hep/pyhf/releases/tag/v0.7.6. 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+pdfTeX warning (ext4): destination with the same identifier (name{page.185}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.213 \end{document}
+                     [185
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+ (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D84BD9A16CF9AA274D9BC34AB2CBFCB0;3822.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27459 strings out of 483065
+ 485099 string characters out of 5963550
+ 1238875 words of memory out of 5000000
+ 41608 multiletter control sequences out of 15000+600000
+ 644277 words of font info for 308 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 60i,13n,109p,989b,1421s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8.8} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (27 pages, 1551989 bytes).
+PDF statistics:
+ 420 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 43757 words of extra memory for PDF output out of 51595 (max. 10000000)
+

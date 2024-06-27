@@ -19,6 +19,55 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{asymptotic_test}{article}{}
+      \name{author}{4}{}{%
+        {{hash=66ffd2ca2c2d8aeb563033389eb813ff}{%
+           family={Cowan},
+           familyi={C\bibinitperiod},
+           given={Glen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0003024ea8011848862cbf896b544a27}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e4e0607feb58cac42d6e610ebd8bafd1}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Eilam},
+           giveni={E\bibinitperiod}}}%
+        {{hash=63095f782c12657f0556f148e399c606}{%
+           family={Vitells},
+           familyi={V\bibinitperiod},
+           given={Ofer},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{22db102a3f181de2baabd3c2fb244138}
+      \strng{fullhash}{01410fa503312f8756583d42dcefa458}
+      \strng{bibnamehash}{22db102a3f181de2baabd3c2fb244138}
+      \strng{authorbibnamehash}{22db102a3f181de2baabd3c2fb244138}
+      \strng{authornamehash}{22db102a3f181de2baabd3c2fb244138}
+      \strng{authorfullhash}{01410fa503312f8756583d42dcefa458}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.data-an}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{note}{[Erratum: Eur.Phys.J.C 73, 2501 (2013)]}
+      \field{title}{{Asymptotic formulae for likelihood-based tests of new physics}}
+      \field{volume}{71}
+      \field{year}{2011}
+      \field{pages}{1554}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-011-1554-0
+      \endverb
+      \verb{eprint}
+      \verb 1007.1727
+      \endverb
+    \endentry
     \entry{cowan_stat}{book}{}
       \name{author}{1}{}{%
         {{hash=0c76394213de77276be48170d6745d59}{%
@@ -36,8 +85,8 @@
       \strng{authorbibnamehash}{0c76394213de77276be48170d6745d59}
       \strng{authornamehash}{0c76394213de77276be48170d6745d59}
       \strng{authorfullhash}{0c76394213de77276be48170d6745d59}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780198501558}
@@ -49,6 +98,242 @@
       \endverb
       \verb{url}
       \verb https://books.google.it/books?id=ff8ZyW0nlJAC
+      \endverb
+    \endentry
+    \entry{sbnweight_module}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dc59c81b2a0861514c4c7c9a4cd76612}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={Kirsty},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{f118b0f55cd0d4581ed8ea8c05339999}
+      \strng{fullhash}{f118b0f55cd0d4581ed8ea8c05339999}
+      \strng{bibnamehash}{3070371f66c6eec1e27a9df0e508d116}
+      \strng{authorbibnamehash}{3070371f66c6eec1e27a9df0e508d116}
+      \strng{authornamehash}{f118b0f55cd0d4581ed8ea8c05339999}
+      \strng{authorfullhash}{f118b0f55cd0d4581ed8ea8c05339999}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Visited 26/06/2024)}
+      \field{title}{{SBN Event Weighting module}}
+      \verb{urlraw}
+      \verb https://github.com/SBNSoftware/sbncode/tree/develop/sbncode/SBNEventWeight
+      \endverb
+      \verb{url}
+      \verb https://github.com/SBNSoftware/sbncode/tree/develop/sbncode/SBNEventWeight
+      \endverb
+    \endentry
+    \entry{pyhf}{software}{}
+      \name{author}{3}{}{%
+        {{hash=726ef4e14751301044bec503a5acda1e}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d8e45db8f35fc5b31f234bef76cd40f6}{%
+           family={Feickert},
+           familyi={F\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef5d6f4d60c6b75bde7edcca8698df0e}{%
+           family={Stark},
+           familyi={S\bibinitperiod},
+           given={Giordon},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{fullhash}{1b9fb92f1d43e979062bdc2f7a6548e0}
+      \strng{bibnamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authorbibnamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authornamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authorfullhash}{1b9fb92f1d43e979062bdc2f7a6548e0}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{https://github.com/scikit-hep/pyhf/releases/tag/v0.7.6}
+      \field{title}{{pyhf: v0.7.6}}
+      \field{version}{0.7.6}
+      \verb{doi}
+      \verb 10.5281/zenodo.1169739
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.1169739
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.1169739
+      \endverb
+    \endentry
+    \entry{pyhf_joss}{article}{}
+      \name{author}{4}{}{%
+        {{hash=726ef4e14751301044bec503a5acda1e}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d8e45db8f35fc5b31f234bef76cd40f6}{%
+           family={Feickert},
+           familyi={F\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef5d6f4d60c6b75bde7edcca8698df0e}{%
+           family={Stark},
+           familyi={S\bibinitperiod},
+           given={Giordon},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0003024ea8011848862cbf896b544a27}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Journal}%
+      }
+      \strng{namehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{fullhash}{df4e94e46a2bedfc882a18238472d93d}
+      \strng{bibnamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authorbibnamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authornamehash}{cdf60499d5c8737aec353f373e48598e}
+      \strng{authorfullhash}{df4e94e46a2bedfc882a18238472d93d}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Open Source Software}
+      \field{number}{58}
+      \field{title}{pyhf: pure-Python implementation of HistFactory statistical models}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{2823}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21105/joss.02823
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.21105/joss.02823
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.21105/joss.02823
+      \endverb
+    \endentry
+    \entry{CLs_Read}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4546957c0bdd56958007167adc7c5ae1}{%
+           family={Read},
+           familyi={R\bibinitperiod},
+           given={Alexander\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=82517f0fca932d844556ec35c807c36a}{%
+           family={Whalley},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a41cd02f762a897967d363baf1a68bde}{%
+           family={Lyons},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{fullhash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{bibnamehash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{authorbibnamehash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{authornamehash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{authorfullhash}{4546957c0bdd56958007167adc7c5ae1}
+      \strng{editorbibnamehash}{f152c9a75d2a00da7e01601c263629d7}
+      \strng{editornamehash}{fca7907b0996f15fe08341afc0dd5a3e}
+      \strng{editorfullhash}{fca7907b0996f15fe08341afc0dd5a3e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Phys. G}
+      \field{title}{{Presentation of search results: The $CL_s$ technique}}
+      \field{volume}{28}
+      \field{year}{2002}
+      \field{pages}{2693\bibrangedash 2704}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1088/0954-3899/28/10/313
+      \endverb
+    \endentry
+    \entry{CLs_Junk}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dfd763dcdf90d003a1d151c4f00bf208}{%
+           family={Junk},
+           familyi={J\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \strng{fullhash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \strng{bibnamehash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \strng{authorbibnamehash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \strng{authornamehash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \strng{authorfullhash}{dfd763dcdf90d003a1d151c4f00bf208}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
+      \field{title}{{Confidence level computation for combining searches with small statistics}}
+      \field{volume}{434}
+      \field{year}{1999}
+      \field{pages}{435\bibrangedash 443}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/S0168-9002(99)00498-2
+      \endverb
+      \verb{eprint}
+      \verb hep-ex/9902006
+      \endverb
+    \endentry
+    \entry{BeestonBarlow}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c62ed8fb3bd2ecdda9818afdddd56c52}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={Roger\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9c54d89fdd7c4737481c2908f67c171a}{%
+           family={Beeston},
+           familyi={B\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{562a6142a4aa3d0ec0ae74d1adb714be}
+      \strng{fullhash}{562a6142a4aa3d0ec0ae74d1adb714be}
+      \strng{bibnamehash}{3e514de2fdce437a46fa9ec01b8dcfe4}
+      \strng{authorbibnamehash}{3e514de2fdce437a46fa9ec01b8dcfe4}
+      \strng{authornamehash}{562a6142a4aa3d0ec0ae74d1adb714be}
+      \strng{authorfullhash}{562a6142a4aa3d0ec0ae74d1adb714be}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comput. Phys. Commun.}
+      \field{title}{{Fitting using finite Monte Carlo samples}}
+      \field{volume}{77}
+      \field{year}{1993}
+      \field{pages}{219\bibrangedash 228}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/0010-4655(93)90005-W
       \endverb
     \endentry
   \enddatalist
