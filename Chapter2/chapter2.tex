@@ -25,51 +25,74 @@ Lastly, Section \ref{sec2Previous} summarises the existing sensitivity limits on
 
 %********************************** %First Section  **************************************
 \newpage
-\section{Right-Handed Heavy Neutral States}
+\section{HNL Motivation}
 \label{sec2Overview}
-%Motivation for HNL theory: neutrino oscillation -> right handed Dirac mass term
-The first hints of neutrino oscillation emerged in 1968, when an anomaly in solar neutrino was observed by Davis et al. in the Homestake experiment \cite{Homestake}.
-Subsequent reinforcing results quickly came from Kamiokande \cite{Kamiokande}, SAGE \cite{SAGE} and GALLEX \cite{GALLEX} experiments.
-It was not until 1998 that neutrino oscillation was conclusively measured by the Super Kamiokande collaboration \cite{superK}, followed by confirmation from the SNO collaboration in 2001 \cite{SNO}. 
-This phenomenon of neutrinos oscillating from one flavour to another affirms the existence of non-zero mass for at least two out of the three neutrino flavours.
 
-However, the Standard Model (SM) is incomplete, and currently provides no mass generation for the neutrinos.
-SM neutrinos interact weakly, indicating the existence of left-handed chiral neutrino fields, but their right-handed counterparts still remain absent. 
-Thus, no Dirac mass of neutrinos can be built via the Yukawa coupling of the Higgs to the opposite chirality fields. 
+%Motivation for HNL theory: neutrino oscillation -> right handed Dirac mass term
+%The first hints of neutrino oscillation emerged in 1968, when an anomaly in solar neutrino was observed by Davis et al. in the Homestake experiment \cite{Homestake}.
+%Subsequent reinforcing results quickly came from Kamiokande \cite{Kamiokande}, SAGE \cite{SAGE} and GALLEX \cite{GALLEX} experiments.
+%It was not until 1998 that neutrino oscillation was conclusively measured by the Super Kamiokande collaboration \cite{superK}, followed by confirmation from the SNO collaboration in 2001 \cite{SNO}. 
+
+%However, the Standard Model (SM) is incomplete, and currently provides no mass generation for the neutrinos.
+%SM neutrinos interact weakly, indicating the existence of left-handed chiral neutrino fields, but their right-handed counterparts still remain absent. 
+
+The phenomenon of three flavour neutrino oscillation is well-established.
+Active neutrinos are produced and detected as their flavour states $\nu_\mu$, $\nu_e$ and $\nu_\tau$ and the neutrino oscillation describes the neutrino flavour states changing from one flavour to another as the neutrinos propagate some distances.
+Neutrino oscillation directly implies the existence of non-zero mass for at least two out of the three neutrino states.
+Whilst the Standard Model (SM) of particle physics has proved extremely successful, unfortunately, it currently provides no mechanism for the mass generation of neutrinos.
+The absence of a right-handed chiral partner to the left-handed chiral neutrino means that no Dirac mass term can be built via the Yukawa coupling of the Higgs to the opposite chirality fields.
 
 %RH Mass mechanism i.e. Dirac mass term
-This motivates the introduction of right-handed chiral neutrino fields, enabling the construction of a Dirac mass term for neutrinos through the Yukawa coupling to the Higgs field.
-Using the same recipe as all other SM particles, the Dirac mass term in the neutrino Lagrangian is as follows \cite{Thomson}
+%, enabling the construction of a Dirac mass term for neutrinos through the Yukawa coupling to the Higgs field.
+
+This motivates an introduction of a right-handed neutrino such that the neutrino mass can be constructed using the same recipe as all other SM particles.
+The Dirac mass term in the neutrino Lagrangian after spontaneous symmetry breaking is as follows \cite{Thomson}
 \begin{equation}
-\mathcal{L}_{D} = -m_{D} (\overline{\nu_{R}}\nu_{L} + \overline{\nu_{L}}\nu_{R}) 
+\mathcal{L}_{D} = -m_{D} (\overline{\nu_{L}}\nu_{R} + \overline{\nu_{R}}\nu_{L}) 
 \label{eq:dirac}
 \end{equation}
-where $m_{D} = Yv/\sqrt{2}$ is the Dirac mass, $Y$ is the Yukawa coupling, $v$ is the Higss vacuum expectation value, $\nu_{R}$ and $\nu_{L}$ are the right and left-handed chiral states of the neutrino field.
-
-%Majorana Mechanism
-Due to the neutral nature of the neutrinos, an additional solution to the Eq. \ref{eq:dirac} is available, as proposed by Ettore Majorana in 1937 \cite{Majorana}.
-While the Dirac mass term requires the existence of both left- and right-handed chiral states, the Majorana mass term requires only one chiral state, under the condition that a particle is its own antiparticle.
-As such, the left-handed component can be written in terms of the right-handed component as $\nu^{c}_{R}=C\overline{\nu_{R}}^{T}$, where $C$ is the charge conjugation operator.
-In this case, the Majorana mass term in the neutrino Lagrangian is as follows \cite{Thomson}
+where $m_{D} = Yv/\sqrt{2}$ is the Dirac mass, $Y$ is the Yukawa coupling, $v$ is the Higgs vacuum expectation value, and the subscript $R$ and $L$ denotes the right and left chiral state of the $\nu$ neutrino and $\overline{\nu}$ anti-neutrino field. 
+While the Dirac mass term requires the existence of both left and right-handed chiral states, the Majorana mass term was proposed by Ettore Majorana in 1937 requiring only one chiral state \cite{Majorana}.
+Under the condition that a particle is its own antiparticle, the charge conjugation operator $C$ can be applied to $\nu_R$ such that $\nu^{C}_{R}=C\overline{\nu_{R}}^{T}$, where the resulting $\nu_R^C$ has the correct properties to be used in place of $\nu_L$ in Eq. \ref{eq:dirac} \cite{Kim}.
+The construction of the Majorana state violates the charge conservation and is forbidden for any other SM particle with an exception of neutrinos due to their neutral charges. 
+In this case, the Majorana mass term in the neutrino Lagrangian is as follows \cite{Kim}
 \begin{equation}
-	\mathcal{L}_{M} = -\frac{1}{2}m_{M}(\overline{\nu_{R}}\nu_{R}^{c} + \overline{\nu_{R}^{c}}\nu_{R})
+	\mathcal{L}_{M} = -\frac{1}{2}M(\overline{\nu_{R}^{C}}\nu_{R} + \overline{\nu_{R}}\nu_{R}^{C})
 \end{equation}
-where $m_{M}$ is the hypothesised Majorana mass. 
-The factor of a half is introduced to account for double counting, since the hermitian conjugate is identical.
+where $M$ is the Majorana mass. 
+The factor of a half is introduced to account for double counting since the term $\overline{\nu_R}$ and $\nu^C_R$ are not independent.
 
-%Motivation of large mass
-Thus, this right-handed neutrinos provide a Beyond Standard Model (BSM) mass generation mechanism for active neutrinos via either Dirac or Majorana mass terms.
-Moreover, for having masses $\gg$ eV, the new particles can further explain the extreme light mass of active neutrinos through the See-saw mechanism \cite{nuMass}.
+A right-handed neutral state provides a hypothetical neutrino mass mechanism not only via the Dirac or the Majorana mass term but also via combining both mass terms together.
+A generalised Lagrangian in this case is as follows \cite{Thomson}
+\begin{equation}
+	\mathcal{L}_{DM} = -\frac{1}{2}[m_D\overline{\nu_{L}}\nu_{R} + m_D\overline{\nu_{R}^{C}}\nu_{L}^C + M\overline{\nu_{R}^{C}}\nu_{R}] + h.c.
+\end{equation}
+The Lagrangian presented here allows for the seesaw mechanism to construct the physical masses of active neutrinos assuming the Majorana mass term is much larger than the Dirac mass term, $M \gg m_D$ \cite{Thomson, nuMass}.
+Under the assumption of only two neutrino states for simplification, the seesaw mechanism would give the mass of a left-handed neutrino state $m_{\nu} \approx \frac{m_D^2}{M}$ and a right-handed neutrino state $m_N$ $\approx M$, such that the heaviness of $m_N$ suppresses the physical mass of the active neutrino $m_\nu$.
+Thus, a right-handed heavy neutrino state is a very attractive addition to the SM as an answer to the neutrino mass mechanism, providing an explanation for the extreme lightness of active neutrinos.
 
-%Larger mass than eV neutrino --> Heavy Neutral Lepton
 %HNL characteristisc: no charge, mass mixing, weaker-than-weak
-The neutral nature of the right-handed neutrinos requires all SM charges to be zero, and therefore, they will not interact directly via the strong, electromagnetic, or weak forces.
-The only possible interaction is via mass mixing with active neutrinos \cite{SBNHNL}.
-These weaker-than-weak right-handed particles are often referred in text as \textit{sterile neutrinos}.
-Since their masses are significantly more massive compared to active neutrinos, this also gains them the name \textit{Heavy Neutral Leptons} (HNLs), which will be used in this thesis.
+The neutral nature of right-handed neutrinos requires all SM charges to be zero implying that they do not interact directly via the strong, electromagnetic, or weak forces.
+These weaker-than-weak right-handed particles are often referred to as \textit{sterile neutrinos}.
+The only direct coupling to the new sterile state is neutrino-Higgs interaction.
+This leads to mixing-mediated interactions with SM gauge bosons, allowing them to be produced and decay via SM gauge interactions with a rate suppressed by the mass mixing element \cite{SBNHNL}.
+The mass range of sterile neutrinos can span over many orders of magnitudes, and the number of flavour or mass states is unconstrained.
+
+In the mass range of the order $\mathcal{O}$(1) eV, they are known as \textit{light} sterile neutrinos and proposed to participate in oscillation with active neutrinos.
+Over a short baseline distance, the addition of a single light sterile neutrino to neutrino oscillation might enhance or reduce the number of observed neutrino interactions for a given channel. 
+Particularly, this model can explain the anomalies observed by the LSND and MiniBooNE experiments, where an excess of $\nu_e$ and $\overline{\nu}_e$ interactions was measured at low energy \cite{HNLWhitePaper}. 
+
+%dedoherence stuff
+In the mass range $> \mathcal{O}(10)$ eV, sterile neutrinos are now considered \textit{heavy} since their masses are significantly more massive compared to active neutrinos.
+This gains them the name \textit{Heavy Neutral Leptons} (HNLs).
+HNLs do not participate in oscillation with active neutrinos due to coherence loss \cite{SBNHNL}.
+As a consequence of being heavier than active neutrinos, the wave packet of HNLs moves much slower compared to that of active neutrinos, and immediately undergoes propagation decoherence.
+Instead, HNLs are expected to travel over a some distances before decaying into SM observables.
 
 %PMNS matrix mixing
-From a generic phenomenological approach, HNLs can be added to the SM by extending the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix.
+Different theoretical models of HNLs have been developed, and a comprehensive review can be found in Ref. \cite{HNLWhitePaper}. 
+In the search for HNLs presented here, the existence of HNLs will be explored in a minimal way by assuming an addition of a single HNL to the SM.  
+From a generic phenomenological approach, a HNL can be added to the SM by simply extending the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix.
 The PMNS matrix, describing the mixing of the SM neutrino flavour eigenstate $\nu_{\alpha}$ ($\alpha=e,\mu,\tau$), and the mass eigenstate $\nu_{i}$ ($i=1,2,3$), is as follows 
 \begin{equation}
 	U_{PMNS} =
@@ -79,8 +102,8 @@ The PMNS matrix, describing the mixing of the SM neutrino flavour eigenstate $\n
 		U_{\tau1} & U_{\tau2} & U_{\tau3}\\
 	\end{pmatrix}
 \end{equation}
-The flavour eigenstate $\nu_{\alpha}$ undergo weak interaction, whilst the mass eigenstate $\nu_{i}$ describe the neutrino propagation in space and time.
-For an addition of a single HNL with mass $m_{N}$, the PMNS matrix can be extended to describe the mass mixing between SM neutrinos and the new heavy eigenstate $N$ as follows 
+The flavour eigenstate $\nu_{\alpha}$ undergoes weak interaction, whilst the mass eigenstate $\nu_{i}$ describes the neutrino propagation in space and time.
+For an addition of a single right-handed neutrino with mass $m_{N}$, the PMNS matrix can be extended to describe the mass mixing between SM neutrinos and the new flavour eigenstate $N$ as follows 
 \begin{equation}
 	U_{PMNS}^{Extended} =
 	\begin{pmatrix}
@@ -90,20 +113,17 @@ For an addition of a single HNL with mass $m_{N}$, the PMNS matrix can be extend
 		U_{N1} & U_{N2} & U_{N3} & U_{N4}\\
 	\end{pmatrix}
 \end{equation}
-where the index 4 is reserved for the newly added $N$.
-Then, the flavour eigenstate  $\nu_{\alpha}$ of SM neutrinos can be written as the linear combination of the mass eigenstate $\nu_{i}$ and the HNL eigenstate $N$ as follows 
+where the index 4 is reserved as a new mass eigenstate.
+Then, the flavour eigenstate  $\nu_{\alpha}$ of SM neutrinos can be written as the linear combination of the mass eigenstate $\nu_{i}$ and the HNL flavour eigenstate $N$ as follows 
 \begin{equation}
-	\nu_{\alpha}=\sum U_{\alpha i}\nu_{i} + U_{\alpha 4}N
-\end{equation}
-where the mixing angles $U_{\alpha i }$ ($\alpha=e,\mu,\tau$ and $i=1,2,3$) are elements of the SM PMNS matrix, and the mixing angles $U_{\alpha 4}$ are the extension.
+	\nu_{\alpha}=\sum_i U_{\alpha i}\nu_{i} + U_{\alpha 4}N
+_i\end{equation}
+where the mixing angles $U_{\alpha i }$ ($\alpha=e,\mu,\tau$ and $i=1,2,3$) are elements of the SM PMNS matrix, and the mixing angle $U_{\alpha 4}$ are the extension.
 
 %Available mass range 
-The mass range of HNLs can span over many orders of magnitudes, and the number of HNLs are unconstrained.
-Different theoretical models of HNLs have been developed, and a comprehensive review has been discussed (See Ref. \cite{HNLWhitePaper}). 
-In this thesis, the existence of HNLs will be explored in a minimal way, assuming an addition of a single HNL to the SM.  
-The HNL mass range of interest must be able to be produced from the Booster Neutrino Beam (BNB) and directly detected by the Short-Baseline Near Detector (SBND), which limits the probable mass range to $\mathcal{O}$(100 MeV).
-At this mass range over a baseline distance of 110 m, oscillation with active neutrinos results in coherence loss \cite{SBNHNL}.
-Instead, HNLs are expected to travel over a long distance before decaying into SM observables via mass mixing.
+%The HNL mass range of interest must be able to be produced from the Booster Neutrino Beam (BNB) and directly detected by the Short-Baseline Near Detector (SBND), which limits the probable mass range to $\mathcal{O}$(100 MeV).
+%At this mass range over a baseline distance of 110 m, oscillation with active neutrinos results in coherence loss \cite{SBNHNL}.
+%Instead, HNLs are expected to travel over a long distance before decaying into SM observables via mass mixing.
 
 %This thesis: simple phenomenological model
 %Example model: minininal neutrino extension of the SM
@@ -113,15 +133,15 @@ Instead, HNLs are expected to travel over a long distance before decaying into S
 %The two heavier ones N$_{1,2}$ in the mass range of $\mathcal{O}$(10 GeV) and $\mathcal{O}$(100 MeV) can generate the mass of active neutrinos via the See-saw mechanism, whilst the third and lightest N$_{3}$ with keV mass can be a viable dark matter candidate.
 %$\nu$MSM also accounts for the currently observed matter-antimatter asymmetry for having the heavy HNLs oscillating in a charge and parity violating manner during the early universe, dubbed leptogenesis via neutrino oscillations. 
  
-\section{Production}
+\section{HNL Production}
 \label{sec2Production}
 %Decay mechanism: replace SM with a HNL -> mixing angle
-In any active neutrino producing processes, HNLs can be produced in place of neutrinos with a rate proportional to $|U_{\alpha4}|^{2}$, if kinematically allowed. 
-This implies that HNLs can be produced via meson decays, and therefore they can be probed experimentally.
-Particularly, the BNB produces an abundance of mesons, primarily consisting of charged kaons and charged pions \cite{BNBFlux}, allowing for HNL searches.
-An example diagram of a two-body decay of a charged kaon is depicted in Fig. \ref{fig:kaonDiagram}, illustrating the production of a SM neutrino and the production of a HNL mediated by $|U_{\alpha4}|^{2}$.
+In any SM neutrino production processes, HNLs can be produced in place of neutrinos with a rate suppressed by the mixing angle $|U_{\alpha4}|^{2}$, if kinematically allowed. 
+Fig. \ref{fig:kaonDiagram} illustrates such substitution for a two-body decay of a charged kaon producing a $\nu_{\mu}$ and a HNL with $L = +1$ mediated by $|U_{\alpha4}|^{2}$. 
+This implies that HNLs can be probed from the Booster Neutrino Beam (BNB), which is an abundance source of mesons \cite{BNBFlux}.
+Since the BNB is primarily made up of positively charged mesons, the focus will be on the parent meson $K^+$ and $\pi^+$ for simplicity.  
 
-\begin{figure}[htbp!]
+\begin{figure}[ht!]
 %\hfill
 \begin{subfigure}[h]{0.4\linewidth}
 \centering    
@@ -136,52 +156,54 @@ An example diagram of a two-body decay of a charged kaon is depicted in Fig. \re
 \end{subfigure}%
 %\hfill
 \caption[kaonDiagram]{
-Diagrams of the production of a SM neutrino (a) and the production of a HNL mediated by $|U_{\mu4}|^{2}$ (b) from a two-body decay of a charged kaon.
+	Feynman diagrams of (a) $K^+ \rightarrow \mu^+ + \nu_{\mu}$ and (b) $K^+ \rightarrow \mu^+ + N$ \cite{DavidePhD}.
 }\label{fig:kaonDiagram}
 \end{figure}
 
-%HNL from BNB beam
-In general, the branching ratio $Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}N)$ of a two-body decay of a charged meson $\text{m}^{+}$ into a lepton $l^{+}_{\alpha}$ ($\alpha=e,\mu,\tau$) and a HNL $N$ can be expressed in terms of the analogous branching ratio into a SM neutrino as follows \cite{HNLKelly}
-
+In general, the branching ratio $Br(m^+\rightarrow l^{+}_{\alpha}N)$ of a two-body decay of a charged meson $m^+$ into a lepton $l^{+}_{\alpha}$ ($\alpha=e,\mu,\tau$) and a HNL $N$ can be expressed in terms of the analogous branching ratio into a SM neutrino as follows \cite{HNLKelly}
 \begin{equation}
 	\label{eq:kaon_decay_hnl}
-	Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}N) = Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})\left(\frac{|U_{\alpha 4}|^{2}}{1 - |U_{\alpha 4}|^{2}}\right)\rho_{N}\left(\frac{m^{2}_{l_{\alpha}}}{m^{2}_{\text{m}^{+}}}, \frac{m^{2}_{N}}{m^{2}_{\text{m}^{+}}} \right) 
+	Br(m^+\rightarrow l^{+}_{\alpha}N) = Br(m^+\rightarrow l^{+}_{\alpha}\nu_{\alpha})\left(\frac{|U_{\alpha 4}|^{2}}{1 - |U_{\alpha 4}|^{2}}\right)\rho_{N}\left(\frac{m^{2}_{l_{\alpha}}}{m^{2}_{m^+}}, \frac{m^{2}_{N}}{m^{2}_{m^+}} \right) 
 \end{equation}
-where $Br(\text{m}^{+}\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the branching ratio of a charged meson into a lepton and a SM neutrino, $\rho_{N}$ is a kinematic factor accounting for the available phase space of the daughter HNL in the decay, $m_{\text{m}^{+}}$ is the mass of the charged meson, $m_{l_{\alpha}}$ is the mass of the daughter lepton and $m_{N}$ is the mass of the daughter HNL.
-The complete expansion of the function $\rho_{N}$ is as follows \cite{HNLKelly}
+where $Br(m^+\rightarrow l^{+}_{\alpha}\nu_{\alpha})$ is the branching ratio of the charged lepton $m^+$ decaying into a lepton $l^+_{\alpha}$ and a SM neutrino $\nu_{\alpha}$, $m_{m^+}$ is the mass of the charged meson, $m_{l_{\alpha}}$ is the mass of the daughter lepton and $m_{N}$ is the mass of the daughter HNL.
+The kinematic factor $\rho_{N}$ accounts for the available phase space of the daughter HNL in the decay and has the complete expansion as follows \cite{HNLKelly}
 
 \begin{equation}
 	\rho_{N}(x,y) = \frac{(x+y-(x-y)^{2})\sqrt{1+x^{2}+y^{2}-2(x+y+xy)}}{x(1-x)^{2}}
 \label{eq:KinematicsFactor}
 \end{equation}
 
-%TODO: Remove s in kinematic
+Fig. \ref{fig:KinematicsFactor} shows the kinematic factor $\rho_N$ of the HNL production compared to the analogous SM neutrino production as a function of the HNL mass.
+Four HNL production channels that are probable at the BNB are shown: (1) $K^+ \rightarrow Ne^+$ in the dashed red line, (2) $K^+ \rightarrow N\mu^+$ in the solid pink line, (3) $\pi^+ \rightarrow Ne^+$ in the dashed dark blue line and (4) $\pi^+ \rightarrow N\mu^+$ in the solid light blue line.  
+The kinematic factor for each channel is constrained by the available mass after the two-body decay of the parent meson, and the upper limit of the HNL mass is $m_{N} = m_{m^+} - m_{l_{\alpha}}$ ($\alpha=e,\mu$) as shown by the vertical grey lines.
+Here it can be seen that the HNL production from $\pi^+$ decays limits the HNL mass to $< 140$ MeV while the HNL production from $K^+$ decays allows for the HNL mass up to 495 MeV. 
+Thus, the search for HNLs presented here focuses on the HNL production channel from $K^+$ to probe mass as high as 495 MeV.
+
+%Given the smaller masses of both a charged pion ($m_{\pi} = 140 $ MeV) and a charged kaon ($m_{K} = 494 $ MeV) compared to a tau ($m_{\tau}=1777 $ MeV), taus cannot be produced from meson decays in the BNB.
+%Consequently, only electrons and muons are produced, limiting the flavours in the mixing angle $|U_{\alpha4}|^{2}$ to $\alpha = e, \mu$.
+
+%Helicity Unsuppression i.e. K ->Ne and K->Nmu
+
+%Enahancement factor??
+
+Furthermore, the magnitude of the kinematic factor of the HNL production shown in Fig. \ref{fig:KinematicsFactor} is larger than 1 as compared to the analogous SM production.
+This because of the helicity suppression observed in mesons decaying into a SM neutrino having an opposite effect for mesons decaying into a HNL \cite{HNLKelly}.
+Instead, it is helicity \textit{enhancement} due to HNLs being massive.
+For the HNL production channel interested in this work, a significant enhancement is evident for the production rate of $K^+\rightarrow e^+ N$ being increased by a factor of $10^{5}$.
+On the other hand, the kinematic factor of $K^+ \rightarrow \mu^+ N$ unfortunately only varies between 1.5 and 4, implying a negligible enhancement to the production rate. 
+
+%The kinematic factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, which also accounts for this enhancement, is plotted against the mass of HNLs in Fig. \ref{fig:KinematicsFactor}.
+
 \begin{figure}[t] 
 \centering    
 \includegraphics[width=1.0\textwidth]{kinematics_factor}
 \caption[KinematicsFactor]{
-The kinematic factor of HNL production rate from meson decays compared to analogous SM neutrino production, given by function $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}.
-Dashed lines depict the enhancement associated with production from mesons via the mixing angle $|U_{e4}|^{2}$, whilst solid lines depict the enhancement associated with the mixing angle $|U_{\mu4}|^{2}$.
-The vertical dashed grey lines indicate the mass limit on HNLs from each mixing angle.
-Highlighted in pink with a thicker line width is the main production channel of HNLs studied in this thesis.
+Plot showing the kinematic factor of the HNL production from meson decays as compared to the analogous SM neutrino production.
 }
 \label{fig:KinematicsFactor}
 \end{figure}
 
-The available phase space of HNLs is constrained by the mass of the parent meson.
-Given the smaller masses of both a charged pion ($m_{\pi} = 140 $ MeV) and a charged kaon ($m_{K} = 494 $ MeV) compared to a tau ($m_{\tau}=1777 $ MeV), taus cannot be produced from meson decays in the BNB.
-Consequently, only electrons and muons are produced, limiting the flavours in the mixing angle $|U_{\alpha4}|^{2}$ to $\alpha = e, \mu$.
-The upper limit of the probable mass of a HNL from a two-body decay of a meson can thus be expressed as $m_{N} = m_{\text{m}^{+}} - m_{l_{\alpha}}$ ($\alpha=e,\mu$).
-
-%Helicity Unsuppression i.e. K ->Ne and K->Nmu
-%Enahancement factor??
-Furthermore, the helicity suppression observed in mesons decaying into a SM neutrino has minimal effect in the same case of HNLs due to their significant mass \cite{HNLKelly}.
-The contribution from helicity suppression in HNL production can be greater than one compared to neutrino production, signifying a helicity \textit{enhancement} instead.
-The kinematic factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, which also accounts for this enhancement, is plotted against the mass of HNLs in Fig. \ref{fig:KinematicsFactor}.
-Significant enhancement is evident in the mixing angle $|U_{e4}|^{2}$, where the rate of $K^{+}\rightarrow e^{+}N$ is enhanced by a factor of $10^{5}$ and the rate of $\pi^{+}\rightarrow e^{+}N$ is enhanced by a factor of $10^{4}$.
-Regarding the mixing angle $|U_{\mu4}|^{2}$, the kinematic factor for the $K^{+}\rightarrow \mu^{+}N$ channel varies between 1.5 and 4, while staying flat at 1 for the $\pi^{+}\rightarrow \mu^{+}N$ channel.
-
-\section{Decay}
+\section{HNL Decay}
 \label{sec2Decay}
 
 %DIF with coupling
@@ -280,7 +302,7 @@ The angular distribution for the two charge conjugations ($\nu\pi^{0}$ and $\bar
 As the SBND is unable to detect the daughter neutrino, and therefore the observed distribution is the combined isotropic distribution. 
 Here, the assumption is that HNLs are Majorana particles, and the limits in the Dirac case will also be derived.
 
-\section{Previous Experimental Searches}
+\section{Previous Experimental Searches For HNLs}
 \label{sec2Previous}
 
 %Number of fermion families = Z boson decay for LH neutrinos, RH neutrinos is not constrained
@@ -350,6 +372,7 @@ Recently, modern neutrino oscillation experiments with enhanced resolution have 
 For $|U_{\mu4}|^{2}$ within the mass range of 0--245 MeV, the most competitive limits have been set by the following experiments.
 
 \begin{coloritemize}
+%TODO: dispute?
 \item The CERN \textbf{PS191} experiment in 1984 utilised an exposure of 19.2 GeV protons on a beryllium target, generating $10^{19}$ Proton On Target (POT).
 The detector was positioned at 128 m from the target at an off-axis angle of $2.3^{\circ}$ with respect to the beam direction.
 It was designed specifically to search for HNLs by maximising the signal rate while minimising the background rate.
