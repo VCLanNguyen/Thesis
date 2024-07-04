@@ -1278,6 +1278,43 @@
       \verb hep-ex/9908011
       \endverb
     \endentry
+    \entry{t2k}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=87ca4e44d6c1beeda93993a24d605806}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{fullhash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{bibnamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authorbibnamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authornamehash}{98b84219bd20ba283086d9d7219006ed}
+      \strng{authorfullhash}{98b84219bd20ba283086d9d7219006ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{T2K}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{number}{5}
+      \field{title}{{Search for heavy neutrinos with the T2K near detector ND280}}
+      \field{volume}{100}
+      \field{year}{2019}
+      \field{pages}{052006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.100.052006
+      \endverb
+      \verb{eprint}
+      \verb 1902.07598
+      \endverb
+    \endentry
     \entry{uboone1}{article}{}
       \true{moreauthor}
       \true{morelabelname}
