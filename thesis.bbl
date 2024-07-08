@@ -2839,6 +2839,44 @@
       \verb https://dx.doi.org/10.1088/1748-0221/15/02/P02007
       \endverb
     \endentry
+    \entry{uboone_michel}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=c2d132c0375addbcc763cb3fe1874692}{%
+           family={Acciarri},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ba87cf330a684a777011657033fd39c}
+      \strng{fullhash}{2ba87cf330a684a777011657033fd39c}
+      \strng{bibnamehash}{2ba87cf330a684a777011657033fd39c}
+      \strng{authorbibnamehash}{2ba87cf330a684a777011657033fd39c}
+      \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
+      \strng{authorfullhash}{2ba87cf330a684a777011657033fd39c}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{MicroBooNE}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JINST}
+      \field{number}{09}
+      \field{title}{{Michel Electron Reconstruction Using Cosmic-Ray Data from the MicroBooNE LArTPC}}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{P09014}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/12/09/P09014
+      \endverb
+      \verb{eprint}
+      \verb 1704.02927
+      \endverb
+    \endentry
     \entry{Lariat}{article}{}
       \name{author}{63}{}{%
         {{hash=abd2dcd3db85df6a9eba29b8d8f7bcfa}{%
@@ -3346,75 +3384,6 @@
       \verb 10.1143/JJAP.41.1538
       \endverb
     \endentry
-    \entry{ion_e}{article}{}
-      \name{author}{7}{}{%
-        {{hash=5749130ceb4583275f0f7846c5b1888d}{%
-           family={Miyajima},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=132b7538c98165f9376c9de0f2f3094d}{%
-           family={Takahashi},
-           familyi={T\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=3daa8d4c121720bbcf00a0441ab89ef0}{%
-           family={Konno},
-           familyi={K\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6be45a554a7bbcf7ec32bd5e092b1180}{%
-           family={Hamada},
-           familyi={H\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=024505ce9fb5250b1b20c44945218196}{%
-           family={Kubota},
-           familyi={K\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=49b87255b77ab54300ed9f81cbd2d931}{%
-           family={Shibamura},
-           familyi={S\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=a032d5b302d25ad5aacc98cfb247c12b}{%
-           family={Doke},
-           familyi={D\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{b4b273dfc465fc255d04aad44966f1a7}
-      \strng{fullhash}{63df1b13b41a44ac6540c4c5ee5871df}
-      \strng{bibnamehash}{b4b273dfc465fc255d04aad44966f1a7}
-      \strng{authorbibnamehash}{b4b273dfc465fc255d04aad44966f1a7}
-      \strng{authornamehash}{b4b273dfc465fc255d04aad44966f1a7}
-      \strng{authorfullhash}{63df1b13b41a44ac6540c4c5ee5871df}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{3}
-      \field{journaltitle}{Phys. Rev. A}
-      \field{month}{3}
-      \field{title}{Average energy expended per ion pair in liquid argon}
-      \field{volume}{9}
-      \field{year}{1974}
-      \field{pages}{1438\bibrangedash 1443}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1103/PhysRevA.9.1438
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevA.9.1438
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevA.9.1438
-      \endverb
-    \endentry
     \entry{argoneut_recomb}{article}{}
       \name{author}{32}{}{%
         {{hash=c2d132c0375addbcc763cb3fe1874692}{%
@@ -3584,9 +3553,9 @@
       \strng{authorbibnamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{a66f8987273641594b5e08a2b9e152c0}
-      \field{extraname}{4}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraname}{5}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Instrumentation}
@@ -4674,6 +4643,7 @@
       \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
       \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
       \strng{authorfullhash}{1346b8b506372e8abec28b99260e5edb}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
@@ -9718,8 +9688,8 @@
       \strng{authornamehash}{b3dc6ee926f186e44c239260a655f17b}
       \strng{authorfullhash}{9a82aaefb4ddeb0a32b80f3d76c0e5e7}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Instrumentation}
@@ -10039,6 +10009,37 @@
       \verb 1511.01563
       \endverb
     \endentry
+    \entry{sbnd_pds_paper}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{SBND}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{{Scintillation Light in SBND: Simulation, Reconstruction, and Expected Performance of the Photon Detection System}}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2406.07514
+      \endverb
+    \endentry
     \entry{rayleigh50}{article}{}
       \name{author}{2}{}{%
         {{hash=8aecbb141cfdee287fcfbdf587424e81}{%
@@ -10093,8 +10094,8 @@
       \strng{authorbibnamehash}{bf6a5bf85407183413750a126d29429b}
       \strng{authornamehash}{bf6a5bf85407183413750a126d29429b}
       \strng{authorfullhash}{bf6a5bf85407183413750a126d29429b}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.ins-det}
@@ -10153,8 +10154,8 @@
       \strng{authornamehash}{e89d2ab1bd03d467c446ec1cde3e573f}
       \strng{authorfullhash}{240ede8cff5b93cb122294f143588129}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.ins-det}
@@ -10228,8 +10229,8 @@
       \strng{authornamehash}{e89d2ab1bd03d467c446ec1cde3e573f}
       \strng{authorfullhash}{8c99ec10ba67f473a52502c368f68bd5}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.ins-det}
@@ -10263,8 +10264,8 @@
       \strng{authorbibnamehash}{007d272473ef7de2e17e7f450f1f5c32}
       \strng{authornamehash}{007d272473ef7de2e17e7f450f1f5c32}
       \strng{authorfullhash}{007d272473ef7de2e17e7f450f1f5c32}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{ArDM}
@@ -10281,51 +10282,6 @@
       \endverb
       \verb{eprint}
       \verb 1611.02481
-      \endverb
-    \endentry
-    \entry{lar_index}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fdbd4b6ea2fe5a869c5fd7142aa31d8f}{%
-           family={Teague},
-           familyi={T\bibinitperiod},
-           given={R.\bibnamedelimi K.},
-           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=dfe69722bab70e8a654de7caa4df4e24}{%
-           family={Pings},
-           familyi={P\bibinitperiod},
-           given={C.\bibnamedelimi J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{361b1cb0e5fe78fb0d7549b1266cd080}
-      \strng{fullhash}{361b1cb0e5fe78fb0d7549b1266cd080}
-      \strng{bibnamehash}{31a2f5d10c8dd99c57331566f96dfbcf}
-      \strng{authorbibnamehash}{31a2f5d10c8dd99c57331566f96dfbcf}
-      \strng{authornamehash}{361b1cb0e5fe78fb0d7549b1266cd080}
-      \strng{authorfullhash}{361b1cb0e5fe78fb0d7549b1266cd080}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0021-9606}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{09}
-      \field{number}{11}
-      \field{title}{{Refractive Index and the Lorentz–Lorenz Function for Gaseous and Liquid Argon, Including a Study of the Coexistence Curve near the Critical State}}
-      \field{volume}{48}
-      \field{year}{2003}
-      \field{pages}{4973\bibrangedash 4984}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1063/1.1668164
-      \endverb
-      \verb{eprint}
-      \verb https://pubs.aip.org/aip/jcp/article-pdf/48/11/4973/11095322/4973\_1\_online.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/1.1668164
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/1.1668164
       \endverb
     \endentry
     \entry{PatrickPhD}{thesis}{}
@@ -10353,50 +10309,6 @@
       \field{type}{phdthesis}
       \field{year}{2022}
     \endentry
-    \entry{light_yield_Diego}{article}{}
-      \name{author}{2}{}{%
-        {{hash=22395410b94cbb6d9731e60eb82ae7d3}{%
-           family={Garcia-Gamez},
-           familyi={G\bibinithyphendelim G\bibinitperiod},
-           given={Diego},
-           giveni={D\bibinitperiod}}}%
-        {{hash=31f2d09f0cdc5d609ec2938985da181f}{%
-           family={SBND\bibnamedelima Collaboration},
-           familyi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
-           prefix={for\bibnamedelima the},
-           prefixi={f\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{1b59d3e5f95209ee171767eaf82dda2d}
-      \strng{fullhash}{1b59d3e5f95209ee171767eaf82dda2d}
-      \strng{bibnamehash}{646f4c2ac98deb722292e54b50cf18a0}
-      \strng{authorbibnamehash}{646f4c2ac98deb722292e54b50cf18a0}
-      \strng{authornamehash}{1b59d3e5f95209ee171767eaf82dda2d}
-      \strng{authorfullhash}{1b59d3e5f95209ee171767eaf82dda2d}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics: Conference Series}
-      \field{month}{9}
-      \field{number}{1}
-      \field{title}{{Light Detection System simulations for SBND}}
-      \field{volume}{888}
-      \field{year}{2017}
-      \field{pages}{012094}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/888/1/012094
-      \endverb
-      \verb{urlraw}
-      \verb https://dx.doi.org/10.1088/1742-6596/888/1/012094
-      \endverb
-      \verb{url}
-      \verb https://dx.doi.org/10.1088/1742-6596/888/1/012094
-      \endverb
-    \endentry
     \entry{pmt_qe}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -10413,7 +10325,7 @@
       \strng{authorbibnamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{2ba87cf330a684a777011657033fd39c}
-      \field{extraname}{5}
+      \field{extraname}{6}
       \field{sortinit}{6}
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
