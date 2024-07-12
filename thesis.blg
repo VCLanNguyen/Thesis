@@ -1,10 +1,29 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[58] biber:322> INFO - === Thu Jul 11, 2024, 19:29:57
-[68] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[119] Biber.pm:943> INFO - Found 28 citekeys in bib section 0
-[129] Biber.pm:4256> INFO - Processing section 0
-[129] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
-[129] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
-[136] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
-[144] bibtex.pm:1653> INFO - LaTeX decoding ...
+[57] biber:322> INFO - === Thu Jul 11, 2024, 23:31:42
+[67] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[122] Biber.pm:943> INFO - Found 28 citekeys in bib section 0
+[132] Biber.pm:4256> INFO - Processing section 0
+[132] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
+[132] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
+[140] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
+[148] bibtex.pm:1653> INFO - LaTeX decoding ...
+[327] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
+[329] Utils.pm:293> WARN - Possible typo (case mismatch) between datasource keys: 'superk' and 'superK' in file 'References/references.bib'
+[367] Utils.pm:293> WARN - month field 'Nov' in entry 'LSND_anomaly' is not an integer - this will probably not sort properly.
+[407] Utils.pm:293> WARN - month field 'Nov' in entry 'Miniboone_anomaly' is not an integer - this will probably not sort properly.
+[418] Utils.pm:293> WARN - month field 'Apr' in entry 'reactor_anomaly_1' is not an integer - this will probably not sort properly.
+[420] Utils.pm:293> WARN - month field 'Aug' in entry 'reactor_anomaly_2' is not an integer - this will probably not sort properly.
+[491] Utils.pm:293> WARN - month field 'Nov' in entry 'LightDarkMatter' is not an integer - this will probably not sort properly.
+[500] Utils.pm:293> WARN - month field 'Dec' in entry 'DarkNeutrinoLEE' is not an integer - this will probably not sort properly.
+[506] Utils.pm:293> WARN - month field 'jun' in entry 'SBND_Wires' is not an integer - this will probably not sort properly.
+[755] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBMiniBooNE' is not an integer - this will probably not sort properly.
+[813] Utils.pm:293> WARN - month field 'Jul' in entry 'SciBooNE' is not an integer - this will probably not sort properly.
+[817] Utils.pm:293> WARN - month field 'May' in entry 'kaonDecayNu' is not an integer - this will probably not sort properly.
+[846] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[846] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[846] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[846] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[869] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1068] bbl.pm:755> INFO - Output to thesis.bbl
+[1068] Biber.pm:128> INFO - WARNINGS: 11

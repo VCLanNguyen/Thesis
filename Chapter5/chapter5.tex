@@ -16,18 +16,18 @@
 %********************************** %Opening  **************************************
 
 %Modern physics experiments and MC
-Many modern particle physics experiments heavily rely on simulations to study physics capabilities of the detector, to develop physics analysis tools as well as to relate experimental data to an underlying theoretical model they attempt to probe.
+Many modern particle physics experiments heavily rely on simulations to study the physics capabilities of the detector, to develop physics analysis tools as well as to relate experimental data to an underlying theoretical model they attempt to probe.  
 The most common technique in simulation is Monte Carlo (MC), by random sampling from probability density functions (PFDs).
-PDFs can be modelled from theories, or driven from experimental data or a combination of both.
-Simulation is particularly useful for an experiment like SBND in the early stage of development where the detector is not yet operational to record data.
-The search for Heavy Neutral Leptons (HNLs) at SBND presented in this thesis employs simulated MC samples mimicking data. 
+PDFs can be modelled from theories, driven from experimental data or a combination of both.
+Simulation is beneficial for an experiment like SBND in the early stage of development where the detector is not yet operational to record data.
+The search for Heavy Neutral Leptons (HNLs) at SBND presented in this thesis employs simulated MC samples mimicking data.                                 
 This enables an exploration of the detector physics capabilities in the regime of physics beyond the Standard Model.
 %, given that the detector timing resolution can achieve nanosecond resolution.
 
 The following chapter provides a detailed description of the simulation framework of SBND to output simulated products that ideally represent real data.
 The chapter begins with an overview of the framework in Sec. \ref{sec:overview_sim}.
 Following that, Sec. \ref{sec:gen_mevprtl} includes details of the generator employed to generate a signal event of HNLs and Sec. \ref{sec:gen_sm} provides the summary of the generators of SM neutrinos and cosmic muons.
-Sec. \ref{sec:gen_response} covers the simulation of energy deposition as particles propagate through the detector, and the detector response to the deposited energy.
+Sec. \ref{sec:gen_response} covers the simulation of energy deposition as particles propagate through the detector and the detector response to the deposited energy.
 Finally, some concluding remarks are provided in Sec. \ref{sec:sim_concluding_remarks}.
 
 \newpage
@@ -66,7 +66,7 @@ Overview of the simulation framework of the SBND detector.
 \label{sec:gen_mevprtl}
 
 %MeVPrtl Workflow
-BSM particles are generated using a generator called MeVPrtl, which was developed as a joint efforts by collaborators from both ICARUS and SBND experiments.
+BSM particles are generated using a generator called MeVPrtl, which was developed as a joint effort by collaborators from both ICARUS and SBND experiments.
 There are several BSM models implemented in the MeVPrtl generator, including HNLs, Higgs portal scalars \cite{higgs_scalar} and heavy QCD axions \cite{qcd_axion}.
 It is a modular generator, allowing for easy adaptations for different beam sources and detectors, as well as a direct interface with the existing LArSoft framework.
 The workflow of the MeVPrtl is broken down into 4 stages, as illustrated in Fig. \ref{fig:MeVPrtl_Workflow}.
@@ -95,7 +95,7 @@ The probability of enforcing the detector intersection is also computed.
 Example angular distributions in the lab frame of parent kaons and HNLs that arrive at the SBND detector are shown in Fig. \ref{fig:kaon_hnl_angle2beam}.
 Fig. \ref{fig:kaon_angle2beam} shows the angle to the beam direction of 7 different kaon parents having energies peaking at approximately $0.5\sim1$ GeV, each of a different colour dashed line.
 The resulting HNL of mass 240 MeV from each kaon is shown in Fig. \ref{fig:hnl_angle2beam}, in the same colour dashed line as the parent kaon.
-Here, it can be seen that the angles to the beam direction of HNLs is very small as all the lines overlap within $ < 5^\circ$.
+Here, it can be seen that the angles to the beam direction of HNLs are very small as all the lines overlap within $ < 5^\circ$.
 This demonstrates that the acceptance angle of the HNLs to hit the SBND detector is very collimated, such that only very forward-going HNLs are most likely to intersect the detector.
 
 \begin{figure}[htbp!]
@@ -123,12 +123,12 @@ The resulting fluxes of HNLs arriving at the SBND detector are depicted in Fig. 
 The fluxes plotted here, and all subsequent kinematics plots in this section, are labelled \textit{true}, indicating they are at the truth level and not yet passed through detector simulation and reconstruction.
 The fluxes are normalised to the same mixing $|U_{\mu4}|^{2} = 1 \times 10^{-7}$ and an exposure of $1 \times 10^{21}$ POT projected for 3 years of data taking.
 At the same mixing, the expected HNL rate decreases with lower mass since the branching ratio of $N \rightarrow \nu\pi^0$ decreases with lower mass (See Fig. \ref{fig:branchingRatio} Sec. \ref{sec2Decay}).
-Since the $K^{+}$ flux peaks around 0.5 GeV and decreases at higher energy (See Fig. \ref{fig:BNB_Meson_Flux}, Sec. \ref{sec4BNB}), the HNL fluxes also mainly concentrate in the low energy region, and substantially decrease at higher energy. 
+Additionally, given that the $K^{+}$ flux peaks around 0.5 GeV and decreases at higher energy (See Fig. \ref{fig:BNB_Meson_Flux}, Sec. \ref{sec4BNB}), the HNL fluxes also mainly concentrate in the low energy region, and substantially decrease at higher energy. 
 Moreover, across the HNL mass range, there are more energetic HNLs at a lower mass than at a higher mass.
 This is due to HNLs coming from a kaon decay and therefore, the lighter the HNL mass, the more kinetic energy is available.
 Finally, all the HNL fluxes have a sharp peak near zero, corresponding to HNLs resulting from Kaons Decay At Rest (KDAR).
 
-Upon their arrival at the detector, HNLs decays back into the SM observables.
+Upon their arrival at the detector, HNLs decay back into the SM observables.
 For the $\nu\pi^{0}$ final state, the width of the decay is defined by Eq. \ref{eq:pi0} (See Sec. \ref{sec2Decay}).
 The kinematics of the decay products are simulated for HNLs isotropically decay in the rest frame and then boosted to the lab frame by Lorentz boost.
 Since the parent HNL is very forward-going, the daughter $\pi^0$ is also forward-going, with momenta dependency on the mass of the parent HNL. 
@@ -137,7 +137,7 @@ The plots are area-normalised for comparison across the mass range of the parent
 The peak in the energy distribution at low energy and the peak in the angular distribution at high angle are from the $\pi^0$ coming from low energy HNLs from KDAR.
 The energy distribution of the $\pi^0$ decreases as the HNL mass increases since heavier HNLs are less energetic and therefore, less energy is available for the $\pi^0$.
 As a result, the angle to the beam of the $\pi^0$ also widens with heavier HNLs.
-However, at the heaviest HNL mass of 260 MeV considered in the search, the $\pi^0$ is still very collimated with since its angular distribution concentrates in the region $< 30^\circ$. 
+However, at the heaviest HNL mass of 260 MeV considered in the search, the $\pi^0$ is still very collimated since its angular distribution concentrates in the region $< 30^\circ$. 
 Therefore, the di-photon showers from the HNL-originated $\pi^0$ are expected to be more forward-going than those originating from SM neutrinos.
 
 \begin{figure}[t!] 
@@ -169,18 +169,17 @@ Simulated HNL fluxes at the front face of SBND.
         \label{fig:pi0_distribution}
 \end{figure}
 
-%Timing
 The timing delay between HNLs compared to SM neutrinos due to HNLs being more massive provides an advantageous edge in the search for HNLs at SBND. 
-The components that make up the time of flight for a HNL or a SM neutrino produced from the BNB and propagating to the SBND detector is illustrated in Fig. \ref{fig:tof_beam_to_detector}.
+The components that make up the time of flight for an HNL or a SM neutrino produced from the BNB and propagating to the SBND detector are illustrated in Fig. \ref{fig:tof_beam_to_detector}.
 The first component is the spill time of the protons from the Booster synchrotron, $t_{spill}$, as shown by the red arrow.
 The structure of $t_{spill}$ is the beam bucket structure made up of 81 Gaussian buckets with a width of 1.308 ns and a spacing of 19 ns, which is the same for both HNLs and SM neutrinos.
 Details of the beam structure were previously detailed in Sec. \ref{sec4BNB}.   
 
 The second component is the time of the secondary mesons, $t_{meson}$, as shown by the blue arrow.
-This is the time period from when the mesons are produced until they decay into HNLs or SM neutrinos.
-This time accounts for the time the mesons travel down the decay pipe, and might interact, re-scatter or decay into other mesons.
-In the case of HNLs, $t_{meson}$ is primarily the time of flight of the charged kaon $K^+$ before decaying into a HNL.
-On the other hand, SM neutrinos come from a variety of parent mesons $t_{meson}$ (See Fig. \ref{fig:BNB_neutrino_flux}).
+This is the period from when the mesons are produced until they decay into HNLs or SM neutrinos.
+This time accounts for the duration that the mesons travel down the decay pipe, and might interact, re-scatter or decay into other mesons.
+In the case of HNLs, $t_{meson}$ is primarily the time of flight of the charged kaon $K^+$ before decaying into an HNL.
+On the other hand, SM neutrinos come from a variety of parent mesons $t_{meson}$. % (See Fig. \ref{fig:BNB_neutrino_flux}).
 In both cases, $t_{meson}$ introduces some smearing to the nanosecond-bucket structure of $t_{spill}$.
 
 The last component is the time of flight of the SM neutrino or the HNL from the creation point to the interaction point inside the SBND detector.
@@ -213,7 +212,7 @@ Fig. \ref{fig:full_beam} shows the true simulated arrival time of SM neutrinos, 
 The plot is area-normalised to enable the comparison between the two particles. 
 Since SM neutrinos travel nearly at the speed of light, less smearing is introduced and the timing distribution shows sharp Gaussian peaks.
 On the other hand, HNLs travel slower and add additional smearing and delay tails to the Gaussian peaks.
-For clarity, shown in Fig. \ref{fig:beam_modulus}, is the result of 81 Gaussian peaks are overlaid into 1 peak by taking the modulus of 19 ns.
+For clarity, shown in Fig. \ref{fig:beam_modulus}, is the result of 81 Gaussian peaks overlaid into 1 peak by taking the modulus of 19 ns.
 The timing distribution of the HNLs shows a clear difference from that of SM neutrinos, where delay tails on either side of the Gaussian peak can be seen.
 Between the mass of 140 to 260 MeV, the delay tails however do not increase significantly with mass.
 
@@ -247,19 +246,19 @@ Each generator will be discussed in Sec. \ref{sec:gen_genie} and Sec. \ref{sec:g
 
 %Overview of GENIE
 SM neutrino interactions are generated by the GENIE generator \cite{genie}, which provides a selection of theoretical and empirical models for different physical processes.
-These models can be combined into a \textit{tune}, which is a set of optimised parameters used in simulation for a better agreement between model and data.
+These models can be combined into a \textit{tune}, which is a set of optimised parameters used in the simulation for a better agreement between model and data.
 The GENIE tunes are made using an extensive dataset of electron, neutrino and hadron scattering experiments.
 The SBND collaboration is planning to use a tune that was specifically developed to serve as a baseline model for the SBN and DUNE oscillation analysis.
 Details for the basis of the tune can be found in Table 1 in Ref. \cite{genie_tune}, with ongoing developments on the choice of models documented in Ref. \cite{genie_tune_github}.  
 
 %What kind of tune are being used
-In general, GENIE first selects a nuclear model that describes the momenta and potential energy of the nucleon to model nuclear effects.                                                                                           
+In general, GENIE first selects a nuclear model that describes the momenta and potential energy of the nucleon to model nuclear effects.                                                    
 Then, the neutrino flux and the integrated cross section model are used to compute the probability that a neutrino interaction occurs.
 The differential cross section is then used to determine the type of neutrino interaction and the kinematic range.
 The neutrino interaction types include quasi-elastic, resonant, coherent, deep inelastic and $\nu$-e elastic scatterings.
 In addition, neutrino interacting with an argon nucleus can produce hadrons within the nucleus.
 The hadrons propagate through the nucleus, interacting via different modes such as charge exchange, elastic scattering, absorption and pion production.
-Consequently, the hadron-nucleus interaction modify the final state particles and their kinematics.
+Consequently, the hadron-nucleus interaction modifies the final state particles and their kinematics.
 Thus, the hadron transport interaction model is crucially important for predicting the final observables of neutrino interactions.
 
 In addition to the tune, GENIE also provides a re-weighting scheme to evaluate the systematic uncertainties for a model chosen in the tune.
@@ -271,14 +270,14 @@ All interactions occurring inside the detector volume are strictly kept, as show
 Outside of the detector, a buffer volume is defined as 5 m surrounding the detector volume, as shown by the light blue box.                       
 An additional Rockbox volume is defined by extending the buffer volume backwards in the beam direction ($z$-axis) up to 15 m in front of the buffer volume, as shown by the orange box.
 Both these volumes are referred to together as the \textit{Rockbox} volume in this thesis.
-Neutrino interactions within this volume are kept, because their products can potentially deposit energy in the detector.
+Neutrino interactions within this volume are kept because their products can potentially deposit energy in the detector.
 These interactions are referred to as \textit{dirt} neutrinos and constitute a significant background to the HNL search.
 The background rejection of dirt neutrinos will be covered in Chapter \ref{ChapterSelect}.
 
 \begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=0.85\textwidth]{Rockbox_Volume}
-\caption[Geometrical Boundary of The GENIE Generator]{
+\caption[Volume Boundary of The GENIE Generator]{
 Volume boundary defined by the GENIE generator to simulate neutrino interactions occurring inside and outside of the detector volume. 
 }
 \label{fig:Rockbox_Volume}
@@ -287,7 +286,6 @@ Volume boundary defined by the GENIE generator to simulate neutrino interactions
 \subsection{Cosmic Generator: CORSIKA}
 \label{sec:gen_corsika}
 
-%how corsika generator works
 Cosmic interactions are simulated using the CORSIKA generator \cite{corsika}.
 The generation begins with producing high energy primary particles incident in the Earth's atmosphere, of which only primary protons are kept. 
 The primaries are then propagated through the atmosphere, interacting with the air to produce secondary decays until reaching the Earth's surface.
@@ -295,13 +293,12 @@ Within the SBND simulation geometry, this surface is specified to be just above 
 The surviving particles are then propagated to the SBND detector.
 
 %Why cosmic simulation is important
-From a triggering perspective, there are two types of comic rays as follows 
-\begin{itemize}
-        \item\textbf{In-time} cosmic muons cross the detector at the same time as SM neutrinos being present inside the detector, such that the muons are \textit{inside} the beam spill window. The cosmic muons produce enough light to
- induce a beam trigger.                            
+From a triggering perspective, there are two types of comic muons as follows 
+\begin{coloritemize}
+        \item\textbf{In-time} cosmic muons cross the detector at the same time as SM neutrinos being present inside the detector, such that the muons are \textit{inside} the beam spill window. The cosmic muons produce enough light to induce a beam trigger.                            
         \item\textbf{Out-of-time} cosmic muons occur regardless of the trigger conditions. The muons cross the detector \textit{outside} the beam spill window but within the readout window.  
-\end{itemize}
-However, at the time of writing, triggering simulation is currently work in progress at SBND and there not being simulated in the workflow. 
+\end{coloritemize}
+However, at the time of writing, triggering simulation is currently a work in progress at SBND and there not being simulated in the workflow. 
 Only the timing requirement is simulated to keep only cosmic muons occurring within the readout window.
 The simulation currently does not accurately reflect the cosmic rate once factoring triggering conditions and therefore, comparison to data is necessary. 
 
@@ -309,14 +306,14 @@ Being a surface-level detector, it is vitally important to understand the cosmic
 Once SBND is operational, a particularly useful measurement is the rate of cosmic muons that cause a beam trigger, however, in the absence of the beam.
 This is equivalent to measuring the rate of cosmic muons that produce sufficient energy inside the detector to mimic SM neutrino interactions.
 This measurement allows for validation against the CORSIKA generator sampling of the cosmic topology and kinematic distribution. 
-Moreover, it also provides an expected cosmic rate given a triggering condition, which can be subsequently added to the simulation framework to better constrain the cosmic background.                   
+Moreover, it also provides an expected cosmic rate given a triggering condition, which can be subsequently added to the simulation framework to better constrain the cosmic background.                
 
 \section{Particle Propagation and Detector Response Simulation}
 \label{sec:gen_response}
 
 
 After the generation stage of the simulation workflow, simulated particles are propagated through the detector and deposit energy, producing ionisation electrons and scintillation photons.
-The detector response to the ionisation electrons and scintillation photons are subsequently simulated, mimicking data. 
+The detector response to the ionisation electrons and scintillation photons is subsequently simulated, mimicking data. 
 Sec. \ref{sec:gen_g4} first covers the simulation of particle propagation and energy deposition.
 Following that, Sec. \ref{sec:wire_response}, \ref{sec:pds_response} and \ref{sec:crt_response} provides a description of the simulation of the TPC, PDS and CRT response. 
 
@@ -326,7 +323,7 @@ Following that, Sec. \ref{sec:wire_response}, \ref{sec:pds_response} and \ref{se
 Once a particle is simulated inside the detector, it is propagated through the detector using the Geant4 tool kit \cite{geant4}.
 Geant4 propagates the particle by each step $dx$, where the step length is randomised and capped at 0.3 mm (one order of magnitude less than the wire pitch).
 At each step, physics processes are applied to the particle, such as energy deposition, interaction, decay and so on.
-The step propagation also accounts for the electric field distortion caused by the space charge effect due to a high exposure to cosmic muons.
+The step propagation also accounts for the electric field distortion caused by the space charge effect due to high exposure to cosmic muons.
 %For example of the $\nu\pi^0$ final state of HNLs, the $\nu$ escapes the detector without interacting while the $\pi^0$ is simulated to decay into a di-photon shower by Geant4.
 %Then, Geant4 simulates the energy deposition of the resulting di-photon shower.
 
@@ -347,7 +344,7 @@ Once drifting electrons arrive at the wire planes, a convolution of the field re
 The field response describes the current induced on wires due to ionisation electrons drifting past the induction planes.                                                                                                           
 The electronic response describes the amplification and shaping of each wire's induced current by pre-amplifiers.
 The response functions are in two dimensions, time versus wire.
-This is to account for the long-range charge induction effect on wire signal shapes.
+This is to account for the long range charge induction effect on wire signal shapes.
 A digitisation step is then applied to produce an ADC-level, time-domain waveform for each wire channel.
 The waveform is parameterised by the ADC resolution, voltage range and baseline specification of the wire readouts.
 Finally, inherent electronic noise is added to the waveform to better match to observed data.
@@ -357,17 +354,18 @@ MC waveforms at this stage ideally represent real data waveforms recorded by the
 \label{sec:pds_response}
 
 Scintillation photons are simulated to propagate to optical detectors, accounting for transport effects previously detailed in Sec. \ref{sec:photonprop} such as Rayleigh scattering and boundary effects.
+In-depth details of the light simulation can be found in Ref. \cite{sbnd_pds_paper}.
 The simulation uses a combination of a semi-analytical model described in Ref. \cite{pds_sim}, and an optical library model available in LArSoft.
 The choice of which model to use depends on the location of the photon production.
-The semi-analytical model is used for those produced inside the active volume of the SBND detector, whilst the optical library model is used to those that originate outside of this volume.
-In-depth details of the light simulation can be found in Ref. \cite{sbnd_pds_paper}.
+The semi-analytical model is used for those produced inside the active volume of the SBND detector, whilst the optical library model is used for those that originate outside of this volume.
 
 The semi-analytical model calculates on-the-flight the geometrical aperture for each optical detector to a scintillation point, given that the emission of scintillation photons is isotropic.
 The model also extends to both direct visible photons and also reflected VUV photons. 
 Corrections for photon transport effects are applied to the number of photons detected by an optical detector.
 However, the semi-analytical method is limited by the geometrical information and does not include scintillation outside of the detector volume, for example, cosmic muons crossing behind an optical detector can produce non-negligible photons.
 Since PMTs are the primary subsystems for triggering, it is vital to consider this second-order contribution of photons for triggering studies.
-The optical library stores information of the fraction of incident photons for each optical detector for a given scintillation location, which can be looked up for any detector-location pairs during simulation. 
+The optical library stores information on the fraction of incident photons for each optical detector for a given scintillation location, which can be looked up for any detector-location pairs during 
+simulation. 
 
 For each type of optical detector, PMTs and X-ARAPUCAs, a respective photon detection efficiency is applied to the number of detected photons.
 Signal amplification and digitization are simulated, converting photons into an output signal known as a single electron response.
@@ -383,7 +381,7 @@ It is converted into photons within a strip and propagated down optical fibres t
 The collection efficiency per SiPM is accounted for by dividing the light yield between the fibres on either side of the strip, based on the lateral position of the energy deposition within the strip.
 Propagation effects and signal attenuation are also simulated.
 Finally, the electronic response is simulated for the CRT readout, by assessing if a pair of SiPMs within a strip goes above a threshold within a pre-defined coincidence window.
-To better mimic the readout electronics of CRTs that process 32 SiPMs at a time, MC outputs of CRTs are in group of 32 ADC values, where each value corresponds to a SiPM.
+To better mimic the readout electronics of CRTs that process 32 SiPMs at a time, MC outputs of CRTs are in a group of 32 ADC values, where each value corresponds to a SiPM.
 
 \section{Concluding Remarks}
 \label{sec:sim_concluding_remarks}
@@ -393,4 +391,4 @@ This is done by simulating the end-to-end process from when a particle is produc
 The MC output of the simulation ideally mimics data, providing the foundation to perform different types of exploratory studies before SBND becomes operational.
 For example, the upcoming Chapter \ref{ChapterReco} will provide a description of the reconstruction framework at SBND, of which many algorithms have been developed using MC samples.
 Furthermore, the calibration studies presented in Chapter \ref{ChapterCalib} were carried out using MC samples of protons and muons to better understand particle-dependent energy deposition.
-Finally, the search for HNLs presented in the two final Chapter \ref{ChapterSelect} and \ref{ChapterResult} was also performed using MC samples to explore the capability of SBND in the BSM regime.
+Finally, the search for HNLs presented in the two final Chapters \ref{ChapterSelect} and \ref{ChapterResult} was also performed using MC samples to explore the capability of SBND in the BSM regime.
