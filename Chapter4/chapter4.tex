@@ -362,10 +362,10 @@ The characterisation of the timing resolution of FEB modules is detailed in Sec.
 \label{sec:evb}
 
 With the various sources of detection signals established as above, the next step in the DAQ is to build a physics event.
-This is achieved by using a DAQ software framework provided by the \texttt{artdaq Toolkit}, developed by the Real-Time Systems Engineering Department of Fermilab's Scientific Computing Division \cite{artdaq_note}. 
+This is achieved by using a DAQ software framework provided by the artdaq Toolkit, developed by the Real-Time Systems Engineering Department of Fermilab's Scientific Computing Division \cite{artdaq_note}. 
 This software serves as the backbone for communication between the hardware electronics and the event builder machines.
 
-Within the \texttt{artdaq} framework, each discrete hardware readout component has a corresponding software module known as a \textit{boardreader}.
+Within the artdaq framework, each discrete hardware readout component has a corresponding software module known as a \textit{boardreader}.
 These boardreaders facilitate communication between the readout electronics and the event builder machines. 
 They can send configurations directly to the hardware in one direction and retrieve data from the hardware in the opposite direction.
 Data acquired from the readouts is packaged by boardreaders into a digitised format called a \textit{fragment}.
@@ -455,47 +455,6 @@ In contrast, an ionisation electron produced takes 1.3 ms to fully drift from th
 This shows that photon signals propagate approximately six orders of magnitude faster than electron signals and consequently, need to be digitised and read out earlier.
 %The time asymmetry of the event structure is due to scintillation photon signals propagating faster compared to electron signals.
 
-%describe a data stream
-After the event builder machines complete building a physics event, the resulting event can be filtered and sent to various storage locations for different analysis purposes, commonly referred to as data streaming.
-The \texttt{artdaq Toolkit} provides options to incorporate customisable filtering steps in real time. 
-This allows the event builders to apply complex software metrics based on the fragment contents of an event. 
-Once an event successfully passes through the filter, the event builders send it to a location defined by the filter for storage. 
-However, if an event fails to pass the filters, it will be dropped in real time.
-
-%data monitoring?
-The \texttt{artdaq Toolkit} also includes a built-in process for streaming data between event builder machines and online monitoring platforms.
-While operating in real time, fragments from boardreaders and physics events can be transmitted to these platforms for various monitoring purposes. 
-SBND currently employs two online platforms: (1) Grafana and (2) Minargon.
-
-Grafana provides real time monitoring of the health status of DAQ processes. 
-A section of the Grafana website is displayed in Fig. \ref{fig:Grafana} for the boardreaders of PMTs.
-In the top left panel, the run number and a dial indicating the trigger rate issued by the PTB at 5.60 Hz are shown. 
-The right panels display 9 dials, corresponding to 9 CAEN digitizers, showing the PMT fragment rates sent by the digitizers to the event builders, which is in good agreement with the trigger rate.
-The bottom left graph illustrates the PMT fragment rates as a function of time. 
-The bottom middle and right graphs depict the rates of empty and missing PMT fragments as a function of time, which remain flat at zero, indicating a healthy DAQ state.
-
-On the other hand, Minargon provides monitoring of the quality of data acquired by the DAQ. 
-This online monitoring process applies simple reconstruction and event display to quantitatively verify the physics characteristics of an event. 
-An example metric is displayed in Fig. \ref{fig:Minargon}, which shows the root mean square of a PMT waveform baseline as a histogram in the left plot and as a function of time in the right plot.
-This metric helps monitor the baseline equalisation and stability over time.
-
-\begin{figure}[ht!] 
-\centering    
-\includegraphics[width=1.0\textwidth]{Grafana}
-\caption[Grafana Online Monitoring Web Page]{
-Web page showing a section of Grafana for monitoring the health of PMT DAQ.
-}
-\label{fig:Grafana}
-\vspace{0.5cm}
-%\end{figure}
-%\begin{figure}[htbp!] 
-\centering    
-\includegraphics[width=1.0\textwidth]{Minargon}
-\caption[Minargon Online Monitoring Web Page]{
-Web page showing a section of Minargon for monitoring the root mean square of a PMT waveform baseline.
-}
-\label{fig:Minargon}
-\end{figure}
 
 %********************************** %First Section  **************************************
 \section{The Booster Neutrino Beam}
@@ -584,37 +543,39 @@ However, results from the SciBooNE experiment have demonstrated the validity of 
 %\label{fig:sub3}
 \end{subfigure}
 \caption[Secondary Mesons in the BNB Fluxes]{
-Plots showing simulated fluxes for the secondary mesons produced in the BNB. 
+Simulated fluxes for the secondary mesons produced in the BNB. 
 }
 \label{fig:BNB_Meson_Flux}
 \end{figure}
 
 The simulation of the neutrino flux at the front face of SBND is depicted in Fig. \ref{fig:BNB_combined_neutrino_flux}, shown for different flavours of neutrinos. 
 The flux is predominantly composed of $\nu_{\mu}$ ($\sim90\%$), followed by $\bar{\nu}_{\mu}$ ($\sim9\%$), while the combination of $\nu_{e}$ and $\bar{\nu}_{e}$ contributes less than 1\%.
-Fig. \ref{fig:BNB_neutrino_flux} depicts the parent mesons for each neutrino flavour.
-Pion production is the dominant mechanism for both $\nu_{\mu}$ and $\bar{\nu}_{\mu}$, followed by kaon and muon production. 
-Notably, a peak in the $\nu_{\mu}$ flux can be seen at half the mass of the kaon (235.5 MeV) resulting from kaon decay at rest \cite{kaonDecayNu}.
-In the case of $\nu_{e}$, muons produced from pion decay are the primary source at low energies, while kaon production becomes the dominant mode at higher energies. 
-Finally, $\bar{\nu}_{e}$ mainly originates from $K^{0}_{L}$ production.
-
 %TODO: Make plots font bigger
+
 \begin{figure}[hp] 
 \centering    
 \includegraphics[width=0.5\textwidth]{BNB_combined_neutrino_flux}
 \caption[Siumluated Neutrino Fluxes at the Front Face of SBND]{
-Plots showing simulated neutrino fluxes at the front face of SBND. 
+Simulated neutrino fluxes at the front face of SBND. 
 }
 \label{fig:BNB_combined_neutrino_flux}
-%\end{figure}
-%\begin{figure}[h] 
-\vspace{0.5cm}
-\centering    
-\includegraphics[width=1.0\textwidth]{BNB_neutrino_flux}
-\caption[Simulated Neutrino Fluxes Of Different Flavours at the Front Face of SBND]{
-Plots showing simulated fluxes for different neutrino flavours at the front face of SBND, broken down into types of parent mesons.
-}
-\label{fig:BNB_neutrino_flux}
 \end{figure}
+
+%Fig. \ref{fig:BNB_neutrino_flux} depicts the parent mesons for each neutrino flavour.
+%Pion production is the dominant mechanism for both $\nu_{\mu}$ and $\bar{\nu}_{\mu}$, followed by kaon and muon production. 
+%Notably, a peak in the $\nu_{\mu}$ flux can be seen at half the mass of the kaon (235.5 MeV) resulting from kaon decay at rest \cite{kaonDecayNu}.
+%In the case of $\nu_{e}$, muons produced from pion decay are the primary source at low energies, while kaon production becomes the dominant mode at higher energies. 
+%Finally, $\bar{\nu}_{e}$ mainly originates from $K^{0}_{L}$ production.
+%
+%\begin{figure}[h] 
+%\vspace{0.5cm}
+%\centering    
+%\includegraphics[width=1.0\textwidth]{BNB_neutrino_flux}
+%\caption[Simulated Neutrino Fluxes Of Different Flavours at the Front Face of SBND]{
+%Plots showing simulated fluxes for different neutrino flavours at the front face of SBND, broken down into types of parent mesons.
+%}
+%\label{fig:BNB_neutrino_flux}
+%\end{figure}
 
 %********************************** %First Section  **************************************
 \section{Concluding Remarks}

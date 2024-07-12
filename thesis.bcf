@@ -2240,7 +2240,6 @@
     <bcf:citekey order="48">DavePhd</bcf:citekey>
     <bcf:citekey order="49">BNBMiniBooNE</bcf:citekey>
     <bcf:citekey order="50">SciBooNE</bcf:citekey>
-    <bcf:citekey order="51">kaonDecayNu</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

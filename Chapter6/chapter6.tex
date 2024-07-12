@@ -370,6 +370,34 @@ Therefore, the ratio of the number of photons seen by TPB-coated PMTs to those s
 PMTs are used to compute the correction for the drift propagation effect.
 The timing resolution of the flash time after the correction varies $\sim 2$ ns across the entire drift distance, demonstrating the excellent capability of the PDS reconstruction at SBND.
 
+At SBND, TPB is utilised at two locations: first, it is evaporated onto the highly reflective foils located at the cathode, and second, it is coated on the optical windows of the photon detectors. 
+In the former method, VUV photons arriving at the reflective foils are wavelength-shifted and reflected back towards the anode for detection.
+In the latter method,  VUV photons arriving at the optical detectors are wavelength-shifted into the detectable wavelength range of the detectors.
+Additionally, the arrival time and detection probability distributions for direct VUV and reflected visible photons differ from one another.
+
+It is also important to note 
+On the other hand, visible photons resulting from wavelength shifting at the cathode undergo longer propagation paths.
+They start off as VUV photons and then Rayleigh scatter as they propagate towards the cathode.
+TPB-coated cathode wavelength-shifts and reflects the photons back the full drift distance of the TPC towards the optical detectors located behind the anode.
+Consequently, the spatial distribution of visible photons is more diffused and spread across a larger number of optical detectors compared to direct VUV photons \cite{PatrickPhD}.
+
+The comparison of their light yield is shown in Fig. \ref{fig:light_yield_Diego} for TPB-coated and uncoated PMTs.
+Closer to the anode, the light yield primarily comes from the direct VUV photons, detectable by coated PMTs.
+Meanwhile, closer to the anode, and hence the reflective foils, the contribution to the light yield from reflected visible photons increased, which is detectable by both coated and uncoated PMTs.
+ns.
+The combined light yield from both components results in an improved overall light yield and a more uniform distribution across the drift length of the detector \cite{light_yield_Diego}.
+
+\begin{figure}[htbp]
+%TODO: Fix reference from Diego's talk to SBND PDS paper
+\centering    
+\includegraphics[width=0.55\textwidth]{light_yield_sim}
+\caption[Simulated Light Yield at SBND]{
+Expected light yield in SBND as a function of the mean drift distance collected by different types of PMTs.
+The error bars show uncertainty due to geometrical effects of the detector.
+\cite{sbnd_pds_paper}.
+}
+\label{fig:light_yield_Diego}
+\end{figure}
 \subsection{CRT Reconstruction}
 
 The reconstruction workflow for the CRT subsystem is the simplest compared to the TPC and the PDS.                                                                                                    
