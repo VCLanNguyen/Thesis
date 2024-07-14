@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  11 JUL 2024 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  13 JUL 2024 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,110 +1136,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-\openout2 = `Chapter4/chapter4.aux'.
+\openout2 = `Chapter6/chapter6.aux'.
 
- (./Chapter4/chapter4.tex
-Chapter 4.
-[33
-
-
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Chapter4/Figs/SBN_program.jpg, id=87, 803.0pt x 313.17pt>
-File: Chapter4/Figs/SBN_program.jpg Graphic file (type jpg)
-<use Chapter4/Figs/SBN_program.jpg>
-Package pdftex.def Info: Chapter4/Figs/SBN_program.jpg  used on input line 53.
-(pdftex.def)             Requested size: 448.1309pt x 174.77667pt.
- [34] [35 <./Chapter4/Figs/SBN_program.jpg>]
-<Chapter4/Figs/SBND_Pretty.png, id=121, 851.18pt x 751.80875pt>
-File: Chapter4/Figs/SBND_Pretty.png Graphic file (type png)
-<use Chapter4/Figs/SBND_Pretty.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_Pretty.png  used on input line 99.
-(pdftex.def)             Requested size: 403.31508pt x 356.22954pt.
- [36 <./Chapter4/Figs/SBND_Pretty.png>]
-<Chapter4/Figs/SBND_APA.png, id=136, 780.9175pt x 705.63625pt>
-File: Chapter4/Figs/SBND_APA.png Graphic file (type png)
-<use Chapter4/Figs/SBND_APA.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_APA.png  used on input line 123.
-(pdftex.def)             Requested size: 291.28235pt x 263.20244pt.
- [37 <./Chapter4/Figs/SBND_APA.png>]
-<Chapter4/Figs/SBND_APA_PDS.png, id=150, 1293.83376pt x 968.61874pt>
-File: Chapter4/Figs/SBND_APA_PDS.png Graphic file (type png)
-<use Chapter4/Figs/SBND_APA_PDS.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_APA_PDS.png  used on input line 145.
-(pdftex.def)             Requested size: 224.06544pt x 167.73723pt.
-<Chapter4/Figs/SBND_CPA.png, id=151, 1293.83376pt x 965.6075pt>
-File: Chapter4/Figs/SBND_CPA.png Graphic file (type png)
-<use Chapter4/Figs/SBND_CPA.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_CPA.png  used on input line 152.
-(pdftex.def)             Requested size: 224.06544pt x 167.21576pt.
- [38 <./Chapter4/Figs/SBND_APA_PDS.png> <./Chapter4/Figs/SBND_CPA.png>]
-<Chapter4/Figs/SBND_PDS.png, id=167, 1689.31125pt x 814.04124pt>
-File: Chapter4/Figs/SBND_PDS.png Graphic file (type png)
-<use Chapter4/Figs/SBND_PDS.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_PDS.png  used on input line 183.
-(pdftex.def)             Requested size: 380.914pt x 183.54884pt.
- [39 <./Chapter4/Figs/SBND_PDS.png>]
-<Chapter4/Figs/SBND_CRT.png, id=184, 1465.475pt x 482.80376pt>
-File: Chapter4/Figs/SBND_CRT.png Graphic file (type png)
-<use Chapter4/Figs/SBND_CRT.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_CRT.png  used on input line 216.
-(pdftex.def)             Requested size: 448.1309pt x 147.63432pt.
- [40 <./Chapter4/Figs/SBND_CRT.png>] [41] [42]
-<Chapter4/Figs/DAQ_Overview.png, id=226, 1158.3275pt x 616.3025pt>
-File: Chapter4/Figs/DAQ_Overview.png Graphic file (type png)
-<use Chapter4/Figs/DAQ_Overview.png>
-Package pdftex.def Info: Chapter4/Figs/DAQ_Overview.png  used on input line 308.
-(pdftex.def)             Requested size: 448.1309pt x 238.42918pt.
- [43 <./Chapter4/Figs/DAQ_Overview.png>]
-<Chapter4/Figs/SBND_Event_Structure.png, id=239, 1231.60126pt x 683.55376pt>
-File: Chapter4/Figs/SBND_Event_Structure.png Graphic file (type png)
-<use Chapter4/Figs/SBND_Event_Structure.png>
-Package pdftex.def Info: Chapter4/Figs/SBND_Event_Structure.png  used on input line 391.
-(pdftex.def)             Requested size: 448.1309pt x 248.718pt.
- [44] [45 <./Chapter4/Figs/SBND_Event_Structure.png>]
-<Chapter4/Figs/CRT2017.png, id=261, 1449.415pt x 760.8425pt>
-File: Chapter4/Figs/CRT2017.png Graphic file (type png)
-<use Chapter4/Figs/CRT2017.png>
-Package pdftex.def Info: Chapter4/Figs/CRT2017.png  used on input line 450.
-(pdftex.def)             Requested size: 380.914pt x 199.95053pt.
- [46 <./Chapter4/Figs/CRT2017.png>]
-<Chapter4/Figs/BNBDiagram.png, id=276, 1190.4475pt x 475.7775pt>
-File: Chapter4/Figs/BNBDiagram.png Graphic file (type png)
-<use Chapter4/Figs/BNBDiagram.png>
-Package pdftex.def Info: Chapter4/Figs/BNBDiagram.png  used on input line 479.
-(pdftex.def)             Requested size: 448.1309pt x 179.09853pt.
- [47 <./Chapter4/Figs/BNBDiagram.png>]
-<Chapter4/Figs/BNB_Meson_Pion_Flux.png, id=291, 433.62pt x 289.08pt>
-File: Chapter4/Figs/BNB_Meson_Pion_Flux.png Graphic file (type png)
-<use Chapter4/Figs/BNB_Meson_Pion_Flux.png>
-Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Pion_Flux.png  used on input line 505.
-(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
-<Chapter4/Figs/BNB_Meson_Kaon_Flux.png, id=292, 433.62pt x 289.08pt>
-File: Chapter4/Figs/BNB_Meson_Kaon_Flux.png Graphic file (type png)
-<use Chapter4/Figs/BNB_Meson_Kaon_Flux.png>
-Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Kaon_Flux.png  used on input line 511.
-(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
-<Chapter4/Figs/BNB_Meson_Muon_Flux.png, id=293, 433.62pt x 289.08pt>
-File: Chapter4/Figs/BNB_Meson_Muon_Flux.png Graphic file (type png)
-<use Chapter4/Figs/BNB_Meson_Muon_Flux.png>
-Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Muon_Flux.png  used on input line 517.
-(pdftex.def)             Requested size: 224.06544pt x 149.3785pt.
-<Chapter4/Figs/BNB_combined_neutrino_flux.png, id=297, 578.16pt x 433.62pt>
-File: Chapter4/Figs/BNB_combined_neutrino_flux.png Graphic file (type png)
-<use Chapter4/Figs/BNB_combined_neutrino_flux.png>
-Package pdftex.def Info: Chapter4/Figs/BNB_combined_neutrino_flux.png  used on input line 538.
-(pdftex.def)             Requested size: 224.06544pt x 168.04585pt.
-<Chapter4/Figs/BNB_neutrino_flux.png, id=298, 1011.78pt x 722.7pt>
-File: Chapter4/Figs/BNB_neutrino_flux.png Graphic file (type png)
-<use Chapter4/Figs/BNB_neutrino_flux.png>
-Package pdftex.def Info: Chapter4/Figs/BNB_neutrino_flux.png  used on input line 547.
-(pdftex.def)             Requested size: 448.1309pt x 320.09523pt.
- [48 <./Chapter4/Figs/BNB_Meson_Pion_Flux.png> <./Chapter4/Figs/BNB_Meson_Kaon_Flux.png> <./Chapter4/Figs/BNB_Meson_Muon_Flux.png>] [49 <./Chapter4/Figs/BNB_combined_neutrino_flux.png> <./Chapter4/Figs/BNB_neutrino_flux.png>]) [50] [190
-
-
+ (./Chapter6/chapter6.tex [64
 
 
 
@@ -1248,59 +1147,151 @@ Package pdftex.def Info: Chapter4/Figs/BNB_neutrino_flux.png  used on input line
 
 
 ]
-Overfull \hbox (1.99728pt too wide) in paragraph at lines 197--197
-[]\T1/futs/m/n/12 (-20) L. Alvarez-Ruso et al., ``NuSTEC White Pa-per: Sta-tus and chal-lenges of neu-trino^^Unucleus
- []
+Chapter 6.
+[65{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<Chapter6/Figs/Reco_Workflow.png, id=91, 931.48pt x 333.245pt>
+File: Chapter6/Figs/Reco_Workflow.png Graphic file (type png)
+<use Chapter6/Figs/Reco_Workflow.png>
+Package pdftex.def Info: Chapter6/Figs/Reco_Workflow.png  used on input line 57.
+(pdftex.def)             Requested size: 448.1309pt x 160.32188pt.
+ [66 <./Chapter6/Figs/Reco_Workflow.png>]
+<Chapter6/Figs/signal_processing_steps.png, id=116, 616.3025pt x 979.66pt>
+File: Chapter6/Figs/signal_processing_steps.png Graphic file (type png)
+<use Chapter6/Figs/signal_processing_steps.png>
+Package pdftex.def Info: Chapter6/Figs/signal_processing_steps.png  used on input line 103.
+(pdftex.def)             Requested size: 201.65753pt x 320.5383pt.
+<Chapter6/Figs/signal_processing_waveform.png, id=119, 726.715pt x 384.43625pt>
+File: Chapter6/Figs/signal_processing_waveform.png Graphic file (type png)
+<use Chapter6/Figs/signal_processing_waveform.png>
+Package pdftex.def Info: Chapter6/Figs/signal_processing_waveform.png  used on input line 112.
+(pdftex.def)             Requested size: 380.914pt x 201.50941pt.
+ [67]
 
-[191
+LaTeX Warning: Text page 68 contains only floats.
 
-] [192]
+[68 <./Chapter6/Figs/signal_processing_steps.png> <./Chapter6/Figs/signal_processing_waveform.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 123.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<Chapter6/Figs/gaushit.png, id=137, 823.075pt x 710.655pt>
+File: Chapter6/Figs/gaushit.png Graphic file (type png)
+<use Chapter6/Figs/gaushit.png>
+Package pdftex.def Info: Chapter6/Figs/gaushit.png  used on input line 132.
+(pdftex.def)             Requested size: 224.06544pt x 193.46259pt.
+ [69 <./Chapter6/Figs/gaushit.png>] [70] [71]
+<Chapter6/Figs/HaloTotalRatio.png, id=173, 894.34125pt x 625.33624pt>
+File: Chapter6/Figs/HaloTotalRatio.png Graphic file (type png)
+<use Chapter6/Figs/HaloTotalRatio.png>
+Package pdftex.def Info: Chapter6/Figs/HaloTotalRatio.png  used on input line 209.
+(pdftex.def)             Requested size: 221.8226pt x 155.10277pt.
+<Chapter6/Figs/Concentration.png, id=174, 898.35625pt x 617.30624pt>
+File: Chapter6/Figs/Concentration.png Graphic file (type png)
+<use Chapter6/Figs/Concentration.png>
+Package pdftex.def Info: Chapter6/Figs/Concentration.png  used on input line 216.
+(pdftex.def)             Requested size: 221.8226pt x 152.42348pt.
+<Chapter6/Figs/Conicalness.png, id=175, 900.36375pt x 610.28pt>
+File: Chapter6/Figs/Conicalness.png Graphic file (type png)
+<use Chapter6/Figs/Conicalness.png>
+Package pdftex.def Info: Chapter6/Figs/Conicalness.png  used on input line 223.
+(pdftex.def)             Requested size: 221.8226pt x 150.35333pt.
+ [72 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
+<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=190, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Halo_Total_Ratio.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Halo_Total_Ratio.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Halo_Total_Ratio.png  used on input line 255.
+(pdftex.def)             Requested size: 201.65753pt x 134.43845pt.
+<Chapter6/Figs/Feature_Concentration.png, id=191, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Concentration.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Concentration.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Concentration.png  used on input line 261.
+(pdftex.def)             Requested size: 201.65753pt x 134.43845pt.
+<Chapter6/Figs/Feature_Conicalness.png, id=192, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Conicalness.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Conicalness.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Conicalness.png  used on input line 267.
+(pdftex.def)             Requested size: 201.65753pt x 134.43845pt.
+<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=193, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png  used on input line 273.
+(pdftex.def)             Requested size: 201.65753pt x 134.43845pt.
+ [73 <./Chapter6/Figs/Feature_Halo_Total_Ratio.png> <./Chapter6/Figs/Feature_Concentration.png> <./Chapter6/Figs/Feature_Conicalness.png> <./Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>]
+<Chapter6/Figs/bdt_score_trk_shw.png, id=208, 900.36375pt x 572.1375pt>
+File: Chapter6/Figs/bdt_score_trk_shw.png Graphic file (type png)
+<use Chapter6/Figs/bdt_score_trk_shw.png>
+Package pdftex.def Info: Chapter6/Figs/bdt_score_trk_shw.png  used on input line 294.
+(pdftex.def)             Requested size: 221.8226pt x 140.95625pt.
+<Chapter6/Figs/bdt_score_particle.png, id=209, 900.36375pt x 574.145pt>
+File: Chapter6/Figs/bdt_score_particle.png Graphic file (type png)
+<use Chapter6/Figs/bdt_score_particle.png>
+Package pdftex.def Info: Chapter6/Figs/bdt_score_particle.png  used on input line 300.
+(pdftex.def)             Requested size: 221.8226pt x 141.45084pt.
+ [74 <./Chapter6/Figs/bdt_score_trk_shw.png> <./Chapter6/Figs/bdt_score_particle.png>]
+<Chapter6/Figs/pds_reco_deconvolution.pdf, id=221, 646.69699pt x 492.56131pt>
+File: Chapter6/Figs/pds_reco_deconvolution.pdf Graphic file (type pdf)
+<use Chapter6/Figs/pds_reco_deconvolution.pdf>
+Package pdftex.def Info: Chapter6/Figs/pds_reco_deconvolution.pdf  used on input line 335.
+(pdftex.def)             Requested size: 264.39558pt x 201.38023pt.
+<Chapter6/Figs/pds_reco_hit_finding.pdf, id=222, 361.35pt x 289.08pt>
+File: Chapter6/Figs/pds_reco_hit_finding.pdf Graphic file (type pdf)
+<use Chapter6/Figs/pds_reco_hit_finding.pdf>
+Package pdftex.def Info: Chapter6/Figs/pds_reco_hit_finding.pdf  used on input line 342.
+(pdftex.def)             Requested size: 179.24962pt x 143.4016pt.
+ [75 <./Chapter6/Figs/pds_reco_deconvolution.pdf> <./Chapter6/Figs/pds_reco_hit_finding.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/pds_reco_hit_finding.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<Chapter6/Figs/light_yield_sim.png, id=317, 455.7025pt x 305.14pt>
+File: Chapter6/Figs/light_yield_sim.png Graphic file (type png)
+<use Chapter6/Figs/light_yield_sim.png>
+Package pdftex.def Info: Chapter6/Figs/light_yield_sim.png  used on input line 374.
+(pdftex.def)             Requested size: 246.47336pt x 165.04318pt.
+ [76 <./Chapter6/Figs/light_yield_sim.png>] [77] [78] [79]) [80] [186
+
+
+
+
+
+
+
+] [187
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
  (./thesis.aux (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 37F81770DACF4E5C3C6EDC2C6A9023A4;2750.
+(rerunfilecheck)             Checksum: C4084F4C8F2E75347152C949F3505FFA;3693.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27373 strings out of 483065
- 484126 string characters out of 5963550
- 1245352 words of memory out of 5000000
- 41555 multiletter control sequences out of 15000+600000
- 620723 words of font info for 258 fonts, out of 8000000 for 9000
+ 27314 strings out of 483065
+ 483181 string characters out of 5963550
+ 1243017 words of memory out of 5000000
+ 41539 multiletter control sequences out of 15000+600000
+ 618530 words of font info for 241 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,12n,109p,989b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, replaced by a fixed one
+ 60i,12n,109p,1249b,1650s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{subsection.8.2.1} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.a.B} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{equation.8.2.3} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.a.A} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.4.2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (22 pages, 8869485 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (20 pages, 1192280 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 29881 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 30417 words of extra memory for PDF output out of 35830 (max. 10000000)
 
