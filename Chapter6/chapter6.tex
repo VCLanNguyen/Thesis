@@ -27,7 +27,7 @@ This chapter provides a summary of the reconstruction framework at SBND.
 Firstly, Sec. \ref{sec:reco_overview} gives an overview of the reconstruction workflow for each detection subsystem. 
 The following Sec. \ref{sec:reco_tpc} provides the details of the TPC reconstruction workflow from start to end.
 The reconstruction of the PDS and CRT subsystem are summarised in Sec. \ref{sec:reco_others}.
-Descriptions of some high-level analysis tools using the reconstruction variables collectively from each detection subsystem are included in Sec. \ref{sec:reco_ana_tools}.                 
+Descriptions of some high level analysis tools using the reconstruction variables collectively from each detection subsystem are included in Sec. \ref{sec:reco_ana_tools}.                 
 Finally, the chapter is concluded in Sec. \ref{sec:reco_concluding_remarks} with some remarks.
 
 \newpage
@@ -50,7 +50,7 @@ Then, a hit finding algorithm identifies optical hits on the waveform and recons
 The equivalent output to the TPC-reconstructed interaction from the PDS reconstruction is referred to as a \textit{flash}.
 Finally, the reconstruction for the CRTs is much simpler compared to the other two subsystems, consisting of only a hit finding and a reconstruction algorithm, as shown by the orange boxes.
 The reconstruction variables from each detection subsystem are produced independently and can be matched together if they originate from the same interaction. 
-The variables can also be combined and input into different high-level analysis tools to extract more complex properties of the underlying interaction. 
+The variables can also be combined and input into different high level analysis tools to extract more complex properties of the underlying interaction. 
 
 \begin{figure}[htbp!] 
 \centering    
@@ -403,11 +403,11 @@ The outputs of the CRT reconstruction are both CRT space points and CRT tracks.
 %The best track candidate is selected by the goodness of timing agreement and prioritising three-point tracks over two-point tracks. 
 
 %********************************** %First Section  **************************************
-\section{High-Level Analysis Tools}
+\section{High Level Analysis Tools}
 \label{sec:reco_ana_tools}
 
 The reconstructed variables from each detection subsystem, slices from the TPC, flashes from the PDS, space points and tracks from the CRTs, can be used collectively by downstream algorithms to compute useful characteristics regarding the interaction.
-This section covers the main high-level analysis tools used in the HNL search and their usage will be detailed in Chapter \ref{ChapterSelect}.
+This section covers the main high level analysis tools used in the HNL search and their usage will be detailed in Chapter \ref{ChapterSelect}.
 Firstly, Sec. \ref{sec:subsystem_match} provides the details on how variables from different detection subsystems can be matched to the same interaction.
 Presented in Sec. \ref{sec:crumbs} are the cosmic rejection tool.
 Finally, Sec. \ref{sec:razzled} illustrates the method employed for particle identification.
@@ -480,4 +480,12 @@ For each reconstructed particle, Razzled outputs a score for each particle type 
 
 The overall reconstruction workflow of SBND has been described, outlining the reconstruction process for each detection system, the TPC, the PDS and the CRT.
 The three detection subsystems together provide complementary information regarding the underlying reconstructed interaction and have been used collectively by different analysis tools for different purposes.
-Particularly for the HNL search, the background rejection and signal selection will be based on a combination of variables and tools employing all three subsystems to achieve a high signal-to-background ratio, as will be discussed in the forth coming Chapter \ref{ChapterSelect}.
+Focusing on the HNL search, the background rejection and signal selection will be based on a combination of variables and tools employing all three subsystems to achieve a high signal-to-background ratio, as will be discussed in Chapter \ref{ChapterSelect}.
+
+Particularly, the most important variable is the reconstructed interaction time, $t_0$, which is subsequently used to compute the arrival time at the front face of SBND.
+These timing variables, having a resolution of $\sim$ 2 ns, enable the reconstruction Gaussian-shaped neutrino beam bucket and therefore, are powerful discriminations to differentiate HNLs from SM neutrinos.
+To achieve such high timing resolution at the high level reconstruction, the low level readout electronics must have sufficient timing resolution to maintain a high quality data stream at a high sampling rate.
+The timing characterisation of the readout electronics will be discussed in Chapter \ref{ChapterDAQ} next.
+
+%The event building process of the DAQ relies on the timing information acquired from each subsystem. 
+%This process assembles the foundation of physics event upon which low level and high level reconstructions are built to achieve nanosecond timing resolution.

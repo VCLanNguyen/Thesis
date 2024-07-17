@@ -1,6 +1,6 @@
 %!TEX root = ../thesis.tex
 % ******************************* Thesis Appendix A ****************************
-\chapter{Data Streaming at SBND} 
+\chapter{Data Streaming At SBND} 
 \label{appendix_data_stream}
 \ifpdf
     \graphicspath{{Appendix2/Figs/Raster/}{Appendix2/Figs/PDF/}{Appendix2/Figs/}}
@@ -8,8 +8,10 @@
     \graphicspath{{Appendix2/Figs/Vector/}{Appendix2/Figs/}}
 \fi
 
+The data streaming as the final step of the Data Acquisition (DAQ) at SBND was previously summarised in Chapter \ref{ChapterDetector} Sec.  \ref{sec4DAQOverview}.
+Details of the data streaming process is detailed here.
 %describe a data stream
-After the event builder machines complete building a physics event, as summarised in Sec. \ref{sec4DAQOverview}, the resulting event can be filtered and sent to various storage locations for different analysis purposes, commonly referred to as data streaming.
+After the event builder machines complete building a physics event, the resulting event can be filtered and sent to various storage locations for different analysis purposes, commonly referred to as data streaming.
 The artdaq Toolkit provides options to incorporate customisable filtering steps in real time. 
 This allows the event builders to apply complex software metrics based on the fragment contents of an event. 
 Once an event successfully passes through the filter, the event builders send it to a location defined by the filter for storage. 

@@ -2187,32 +2187,10 @@
     <bcf:datasource type="file" datatype="bibtex">References/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">wirecell</bcf:citekey>
-    <bcf:citekey order="2">pandora</bcf:citekey>
-    <bcf:citekey order="3">wirecell</bcf:citekey>
-    <bcf:citekey order="4">wirecell</bcf:citekey>
-    <bcf:citekey order="5">wirecell_protodune</bcf:citekey>
-    <bcf:citekey order="6">LynnSignal</bcf:citekey>
-    <bcf:citekey order="7">LynnSignal</bcf:citekey>
-    <bcf:citekey order="8">LynnSignal</bcf:citekey>
-    <bcf:citekey order="9">LynnSignal</bcf:citekey>
-    <bcf:citekey order="10">gaushitfinder</bcf:citekey>
-    <bcf:citekey order="11">EdPhD</bcf:citekey>
-    <bcf:citekey order="12">EdPhD</bcf:citekey>
-    <bcf:citekey order="13">pandora</bcf:citekey>
-    <bcf:citekey order="14">uboone_gamma</bcf:citekey>
-    <bcf:citekey order="15">EdPhD</bcf:citekey>
-    <bcf:citekey order="16">warwick_pid</bcf:citekey>
-    <bcf:citekey order="17">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="18">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="19">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="20">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="21">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="22">sbnd_pds_paper</bcf:citekey>
-    <bcf:citekey order="23">opt0finder_module</bcf:citekey>
-    <bcf:citekey order="24">crumbs</bcf:citekey>
-    <bcf:citekey order="25">razzled</bcf:citekey>
-    <bcf:citekey order="26">EdPhD</bcf:citekey>
+    <bcf:citekey order="1">WR_paper</bcf:citekey>
+    <bcf:citekey order="2">crt_clock</bcf:citekey>
+    <bcf:citekey order="3">caen1730</bcf:citekey>
+    <bcf:citekey order="4">uboone_ns</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
