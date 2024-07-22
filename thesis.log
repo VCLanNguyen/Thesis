@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  17 JUL 2024 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  21 JUL 2024 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -937,46 +937,46 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 ) (./thesis-info.tex)
 \@quotelevel=\count466
 \@quotereset=\count467
- (./thesis.aux (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+ (./thesis.aux (./Abstract/abstract.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
 (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 130.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 133.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 130.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 130.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 133.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 130.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 130.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 133.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count468
@@ -993,16 +993,16 @@ LaTeX Font Info:    ... okay on input line 130.
 ) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 130.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 130.
-LaTeX Info: Redefining \microtypecontext on input line 130.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 133.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 133.
+LaTeX Info: Redefining \microtypecontext on input line 133.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 130.
+LaTeX Info: Redefining \showhyphens on input line 133.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1011,7 +1011,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 130.
+Package hyperref Info: Link coloring ON on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1021,9 +1021,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count474
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
@@ -1067,7 +1067,7 @@ LaTeX Info: Redefining \nameref on input line 130.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\newline' on input line 130.
+(hyperref)                removing `\newline' on input line 133.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1089,31 +1089,31 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 130.
-Package biblatex Info: Reference segment=0 on input line 130.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 130.
+Package biblatex Info: Reference section=0 on input line 133.
+Package biblatex Info: Reference segment=0 on input line 133.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 130.
+(Font)              scaled to size 11.03998pt on input line 133.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 130.
+(Font)              scaled to size 8.27998pt on input line 133.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 130.
+(Font)              scaled to size 6.43999pt on input line 133.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 130.
+(Font)              scaled to size 11.03998pt on input line 133.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 130.
+(Font)              scaled to size 8.27998pt on input line 133.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 130.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 130.
+(Font)              scaled to size 6.43999pt on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 130.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1127,7 +1127,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./thesis.nls) [22
+ (./thesis.nls [8
+
+
+
+
+
+
+
+] [9{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [10] [11]) [12]
+\openout2 = `Chapter1/chapter1.aux'.
+
+ (./Chapter1/chapter1.tex
+Chapter 1.
+[1
+
+
+
+]) [2] [174
+
+
+
+
+
 
 
 
@@ -1136,197 +1158,51 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-\openout2 = `Chapter7/chapter7.aux'.
 
- (./Chapter7/chapter7.tex [82
+LaTeX Warning: Empty bibliography on input line 201.
 
-
-
-
-
-
-
-
-]
-Chapter 7.
-[83{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Chapter7/Figs/time_transfer.png, id=82, 1203.49625pt x 334.24875pt>
-File: Chapter7/Figs/time_transfer.png Graphic file (type png)
-<use Chapter7/Figs/time_transfer.png>
-Package pdftex.def Info: Chapter7/Figs/time_transfer.png  used on input line 66.
-(pdftex.def)             Requested size: 448.1309pt x 124.46063pt.
- [84] [85 <./Chapter7/Figs/time_transfer.png>]
-<Chapter7/Figs/SPEC_TDC.png, id=102, 1039.885pt x 406.51875pt>
-File: Chapter7/Figs/SPEC_TDC.png Graphic file (type png)
-<use Chapter7/Figs/SPEC_TDC.png>
-Package pdftex.def Info: Chapter7/Figs/SPEC_TDC.png  used on input line 112.
-(pdftex.def)             Requested size: 448.1309pt x 175.18423pt.
- [86 <./Chapter7/Figs/SPEC_TDC.png>] [87]
-<Chapter7/Figs/crt_sharps.png, id=128, 893.3375pt x 702.625pt>
-File: Chapter7/Figs/crt_sharps.png Graphic file (type png)
-<use Chapter7/Figs/crt_sharps.png>
-Package pdftex.def Info: Chapter7/Figs/crt_sharps.png  used on input line 210.
-(pdftex.def)             Requested size: 268.88127pt x 211.47528pt.
-<Chapter7/Figs/upstream_T0stability_combined_board79.png, id=130, 867.24pt x 433.62pt>
-File: Chapter7/Figs/upstream_T0stability_combined_board79.png Graphic file (type png)
-<use Chapter7/Figs/upstream_T0stability_combined_board79.png>
-Package pdftex.def Info: Chapter7/Figs/upstream_T0stability_combined_board79.png  used on input line 238.
-(pdftex.def)             Requested size: 380.914pt x 190.45595pt.
-<Chapter7/Figs/upstream_T1stability_combined_board79.png, id=131, 867.24pt x 433.62pt>
-File: Chapter7/Figs/upstream_T1stability_combined_board79.png Graphic file (type png)
-<use Chapter7/Figs/upstream_T1stability_combined_board79.png>
-Package pdftex.def Info: Chapter7/Figs/upstream_T1stability_combined_board79.png  used on input line 246.
-(pdftex.def)             Requested size: 380.914pt x 190.45595pt.
- [88 <./Chapter7/Figs/crt_sharps.png>] [89 <./Chapter7/Figs/upstream_T0stability_combined_board79.png> <./Chapter7/Figs/upstream_T1stability_combined_board79.png>]
-<Chapter7/Figs/board79_T1drift_2d.png, id=145, 668.4975pt x 433.62pt>
-File: Chapter7/Figs/board79_T1drift_2d.png Graphic file (type png)
-<use Chapter7/Figs/board79_T1drift_2d.png>
-Package pdftex.def Info: Chapter7/Figs/board79_T1drift_2d.png  used on input line 273.
-(pdftex.def)             Requested size: 313.69026pt x 203.47722pt.
- [90 <./Chapter7/Figs/board79_T1drift_2d.png>]
-<Chapter7/Figs/CRT_T1_TopHat.png, id=152, 505.89pt x 433.62pt>
-File: Chapter7/Figs/CRT_T1_TopHat.png Graphic file (type png)
-<use Chapter7/Figs/CRT_T1_TopHat.png>
-Package pdftex.def Info: Chapter7/Figs/CRT_T1_TopHat.png  used on input line 298.
-(pdftex.def)             Requested size: 221.8226pt x 190.13835pt.
-<Chapter7/Figs/CRTT0_SPEC_TopHat.png, id=153, 505.89pt x 433.62pt>
-File: Chapter7/Figs/CRTT0_SPEC_TopHat.png Graphic file (type png)
-<use Chapter7/Figs/CRTT0_SPEC_TopHat.png>
-Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_TopHat.png  used on input line 305.
-(pdftex.def)             Requested size: 221.8226pt x 190.13835pt.
- [91 <./Chapter7/Figs/CRT_T1_TopHat.png> <./Chapter7/Figs/CRTT0_SPEC_TopHat.png>]
-<Chapter7/Figs/CRT_T1_Bucket.png, id=169, 505.89pt x 433.62pt>
-File: Chapter7/Figs/CRT_T1_Bucket.png Graphic file (type png)
-<use Chapter7/Figs/CRT_T1_Bucket.png>
-Package pdftex.def Info: Chapter7/Figs/CRT_T1_Bucket.png  used on input line 337.
-(pdftex.def)             Requested size: 221.8226pt x 190.13835pt.
-<Chapter7/Figs/CRTT0_SPEC_Bucket.png, id=170, 505.89pt x 433.62pt>
-File: Chapter7/Figs/CRTT0_SPEC_Bucket.png Graphic file (type png)
-<use Chapter7/Figs/CRTT0_SPEC_Bucket.png>
-Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_Bucket.png  used on input line 344.
-(pdftex.def)             Requested size: 221.8226pt x 190.13835pt.
- [92 <./Chapter7/Figs/CRT_T1_Bucket.png> <./Chapter7/Figs/CRTT0_SPEC_Bucket.png>]
-<Chapter7/Figs/TTT_diagram.png, id=185, 626.34pt x 212.795pt>
-File: Chapter7/Figs/TTT_diagram.png Graphic file (type png)
-<use Chapter7/Figs/TTT_diagram.png>
-Package pdftex.def Info: Chapter7/Figs/TTT_diagram.png  used on input line 419.
-(pdftex.def)             Requested size: 380.914pt x 129.41835pt.
- [93]
-<Chapter7/Figs/fanout.png, id=195, 738.76pt x 321.2pt>
-File: Chapter7/Figs/fanout.png Graphic file (type png)
-<use Chapter7/Figs/fanout.png>
-Package pdftex.def Info: Chapter7/Figs/fanout.png  used on input line 438.
-(pdftex.def)             Requested size: 221.8226pt x 96.44406pt.
-<Chapter7/Figs/daisychain.png, id=196, 738.76pt x 315.1775pt>
-File: Chapter7/Figs/daisychain.png Graphic file (type png)
-<use Chapter7/Figs/daisychain.png>
-Package pdftex.def Info: Chapter7/Figs/daisychain.png  used on input line 444.
-(pdftex.def)             Requested size: 221.8226pt x 94.63573pt.
- [94 <./Chapter7/Figs/TTT_diagram.png> <./Chapter7/Figs/fanout.png> <./Chapter7/Figs/daisychain.png>]
-<Chapter7/Figs/TTT_SPEC_diff_run7980.png, id=209, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/TTT_SPEC_diff_run7980.png Graphic file (type png)
-<use Chapter7/Figs/TTT_SPEC_diff_run7980.png>
-Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run7980.png  used on input line 505.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8060.png, id=210, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/TTT_SPEC_diff_run8060.png Graphic file (type png)
-<use Chapter7/Figs/TTT_SPEC_diff_run8060.png>
-Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8060.png  used on input line 512.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8178.png, id=211, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/TTT_SPEC_diff_run8178.png Graphic file (type png)
-<use Chapter7/Figs/TTT_SPEC_diff_run8178.png>
-Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8178.png  used on input line 525.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8196.png, id=212, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/TTT_SPEC_diff_run8196.png Graphic file (type png)
-<use Chapter7/Figs/TTT_SPEC_diff_run8196.png>
-Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8196.png  used on input line 531.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
- [95] [96 <./Chapter7/Figs/TTT_SPEC_diff_run7980.png> <./Chapter7/Figs/TTT_SPEC_diff_run8060.png> <./Chapter7/Figs/TTT_SPEC_diff_run8178.png> <./Chapter7/Figs/TTT_SPEC_diff_run8196.png>]
-<Chapter7/Figs/jitter_before_unzoom.png, id=229, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/jitter_before_unzoom.png Graphic file (type png)
-<use Chapter7/Figs/jitter_before_unzoom.png>
-Package pdftex.def Info: Chapter7/Figs/jitter_before_unzoom.png  used on input line 579.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/jitter_before_zoom.png, id=230, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/jitter_before_zoom.png Graphic file (type png)
-<use Chapter7/Figs/jitter_before_zoom.png>
-Package pdftex.def Info: Chapter7/Figs/jitter_before_zoom.png  used on input line 586.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
- [97]
-<Chapter7/Figs/jitter_before.png, id=237, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/jitter_before.png Graphic file (type png)
-<use Chapter7/Figs/jitter_before.png>
-Package pdftex.def Info: Chapter7/Figs/jitter_before.png  used on input line 614.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/jitter_after.png, id=238, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/jitter_after.png Graphic file (type png)
-<use Chapter7/Figs/jitter_after.png>
-Package pdftex.def Info: Chapter7/Figs/jitter_after.png  used on input line 621.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
- [98 <./Chapter7/Figs/jitter_before_unzoom.png> <./Chapter7/Figs/jitter_before_zoom.png>]
-<Chapter7/Figs/Tickts_spec.png, id=250, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/Tickts_spec.png Graphic file (type png)
-<use Chapter7/Figs/Tickts_spec.png>
-Package pdftex.def Info: Chapter7/Figs/Tickts_spec.png  used on input line 657.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/Tickts_spec_corrEbyE.png, id=251, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/Tickts_spec_corrEbyE.png Graphic file (type png)
-<use Chapter7/Figs/Tickts_spec_corrEbyE.png>
-Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrEbyE.png  used on input line 664.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
-<Chapter7/Figs/Tickts_spec_corrRbyR.png, id=252, 1734.48pt x 433.62pt>
-File: Chapter7/Figs/Tickts_spec_corrRbyR.png Graphic file (type png)
-<use Chapter7/Figs/Tickts_spec_corrRbyR.png>
-Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrRbyR.png  used on input line 671.
-(pdftex.def)             Requested size: 448.1309pt x 112.03056pt.
- [99 <./Chapter7/Figs/jitter_before.png> <./Chapter7/Figs/jitter_after.png>] [100 <./Chapter7/Figs/Tickts_spec.png> <./Chapter7/Figs/Tickts_spec_corrEbyE.png> <./Chapter7/Figs/Tickts_spec_corrRbyR.png>]) [101] [176
-
-
-
-
-
-
-] [177
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
- (./thesis.aux (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+(./thesis.aux (./Abstract/abstract.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CAA146D267224A5349309528B78098F7;3415.
+(rerunfilecheck)             Checksum: 66F2418E3626C53CD224DA500C29C564;218.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27341 strings out of 483065
- 483524 string characters out of 5963550
- 1247422 words of memory out of 5000000
- 41566 multiletter control sequences out of 15000+600000
- 617497 words of font info for 241 fonts, out of 8000000 for 9000
+ 26784 strings out of 483065
+ 471810 string characters out of 5963550
+ 1243844 words of memory out of 5000000
+ 41179 multiletter control sequences out of 15000+600000
+ 582177 words of font info for 142 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,12n,109p,989b,1448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,109p,989b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.2.4} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.2.5} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.a.C} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.2.7} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (23 pages, 3665452 bytes).
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (8 pages, 68474 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 29921 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 19473 words of extra memory for PDF output out of 20736 (max. 10000000)
 

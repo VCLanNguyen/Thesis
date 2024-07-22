@@ -45,9 +45,9 @@ For example, the generator used to simulate HNLs, to be discussed in the next se
 The simulation framework of SBND under the LArSoft framework is depicted in Fig. \ref{fig:Sim_Workflow}.
 The process begins with a generator to produce primary particles that enter the detector, as shown by the purple box.
 The primary particles can be neutrinos, cosmic muons or BSM particles depending on the type of generator.
-The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using the Geant4 tool kit \cite{geant4}, as shown by the green boxes.
+The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using the Geant4 toolkit \cite{geant4}, as shown by the green boxes.
 For interactions inside the detector, the charge and light yield are calculated from the energy deposition.
-Ionisation electrons are propagated through the detector to the wire planes using the Wirecell tool kit \cite{wirecell}, as shown by the red boxes.
+Ionisation electrons are propagated through the detector to the wire planes using the Wirecell toolkit \cite{wirecell}, as shown by the red boxes.
 Scintillation photons are propagated to the photodetectors using a combination of a semi-analytical model and an optical library \cite{sbnd_pds_paper}, as shown by the blue boxes.
 For interactions outside of the detector, only the energy depositions within CRT strips are converted into light yield, as shown by the orange box.
 The detector response is then simulated for each detector subsystem.
@@ -320,7 +320,7 @@ Following that, Sec. \ref{sec:wire_response}, \ref{sec:pds_response} and \ref{se
 \subsection{Particle Propagation Simulation}
 \label{sec:gen_g4}
 
-Once a particle is simulated inside the detector, it is propagated through the detector using the Geant4 tool kit \cite{geant4}.
+Once a particle is simulated inside the detector, it is propagated through the detector using the Geant4 toolkit \cite{geant4}.
 Geant4 propagates the particle by each step $dx$, where the step length is randomised and capped at 0.3 mm (one order of magnitude less than the wire pitch).
 At each step, physics processes are applied to the particle, such as energy deposition, interaction, decay and so on.
 The step propagation also accounts for the electric field distortion caused by the space charge effect due to high exposure to cosmic muons.
@@ -328,15 +328,15 @@ The step propagation also accounts for the electric field distortion caused by t
 %Then, Geant4 simulates the energy deposition of the resulting di-photon shower.
 
 The main physics process for energy deposition in the detector is ionisation by charged particles.
-Similarly to the theory detailed in Sec. \ref{sec3:creation}, the Geant4 tool kit simulates the ionisation process following the Bethe-Bloch formalism tuned to data \cite{geant4_ions}.
+Similarly to the theory detailed in Sec. \ref{sec3:creation}, the Geant4 toolkit simulates the ionisation process following the Bethe-Bloch formalism tuned to data \cite{geant4_ions}.
 The number of ionisation electrons and scintillation photons from the deposited energy is computed using the ModBox recombination model with ArgoNeuT parameters \cite{argoneut_recomb}, and the charge-light anti-correlation from Eq. \ref{eq:Q} and \ref{eq:L}. 
 Further discussion about the simulation of recombination, and the impacts of delta ray fluctuations on recombination will be detailed in the forthcoming Sec. \ref{sec7:delta}.
-The result from the Geant4 tool kit is a complete set of charge and light yields along the primary particle trajectories through the detector and the hierarchy of the daughter particles produced from the primary.
+The result from the Geant4 toolkit is a complete set of charge and light yields along the primary particle trajectories through the detector and the hierarchy of the daughter particles produced from the primary.
 
 \subsection{Wire Response Simulation}
 \label{sec:wire_response}
 
-Ionisation electrons are simulated to drift towards the wire planes using the WireCell tool kit \cite{wirecell}.
+Ionisation electrons are simulated to drift towards the wire planes using the WireCell toolkit \cite{wirecell}.
 The simulation transports the electrons and introduces smearing due to detector effects for transporting electrons through liquid argon under an electric field, which is previously discussed in Sec. \ref{sec:edrift}.
 This includes charge attenuation due to impurities, longitudinal and transverse diffusion and finally space charge effect.
 

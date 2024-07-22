@@ -2187,10 +2187,6 @@
     <bcf:datasource type="file" datatype="bibtex">References/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">WR_paper</bcf:citekey>
-    <bcf:citekey order="2">crt_clock</bcf:citekey>
-    <bcf:citekey order="3">caen1730</bcf:citekey>
-    <bcf:citekey order="4">uboone_ns</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
