@@ -21,13 +21,11 @@ Thus, this novel technology remains the primary choice for many neutrino experim
 
 %overview
 The following chapter will delve into the operating principles of a LArTPC, which is the detection technology employed by the Short-Baseline Near Detector to be discussed in the forthcoming Chapter \ref{ChapterDetector}.
-Sec. \ref{sec3:overview} provides an overview of the design of a LArTPC and the choice of liquid argon.
-In Sec. \ref{sec3:creation}, a comprehensive discussion is presented on particle interactions with the liquid argon and the production of ionisation electrons and scintillation photons, which are the observables of a LArTPC.
-Following that, Sec. \ref{sec3:propagation} outlines the propagation of the resultant electrons and photons through the liquid argon medium.
-Sec. \ref{sec3:detection} provides an insight into the detection mechanism of the ionisation electrons and scintillation photons using wire planes and novel optical detection technologies respectively.
-Finally, Sec. \ref{lartpcConclude} concludes the chapter with some remarks.
-
-\newpage
+Section \ref{sec3:overview} provides an overview of the design of a LArTPC and the choice of liquid argon.
+In Section \ref{sec3:creation}, a comprehensive discussion is presented on particle interactions with the liquid argon and the production of ionisation electrons and scintillation photons, which are the observables of a LArTPC.
+Following that, Section \ref{sec3:propagation} outlines the propagation of the resultant electrons and photons through the liquid argon medium.
+Section \ref{sec3:detection} provides an insight into the detection mechanism of the ionisation electrons and scintillation photons using wire planes and novel optical detection technologies respectively.
+Finally, Section \ref{lartpcConclude} concludes the chapter with some remarks.
 
 %********************************** %First Section  **************************************
 \section{Overview of LArTPCs}
@@ -78,9 +76,9 @@ Consequently, liquid argon continues to stand out as an advantageous target mate
 \label{sec3:creation}
 
 Particle interactions in liquid argon and the production of ionisation electrons and scintillation photons as observable signals are discussed in the following section.       
-Sec. \ref{sec3:bethebloch} provides a description of the energy loss of charged particles traversing liquid argon and producing ionisation electrons.                          
-Following that, Sec. \ref{sec:scintillation} details the production mechanism of scintillation photons via excitation and recombination.                                       
-Finally, Sec. \ref{sec:recomb} goes into more detail of the physics of recombination that determines the yield of ionisation electrons and scintillation photons.
+Section \ref{sec3:bethebloch} provides a description of the energy loss of charged particles traversing liquid argon and producing ionisation electrons.                          
+Following that, Section \ref{sec:scintillation} details the production mechanism of scintillation photons via excitation and recombination.                                       
+Finally, Section \ref{sec:recomb} goes into more detail of the physics of recombination that determines the yield of ionisation electrons and scintillation photons.
 
 %Ionisation
 \subsection{Production of Ionisation Electrons}
@@ -107,7 +105,7 @@ This method is the most effective for protons separation from muons and pions as
 \centering    
 \includegraphics[width=0.95\textwidth]{BetheBloch}
 \caption[Muon Energy Loss in a Copper Medium]{
-Example of energy loss in matter for a muon traversing a copper medium \cite{Passage}.
+Energy loss in matter for a muon traversing a copper medium \cite{Passage}.
 }
 \label{fig:BetheBloch}
 \end{figure}
@@ -186,9 +184,9 @@ This can be either a singlet state where the excited electron has the same spin 
 The singlet state has a shorter mean lifetime with a decay constant $\tau_{1} \approx 6 - 7$ ns, while the triplet state has a longer mean lifetime with a decay constant $\tau_{3} \approx 1.5 - 1.6$ 
 $\mu$s \cite{photon_lifetime}.
 These are referred to as the prompt and or late components, respectively. 
-The time-dependent probability of light emission in pure liquid argon is modelled as
+The time-dependent probability of light emission in pure liquid argon is modelled as:
 \begin{equation}
-        l(t)=\frac{A_{1}}{\tau_{1}}\exp{\left(-\frac{t}{\tau_{1}}\right)} +\frac{A_{3}}{\tau_{3}}\exp{\left(-\frac{t}{\tau_{3}}\right)}
+        l(t)=\frac{A_{1}}{\tau_{1}}\exp{\left(-\frac{t}{\tau_{1}}\right)} +\frac{A_{3}}{\tau_{3}}\exp{\left(-\frac{t}{\tau_{3}}\right)},
 \end{equation}
 where $A_{1}$ and $A_{3}$ are the decay amplitudes of the singlet and triplet state.
 
@@ -237,12 +235,12 @@ Recombination factor in liquid argon as a function of the deposited energy densi
 %ArgoNeuT experiment recently conducted a data-driven study on recombination in LArTPC, resulting in the ``Modified Box Model" with parameter $\alpha = 0.93$ and $\beta = 0.30 $ MeV/cm \cite{argoneut_recomb}.
 %If not taken into account, the recombination can result in underestimating energy loss due to ionisation.
 
-The dependence of recombination on the electric field leads to an anti-correlation between the charge and light yield $Q$ and $L$ respectively, such that \cite{argoneut_recomb}
+The dependence of recombination on the electric field leads to an anti-correlation between the charge and light yield $Q$ and $L$ respectively, such that \cite{argoneut_recomb}:
 \begin{gather}
         \label{eq:Q}
-        Q = N_{i}R \\ 
+        Q = N_{i}R, \\ 
         \label{eq:L}
-        L = N_{ex} + N_{i}(1 - R)
+        L = N_{ex} + N_{i}(1 - R),
 \end{gather}
 where $N_{i}$ is the number of electron-ion pairs and $N_{ex}$ is the number of argon excitons.
 Fig. \ref{fig:QLAnti} illustrates the anti-correlation as a function of the electric field strength for various noble elements, of which argon is shown as dashed lines.
@@ -252,7 +250,7 @@ In the presence of an electric field, recombination decreases, leading to a redu
 Furthermore, the recombination factor can be influenced at a local scale due to ionisation density resulting from interacting particles.
 The SBND detector operates with an electric field of 500 V/cm, a region where the energy deposition to ionisation electrons and scintillation electrons are approximately equal as can be seen in Fig.
  \ref{fig:QLAnti}.
-The impact of recombination on the observed physics will be further discussed in Chapter \ref{ChapterCalib}, Sec. \ref{sec7:delta}.
+The impact of recombination on the observed physics will be further discussed in Chapter \ref{ChapterCalib}, Section \ref{sec7:delta}.
 
 \begin{figure}[ht!] 
 \centering    
@@ -267,8 +265,8 @@ Anti-correlation of charge yield $Q$ and light yield $L$ as a function of the el
 \label{sec3:propagation}
 
 The following section provides a description of the transportation of ionisation electrons and scintillation photons through the liquid argon medium.
-Sec. \ref{sec:edrift} covers the details of different physics processes that electrons experience as they drift towards the anode, including diffusion, attenuation and the space charge effect.
-On the other hand, a discussion on the propagation of photons is presented in Sec. \ref{sec:photonprop}, detailing the process of Rayleigh scattering, absorption and wavelength shifting.
+Section \ref{sec:edrift} covers the details of different physics processes that electrons experience as they drift towards the anode, including diffusion, attenuation and the space charge effect.
+On the other hand, a discussion on the propagation of photons is presented in Section \ref{sec:photonprop}, detailing the process of Rayleigh scattering, absorption and wavelength shifting.
 
 %Transportation of ionised electrons, diffusions, impurities
 \subsection{Electron Drift}
@@ -286,16 +284,16 @@ The effects increase with the drift distance, smearing both spatial and temporal
 
 Diffusion is parameterised in both the longitudinal and the transverse direction, which are parallel and perpendicular to the drift direction respectively.
 Longitudinal diffusion affects the temporal resolution, as individual electrons arrive at the wire either earlier or later relative to the electron cloud moving at the average drift velocity.
-The temporal smearing due to the longitudinal diffusion can be approximated as \cite{uboone_diff} 
+The temporal smearing due to the longitudinal diffusion can be approximated as \cite{uboone_diff}:
 \begin{equation}
-        \sigma_{L} \approx \sqrt{\frac{2D_L}{v^{2}_{d}}t}
+        \sigma_{L} \approx \sqrt{\frac{2D_L}{v^{2}_{d}}t},
 \end{equation}
 where $D_L$ (cm$^2$/s) is the longitudinal diffusion, $v_{d}$ (cm/s) is the drift velocity and $t$ (s) is the drift time.
 %$D_L$, in this case, is an effective longitudinal diffusion coefficient containing a small contribution from transverse diffusion \cite{uboone_diff}.
 On the other hand, transverse diffusion broadens the cross section of the electron cloud arriving at the original wire, causing electrons to migrate to neighbouring wires.
-The spatial smearing due to the transverse diffusion can be approximated as \cite{GrayDiffusion}
+The spatial smearing due to the transverse diffusion can be approximated as \cite{GrayDiffusion}:
 \begin{equation}
-        \sigma_T \approx \sqrt{2 \cdot D_T \cdot t}
+        \sigma_T \approx \sqrt{2 \cdot D_T \cdot t},
 \end{equation}
 where $D_T$ (cm$^2$/s) is the transverse diffusion and $t$ (s) is the drift time.
 Collectively, both longitudinal and transverse diffusion smear the distribution of deposited energy seen by each wire, thereby impacting the measured energy loss profile of a particle \cite{GrayDiffusion}.
@@ -306,9 +304,9 @@ At the conditions expected for the SBND detector, the diffusion coefficients hav
 In addition to diffusion, drifting electrons can also undergo attenuation.  
 In this process, electrons are captured by electronegative impurities present in the liquid argon, most commonly oxygen and water \cite{protodune}.
 This results in a reduction of electrons arriving at the wires, proportional to the drift distance. 
-The number of charges collected on a wire $Q_{wire}$ is typically modelled as an exponential suppression
+The number of charges collected on a wire $Q_{wire}$ is typically modelled as an exponential suppression:
 \begin{equation}
-	Q_{Wire} (t) = Q_{Dep} \cdot \exp\left(\frac{-t}{\tau}\right)
+	Q_{Wire} (t) = Q_{Dep} \cdot \exp\left(\frac{-t}{\tau}\right),
 \label{eq:etime}
 \end{equation}
 where $Q_{Dep}$ is the original number of deposited charges, $t$ (ms) is the drift time and $\tau$ (ms) is the electron lifetime characterising the level of charge attenuation.
@@ -328,7 +326,7 @@ Since SBND is a surface detector without an overburden, high exposure to cosmic 
 The resulting accumulation of slow-moving argon ions distorts the uniformity of the electric field, affecting both its intensity and direction.
 Fig. \ref{fig:SCE} illustrates the deformation of tracks drifting in the distorted electric field due to SCE.
 Track trajectories are impacted two-fold: bending away towards the detector edges as shown by the middle plot and bowing towards the cathode as shown by the right plot \cite{SCE}.
-Moreover, distortions of the electric field also affect recombination previously discussed in Sec. \ref{sec:recomb}, since the recombination factor is dependent on the electric field strength.
+Moreover, distortions of the electric field also affect recombination previously discussed in Section \ref{sec:recomb}, since the recombination factor is dependent on the electric field strength.
 Local fluctuations of recombination can subsequently impact the local charge yield resulting from an energy deposition.
 
 \begin{figure}[htbp] 
@@ -367,9 +365,9 @@ In addition to Rayleigh scattering, scintillation photons can also undergo absor
 Contaminants like nitrogen \cite{photon_nitrogen} and methane \cite{photon_methane} have a high absorption cross section for VUV photons.
 Other contaminants, like oxygen and water, have also been observed in commercial argon and can also attenuate the number of photons \cite{photon_commercial}. 
 The absorption of scintillation photons is modelled as an exponential suppression similar to Eq. \ref{eq:etime} modelling the electron attenuation.
-The number of photons surviving absorption $N_\gamma$ is as follows 
+The number of photons surviving absorption $N_\gamma$ is as follows:
 \begin{equation}
-	N_{\gamma} (d) = N_0 \cdot \exp\left(\frac{-d}{\lambda_{A}}\right)
+	N_{\gamma} (d) = N_0 \cdot \exp\left(\frac{-d}{\lambda_{A}}\right),
 \label{eq:absorption}
 \end{equation}
 where $N_0$ is the original number of scintillation photons, $d$ is the propagation distance and $\lambda_A$ the absorption length.
@@ -407,8 +405,8 @@ Group velocity (left) and the Rayleigh scattering length (right) as a function o
 \label{sec3:detection}
 
 Upon arrival at the anode for detection, ionisation electrons and scintillation photons are read out by different detection technologies.
-Ionisation electron signals are recorded by the wire planes, which will be detailed in the following Sec. \ref{sec:wire}.
-Following that, Sec. \ref{sec:pmtarapuca} provides a description of two different types of optical detectors for detecting scintillation photons.
+Ionisation electron signals are recorded by the wire planes, which will be detailed in the following Section \ref{sec:wire}.
+Following that, Section \ref{sec:pmtarapuca} provides a description of two different types of optical detectors for detecting scintillation photons.
 
 \subsection{Wire Planes}
 \label{sec:wire}
@@ -439,7 +437,7 @@ Current signals on the induction and collection wire plane induced by a point-li
 The signals induced or collected on the wire planes are then shaped, amplified, and digitized before acquisition.
 Then, the measured signals are deconvolved for noise removal and the amount of charge collected is correlated with the energy deposited in the detector.
 Finally, the reconstruction of spatial and energy information is performed, which allows for high level analysis like particle identification.
-The reconstruction of charge signals at SBND will be further discussed in Chapter \ref{ChapterReco}, Sec. \ref{sec:reco_tpc}.
+The reconstruction of charge signals at SBND will be further discussed in Chapter \ref{ChapterReco}, Section \ref{sec:reco_tpc}.
 
 \subsection{Photomultiplier Tubes and X-ARAPUCAs}
 \label{sec:pmtarapuca}

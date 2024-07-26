@@ -778,8 +778,10 @@ Overall, the most highlighted cuts are the muon/proton/pion cut for track remova
 \section{Truth Study On Timing Resolution Improvement}
 \label{sec:truth_bucket}
 
-In addition to the selection of reconstructed variables, a truth study was carried out to better understand the limitations of the reconstruction, particularly the timing resolution.
-There are several factors contributing to smearing the Gaussian shape of the beam bucket as depicted in Fig. \ref{fig:smearing_factors}.
+In addition to the selection of reconstructed variables, a truth study was carried out to better the limitations of the reconstruction, particularly the timing resolution.
+The truth study was performed on \textit{true} variables, indicating that no detector simulation and reconstruction were applied.
+
+There are several factors smearing the arrival time of a SM neutrino at SBND, and consequently smearing the Gaussian shape of the beam bucket, as depicted in Fig. \ref{fig:smearing_factors}.
 The intrinsic Gaussian sigma of the proton bucket from the Booster synchrotron is 1.308 ns, as shown by the brown arrow.
 This structure is then smeared out due to the Time of Flight (ToF) of secondary mesons, as shown by the purple arrow.
 Moreover, the ToF of the tertiary particles, whether SM neutrinos or HNLs, from the production location to the detector further smears the Gaussian, as shown by the pink arrow.
@@ -794,15 +796,15 @@ The second one is the ToF of the photon from the production to the detection loc
     \label{fig:smearing_factors}
 \end{figure}
 
-The truth beam bucket of SM neutrinos that arrive at the detector is plotted in the left figure of Fig. \ref{fig:gaus_truth_reco}.
-The truth arrival time at the front face of SBND was computed using the truth information of the neutrino vertex to correct for the SM neutrino ToF inside the detector.
-In the truth phase space, it is evident that the combination of the ToF of the secondary mesons and ToF of SM neutrinos to the detector smears the Gaussian sigma by a negligible amount from 1.308 ns to 1.37 ns.
+The truth beam bucket of SM neutrinos that arrive at the front face of SBND is plotted in the left figure of Fig. \ref{fig:gaus_truth_reco}.
+This distribution was computed using the true interaction time at the vertex, marked by the yellow star in Fig. \ref{fig:smearing_factors}, and then corrected for the SM neutrino ToF inside the detector, depicted by the red arrow.
+In the truth phase space, it is evident that the combination of the ToF of the secondary mesons and of SM neutrinos to the detector smears the Gaussian sigma by a negligible amount from 1.308 ns to 1.37 ns.
 
 The reconstructed beam bucket distribution of SM neutrinos is plotted in the right figure of Fig. \ref{fig:gaus_truth_reco}.
 As previously detailed in Sec. \ref{sec:key_dist}, the beam bucket is reconstructed using the flash time matched a slice.
 The flash time, as detailed in Sec. \ref{sec:reco_pds}, was reconstructed using the prompt light occurring in the first 30 ns of the flash window such that the scintillation location is close to the interaction vertex.
-Moreover, the flash time was already corrected for the photon propagation time drifting from the scintillation location to PMTs.
-Then, the SM neutrino ToF inside the detector was corrected by applying a shift from the reconstructed vertex $z$-position to $z = 0$, corresponding to the detector's front face.
+Moreover, the flash time was already corrected for the photon propagation time drifting from the scintillation location to PMTs, depicted by the green arrow in Fig. \ref{fig:smearing_factors}.
+Then, the SM neutrino ToF inside the detector, as shown by the red arrow, was corrected by applying a shift from the reconstructed vertex $z$-position to $z = 0$ at the detector's front face.
 Thus, the reconstruction depends on 3 variables: (1) the matching of flash-to-slice, (2) the flash time and (3) the slice vertex.
 Each of these variables has its own reconstruction resolution and can smear the Gaussian shape of SM neutrinos arriving at the detector.
 %The resulting beam bucket corresponds to a Gaussian with a sigma smeared from 1.308 ns to 2.26 ns.
@@ -813,8 +815,7 @@ Each of these variables has its own reconstruction resolution and can smear the 
 
 Going from the truth phase space to the reconstruction phase space, two observations can be made.
 The first one is the shift of the Gaussian mean from 7.44 to 9.26, equivalent to a shift of 1.82 ns.
-A portion of the shift is due to the reconstructed flash time introducing a shift of 1.45 ns \cite{sbnd_pd
-s_paper}.
+A portion of the shift is due to the reconstructed flash time introducing a shift of 1.45 ns \cite{sbnd_pds_paper}.
 The remaining shift amount might be due to the slice vertex reconstruction and the flash matching.      
 The second observation is that the Gaussian sigma is smeared from 1.37 ns to 2.26 ns. 
 This sigma smearing is detrimental to the HNL search since it results in more SM neutrinos at the edge of the beam bucket and thus, reducing the signal-to-background ratio in this region.                     
@@ -841,14 +842,15 @@ Particularly, the SPEC-TDC device, as previously discussed in Sec. \ref{subsec42
 
 For modelling the background with these assumptions, only SM neutrinos are considered and not cosmics for simplification. 
 The truth beam bucket distribution of SM neutrinos is first smeared with the two assumptions.
-To compare the new \textit{smeared truth} distribution to the reconstructed distribution \textit{after selection}, the smeared truth distribution is normalised to the number of background slices remaining after the selection.
-For example, the lenient selection leaves 9,761 background slices in the final distribution. 
-Fig. \ref{fig:gaus_truth_smear} shows the truth and smeared truth distributions normalised to the same area of the reconstructed distribution after selection. 
-The left figure shows the truth distribution without any smearing applied.
-The middle figure shows the smeared truth distribution using the stated assumptions.
-The right figure shows the reconstructed distribution after applying the lenient selection.
-It is important to note the difference between the reconstructed beam bucket before and after selection such that the distribution after selection has a less shifted Gaussian mean and a smaller Gaussian sigma of 1.99 ns compared to 2.26 ns.
-This is due to cuts having non-uniform effects across the distribution. 
+Then, to compare the new \textit{smeared truth} distribution to the reconstructed distribution \textit{after selection}, the smeared truth distribution is normalised to same area.
+%For example, the lenient selection leaves 9,761 background slices in the final distribution. 
+%distributions normalised to the same area of the reconstructed distribution after selection. 
+Fig. \ref{fig:gaus_truth_smear} shows the comparison of the truth, smeared truth and the reconstructed distribution after selection.
+The left figure shows the truth distribution without any smearing applied with a sigma of 1.37 ns.
+The middle figure shows the smeared truth distribution using the stated assumptions with a sigma of 1.73 ns.
+The right figure shows the reconstructed distribution after applying the lenient selection with a sigma of 1.99 ns.
+It is important to note the difference between the reconstructed beam bucket before and after selection such that the distribution after selection has a less shifted Gaussian mean and a smaller Gaussian sigma.
+This is due to cuts having non-uniform effects on the distribution. 
 
 \begin{figure}[ht!]
     \centering
@@ -858,7 +860,8 @@ This is due to cuts having non-uniform effects across the distribution.
 \end{figure}
 
 For modelling the signal, the same smearing assumptions are applied to the truth timing distribution of HNLs. 
-Unlike the background modelling approach of normalising the number of remaining background slices after selection, a flat efficiency of 30\% is applied to the HNL truth distribution to account for the effects of reconstruction and selection combined.
+%Unlike the background modelling approach of normalising the number of remaining background slices after selection, a flat efficiency of 30\% is applied to the HNL truth distribution to account for the effects of reconstruction and selection combined.
+Unlike the background modelling approach of normalising the same area, a flat efficiency of 30\% is applied to the HNL truth distribution to account for the effects of reconstruction and selection combined.
 Fig. \ref{fig:hnl_sm_smear} shows the beam bucket distribution of SM neutrinos and HNLs across the phase space of truth, smeared truth and reconstruction after selection for comparison. 
 The smeared truth distribution shows a higher signal-to-background ratio particularly for the bins at the edge of the bucket compared to the reconstructed distribution.
 This smeared truth distribution will also used for setting the sensitivity limits alongside the reconstructed distributions, as this is an attempt to answer the proposed question on timing resolution improvement.

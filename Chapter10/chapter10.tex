@@ -2,7 +2,7 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{Setting Limits on The Mixing Angle of HNLs}
+\chapter{Limits Setting on The Coupling of HNLs}
 \label{ChapterResult}
 
 % **************************** Define Graphics Path **************************
@@ -15,17 +15,16 @@
 %********************************** %Opening  **************************************
 
 After the selection performed on Monte Carlo (MC) samples, the analysis continues with assessing and propagating uncertainties.
-This is a critical step to evaluate the statistical fluctuation due to the size of the MC samples.
-Moreover, it is to understand uncertainties due to the simulated physics models not only of the BNB flux and SM neutrinos but also of the SBND detector.   
-Then, the limit setting was performed using the likelihood-based hypothesis testing for exclusion limits, 
-which is a common statistical procedure developed by particle physicists \cite{asymptotic_test}.
+This is a critical step to evaluate the statistical fluctuation due to the size of the MC samples as well as uncertainties due to the simulated physics models of the BNB flux, SM neutrinos and the SBND detector.   
+Then, the limit setting was performed using the likelihood-based hypothesis testing for exclusion limits \cite{asymptotic_test}.
+%which is a common statistical procedure developed by particle physicists.
 The beam bucket distribution with fully propagated uncertainties is the input of the limit setting, which exploits the exceptionally high signal-to-background ratio of bins at the edge of the distribution to achieve competitive sensitivity.
 
-The following chapter will provide details of the analysis steps after selection to acquire the final result.
-Sec. \ref{sec:uncertainty} outlines the assessment of statistical as well as systematic uncertainties. 
-Following that, Sec. \ref{sec:limit_procedure} delves into the limit setting procedure.
-The results of the upper limits on the mixing angle of Heavy Neutral Leptons (HNLs) are then presented in Sec. \ref{sec:result}.
-Finally, Sec. \ref{sec:result_remarks} concludes the chapter with some remarks.
+The following chapter will provide details of the analysis steps after the selection to acquire the final result.
+Section \ref{sec:uncertainty} outlines the assessment of statistical as well as systematic uncertainties. 
+Following that, Section \ref{sec:limit_procedure} delves into the limit setting procedure.
+The results of the upper limits on the coupling $|U_{\mu4}|^{2}$ of Heavy Neutral Leptons (HNLs) are then presented in Section \ref{sec:result}.
+Finally, Section \ref{sec:result_remarks} concludes the chapter with some remarks.
 
 \clearpage
 
@@ -36,7 +35,11 @@ Finally, Sec. \ref{sec:result_remarks} concludes the chapter with some remarks.
 Since many physics measurements to be made by SBND will heavily rely on comparing data and MC samples, it is vitally important to understand the input physics models used to simulate the MC sample.
 As previously discussed in Chapter \ref{ChapterDetector} describing the detector and Chapter \ref{ChapterSim} detailing the simulation framework, many different theoretical as well as data-driven models are used to predict the incoming flux from the BNB and the SM neutrino interaction cross sections.
 Each model has its own uncertainty and needs to be propagated to the final physics result.
-The assessment of statistical and systematic uncertainties of signals and backgrounds is presented in this section.
+
+The assessment of statistical and systematic uncertainties is presented in this section.
+Section \ref{sec:reweighting} details the reweighting method to assess uncertainties of BNB flux and SM neutrino predictions.
+In following, the error propagation is given in Section \ref{sec:error_prop}.
+Finally, Section \ref{sec:signal_error} and \ref{sec:bkg_error} provide a description of uncertainty sources for the HNL signal and SM neutrino and cosmic backgrounds respectively.
 
 \subsection{The Reweighting Method}
 \label{sec:reweighting}
@@ -73,18 +76,18 @@ Then, from the probability $P(x)$ describing an outcome of physics measurements 
 The weight $w$ describes whether the probability $P(x')$ is more or less likely to occur given the transformed parameter $x'$ compared to the CV parameter $x$.
 The distribution of $w$ therefore describes the Probability Density Function (PDF) of the parameter $x$.
 A universe associated with a weight $w$ represents an outcome sampled from the PDF.
-The weight example shown in Eq. \ref{eq:prob_w} is associated with a single physics parameter non-correlated to any other parameters, however, a weight associated with multiple correlated parameters can also be computed in the same manner.
+Moreover, the weight example shown in Eq. \ref{eq:prob_w} is associated with a single physics parameter $x$ that is non-correlated to any other parameters.
+However, a weight associated with multiple correlated parameters is also computed in the same manner.
 
 The reweighting framework provides a quick way to compute PDFs, allowing for the assessment of the impact of systematic uncertainties without the computational expense of simulating and reconstructing the sample multiple times.
-A series of universes is first simulated and weights for every interaction, whether SM neutrino or HNL, are then 
-calculated from the PDFs for each universe.                                                                      
-The variation of the physics results across universes is used to quantify the uncertainties of the weighted parameters on the physics measurement, of which the error propagation is formalised in Sec. \ref{sec:error_prop}.
+A series of universes is first simulated and weights for every interaction, whether SM neutrino or HNL, and are then calculated from the PDFs for each universe.
+The variation of the physics results across universes is used to quantify the uncertainties of the weighted parameters on the physics measurement, of which the error propagation is given in Section \ref{sec:error_prop} next.
 
 %detector systematic
 In some cases, reweighting is not applicable such as evaluating uncertainties due to detector effects.
-For example, recombination, as detailed in Sec. \ref{sec7:delta}, influences not only the charge and light yield but also the charge deposition on wires non-uniformly. 
+For example, recombination, as detailed in Section \ref{sec7:delta}, influences not only the charge and light yield but also the non-uniformity of charge deposition on wires \cite{TODO}. 
 Consequently, it is non-trivial to quantify analytically the downstream impacts due to the variation in recombination parameters on the charge reconstruction by Pandora or any high level analysis tools using the reconstructed charge information.
-A full simulation and reconstruction of a single universe using the varied recombination parameters is needed to fully assess the impact on the physics measurement. 
+A full simulation and reconstruction of a single universe using the varied recombination parameter is needed to fully assess the impact on the physics measurement. 
 This method is commonly used for assessing detector systematic uncertainties.
 
 \subsection{Error Propagation Formulation}
@@ -102,11 +105,11 @@ The diagonal term of the covariance matrix represents the variance in a given bi
 	V_{ii} = \sigma^2_i
 \end{equation}
 
-Since there are multiple sources of error, as detailed in the forthcoming sections, the total covariance matrix is computed by summing the covariance matrix from each error source together, effectively adding the errors in quadrature as follows
+Since there are multiple sources of error, the total covariance matrix is computed by summing the covariance matrix from each error source together, effectively adding the errors in quadrature as follows
 \begin{equation}
 	V^{Total}_{ij} = \sum_{Sources} V_{ij}^{Source} = V_{ij}^{Stat} + V_{ij}^{Flux} +V_{ij}^{Cross\ Section} + ...
 \end{equation}
-The total error is then computed from the total covariance matrix using Eq. \ref{eq:diag_cov}.
+The total error is then computed from the total covariance matrix $V_{ij}$ using Eq. \ref{eq:diag_cov}.
 Additionally, the fractional matrix describing the relative error in each bin is computed, allowing for easy and direct comparison across bins of signal and background samples. 
 \begin{equation}
 	V_{ij}^{Frac} = \frac{V_{ij}}{n_i^{CV}n_j^{CV}}
@@ -115,32 +118,31 @@ Additionally, the fractional matrix describing the relative error in each bin is
 \subsection{Signal Uncertainty Sources}
 \label{sec:signal_error}
 
-For the HNL signal, there are four primary sources of uncertainties that will affect physics measurements by SBND: (1) statistical, (2) cosmic mis-tagging, (3) flux and (4) detector. 
+For the HNL signal, there are four primary sources of uncertainties that will affect physics measurements made by SBND: (1) statistical, (2) cosmic mistagging, (3) flux and (4) detector. 
 The statistical uncertainty is evaluated using the number of signal slices selected after the selection presented
  in Chapter \ref{ChapterSelect}, of which the following plots show the distribution after the lenient selection.
-Meanwhile, the cosmic mis-tagging uncertainty is evaluated using the number of cosmic muon slices occurring in the same readout window of HNLs.
+Meanwhile, the cosmic mistagging uncertainty is evaluated using the number of cosmic muon slices occurring in the same readout window of HNLs.
 The impact of the uncertainties due to flux modelling can be measured using the reweighting method.
-The detector systematic however is not reweightable and requires a fully simulated and reconstructed MC sample for assessing uncertainties due to the detector as previously explained in Sec. \ref{sec:reweighting}.
+The detector systematic however is not reweightable and requires a fully simulated and reconstructed MC sample for assessing uncertainties due to the detector as previously explained in Section \ref{sec:reweighting}.
 At the time of writing, the SBND detector is not yet operational, and it is undetermined which detector parameters are impactful on physics measurements.
 Thus, detector systematics are not included in the limit setting presented here but should be included in future
  iterations of this analysis.
 
 The statistical uncertainty describes the statistical fluctuation of the MC sample.
 It is computed using the number of HNL signal slices remaining after the selection binned to the beam bucket distribution.
-The statistical uncertainty of each bin of the distribution is defined as follows 
+The statistical uncertainty of each bin is defined as follows 
 \begin{equation}
 \label{eq:stat_err}
 \sigma_{statistics} = \sqrt{\mathrm{Number\ of\ entries\ in\ the\ bin}}
 \end{equation}
 The uncertainty is computed before the normalisation to the POT exposure of 3 years of data taking.
 After the normalisation, the resulting statistical uncertainty is plotted in Fig. \ref{fig:hnl_stat}, showing the uncertainty is minimal across the entire distribution.
-The fractional statistical uncertainty, as shown in the blue line in the bottom figure of Fig. \ref{fig:hnl_total_error}, shows that it is is well-constrained under $< 6\%$.
+The fractional statistical uncertainty, as depicted by the blue line in the bottom figure of Fig. \ref{fig:hnl_total_error}, shows that it is is well-constrained under $< 6\%$.
 
-The cosmic mistagging uncertainty accounts for the selected slices that are cosmic rays occurring in the same readout window as HNLs.
-In some cases, highly energetic cosmic rays can overlap with showers from HNLs, resulting in a pile-up of charge clusters at the same location in the detector.
-Drifting electrons arriving at the same wires and at the same time can mislead the clustering process of Pandora 
-during reconstruction, such that a reconstructed shower object might contain more charges from cosmic rays than HNLs.
-This reconstruction failure results in several cosmic slices remaining after the selection, and therefore, is considered as the cosmic mis-tagging uncertainty.                                                                
+The cosmic mistagging uncertainty accounts for the selected slices that are cosmic muons occurring in the same readout window as HNLs.
+In some cases, highly energetic cosmic muons can overlap with showers from HNLs, resulting in a pile-up of charge clusters at the same location in the detector.
+These charges arriving at the same wires and at the same time can mislead the clustering process of Pandora during reconstruction, such that a reconstructed shower object might contain more charges from cosmic muons than HNLs.
+This reconstruction failure results in several cosmic slices remaining after the selection, and therefore, is considered as the cosmic mistagging uncertainty.                                                                
 The cosmic mistagging uncertainty is plotted in Fig. \ref{fig:hnl_mistag}, however, the uncertainty is so small that it is not visible in the plot.                                                                              
 The uncertainty can be seen in the fractional format in the bottom figure of Fig. \ref{fig:hnl_error} in the gray line, demonstrating it is almost negligible at $< 1\%$. 
 
@@ -152,9 +154,9 @@ The flux systematic uncertainties are as follows
 \begin{coloritemize}
 	\item \textbf{Proton Delivery}: The proton intensity on the target of the BNB is measured using two steroids, which have an uncertainty of 2\% attributed to calibration.
 	\item \textbf{Production}: The number of secondary mesons produced in the BNB target has an uncertainty associated with each particle type. 
-		The model predictions for $\pi^\pm$, $K^\pm$ and $K^0_L$ mesons are previously detailed in Sec. \ref{sec4BNB}.
+		The model predictions for $\pi^\pm$, $K^\pm$ and $K^0_L$ mesons are previously detailed in Section \ref{sec4BNB}.
 		The main meson parent of HNLs is $K^+$, of which the production is extrapolated from the global data of $K^+$ using the Feynman Scaling to the relevant BNB energy range and further constrained by the SciBooNE's direct measurement of $K^+$ from the BNB.
-	\item \textbf{Hadronic Interactions}: Hadrons produced in the target may interact with the Beryllium target elastically or inelastically, affecting the kinematics of secondary mesons and consequently, tertiary daughter particles like HNLs and neutrinos.
+	\item \textbf{Hadronic Interactions}: Hadrons produced in the target may interact with the beryllium target elastically or inelastically, affecting the kinematics of secondary mesons and consequently, tertiary daughter particles like HNLs and SM neutrinos.
 		The uncertainty of interaction cross sections of $p/n + Be$ and $\pi^\pm + Be$ is propagated through the flux prediction.
 	\item \textbf{Horn Magnetic Field}: The magnetic field of the horn impacts the focusing of charged particles produced in the target.
 		Uncertainties associated with the horn magnetic field including the current pulsed through the horn and the skin current induced on the surface of the target are computed.
@@ -162,9 +164,9 @@ The flux systematic uncertainties are as follows
 Fig. \ref{fig:hnl_flux} shows the combined uncertainty of all the flux systematics listed here for HNLs, where the uncertainty is consistent across every bin.
 The flux fractional uncertainty is plotted in the green line in the bottom figure of Fig. \ref{fig:hnl_total_error} that it is well-constrained $< 8\%$.
 
-Finally, the top figure of Fig. \ref{fig:hnl_total_error} shows the total uncertainty combining the statistical, cosmic mis-tagging and flux uncertainties combined.
+Finally, the top figure of Fig. \ref{fig:hnl_total_error} shows the total uncertainty combining the statistical, cosmic mistagging and flux uncertainties combined.
 It can be seen that the uncertainty is evenly distributed across the beam bucket distribution with minimal biases in any bins. 
-The total fractional uncertainty is shown in the purple line in the bottom figure of Fig. \ref{fig:hnl_total_error}, showing that it is well-constrained $< 10\%$ across the full distribution.
+The total fractional uncertainty is shown in the purple line in the bottom figure of Fig. \ref{fig:hnl_total_error}, demonstrating that it is well-constrained $< 10\%$ across the full distribution.
 
 \begin{figure}[htbp!]
         \begin{subfigure}[b]{0.495\textwidth}   
@@ -188,7 +190,7 @@ The total fractional uncertainty is shown in the purple line in the bottom figur
             \label{fig:hnl_flux}
         \end{subfigure}
         \caption{
-	Plot showing different sources of uncertainty of HNLs.
+	Uncertainty sources of HNLs, including (a) statistical, (b) cosmic mistagging and (c) flux.
 	}
         \label{fig:hnl_error}
 	\vspace{0.5cm}
@@ -196,8 +198,8 @@ The total fractional uncertainty is shown in the purple line in the bottom figur
 %\begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=0.5\textwidth]{hnl_error}
-\caption[hnl_error]{
-Plot showing the total uncertainty (top) and fractional uncertainties (bottom) of HNLs.
+\caption[hnl error]{
+Total uncertainty (top) and fractional uncertainties (bottom) of HNLs.
 }
 \label{fig:hnl_total_error}
 \end{figure}
@@ -211,19 +213,19 @@ The detector systematic uncertainty is also currently not included but should be
 A new addition is the neutrino cross section uncertainty, of which the impact due to the cross section modelling 
 is measured using the reweighting method.
 
-The statistical uncertainty of the background was assessed using the number of SM neutrino and cosmic muon slices after the selection.                                                                                            
-The statistical uncertainty of each bin is computed using Eq. \ref{eq:stat_err}.
-The statistical uncertainty of the background is shown in Fig. \ref{fig:bkg_stat}.
+The statistical uncertainty of the background was assessed using the number of SM neutrino and cosmic muon slices after the selection and computed using Eq. \ref{eq:stat_err}.
+Fig. \ref{fig:bkg_stat} shows the statistical uncertainty of the background.
 It is evident that the background statistics are abundant for bins at the centre of the beam bucket however, limited for bins at the edge.
 Therefore, the statistical uncertainty is better constrained for bins at the centre, while bins at the edge have 
 a higher statistical fluctuation.
 This is visually evident in the statistical fractional uncertainty plotted in the blue line in the bottom figure of Fig. \ref{fig:bkg_total_error}.                                                                               
-For bins at the centre of the beam bucket, the statistical fractional uncertainty is constrained at $< 20\%$ while, for bins at the edge of the beam bucket distribution, particularly the first and last 4 bins, where the statistical fractional uncertainty reaches as high as $100\%$.
+For bins at the centre of the beam bucket, the statistical fractional uncertainty is constrained at $< 20\%$ while.
+For bins at the edge of the beam bucket distribution, particularly the first and last 4 bins, where the statistical fractional uncertainty reaches as high as $100\%$.
 
 The flux systematic of the background was measured using the reweighting method similar to HNLs.              
 One key difference in the flux systematics between the signal and the background is the uncertainties due to the secondary meson production in the BNB.                                                                           
 Unlike HNLs coming from only $K^+$, SM neutrinos can result from $\pi^\pm$, $K^\pm$ and $K^0_L$ as previously plotted in Fig. \ref{fig:BNB_neutrino_flux}.
-Particularly, the Sanford-Wang parametrisation for modelling the $\pi^+$ production introduces biases for NC $\pi^0$ interactions with energy < 300 MeV, which is the main background contributor.
+Particularly, the Sanford-Wang parametrisation for modelling the $\pi^+$ production introduces biases for NC $\pi^0$ interactions with energy < 300 MeV \cite{EdPhD}, which is the main background contributor.
 Due to the selection requiring very high energetic showers, this bias is mitigated.
 The resulting flux uncertainty of the background is plotted in Fig. \ref{fig:bkg_flux} and the flux fractional uncertainty is plotted in the green line in the bottom figure of Fig. \ref{fig:bkg_total_error}.
 %TODO: check the percentage level
@@ -231,7 +233,7 @@ The flux fractional uncertainty is very well-constrained $<20 \%$ and consistent
 
 %TODO: add citation and add appendix
 The SM neutrino cross section uncertainty was assessed using the SBN Event Weight, with systematic variable inputs from the GENIE generator.
-There are two types of weights for SM neutrino interaction cross section, weights associated with a group of correlated parameters and weights associated with a single non-correlated physics parameter.
+There are two types of weights for SM neutrino interaction cross section: (1) weights associated with a group of correlated physics parameters and (2) weights associated with a single non-correlated physics parameter.
 The SM neutrino systematics for a group of physics parameters are as follows
 \begin{coloritemize}
 \item\textbf{Charged Current Quasi-Elastic Scattering (CC-QE)}: Coefficients of the Z expansion of the axial form factor for CC-QE interactions are varied.
@@ -245,7 +247,7 @@ The SM neutrino systematics for a single non-correlated physic parameter are as 
 \begin{coloritemize}
 \item\textbf{Charged Current Quasi-Elastic Scattering (CC-QE)}: The shape of vector form factor, the random phase approximation and the strength of the Coulomb corrections of CC-QE interactions are varied.
 \item\textbf{Meson Exchange Current Interactions (MEC)}: The decay angle and the normalisation factor of CC-MEC and NC-MEC are varied.
-\item\textbf{Coherent Scattering (COH)}: Normalisation factors of NC-COH and CC-COH cross section interaction are varied.
+\item\textbf{Coherent Scattering (COH)}: Normalisation factors of NC-COH and CC-COH cross section interactions are varied.
 \item\textbf{NonRES Backgrounds}: Non-resonant backgrounds are varied for CC and NC, $\nu$ and $\bar{\nu}$, neutron and proton, 1$\pi$ and 2$\pi$ for a total of 16 systematic parameters.
 \item\textbf{Angular Distribution}: The angular distribution of $\gamma$ and $\pi$ are varied.
 \item\textbf{Branching Fraction}: The branching fraction scale factor for resonant  decays with either a single $\gamma$ or $\pi$ are varied.
@@ -256,13 +258,14 @@ This is due to the primary background after selection being NC $\pi^0$, of which
 Uncertainties associated with NC-COH and NC-RES scattering are the main contributors to this channel.
 Moreover, a small fraction of CC $\nu_e$ interactions remains after selection and the cross section is also not well-measured.
 For this channel, uncertainties associated with CC-QE scattering systematics contribute the most.
-Finally, uncertainties for modelling hadron transport interactions and NonRES background of NC1$\pi$ interactions are significant contributors to the final cross section uncertainty.
+Finally, uncertainties for modelling hadron transport interactions and NonRES backgrounds of NC1$\pi$ interactions are significant contributors to the cross section uncertainty.
 
 The cross section fractional uncertainty is plotted in the orange line in the bottom figure of Fig. \ref{fig:bkg_total_error}.
 For bins at the centre of the beam bucket distribution, it is the lowest in the entire distribution at $< 50\%$.
 It increases towards the bins at the edge of the beam bucket, reaching almost $100 \%$ for very low statistics bins.
+
 The total fractional uncertainty combining the statistical, flux and cross section uncertainty, is plotted in the purple line.
-For bins at the edge of the bucket, which are the bins driving the sensitivity limits, the total uncertainty is particularly high at $> 100\%$ due to the combined contribution of the statistical and cross section uncertainties.
+For bins at the edge of the bucket, which are the bins driving the sensitivity limits, the total uncertainty is particularly high at $> 100\%$ due to the combined contribution from all three uncertainty sources.
 
 %TODO: Update plots to after POT AND full background
 \begin{figure}[htbp!]
@@ -287,7 +290,7 @@ For bins at the edge of the bucket, which are the bins driving the sensitivity l
             \label{fig:bkg_xsec}
         \end{subfigure}
         \caption{
-	Plot showing different sources of uncertainty (bottom) of backgrounds.
+	Uncertainty sources of SM neutrino and cosmic backgrounds, including (a) statistical, (b) flux and (c) SM neutrino cross section.
 	}
         \label{fig:bkg_error}
 	\vspace{0.5cm}
@@ -295,8 +298,8 @@ For bins at the edge of the bucket, which are the bins driving the sensitivity l
 %\begin{figure}[htbp!] 
 \centering    
 \includegraphics[width=0.5\textwidth]{bkg_error}
-\caption[bkg_error]{
-Plot showing the total uncertainty (top) and fractional uncertainties (bottom) of backgrounds.
+\caption[bkg error]{
+Total uncertainty (top) and fractional uncertainties (bottom) of SM neutrino and cosmic backgrounds.
 }
 \label{fig:bkg_total_error}
 \end{figure}
@@ -305,17 +308,21 @@ Plot showing the total uncertainty (top) and fractional uncertainties (bottom) o
 \section{Limits Setting Procedure}
 \label{sec:limit_procedure}
 
-Setting the sensitivity limit employs the likelihood-based hypothesis test \cite{asymptotic_test}, of which likelihood functions are constructed using the beam bucket distribution of signals and backgrounds.
-The end-to-end limit setting procedure was performed using the \texttt{pyhf} package \cite{pyhf, pyhf_joss}.
-The following section will detail the hypothesis testing done under the hood of the \texttt{pyhf} package.
-It begins with defining the hypotheses for exclusion limits, then constructing the likelihood-based probability distribution for each hypothesis and finally, computing the modified \textit{p}-value using the CL$_{s}$ method.
-Validation of the result acquired from the \textit{pyhf} package and the construction of likelihood functions using \textit{pyhf} are also presented.
+The limit setting procedure employs the likelihood-based hypothesis test \cite{asymptotic_test}, of which likelihood functions are constructed using the beam bucket distribution of signals and backgrounds.
+The end-to-end procedure was performed using the \texttt{pyhf} package \cite{pyhf, pyhf_joss}.
+This section begins with the definition of hypotheses for exclusion limits in Section \ref{sec:hypothesis_def} and the construction of the test statistic for each hypothesis in Section \ref{sec:llh_test}.
+Then, the CL$_{s}$ method to determine \textit{p}-values of test statistics is described in Section \ref{sec:cls} and two approaches of computing test statistics are presented in Section \ref{sec:compute_test}. 
+Finally, an overview of the limits setting done under the hood of the \texttt{pyhf} package is given in Section \ref{sec:set_limits} 
+
+%This section will detail the hypothesis testing .
+
+%Validation of the result acquired from the \textit{pyhf} package and the construction of likelihood functions using \textit{pyhf} are also presented.
 
 %The test statistic is based on the likelihood ratio describing the probability of the observed data under the assumption of model parameters, allowing for the construction of the null and test hypotheses on the parameters.
-%The resulting \textit{p}-values from the null and test hypotheses are then used to compute a modified $p$-value using the Confidence Levels (CL$_{s}$) method \cite{CLs_Junk, CLs_Read} to set the upper limits on the mixing angle $|U_{\mu4}|^{2}$. 
+%The resulting \textit{p}-values from the null and test hypotheses are then used to compute a modified $p$-value using the Confidence Levels (CL$_{s}$) method \cite{CLs_Junk, CLs_Read} to set the upper limits on the coupling $|U_{\mu4}|^{2}$. 
 
 \subsection{Hypothesis Definition}
-
+\label{sec:hypothesis_def}
 The setting limit procedure employs the frequentist approach by performing hypothesis testing to quantify the level of agreement between the observed data and a given hypothesis $H$.
 To exclude a signal region, the test hypothesis $H_{b}$ is defined as describing only known processes, or a background-only model.
 Meanwhile, the null hypothesis $H_{s+b}$ is defined as the model including both background and signal processes.
@@ -328,7 +335,7 @@ For a series of observations $n$, the expectation value of the $i$th bin can be 
 where $s_i$ and $b_i$ are the number of entries from the signal and background distributions for bin $i$.
 The \textit{parameter of interest} $\mu$ determines the strength of the signal process, where $\mu = 0$ corresponds to the background-only $H_{b}$ hypothesis and $\mu = 1$ corresponds to the nominal signal $H_{s+b}$ hypothesis.
 It is an unconstrained parameter and is written separately from other parameters in the hypothesis.
-In the HNL search, varying the $\mu$ parameter is equivalent to varying the mixing angle $|U_{\mu4}|^{2}$.
+In the HNL search, varying the $\mu$ parameter is equivalent to varying the coupling $|U_{\mu4}|^{2}$.
 Other parameters in the hypothesis characterising the shape of the distributions are grouped as \textit{nuisance parameters}, denoted as $\theta$.
 Then, the null and test hypotheses can be formally written as
 \begin{align}
@@ -337,6 +344,7 @@ Then, the null and test hypotheses can be formally written as
 \end{align}
 
 \subsection{Likelihood-based Test Statistic}
+\label{sec:llh_test}
 
 To exclude the null hypothesis $H_{s+b}$ at some confidence levels, a test statistic is performed for a hypothesised $\mu$ against $H_{s+b}$ and $H_{b}$.
 To construct a test statistic for a multi-binned histogram, likelihood-based functions are chosen.
@@ -348,7 +356,7 @@ The likelihood function is the product of Poisson probabilities of all bins in t
 \end{equation}
 The first product describes the likelihood of the histogram $n$ with bin index $i$, which is constructed using the beam bucket distribution of HNLs as signals and SM neutrinos with cosmics as backgrounds. 
 The second product is a constraint term $c_\theta(a_\theta|\theta)$ with measurement $a_\theta$ constraining the nuisance parameter $\theta$.
-Individual constraint term is added for each uncertainty of the signal and background respectively, as previously discussed in Sec. \ref{sec:uncertainty}. 
+Individual constraint term is added for each uncertainty of signals and backgrounds respectively, as discussed in Section \ref{sec:uncertainty}. 
 
 For a hypothesised value of $\mu$, the profile likelihood ratio can be constructed from the likelihood function as \cite{asymptotic_test}
 \begin{equation}
@@ -361,7 +369,7 @@ The denominator is the \textit{unconditional} maximised likelihood, where $\hat{
 A modification in the likelihood ratio is required for cases where the signal process only increases the mean event rate, such that $\mu \geq 0$.
 If the observed data results in the best fit $\hat{\mu} < 0$, then the best level of agreement between the data and the prediction is forced to occur at $\hat{\mu} = 0$.
 This is equivalent to the late arrival of HNLs relative to the SM neutrino beam bucket, which can only increase the event rate for bins at the edge of the beam bucket.
-The profile likelihood ratio is modified as \cite{asymptotic_test}
+The profile likelihood ratio is then modified as \cite{asymptotic_test}
 \begin{equation}
     \Tilde{\lambda}(\mu) =
     \begin{cases}
@@ -371,7 +379,7 @@ The profile likelihood ratio is modified as \cite{asymptotic_test}
 \end{equation}
 where $\hat{\hat{\theta}} (0)$ is a function of $\mu = 0$. 
 
-From the modified profile likelihood ratio, the test statistic for setting upper limits is defined as \cite{asymptotic_test}
+From the modified profile likelihood ratio, the test statistic for setting upper limits is \cite{asymptotic_test}
 \begin{equation}
     \Tilde{q}_\mu = 
     \begin{cases}
@@ -402,10 +410,11 @@ Therefore, the corresponding PDFs for a test signal strength $\mu$, under the as
 \end{align}
 
 \subsection{The CL$_{\mathrm{s}}$ Method}
+\label{sec:cls}
 
-To quantify the level of significance of a test statistic, a $p$-value is computed as an integration of the $\Tilde{q}_{\mu}$ PDF, on either side of $\hat{q} = \Tilde{q}_{\mu}(\mu = \hat{\mu}) $ corresponding to the value of the test statistic for the observed data.
+To quantify the level of significance of a test statistic, a $p$-value is computed as an integration of the PDF $f(\Tilde{q}_{\mu}|\mu^{\prime})$ on either side of $\hat{q} = \Tilde{q}_{\mu}(\mu = \hat{\mu}) $ where $\hat{q}$ is the test statistic value for the observed data.
 Typically, one might only consider the $p$-value resulting from the null hypothesis $H_{s+b}$, denoted as $p_{s+b}$, to exclude the null hypothesis.
-This represents the probability of finding data more background-like under the assumption that the signal is true, often known as the probability of getting the type I error in hypothesis testing.
+This represents the probability of finding data more background-like under the assumption that the signal is true, also known as the probability of getting the type I error in hypothesis testing.
 %If $p_{s+b} < \alpha$, the null $H_{s+b}$ hypothesis can be excluded with a confidence level of $1 - \alpha$.
 
 
@@ -434,10 +443,12 @@ The modified \textit{p}-value is then computed from the \textit{p}-value for eac
     CL_{s} = \frac{CL_{s+b}}{CL_b}= \frac{p_{s+b}}{1-p_b}
 \end{equation}
 Since $(1 - p_b)$ only varies between 0 and 1, the resulting CL$_s$ is always greater or equal to $p_{s+b}$.
-Thus, the CL$_{s}$ is more conservative in quantifying the confidence level of hypothesis testing.
-The confidence threshold is chosen to be 0.1, such that CL$_{s} < (1 - 0.9)$, equivalent to setting an upper limit with a confidence level of 90\%.
+Thus, the CL$_{s}$ is more conservative in quantifying the Confidence Level (C.L.) of hypothesis testing.
+The threshold was chosen to be 0.1, such that CL$_{s} < (1 - 0.9)$, equivalent to setting an upper limit with a C.L. of 90\%.
+This level was motivated in order to compare against existing experiment results. 
 
 \subsection{Computing Test Statistic Distributions}
+\label{sec:compute_test}
 
 One way to obtain the PDF of $\Tilde{q}_\mu$ for a given hypothesis is by throwing toys (or pseudo-experiments) sampled from the observables $n$, with constrained nuisance parameters $\theta$. 
 Each toy result represents a potential outcome of $\Tilde{q}_\mu$ and thus, the toy distribution represent the test statistic $\Tilde{q}_\mu$ distribution.
@@ -455,7 +466,7 @@ The test signal strength $\mu$ plotted here gives exactly CL$_s < 0.1$.
 \begin{figure}[hp!] 
 \centering    
 \includegraphics[width=0.65\textwidth]{toy}
-\caption[stat_toy]{Example of $\Tilde{q}_\mu$ distributions using the toy throwing approach.}
+\caption[stat toy]{Example of $\Tilde{q}_\mu$ distributions using the toy throwing approach.}
 \label{fig:stat_toy}
 \end{figure}
 
@@ -476,37 +487,41 @@ Both approaches returned $\mu$ values within 5\% of each other, showing a good a
 \begin{figure}[hp!] 
 \centering    
 \includegraphics[width=0.65\textwidth]{asymtotic}
-\caption[stat_asymptotic]{Example of $\Tilde{q}_\mu$ distributions using the asymptotic approximation.}
+\caption[stat asymptotic]{Example of $\Tilde{q}_\mu$ distributions using the asymptotic approximation.}
 \label{fig:stat_asymptotic}
 \end{figure}
 
 \subsection{Setting The Upper Limits}
+\label{sec:set_limits}
 
 The setting limit procedure is performed fully using the \texttt{pyhf} package, with the steps described in the previous section.
-The beam bucket distribution is input into the \texttt{pyhf} package to infer the upper limit at 90\% confidence level.
-The example histograms for the background-only $H_{b}$ and the signal+background $H_{s+b}$ hypothesis are as following
+The beam bucket distribution is input into the \texttt{pyhf} package to infer the upper limit at C.L. of 90\%.
+The histograms input to the background-only $H_{b}$ and the signal+background $H_{s+b}$ hypothesis are as following
 \begin{itemize}
     \item $H_b$: The SM neutrinos and cosmic beam bucket distribution.
     \item $H_{s+b}$: The HNL beam bucket distribution on top of the background distribution. 
 \end{itemize}
 
 These histograms are the ingredients for the first product in Eq. \ref{eq:LLH_func}.
-Since the likelihood functions are products of individual bins of the histograms, one can reduce the computing time by considering only high signal-to-noise bins that contribute the most to the sensitivity when performing limit setting. 
-As previously stated as the timing cut, the relevant high signal-to-noise bins are the first and last 4 bins of the beam bucket distribution, which lead to the same result as demonstrated later in Sec. \ref{sec:result}.
-Appendix \ref{} and \ref{} contain the beam bucket distributions for signals and backgrounds after the lenient and stringent cut respectively, with all the uncertainties propagated for the limit setting.
-Additionally, appendix \ref{} contains the smeared truth distributions under the assumption of timing reconstruction improvement as discussed in Sec. \ref{sec:truth_bucket}, also used in the same limit setting.
+Since the likelihood functions are products of individual bins of the histograms, one can reduce the computing time by considering only high signal-to-noise bins that contribute the most to the sensitivity. 
+As previously stated as the timing cut, the relevant high signal-to-noise bins are the first and last 4 bins of the beam bucket distribution, which lead to the same result as demonstrated later in Section \ref{sec:result}.
 
-The uncertainties of the beam bucket distribution discussed in Sec. \ref{sec:uncertainty} are the constraints on the nuisance parameters $c_\theta(a_\theta|\theta)$ in the second product Eq. \ref{eq:LLH_func}.
+Three beam bucket distributions were used in the limit setting.
+Appendix \ref{appendix_lenient} and \ref{appendix_stringent} contain the beam bucket distributions for signals and backgrounds after the lenient and stringent cut respectively, with all uncertainties propagated.
+Additionally, appendix \ref{appendix_smeared} contains the smeared truth distributions under the assumption of timing reconstruction improvement as discussed in Section \ref{sec:truth_bucket}.
+%, also used in the same limit setting.
+
+The uncertainties of the beam bucket distribution discussed in Section \ref{sec:uncertainty} are the constraints on the nuisance parameters $c_\theta(a_\theta|\theta)$ in the second product Eq. \ref{eq:LLH_func}.
 Different types of constraints can take different statistical shapes, which are called \textit{modifiers} in the \texttt{pyhf} package \cite{pyhf, pyhf_joss}.
 Table \ref{table:constraint} summarises the uncertainties and their corresponding modifiers of the signal and background distribution.
 
 
 For the signal distribution, the assumption is that the signal rate is relatively low and expected to follow a Poisson distribution.
-Similarly, the cosmic mis-tagging rate falls under the same assumption since it is proportional to the signal rate. 
+Similarly, the cosmic mistagging rate falls under the same assumption since it is proportional to the signal rate. 
 Thus, the modifier for both statistical and cosmic mistagging uncertainties of the signal distribution follows a Poisson shape, treating each bin uncorrelated. 
 The flux uncertainty of the signal distribution uses a Gaussian-shaped modifier instead, to enable correlation bin-wise.
 
-For the background distribution, the statistical uncertainty needs to employ a light version of the Beeston-Barlow method \cite{BeestonBarlow} for treating statistical fluctuations due to finite statistics.
+For the background distribution, the treatment of statistical uncertainty employs a modified version of the Beeston-Barlow method \cite{BeestonBarlow} to account for statistical fluctuations due to finite statistics.
 The modifier in this case follows a Gaussian shape for bins with high statistics and falls back to a Poisson shape for bins with low statistics while treating each bin uncorrelated.                                            
 Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian-shapred modifier, however, with correlation bin-by-bin.
 
@@ -542,57 +557,57 @@ Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian
 \end{table}
 
 For a single mass point, \texttt{pyhf} performs a scanning of signal strength $\mu$ until the desired value giving the 90\% CL is determined. 
-To infer from the signal strength $\mu$ to the mixing angle $|U_{\mu4}|^{2}$, the proportionality of the  number of signals  $N_{HNL}$ to the mixing angle is employed.
-The signal rate observed at the detector is proportional to the mixing angle at the HNL production as well as the mixing angle at the HNL decay, and thus, $N_{HNL} \propto |U_{\mu4}|^{4}$.
-The upper limit of the mixing angle is then $\sqrt{\mu}$ multiplied by the input mixing angle $|U_{\mu4}|^{2}$.
+To infer from the signal strength $\mu$ to the coupling $|U_{\mu4}|^{2}$, the proportionality of the  number of signals  $N_{HNL}$ to the coupling is employed.
+The signal rate observed at the detector is proportional to the coupling at the HNL production as well as the coupling at the HNL decay, and thus, $N_{HNL} \propto |U_{\mu4}|^{4}$.
+The upper limit of the coupling is then $\sqrt{\mu}$ multiplied by the input coupling $|U_{\mu4}|^{2}$.
 This process is repeated across all the mass points.
 %********************************** %First Section  **************************************
 
 \section{Results}
 \label{sec:result}
 
-The following section presents the sensitivity results acquired from three different beam bucket distributions.
+Results acquired from three different beam bucket distributions are presented in this section.
 The first two distributions were acquired by using fully reconstructed MC samples mimicking data, of which one 
 was applied with a lenient selection as shown in Fig. \ref{fig:final_relaxed} and the other one was applied with a stringent selection as shown in Fig. \ref{fig:final_strict}.
-The third distribution is the smeared truth as shown in Fig. \ref{fig:final_truth}, which was constructed under the assumption of a better timing reconstruction resolving the beam bucket with a resolution of 1.73 ns.
+The third distribution is the smeared truth as shown in Fig. \ref{fig:final_truth}, which was constructed by smearing \textit{true} variables without any detection simulation and reconstruction applied.
+The smeared truth distribution was motivated under the assumption of a better timing reconstruction resolving the beam bucket with a resolution of 1.73 ns.
 Unlike, the reconstructed distributions with full uncertainties propagated, the smeared truth distribution does not contain any uncertainties for simplification. 
-Moreover, the first and last 4 bins of every distribution are also shown to demonstrate the high signal-to-background ratio of these bins.
+Moreover, the first and last 4 bins of every distribution are also shown to demonstrate the significantly high signal-to-background ratio of these bins.
 
 \begin{figure}[htbp!]
         \begin{subfigure}[b]{1.0\textwidth}
             \includegraphics[width=0.5\textwidth]{relaxed_cut}
             \includegraphics[width=0.5\textwidth]{relaxed_cut_edge}
-            \caption{The Lenient Distribution}%
+            \caption{The lenient distribution}%
 	    \label{fig:final_relaxed}
      	    \vspace{0.5cm}
         \end{subfigure}
         \begin{subfigure}[b]{1.0\textwidth}
             \includegraphics[width=0.5\textwidth]{strict_cut}
             \includegraphics[width=0.5\textwidth]{strict_cut_edge}
-            \caption{The Stringent Distribution}%
+            \caption{The stringent distribution}%
 	    \label{fig:final_strict}
        	    \vspace{0.5cm}
         \end{subfigure}
         \begin{subfigure}[b]{1.0\textwidth}
             \includegraphics[width=0.5\textwidth]{smeared_truth}
             \includegraphics[width=0.5\textwidth]{smeared_truth_edge}
-            \caption{The Smeared Truth Distribution}%
+            \caption{The smeared truth distribution}%
 	    \label{fig:final_truth}
      	    \vspace{0.5cm}
         \end{subfigure}
         \caption{
-	Plots showing the beam bucket distributions used for the limit setting: the lenient (top), the stringent (middle) and the smeared truth distribution (bottom).
+	Beam bucket distributions used for the limits setting, including (a) the lenient, (b) the stringent and (c) the smeared truth distribution.
 	}
 \end{figure}
 
 \subsection{Comparison Across Different Beam Bucket Distributions}
 
-The sensitivity limits for Majorana HNLs are presented in Fig. \ref{fig:nupi0_reco_result}, compa
-ring results from fitting the beam bucket distribution with the lenient and stringent distribution.
+The upper limits on the coupling of Majorana HNLs at 90\% C.L. are presented in Fig. \ref{fig:nupi0_reco_result}, comparing results from fitting the beam bucket distribution with the lenient and stringent distribution.
 The expected limit is plotted as the solid black line.
 The deviation band at 1 and 2$\sigma$ away from the expectation, also known as the \textit{Brazil} band, is plotted in shaded green and yellow respectively.
-The lenient distribution results in a limit excluding the mixing angle $|U_{\mu4}|^2$ from $9.18 \times 10^{-7}$ to $1.35 \times 10^{-8}$ across the mass range from 140 to 260 MeV.
-The stringent cut results in a more competitive limit, pushing the exclusion region of the mixing angle further from $5.37 \times 10^{-7}$ to $7.65 \times 10^{-9}$ at the same mass range.
+The lenient distribution results in a limit excluding the coupling $|U_{\mu4}|^2$ from $9.18 \times 10^{-7}$ to $1.35 \times 10^{-8}$ across the mass range from 140 to 260 MeV.
+The stringent cut results in a more competitive limit, pushing the exclusion region of the coupling further down from $5.37 \times 10^{-7}$ to $7.65 \times 10^{-9}$ at the same mass range.
 This is due to the stringent distribution having a better signal-to-background ratio for bins at the edge of the beam bucket.
 This is evident when comparing between Fig. \ref{fig:final_relaxed} and \ref{fig:final_strict}, where the signal rate is very similar across the two distributions but the background rate is much lower in the stringent than the lenient distribution.
 Particularly, the first two bins of the stringent distribution are background-free, thus, driving the limit significantly.
@@ -602,17 +617,17 @@ This is likely due to the limited statistics of the background MC samples after 
 As can be observed from bins at the edge of the beam bucket distribution shown in Fig. \ref{fig:final_strict}, the lack of background statistics might be insufficient to describe the underlying distribution, which can lead to large statistical fluctuations.                                  
 Although the stringent distribution leads to a more competitive result, a future iteration of this selection is recommended to perform on larger statistics MC samples so that the statistical uncertainty can be better constrained.
 
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=\textwidth]{sensitivity_strict_loose}
-    \caption{Plots showing the expected limits and the Brazil bands on the mixing angle $|U_{\mu4}|^2$ for Majorana HNLs, for the lenient (left) and stringent distribution (right).}
-    \label{fig:nupi0_reco_result}
-\end{figure}
-
 \begin{figure}[b!]
     \centering
+    \includegraphics[width=\textwidth]{sensitivity_strict_loose}
+    \caption{Expected limits and the Brazil bands on the coupling $|U_{\mu4}|^2$ for Majorana HNLs, for the lenient (left) and stringent distribution (right).}
+    \label{fig:nupi0_reco_result}
+\vspace{0.5cm}
+%\end{figure}
+%\begin{figure}[b!]
+    \centering
     \includegraphics[width=\textwidth]{sensitivity_full_edge}
-    \caption{Plots showing the expected limits on the mixing angle $|U_{\mu4}|^2$ for Majorana HNLs, comparing results from limit setting using the entire histogram or only the edge bins of the lenient (left) and stringent distribution (right).}
+    \caption{Expected limits on the coupling $|U_{\mu4}|^2$ for Majorana HNLs, comparing between limit setting using the entire histogram or only the edge bins of the lenient (left) and stringent distribution (right).}
     \label{fig:nupi0_reco_full_edge}
 \end{figure}
 
@@ -626,23 +641,23 @@ Another recommendation is to develop different selections for different regions 
 \begin{figure}[b!]
     \centering
     \includegraphics[width=0.7\textwidth]{sensitivity_strict_loose_truth}
-    \caption{Plots showing the expected limits on the mixing angle $|U_{\mu4}|^2$ for Majorana HNLs, comparing results from the lenient and stringent reconstructed distributions and the smeared truth distribution.}
+    \caption{Expected limits on the coupling $|U_{\mu4}|^2$ for Majorana HNLs, comparing results from the lenient and stringent reconstructed distributions and the smeared truth distribution.}
     \label{fig:nupi0_reco_truth}
 \end{figure}
 
-Finally, Fig. \ref{fig:nupi0_reco_truth} shows the sensitivity limits from all three beam bucket distributions.
-The result from the smeared truth distribution is significantly more competitive than the results using reconstructed distributions.
+Finally, Fig. \ref{fig:nupi0_reco_truth} shows the upper limits from all three beam bucket distributions.
+The result from the smeared truth distribution, as shown by the green line, is significantly more competitive than the results using reconstructed distributions, as shown by the red and blue lines.
 The upper limits of the smeared truth distribution range from $1.81 \times 10^{-7}$ to $2.46 \times 10^{-9}$ across the mass range of 140 - 260 MeV. 
-As detailed in Sec. \ref{sec:truth_bucket}, the smeared truth distribution was produced to answe
- the hypothetical question exploring the impact on sensitivity limits due to timing resolution improvement. 
-The background beam bucket distribution of the smeared truth follows a Gaussian with a sigma of 1
-.73 ns as compared to $2.0$ ns of the reconstructed distribution after the lenient or stringent cut.
-The result of the timing resolution improvement is evident in Fig. \ref{fig:final_truth}, particularly for bins at the edge region, where the background rate is lower while the signal rate is significantly higher in the smeared truth distribution than the reconstructed distribution.
-The resulting signal-to-background ratio is therefore higher for the edge bins, resulting in a higher signal-to-noise ratio, driving the sensitivity limits more aggressively. 
+As detailed in Section \ref{sec:truth_bucket}, the smeared truth distribution was produced to answer the hypothetical question exploring the impact on sensitivity limits due to timing resolution improvement. 
+The background beam bucket distribution of the smeared truth follows a Gaussian with a sigma of 1.73 ns as compared to $1.99$ ns of the reconstructed distribution after the lenient or stringent cut.
+The impact of the timing resolution improvement is evident in Fig. \ref{fig:final_truth}, particularly for bins at the edge region.
+It can be seen that the background rate is lower while the signal rate is significantly higher in the smeared truth distribution than the reconstructed distribution.
+The resulting signal-to-background ratio is therefore higher for the edge bins, driving the sensitivity limits more aggressively. 
+%resulting in a higher signal-to-noise ratio
 This presents a positive outlook as an area for improvement for SBND to achieve more competitive results in the search for HNLs.
 Particularly, this can be done with a more sophisticated timing reconstruction that can resolve the beam bucket with higher resolution $< 2$ ns.
 
-The expected limits and the Brazil bands acquired from the three beam bucket distributions are summarised below in Table \ref{table:result}.  
+The expected upper limits at 90\% C.L. and the Brazil bands acquired from the three beam bucket distributions are summarised below in Table \ref{table:result}.  
 
 \begin{table}[htbp!]
 \begin{center}
@@ -683,38 +698,39 @@ The expected limits and the Brazil bands acquired from the three beam bucket dis
 \hline
 \end{tabular}
 \end{center}
-\caption{Table summarising results of the limits on the mixing angle $|U_{\mu4}|^2$.}
+\caption{Table summarising results of the limits on the coupling $|U_{\mu4}|^2$.}
 \label{table:result}
 \end{table}
 
 \subsection{Comparison With Other Experiments}
 
-Fig. \ref{fig:sensitivity} shows the expected limits of SBND on the mixing angle $|U_{\mu4}|^2$ of Majorana HNLs, comparing against existing experimental results that were previously discussed in Sec. \ref{sec2Previous}.
+Fig. \ref{fig:sensitivity} shows the expected upper limits of SBND on the coupling $|U_{\mu4}|^2$ of Majorana HNLs, comparing against existing experimental results that were previously discussed in Section \ref{sec2Previous}.
+All limits presented here are at 90\% C.L.
+
 For the limits acquired from the lenient and stringent distributions, as shown by the solid red and blue line respectively, they are comparable to existing limits.
 The lenient limit is almost the same as the limit achieved by the MicroBooNE experiment, as shown by the solid light blue line.
-On the other hand, the stringent limit is slightly more competitive than MicroBooNe, excluding a new region of the mixing angle in the mass range $< 200$ MeV.
+On the other hand, the stringent limit is slightly more competitive than MicroBooNe, excluding a new region of the coupling in the mass range $< 200$ MeV.
 However, in the mass range $> 200$ MeV, the phase space is already excluded by the E949 and NA62 experiments, as shown by the dashed pink and orange lines.
 These two limits feature the first benchmark of SBND in this phase space of HNLs, given the current detector and reconstruction capabilities.
 
 \begin{figure}[bp!]
     \centering
     \includegraphics[width=\textwidth]{sensitivity}
-    \caption{Sensitivity contour of the upper limits on the mixing angle $|U_{\mu4}|^2$ for Majorana HNLs within the mass range of $0 < m_N < 265$ MeV, comparing the expected result from SBND against existing experimental results.}
+    \caption{Sensitivity contour of the upper limits on the coupling $|U_{\mu4}|^2$ for Majorana HNLs within the mass range of $0 < m_N < 265$ MeV, comparing the expected result from SBND against existing experimental results.}
     \label{fig:sensitivity}
 \end{figure}
 
-The limit acquired from the smeared truth distribution is the most competitive out of the three results presented here.
+The limit acquired from the smeared truth distribution, as shown by the green line, is the most competitive out of the three results presented here.
 The result is projected to exclude a new region beyond the existing limits from the MicroBooNE, E949 and NA62 experiments.
 This demonstrates the potential of the physics capability of SBND, under the assumption of an exposure of $1 \times 10^{21}$ POT and an exceptional timing reconstruction with a resolution of 1.73 ns.
-The POT exposure presented here is equivalent to 3 years of physics data taking, which allows for a lot of time and opportunities to work on improving the timing reconstruction of SBND to achieve the target resolution.
-
+The POT exposure presented here is equivalent to 3 years of physics data taking, which allows for a lot of time and opportunities to work on improving the timing reconstruction of SBND to achieve the target resolution from the time of writing.
 
 %********************************** %First Section  **************************************
 \section{Concluding Remarks}
 \label{sec:result_remarks}
 
-Three limits on the mixing angle $|U_{\mu4}|^2$ of Majorana HNLs are presented in this chapter to demonstrate the range of the physics capability of SBND.
-The limits from the lenient and stringent beam bucket distribution demonstrate the \textit{out of the box} result of SBND, which is currently comparable to existing experimental limits.
+Three limits on the coupling $|U_{\mu4}|^2$ of Majorana HNLs are presented in this chapter to demonstrate the range of the physics capability of SBND.
+The limits from the lenient and stringent beam bucket distribution demonstrate the current performance of SBND, which is currently comparable to existing experimental limits.
 The limit from the smeared truth distribution is the most competitive that can exclude a new region not yet explored by other experiments.
 This limit also demonstrates the potential that SBND can achieve if the timing reconstruction is improved with a better timing resolution.
 Although ambitious, this goal is within reach in the next couple of years given the ongoing work towards a nanosecond timing resolution at SBND, one of which was presented in Chapter \ref{ChapterDAQ} and many more to be expected in the near future.

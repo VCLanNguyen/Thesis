@@ -27,13 +27,13 @@ This signal from the MTC/A is input directly to the PTB.
 On the other hand, signals from the CRTs for triggering are much simpler.
 Coincident hits from any CRT walls, shown by the purple box, form \textit{CRT triggers}, which are input straight to the PTB.
 
-Once a trigger is formed, the PTB send the trigger signals to subsequent readout subsystems to acquire the event, shown as the pink arrows leaving the PTB in Fig. \ref{fig:SBND_Trigger}.
+Once a trigger is formed, the PTB sends the trigger signals to subsequent readout subsystems to acquire the event, shown as the pink arrows leaving the PTB in Fig. \ref{fig:SBND_Trigger}.
 An event contains two types of trigger signals: a single Event Trigger (ETRIG) and multiple Flash Triggers (FTRIGs).
 The ETRIG is issued to the TPC readout, shown as the orange box labelled Nevis Trigger Board (Nevis TB) to acquire waveforms from the wire planes.
 The FTRIGs are issued to the readouts of the PDS, shown as the light and dark blue boxes, to capture waveforms from the optical detectors.
 
 An additional usage of the PTB is that it can output clock signals for some of the readout electronics.
-For the Nevis TB of the TPC readouts, it sends a PPS signal that is locked to the PPS signal that it receives from the White Rabbit timing system.
+For the Nevis Trigger Board (TB) of the TPC readouts, it sends a PPS signal that is locked to the PPS signal that it receives from the White Rabbit timing system.
 This is depicted as the light pink arrow leaving the PTB to the Nevis TB.
 Moreover, the PTB sends a T1 Reset to CRT readouts shown as the pink arrows leaving the PTB to CRT, of which the CRT T1 clock was detailed in Sec. \ref{sec4InternalClock}.
 The T1 Reset signal here is locked to the early warning signal from the beam system with some added delay so that it occurs some time \textit{before} when the beam spill begins.
