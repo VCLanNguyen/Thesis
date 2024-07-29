@@ -19,28 +19,28 @@ Chapter \ref{ChapterDetector} then provides an overview of the SBND and the BNB.
 The chapter begins with the physics program of SBND, followed by the detector design, describing each subsystem that comprises the detector.
 The BNB is discussed next, detailing the beam design and presenting the secondary meson fluxes and neutrino fluxes arriving at SBND.
 
-The simulation framework at SBND is outlined in Chapter \ref{ChapterSim}, to produce Monte Carlo (MC) samples ideally representing data.
+The simulation framework at SBND is outlined in Chapter \ref{ChapterSim}, to produce Monte Carlo (MC) samples representing data.
 A description of different generators to simulate SM neutrinos, cosmic muons and HNLs is first provided.
-The HNL generator is presented in detail to illustrate the physics behind the lateness of HNLs compared to SM neutrinos produced from the BNB, which the thesis work presented in later chapters relies upon.  
-Finally, the simulation of the particle propagation and the detection response is summarised.
+The HNL generator is presented in detail to illustrate the physics behind the late arrival of HNLs compared to SM neutrinos produced from the BNB, which the work presented in later chapters relies upon.  
+Finally, the simulation of the particle propagation and the detector response is summarised.
 
 Following that, the reconstruction framework is provided in Chapter \ref{ChapterReco}, covering the reconstruction for each detection subsystem: (1) TPC, (2) Photon Detection System (PDS) and (3) Cosmic Ray Tagger (CRT).
 Specifically in the TPC reconstruction workflow, an update to an algorithm separating track-like and shower-like reconstructed objects is detailed.
-An overview of some high-level analysis tools, combining complementary signals from all subsystems, is discussed next. 
+An overview of some high-level analysis tools, combining complementary signals from all subsystems, is given next. 
                                                                                                                        
 Chapter \ref{ChapterDAQ} outlines the timing performance of the Data AcQuision (DAQ) at SBND.
 The chapter begins with a description of the White Rabbit timing system set up to maintain timing synchronisation across different DAQ subsystems.
+The timing precision of the readout electronics of the CRT and PDS are then accessed, which are the two detection subsystems with timing resolution $\mathcal{O}$(1 ns).
 
-The timing precision of the readout electronics of the CRT and PDS are then accessed, which are the two detection subsystems with signals $\mathcal{O}$(1 ns).
 Some studies within the scope of charge calibration are discussed in Chapter \ref{ChapterCalib}.
 The first study is on the measurement of electron lifetime, performed on MC samples of anode-to-cathode crossing cosmic muon tracks that fully traverse the detector volume.
-The second study is to assess the impacts of delta ray fluctuations on recombination, via simulation studies varying delta ray thresholds.  
+The second study is to assess the impacts of delta ray fluctuations on recombination, also performed on MC samples with varying delta ray thresholds.  
                                                                                                                                             
 A selection procedure has been developed to select HNLs and reject backgrounds from SM neutrinos and cosmic muons, which will be presented in Chapter \ref{ChapterSelect}.
 Firstly, a signal and background definition is provided, followed by a description of MC samples used to perform the selection.
 Dedicated cuts for cosmic background SM neutrinos rejection and HNL shower selection are detailed subsequently.
 The result of the selection is analysed next, identifying the most impactful cuts of the selection.
-Finally, a \textit{truth}-based study is presented, proposing a hypothetical scenario if the resolution of the timing reconstruction is improved.
+Finally, a study to assess the sensitivity of SBND to HNLs in the case of an improvement in timing reconstruction is presented as a positive outlook of the search for HNLs.
                                                                                                                                                      
 Finally, the capabilities of SBND to search for HNLs are assessed in Chapter \ref{ChapterResult}.
 The sources and treaments of uncertainties in the analysis are discussed.

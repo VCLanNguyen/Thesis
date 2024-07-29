@@ -87,8 +87,9 @@ For generating HNLs coming from the BNB, the generator begins with sampling the 
 Instead of decaying into SM neutrinos, the kaons decay into HNLs, with the branching ratio defined by Eq. \ref{eq:kaon_decay_hnl} (See Section \ref{sec2Production}).
 The daughter HNL and lepton are simulated using the two-body decay at rest in the centre of mass frame of the parent kaon and then boosted to the parent's lab frame by Lorentz boost.
 Due to HNLs having relatively high mass, the Lorentz boost results in HNLs having less transverse momentum than the SM neutrinos, travelling preferably to the parent kaon direction.
-The Lorentz boost can also flip the directions of HNLs that are emitted backwards, originating from low energy kaons \cite{DavidePhD}.
-HNLs are propagated to the detector by the ray tracing method, which forces HNLs to hit the SBND detector by picking a direction that impinges the particles at the detector's front face.  
+The Lorentz boost can also flip the directions of HNLs that are emitted backwards, mostly originating from low energy kaons \cite{DavidePhD}.
+
+HNLs are then propagated to the detector by the ray tracing method, which forces HNLs to hit the SBND detector by picking a direction that impinges the particles at the detector's front face.  
 %The probability of enforcing the detector intersection is also computed.
 The acceptance angle of HNLs to hit the detector is very collimated at $< \sim 5^\circ$, implying that only very forward-going HNLs are most likely to intersect the detector.
 
@@ -118,14 +119,14 @@ The acceptance angle of HNLs to hit the detector is very collimated at $< \sim 5
 %        \label{fig:kaon_hnl_angle2beam}
 %\end{figure}
 
-The resulting energy spectra of HNLs arriving at the SBND detector are depicted in Fig. \ref{fig:HNL_Energy_Spectrum} for the mass range between 140 and 260 MeV.
+The total energy spectra of HNLs arriving at the SBND detector are depicted in Fig. \ref{fig:HNL_Energy_Spectrum} for the mass range between 140 and 260 MeV.
 The spectra plotted here, and all subsequent kinematics plots in this section, are labelled \textit{true}, indicating they are at the truth level and not yet passed through detector simulation and reconstruction.
-The fluxes are normalised to the same coupling $|U_{\mu4}|^{2} = 1 \times 10^{-7}$ and an exposure of $1 \times 10^{21}$ POT projected for 3 years of data taking.
+The spectra are normalised to the same coupling $|U_{\mu4}|^{2} = 1 \times 10^{-7}$ and an exposure of $1 \times 10^{21}$ POT projected for 3 years of data taking.
 At the same coupling, the expected HNL rate decreases with lower mass since the branching ratio of $N \rightarrow \nu\pi^0$ decreases with lower mass (See Fig. \ref{fig:branchingRatio} Section \ref{sec2Decay}).
-Additionally, given that the $K^{+}$ total energy spectra peaks around 0.5 GeV and decreases at higher energy (See Fig. \ref{fig:BNB_Meson_Flux}, Section \ref{sec4BNB}), the HNL fluxes also mainly concentrate in the low energy region, and substantially decrease at higher energy. 
-Moreover, across the HNL mass range, there are more energetic HNLs at a lower mass than at a higher mass.
+Additionally, given that the $K^{+}$ total energy spectra peak at 0.5 GeV and decrease at higher energy (See Fig. \ref{fig:BNB_Meson_Flux}, Section \ref{sec4BNB}), the HNL spectra also concentrate at $<0.5$ GeV, and substantially decrease at higher energy. 
+A peak near zero can also be seen in all energy spectra across the mass range, corresponding to HNLs resulting from Kaon Decay At Rest (KDAR).
+Finally, the kinetic energy of HNLs is expected to decrease with higher mass.
 This is due to HNLs coming from a kaon decay and therefore, the lighter the HNL mass, the more kinetic energy is available.
-Finally, all the HNL fluxes have a sharp peak near zero, corresponding to HNLs resulting from Kaon Decay At Rest (KDAR).
 
 \begin{figure}[hb!] 
 \centering    
@@ -139,13 +140,16 @@ Simulated energy spectra of HNLs decaying inside SBND.
 Upon their arrival at the detector, HNLs decay back into the SM observables.
 For the $\nu\pi^{0}$ final state, the width of the decay is defined by Eq. \ref{eq:pi0} (See Section \ref{sec2Decay}).
 The kinematics of the decay products are simulated for HNLs isotropically decaying in the rest frame and then boosted to the lab frame by Lorentz boost.
-Since the parent HNL is very forward-going, the daughter $\pi^0$ is also forward-going, with momenta dependence on the mass of the parent HNL. 
-Fig \ref{fig:pi0_distribution} shows the true kinetic energy and angle to the beam distributions for the daughter $\pi^0$.
-The plots are area-normalised for comparison across the mass range of the parent HNL from 140 to 260 MeV. 
-The peak in the energy distribution at low energy and the peak in the angular distribution at high angle are from the $\pi^0$ coming from low energy HNLs from KDAR.
-The kinetic energy distribution of the $\pi^0$ decreases as the HNL mass increases since heavier HNLs are less energetic and therefore, less energy is available for the $\pi^0$.
+%Since the parent HNL is very forward-going, the daughter $\pi^0$ is also forward-going, with momenta dependence on the mass of the parent HNL. 
+
+Fig \ref{fig:pi0_distribution} shows the true momenta and angle to the beam distributions of the $\pi^0$.
+The plots are area-normalised for comparison across the HNL mass from 140 to 260 MeV. 
+The peak in the momenta distribution at low GeV and the peak in the angular distribution at high angle are from the $\pi^0$ resulting from low energetic HNLs from KDAR.
+Moreover, the momenta distribution of the $\pi^0$ decreases with increasing HNL masses.
+This is due to the decreased boosting of HNLs at higher masses being less energetic.
+%since heavier HNLs are less energetic and therefore, less energy is available for the $\pi^0$.
 As a result, the angle to the beam of the $\pi^0$ also widens with heavier HNLs.
-However, at the heaviest HNL mass of 260 MeV considered in the search, the $\pi^0$ is still very collimated since its angular distribution concentrates in the region $< 30^\circ$. 
+However, at the heaviest HNL mass of 260 MeV considered in the search, the $\pi^0$ is still very collimated since its angular distribution concentrates in the region $< 20^\circ$. 
 Therefore, the di-photon showers from the HNL-originated $\pi^0$ are expected to be more forward-going than those originating from SM neutrinos.
 
 \begin{figure}[ht!]
@@ -154,7 +158,7 @@ Therefore, the di-photon showers from the HNL-originated $\pi^0$ are expected to
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
             \includegraphics[width=\textwidth]{pi0_energy}
-            \caption{Kinetic energy}%
+            \caption{Momentum}%
             %\label{fig:kaon_angle2beam}
         \end{subfigure}
         \hfill
@@ -184,15 +188,15 @@ In both cases, $t_{meson}$ introduces some smearing to the nanosecond-bucket str
 
 The last component is the time of flight of the SM neutrino or the HNL from the creation point to the interaction point inside the SBND detector.
 In the case of SM neutrinos, since they are nearly massless, their velocity can be approximated as the speed of light. 
-Then, the time of flight of the SM neutrino is  
+Then, the time of flight of the SM neutrino is:  
 \begin{equation}
-	t_{\nu} = \frac{d_{\nu}}{c}
+	t_{\nu} = \frac{d_{\nu}}{c},
 \end{equation}
 where $d_{\nu}$ is the distance of a neutrino from the creation point to the interaction point inside the detector.
 Meanwhile, HNLs are massive and therefore, travel at a velocity $v_N < c$.
-The time of flight of the HNL is
+The time of flight of the HNL is:
 \begin{equation}
-	t_{N} = \frac{d_{N}}{v_N}
+	t_{N} = \frac{d_{N}}{v_N},
 \end{equation}
 where $d_N$ is the distance of a HNL from the creation point to the decay point inside the detector.
 Additionally, since the energy of the HNL decreases with its mass, the heavier it is, the slower its velocity.
