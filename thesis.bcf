@@ -2187,48 +2187,10 @@
     <bcf:datasource type="file" datatype="bibtex">References/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">uboone_calib</bcf:citekey>
-    <bcf:citekey order="1">ubooneEtime</bcf:citekey>
-    <bcf:citekey order="2">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="3">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="3">GrayDiffusion</bcf:citekey>
-    <bcf:citekey order="4">uboone_calib</bcf:citekey>
-    <bcf:citekey order="5">pandora_protodune</bcf:citekey>
-    <bcf:citekey order="6">pandora_protodune</bcf:citekey>
-    <bcf:citekey order="7">pandora_protodune</bcf:citekey>
-    <bcf:citekey order="8">pandora_protodune</bcf:citekey>
-    <bcf:citekey order="9">pandora_protodune</bcf:citekey>
-    <bcf:citekey order="10">Passage</bcf:citekey>
-    <bcf:citekey order="11">uboone_diff</bcf:citekey>
-    <bcf:citekey order="12">protodune</bcf:citekey>
-    <bcf:citekey order="13">SCE</bcf:citekey>
-    <bcf:citekey order="14">ubooneEtime</bcf:citekey>
-    <bcf:citekey order="15">GrayDiffusion</bcf:citekey>
-    <bcf:citekey order="16">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="17">NEST</bcf:citekey>
-    <bcf:citekey order="18">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="19">geant4</bcf:citekey>
-    <bcf:citekey order="20">geant4</bcf:citekey>
-    <bcf:citekey order="21">geant4_ions</bcf:citekey>
-    <bcf:citekey order="22">Passage</bcf:citekey>
-    <bcf:citekey order="23">Ziegler</bcf:citekey>
-    <bcf:citekey order="24">ICRU</bcf:citekey>
-    <bcf:citekey order="25">wion_lar</bcf:citekey>
-    <bcf:citekey order="26">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="27">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="28">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="29">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="30">argoneut_recomb</bcf:citekey>
-    <bcf:citekey order="31">uboone_calib</bcf:citekey>
-    <bcf:citekey order="32">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="33">Passage</bcf:citekey>
-    <bcf:citekey order="34">geant4</bcf:citekey>
-    <bcf:citekey order="35">geant4</bcf:citekey>
-    <bcf:citekey order="36">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="37">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="38">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="39">icarus_recomb</bcf:citekey>
-    <bcf:citekey order="40">TODO</bcf:citekey>
+    <bcf:citekey order="1">uboone_ns</bcf:citekey>
+    <bcf:citekey order="2">sbnd_pds_paper</bcf:citekey>
+    <bcf:citekey order="3">sbnd_pds_paper</bcf:citekey>
+    <bcf:citekey order="4">uboone_ns</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
