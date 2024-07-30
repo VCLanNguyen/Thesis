@@ -14,7 +14,7 @@
 
 %********************************** %Opening  **************************************
 
-The selection of Heavy Neutral Lepton (HNL) signals from SM neutrino and cosmic backgrounds using Monte Carlo (MC) is presented.  
+The selection of Heavy Neutral Lepton (HNL) signals from Standard Model (SM) neutrino and cosmic backgrounds using Monte Carlo (MC) is presented.  
 MC samples were simulated using the framework detailed in Chapter \ref{ChapterSim} and reconstructed using the framework detailed in Chapter \ref{ChapterReco}.
 This is the very first exploration of Short-Baseline Near Detector (SBND) physics capabilities to search for HNLs, and this selection provides the first benchmark for understanding the current reconstruction performance of HNL signals based on MC.
 The selection exploits the boosted topology and late arrival features of HNL signals using the reconstructed charge and light signals from the Time Projection Chamber (TPC) and Photon Detection System (PDS) combined.
@@ -26,9 +26,10 @@ The foundation of the selection is given in Section \ref{sec:select_intro}, incl
 The first stage of the selection is to reject cosmic backgrounds as discussed in Section \ref{sec:cosmic_rej} and the second stage is to reject SM neutrino backgrounds as discussed in Section \ref{sec:sm_rej}.
 Then, Section \ref{sec:hnl_shower_select} contains details the last stage of the selection to identify HNL showers from shower-like backgrounds.
 The result of the selection procedure is summarised in Section \ref{sec:select_result}.
-A hypothetical question is proposed in Section \ref{sec:truth_bucket}, driven by the timing resolution observed in reconstruction, concerning whether or not better sensitivity limits can be achieved given an improvement in timing resolution. 
+A discussion of possible improvements in sensitivity with better timing resolution is detailed in Section \ref{sec:truth_bucket}.
 Finally, some concluding remarks are provided Section \ref{sec:select_conclude}.
 
+%A hypothetical question is proposed in Section \ref{sec:truth_bucket}, driven by the timing resolution observed in reconstruction, concerning whether or not better sensitivity limits can be achieved given an improvement in timing resolution. 
 %********************************** %First Section  **************************************
 
 \section{Selection Introduction}
@@ -42,8 +43,8 @@ Parameters to evaluate the selection, including definitions of efficiency and th
 \subsection{Signal and Background Definition}
 \label{sec:sig_bkg_def}
 
-The selection begins with defining the signal topology to be selected, namely $\pi^0 \rightarrow \gamma\gamma$ showers resulting from HNLs decaying inside the Fiducial Volume (FV) of the SBND detector.
-FV is defined as a smaller volume approximately 70\% of the active volume, to be defined in the forthcoming Section \ref{sec:fv_cut}.
+The selection begins with defining the signal topology, namely $\pi^0 \rightarrow \gamma\gamma$ showers resulting from HNLs decaying inside the Fiducial Volume (FV) of the SBND detector.
+FV is a smaller volume approximately 70\% of the active volume, to be defined in the forthcoming Section \ref{sec:fv_cut}.
 The di-photon showers of HNLs result in one or more showers without any hadronic activities at the vertex.
 Fig. \ref{fig:hnl_evd_1shw} shows an event display of two separable photon showers, where each shower can be seen distinctively.
 In the case where only a single shower is reconstructed, two scenarios can happen.
@@ -78,7 +79,7 @@ Fig. \ref{fig:hnl_evd_2shw} shows an event display of very boosted di-photons sh
 	\centering
         \includegraphics[width=0.85\textwidth]{ncpi0}
         \caption[Event Display of a Neutral Current Interaction Containing a Neutral]{
-		Event display showing di-photon showers from a simulated NC $\pi^0$ interaction. 
+		Event display showing di-photon showers from a simulated NC $\pi^0$ interaction and a cosmic stopping muon. 
 	}
 	\label{fig:ncpi0_evd}
 \end{figure}
@@ -94,16 +95,16 @@ The key distinction separating HNL showers from these SM neutrino showers is the
 %and can be exploited for selection to be detailed in Section \ref{sec:hnl_shower_select}.
 
 SM neutrino interactions can occur outside the FV, but their products can have sufficient energy to propagate inside the FV.
-Interactions occurring outside the FV but inside the detector volume are considered Non-FV interactions.
-Interactions occurring completely outside the detector volume are considered dirt neutrino interactions.
-As previously discussed in Section \ref{sec:gen_genie}, despite interacting outside of the FV, these interactions can introduce non-negligible backgrounds, especially if their products also contain shower final states. 
+Interactions occurring outside the FV but inside the detector volume are referred to as Non-FV interactions.
+Interactions occurring completely outside the detector volume are referred to as dirt neutrino interactions.
+As previously discussed in Section \ref{sec:gen_genie}, despite interacting outside of the FV, these interactions can introduce non-negligible backgrounds, especially if their products also contain showers in the final states. 
 
 %Cosmic background and CCnumu
+%The track signature for protons is short stubs, while the track signature for muons and pions is long tracks.
 Finally, any background interactions that produce tracks are considered low-priority backgrounds since a track topology is easily distinguishable from a shower topology.
 From SM neutrinos, these interactions are from Charged Current muon (anti-)neutrinos (CC $\nu_\mu$) or any Neutral Current interactions that do not produce a neutral pion (Other NC).
-The track signature for protons is short stubs, while the track signature for muons and pions is long tracks.
 Fig. \ref{fig:numu_cos_evd} shows an event display of a common observable from CC $\nu_\mu$ interactions containing 1 muon and 1 proton in the final state.
-Similarly, cosmic muons typically leave very long tracks crossing the entire detector with features of delta rays or Michel electrons (See Section \ref{sec7:delta} and \ref{sec3:bethebloch}).
+Similarly, cosmic muons typically leave very long tracks crossing the entire detector with features of delta rays or Michel electrons (See Sections \ref{sec7:delta} and \ref{sec3:bethebloch}).
 Fig. \ref{fig:hnl_evd_2shw} (top right) and Fig. \ref{fig:numu_cos_evd} (bottom left) both show a long cosmic track with some delta rays along the track.
 Fig. \ref{fig:ncpi0_evd} (top left) shows a cosmic muon coming to a stop and decaying into a Michel electron.
 
@@ -111,7 +112,7 @@ Fig. \ref{fig:ncpi0_evd} (top left) shows a cosmic muon coming to a stop and dec
 	\centering
         \includegraphics[width=0.85\textwidth]{1m1p_cos}
         \caption[Event Display of a Charged Currect Interaction Containing a Muon and a Proton]{
-		Event display showing a muon and a proton track from a simulated CC $\nu_\mu$ interaction.
+		Event display showing a muon and a proton track from a simulated CC $\nu_\mu$ interaction together with a few cosmic muons.
 	}
 	\label{fig:numu_cos_evd}
 \end{figure}
@@ -124,32 +125,32 @@ Fig. \ref{fig:ncpi0_evd} (top left) shows a cosmic muon coming to a stop and dec
 %The selection presented in this chapter was performed on Monte Carlo (MC) samples, that were generated using the simulation framework described in Chapter \ref{ChapterSim}.
 %These samples were then reconstructed using the framework described in Chapter \ref{ChapterReco}.
 
-For signal MC samples, HNL signals were overlaid with cosmic muons occurring within the TPC readout window.
-Samples at the HNL mass of 140, 160, 180, 200, 220, 240 and 260 MeV were generated, totalling 7 samples with 60,000 signals per sample.
-The signals can be re-weighted from the nominal coupling $|U_{\mu4}|^{2}$ to another coupling $|U'_{\mu4}|^{2}$ by applying a weight as follows:
+HNL signals were overlaid with cosmic muons occurring within the TPC readout window.
+Samples at the HNL mass of 140, 160, 180, 200, 220, 240 and 260 MeV were generated, totalling 7 samples with 60,000 events per sample.
+The number of events per sample can be re-weighted from the simulated coupling $|U_{\mu4}|^{2}$ to another coupling $|U'_{\mu4}|^{2}$ by applying a weight as follows:
 \begin{equation}
     w = \left(\frac{|U_{\mu4}|^{2}}{|U'_{\mu4}|^{2}}\right)^{2}.
     \label{eq:reweight_U}
 \end{equation}
 Eq. \ref{eq:reweight_U} allows for the signal scaling required to perform the limits setting in Chapter \ref{ChapterResult}.   
 
-For SM neutrino MC samples, three samples were produced.
+Three samples of SM neutrinos were also generated.
 The first one is a core sample with all SM neutrino interactions occurring inside the detector volume as well as outside the detector in the \textit{Rockbox} volume, as discussed in Section \ref{sec:gen_genie}.
 Two additional dedicated samples of enriched NC $\pi^0$ and CC $\nu_e$ backgrounds were also generated, to improve the limited statistics of these interactions in the core sample.
 The three samples were normalised to an exposure of $1 \times 10^{21}$ Protons On Target (POT) to account for 3 years of data taking.
 This yields $\sim331,000$ NC $\pi^0$ interactions and $\sim33,000$ CC $\nu_e$ interactions which are the primary background.
-Other background from CC $\nu_\mu$ and other NC interactions make a total of $\sim5$ million interactions.
+Other background from CC $\nu_\mu$ and Other NC interactions make a total of $\sim5$ million interactions.
 An additional $\sim2$ million and $\sim3$ million interactions from Non-FV and dirt interactions are also considered as backgrounds, although only a fraction of them deposit energy in the detector.
 
-Finally, a cosmic-only sample was generated to account for in-time cosmics, as discussed in Section \ref{sec:gen_corsika}.
+Finally, a cosmic-only sample was generated to account for in-time cosmics (See Section \ref{sec:gen_corsika}).
 This sample consists of events triggered by cosmic-only interactions.
 However, it is important to note that a dedicated trigger efficiency study will be carried out to better understand the rate of in-time cosmic events once SBND is operational.
 The cosmic-only sample was also normalised to the target POT, and combined with SM neutrino samples to form a single sample describing the background to the HNL signal.  
 
-The unit of the selection relies on \textit{events}, defined by the triggering of the detector where a single event corresponds to a single trigger.
-After reconstruction, each event contains \textit{slices}, a reconstruction unit created by Pandora that encapsulates all energy in the TPC from a single origin describing an interaction, as discussed in Section \ref{sec:reco_tpc}.        
-The equivalent reconstruction unit to a slice from the PDS reconstruction is a \textit{flash}, as discussed in Section \ref{sec:reco_others}.
-A slice consists of a hierarchy of particles starting from the interaction vertex, where each can resemble a track or a shower.
+The unit of the selection relies on \textit{events}, where a single event corresponds to a single trigger (See Fig. \ref{fig:SBNDEventStructure} Section \ref{sec:evb}).
+After reconstruction, each event contains multiple \textit{slices}, which are reconstruction units created by Pandora to describe interactions (See Section \ref{sec:reco_tpc}).
+A slice encapsulates all energy in the TPC from a single origin and consists of a hierarchy of particles starting from the interaction vertex, where each particle can resemble a track or a shower.
+The equivalent reconstruction unit to a slice from the PDS reconstruction is a \textit{flash}, where a flash contains all the light produced from an interaction (See Section \ref{sec:reco_others}).
 The selection is performed on slices, where slices are accepted or rejected based on the series of cuts using the reconstructed information of the slice or by matching a slice to a flash.
 
 %********************************** %First Section  **************************************
@@ -160,24 +161,34 @@ The selection is performed on slices, where slices are accepted or rejected base
 For monitoring and quantifying the impacts of selection cuts, selection efficiencies are defined for signals and backgrounds respectively.
 The selection efficiency is defined as:
 \begin{equation}
-	\mathrm{Signal\ Efficiency = \frac{\#\ of\ selected\ signal\ slices\ with\ completeness\ >\ 50\ \%}{\#\ of\ signal\ slices\ reconstructed\ by\ Pandora\ as\ neutrinos}}. \\
+	\label{eq:sig_eff}
+	\mathrm{Signal\ Efficiency = \frac{Number\ of\ selected\ signal\ slices\ with\ completeness\ >\ 50\ \%}{Number\ of\ signal\ slices\ reconstructed\ as\ neutrinos}}. \\
 \end{equation}
-The requirement of $> 50 \%$ completeness implies that at least 50 \% of the slice energy must be deposited by a HNL.
-This prevents double counting, such that only well-reconstructed signal slices are considered for the counting.                                    
+In the numerator, the requirement of $> 50\%$ completeness implies that at least 50\% of the slice energy must be deposited by a HNL.
+This prevents double counting, such that only well-reconstructed signal slices are considered.
+In the denominator, the requirement for slices to be reconstructed as neutrinos is embedded by the Pandora workflow.
+As stated in Section \ref{sec:pandora}, Pandora performs a cosmic rejection very early in the reconstruction so that only neutrino-like slices are reconstructed.
+The Pandora cosmic rejection is also employed as the first cosmic cut detailed in Section \ref{sec:cosmic_pandora}.
+The denominator describes the starting number of signal slides and the numerator describes the selected signal slices.
+Thus, Eq. \ref{eq:sig_eff} describes the efficiency of signals remained after selection. 
+
 On the other hand, the background efficiency is defined as:
 \begin{equation}
-	\mathrm{Background\ Efficiency = \frac{\#\ of\ selected\ background\ slices}{\#\ of\ background\ slices\ reconstructed\ by\ Pandora\ as\ neutrinos}}.
+	\label{eq:bkg_eff}
+	\mathrm{Background\ Efficiency = \frac{Number\ of\ selected\ background\ slices}{Number\ of\ background\ slices\ reconstructed\ as\ neutrinos}}.
 \end{equation}
+Here, the background slides encapsulates both SM neutrino and cosmic slices, that are reconstructed by Pandora as neutrino-like slices.
+The denominator describes the starting number of background slides and the numerator describes number of selected background slices. 
+Eq. \ref{eq:bkg_eff} therefore describe the efficiency of background slices being selected as signals.
 
-The selection aims for a high background \textit{rejection} efficiency without compromising the signal \textit{selection} efficiency.                                                                             
-This is equivalent to achieving a low background efficiency and a high signal efficiency.
+The selection aims for a high background \textit{rejection} without compromising the signal \textit{efficiency}.        
+This is equivalent to achieving a low background efficiency defined in Eq. \ref{eq:bkg_eff} and a high signal efficiency defined in Eq. \ref{eq:sig_eff}.
 Both of these efficiency numbers are discussed for each cut and included in the legends of the upcoming plots.                                                                                             
-
 
 \subsection{The Beam Bucket Distribution}
 \label{sec:key_dist}
 
-The selection workflow was developed by exploiting distinct features of HNLs, separating signal topologies from background topologies.
+The selection workflow was developed by exploiting distinct features of HNLs.
 One previously stated feature is the boosted topology of HNL showers as discussed in Section \ref{sec:sig_bkg_def}.
 Another feature is the late arrival of HNLs relative to SM neutrinos, as previously depicted in Fig. \ref{fig:beam_modulus} in Section \ref{sec:gen_mevprtl} showing the arrival time distribution of HNLs and SM neutrinos.
 The distribution of SM neutrinos resembles a Gaussian-shaped bucket as they travel nearly at the speed of light, whilst HNLs travel at a slower velocity and smear the Gaussian.
@@ -191,16 +202,15 @@ The spacing was measured to be 18.936 by the MicroBooNE experiment \cite{uboone_
 Discussion on different smearing contributors to the beam bucket reconstruction is given in Section \ref{sec:truth_bucket}.
 The beam bucket distribution are shown throughout this chapter to demonstrate the impacts of the selection.
 
-%The reconstructed beam bucket for SM neutrinos resembles a Gaussian with a sigma of $2.26$ ns as compared to the proton bucket from the Booster synchrotron with an intrinsic sigma of $1.308$ ns.
-
+%The reconstructed beam bucket for SM neutrinos resembles a Gaussian with a width of $2.26$ ns as compared to the proton bucket from the Booster synchrotron with an intrinsic width of $1.308$ ns.
 
 %********************************** %First Section  **************************************
 
 \section{Cosmic Background Removal}
 \label{sec:cosmic_rej}
 
-The first stage of the selection is cosmic rejection, made up of three cuts.
-The first cut is unambiguous cosmic removal by Pandora, presented in Section \ref{sec:cosmic_pandora}.
+Cosmic rejection is the first step of selection, targeting two cosmic components: (1) in-time cosmics occurring inside the beam spill and (2) out-of-time cosmics occurring outside the beam spill but inside the readout window (See Section \ref{sec:gen_corsika}).  
+The cosmic removal by Pandora is the first cut, presented in Section \ref{sec:cosmic_pandora}.
 The beam spill cut is given in Section \ref{sec:cosmic_spill} and the last cut employing a Boosted Decision Tree (BDT) is provided in Section \ref{sec:cosmic_crumbs}.
 
 \subsection{Pandora Unambiguous Cosmic Removal}
@@ -209,7 +219,7 @@ The beam spill cut is given in Section \ref{sec:cosmic_spill} and the last cut e
 Being a surface detector, SBND is exposed to a high rate of cosmic rays, expecting $\sim 185$ million reconstructed slices from cosmics for the POT exposure of $1 \times 10^{21}$.
 As a comparison, the expected rate of reconstructed slices from SM neutrino interactions is $\sim 11$ million slices.
 The first cosmic rejection step targets primarily at removing out-of-time cosmic muons.
-Pandora performs an unambiguous cosmic removal early in the reconstruction chain, by reconstructing a slice as a neutrino only if the slice is identified as a non-clear cosmic, as described in Section \ref{sec:reco_tpc}. 
+As described in Sections \ref{sec:pandora} and \ref{sec:select_eff}, Pandora performs an unambiguous cosmic removal early in the reconstruction chain and only neutrino-like slices are reconstructed. 
 The selection thus begins with selecting only slices reconstructed as a neutrino.
 This rejects $90 \%$ of the $\sim 185$ million slices from cosmic, leaving behind only $19.5$ million slices.
 Meanwhile, only $0.6 \%$ of the reconstructed slices from HNL signals are removed, with similar reductions across different SM neutrino interactions.  
@@ -219,18 +229,33 @@ Meanwhile, only $0.6 \%$ of the reconstructed slices from HNL signals are remove
 \subsection{Beam Spill Cut}
 \label{sec:cosmic_spill}
 
+%implying that each selected slice has a reconstructed flash time .
 The second cut to remove cosmics is to consider the flash time of a slice, corresponding to the start time $t_0$ of an interaction. 
-Only slices matched to a valid flash are selected, implying that each selected slice has a reconstructed flash time.
+Only slices matched to a valid flash are selected, where the slice-to-flash matching relies on the level of agreement between  reconstructed energy from charge and light (See Section \ref{sec:subsystem_match}).
 Moreover, the time of the matched flash is required to be within the beam spill window.
 In the simulation of MC samples, the beam spill window is configured to be between [0.367, 1.967] $\mu$s, with $t = 0\ \mu$s corresponding to the first POT of a beam spill.
-Moreover, an interaction can occur anywhere along the 500 m $z$-length of the detector, equivalent to a smearing of 17 ns in timing.
+Moreover, an interaction can occur anywhere along the 500 cm $z$-length of the detector, equivalent to a smearing of 17 ns in timing.
 Thus, the beam spill acceptance window is widened to [0.350, 1.984] $\mu$s.
 The beam spill is illustrated in Fig. \ref{fig:beamspill_cut}, with the acceptance window shown as red lines.
-The cut rejects $4$ million cosmic slices while minimally reduces signal efficiency by $3\%$.
+
+The cut rejects $4$ million cosmic slices while minimally reducing signal efficiency by $3\%$.
 Fig. \ref{fig:bb_beamspill} shows the beam bucket distribution after applying the cut, where two components of cosmic rays can be observed.
 There is a flat distribution coming from out-of-time cosmics and a very small Gaussian-shaped distribution coming from in-time cosmics.
 
-\begin{figure}[hb!]
+\subsection{CRUMBS Cut}
+\label{sec:cosmic_crumbs}
+
+%given the shower topology is very distinguishable from cosmic tracks.
+The third cut targets the out-of-time cosmic components by employing the CRUMBS score of a slice, which is scored by a BDT to distinguish between a neutrino-like slice and a cosmic-like slice (See Section \ref{sec:crumbs}). 
+The score distribution of CRUMBS is plotted in Fig. \ref{fig:crumbs_cut}, showing a good separation between neutrino-like and cosmic-like.
+A cut is placed to reject any slices with CRUMBS scores less than 0, effectively removing $14$ million of the remaining cosmic slices.
+
+Comparison the beam bucket distribution before and after the CRUMBS cut, Fig. \ref{fig:bb_beamspill} and \ref{fig:bb_crumbs}, demonstrates that the majority of the removed cosmics are the out-of-time component. 
+The remaining cosmic slices are the in-time component, concentrating at the centre of the beam bucket.  
+This cut results in an effective background rejection as the background efficiency reduces more than half from $8.3 \times 10^{-1}$ to $3.0 \times 10^{-1}$, whilst the signal efficiency only drops by $5 \%$.
+By the end of the cosmic rejection, only $\sim432,000$ of the starting $185$ million cosmic slices remain, equivalent to a $99.9\%$ removal of the cosmic background alone.
+
+\begin{figure}[ht!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -264,23 +289,11 @@ There is a flat distribution coming from out-of-time cosmics and a very small Ga
         \label{fig:cosmic_cut}
 \end{figure}
 
-\subsection{CRUMBS Cut}
-\label{sec:cosmic_crumbs}
-
-%given the shower topology is very distinguishable from cosmic tracks.
-The third cut targets the out-of-time cosmic components by employing the CRUMBS score of a slice, which is scored by a BDT to distinguish between a neutrino-like slice and a cosmic-like slice (See Section \ref{sec:crumbs}). 
-The score distribution of CRUMBS is plotted in Fig. \ref{fig:crumbs_cut}, showing a good separation between neutrino-like and cosmic-like.                                                                        
-A cut is placed to reject any slices with CRUMBS scores less than 0, effectively removing $14$ million of the remaining cosmic slices.
-Comparison between Fig. \ref{fig:bb_beamspill} and \ref{fig:bb_crumbs}, before and after the CRUMBS cut, demonstrates that the majority of the removed comics are the out-of-time component. 
-The remaining cosmic slices are the in-time component, concentrating at the centre of the beam bucket.  
-This cut results in an effective background rejection as the background efficiency reduces more than half from $8.3 \times 10^{-1}$ to $3.0 \times 10^{-1}$, whilst the signal efficiency only drops by $5 \%$.
-By the end of the cosmic rejection stage, only $\sim432,000$ of the starting $185$ million cosmic slices remain, equivalent to a $99.9\%$ removal of the starting cosmic background.
-
 
 \section{Neutrino Background Removal}
 \label{sec:sm_rej}
 
-The next set made up of three cuts focus on rejecting backgrounds of SM neutrinos.
+The next set made up of three cuts focusing on rejecting backgrounds of SM neutrinos.
 The cut on detector volume is presented Section \ref{sec:fv_cut}.
 The cut on the reconstruction quality is detailed in Section \ref{sec:hit_cut}.
 Finally, the cut targeting at removing track-like particles from SM neutrino interactions is provided in Section \ref{sec:trk_cut}.
@@ -297,11 +310,11 @@ The FV is defined as follows:
         \item $z$-position: $10 < z < 450$ cm.
 \end{itemize}
 The boundary is set on the $x$-axis to reject vertices reconstructed close to the anode and cathode.
-Vertices close to the cathode means the charge clusters must traverse the full drift distance before reaching the anode for detection, therefore, are more susceptible to detector effects (See Section \ref{sec:edrift}) resulting in poor reconstruction.
-Meanwhile, vertices close to the anode might also indicate particles entering from the side of the detector which are likely to be cosmic rays and Non-FV/dirt neutrino backgrounds. 
-The boundary on the $y$-axis rejects interactions that might enter the detector from the top, such as cosmic rays, or bottom, such as Non-FV/dirt neutrinos.
-Finally, the boundary on the $z$-axis for $z > 10$ cm rejects entering particles, while $z < 450$ cm requires enough downstream volume for a shower to grow.
-Overall, this cut additionally ensures the quality of reconstruction.
+Vertices close to the cathode means the charge clusters must traverse the full drift distance before reaching the anode for detection, therefore, are more susceptible to detector effects (See Section \ref{sec:edrift}), resulting in poor reconstruction.
+Meanwhile, vertices close to the anode might also indicate particles entering from the side of the detector which are likely to be cosmic muons and Non-FV/dirt neutrino backgrounds. 
+The boundary on the $y$-axis rejects interactions that might enter the detector from the top, such as cosmic muons, or bottom, such as Non-FV/dirt neutrinos.
+Finally, the boundary on the $z$-axis for $z > 10$ cm rejects entering particles and $z < 450$ cm requires enough downstream volume for a shower to grow.
+Overall, these cuts ensure the quality of reconstruction.
 
 The distribution of vertices reconstructed inside and outside of the FV is shown in Fig. \ref{fig:fv_cut} and the result of the cut is demonstrated in Fig. \ref{fig:bb_post_fv}.
 Dirt neutrino slices reduce from $\sim2$ million slices to only $\sim$306,000 slices while Non-FV neutrino slices drop from $\sim$1.6 million slices to only $\sim99,000$ slices.
@@ -311,12 +324,12 @@ The cut reduces both the background efficiency and signal efficiency by a third 
 \label{sec:hit_cut}
 
 This cut aims to select well-reconstructed slices by examining the number of hits of the primary particle in a slice that deposits the most energy.
-The number of hits is particularly important given that Pandora relies on hit information to reconstruct 3D information of particles in a slice.                                                                  
+The number of hits is particularly important given that Pandora relies on hit information to reconstruct 3D information of particles in a slice (See Sections \ref{sec:hit_finding} and \ref{sec:pandora}).
 The more hits associated with a particle, the more information is available for Pandora to reconstruct its topology and calorimetry.
 The number of hits requirement for the primary particle is $\geq 50$ hits to provide sufficient information for a reliable Pandora reconstruction.
 Fig. \ref{fig:Nhits_cut} demonstrates the distribution of the number of hits of the primary particle in a slice. 
 Only the first bin is rejected by this cut, demonstrating that only a small amount of slices containing primary particles with $< 50$ hits, which are likely to be poorly reconstructed.
-The cut affects minimally across all interaction types, as can be seen in Fig. \ref{fig:bb_postNhits} showing the signal and background efficiency only decrease by < 1\%.
+The beam bucket distribution after the cut is shown in Fig. \ref{fig:bb_postNhits}, where it can be seen that the cut reduces the signal and background efficiency minimally by < 1\%.
 
 %the cut applied to the full beam bucket (left) and only to the first and last 4 bins of the bucket (right).
 %Two different distributions of the beam bucket were plotted to demonstrate the impact of cut on the full beam bucket as well as the edge of the bucket which is the region of interest for HNL search.
@@ -356,10 +369,10 @@ The cut affects minimally across all interaction types, as can be seen in Fig. \
         \label{fig:quality_cut}
 \end{figure}
 
-\subsection{Neutrino Track Removal}
+\subsection{SM Neutrino Track Removal}
 \label{sec:trk_cut}
 
-The next sets of cuts focus on rejecting SM neutrino backgrounds that produce tracks originating from muons, protons and pions.
+The next sets of cuts focus on rejecting SM neutrino backgrounds that produce tracks originating from muons, protons and charged pions.
 The cut uses the score distribution from the Razzled BDT (See Section \ref{sec:razzled}).
 There are two types of Razzled variables examined for this cut: (1) the number of $p, \ \mu, \ \pi$ in a slice as identified by Razzled and (2) the Razzled $p, \ \mu, \ \pi$ scores of all particles in a slice.
 The former cut relies on Razzled assigning a type to a particle based on its highest particle type score from the BDT.
@@ -400,9 +413,10 @@ Comparison between the beam bucket distribution before and after the muon cut, F
 The muon cut effectively rejects $96\%$ of the $4$ million CC $\nu_\mu$ slices, leaving only $\sim161,000$ slices remaining.
 HNL slices are also affected by the cut such that the signal efficiency reduces from 65\% to 51\%.
 
-Similar cuts are then applied consecutively to reject protons and pions, with thresholds on the Razzled score varying depending on the particle type.
-As with the muon cuts, these cuts are also very aggressive to require that the selected slices not contain any track-like particles.
-Additional conditions are required on the reconstructed Kinetic Energy (KE) to be $ > 32.7$ MeV for protons and $< 32.1$ MeV for pions to ensure particles are well-reconstructed. 
+Similar cuts are then applied consecutively to reject protons and charged pions.
+As with the muon cuts, the cuts on the number of $p,\ \mu,\ \pi$ as identified by Razzled in a slice are very aggressive to require that the selected slices not contain any track-like particles.
+On the other hand, the cuts on the Razzled $p,\ \mu,\ \pi$ scores were optimised for each particle type to maximise the background rejection without costing the signal efficiency.
+Additional conditions are required on the reconstructed Kinetic Energy (KE) to be $ > 32.7$ MeV for protons and $< 32.1$ MeV for charged pions to ensure particles are well-reconstructed. 
 To summarise, the cuts to reject muons, protons and pions are as follows:
 \begin{enumerate}
 \item Muon cuts:
@@ -422,16 +436,17 @@ To summarise, the cuts to reject muons, protons and pions are as follows:
     \end{coloritemize}
 \end{enumerate}
 
+
 The cuts to reject protons are illustrated in Fig. \ref{fig:nrazzled_proton_full} and \ref{fig:razzled_proton_score_full}.
 The impacts of the proton cut can be seen in the beam bucket distribution in Fig. \ref{fig:bb_post_proton}, as any interactions producing protons are removed, significantly reducing SM neutrino backgrounds.
 The most impacted interaction modes are Other NC interactions reducing from $\sim249,000$ to $\sim17,000$ slices, CC $\nu_\mu$ interactions reducing from $\sim161,000$ to $\sim46,000$ slices and NC $\pi^0$ interactions reducing from $\sim 177,000$ to $\sim88,000$ slices.
 
 The pion cuts are depicted in Fig. \ref{fig:nrazzled_pion_full} and \ref{fig:razzled_proton_score_full}. 
-The result of the pion cut can be observed in the beam bucket distribution shown in Fig. \ref{fig:bb_post_pion}, where the cut further cleans up any SM neutrino slices that are not already rejected by the muon and proton cut.  
+The result of the pion cut can be observed in the beam bucket distribution shown in Fig. \ref{fig:bb_post_pion}, where the cut further cleans up any SM neutrino slices that are not already rejected by the muon and proton cuts.  
 CC $\nu_\mu$ interactions are the most affected, decreasing from $\sim46,000$ to $\sim30,000$ slices.
 This is followed by a reduction of Other NC interactions from $\sim17,000$ to $\sim9,000$ slices.
 
-The background rejection efficiency at the end of the track removal significantly increases by two orders of magnitudes from $\mathcal{O}(10^{-1})$ to $\mathcal{O}(10^{-3})$, demonstrating the effectiveness of these cuts.
+The background efficiency at the end of the track removal significantly decreases by two orders of magnitudes from $\mathcal{O}(10^{-1})$ to $\mathcal{O}(10^{-3})$, demonstrating the effectiveness of these cuts.
 Meanwhile, the HNL signal efficiency only decreases by 65\% to 46\%.
 
 \begin{figure}[ht!]
@@ -544,8 +559,9 @@ The cut rejects $31\%$ of the remaining $\sim5,000$ CC $\nu_e$ slices while mini
 To further reject backgrounds containing showers, careful considerations were taken into developing cuts by separating the shower topology into subsets.
 As previously stated, di-photon showers from HNLs can result in either a single shower topology or multiple shower topology.
 Thus, two cases can be considered when applying cuts: (1) slices containing only one shower and (2) slices containing two or more showers.
-Signal and background slices distribute differently in the phase space of the cut variable between the two cases, resulting in a different signal-to-background ratio.
-From this cut onwards, individual cut is examined for each case to optimise the efficiency of background rejection and signal selection. 
+The distribution of signal and background slices in the phase space of the cut variable vary differently between the two cases
+This results in a different signal-to-background ratio across the distribution for each case.
+From this cut onwards, individual cut is examined per case to optimise the efficiency of background rejection and signal selection. 
 
 \begin{figure}[ht!]
         \begin{subfigure}[b]{0.495\textwidth}   
@@ -573,28 +589,33 @@ From this cut onwards, individual cut is examined for each case to optimise the 
         \label{fig:track_score_cut}
 \end{figure}
 
-
-The second cut of the HNL shower selection employs the track-shower separation BDT score, as previously discussed in Section \ref{sec:trkshwbdt}, to select only very-shower-like primaries.
+The second cut of the HNL shower selection employs the track-shower separation BDT, that outputs a track score to a particle indicating if it is track-like or shower-like (See Section \ref{sec:trkshwbdt}).
+The track score is  examined for the primary shower that deposits the most energy energy in a slice.  
 Fig. \ref{fig:track_score_cut} displays the track score distribution of primary particles for the two cases of slices containing 1 shower and 2+ showers.
-The remaining primary particles are already shower-like since the score concentrates in the region $< 0.5$.
-For both cases, the track score is capped at 0.5 to reject any primary particles leaning towards track-like.
-Comparing the two cases, the signal-to-background ratio is higher across the score distribution the single shower case than the multiple showers case.
+For both cases, the remaining primary particles are already shower-like since the track score concentrates in the region $< 0.5$.
+
+
+%ratio is higher across the score distribution the single shower case than the multiple showers case.
+The cut sets the upper boundary of the track score at 0.5 for both cases, to reject any primary particles leaning towards track-like.
+On the other hand, the cut on the lower boundary of track score aims at trimming some shower-like backgrounds.
+The cut is optimised for each case depending on individual signal-to-background distribution.
 A more lenient cut is applied for the single shower case selecting the primary shower with a track score of $\geq 0.225$.
 The cut is tightened up for the multiple showers case for better background rejection, requiring the primary shower to have a track score of $\geq 0.25$.
-The resulting beam bucket distribution is depicted in Fig. \ref{fig:bb_track_score}, showing a reduction of $3\sim16\%$ across different SM neutrino interaction types.
-Meanwhile, the signal selection efficiency minimally reduces from 45\% to 43\%.
+The resulting beam bucket distribution is depicted in Fig. \ref{fig:bb_track_score}, showing a reduction of 3-16\% across different SM neutrino interaction types.
+The signal selection efficiency only reduces from 45\% to 43\%.
 
 \subsection{Calorimetry Cut}
 \label{sec:calo_cut}
 
 The third cut of the HNL shower selection targets the highly energetic aspect of the showers resulting from HNL decays compared to SM neutrino showers.
-Outputs from the flash-to-slice matching process are examined, particularly the fraction variable defined by Eq. \ref{eq:opt0fraction} in Section \ref{sec:subsystem_match}.
-As previously stated, the fraction describes the level of agreement between $L_{\mathrm{Q}}$ and $L$, where $L_\mathrm{Q}$ is the number of PhotoElectrons (PEs) predicted from the reconstructed charged and $L$ is the number of PEs as measured by PMTs, $L$.
-A large disagreement might indicate poor reconstruction, whether under or overestimation in light prediction or non-coincident cosmic backgrounds.
-The fraction is useful to identify showers originating from HNLs due to their boosted topology.
-Very forward-going HNL showers are likely to overlap and reconstructed as a single shower merged from multiple showers.   
-As a result, the reconstructed energy from deposited charge of the merged HNL shower tends to be much higher than that for SM neutrinos.
-The number of PEs predicted from the reconstructed charge, $L_{\mathrm{Q}}$, is therefore also likely to be overestimated compared to the number of PEs measured by PMTs, $L$.
+Outputs from the flash-to-slice matching process are examined, particularly the fraction variable defined in Eq. \ref{eq:opt0fraction} in Section \ref{sec:subsystem_match}.
+For a matched flash, the fraction describes the level of agreement between $L_{\mathrm{Q}}$ and $L$, where $L_\mathrm{Q}$ is the number of PhotoElectrons (PEs) predicted from the reconstructed charged and $L$ is the number of PEs measured by PMTs.
+A large disagreement indicates poor reconstruction, whether under or overestimation in light prediction or non-coincident cosmic backgrounds.
+
+The fraction is useful to identify showers originated from HNLs due to their boosted topology.
+Very forward-going HNL showers are likely to overlap and clustered as a single shower merged from multiple showers by Pandora.   
+The reconstructed energy from deposited charge of the merged HNL shower tends to be much higher than that for SM neutrinos.
+The number of PEs predicted from the reconstructed charge $L_{\mathrm{Q}}$ is therefore also likely to be overestimated compared to the number of PEs measured by PMTs $L$.
 
 \begin{figure}[ht!]
         \begin{subfigure}[b]{0.495\textwidth}   
@@ -626,17 +647,19 @@ The overestimation is demonstrated in Fig. \ref{fig:opt0_cut}, where it can be s
 The calorimetry cut exploits this feature and is optimised for the single shower as well as the multiple shower case.
 For slices containing a single shower, the requirement on the fraction is between -0.1 and 0.4 to select well-predicted showers with the fraction centred around 0, as well as overestimated showers with the fraction $> 0$. 
 For slices containing multiple showers, the requirement on the fraction is restricted to between 0.04 and 0.3 to strictly select only overestimated showers, rejecting backgrounds more aggressively.
-The beam bucket distribution after the cut is shown in Fig. \ref{fig:bb_opt0}, demonstrating the effectiveness of the cut as the background rejection efficiency increases by a whole order of magnitude from $\mathcal{O}(10^{-3})$ to $\mathcal{O}(10^{-4})$. 
+The beam bucket distribution after the cut is shown in Fig. \ref{fig:bb_opt0}, demonstrating the effectiveness of the cut as the background efficiency decreases by a whole order of magnitude from $\mathcal{O}(10^{-3})$ to $\mathcal{O}(10^{-4})$. 
 Meanwhile, the signal selection efficiency only decreases from 43\% to 35\%.
 
 \subsection{Theta Angle Cut}
 \label{sec:theta_cut}
 
-The fourth cut exploits the geometry of the forward-going HNL showers such that their theta angles with respect to the beam direction are small.                                      
-Fig. \ref{fig:1shw_theta_cut} shows the distribution of theta angle for slices containing a single shower.
-In this case, the signal is mainly highly energetic and boosted di-photons showers reconstructed as a single merged and collimated shower.
-Their theta angles mainly dominate in the low theta region.
-A strict selection of $< 25^{\circ}$ can be placed without compromising signal efficiency due to the high signal-to-background ratio in this region.
+The fourth cut exploits the topology of the forward-going HNL showers such that their angles with respect to the beam direction, referred to as \textit{theta angles}, are small.
+Fig. \ref{fig:1shw_theta_cut} shows the angular distribution for slices containing a single shower.
+In this case, the signals are mainly highly energetic and boosted di-photon showers reconstructed as a single merged and beam-collimated shower.
+As a result, their theta angles concentrate in the region $< 25^{\circ}$.
+An aggressive selection of $< 25^{\circ}$ can be placed without compromising signal efficiency.
+%due to the high signal-to-background ratio in this region.
+
 Fig. \ref{fig:2shw_theta_cut} shows the theta angle distribution for slices containing multiple showers.
 In this case, HNL showers are less boosted and more likely to result in separated showers.
 Their theta angles with respect to the beam are larger compared to the single shower case.
@@ -671,16 +694,16 @@ To preserve signal selection efficiency, a widened selection of $< 30^{\circ}$ i
 \end{figure}
 
 Fig. \ref{fig:bb_theta} shows the beam bucket distribution after applying the cut.
-The theta angle cut effectively rejects any shower-like backgrounds that are not collimated, resulting in a reduction across all SM neutrino interaction types.
-This is a very impactful cut given that the background rejection efficiency increases by half from $7.3 \times 10^{-4}$ to $3.6 \times 10^{-4}$.
-Meanwhile, the signal selection efficiency of HNL slices only drops by 2\%.
+The theta angle cut effectively rejects any shower-like backgrounds that are not beam-collimated, resulting in a reduction across all SM neutrino interaction types.
+This is a very impactful cut given that the background efficiency decreases by half from $7.3 \times 10^{-4}$ to $3.6 \times 10^{-4}$.
+The signal efficiency of HNL slices only drops by 2\%.
 
 
 \subsection{Invariant Mass Cut}
 \label{sec:mass_cut}
 
 The final cut of the HNL shower selection exploits the fact that di-photon showers originate from a $\pi^0$ decay, allowing for the reconstruction of $\pi^0$ invariant mass, $m_{\pi^0}$.
-For slices containing multiple showers, the invariant mass can be constructed using the reconstructed momenta of any two showers combination in the slice.
+For slices containing multiple showers, the invariant mass can be reconstructed using the reconstructed momenta of any two showers combination in the slice.
 For two massless photon showers with an opening angle $\alpha$ and a total energy $E_1$ and $E_2$ respectively, $m_{\pi^0}$ is computed as:
 \begin{equation}
 	m_{\pi^0} = \sqrt{2 E_1 E_2 \times (1 - \mbox{cos}\alpha)}.
@@ -689,9 +712,9 @@ For a given slice, the $\pi^0$ invariant mass was reconstructed for all combinat
 The cut is illustrated in Fig. \ref{fig:mass_cut}, where the solid red line indicates the $\pi^0$ mass of 135 MeV.
 A cut is applied to select slices corresponding to a reconstructed invariant mass of 300 MeV or less.
 This rejects any slices with a poorly reconstructed $\pi^0$ mass, which could be due to backgrounds from 
-SM neutrino interactions such as CC $\nu_\mu$, other NC, Non-FV and dirt as well as energetic cosmic rays.
+SM neutrino interactions such as CC $\nu_\mu$, Other NC, Non-FV and dirt as well as energetic cosmic rays.
 However, poor shower reconstruction can also result in di-photon showers from $\pi^0$ getting mistakenly rejected by this cut, as it is evident that some NC $\pi^0$ interactions and HNL signals are affected.
-This cut minimally reduces both signal and background slices to less than $3 \%$.
+This cut reduces both signal and background slices by than $3 \%$.
 
 \begin{figure}[h!]
         \centering 
@@ -708,10 +731,13 @@ This cut minimally reduces both signal and background slices to less than $3 \%$
 Fig. \ref{fig:bb_full_loose} shows the beam bucket distribution after the whole selection procedure.
 The background efficiency shown in the plot is $3.3 \times 10^{-4}$, demonstrating the extreme background rejection achieved for this analysis amounting to four orders of magnitude.
 Meanwhile, the signal selection efficiency is still well-preserved as $30\%$. 
-The peak region of the bucket is still dominated by the primary background from NC $\pi^0$ interactions which have proven to be a very tricky background to remove due to their similarity with HNL showers.
-Moreover, a fraction of CC $\nu_e$ interactions persists as they can produce a single shower topology. 
-A combination of CC $\nu_\mu$, other NC, Non-FV and dirt neutrino interactions remain even though they were not considered to be a background at the beginning.
+
+The peak region of the bucket is dominated by the primary background from NC $\pi^0$ interactions which have proven to be a very tricky background to remove due to their similarity with HNL showers.
+A combination of CC $\nu_\mu$ and Other NC remain even though they were not considered to be a background at the beginning.
 These interactions likely undergo deep inelastic scattering, producing shower-like products like $\pi^0$ or $e^{\pm}$.
+Moreover, a fraction of CC $\nu_e$ interactions persists as they can produce a single shower topology. 
+In addition, some backgrounds from Non-FV and dirt neutrino interactions can still be seen, since their products can propagate to the FV and deposit energy.  
+Finally, cosmic muons are almost fully rejected is due to aggressive cuts. 
 
 The multi-binned analysis for limits setting depends on the signal-to-background ratio per bin, of which signal-rich bins drive the limits.
 Fig. \ref{fig:bb_edge_loose} zooms into the first and last 4 bins of the beam bucket distribution.
@@ -720,7 +746,7 @@ A \textit{timing cut} might be applied to select only these bins, which would re
 However, the cut is not formally applied as part of the selection procedure, but to highlight the importance of these edge bins due to their excellent signal-to-background ratio.
 The timing cut is discussed further in Chapter \ref{ChapterResult}.
 
-To better understand the sensitivity limits dependency on the signal-to-background ratio, two selection procedures were developed.
+To better understand the sensitivity dependency on the signal-to-background ratio, two selection procedures were developed.
 The selection demonstrated up until this point is referred to as \textit{the lenient cut}.
 An additional more aggressive cut, referred to as \textit{the stringent cut}, was developed by tightening the two most impactful cuts on calorimetry and theta angle. 
 The resulting beam bucket distribution for the stringent cut is plotted in Fig. \ref{fig:bb_full_strict} 
@@ -728,7 +754,6 @@ and \ref{fig:bb_edge_strict} for the entire distribution and only the edge bins 
 The key difference between these two cuts is that the lenient cut retains more signals however at a lower purity.
 Meanwhile, the stringent cut results in higher purity at the cost of signal efficiency.
 The two selections are summarised in Table \ref{table:cut_summary}.
-
 
 Fig. \ref{fig:eff} shows the signal selection and background rejection efficiency cut by cut.
 The signal selection efficiency is plotted using the left axis in pink and the background rejection efficiency is plotted using the right axis in blue.
@@ -782,6 +807,8 @@ Overall, the most significant cuts are the muon/proton/pion cut for track remova
 \end{figure}
 
 \begin{table}[htbp!]
+\caption{Table summarising the lenient and stringent selection.}
+\label{table:cut_summary}
 \centering
 \begin{center}
 \begin{tabular}{| p{7.75cm} | m{3.25cm} | m{3.25cm} |} 
@@ -825,8 +852,6 @@ Overall, the most significant cuts are the muon/proton/pion cut for track remova
  \hline
 \end{tabular}
 \end{center}
-\caption{Table summarising the lenient and stringent selection.}
-\label{table:cut_summary}
 \end{table}
 
 %********************************** %First Section  **************************************
@@ -835,7 +860,7 @@ Overall, the most significant cuts are the muon/proton/pion cut for track remova
 
 The timing cut described above demonstrates the importance of a high precision timing reconstruction in this analysis and thus, a study was carried out to understand the smearing contributors to the beam bucket distribution. 
 Fig. \ref{fig:smearing_factors} illustrates several factors that can smear the arrival time of a SM neutrino at SBND, and consequently smearing the Gaussian shape of the beam bucket.
-The intrinsic Gaussian sigma of the proton bucket from the Booster synchrotron is 1.308 ns, as shown by the brown arrow.
+The intrinsic Gaussian width of the proton bucket from the Booster synchrotron is 1.308 ns, as shown by the brown arrow.
 This structure is then smeared out due to the Time of Flight (ToF) of secondary mesons, as shown by the blue arrow.
 Moreover, the ToF of the tertiary SM neutrinos from the production location to the detector further smears the Gaussian, as shown by the pink arrow.
 Once the neutrino arrives at the detector, two additional smearing factors need to be considered.
@@ -852,43 +877,43 @@ The second one is the ToF of the photon from the production to the detection loc
 A beam bucket distribution was plotted using \textit{true} variables to better understand the impacts of the smearing factors, where true indicates that no detector simulation and reconstruction were applied.
 The truth beam bucket of SM neutrinos that arrive at the front face of SBND is shown in the left of Fig. \ref{fig:gaus_truth_reco}.
 This distribution was computed using the true interaction time at the vertex, marked by the yellow star in Fig. \ref{fig:smearing_factors}, and then corrected for the SM neutrino ToF inside the detector, depicted by the purple arrow.
-In the truth phase space, it is evident that the combination of the ToF of mesons and of SM neutrinos to the detector smears the Gaussian sigma by a negligible amount from 1.308 ns to 1.37 ns.
+In the truth phase space, it is evident that the combination of the ToF of mesons and of SM neutrinos to the detector smears the Gaussian width by a negligible amount from 1.308 ns to 1.37 ns.
 
 The reconstructed beam bucket distribution of SM neutrinos is plotted in the right of Fig. \ref{fig:gaus_truth_reco}.
-As detailed in Section \ref{sec:key_dist}, the beam bucket is reconstructed using the flash time matched a slice.
-The flash time was reconstructed using the prompt light occurring in the first 30 ns of the flash window such that the scintillation location is close to the interaction vertex (See Section \ref{sec:reco_pds}).
+As detailed in Section \ref{sec:key_dist}, the beam bucket is reconstructed using the flash time that is matched to a slice (See Sections \ref{sec:reco_pds} and \ref{sec:subsystem_match}).
+The flash time was reconstructed using the prompt light occurring in the first 30 ns window such that the scintillation location is close to the interaction vertex.
 The flash time was also corrected for the photon propagation time from the production location to PMTs, depicted by the green arrow in Fig. \ref{fig:smearing_factors}.
 Then, the SM neutrino ToF inside the detector, as shown by the purple arrow, was corrected by applying a shift from the reconstructed vertex $z$-position to $z = 0$ at the detector's front face.
 As a result, the reconstruction depends on 3 variables: (1) the matching of flash-to-slice, (2) the flash time and (3) the slice vertex.
-Each of these variables has its own reconstruction resolution and can smear the Gaussian shape of SM neutrinos arriving at the detector.
-%The resulting beam bucket corresponds to a Gaussian with a sigma smeared from 1.308 ns to 2.26 ns.
+Each of these variables has its own reconstruction uncertainty, thus, the reconstructed beam bucket is even more smeared.
+%smearing the Gaussian shape of SM neutrinos arriving at the detector.
+%The resulting beam bucket corresponds to a Gaussian with a width smeared from 1.308 ns to 2.26 ns.
 
 %The right figure was made using the Rockbox sample, selecting only slices that match a true neutrino. 
 %No cosmic slices are considered for simplification, however, having cosmics background can additionally smear the structure.
 %Both truth and reco plots are normalised for direct comparison.
 
-Going from the truth phase space to the reconstruction phase space, two observations can be made.
-The first one is the shift of the Gaussian mean from 7.44 to 9.26 ns, equivalent to a shift of 1.82 ns.
-A portion of the shift is due to the reconstructed flash time introducing a shift of 1.45 ns \cite{sbnd_pds_paper}.
-The remaining shift amount might be due to the slice vertex reconstruction and the flash matching.      
-The second observation is that the Gaussian sigma is smeared from 1.37 ns to 2.26 ns. 
-This sigma smearing is detrimental to the HNL search since it results in more SM neutrinos at the edge of the beam bucket and thus, reducing the signal-to-background ratio in this region.                     
+Comparing the two beam bucket distributions in Fig. \ref{fig:gaus_truth_reco}, the Gaussian mean is shifted by 1.82 ns from 7.44 to 9.26 ns.
+This includes a shift of 1.45 ns introduced by the light reconstruction \cite{sbnd_pds_paper}.
+The rest might be due to the slice vertex reconstruction and/or the slice-to-flash matching.      
+Additionally, the Gaussian width is smeared from 1.37 ns to 2.26 ns. 
+This width smearing is detrimental to the HNL search since it results in more SM neutrinos at the edge of the beam bucket, reducing the signal-to-background ratio in this region.                     
 
 \begin{figure}[hb!]
     \centering
     \includegraphics[width=0.75\textwidth]{truth_reco_gaus.png}
-    \caption{Plots showing the beam bucket distribution of SM neutrinos in the truth phase space (left) and in the reconstruction phase space (right).}
+    \caption{The beam bucket distribution of SM neutrinos in the truth phase space (left) and in the reconstruction phase space (right).}
     \label{fig:gaus_truth_reco}
 \end{figure}
 
-This motivates the assessment of sensitivity limits assuming a better timing reconstruction.
-This is equivalent to reconstructing the beam bucket distribution with less smearing under the two assumptions as follows:
+This motivates the assessment of sensitivity assuming a better timing reconstruction.
+The two assumptions of the beam bucket distribution reconstructed with an improved timing resolution are as follows:
 \begin{enumerate}
     \item A shifted Gaussian mean of 1.45 ns,
-    \item A smeared Gaussian sigma of 1.73 ns.
+    \item A smeared Gaussian width of 1.73 ns.
 \end{enumerate}
-The Gaussian mean shift of 1.45 ns due to the light reconstruction in SBND was reported by Ref. \cite{sbnd_pds_paper}.
-The Gaussian smeared sigma of 1.73 ns was motivated by the MicroBooNE experiment reporting on their intrinsic timing resolution \cite{uboone_ns}.
+The first assumption is motivated by the impact of the light reconstruction in SBND reported by Ref. \cite{sbnd_pds_paper}.
+The second assumption is motivated by the MicroBooNE experiment reporting on their intrinsic timing resolution \cite{uboone_ns}.
 Although ambitious, it is an achievable goal for SBND to have a reconstructed timing resolution $< 2$ ns, given that SBND employs a similar detector technology to MircoBooNE.
 Moreover, Chapter \ref{ChapterDAQ} details the excellent timing performance of the SBND data acquisition and the preparation that already took place to achieve better timing resolution.
 Particularly, the SPEC-TDC device, as discussed in Section \ref{subsec42TimeRef}, records important timing information on the trigger and beam arrival that can only improve downstream reconstruction once incorporated. 
@@ -899,11 +924,12 @@ Particularly, the SPEC-TDC device, as discussed in Section \ref{subsec42TimeRef}
 For modelling the background using true variables under these assumptions, only SM neutrinos are considered and not cosmics for simplicity. 
 The truth beam bucket distribution of SM neutrinos was smeared with the two assumptions, referred to as \textit{smeared truth}.
 Fig. \ref{fig:gaus_truth_smear} shows the truth, smeared truth and the reconstructed distribution after selection, all normalised to the same area for direct comparison.
-The left figure shows the truth distribution without any smearing applied with a sigma of 1.37 ns.
-The middle figure shows the smeared truth distribution with the assumed sigma of 1.73 ns.
-The right figure shows the reconstructed distribution after applying the lenient selection with a sigma of 1.99 ns.
-It is important to note the difference between the reconstructed beam bucket before and after selection such that the distribution after selection has a less shifted Gaussian mean and a smaller Gaussian sigma.
-This is due to cuts having non-uniform effects on the distribution. 
+The left figure shows the truth distribution without any smearing applied with a width of 1.37 ns.
+The middle figure shows the smeared truth distribution with the assumed width of 1.73 ns.
+The right figure shows the reconstructed distribution after applying the lenient selection with a width of 1.99 ns.
+It is important to note the difference between the reconstructed beam bucket before and after selection such that the distribution after selection has a less shifted Gaussian mean and a smaller Gaussian width.
+This is due to cuts having non-uniform effects on the distribution.
+It was observed in this work that different topologies, for instance tracks and showers, have different timing reconstruction resolutions. 
 
 \begin{figure}[ht!]
     \centering
@@ -914,10 +940,11 @@ This is due to cuts having non-uniform effects on the distribution.
 
 For modelling the signal, the same smearing assumptions are applied to the truth timing distribution of HNLs. 
 %Unlike the background modelling approach of normalising the number of remaining background slices after selection, a flat efficiency of 30\% is applied to the HNL truth distribution to account for the effects of reconstruction and selection combined.
-Unlike the background modelling approach of normalising the same area, a flat efficiency of 30\% was applied to the HNL truth distribution to account for the combined effects of reconstruction and selection.
+
+Unlike the background modelling approach of normalising the same area, an efficiency of 30\% was applied to the HNL truth beam bucket distribution to account for the combined effects of reconstruction and selection.
 Fig. \ref{fig:hnl_sm_smear} shows the beam bucket distribution of SM neutrinos and HNLs across the phase space of truth, smeared truth and reconstruction after selection for comparison. 
 The smeared truth distribution shows a higher signal-to-background ratio particularly for the bins at the edge of the bucket compared to the reconstructed distribution.
-This smeared truth distribution is also used for setting the upper limits alongside the reconstructed distributions, as this is to assess the impacts of timing resolution improvement.
+This smeared truth distribution is also used for determining the sensitivity alongside the reconstructed distributions, as this is to assess the impacts of timing resolution improvement.
 
 \begin{figure}[ht!]
     \centering
@@ -934,12 +961,15 @@ This smeared truth distribution is also used for setting the upper limits alongs
 The selection of HNLs using MC samples is provided in this chapter, as a procedure to identify HNL signals from SM neutrino and cosmic backgrounds.
 Two selection procedures on reconstructed variables are presented, the lenient and stringent cut, with the stringent rejecting backgrounds more aggressively than the lenient.
 Both exploit the highly energetic and forward-going features of HNL showers to achieve an excellent background rejection without compromising signal efficiency.
-The resulting background rejection efficiency is in the order of $\mathcal{O}(10^{-4})$ while the signal selection efficiency still maintains at 30\%. 
-When considering only bins at the edge of the beam bucket distribution, or the so-called \textit{timing cut}, the background efficiency increases by two orders of magnitude to $\mathcal{O}(10^{-6})$ while the signal efficiency only reduces to 10\%. 
-This is evident that these edge bins contain an exceptional signal-to-background ratio, which is the main factor driving the sensitivity limits.
-Furthermore, a study was motivated to explore the impact on sensitivity limits if the timing reconstruction is achieved.
-The study resulted in a beam bucket distribution plotted by smearing true variables, assuming the beam bucket distribution is reconstructed with an improved timing resolution.
-All three beam bucket distributions, from both the lenient and stringent cut on reconstructed variables and from the smeared truth variables, are used for setting upper limits on the coupling $|U_{\mu4}|^2$ of HNLs in Chapter \ref{ChapterResult} next. 
+
+The resulting background efficiency is in the order of $\mathcal{O}(10^{-4})$ while the signal selection efficiency still maintains at 30\%. 
+When considering only bins at the edge of the beam bucket distribution, or the so-called \textit{timing cut}, the background efficiency decreases significantly by two orders of magnitude to $\mathcal{O}(10^{-6})$.
+Meanwhile, the signal efficiency only decreases from 30\% to 10\%. 
+This demonstrates that these edge bins contain an exceptional signal-to-background ratio, which is the main factor driving the sensitivity.
+
+Furthermore, a study was motivated to explore the impact on sensitivity if the timing reconstruction is achieved.
+The study resulted in a beam bucket distribution acquired by smearing true variables, assuming it is reconstructed with an improved timing resolution.
+All three beam bucket distributions, from both the lenient and stringent cut on reconstructed variables and from the smeared truth variables, are used for studying the sensitivity to HNLs in Chapter \ref{ChapterResult} next. 
 
 
 %Thus, the signal-to-noise ratio varies bin-by-bin, where signal-rich bins locate at the edge of the beam bucket (or the Gaussian tails) and background-rich bins locate at the centre of the beam bucket (or the Gaussian peak).
