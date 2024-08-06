@@ -1,0 +1,101 @@
+
+\begin{thenomenclature} 
+\nomgroup{Symbols}
+  \item [{\boldvio{}}]\begingroup \nomeqref {0}\nompageref{xxiv}
+\nomgroup{A}
+  \item [{\boldvio{AC}}]\begingroup Alternating Circuit\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{APA}}]\begingroup Anode Plane Assemblies\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{ArgoNeuT}}]\begingroup Argon Neutrino Teststand\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{AV}}]\begingroup Active Volume\nomeqref {0}\nompageref{xxiv}
+\nomgroup{B}
+  \item [{\boldvio{BDT}}]\begingroup Boosted Decision Tree\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{BNB}}]\begingroup Booster Neutrino Beam\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{BSM}}]\begingroup Beyond the Standard Model\nomeqref {0}\nompageref{xxiv}
+\nomgroup{C}
+  \item [{\boldvio{C.L.}}]\begingroup Confidence Level\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CC}}]\begingroup Charged Current\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CE}}]\begingroup Cold Electronics\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CERN}}]\begingroup European Organisation for Nuclear Research\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CPA}}]\begingroup Cathode Plane Assembly\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CPT}}]\begingroup Charge Parity Time symmetries\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CRT}}]\begingroup Cosmic Ray Tagger\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CRUMBS}}]\begingroup Cosmic Rejection Using a Multi-system Boosted decision tree Score\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{CV}}]\begingroup Central Value\nomeqref {0}\nompageref{xxiv}
+\nomgroup{D}
+  \item [{\boldvio{DAQ}}]\begingroup Data Acquisition\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{DCA}}]\begingroup Distance of Closest Approach\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{DUNE}}]\begingroup Deep Underground Neutrino Experiment\nomeqref {0}\nompageref{xxiv}
+\nomgroup{E}
+  \item [{\boldvio{ETRIG}}]\begingroup Event TRIGger\nomeqref {0}\nompageref{xxiv}
+\nomgroup{F}
+  \item [{\boldvio{FD}}]\begingroup Fine Delay\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{FEB}}]\begingroup Front End Board\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{FMC}}]\begingroup Field programmable gate arrays Mezzanine Card\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{FTRIG}}]\begingroup Flash TRIGger\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{FV}}]\begingroup Fiducial Volume\nomeqref {0}\nompageref{xxiv}
+\nomgroup{H}
+  \item [{\boldvio{HNL}}]\begingroup Heavy Neutral Lepton\nomeqref {0}\nompageref{xxiv}
+\nomgroup{I}
+  \item [{\boldvio{ICARUS}}]\begingroup Imaging Cosmic And Rare Underground Signals\nomeqref {0}\nompageref{xxiv}
+\nomgroup{K}
+  \item [{\boldvio{KDAR}}]\begingroup Kaon Decay At Rest\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{KE}}]\begingroup Kinetic Energy\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{KEK}}]\begingroup High Energy Accelerator Research Organization (Kō Enerugī Kasokuki Kenkyū Kikō)\nomeqref {0}\nompageref{xxiv}
+\nomgroup{L}
+  \item [{\boldvio{LArTPC}}]\begingroup Liquid Argon Time Projection Chamber\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{LSND}}]\begingroup Liquid Scintillator Neutrino Detector\nomeqref {0}\nompageref{xxiv}
+\nomgroup{M}
+  \item [{\boldvio{MC}}]\begingroup Monte Carlo\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{MCS}}]\begingroup Multiple Coulomb Scattering\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{MicroBooNE}}]\begingroup Micro Booster Neutrino Experiment\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{MiniBooNe}}]\begingroup Mini Booster Neutrino Experiment\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{MIP}}]\begingroup Minimum Ionising Particle\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{MTC/A}}]\begingroup Master Trigger Card Analog\nomeqref {0}\nompageref{xxiv}
+\nomgroup{N}
+  \item [{\boldvio{NC}}]\begingroup Neutral Current\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{NTB}}]\begingroup Nevis Trigger Board\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{NTP}}]\begingroup Network Time Protocol\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{NuMI}}]\begingroup Neutrinos at the Main Injector beam\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{NuTeV}}]\begingroup Neutrino at the Tevatron\nomeqref {0}\nompageref{xxiv}
+\nomgroup{P}
+  \item [{\boldvio{PDF}}]\begingroup Probability Density Function\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PDS}}]\begingroup Photon Detection System\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PE}}]\begingroup PhotoElectron\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PID}}]\begingroup Particle IDentification\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PIENU}}]\begingroup \textbf{Pi}on $\rightarrow$ \textbf{E}lectron + \textbf{Neu}trino\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PMNS}}]\begingroup Pontecorvo-Maki-Nakagawa-Sakata\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PMT}}]\begingroup PhotonMultiplier Tube\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{POT}}]\begingroup Protons On Target\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PPS}}]\begingroup Pulse Per Second\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{PTB}}]\begingroup Penn Trigger Board\nomeqref {0}\nompageref{xxiv}
+\nomgroup{Q}
+  \item [{\boldvio{QCD}}]\begingroup Quantum Chromodynamics\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{QE}}]\begingroup Quantum Efficiency\nomeqref {0}\nompageref{xxiv}
+\nomgroup{R}
+  \item [{\boldvio{RWM}}]\begingroup Resistor Wall Monitor\nomeqref {0}\nompageref{xxiv}
+\nomgroup{S}
+  \item [{\boldvio{s.d.}}]\begingroup standard deviation\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SBN}}]\begingroup Short-Baseline Neutrino\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SBND}}]\begingroup Short-Baseline Near Detector\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SCE}}]\begingroup Space Charge Effect\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SER}}]\begingroup Single Electron Response\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SIN}}]\begingroup Swiss Institute for Nuclear Research\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SiPM}}]\begingroup Silicon PhotoMultiplier\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SM}}]\begingroup Standard Model\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SPEC}}]\begingroup Simple PCIe FMC Carrier\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{SVEC}}]\begingroup Simple VME FMC Carrier\nomeqref {0}\nompageref{xxiv}
+\nomgroup{T}
+  \item [{\boldvio{T2K}}]\begingroup Tokai to Kamioka\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{TAI}}]\begingroup Coordinated Universal Time\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{TDC}}]\begingroup Time to Digital Converter\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{TPB}}]\begingroup TertraPhenyl Butadiene\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{TPC}}]\begingroup Time Projection Chamber\nomeqref {0}\nompageref{xxiv}
+\nomgroup{U}
+  \item [{\boldvio{UTC}}]\begingroup International Atomic Time\nomeqref {0}\nompageref{xxiv}
+\nomgroup{V}
+  \item [{\boldvio{VUV}}]\begingroup Vacuum Ultraviolet\nomeqref {0}\nompageref{xxiv}
+\nomgroup{W}
+  \item [{\boldvio{WIB}}]\begingroup Warm Interface Board\nomeqref {0}\nompageref{xxiv}
+  \item [{\boldvio{WR}}]\begingroup White Rabbit\nomeqref {0}\nompageref{xxiv}
+
+\end{thenomenclature}

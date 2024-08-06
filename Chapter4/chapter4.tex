@@ -17,10 +17,10 @@ The Short-Baseline Near Detector (SBND) is the near detector of the Short-Baseli
 The program is motivated by anomalous results observed across various detectors involving accelerator, nuclear reactor, and solar neutrino experiments.
 For instance, the low energy excess in the $\nu_e$ and $\overline{\nu}_e$ interaction measurement observed by both LSND and MiniBooNE experiments is an outstanding anomaly for the past decade \cite{LSND_anomaly, Miniboone_anomaly}.
 In addition to being part of the SBN program, SBND also has its own extensive physics program focusing on high precision $\nu$-Ar cross section measurements and physics beyond the Standard Model. 
-This will not only benefit future long baseline neutrino experiments such as the Deep Underground Neutrino Experiment but also significantly advance the field of neutrino physics as a whole.
+This will not only benefit future long baseline neutrino experiments such as the DUNE but also significantly advance the field of neutrino physics as a whole.
 At the time of writing, SBND has entered its commissioning phase, in preparation for calibration and physics data taking.
 
-This chapter contains an overview of the SBND detector and the Booster Neutrino Beam (BNB), which are the detector and beam source used in the search for heavy neutral leptons in this thesis.
+This chapter contains an overview of the SBND detector and the Booster Neutrino Beam (BNB), which are the detector and beam source used in the search for Heavy Neutral Leptons (HNLs) in this thesis.
 The chapter begins with a discussion on the physics program of the SBND experiment in Section \ref{sec4PhysicsProgram}. 
 Section \ref{sec4SBND} provides a detailed description of the detection technology of SBND, covering the time projection chamber, photon detection system, and cosmic ray tagger system. 
 This section also elaborates on the hardware triggering system and the data acquisition system employed at SBND.
@@ -34,14 +34,14 @@ Finally, Sec \ref{sec:sbnd_conclude} provides some concluding remarks.
 
 %0: SBND, as part of the SBN Program
 %Neutrino Oscillation
-The Short-Baseline Near Detector (SBND) is part of the Short-Baseline Neutrino (SBN) Program located at Fermilab \cite{SBNProgram}. 
-The program consists of three LArTPC detectors: SBND, MicroBooNE, and Imaging Cosmic Rare Underground Signals (ICARUS), positioned at distances of 110 m, 470 m, and 600 m, respectively, on-axis to the target of the Booster Neutrino Beam (BNB) as shown in Fig. \ref{fig:SBN_program}.
-The near-far detector setup was designed to search for the potential existence of sterile neutrinos in the mass range of $\mathcal{O}$(1 eV) that was briefly mentioned in Chapter \ref{ChapterHNL}, driven by a series of anomalies observed by previous short baseline experiments.
+SBND is part of the Short-Baseline Neutrino (SBN) program located at Fermilab \cite{SBNProgram}. 
+The program consists of three Liquid Argon Time Projection Chamber (LArTPC) detectors: SBND, MicroBooNE, and ICARUS, positioned at distances of 110 m, 470 m, and 600 m on-axis to the target of the BNB as shown in Fig. \ref{fig:SBN_program}.
+The near-far detector setup was designed to search for the potential existence of sterile neutrinos in the mass $\mathcal{O}$(1 eV) that is briefly mentioned in Chapter \ref{ChapterHNL}, driven by a series of anomalies observed by previous short baseline experiments.
 
-Amongst these earlier experiments was the Liquid Scintillator Neutrino Detector (LSND) experiment which utilised a stopped pion source to probe $\overline{\nu}_{e}$ via inverse beta decay and reported an excess of signal to the background at low energies with a 3.8$\sigma$ level \cite{LSND_anomaly}. 
+Amongst these earlier experiments was the LSND experiment which utilised a stopping pion source to probe $\overline{\nu}_{e}$ via inverse $\beta$-decay and reported an excess of signal to the background at low energies with a 3.8$\sigma$ level \cite{LSND_anomaly}. 
 The MiniBooNE experiment was a neutrino accelerator experiment designed to measure the entire phase space covered by the LSND result \cite{Miniboone_anomaly}.
 This detector observed an excess of $\nu_{e}$ ($\overline{\nu}_{e}$) in $\nu_{\mu}$ ($\overline{\nu}_{\mu}$) beam mode showing a discrepancy from the SM with a significance level of 4.5$\sigma$ (2.8$\sigma$), reaching 6.0$\sigma$ when combined with the LSND data.
-Additionally, a revisit to results from the nuclear reactor experiments indicated a deficit of $\overline{\nu}_{e}$ fluxes to the theoretical expectation at a 3$\sigma$ level \cite{reactor_anomaly_1, reactor_anomaly_2}. 
+Additionally, a re-evaluation of results from the nuclear reactor experiments indicated a deficit of $\overline{\nu}_{e}$ fluxes to the theoretical expectation at a 3$\sigma$ level \cite{reactor_anomaly_1, reactor_anomaly_2}. 
 %and spectral features consistent with an eV-scale sterile neutrino addition \cite{reactor_anomaly_3, reactor_anomaly_4}.
 Furthermore, gallium solar neutrino experiments observed an overall deficit in $\nu_{e}$ fluxes at a 3$\sigma$ level during calibrations using radioactive neutrino sources \cite{galium_anomaly_1, galium_anomaly_2}.
 These main anomalous results collectively suggest the mass mixing of SM neutrinos with an addition eV-scale sterile neutrino at a short baseline to energy ratio of $L/E \approx 1 $ m/MeV.
@@ -58,28 +58,28 @@ Graphic showing the three LArTPC detectors made up the Short-Baseline Neutrino p
 \end{figure}
 
 %Neutrino Cross Section
-Additionally, measurements of $\nu$-Ar interactions play a crucial role in the physics program of SBND, serving as a critical element in understanding neutrino oscillations \cite{NuSTECWhitePaper}. 
+Additionally, precise measurements of $\nu$-Ar interactions play a crucial role in the physics program of SBND, serving as a critical element in understanding neutrino oscillations \cite{NuSTECWhitePaper}. 
 Being the nearest to the beam target, SBND is presented with a unique opportunity to observe the largest unoscillated neutrino fluxes among the three detectors.
-Over the 3-year operational span, SBND aims to record a staggering 10 million neutrino events, originating from $1 \times 10^{21}$ POT interactions \cite{SBNProgram}.
+Over the 3-year operational span, SBND aims to record a staggering 10 million neutrino events, originating from an exposure of $1 \times 10^{21}$ Protons On Target (POT) \cite{SBNProgram}.
 This will establish SBND as the world leader in statistics for $\nu$-Ar cross section measurements.
-More than 6 million $\nu_{\mu}$ Charged Current (CC) events will be collected, reducing the statistical uncertainty to well below the percent level.
-Moreover, SBND is expected to record 45,000 $\nu_{e}$ CC events, hence providing the most extensive statistics for both inclusive and exclusive measurements of this channel to date.
-These measurements will be extremely beneficial for advancing the objectives of the SBN physics program, as well as contributing to the physics goals of the Deep Underground Neutrino Experiment (DUNE), which employs argon as its detector medium.
+More than 6 million Charged Current (CC) $\nu_{\mu}$ events will be collected, reducing the statistical uncertainty to well below the percent level.
+Moreover, SBND is expected to record 45,000 CC $\nu_{e}$ events, providing the most extensive statistics for both inclusive and exclusive measurements of this channel.
+These measurements will be extremely beneficial for advancing the objectives of the SBN physics program, as well as contributing to the physics goals of the long baseline DUNE experiment, which employs argon as its detector medium.
 
 Finally, a key aspect of the physics program at SBND is the exploration of new scenarios leading to Beyond Standard Model (BSM) physics. 
 Proximity to a high intensity beam and the resulting large statistics enable searches for very weakly coupled interactions coming from the BNB \cite{SBNProgram}.
 %HNL
-A key example is Heavy Neutral Leptons (HNLs), the primary focus of this thesis.
-These can be produced from meson decays in the BNB and subsequently decay in flight into SM observables for detection, as previously detailed in Chapter \ref{ChapterHNL}.
+A key example is HNLs, the primary focus of this thesis.
+These can be produced from meson decays in the BNB and subsequently decay in flight into SM observables for detection (See Chapter \ref{ChapterHNL}).
 %Light Dark Matter
 Another compelling BSM candidate is light dark matter, which can be produced from neutral meson decay or proton bremsstrahlung \cite{LightDarkMatter}. 
-As postulated by thermal relic models, these light dark matter particles could reach sub-GeV-scale masses. 
+%As postulated by thermal relic models, these light dark matter particles could reach sub-GeV-scale masses. 
 The particles may scatter and decay, resulting in electromagnetic showers without any hadronic activities inside SBND.
 %Dark neutrino
-Moreover, the dynamic mass mechanism of neutrinos opens avenues for new physics in the dark sector. 
+Moreover, the dynamic mass mechanism of SM neutrinos opens avenues for new physics in the dark sector. 
 The dark neutrino model proposes that right-handed neutrinos can scatter with nuclei to produce dark gauge bosons, subsequently decaying into di-lepton pairs \cite{DarkNeutrino}. 
 In the case where the leptons are electrons, this could potentially explain the low energy excess anomalies observed by LSND and MiniBooNE \cite{DarkNeutrinoLEE}.
-These represent just a few examples of the diverse array of BSM scenarios that can be explored at the SBND detector. 
+These represent just a few examples of the diverse BSM scenarios that can be explored at SBND. 
 Other unmentioned possibilities such as new interactions, extra dimensions, and violations of Lorentz and charge parity time symmetries, among others, contribute to the rich physics program of SBND \cite{SBNProgram}.
 
 %********************************** %First Section  **************************************
@@ -105,11 +105,11 @@ The following sections provide an overview of each of the main subsystems of SBN
 
 \subsection{Time Projection Chamber}
 
-Fig. \ref{fig:SBND_APA_diag} shows a complete APAs, of which each is located on the east and west sides of SBND.
-The plane is made up of two coupled APAs, where each APA measures 4 m $\times$ 2.5 m and comprises a steel frame supporting three wire planes: two induction planes, denoted as U and V, oriented at angles of $\pm 60^{\circ}$ to the vertical collection plane denoted as Y. 
+Fig. \ref{fig:SBND_APA_diag} shows a complete APAs, of which each plane of APAs is located on the east and west sides of SBND.
+The plane is made up of two coupled APAs, where an APA measures 4 m $\times$ 2.5 m and comprises a steel frame supporting three wire planes: two induction planes, denoted as U and V, oriented at angles of $\pm 60^{\circ}$ to the vertical collection plane denoted as Y. 
 These wire planes U, V and Y are colour-coded as green, blue, and red, respectively.
 Each wire plane is constructed with 150 $\mu$m diameter copper-beryllium wires, with a wire pitch and plane spacing of 3 mm. 
-The wires are tensioned to 7 N to prevent slackening when cooled down to liquid argon temperature at 88.4 K \cite{SBND_Wires}.
+The wires are tensioned to 7 N to prevent slackening when cooled down to a temperature at 88.4 K \cite{SBND_Wires}.
 To maintain charge transparency for the induction planes and collection efficiency for the collection plane, a biased voltage of -200 V, 0 V, and 500 V is applied to planes U, V, and Y, respectively.
 In total, each TPC consists of 5,632 wires: 1,664 wires in the collection plane and 1,986 wires in each induction plane.
 
@@ -129,13 +129,13 @@ Schematic showing two coupled APAs to form a complete APAs \cite{SBNProposal}.
 
 Fig. \ref{fig:SBND_CPA} shows a photograph of the fully assembled CPA.                                                                                                                                 
 The plane consists of two steel frames, each containing 8 windows, adding to a total of 16 windows.
-Each window, measuring 60 cm $\times$ 50 cm, houses a fibreglass plate laminated on both sides with non-conductive reflective foils $> 99\%$ specular reflection in the visible range and coated with TetraPhenyl Butadiene (TPB).
+Each window, measuring 60 cm $\times$ 50 cm, houses a fibreglass plate laminated on both sides with non-conductive reflective foils of $> 99\%$ specular reflection in the visible range and coated with TetraPhenyl Butadiene (TPB).
 Furthermore, the plate is covered by a wire mesh, providing a high voltage at -100 kV supplied by a feedthrough donut from outside the cryostat.
 
 %Field Cage
 The field cage consists of a sequence of electrodes arranged perpendicular to the drift direction.
 It can be seen in both Fig. \ref{fig:SBND_APA} and \ref{fig:SBND_CPA} as the series of metal bars surrounding the TPC.
-These electrodes incrementally step up the voltage from -100 kV applied at the CPA to the ground voltage in increments of 3 kV. 
+These electrodes incrementally step up the voltage from -100 kV applied at the CPA to the ground voltage in steps of 3 kV. 
 This gradual voltage increase is implemented to maintain a uniform electric field of 500 V/cm across the drift volume.
 
 \begin{figure}[htbp!]
@@ -164,7 +164,7 @@ Photographs showing the fully assembled TPC of the SBND detector.
 
 %describe PMT, XARAPUCA and TPB
 The PDS design of SBND is the most sophisticated system ever installed in a LArTPC, by incorporating both active and passive optical components \cite{sbnd_pds_paper}. 
-The active detector integrates two different technologies: (1) a system of 120 Photomultiplier Tubes (PMTs) and (2) a system of 192 X-ARAPUCA devices.
+The active optical detector integrates two different technologies: (1) 120 Photomultiplier Tubes (PMTs) and (2) 192 X-ARAPUCA devices.
 The PMTs are cryogenic 8"-diameter Hamamatsu R5912-MOD models \cite{hamamatsu}, which are the primary light detection system. 
 Meanwhile, the X-ARAPUCAs serve as a research and development platform for future experiments, incorporating multiple variations in their components for performance comparison. 
 A summary of the X-ARAPUCA specifications can be found in Ref. \cite{sbnd_pds_paper}.
@@ -193,22 +193,19 @@ Within each TPC, 48 PMTs are TPB-coated, and thus are sensitive to both direct V
 This ratio of coated to uncoated PMTs (4:1) is chosen to optimize light collection efficiency while maintaining the capability to distinguish between the two light components \cite{sbnd_pds_paper}. 
 
 Having TPB is utilised at two locations: (1) evaporated onto reflective foils at the cathode, and (2) coated on the optical windows of the PMTs, leads to a difference in the spatial and arrival time distributions for direct VUV and reflected visible photons.
-Direct VUV photons arriving at coated PMTs are wavelength-shifted into the detectable wavelength range of PMTs.
+Direct VUV photons arriving at coated PMTs are immediately wavelength shifted into the detectable range of PMTs.
 Reflected visible photons, resulting from VUV photons being wavelength shifted and reflected at the cathode, have to travel a longer distance before being detected by uncoated PMTs.
 The spatial distribution of reflected visible photons is more diffused and spread across a larger number of optical detectors compared to direct VUV photons \cite{PatrickPhD}.
 %However, reflected visible photons have a faster group velocity (See Fig. \ref{fig:vuv_visible} Section \ref{sec:photonprop}) and arrive at detection earlier than some direct VUV photons.
-Such difference can be exploited to perform the timing reconstruction using only PMT signals, which will be further discussed in Section \ref{sec:reco_pds}.
-
+Such difference can be exploited to perform the timing reconstruction using only PMT signals, which is further discussed in Section \ref{sec:reco_pds}.
 
 \subsection{Cosmic Ray Tagger}
 \label{sec:sbnd_crt}
 
-Since SBND is a surface detector, it utilises a Cosmic Ray Tagger (CRT) system to effectively reject background from cosmic muons.                                                         
-Fig. \ref{fig:SBND_CRT} shows the operating principles of CRT strips and their orientation.                                                                                                 
+Since SBND is a surface detector, it utilises a Cosmic Ray Tagger (CRT) system to effectively reject background from cosmic muons.
+Fig. \ref{fig:SBND_CRT} shows the operating principles of CRT strips and their orientation \cite{RhiannonPhD}.
 As shown in the middle diagram, each CRT strip consists of a plastic scintillator strip with a width of 10.8 cm, connected to a pair of SiPMs via wavelength shifting optical fibres.       
 The right diagram shows a coincident hit from perpendicular strips that allows for a 2D reconstruction of the hit location, and the number of photons collected for each strip improves the precision of the location tagging.
-16 scintillator strips in parallel form a CRT module.
-Multiple CRT modules are arranged orthogonally to form a CRT wall, typically in the size of 7.5 m in height and 9 m in width.                                                                  
 \begin{figure}[b!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{SBND_CRT}
@@ -218,51 +215,52 @@ Diagrams showing the operating principles of CRT strips (middle, right) and thei
 \label{fig:SBND_CRT}
 \end{figure}
 
-The left diagram shows an example orientation of 2 CRT modules on top of each other, where CRT strips of each module are perpendicular to each other.
-%Signals from the SiPMs are amplified, digitised and read out by the Front End Board (FEB) modules with nanosecond timing resolution, which will be detailed in Section \ref{}. 
+The left diagram of Fig. \ref{fig:SBND_CRT} shows an example of 8 CRT strips arranged in parallel to form a CRT module and the modules are perpendicular to each other.
+Multiple CRT modules are arranged orthogonally to form a CRT wall, typically in the size of 7.5 m in height and 9 m in width.
 The cryostat of SBND is entirely encased by 7 CRT walls, with 1 on each side and 2 positioned on top of the detector.
 Fig. \ref{fig:SBND_Pretty} shows 4 out of the 7 CRT walls, particularly the south, west and top walls are visible.
-Additionally, the top 2 walls function as a telescopic array, facilitating the tagging of vertical downward going cosmic muons.
-This configuration enables a comprehensive strategy for cosmic background rejection utilising both geometrical and high precision timing information, which will be more detailed in Section \ref{sec:crumbs}.
+Additionally, the top 2 walls function as a cosmic telescope, facilitating the tagging of vertical downward going cosmic muons.
+This configuration enables a comprehensive strategy for cosmic background rejection utilising both geometrical and high precision timing information.
 %For instance, tracks identified by the TPC can be matched to CRT hits to identify tracks occurring outside the beam spill window.
+%Signals from the SiPMs are amplified, digitised and read out by the Front End Board (FEB) modules with nanosecond timing resolution, which will be detailed in Section \ref{}. 
 
 \subsection{Readout Electronics}
 \label{sec:readout}
 
 %Cold Electronic
-The readout electronics of each detection subsystem, TPC, PDS and CRT, are detailed as following.
+The readout electronics of each detection subsystem are detailed next.
 Firstly, TPC readouts comprise four components: (1) Cold Electronics (CE), (2) Warm Interface Boards (WIBs), (3) TPC crates and (4) Nevis Trigger Board (NTB).%, shown as the red boxes from left to right respectively in Fig. \ref{fig:daqOverview}.
 As shown in Fig. \ref{fig:SBND_APA_diag}, the wires are connected to CE readout boards on the APAs.
-Located inside the cryostat, the CE components are submerged in liquid argon to reduce thermal noise as well as cable lengths \cite{SBND_CE}.
-They are responsible for amplifying and digitizing waveform signals at a sampling frequency of 2 MHz. 
-Signals from the CE are sent outside of the cryostat to the WIBs via copper cold cables.              
-The WIBs serve as a bridge between the CE and other TPC readouts through fibre optic links.
+Located inside the cryostat, CE are submerged in liquid argon to reduce thermal noise as well as cable lengths \cite{SBND_CE}.
+They amplify and digitise signals at a sampling frequency of 2 MHz. 
+Data from CE is sent outside of the cryostat to the WIBs via copper cold cables.              
+The WIBs are connected to other TPC readouts through optical fibre links.
 This isolation architecture completely separates wire grounding from the building, thereby enabling a superior signal-to-noise ratio.
 
 %Nevis Readout
-Following the WIBs, the data is transmitted to 11 TPC crates for reading out, buffering, and processing the wire signals. 
-Data from TPC readout crates are directed by the NTB into two parallel independent streams of data.
+Following the WIBs, data is transmitted to 11 TPC crates for reading out, buffering, and processing the wire signals. 
+Data from TPC crates are directed by the NTB into two parallel independent streams of data.
 %The main stream to record neutrino beam events relies on the ETRIG trigger signal from the PTB for triggering as previously detailed in Section \ref{sec:sbnd_trigger}, which reads out data with lossless compression.
 The main stream to record neutrino beam events relies on an external trigger, which reads out data with lossless compression.
 An additional continuous stream requires no external triggers and outputs data with lossy compression. 
 
-%CAEN digitizer
-Regarding the electronics readouts of the PDS, CAEN digitizers are employed. % depicted as the blue boxes in Fig. \ref{fig:daqOverview}
-120 PMTs are readout by 8 CAEN V1730SB digitizers \cite{caen1730}, which are capable of recording waveforms for 16 channels independently with a sampling frequency of 500 MHz.
-Meanwhile, the 192 X-ARAPUCAs are digitised by another model called V1740 \cite{caen1740}, that can readout 64 channels at a lower sampling frequency of 62.5 MHz.              
-Both of these models feature deep buffers to store longer waveforms and handle higher data rates.
+%CAEN digitiser
+Regarding the readout electronics of the PDS, CAEN digitisers are employed. % depicted as the blue boxes in Fig. \ref{fig:daqOverview}
+120 PMTs are readout by 8 CAEN V1730SB digitisers \cite{caen1730}, capable of recording waveforms for 16 channels independently with a sampling frequency of 500 MHz.
+192 X-ARAPUCAs are digitised by another model called V1740 \cite{caen1740}, that can readout 64 channels at a lower sampling frequency of 62.5 MHz.
+Both models feature deep buffers to store longer waveforms and handle higher data rates.
 Additionally, the V1730SB model offers better waveform baseline stability against temperature fluctuations.
-Multiple CAEN digitizers can be synchronised such that they collectively behave as a single digitizer, which is critical to maintaining the timing resolution of the electronics at $\mathcal{O}$(1 ns).
-The characterisation of synchronisation across multiple V1730SB digitizers is detailed in Section \ref{sec4PMT}.
+Multiple CAEN digitisers can be synchronised so that they collectively behave as a single digitiser, which is critical to maintaining the timing resolution of the electronics $\mathcal{O}$(1 ns).
+The characterisation of synchronisation across multiple V1730SB digitisers is detailed in Section \ref{sec4PMT}.
 
 %The timing resolution of the CRT readout electronics is evaluated in the following section.
 %CRT FEB
-Finally, the 7 CRT walls are read out by 144 Front End Board (FEB) modules \cite{crt_note}.%, as shown by the orange box in Fig. \ref{fig:daqOverview}.
-Each FEB module is a multifunctional board capable of reading out 32 channels, with one channel per SiPM. 
-The module can provide a bias voltage, which is adjustable for individual SiPMs, as well as signal amplification and shaping.
-Once the signal is shaped, the FEB can apply signal discrimination and self-triggering, such as coincidence for each pair of SiPMs in a CRT strip or coincidence across multiple FEBs for orthogonal CRT strips. 
-Once the signal passes the trigger, it is digitised and timestamped with respect to an input reference clock. 
-The data is then stored in a buffer and read out via an Ethernet connection. 
+Finally, 7 CRT walls are readout by 144 Front End Board (FEB) modules \cite{crt_note}.%, as shown by the orange box in Fig. \ref{fig:daqOverview}.
+Each module is a multifunctional board capable of reading out 32 channels, with one channel per SiPM. 
+The module provides a bias voltage, adjustable for individual SiPMs, as well as signal amplification and shaping.
+Once the signal is shaped, the module applies signal discrimination and self-triggering, such as coincidence for each pair of SiPMs in a CRT strip or coincidence across multiple modules for orthogonal CRT strips. 
+Once the signal passes the self-trigger, it is digitised and timestamped with respect to an input reference clock. 
+The data is stored in a buffer and sent via an Ethernet connection. 
 The characterisation of the timing resolution of FEB modules is detailed in Section \ref{sec4InternalClock}
 %The following section focuses on the characterisation on the timing resolution of the FEB module.
 
@@ -271,58 +269,58 @@ The characterisation of the timing resolution of FEB modules is detailed in Sect
 
 Triggering plays a vital role in the SBND detector to select only interesting physics events, given the detector is exposed to a high rate of backgrounds from cosmic muons. 
 The main hardware trigger component in SBND is the Penn Trigger Board (PTB).
-It applies a programmable trigger logic based on external inputs and issues a trigger to the Data AcQuisition (DAQ) subsystem if the conditions are met.
-Details of the hardware trigger at SBND can be found in Appendix \ref{appendix_hardware_trigger}, while a short summary is provided here.
+It applies a programmable trigger logic based on external inputs and issues a trigger to the Data Acquisition (DAQ) subsystem if the conditions are met.
+Details of the hardware trigger at SBND is given in Appendix \ref{appendix_hardware_trigger}, while a short summary is provided here.
 
 In order to form a trigger, the PTB requires signals from the three subsystems: (1) beam system, (2) PMTs, and (3) CRTs.
 The beam system informs the PTB on the status on the BNB beam, and whether the beam has arrived at the detector hall.
 Signals from PMTs provides information regarding the intensity and locality of the energy deposited inside the detector, and whether it is consistent with a neutrino event.
-Signals from CRTs provides geometrical information of the energy deposited outside of the detector in the CRT walls, and whether it is consistent with a cosmic muon. 
-The readout electronics of PMTs and CRTs are equipped with timing resolution $\mathcal{O}$(1 ns) and their output signals can quickly inform the PTB to form a trigger.
+Signals from CRTs provides information of the energy deposited outside of the detector in the CRT walls, and whether it is consistent with a cosmic muon. 
+The readout electronics of PMTs and CRTs are equipped with timing resolution $\mathcal{O}$(2 ns) and their output signals can quickly inform the PTB to form a trigger.
 Additionally, incorporating CRT signals marks SBND as the first instance of a LArTPC to employ CRTs as part of its triggering scheme \cite{CPAD2022}.
 
 Different combinations of signal inputs described here can form different \textit{flavours} of triggers.
 %The primary beam trigger requires majority triggers from PMTS and threshold crossings from MTC/A to coincide with the beam early warning signal.
-The primary beam trigger requires PMT signals to coincide with the beam spill window.
-Conversely, for background estimation purposes, an anti-coincidence to the beam signal logic can be applied to select cosmic muons occurring outside of the beam spill window.
-The calibration trigger utilises coincidence across different CRT walls to select specific track topologies formed by cosmic muons.
+The primary \textit{beam} trigger requires PMT signals to coincide with the beam spill window.
+Conversely, the \textit{off-beam} trigger uses an anti-coincidence to the beam signal logic to select cosmic muons occurring outside of the beam spill window for background estimation purposes.
+The \textit{calibration} trigger utilises coincidence across different CRT walls to select specific track topologies formed by cosmic muons.
 For example, anode-to-cathode-crossing cosmic tracks can be selected by requiring the east and west CRT walls to be coincident.
-These sets of tracks are useful for electron lifetime measurements, which will be explored in Section \ref{sec7:etime}.
+These sets of tracks are useful for electron lifetime measurements, which is covered in Section \ref{sec7:etime}.
 
-The importance about the hardware triggering at SBND is that a single triggered physics event constitutes of two types of triggers: (1) a single Event TRIGger (ETRIG) issued to the TPC readouts and (2) multiple Flash TRIGgers (FTRIGs) issued to the PDS readouts.
-The ETRIG is used by the DAQ subsystem to acquire a long snapshot of the TPC waveform $\mathcal{O}$(1 ms) while multiple FTRIGs are used to capture many short snapshots of optical detector waveforms $\mathcal{O}$(10 $\mu$s).
-The data is then assemble to build a physics event, of which the DAQ process will be explained in Section \ref{sec4DAQOverview} and \ref{sec:evb} next.
+The importance about the hardware triggering at SBND is that a single triggered physics event constitutes of two \textit{types} of triggers: (1) a single Event TRIGger (ETRIG) issued to the TPC readouts and (2) multiple Flash TRIGgers (FTRIGs) issued to the PDS readouts.
+The ETRIG is used by the DAQ to acquire a long snapshot of the TPC waveform $\mathcal{O}$(1 ms) while multiple FTRIGs are used to capture many short snapshots of optical detector waveforms $\mathcal{O}$(10 $\mu$s).
+The data is then assembled to build a physics event, of which the DAQ is explained in Section \ref{sec4DAQOverview} and \ref{sec:evb} next.
 
 \subsection{Data Acquisition}
 \label{sec4DAQOverview}
 
-Upon receiving a hardware trigger, the DAQ subsystem begins to transport data from subsystem readouts to event builder machines. 
+Upon receiving a hardware trigger, the DAQ begins to transport data from subsystem readouts to event builder machines. 
 The SBND DAQ can assemble data from each subsystem into a physics event during real time data flow, known as the event building process.
 It must also be able to handle a high event rate due to the close proximity of SBND to the beam target.
 Additionally, the DAQ can apply software metrics to filter events for various data streams and data monitoring purposes.
 
 Fig. \ref{fig:daqOverview} shows the data flow of the DAQ at SBND.
-The data flow begins with raw signals from detection subsystems, shown as the coloured dotted arrows.
-The signals are acquired by readout electronics, shown as colour boxes in the first column labelled \textit{Readout Electronics}, that was covered earlier in Section \ref{sec:readout}.
+It begins with raw signals from detection subsystems, shown as the coloured dotted arrows.
+The signals are acquired by readout electronics, shown as colour boxes in the first column labelled \textit{Readout Electronics} (See Section \ref{sec:readout}).
 The boxes are colour-coded as red, blue and orange for the TPC, PDS and CRT readout respectively.
-Within this first column, 2 additional readout electronics are also included.
-The Penn Trigger Board, shown by the green box, is for the hardware triggering subsystem.
-The White Rabbit SPEC-TDC, shown by the purple box, is part of the White Rabbit timing subsystem and will be discussed in detail in Chapter \ref{ChapterDAQ}.
+Within this first column, two additional readout electronics are also included.
+The PTB, shown by the green box, is for the hardware triggering subsystem (See Section \ref{sec:sbnd_trigger}).
+The White Rabbit SPEC-TDC, shown by the purple box, is part of the White Rabbit timing subsystem and is discussed in Chapter \ref{ChapterDAQ}.
 
-Each of the readout electronics components is accompanied by a corresponding \textit{boardreader}, shown by the second column labelled \textit{Servers Hosting Boardreaders}.
+Each readout electronics has a corresponding \textit{boardreader}, shown by the second column labelled \textit{Servers Hosting Boardreaders}.
 Boardreaders are software tools serving as a communication bridge between readout electronics and computer servers.
 %There is a two-way communication between readout electronics and boardreaders.
-The electronics send raw signals to the computer servers, shown as the grey dotted arrows.
-The software boardreaders send configurations to the electronics, shown as the grey dashed-dotted arrows.
+The electronics send raw signals to the computer servers via boardreaders, shown as the grey dotted arrows.
+The boardreaders send configurations to the electronics, shown as the grey dashed-dotted arrows.
 
 The event building process occurs in the third column labelled \textit{Event Builder Machines}.
 The raw signals are packaged into a data format known as \textit{fragments} by boardreaders.
 The fragments are sent to event builders, as shown by the coloured solid arrows.
 The event builders assemble fragments from different readout electronics into physics events.
-The event building process will be discussed next in Section \ref{sec:evb}.
+The event building process is discussed in Section \ref{sec:evb} next.
                         
 Finally, the fourth column labelled \textit{Data Stream} illustrates the last stage of the data flow.
-Software metrics can be applied by event builders to separate physics events into different streams of data, as shown by the grey dashed arrows.
+Software metrics are applied by event builders to separate physics events into different streams of data, as shown by the grey dashed arrows.
 This assists with data management since different flavours of triggered events can be organised into different locations.
 An additional data stream for online monitoring is shown by the bottom right grey box.
 Details of the data streaming process is provided in Appendix \ref{appendix_data_stream}.
@@ -347,12 +345,11 @@ Flow chart showing the data flow of data acquisition.
 One key process in the DAQ is event building.
 This is achieved by using the artdaq Toolkit, developed by the Real-Time Systems Engineering Department of Fermilab's Scientific Computing Division \cite{artdaq_note}. 
 %This software serves as the backbone for communication between the hardware electronics and the event builder machines.
-Within this framework, each discrete hardware readout component has a corresponding software module known as a \textit{boardreader}.
-These boardreaders facilitate communication between the readout electronics and the event builder machines. 
-They can send configurations directly to the hardware in one direction and retrieve data from the hardware in the opposite direction.
+Within this framework, each readouts has a corresponding software module called \textit{boardreader}.
+They facilitate communication between the readouts and the event builder machines, by sending configurations directly to the hardware in one direction and retrieving data from the hardware in the opposite direction.
 Data acquired from the readouts is packaged by boardreaders into a digitised format called a \textit{fragment}.
 %Technical details of boardreaders and fragments can be found in Ref. \cite{artdaq_note}.
-In the scope of this work interested in the timing aspect of the DAQ that will be elaborated in Chapter \ref{ChapterDAQ}, the critical information of a fragment is its timestamp corresponding to when the readout electronics receive a trigger.
+In the scope of this work interested in the timing  performance of the DAQ to be given in Chapter \ref{ChapterDAQ}, the critical information of a fragment is its timestamp corresponding to when the readout electronics receive a trigger.
 
 %, as depicted in Fig. \ref{fig:fragmentDiagram}. 
 %The fragment class consists of a header containing experiment-specific information essential for event building, an optional metadata, and a data payload storing the hardware-defined data.
@@ -391,21 +388,21 @@ In the scope of this work interested in the timing aspect of the DAQ that will b
 %The selected fragments that meet the timestamp requirement are then dispatched to the event builders.
 %The sequence ID of the resulting event is determined by the push fragment.
 
+Event builders assemble fragments from different boardreaders into a physics event based on their timestamps.
+Fig. \ref{fig:SBNDEventStructure} illustrates the chronological structure of a physics event at SBND, containing only TPC, PMT and CRT fragments for simplicity.
+The time axis is shown as the purple arrow, where at the centre $t = 0$ ms corresponds to when the beam spill begins.
+The TPC fragment, as shown in red, is coincident with the beam spill to capture the neutrino event in the TPC. 
+The readout length of a TPC fragment is 1.7 ms, covering the entire TPC drift length of 1.3 ms and including a padding of 0.2 ms before and after the drift. 
+Aligning the TPC fragment with the beam spill is achieved through the ETRIG trigger issued to the TPC readouts so that the readout window coincides with when the beam spill begins.
+
 \begin{figure}[b!] 
 \centering    
-\includegraphics[width=1.0\textwidth]{SBND_Event_Structure}
+\includegraphics[width=0.85\textwidth]{SBND_Event_Structure}
 \caption[Chronological Structure of a Physics Event Diagram]{
 Diagram depicting the chronological structure of a physics event. 
 }
 \label{fig:SBNDEventStructure}
 \end{figure}
-
-Event builders assemble fragments from different readouts into a physics event based on their timestamps.
-Fig. \ref{fig:SBNDEventStructure} illustrates the chronological structure of a physics event at SBND, containing only TPC, PMT and CRT fragments for simplicity.
-The time axis is shown as the purple arrow, where at the centre $t = 0$ ms corresponds to when the beam spill begins.
-The TPC fragment, as shown in red, is coincident with the beam spill to capture the neutrino event in the TPC. 
-The readout length of a TPC fragment is 1.7 ms, covering the entire TPC drift length of 1.3 ms and including a padding of 0.2 ms before and after the drift. 
-Aligning the TPC fragment with the beam spill is achieved through the ETRIG trigger issued to the TPC readouts such that it coincides with when the beam spill begins.
 
 %describe an event structure
 %A neutrino beam event at SBND is structured as outlined in Fig. \ref{fig:SBNDEventStructure}, with examples provided for TPC, PMTs, and CRTs fragments.
@@ -417,72 +414,71 @@ Aligning the TPC fragment with the beam spill is achieved through the ETRIG trig
 %The push boardreader is called the Nevis Trigger Board (NTB), which is a component of the hardware complex to readout the TPC data. 
 
 %Meanwhile, the boardreaders for the PMTs and CRTs are in pull mode.
-Moreover, PMT and CRT fragments are shown in blue and orange respectively in Fig. \ref{fig:SBNDEventStructure}.
-The fragment readout lengths from the PMT and CRT readouts are much shorter compared to TPC fragments, $\mathcal{O}(10\ \mu$s) and $\mathcal{O}(10$ ns) respectively.
-For a single physics event, in contrast to only a single ETRIG issued to the TPC readouts, multiple FTRIGs are issued to the PMT readouts throughout the beam spill to produce multiple fragments of PMTs.
-Similarly, CRT readouts are self-triggered independently and produce multiple fragments on the flight.
+PMT and CRT fragments are shown in blue and orange in Fig. \ref{fig:SBNDEventStructure}.
+The fragment readout lengths from the PMTs and CRTs are much shorter compared to TPC fragments, $\mathcal{O}(10\ \mu$s) and $\mathcal{O}(10$ ns) respectively.
+For a single physics event, in contrast to only a single ETRIG issued to the TPC readouts, multiple FTRIGs are issued to the PMT readouts during the beam spill to produce multiple fragments of PMTs.
+Similarly, CRT readouts are self-triggered independently and produce multiple fragments.
 PMT and CRT fragments that have timestamps within 1.5 ms before and after the beginning of the beam spill are packaged together with the TPC fragment to form a physics event.
 
 %The pull window is defined to be 3 ms centred on the timestamp of the NTB fragment. 
 %This window includes PMT and CRT fragments generated 1.5 ms before and after the beam spill starts. 
 
 %event asymmetry
-Here in Fig. \ref{fig:SBNDEventStructure}, a time symmetry can be seen in the chronological structure of a physics event at SBND.
-This is due to the different physics characteristics of photon signals, detected by the CRTs and PMTs, and electron signals, detected by the TPC wires. 
-Specifically, a photon produced in a CRT scintillator strip takes approximately 5 ns to travel from the far end of the strip until reaching a SiPM. 
-Similarly, a photon produced in the TPC takes a maximum of 15 ns to propagate from a scintillation location to a PMT.
-In contrast, an ionisation electron produced takes 1.3 ms to fully drift from the cathode to the anode.
+Here in Fig. \ref{fig:SBNDEventStructure}, a time asymmetry can be seen in the chronological structure of a physics event at SBND.
+This is due to the different characteristics of photon signals, detected by the CRTs and PMTs, and electron signals, detected by the TPC wires. 
+Specifically, a photon produced in a CRT scintillator strip takes approximately 5 ns to travel from the far end of the strip until reaching a SiPM \cite{crt_note}. 
+Similarly, a photon produced in the TPC takes a maximum of 15 ns to propagate from a scintillation location to a PMT \cite{sbnd_pds_paper}.
+In contrast, an ionisation electron produced takes 1.3 ms to fully drift from the cathode to the anode \cite{SBND_Wires}.
 This shows that photon signals propagate approximately six orders of magnitude faster than electron signals and consequently, need to be digitised and read out earlier.
 %The time asymmetry of the event structure is due to scintillation photon signals propagating faster compared to electron signals.
-
 
 %********************************** %First Section  **************************************
 \section{The Booster Neutrino Beam}
 \label{sec4BNB}
 
 %Describe rate
-The SBND detector directly measures the neutrino flux coming from the BNB.
-Comprehensive technical details of the BNB can be found in Ref. \cite{BNBMiniBooNE}.
+SBND directly measures neutrino fluxes coming from the BNB.
+Technical details of the BNB can be found in Ref. \cite{BNBMiniBooNE}.
 The BNB operates by extracting protons with a kinetic energy of 8 GeV from the Booster synchrotron in spills made up of 7 to 11 pulses in a row at a frequency of 15 Hz, averaging to a rate of $\sim$5 Hz.
-Each spill delivers $5 \times 10^{12}$ protons within a beam spill window lasting 1.6 $\mu$s.
+Each spill delivers $5 \times 10^{12}$ protons within a window lasting 1.6 $\mu$s.
 The structure of a beam spill structure consists of 81 neutrino buckets, with a Gaussian width of 1.308 ns and a spacing of 19 ns \cite{BNBsigma}.
 Fig. \ref{fig:CRT2017} depicts the beam bucket structure as measured by the CRTs of SBND, which was set up as a beam telescope to collect data from the BNB in 2017--2018 \cite{CPAD2022}.
-Neutrino buckets can be seen distinctively in the distribution, indicating that the BNB structure can be resolved with sufficient timing resolution.
-The timing resolution of the CRT readouts is $\mathcal{O}$ (1 ns), which will be demonstrated later in Section \ref{sec4InternalClock}.
+Neutrino buckets can be seen distinctively in the distribution, indicating that the BNB structure can be resolved with a sufficient timing resolution.
+The timing resolution of the CRT readouts is $\mathcal{O}$ (2 ns), to be demonstrated later in Section \ref{sec4InternalClock}.
 
 \begin{figure}[ht!] 
 \centering    
 \includegraphics[width=0.85\textwidth]{CRT2017}
-\caption[BNB Beam Bucket Measured by SBND CRTs in 2017-2018]{
-Plot showing the BNB beam bucket measured by the CRTs of SBND during 2017--2018 \cite{CPAD2022}.
+\caption[Booster Neutrino Beam Measured by SBND CRTs in 2017-2018]{
+The buckets of the BNB measured by the SBND CRTs during 2017--2018 \cite{CPAD2022}.
 }
 \label{fig:CRT2017}
 \end{figure}
 
 %hardware structure
-The particle production process in the BNB is illustrated in Fig. \ref{fig:BNBDiagram}.
-Initially, protons are injected into the Booster synchrotron and accelerated from 400 MeV to 8 GeV kinetic energy, as shown by the red arrows. 
-Their intensity is measured by two steroids, while their positioning and timing are monitored by beam position monitors and Resistive Wall Monitors (RWM) \cite{BNBRWM}.
+The particle production in the BNB is illustrated in Fig. \ref{fig:BNBDiagram}.
+Protons are injected into the Booster synchrotron and accelerated from 400 MeV to 8 GeV kinetic energy, as shown by the red arrows. 
+Their intensity is measured by two toroids, while their positioning and timing are monitored by beam position monitors and Resistive Wall Monitors (RWM) \cite{BNBRWM}.
 Upon exiting the Booster, the proton beam traverses focusing and defocusing quadrupole and dipole magnets before being focused onto the target of the BNB.
 
 The protons collide on the target to produce secondary mesons, as shown by the blue arrows.
 The target consists of a beryllium cylinder measuring 71.1 cm in length and 0.51 cm in radius.
 The choice of beryllium was motivated by its replaceable ability in the event of radioactivity issues, as well as its ability to facilitate sufficient energy loss via an air cooling system.
 The target is placed inside a pulsed horn system, which acts as a 170 kA electromagnet to focus the secondary mesons.
-The polarity of the horn can be adjusted to focus positive (negative) mesons for operation in neutrino (antineutrino) mode. 
+The polarity of the horn can be adjusted to focus positive (negative) mesons for operating in neutrino (antineutrino) mode. 
 %Downstream of the horn assembly, a concrete collimator of dimensions 214 cm in length and 30 cm in radius (expanding to 35.5 cm from upstream to downstream end) absorbs particles that do not contribute to the neutrino flux, thereby reducing radiation elsewhere in the beamline.
 Downstream of the horn assembly, a concrete collimator absorbs particles that do not contribute to the neutrino flux, thereby reducing radiation elsewhere in the beamline.
 
 The focused mesons then propagate through an air-filled cylindrical decay region spanning 45 m, depicted as the orange box.
-It is then terminated by a steel and concrete absorber located 50 m from the upstream face of the target, depicted as the purple box.
+The region is terminated by a steel and concrete absorber located 50 m from the upstream face of the target, depicted as the purple box.
 Secondary mesons decay into tertiary neutrinos within the decay region, while long-lived muons are absorbed by the absorber. 
 Subsequently, tertiary neutrinos traverse through a dirt region before reaching the SBND detector, as shown by the pink arrows.
 The production of HNLs from kaon decays alongside neutrinos is also shown as the purple arrow.
 
-\begin{figure}[b!] 
+\begin{figure}[hb!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{BNBDiagram}
-\caption[Particle Production in the BNB Diagram]{
+\caption[Particle Production in the Booster Neutrino Beam]{
 Diagram showing the particle production in the BNB.
 }
 \label{fig:BNBDiagram}
@@ -494,7 +490,8 @@ The beam is simulated using GEANT4 with different tunings for the composition of
 The $\pi^{\pm}$ production is tuned to the HARP data set using Sanford-Wang parametrisation.
 The $K^{+}$ production is extrapolated to the global $K^{+}$ production data using Feynman scaling-based parametrisation, and further constrained by SciBooNE's direct measurements of $K^{+}$ production from the BNB \cite{SciBooNE}. 
 Other secondary hadrons and mesons such as $p$, $n$ and $K^{-}$ are modelled using the MARS hadronic interactions, however, their overall contribution to the neutrino flux is small. 
-Interaction cross sections of $p/n + Be$ and $\pi^{\pm} + Be$ are also incorporated in flux predictions \cite{DavePhd}.   
+Interaction cross sections of $p/n + Be$ and $\pi^{\pm} + Be$ are also incorporated in flux predictions \cite{DavePhd}.
+Uncertainties associated with the flux modelling are discussed in Section \ref{sec:signal_error}.
 %The systematics uncertainties associated with the BNB flux are calculated by a re-weighting process, which will be presented in Chapter \ref{ChapterResult}.
 
 Fig. \ref{fig:BNB_Meson_Flux} depicts the primary contributors to the secondary meson fluxes at the BNB, namely pions and kaons.
@@ -504,7 +501,7 @@ As discussed in Section \ref{sec2Production}, the flux of HNL comes from $K^{+}$
 Ref \cite{BNBMiniBooNE} has highlighted significant uncertainties in the $K^{+}$ production cross sections within this energy range.
 However, results from the SciBooNE experiment have demonstrated the validity of extrapolating higher energy $K^{+}$ data to the 1 GeV region using Feynman scaling \cite{SciBooNE}. 
 
-\begin{figure}[h!]
+\begin{figure}[hb!]
 \begin{subfigure}{.5\linewidth}
 \centering
 \includegraphics[width=1.0\textwidth]{BNB_Meson_Pion_Flux}
@@ -523,7 +520,7 @@ However, results from the SciBooNE experiment have demonstrated the validity of 
 %\caption{}
 %\label{fig:sub3}
 \end{subfigure}
-\caption[Simulated Fluxes of Secondary Mesons From the BNB]{
+\caption[Simulated Fluxes of Secondary Mesons]{
 Simulated fluxes for the secondary mesons produced in the BNB. 
 }
 \label{fig:BNB_Meson_Flux}
@@ -561,16 +558,16 @@ Simulated neutrino fluxes at the front face of SBND.
 \section{Concluding Remarks}
 \label{sec:sbnd_conclude}
 
-The SBND experiment, together with other experiments in the SBN program, aims to conclusively address the low energy excess observed across experiments such as LSND, MiniBooNE, and other nuclear reactor and solar neutrino experiments. 
+SBND, together with other experiments in the SBN program, aims to conclusively address the low energy excess observed by LSND, MiniBooNE, and other nuclear reactor and solar neutrino experiments. 
 SBND will play a crucial role in constraining systematic uncertainties by measuring large statistics of the unoscillated neutrino flux from the BNB.
-Additionally, SBND has a rich physics program covering neutrino cross section measurements and searches for BSM physics. 
-Of particular relevance to this thesis, SBND aims to establish competitive limits on the mixing of HNLs within the probable mass range from the BNB.
+Additionally, SBND has a rich physics program covering high precision $\nu$-Ar cross section measurements and searches for BSM physics. 
+Of particular relevance to this thesis, SBND aims to establish competitive limits on the coupling of HNLs within the probable mass range from the BNB.
 
-The hardware of SBND comprises three key detection subsystems: the TPC, the PDS, and the CRT system, alongside the hardware triggering subsystem. 
-Each of these subsystems has dedicated readout electronics, which are managed by a complex DAQ system.
-The SBND detector measures the flux coming from the BNB, which has a distinctive bucket structure which can be resolved with a sufficient timing resolution $\mathcal{O}$(1 ns). 
-This feature can be exploited in the search for HNLs at SBND since the mass of HNLs results in late arrival at the detector compared to the neutrino buckets. 
-The following Chapter \ref{ChapterSim} will delve into SBND's simulation framework that enables the exploration of the detector physics capabilities in the BSM regime.  
+The hardware of SBND comprises three detection subsystems: the TPC, the PDS, and the CRT system, alongside the hardware triggering subsystem. 
+Each of these subsystems has dedicated readout electronics, which are managed by a complex DAQ subsystem.
+SBND measures the flux coming from the BNB, which has a distinctive bucket structure that can be resolved with a sufficient timing resolution. 
+This feature can be exploited in the search for HNLs at SBND since being massive results in HNLs arriving late relative to the bucket structure of SM neutrinos. 
+Chapter \ref{ChapterSim} provides a description of the simulation framework at SBND to enable the exploration of the detector physics capabilities in the BSM regime using Monte Carlo.  
 
 %The event building process of the DAQ relies on the timing information acquired from each subsystem. 
 %This process assembles the foundation of physics event upon which low-level and high-level reconstructions are built to achieve nanosecond timing resolution.

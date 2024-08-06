@@ -1,0 +1,3076 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  6 AUG 2024 00:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (./Classes/PhDThesisPSnPDF.cls
+
+LaTeX Warning: You have requested document class `Classes/PhDThesisPSnPDF',
+               but the document class provides `PhDThesisPSnPDF'.
+
+Document Class: PhDThesisPSnPDF 2016/04/23 A PhD thesis class file by Krishna Kumar (v2.3.1)
+https://github.com/kks32/phd-thesis-template/
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count176
+\calc@Bcount=\count177
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count178
+\calc@Cskip=\skip51
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count179
+\c@@ppsavesec=\count180
+\c@@ppsaveapp=\count181
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count182
+) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.06
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count183
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+ (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count184
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen139
+)
+\c@padzeroesN=\count185
+\fc@tmpcatcode=\count186
+\@DT@modctr=\count187
+\@ordinalctr=\count188
+\@orgargctr=\count189
+\@strctr=\count190
+\@tmpstrctr=\count191
+\@DT@loopN=\count192
+\@DT@X=\count193
+) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count194
+\@month=\count195
+\@year=\count196
+\c@HOUR=\count197
+\c@HOURXII=\count198
+\c@MINUTE=\count199
+\c@TOHOUR=\count266
+\c@TOMINUTE=\count267
+\c@SECOND=\count268
+\currenthour=\count269
+\currentminute=\count270
+\currentsecond=\count271
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count272
+\dayofyear=\count273
+\dayofweek=\count274
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks18
+\dt@b=\toks19
+)
+\PHD@hour=\count275
+\PHD@minute=\count276
+ (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier.sty
+Package: fourier 2020/01/14 2.1 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2020/01/14 2.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 62.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 70.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 70.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 70.
+\symotherletters=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 72.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 74.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 84.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 124.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 124.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 124.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 124.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 124.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 125.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 125.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 125.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 126.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 126.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 197.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 198.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 221.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 226.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 236.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 254.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 258.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 259.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 260.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 261.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 262.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 263.
+LaTeX Font Info:    Redeclaring math accent \check on input line 264.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 265.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 266.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 267.
+\symUfutm=\mathgroup5
+) PhDThesisPSnPDF: Using Fourier font (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks22
+\MT@count=\count277
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen140
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count278
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip52
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count284
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip16
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
+\tag@help=\toks23
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
+\andhelp@=\toks24
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks25
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 120.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 181.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 251.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count293
+\pdfmajorversion=\count294
+Package hyperref Info: Option `unicode' set `true' on input line 4421.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count295
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen150
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count296
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+ (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count297
+\c@Item=\count298
+\c@Hfootnote=\count299
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip56
+)
+Package hyperref Info: Option `final' set `true' on input line 621.
+Package hyperref Info: Option `plainpages' set `false' on input line 621.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 621.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 621.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 621.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 621.
+Package hyperref Info: Option `breaklinks' set `true' on input line 621.
+Package hyperref Info: Option `linktocpage' set `true' on input line 621.
+Package hyperref Info: Option `colorlinks' set `true' on input line 621.
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count302
+\Gm@cntv=\count303
+\c@Gm@tempcnt=\count304
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks27
+) PhDThesisPSnPDF: The University identity guidelines recommend using left aligned text. Please use `flushleft' in the documentclass option, if you wish to left align your text (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2019/11/23 v5.3 Nomenclature package
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+))
+\scr@dte@tocline@numberwidth=\skip66
+\scr@dte@tocline@numbox=\box47
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 163.
+Package tocbasic Info: setting babel extension for `nls' on input line 164.
+\nomlabelwidth=\dimen161
+\nom@tempdim=\dimen162
+\nomitemsep=\skip67
+)
+\@nomenclaturefile=\write3
+\openout3 = `thesis.nlo'.
+
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 1029.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `thesis.idx'.
+
+
+Writing index file thesis.idx
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+)
+\c@ToCchapter=\count305
+) (./Preamble/preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen163
+\captionmargin@=\dimen164
+\captionwidth=\dimen165
+\caption@tempdima=\dimen166
+\caption@indent=\dimen167
+\caption@parindent=\dimen168
+\caption@hangindent=\dimen169
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count308
+\c@subtable=\count309
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count310
+\@cmidlb=\count311
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count312
+\@lastruleclass=\count313
+\@thisrulewidth=\dimen182
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count314
+\multirow@dima=\skip69
+\bigstrutjot=\dimen183
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count315
+\l__pdf_internal_box=\box48
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count316
+\g__xparse_grabber_int=\count317
+\l__xparse_m_args_int=\count318
+\l__xparse_v_nesting_int=\count319
+)
+Package: siunitx 2020/01/15 v2.7u A comprehensive (SI) units package
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen184
+\ar@mcellbox=\box49
+\extrarowheight=\dimen185
+\NC@list=\toks28
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box50
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box51
+\l__siunitx_tmp_dim=\dimen186
+\l__siunitx_tmp_int=\count320
+\l__siunitx_number_mantissa_length_int=\count321
+\l__siunitx_number_uncert_length_int=\count322
+\l__siunitx_round_int=\count323
+\l__siunitx_process_decimal_int=\count324
+\l__siunitx_process_uncertainty_int=\count325
+\l__siunitx_process_fixed_int=\count326
+\l__siunitx_process_integer_min_int=\count327
+\l__siunitx_process_precision_int=\count328
+\l__siunitx_group_min_int=\count329
+\l__siunitx_angle_marker_box=\box52
+\l__siunitx_angle_unit_box=\box53
+\l__siunitx_angle_marker_dim=\dimen187
+\l__siunitx_angle_unit_dim=\dimen188
+\l__siunitx_unit_int=\count330
+\l__siunitx_unit_denominator_int=\count331
+\l__siunitx_unit_numerator_int=\count332
+\l__siunitx_unit_prefix_int=\count333
+\l__siunitx_unit_prefix_base_int=\count334
+\l__siunitx_unit_prefix_gram_int=\count335
+\l__siunitx_number_product_int=\count336
+\c__siunitx_one_fill_skip=\skip72
+\l__siunitx_table_unit_align_skip=\skip73
+\l__siunitx_table_exponent_dim=\dimen189
+\l__siunitx_table_integer_dim=\dimen190
+\l__siunitx_table_mantissa_dim=\dimen191
+\l__siunitx_table_marker_dim=\dimen192
+\l__siunitx_table_result_dim=\dimen193
+\l__siunitx_table_uncert_dim=\dimen194
+\l__siunitx_table_fill_pre_dim=\dimen195
+\l__siunitx_table_fill_post_dim=\dimen196
+\l__siunitx_table_fill_mid_dim=\dimen197
+\l__siunitx_table_pre_box=\box54
+\l__siunitx_table_post_box=\box55
+\l__siunitx_table_mantissa_box=\box56
+\l__siunitx_table_result_box=\box57
+\l__siunitx_table_number_align_skip=\skip74
+\l__siunitx_table_text_align_skip=\skip75
+ (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count337
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count338
+\c@listtotal=\count339
+\c@listcount=\count340
+\c@liststart=\count341
+\c@liststop=\count342
+\c@citecount=\count343
+\c@citetotal=\count344
+\c@multicitecount=\count345
+\c@multicitetotal=\count346
+\c@instcount=\count347
+\c@maxnames=\count348
+\c@minnames=\count349
+\c@maxitems=\count350
+\c@minitems=\count351
+\c@citecounter=\count352
+\c@maxcitecounter=\count353
+\c@savedcitecounter=\count354
+\c@uniquelist=\count355
+\c@uniquename=\count356
+\c@refsection=\count357
+\c@refsegment=\count358
+\c@maxextratitle=\count359
+\c@maxextratitleyear=\count360
+\c@maxextraname=\count361
+\c@maxextradate=\count362
+\c@maxextraalpha=\count363
+\c@abbrvpenalty=\count364
+\c@highnamepenalty=\count365
+\c@lownamepenalty=\count366
+\c@maxparens=\count367
+\c@parenlevel=\count368
+\blx@tempcnta=\count369
+\blx@tempcntb=\count370
+\blx@tempcntc=\count371
+\blx@maxsection=\count372
+\blx@maxsegment@0=\count373
+\blx@notetype=\count374
+\blx@parenlevel@text=\count375
+\blx@parenlevel@foot=\count376
+\blx@sectionciteorder@0=\count377
+\blx@entrysetcounter=\count378
+\labelnumberwidth=\skip76
+\labelalphawidth=\skip77
+\biblabelsep=\skip78
+\bibitemsep=\skip79
+\bibnamesep=\skip80
+\bibinitsep=\skip81
+\bibparsep=\skip82
+\bibhang=\skip83
+\blx@bcfin=\read2
+\blx@bcfout=\write5
+\blx@langwohyphens=\language9
+\c@mincomprange=\count379
+\c@maxcomprange=\count380
+\c@mincompwidth=\count381
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'phys.dbx' found.
+ (./phys.dbx
+File: phys.dbx 2019/12/03 v1.1b biblatex database model extension
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count382
+\c@savedafterword=\count383
+\c@annotator=\count384
+\c@savedannotator=\count385
+\c@author=\count386
+\c@savedauthor=\count387
+\c@bookauthor=\count388
+\c@savedbookauthor=\count389
+\c@commentator=\count390
+\c@savedcommentator=\count391
+\c@editor=\count392
+\c@savededitor=\count393
+\c@editora=\count394
+\c@savededitora=\count395
+\c@editorb=\count396
+\c@savededitorb=\count397
+\c@editorc=\count398
+\c@savededitorc=\count399
+\c@foreword=\count400
+\c@savedforeword=\count401
+\c@holder=\count402
+\c@savedholder=\count403
+\c@introduction=\count404
+\c@savedintroduction=\count405
+\c@namea=\count406
+\c@savednamea=\count407
+\c@nameb=\count408
+\c@savednameb=\count409
+\c@namec=\count410
+\c@savednamec=\count411
+\c@translator=\count412
+\c@savedtranslator=\count413
+\c@shortauthor=\count414
+\c@savedshortauthor=\count415
+\c@shorteditor=\count416
+\c@savedshorteditor=\count417
+\c@labelname=\count418
+\c@savedlabelname=\count419
+\c@institution=\count420
+\c@savedinstitution=\count421
+\c@lista=\count422
+\c@savedlista=\count423
+\c@listb=\count424
+\c@savedlistb=\count425
+\c@listc=\count426
+\c@savedlistc=\count427
+\c@listd=\count428
+\c@savedlistd=\count429
+\c@liste=\count430
+\c@savedliste=\count431
+\c@listf=\count432
+\c@savedlistf=\count433
+\c@location=\count434
+\c@savedlocation=\count435
+\c@organization=\count436
+\c@savedorganization=\count437
+\c@origlocation=\count438
+\c@savedoriglocation=\count439
+\c@origpublisher=\count440
+\c@savedorigpublisher=\count441
+\c@publisher=\count442
+\c@savedpublisher=\count443
+\c@language=\count444
+\c@savedlanguage=\count445
+\c@origlanguage=\count446
+\c@savedoriglanguage=\count447
+\c@pageref=\count448
+\c@savedpageref=\count449
+\shorthandwidth=\skip84
+\shortjournalwidth=\skip85
+\shortserieswidth=\skip86
+\shorttitlewidth=\skip87
+\shortauthorwidth=\skip88
+\shorteditorwidth=\skip89
+\locallabelnumberwidth=\skip90
+\locallabelalphawidth=\skip91
+\localshorthandwidth=\skip92
+\localshortjournalwidth=\skip93
+\localshortserieswidth=\skip94
+\localshorttitlewidth=\skip95
+\localshortauthorwidth=\skip96
+\localshorteditorwidth=\skip97
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count450
+\c@textcitetotal=\count451
+\c@textcitemaxnames=\count452
+\c@biburlbigbreakpenalty=\count453
+\c@biburlbreakpenalty=\count454
+\c@biburlnumpenalty=\count455
+\c@biburlucpenalty=\count456
+\c@biburllcpenalty=\count457
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count458
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'phys'...
+Package biblatex Info: ... file 'phys.bbx' found.
+ (./phys.bbx
+File: phys.bbx 2019/12/03 v1.1b biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count459
+\c@bbx:relatedtotal=\count460
+))))
+Package biblatex Info: Trying to load citation style 'phys'...
+Package biblatex Info: ... file 'phys.cbx' found.
+ (./phys.cbx
+File: phys.cbx 2019/12/03 v1.1b biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count461
+\c@cbx@tempcntb=\count462
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip98
+\enit@outerparindent=\dimen198
+\enit@toks=\toks29
+\enit@inbox=\box58
+\enit@count@id=\count463
+\enitdp@description=\count464
+)
+\enitdp@coloritemize=\count465
+) (./thesis-info.tex)
+\@quotelevel=\count466
+\@quotereset=\count467
+ (./thesis.aux (./Abstract/abstract.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+(./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux) (./Appendix4/appendix4.aux) (./Appendix5/appendix5.aux) (./Appendix6/appendix6.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 136.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 136.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 136.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count468
+\scratchdimen=\dimen199
+\scratchbox=\box59
+\nofMPsegments=\count469
+\nofMParguments=\count470
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count471
+\MPscratchDim=\dimen256
+\MPnumerator=\count472
+\makeMPintoPDFobject=\count473
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 136.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 136.
+LaTeX Info: Redefining \microtypecontext on input line 136.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 136.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `futs' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring ON on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count474
+)
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
+ (./thesis.out) (./thesis.out)
+\@outlinefile=\write6
+\openout6 = `thesis.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* bindingoffset: 14.22636pt
+* modes: twoside 
+* h-part:(L,W,R)=(72.91019pt, 437.46112pt, 72.9102pt)
+* v-part:(T,H,B)=(105.63086pt, 633.78513pt, 105.63086pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=437.46112pt
+* \textheight=633.78513pt
+* \oddsidemargin=14.86656pt
+* \evensidemargin=0.64021pt
+* \topmargin=1.48708pt
+* \headheight=14.5pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\newline' on input line 136.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `thesis.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'thesis.bbl' found.
+ (./thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 136.
+Package biblatex Info: Reference segment=0 on input line 136.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 136.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 136.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 136.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 136.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 136.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 136.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\PHD@Title=\box61
+\PHD@crest=\box62
+<Figs/University_Crest.png, id=542, 379.4175pt x 456.70625pt>
+File: Figs/University_Crest.png Graphic file (type png)
+<use Figs/University_Crest.png>
+Package pdftex.def Info: Figs/University_Crest.png  used on input line 140.
+(pdftex.def)             Requested size: 109.36528pt x 131.64pt.
+\PHD@collegecrest=\box63
+\PHD@author=\box64
+\PHD@supervisor=\box65
+\PHD@advisor=\box66
+\PHD@dept=\box67
+\PHD@submission=\box68
+\PHD@collegedate=\box69
+\PHD@titlepagespacing=\skip99
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figs/University_Crest.png>]
+\openout2 = `Abstract/abstract.aux'.
+
+ (./Abstract/abstract.tex [2
+
+
+]) [3
+
+]
+\openout2 = `Declaration/declaration.aux'.
+
+ (./Declaration/declaration.tex [4
+
+
+
+] [5
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 49.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [6]) [7]
+\openout2 = `Acknowledgement/acknowledgement.aux'.
+
+ (./Acknowledgement/acknowledgement.tex [8
+
+
+
+] [9
+
+]) [10] (./thesis.toc [11
+
+
+
+] [12] [13]
+Overfull \hbox (1.19994pt too wide) detected at line 83
+ [][][]\T1/futs/m/n/12 100[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 84
+ [][][]\T1/futs/m/n/12 102[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 85
+ [][][]\T1/futs/m/n/12 105[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 86
+ [][][]\T1/futs/m/n/12 106[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 87
+ [][][]\T1/futs/m/n/12 107[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 88
+ [][][]\T1/futs/m/n/12 111[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 89
+ [][][]\T1/futs/m/n/12 114[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 90
+ [][][]\T1/futs/m/n/12 115[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 92
+ [][][]\T1/futs/m/n/12 118[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 93
+ [][][]\T1/futs/m/n/12 118[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 94
+ [][][]\T1/futs/m/n/12 120[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 95
+ [][][]\T1/futs/m/n/12 121[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 96
+ [][][]\T1/futs/m/n/12 122[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 97
+ [][][]\T1/futs/m/n/12 123[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 98
+ [][][]\T1/futs/m/n/12 123[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 99
+ [][][]\T1/futs/m/n/12 124[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 100
+ [][][]\T1/futs/m/n/12 124[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 101
+ [][][]\T1/futs/m/n/12 125[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 102
+ [][][]\T1/futs/m/n/12 125[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 103
+ [][][]\T1/futs/m/n/12 127[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 104
+ [][][]\T1/futs/m/n/12 127[][]
+ []
+
+[14]
+Overfull \hbox (1.19994pt too wide) detected at line 105
+ [][][]\T1/futs/m/n/12 131[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 106
+ [][][]\T1/futs/m/n/12 131[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 107
+ [][][]\T1/futs/m/n/12 132[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 108
+ [][][]\T1/futs/m/n/12 133[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 109
+ [][][]\T1/futs/m/n/12 135[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 110
+ [][][]\T1/futs/m/n/12 136[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 111
+ [][][]\T1/futs/m/n/12 137[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 112
+ [][][]\T1/futs/m/n/12 139[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 113
+ [][][]\T1/futs/m/n/12 143[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 115
+ [][][]\T1/futs/m/n/12 146[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 116
+ [][][]\T1/futs/m/n/12 146[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 117
+ [][][]\T1/futs/m/n/12 147[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 118
+ [][][]\T1/futs/m/n/12 148[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 119
+ [][][]\T1/futs/m/n/12 151[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 120
+ [][][]\T1/futs/m/n/12 154[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 121
+ [][][]\T1/futs/m/n/12 154[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 122
+ [][][]\T1/futs/m/n/12 155[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 123
+ [][][]\T1/futs/m/n/12 157[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 124
+ [][][]\T1/futs/m/n/12 158[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 125
+ [][][]\T1/futs/m/n/12 158[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 126
+ [][][]\T1/futs/m/n/12 160[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 127
+ [][][]\T1/futs/m/n/12 161[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 128
+ [][][]\T1/futs/m/n/12 164[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 129
+ [][][]\T1/futs/m/n/12 166[][]
+ []
+
+[15])
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
+
+ [16] (./thesis.lof [17
+
+] [18]
+Overfull \hbox (1.19994pt too wide) detected at line 68
+ [][][]\T1/futs/m/n/12 101[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 69
+ [][][]\T1/futs/m/n/12 102[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 70
+ [][][]\T1/futs/m/n/12 102[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 71
+ [][][]\T1/futs/m/n/12 104[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 72
+ [][][]\T1/futs/m/n/12 105[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 73
+ [][][]\T1/futs/m/n/12 109[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 74
+ [][][]\T1/futs/m/n/12 109[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 75
+ [][][]\T1/futs/m/n/12 110[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 76
+ [][][]\T1/futs/m/n/12 110[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 77
+ [][][]\T1/futs/m/n/12 112[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 78
+ [][][]\T1/futs/m/n/12 113[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 79
+ [][][]\T1/futs/m/n/12 114[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 81
+ [][][]\T1/futs/m/n/12 119[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 82
+ [][][]\T1/futs/m/n/12 119[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 83
+ [][][]\T1/futs/m/n/12 120[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 84
+ [][][]\T1/futs/m/n/12 124[][]
+ []
+
+[19]
+Overfull \hbox (1.19994pt too wide) detected at line 85
+ [][][]\T1/futs/m/n/12 125[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 86
+ [][][]\T1/futs/m/n/12 126[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 87
+ [][][]\T1/futs/m/n/12 127[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 88
+ [][][]\T1/futs/m/n/12 128[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 89
+ [][][]\T1/futs/m/n/12 130[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 90
+ [][][]\T1/futs/m/n/12 131[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 91
+ [][][]\T1/futs/m/n/12 133[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 92
+ [][][]\T1/futs/m/n/12 134[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 93
+ [][][]\T1/futs/m/n/12 135[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 94
+ [][][]\T1/futs/m/n/12 136[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 95
+ [][][]\T1/futs/m/n/12 138[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 96
+ [][][]\T1/futs/m/n/12 138[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 97
+ [][][]\T1/futs/m/n/12 139[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 98
+ [][][]\T1/futs/m/n/12 141[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 99
+ [][][]\T1/futs/m/n/12 143[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 100
+ [][][]\T1/futs/m/n/12 143[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 102
+ [][][]\T1/futs/m/n/12 150[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 103
+ [][][]\T1/futs/m/n/12 150[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 104
+ [][][]\T1/futs/m/n/12 153[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 105
+ [][][]\T1/futs/m/n/12 153[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 106
+ [][][]\T1/futs/m/n/12 159[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 107
+ [][][]\T1/futs/m/n/12 162[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 108
+ [][][]\T1/futs/m/n/12 163[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 109
+ [][][]\T1/futs/m/n/12 164[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 110
+ [][][]\T1/futs/m/n/12 164[][]
+ []
+
+[20]
+Overfull \hbox (2.06392pt too wide) detected at line 111
+\T1/futs/m/n/12 10.10 
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 111
+ [][][]\T1/futs/m/n/12 166[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 114
+ [][][]\T1/futs/m/n/12 182[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 116
+ [][][]\T1/futs/m/n/12 184[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 117
+ [][][]\T1/futs/m/n/12 184[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 119
+ [][][]\T1/futs/m/n/12 185[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 120
+ [][][]\T1/futs/m/n/12 186[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 122
+ [][][]\T1/futs/m/n/12 187[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 123
+ [][][]\T1/futs/m/n/12 188[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 125
+ [][][]\T1/futs/m/n/12 189[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 126
+ [][][]\T1/futs/m/n/12 190[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 128
+ [][][]\T1/futs/m/n/12 192[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 129
+ [][][]\T1/futs/m/n/12 193[][]
+ []
+
+)
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
+
+ [21] [22
+
+] (./thesis.lot
+Overfull \hbox (1.19994pt too wide) detected at line 11
+ [][][]\T1/futs/m/n/12 140[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 13
+ [][][]\T1/futs/m/n/12 160[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 14
+ [][][]\T1/futs/m/n/12 165[][]
+ []
+
+)
+\tf@lot=\write9
+\openout9 = `thesis.lot'.
+
+ [23]
+\openout2 = `Nomenclature/nomenclature.aux'.
+
+ (./Nomenclature/nomenclature.tex) (./thesis.nls [24
+
+
+
+] [25] [26] [27]) [28]
+\openout2 = `Chapter1/chapter1.aux'.
+
+ (./Chapter1/chapter1.tex
+Chapter 1.
+[1
+
+
+
+]) [2]
+\openout2 = `Chapter2/chapter2.aux'.
+
+ (./Chapter2/chapter2.tex
+Chapter 2.
+[3
+
+
+
+] [4] [5]
+<Chapter2/Figs/K_to_nu.png, id=1120, 446.66875pt x 225.84375pt>
+File: Chapter2/Figs/K_to_nu.png Graphic file (type png)
+<use Chapter2/Figs/K_to_nu.png>
+Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 152.
+(pdftex.def)             Requested size: 174.98177pt x 88.47499pt.
+<Chapter2/Figs/K_to_HNL.png, id=1121, 446.66875pt x 222.8325pt>
+File: Chapter2/Figs/K_to_HNL.png Graphic file (type png)
+<use Chapter2/Figs/K_to_HNL.png>
+Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 159.
+(pdftex.def)             Requested size: 174.98177pt x 87.29533pt.
+ [6] [7 <./Chapter2/Figs/K_to_nu.png> <./Chapter2/Figs/K_to_HNL.png>]
+<Chapter2/Figs/kinematics_factor.png, id=1144, 722.7pt x 433.62pt>
+File: Chapter2/Figs/kinematics_factor.png Graphic file (type png)
+<use Chapter2/Figs/kinematics_factor.png>
+Package pdftex.def Info: Chapter2/Figs/kinematics_factor.png  used on input line 212.
+(pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
+ [8 <./Chapter2/Figs/kinematics_factor.png>]
+<Chapter2/Figs/branching_ratio.png, id=1159, 722.7pt x 433.62pt>
+File: Chapter2/Figs/branching_ratio.png Graphic file (type png)
+<use Chapter2/Figs/branching_ratio.png>
+Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 270.
+(pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
+ [9]
+<Chapter2/Figs/N_to_pi0_edit.png, id=1177, 951.555pt x 476.78125pt>
+File: Chapter2/Figs/N_to_pi0_edit.png Graphic file (type png)
+<use Chapter2/Figs/N_to_pi0_edit.png>
+Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 312.
+(pdftex.def)             Requested size: 214.35834pt x 107.4021pt.
+<Chapter2/Figs/pi0_to_gam.png, id=1178, 635.37375pt x 282.05376pt>
+File: Chapter2/Figs/pi0_to_gam.png Graphic file (type png)
+<use Chapter2/Figs/pi0_to_gam.png>
+Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 319.
+(pdftex.def)             Requested size: 214.35834pt x 95.15675pt.
+ [10 <./Chapter2/Figs/branching_ratio.png>] [11 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 382.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `futs' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [12] [13] [14]
+<Chapter2/Figs/sensitivity.png, id=1245, 722.7pt x 433.62pt>
+File: Chapter2/Figs/sensitivity.png Graphic file (type png)
+<use Chapter2/Figs/sensitivity.png>
+Package pdftex.def Info: Chapter2/Figs/sensitivity.png  used on input line 457.
+(pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
+ [15 <./Chapter2/Figs/sensitivity.png>]) [16]
+\openout2 = `Chapter3/chapter3.aux'.
+
+ (./Chapter3/chapter3.tex
+Chapter 3.
+[17
+
+
+
+]
+<Chapter3/Figs/LARTPC.png, id=1313, 1331.97626pt x 892.33376pt>
+File: Chapter3/Figs/LARTPC.png Graphic file (type png)
+<use Chapter3/Figs/LARTPC.png>
+Package pdftex.def Info: Chapter3/Figs/LARTPC.png  used on input line 58.
+(pdftex.def)             Requested size: 371.84462pt x 249.10287pt.
+ [18] [19 <./Chapter3/Figs/LARTPC.png>]
+<Chapter3/Figs/BetheBloch.png, id=1339, 1294.8375pt x 816.04875pt>
+File: Chapter3/Figs/BetheBloch.png Graphic file (type png)
+<use Chapter3/Figs/BetheBloch.png>
+Package pdftex.def Info: Chapter3/Figs/BetheBloch.png  used on input line 108.
+(pdftex.def)             Requested size: 371.84462pt x 234.34448pt.
+ [20]
+<Chapter3/Figs/uboone_gamma.png, id=1353, 396.48125pt x 374.39874pt>
+File: Chapter3/Figs/uboone_gamma.png Graphic file (type png)
+<use Chapter3/Figs/uboone_gamma.png>
+Package pdftex.def Info: Chapter3/Figs/uboone_gamma.png  used on input line 134.
+(pdftex.def)             Requested size: 174.98177pt x 165.23868pt.
+ [21 <./Chapter3/Figs/BetheBloch.png>]
+<Chapter3/Figs/event_display.png, id=1364, 857.2025pt x 429.605pt>
+File: Chapter3/Figs/event_display.png Graphic file (type png)
+<use Chapter3/Figs/event_display.png>
+Package pdftex.def Info: Chapter3/Figs/event_display.png  used on input line 152.
+(pdftex.def)             Requested size: 371.84462pt x 186.3588pt.
+ [22 <./Chapter3/Figs/uboone_gamma.png> <./Chapter3/Figs/event_display.png>]
+<Chapter3/Figs/recomb_diagram.png, id=1373, 653.44125pt x 457.71pt>
+File: Chapter3/Figs/recomb_diagram.png Graphic file (type png)
+<use Chapter3/Figs/recomb_diagram.png>
+Package pdftex.def Info: Chapter3/Figs/recomb_diagram.png  used on input line 176.
+(pdftex.def)             Requested size: 218.73056pt x 153.20982pt.
+ [23 <./Chapter3/Figs/recomb_diagram.png>]
+<Chapter3/Figs/recomb_graph.png, id=1388, 1038.88126pt x 873.2625pt>
+File: Chapter3/Figs/recomb_graph.png Graphic file (type png)
+<use Chapter3/Figs/recomb_graph.png>
+Package pdftex.def Info: Chapter3/Figs/recomb_graph.png  used on input line 206.
+(pdftex.def)             Requested size: 218.73056pt x 183.8569pt.
+ [24 <./Chapter3/Figs/recomb_graph.png>]
+<Chapter3/Figs/QLAnti.png, id=1402, 1500.60625pt x 923.45pt>
+File: Chapter3/Figs/QLAnti.png Graphic file (type png)
+<use Chapter3/Figs/QLAnti.png>
+Package pdftex.def Info: Chapter3/Figs/QLAnti.png  used on input line 242.
+(pdftex.def)             Requested size: 284.34705pt x 174.97824pt.
+ [25 <./Chapter3/Figs/QLAnti.png>] [26]
+<Chapter3/Figs/SCE.png, id=1442, 1225.57875pt x 369.38pt>
+File: Chapter3/Figs/SCE.png Graphic file (type png)
+<use Chapter3/Figs/SCE.png>
+Package pdftex.def Info: Chapter3/Figs/SCE.png  used on input line 338.
+(pdftex.def)             Requested size: 371.84462pt x 112.07173pt.
+ [27] [28 <./Chapter3/Figs/SCE.png>]
+<Chapter3/Figs/vuv_visible.png, id=1474, 1488.56125pt x 654.445pt>
+File: Chapter3/Figs/vuv_visible.png Graphic file (type png)
+<use Chapter3/Figs/vuv_visible.png>
+Package pdftex.def Info: Chapter3/Figs/vuv_visible.png  used on input line 387.
+(pdftex.def)             Requested size: 437.46112pt x 192.33061pt.
+ [29 <./Chapter3/Figs/vuv_visible.png>]
+<Chapter3/Figs/wire_current.png, id=1498, 459.7175pt x 272.01625pt>
+File: Chapter3/Figs/wire_current.png Graphic file (type png)
+<use Chapter3/Figs/wire_current.png>
+Package pdftex.def Info: Chapter3/Figs/wire_current.png  used on input line 429.
+(pdftex.def)             Requested size: 249.35603pt x 147.54652pt.
+ [30 <./Chapter3/Figs/wire_current.png>] [31]) [32]
+\openout2 = `Chapter4/chapter4.aux'.
+
+ (./Chapter4/chapter4.tex
+Chapter 4.
+[33
+
+
+
+]
+<Chapter4/Figs/SBN_program.jpg, id=1554, 803.0pt x 313.17pt>
+File: Chapter4/Figs/SBN_program.jpg Graphic file (type jpg)
+<use Chapter4/Figs/SBN_program.jpg>
+Package pdftex.def Info: Chapter4/Figs/SBN_program.jpg  used on input line 53.
+(pdftex.def)             Requested size: 437.46112pt x 170.61452pt.
+ [34] [35 <./Chapter4/Figs/SBN_program.jpg>]
+<Chapter4/Figs/SBND_Pretty.png, id=1584, 851.18pt x 751.80875pt>
+File: Chapter4/Figs/SBND_Pretty.png Graphic file (type png)
+<use Chapter4/Figs/SBND_Pretty.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_Pretty.png  used on input line 99.
+(pdftex.def)             Requested size: 393.71233pt x 347.75198pt.
+ [36 <./Chapter4/Figs/SBND_Pretty.png>]
+<Chapter4/Figs/SBND_APA.png, id=1596, 780.9175pt x 705.63625pt>
+File: Chapter4/Figs/SBND_APA.png Graphic file (type png)
+<use Chapter4/Figs/SBND_APA.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_APA.png  used on input line 123.
+(pdftex.def)             Requested size: 284.34705pt x 256.93597pt.
+ [37 <./Chapter4/Figs/SBND_APA.png>]
+<Chapter4/Figs/SBND_APA_PDS.png, id=1608, 1293.83376pt x 968.61874pt>
+File: Chapter4/Figs/SBND_APA_PDS.png Graphic file (type png)
+<use Chapter4/Figs/SBND_APA_PDS.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_APA_PDS.png  used on input line 145.
+(pdftex.def)             Requested size: 218.73056pt x 163.74664pt.
+<Chapter4/Figs/SBND_CPA.png, id=1609, 1293.83376pt x 965.6075pt>
+File: Chapter4/Figs/SBND_CPA.png Graphic file (type png)
+<use Chapter4/Figs/SBND_CPA.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_CPA.png  used on input line 152.
+(pdftex.def)             Requested size: 218.73056pt x 163.2376pt.
+ [38 <./Chapter4/Figs/SBND_APA_PDS.png> <./Chapter4/Figs/SBND_CPA.png>]
+<Chapter4/Figs/SBND_PDS.png, id=1624, 1689.31125pt x 814.04124pt>
+File: Chapter4/Figs/SBND_PDS.png Graphic file (type png)
+<use Chapter4/Figs/SBND_PDS.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_PDS.png  used on input line 183.
+(pdftex.def)             Requested size: 371.84462pt x 179.17657pt.
+ [39 <./Chapter4/Figs/SBND_PDS.png>]
+<Chapter4/Figs/SBND_CRT.png, id=1638, 1465.475pt x 482.80376pt>
+File: Chapter4/Figs/SBND_CRT.png Graphic file (type png)
+<use Chapter4/Figs/SBND_CRT.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_CRT.png  used on input line 211.
+(pdftex.def)             Requested size: 437.46112pt x 144.12027pt.
+ [40 <./Chapter4/Figs/SBND_CRT.png>] [41] [42]
+<Chapter4/Figs/DAQ_Overview.png, id=1679, 1158.3275pt x 616.3025pt>
+File: Chapter4/Figs/DAQ_Overview.png Graphic file (type png)
+<use Chapter4/Figs/DAQ_Overview.png>
+Package pdftex.def Info: Chapter4/Figs/DAQ_Overview.png  used on input line 330.
+(pdftex.def)             Requested size: 437.46112pt x 232.75856pt.
+ [43]
+<Chapter4/Figs/SBND_Event_Structure.png, id=1687, 1231.60126pt x 683.55376pt>
+File: Chapter4/Figs/SBND_Event_Structure.png Graphic file (type png)
+<use Chapter4/Figs/SBND_Event_Structure.png>
+Package pdftex.def Info: Chapter4/Figs/SBND_Event_Structure.png  used on input line 400.
+(pdftex.def)             Requested size: 371.84462pt x 206.37148pt.
+ [44 <./Chapter4/Figs/DAQ_Overview.png>] [45 <./Chapter4/Figs/SBND_Event_Structure.png>]
+<Chapter4/Figs/CRT2017.png, id=1711, 1449.415pt x 760.8425pt>
+File: Chapter4/Figs/CRT2017.png Graphic file (type png)
+<use Chapter4/Figs/CRT2017.png>
+Package pdftex.def Info: Chapter4/Figs/CRT2017.png  used on input line 451.
+(pdftex.def)             Requested size: 371.84462pt x 195.19063pt.
+ [46 <./Chapter4/Figs/CRT2017.png>]
+<Chapter4/Figs/BNBDiagram.png, id=1724, 1190.4475pt x 475.7775pt>
+File: Chapter4/Figs/BNBDiagram.png Graphic file (type png)
+<use Chapter4/Figs/BNBDiagram.png>
+Package pdftex.def Info: Chapter4/Figs/BNBDiagram.png  used on input line 480.
+(pdftex.def)             Requested size: 437.46112pt x 174.83705pt.
+ [47 <./Chapter4/Figs/BNBDiagram.png>]
+<Chapter4/Figs/BNB_Meson_Pion_Flux.png, id=1738, 505.89pt x 361.35pt>
+File: Chapter4/Figs/BNB_Meson_Pion_Flux.png Graphic file (type png)
+<use Chapter4/Figs/BNB_Meson_Pion_Flux.png>
+Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Pion_Flux.png  used on input line 507.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+<Chapter4/Figs/BNB_Meson_Kaon_Flux.png, id=1739, 505.89pt x 361.35pt>
+File: Chapter4/Figs/BNB_Meson_Kaon_Flux.png Graphic file (type png)
+<use Chapter4/Figs/BNB_Meson_Kaon_Flux.png>
+Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Kaon_Flux.png  used on input line 513.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+<Chapter4/Figs/BNB_Meson_Muon_Flux.png, id=1740, 505.89pt x 361.35pt>
+File: Chapter4/Figs/BNB_Meson_Muon_Flux.png Graphic file (type png)
+<use Chapter4/Figs/BNB_Meson_Muon_Flux.png>
+Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Muon_Flux.png  used on input line 519.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+ [48 <./Chapter4/Figs/BNB_Meson_Pion_Flux.png> <./Chapter4/Figs/BNB_Meson_Kaon_Flux.png> <./Chapter4/Figs/BNB_Meson_Muon_Flux.png>]
+<Chapter4/Figs/BNB_combined_neutrino_flux.png, id=1750, 855.195pt x 659.46375pt>
+File: Chapter4/Figs/BNB_combined_neutrino_flux.png Graphic file (type png)
+<use Chapter4/Figs/BNB_combined_neutrino_flux.png>
+Package pdftex.def Info: Chapter4/Figs/BNB_combined_neutrino_flux.png  used on input line 540.
+(pdftex.def)             Requested size: 218.73056pt x 168.66919pt.
+) [49 <./Chapter4/Figs/BNB_combined_neutrino_flux.png>]
+\openout2 = `Chapter5/chapter5.aux'.
+
+ (./Chapter5/chapter5.tex [50
+
+
+
+]
+Chapter 5.
+[51]
+<Chapter5/Figs/Sim_Workflow.png, id=1778, 1172.38pt x 363.3575pt>
+File: Chapter5/Figs/Sim_Workflow.png Graphic file (type png)
+<use Chapter5/Figs/Sim_Workflow.png>
+Package pdftex.def Info: Chapter5/Figs/Sim_Workflow.png  used on input line 57.
+(pdftex.def)             Requested size: 437.46112pt x 135.5823pt.
+ [52 <./Chapter5/Figs/Sim_Workflow.png>]
+<Chapter5/Figs/MeVPrtl_Workflow.png, id=1790, 854.19125pt x 113.42375pt>
+File: Chapter5/Figs/MeVPrtl_Workflow.png Graphic file (type png)
+<use Chapter5/Figs/MeVPrtl_Workflow.png>
+Package pdftex.def Info: Chapter5/Figs/MeVPrtl_Workflow.png  used on input line 78.
+(pdftex.def)             Requested size: 437.46112pt x 58.08763pt.
+ [53 <./Chapter5/Figs/MeVPrtl_Workflow.png>]
+<Chapter5/Figs/HNL_Energy_Spectrum.png, id=1807, 578.16pt x 433.62pt>
+File: Chapter5/Figs/HNL_Energy_Spectrum.png Graphic file (type png)
+<use Chapter5/Figs/HNL_Energy_Spectrum.png>
+Package pdftex.def Info: Chapter5/Figs/HNL_Energy_Spectrum.png  used on input line 134.
+(pdftex.def)             Requested size: 284.34705pt x 213.25641pt.
+<Chapter5/Figs/pi0_energy.png, id=1811, 578.16pt x 433.62pt>
+File: Chapter5/Figs/pi0_energy.png Graphic file (type png)
+<use Chapter5/Figs/pi0_energy.png>
+Package pdftex.def Info: Chapter5/Figs/pi0_energy.png  used on input line 161.
+(pdftex.def)             Requested size: 216.5411pt x 162.40198pt.
+<Chapter5/Figs/pi0_angle2Beam.png, id=1812, 578.16pt x 433.62pt>
+File: Chapter5/Figs/pi0_angle2Beam.png Graphic file (type png)
+<use Chapter5/Figs/pi0_angle2Beam.png>
+Package pdftex.def Info: Chapter5/Figs/pi0_angle2Beam.png  used on input line 168.
+(pdftex.def)             Requested size: 216.5411pt x 162.40198pt.
+ [54 <./Chapter5/Figs/HNL_Energy_Spectrum.png>]
+<Chapter5/Figs/tof_beam_to_detector.png, id=1820, 1089.06876pt x 300.12125pt>
+File: Chapter5/Figs/tof_beam_to_detector.png Graphic file (type png)
+<use Chapter5/Figs/tof_beam_to_detector.png>
+Package pdftex.def Info: Chapter5/Figs/tof_beam_to_detector.png  used on input line 206.
+(pdftex.def)             Requested size: 437.46112pt x 120.55011pt.
+ [55 <./Chapter5/Figs/pi0_energy.png> <./Chapter5/Figs/pi0_angle2Beam.png>]
+<Chapter5/Figs/full_beam.png, id=1830, 1430.58466pt x 419.8887pt>
+File: Chapter5/Figs/full_beam.png Graphic file (type png)
+<use Chapter5/Figs/full_beam.png>
+Package pdftex.def Info: Chapter5/Figs/full_beam.png  used on input line 215.
+(pdftex.def)             Requested size: 437.46112pt x 128.39583pt.
+ [56 <./Chapter5/Figs/tof_beam_to_detector.png> <./Chapter5/Figs/full_beam.png>]
+<Chapter5/Figs/beam_modulus.png, id=1841, 418.08195pt x 346.53465pt>
+File: Chapter5/Figs/beam_modulus.png Graphic file (type png)
+<use Chapter5/Figs/beam_modulus.png>
+Package pdftex.def Info: Chapter5/Figs/beam_modulus.png  used on input line 235.
+(pdftex.def)             Requested size: 216.5411pt x 179.47992pt.
+ [57 <./Chapter5/Figs/beam_modulus.png>]
+<Chapter5/Figs/Rockbox_Volume.png, id=1859, 1091.07625pt x 499.8675pt>
+File: Chapter5/Figs/Rockbox_Volume.png Graphic file (type png)
+<use Chapter5/Figs/Rockbox_Volume.png>
+Package pdftex.def Info: Chapter5/Figs/Rockbox_Volume.png  used on input line 274.
+(pdftex.def)             Requested size: 328.09584pt x 150.31226pt.
+ [58 <./Chapter5/Figs/Rockbox_Volume.png>]
+Overfull \hbox (8.55261pt too wide) in paragraph at lines 316--316
+[]\T1/futs/b/n/17.28 Particle Prop-a-ga-tion and De-tec-tor Re-sponse Sim-u-la-tion 
+ []
+
+[59] [60] [61]) [62]
+\openout2 = `Chapter6/chapter6.aux'.
+
+ (./Chapter6/chapter6.tex
+Chapter 6.
+[63
+
+
+
+]
+<Chapter6/Figs/Reco_Workflow.png, id=1919, 931.48pt x 333.245pt>
+File: Chapter6/Figs/Reco_Workflow.png Graphic file (type png)
+<use Chapter6/Figs/Reco_Workflow.png>
+Package pdftex.def Info: Chapter6/Figs/Reco_Workflow.png  used on input line 57.
+(pdftex.def)             Requested size: 437.46112pt x 156.50313pt.
+ [64 <./Chapter6/Figs/Reco_Workflow.png>]
+<Chapter6/Figs/signal_processing_waveform.png, id=1932, 726.715pt x 384.43625pt>
+File: Chapter6/Figs/signal_processing_waveform.png Graphic file (type png)
+<use Chapter6/Figs/signal_processing_waveform.png>
+Package pdftex.def Info: Chapter6/Figs/signal_processing_waveform.png  used on input line 100.
+(pdftex.def)             Requested size: 371.84462pt x 196.71101pt.
+ [65 <./Chapter6/Figs/signal_processing_waveform.png>]
+<Chapter6/Figs/gaushit.png, id=1947, 823.075pt x 710.655pt>
+File: Chapter6/Figs/gaushit.png Graphic file (type png)
+<use Chapter6/Figs/gaushit.png>
+Package pdftex.def Info: Chapter6/Figs/gaushit.png  used on input line 139.
+(pdftex.def)             Requested size: 196.85616pt x 169.96428pt.
+ [66 <./Chapter6/Figs/gaushit.png>] [67]
+<Chapter6/Figs/HaloTotalRatio.png, id=1971, 894.34125pt x 625.33624pt>
+File: Chapter6/Figs/HaloTotalRatio.png Graphic file (type png)
+<use Chapter6/Figs/HaloTotalRatio.png>
+Package pdftex.def Info: Chapter6/Figs/HaloTotalRatio.png  used on input line 214.
+(pdftex.def)             Requested size: 216.5411pt x 151.41008pt.
+<Chapter6/Figs/Concentration.png, id=1972, 898.35625pt x 617.30624pt>
+File: Chapter6/Figs/Concentration.png Graphic file (type png)
+<use Chapter6/Figs/Concentration.png>
+Package pdftex.def Info: Chapter6/Figs/Concentration.png  used on input line 221.
+(pdftex.def)             Requested size: 216.5411pt x 148.79703pt.
+<Chapter6/Figs/Conicalness.png, id=1973, 900.36375pt x 610.28pt>
+File: Chapter6/Figs/Conicalness.png Graphic file (type png)
+<use Chapter6/Figs/Conicalness.png>
+Package pdftex.def Info: Chapter6/Figs/Conicalness.png  used on input line 228.
+(pdftex.def)             Requested size: 216.5411pt x 146.76817pt.
+ [68] [69 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
+<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=1993, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Halo_Total_Ratio.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Halo_Total_Ratio.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Halo_Total_Ratio.png  used on input line 260.
+(pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
+<Chapter6/Figs/Feature_Concentration.png, id=1994, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Concentration.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Concentration.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Concentration.png  used on input line 266.
+(pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
+<Chapter6/Figs/Feature_Conicalness.png, id=1995, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Conicalness.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Conicalness.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Conicalness.png  used on input line 272.
+(pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
+<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=1996, 433.62pt x 289.08pt>
+File: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png Graphic file (type png)
+<use Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>
+Package pdftex.def Info: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png  used on input line 278.
+(pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
+ [70 <./Chapter6/Figs/Feature_Halo_Total_Ratio.png> <./Chapter6/Figs/Feature_Concentration.png> <./Chapter6/Figs/Feature_Conicalness.png> <./Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>]
+<Chapter6/Figs/bdt_score_trk_shw.png, id=2009, 900.36375pt x 572.1375pt>
+File: Chapter6/Figs/bdt_score_trk_shw.png Graphic file (type png)
+<use Chapter6/Figs/bdt_score_trk_shw.png>
+Package pdftex.def Info: Chapter6/Figs/bdt_score_trk_shw.png  used on input line 300.
+(pdftex.def)             Requested size: 216.5411pt x 137.59515pt.
+<Chapter6/Figs/bdt_score_particle.png, id=2010, 900.36375pt x 574.145pt>
+File: Chapter6/Figs/bdt_score_particle.png Graphic file (type png)
+<use Chapter6/Figs/bdt_score_particle.png>
+Package pdftex.def Info: Chapter6/Figs/bdt_score_particle.png  used on input line 306.
+(pdftex.def)             Requested size: 216.5411pt x 138.07796pt.
+ [71 <./Chapter6/Figs/bdt_score_trk_shw.png> <./Chapter6/Figs/bdt_score_particle.png>]
+<Chapter6/Figs/pds_reco_deconvolution.pdf, id=2022, 646.69699pt x 492.56131pt>
+File: Chapter6/Figs/pds_reco_deconvolution.pdf Graphic file (type pdf)
+<use Chapter6/Figs/pds_reco_deconvolution.pdf>
+Package pdftex.def Info: Chapter6/Figs/pds_reco_deconvolution.pdf  used on input line 340.
+(pdftex.def)             Requested size: 258.10045pt x 196.58511pt.
+<Chapter6/Figs/pds_reco_hit_finding.pdf, id=2023, 361.35pt x 289.08pt>
+File: Chapter6/Figs/pds_reco_hit_finding.pdf Graphic file (type pdf)
+<use Chapter6/Figs/pds_reco_hit_finding.pdf>
+Package pdftex.def Info: Chapter6/Figs/pds_reco_hit_finding.pdf  used on input line 347.
+(pdftex.def)             Requested size: 174.98177pt x 139.98308pt.
+<Chapter6/Figs/light_yield_sim.png, id=2027, 455.7025pt x 305.14pt>
+File: Chapter6/Figs/light_yield_sim.png Graphic file (type png)
+<use Chapter6/Figs/light_yield_sim.png>
+Package pdftex.def Info: Chapter6/Figs/light_yield_sim.png  used on input line 370.
+(pdftex.def)             Requested size: 240.60495pt x 161.11346pt.
+ [72 <./Chapter6/Figs/pds_reco_deconvolution.pdf> <./Chapter6/Figs/pds_reco_hit_finding.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/pds_reco_hit_finding.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [73 <./Chapter6/Figs/light_yield_sim.png>] [74] [75] [76]) [77]
+\openout2 = `Chapter7/chapter7.aux'.
+
+ (./Chapter7/chapter7.tex [78
+
+
+
+]
+Chapter 7.
+[79]
+<Chapter7/Figs/time_transfer.png, id=2180, 1203.49625pt x 334.24875pt>
+File: Chapter7/Figs/time_transfer.png Graphic file (type png)
+<use Chapter7/Figs/time_transfer.png>
+Package pdftex.def Info: Chapter7/Figs/time_transfer.png  used on input line 63.
+(pdftex.def)             Requested size: 437.46112pt x 121.4974pt.
+ [80 <./Chapter7/Figs/time_transfer.png>] [81]
+<Chapter7/Figs/SPEC_TDC.png, id=2195, 1039.885pt x 406.51875pt>
+File: Chapter7/Figs/SPEC_TDC.png Graphic file (type png)
+<use Chapter7/Figs/SPEC_TDC.png>
+Package pdftex.def Info: Chapter7/Figs/SPEC_TDC.png  used on input line 109.
+(pdftex.def)             Requested size: 437.46112pt x 171.01584pt.
+ [82 <./Chapter7/Figs/SPEC_TDC.png>]
+<Chapter7/Figs/crt_sharps.png, id=2210, 893.3375pt x 702.625pt>
+File: Chapter7/Figs/crt_sharps.png Graphic file (type png)
+<use Chapter7/Figs/crt_sharps.png>
+Package pdftex.def Info: Chapter7/Figs/crt_sharps.png  used on input line 207.
+(pdftex.def)             Requested size: 262.47934pt x 206.44704pt.
+ [83]
+<Chapter7/Figs/upstream_T0stability_combined_board79.png, id=2217, 867.24pt x 433.62pt>
+File: Chapter7/Figs/upstream_T0stability_combined_board79.png Graphic file (type png)
+<use Chapter7/Figs/upstream_T0stability_combined_board79.png>
+Package pdftex.def Info: Chapter7/Figs/upstream_T0stability_combined_board79.png  used on input line 235.
+(pdftex.def)             Requested size: 371.84462pt x 185.92365pt.
+<Chapter7/Figs/upstream_T1stability_combined_board79.png, id=2218, 867.24pt x 433.62pt>
+File: Chapter7/Figs/upstream_T1stability_combined_board79.png Graphic file (type png)
+<use Chapter7/Figs/upstream_T1stability_combined_board79.png>
+Package pdftex.def Info: Chapter7/Figs/upstream_T1stability_combined_board79.png  used on input line 243.
+(pdftex.def)             Requested size: 371.84462pt x 185.92365pt.
+ [84 <./Chapter7/Figs/crt_sharps.png>] [85 <./Chapter7/Figs/upstream_T0stability_combined_board79.png> <./Chapter7/Figs/upstream_T1stability_combined_board79.png>]
+<Chapter7/Figs/board79_T1drift_2d.png, id=2231, 668.4975pt x 433.62pt>
+File: Chapter7/Figs/board79_T1drift_2d.png Graphic file (type png)
+<use Chapter7/Figs/board79_T1drift_2d.png>
+Package pdftex.def Info: Chapter7/Figs/board79_T1drift_2d.png  used on input line 270.
+(pdftex.def)             Requested size: 306.22144pt x 198.63394pt.
+ [86 <./Chapter7/Figs/board79_T1drift_2d.png>]
+<Chapter7/Figs/CRT_T1_TopHat.png, id=2241, 505.89pt x 433.62pt>
+File: Chapter7/Figs/CRT_T1_TopHat.png Graphic file (type png)
+<use Chapter7/Figs/CRT_T1_TopHat.png>
+Package pdftex.def Info: Chapter7/Figs/CRT_T1_TopHat.png  used on input line 303.
+(pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
+<Chapter7/Figs/CRTT0_SPEC_TopHat.png, id=2242, 505.89pt x 433.62pt>
+File: Chapter7/Figs/CRTT0_SPEC_TopHat.png Graphic file (type png)
+<use Chapter7/Figs/CRTT0_SPEC_TopHat.png>
+Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_TopHat.png  used on input line 310.
+(pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
+ [87 <./Chapter7/Figs/CRT_T1_TopHat.png> <./Chapter7/Figs/CRTT0_SPEC_TopHat.png>]
+<Chapter7/Figs/CRT_T1_Bucket.png, id=2252, 505.89pt x 433.62pt>
+File: Chapter7/Figs/CRT_T1_Bucket.png Graphic file (type png)
+<use Chapter7/Figs/CRT_T1_Bucket.png>
+Package pdftex.def Info: Chapter7/Figs/CRT_T1_Bucket.png  used on input line 335.
+(pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
+<Chapter7/Figs/CRTT0_SPEC_Bucket.png, id=2253, 505.89pt x 433.62pt>
+File: Chapter7/Figs/CRTT0_SPEC_Bucket.png Graphic file (type png)
+<use Chapter7/Figs/CRTT0_SPEC_Bucket.png>
+Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_Bucket.png  used on input line 342.
+(pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
+ [88 <./Chapter7/Figs/CRT_T1_Bucket.png> <./Chapter7/Figs/CRTT0_SPEC_Bucket.png>]
+<Chapter7/Figs/TTT_diagram.png, id=2268, 626.34pt x 212.795pt>
+File: Chapter7/Figs/TTT_diagram.png Graphic file (type png)
+<use Chapter7/Figs/TTT_diagram.png>
+Package pdftex.def Info: Chapter7/Figs/TTT_diagram.png  used on input line 417.
+(pdftex.def)             Requested size: 371.84462pt x 126.33696pt.
+ [89]
+<Chapter7/Figs/fanout.png, id=2275, 738.76pt x 321.2pt>
+File: Chapter7/Figs/fanout.png Graphic file (type png)
+<use Chapter7/Figs/fanout.png>
+Package pdftex.def Info: Chapter7/Figs/fanout.png  used on input line 436.
+(pdftex.def)             Requested size: 216.5411pt x 94.14543pt.
+<Chapter7/Figs/daisychain.png, id=2276, 738.76pt x 315.1775pt>
+File: Chapter7/Figs/daisychain.png Graphic file (type png)
+<use Chapter7/Figs/daisychain.png>
+Package pdftex.def Info: Chapter7/Figs/daisychain.png  used on input line 442.
+(pdftex.def)             Requested size: 216.5411pt x 92.3802pt.
+ [90 <./Chapter7/Figs/TTT_diagram.png> <./Chapter7/Figs/fanout.png> <./Chapter7/Figs/daisychain.png>]
+<Chapter7/Figs/TTT_SPEC_diff_run7980.png, id=2287, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/TTT_SPEC_diff_run7980.png Graphic file (type png)
+<use Chapter7/Figs/TTT_SPEC_diff_run7980.png>
+Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run7980.png  used on input line 503.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/TTT_SPEC_diff_run8060.png, id=2288, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/TTT_SPEC_diff_run8060.png Graphic file (type png)
+<use Chapter7/Figs/TTT_SPEC_diff_run8060.png>
+Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8060.png  used on input line 510.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/TTT_SPEC_diff_run8178.png, id=2289, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/TTT_SPEC_diff_run8178.png Graphic file (type png)
+<use Chapter7/Figs/TTT_SPEC_diff_run8178.png>
+Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8178.png  used on input line 523.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/TTT_SPEC_diff_run8196.png, id=2290, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/TTT_SPEC_diff_run8196.png Graphic file (type png)
+<use Chapter7/Figs/TTT_SPEC_diff_run8196.png>
+Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8196.png  used on input line 529.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+ [91] [92 <./Chapter7/Figs/TTT_SPEC_diff_run7980.png> <./Chapter7/Figs/TTT_SPEC_diff_run8060.png> <./Chapter7/Figs/TTT_SPEC_diff_run8178.png> <./Chapter7/Figs/TTT_SPEC_diff_run8196.png>]
+<Chapter7/Figs/jitter_before_unzoom.png, id=2306, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/jitter_before_unzoom.png Graphic file (type png)
+<use Chapter7/Figs/jitter_before_unzoom.png>
+Package pdftex.def Info: Chapter7/Figs/jitter_before_unzoom.png  used on input line 577.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/jitter_before_zoom.png, id=2307, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/jitter_before_zoom.png Graphic file (type png)
+<use Chapter7/Figs/jitter_before_zoom.png>
+Package pdftex.def Info: Chapter7/Figs/jitter_before_zoom.png  used on input line 584.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+ [93]
+<Chapter7/Figs/jitter_before.png, id=2314, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/jitter_before.png Graphic file (type png)
+<use Chapter7/Figs/jitter_before.png>
+Package pdftex.def Info: Chapter7/Figs/jitter_before.png  used on input line 612.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/jitter_after.png, id=2315, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/jitter_after.png Graphic file (type png)
+<use Chapter7/Figs/jitter_after.png>
+Package pdftex.def Info: Chapter7/Figs/jitter_after.png  used on input line 619.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+ [94 <./Chapter7/Figs/jitter_before_unzoom.png> <./Chapter7/Figs/jitter_before_zoom.png>]
+<Chapter7/Figs/Tickts_spec.png, id=2326, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/Tickts_spec.png Graphic file (type png)
+<use Chapter7/Figs/Tickts_spec.png>
+Package pdftex.def Info: Chapter7/Figs/Tickts_spec.png  used on input line 655.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/Tickts_spec_corrEbyE.png, id=2327, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/Tickts_spec_corrEbyE.png Graphic file (type png)
+<use Chapter7/Figs/Tickts_spec_corrEbyE.png>
+Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrEbyE.png  used on input line 662.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+<Chapter7/Figs/Tickts_spec_corrRbyR.png, id=2328, 1734.48pt x 433.62pt>
+File: Chapter7/Figs/Tickts_spec_corrRbyR.png Graphic file (type png)
+<use Chapter7/Figs/Tickts_spec_corrRbyR.png>
+Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrRbyR.png  used on input line 669.
+(pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
+ [95 <./Chapter7/Figs/jitter_before.png> <./Chapter7/Figs/jitter_after.png>] [96 <./Chapter7/Figs/Tickts_spec.png> <./Chapter7/Figs/Tickts_spec_corrEbyE.png> <./Chapter7/Figs/Tickts_spec_corrRbyR.png>]) [97]
+\openout2 = `Chapter8/chapter8.aux'.
+
+ (./Chapter8/chapter8.tex [98
+
+
+
+]
+Chapter 8.
+[99] [100]
+<Chapter8/Figs/cosmic_stitch.png, id=2391, 603.25375pt x 585.18625pt>
+File: Chapter8/Figs/cosmic_stitch.png Graphic file (type png)
+<use Chapter8/Figs/cosmic_stitch.png>
+Package pdftex.def Info: Chapter8/Figs/cosmic_stitch.png  used on input line 87.
+(pdftex.def)             Requested size: 196.85616pt x 190.96011pt.
+ [101 <./Chapter8/Figs/cosmic_stitch.png>]
+<Chapter8/Figs/dqdxMPV.png, id=2405, 520.94624pt x 317.185pt>
+File: Chapter8/Figs/dqdxMPV.png Graphic file (type png)
+<use Chapter8/Figs/dqdxMPV.png>
+Package pdftex.def Info: Chapter8/Figs/dqdxMPV.png  used on input line 108.
+(pdftex.def)             Requested size: 240.60495pt x 146.49731pt.
+<Chapter8/Figs/etime_tpc0.png, id=2406, 1170.3725pt x 815.045pt>
+File: Chapter8/Figs/etime_tpc0.png Graphic file (type png)
+<use Chapter8/Figs/etime_tpc0.png>
+Package pdftex.def Info: Chapter8/Figs/etime_tpc0.png  used on input line 119.
+(pdftex.def)             Requested size: 216.5411pt x 150.7934pt.
+<Chapter8/Figs/etime_tpc1.png, id=2407, 1178.4025pt x 822.07124pt>
+File: Chapter8/Figs/etime_tpc1.png Graphic file (type png)
+<use Chapter8/Figs/etime_tpc1.png>
+Package pdftex.def Info: Chapter8/Figs/etime_tpc1.png  used on input line 126.
+(pdftex.def)             Requested size: 216.5411pt x 151.0522pt.
+ [102 <./Chapter8/Figs/dqdxMPV.png> <./Chapter8/Figs/etime_tpc0.png> <./Chapter8/Figs/etime_tpc1.png>]
+<Chapter8/Figs/etime_biases_compare.png, id=2419, 722.7pt x 578.16pt>
+File: Chapter8/Figs/etime_biases_compare.png Graphic file (type png)
+<use Chapter8/Figs/etime_biases_compare.png>
+Package pdftex.def Info: Chapter8/Figs/etime_biases_compare.png  used on input line 167.
+(pdftex.def)             Requested size: 371.84462pt x 297.47783pt.
+ [103] [104 <./Chapter8/Figs/etime_biases_compare.png>]
+<Chapter8/Figs/delta_ray_evd.png, id=2441, 1205.50375pt x 384.43625pt>
+File: Chapter8/Figs/delta_ray_evd.png Graphic file (type png)
+<use Chapter8/Figs/delta_ray_evd.png>
+Package pdftex.def Info: Chapter8/Figs/delta_ray_evd.png  used on input line 220.
+(pdftex.def)             Requested size: 371.84462pt x 118.58153pt.
+ [105 <./Chapter8/Figs/delta_ray_evd.png>] [106] [107]
+<Chapter8/Figs/proton_700um.png, id=2485, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/proton_700um.png Graphic file (type png)
+<use Chapter8/Figs/proton_700um.png>
+Package pdftex.def Info: Chapter8/Figs/proton_700um.png  used on input line 334.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 335.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 335.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 335.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 335.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 335.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 335.
+<Chapter8/Figs/proton_1um.png, id=2486, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/proton_1um.png Graphic file (type png)
+<use Chapter8/Figs/proton_1um.png>
+Package pdftex.def Info: Chapter8/Figs/proton_1um.png  used on input line 341.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/proton_profile.png, id=2487, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/proton_profile.png Graphic file (type png)
+<use Chapter8/Figs/proton_profile.png>
+Package pdftex.def Info: Chapter8/Figs/proton_profile.png  used on input line 351.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/proton_profile_diff.png, id=2488, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/proton_profile_diff.png Graphic file (type png)
+<use Chapter8/Figs/proton_profile_diff.png>
+Package pdftex.def Info: Chapter8/Figs/proton_profile_diff.png  used on input line 358.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+ [108]
+<Chapter8/Figs/mu_700um.png, id=2504, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_700um.png Graphic file (type png)
+<use Chapter8/Figs/mu_700um.png>
+Package pdftex.def Info: Chapter8/Figs/mu_700um.png  used on input line 399.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/mu_1um.png, id=2505, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_1um.png Graphic file (type png)
+<use Chapter8/Figs/mu_1um.png>
+Package pdftex.def Info: Chapter8/Figs/mu_1um.png  used on input line 406.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/mu_700um_lowRR.png, id=2506, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_700um_lowRR.png Graphic file (type png)
+<use Chapter8/Figs/mu_700um_lowRR.png>
+Package pdftex.def Info: Chapter8/Figs/mu_700um_lowRR.png  used on input line 413.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/mu_1um_lowRR.png, id=2507, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_1um_lowRR.png Graphic file (type png)
+<use Chapter8/Figs/mu_1um_lowRR.png>
+Package pdftex.def Info: Chapter8/Figs/mu_1um_lowRR.png  used on input line 420.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/mu_profile.png, id=2508, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_profile.png Graphic file (type png)
+<use Chapter8/Figs/mu_profile.png>
+Package pdftex.def Info: Chapter8/Figs/mu_profile.png  used on input line 432.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/mu_profile_diff.png, id=2509, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/mu_profile_diff.png Graphic file (type png)
+<use Chapter8/Figs/mu_profile_diff.png>
+Package pdftex.def Info: Chapter8/Figs/mu_profile_diff.png  used on input line 439.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+ [109 <./Chapter8/Figs/proton_700um.png> <./Chapter8/Figs/proton_1um.png> <./Chapter8/Figs/proton_profile.png> <./Chapter8/Figs/proton_profile_diff.png>] [110 <./Chapter8/Figs/mu_700um.png> <./Chapter8/Figs/mu_1um.png> <./Chapter8/Figs/mu_700um_lowRR.png> <./Chapter8/Figs/mu_1um_lowRR.png> <./Chapter8/Figs/mu_profile.png> <./Chapter8/Figs/mu_profile_diff.png>]
+<Chapter8/Figs/derr_proton_delta_700um.png, id=2530, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_proton_delta_700um.png Graphic file (type png)
+<use Chapter8/Figs/derr_proton_delta_700um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_700um.png  used on input line 483.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_proton_delta_1um.png, id=2531, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_proton_delta_1um.png Graphic file (type png)
+<use Chapter8/Figs/derr_proton_delta_1um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_1um.png  used on input line 490.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_proton_only_700um.png, id=2532, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_proton_only_700um.png Graphic file (type png)
+<use Chapter8/Figs/derr_proton_only_700um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_proton_only_700um.png  used on input line 496.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_proton_only_1um.png, id=2533, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_proton_only_1um.png Graphic file (type png)
+<use Chapter8/Figs/derr_proton_only_1um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_proton_only_1um.png  used on input line 503.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+ [111] [112 <./Chapter8/Figs/derr_proton_delta_700um.png> <./Chapter8/Figs/derr_proton_delta_1um.png> <./Chapter8/Figs/derr_proton_only_700um.png> <./Chapter8/Figs/derr_proton_only_1um.png>]
+<Chapter8/Figs/derr_mu_delta_700um.png, id=2553, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_mu_delta_700um.png Graphic file (type png)
+<use Chapter8/Figs/derr_mu_delta_700um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_mu_delta_700um.png  used on input line 529.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_mu_delta_1um.png, id=2554, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_mu_delta_1um.png Graphic file (type png)
+<use Chapter8/Figs/derr_mu_delta_1um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_mu_delta_1um.png  used on input line 536.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_mu_only_700um.png, id=2555, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_mu_only_700um.png Graphic file (type png)
+<use Chapter8/Figs/derr_mu_only_700um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_mu_only_700um.png  used on input line 542.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+<Chapter8/Figs/derr_mu_only_1um.png, id=2556, 700.6175pt x 477.785pt>
+File: Chapter8/Figs/derr_mu_only_1um.png Graphic file (type png)
+<use Chapter8/Figs/derr_mu_only_1um.png>
+Package pdftex.def Info: Chapter8/Figs/derr_mu_only_1um.png  used on input line 549.
+(pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
+ [113 <./Chapter8/Figs/derr_mu_delta_700um.png> <./Chapter8/Figs/derr_mu_delta_1um.png> <./Chapter8/Figs/derr_mu_only_700um.png> <./Chapter8/Figs/derr_mu_only_1um.png>]
+<Chapter8/Figs/icarus_recomb.png, id=2562, 814.04124pt x 782.925pt>
+File: Chapter8/Figs/icarus_recomb.png Graphic file (type png)
+<use Chapter8/Figs/icarus_recomb.png>
+Package pdftex.def Info: Chapter8/Figs/icarus_recomb.png  used on input line 608.
+(pdftex.def)             Requested size: 218.73056pt x 210.36517pt.
+ [114 <./Chapter8/Figs/icarus_recomb.png>]) [115]
+\openout2 = `Chapter9/chapter9.aux'.
+
+ (./Chapter9/chapter9.tex [116
+
+
+
+]
+Chapter 9.
+[117]
+<Chapter9/Figs/hnl_2shw.png, id=2605, 783.92876pt x 268.00125pt>
+File: Chapter9/Figs/hnl_2shw.png Graphic file (type png)
+<use Chapter9/Figs/hnl_2shw.png>
+Package pdftex.def Info: Chapter9/Figs/hnl_2shw.png  used on input line 61.
+(pdftex.def)             Requested size: 371.84462pt x 127.12198pt.
+<Chapter9/Figs/hnl_1shw.png, id=2606, 785.93625pt x 270.00874pt>
+File: Chapter9/Figs/hnl_1shw.png Graphic file (type png)
+<use Chapter9/Figs/hnl_1shw.png>
+Package pdftex.def Info: Chapter9/Figs/hnl_1shw.png  used on input line 68.
+(pdftex.def)             Requested size: 371.84462pt x 127.74872pt.
+<Chapter9/Figs/ncpi0.png, id=2607, 785.93625pt x 269.005pt>
+File: Chapter9/Figs/ncpi0.png Graphic file (type png)
+<use Chapter9/Figs/ncpi0.png>
+Package pdftex.def Info: Chapter9/Figs/ncpi0.png  used on input line 80.
+(pdftex.def)             Requested size: 371.84462pt x 127.27382pt.
+ [118] [119 <./Chapter9/Figs/hnl_2shw.png> <./Chapter9/Figs/hnl_1shw.png> <./Chapter9/Figs/ncpi0.png>]
+<Chapter9/Figs/1m1p_cos.png, id=2627, 785.93625pt x 270.00874pt>
+File: Chapter9/Figs/1m1p_cos.png Graphic file (type png)
+<use Chapter9/Figs/1m1p_cos.png>
+Package pdftex.def Info: Chapter9/Figs/1m1p_cos.png  used on input line 113.
+(pdftex.def)             Requested size: 371.84462pt x 127.74872pt.
+ [120 <./Chapter9/Figs/1m1p_cos.png>] [121] [122] [123]
+<Chapter9/Figs/beamspill.png, id=2680, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beamspill.png Graphic file (type png)
+<use Chapter9/Figs/beamspill.png>
+Package pdftex.def Info: Chapter9/Figs/beamspill.png  used on input line 253.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_post_beamspill.png, id=2681, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_post_beamspill.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_post_beamspill.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_beamspill.png  used on input line 260.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [124 <./Chapter9/Figs/beamspill.png> <./Chapter9/Figs/beam_bucket_post_beamspill.png>]
+<Chapter9/Figs/crumbs_precut.png, id=2692, 505.89pt x 361.35pt>
+File: Chapter9/Figs/crumbs_precut.png Graphic file (type png)
+<use Chapter9/Figs/crumbs_precut.png>
+Package pdftex.def Info: Chapter9/Figs/crumbs_precut.png  used on input line 286.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_post_crumbs.png, id=2693, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_post_crumbs.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_post_crumbs.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_crumbs.png  used on input line 293.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [125 <./Chapter9/Figs/crumbs_precut.png> <./Chapter9/Figs/beam_bucket_post_crumbs.png>]
+<Chapter9/Figs/fv_precut.png, id=2706, 505.89pt x 361.35pt>
+File: Chapter9/Figs/fv_precut.png Graphic file (type png)
+<use Chapter9/Figs/fv_precut.png>
+Package pdftex.def Info: Chapter9/Figs/fv_precut.png  used on input line 337.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_post_fv.png, id=2707, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_post_fv.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_post_fv.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_fv.png  used on input line 344.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [126 <./Chapter9/Figs/fv_precut.png> <./Chapter9/Figs/beam_bucket_post_FV.png>]
+<Chapter9/Figs/nHits.png, id=2718, 505.89pt x 361.35pt>
+File: Chapter9/Figs/nHits.png Graphic file (type png)
+<use Chapter9/Figs/nHits.png>
+Package pdftex.def Info: Chapter9/Figs/nHits.png  used on input line 372.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postNhits.png, id=2719, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postNhits.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postNhits.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postNhits.png  used on input line 379.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [127 <./Chapter9/Figs/nHits.png> <./Chapter9/Figs/beam_bucket_postNhits.png>]
+<Chapter9/Figs/nrazzled_muon_precut.png, id=2733, 505.89pt x 361.35pt>
+File: Chapter9/Figs/nrazzled_muon_precut.png Graphic file (type png)
+<use Chapter9/Figs/nrazzled_muon_precut.png>
+Package pdftex.def Info: Chapter9/Figs/nrazzled_muon_precut.png  used on input line 408.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/razzled_muon_score_precut.png, id=2734, 505.89pt x 361.35pt>
+File: Chapter9/Figs/razzled_muon_score_precut.png Graphic file (type png)
+<use Chapter9/Figs/razzled_muon_score_precut.png>
+Package pdftex.def Info: Chapter9/Figs/razzled_muon_score_precut.png  used on input line 415.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postmuon.png, id=2735, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postmuon.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postmuon.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postmuon.png  used on input line 423.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [128 <./Chapter9/Figs/nrazzled_muon_precut.png> <./Chapter9/Figs/razzled_muon_score_precut.png> <./Chapter9/Figs/beam_bucket_postmuon.png>]
+<Chapter9/Figs/nrazzled_proton_precut.png, id=2749, 505.89pt x 361.35pt>
+File: Chapter9/Figs/nrazzled_proton_precut.png Graphic file (type png)
+<use Chapter9/Figs/nrazzled_proton_precut.png>
+Package pdftex.def Info: Chapter9/Figs/nrazzled_proton_precut.png  used on input line 472.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/razzled_proton_score_precut.png, id=2750, 505.89pt x 361.35pt>
+File: Chapter9/Figs/razzled_proton_score_precut.png Graphic file (type png)
+<use Chapter9/Figs/razzled_proton_score_precut.png>
+Package pdftex.def Info: Chapter9/Figs/razzled_proton_score_precut.png  used on input line 479.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/nrazzled_pion_precut.png, id=2751, 505.89pt x 361.35pt>
+File: Chapter9/Figs/nrazzled_pion_precut.png Graphic file (type png)
+<use Chapter9/Figs/nrazzled_pion_precut.png>
+Package pdftex.def Info: Chapter9/Figs/nrazzled_pion_precut.png  used on input line 486.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/razzled_pion_score_precut.png, id=2752, 505.89pt x 361.35pt>
+File: Chapter9/Figs/razzled_pion_score_precut.png Graphic file (type png)
+<use Chapter9/Figs/razzled_pion_score_precut.png>
+Package pdftex.def Info: Chapter9/Figs/razzled_pion_score_precut.png  used on input line 493.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postproton.png, id=2753, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postproton.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postproton.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postproton.png  used on input line 500.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postpion.png, id=2754, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postpion.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postpion.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postpion.png  used on input line 507.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [129] [130 <./Chapter9/Figs/nrazzled_proton_precut.png> <./Chapter9/Figs/razzled_proton_score_precut.png> <./Chapter9/Figs/nrazzled_pion_precut.png> <./Chapter9/Figs/razzled_pion_score_precut.png> <./Chapter9/Figs/beam_bucket_postproton.png> <./Chapter9/Figs/beam_bucket_postpion.png>]
+<Chapter9/Figs/razzled_electron_score_prim_shw_precut.png, id=2779, 505.89pt x 361.35pt>
+File: Chapter9/Figs/razzled_electron_score_prim_shw_precut.png Graphic file (type png)
+<use Chapter9/Figs/razzled_electron_score_prim_shw_precut.png>
+Package pdftex.def Info: Chapter9/Figs/razzled_electron_score_prim_shw_precut.png  used on input line 548.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postelectron.png, id=2780, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postelectron.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postelectron.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postelectron.png  used on input line 555.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [131 <./Chapter9/Figs/razzled_electron_score_prim_shw_precut.png> <./Chapter9/Figs/beam_bucket_postelectron.png>]
+<Chapter9/Figs/one_shw_track_score.png, id=2788, 505.89pt x 361.35pt>
+File: Chapter9/Figs/one_shw_track_score.png Graphic file (type png)
+<use Chapter9/Figs/one_shw_track_score.png>
+Package pdftex.def Info: Chapter9/Figs/one_shw_track_score.png  used on input line 586.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/two_shower_primary_track_score_precut.png, id=2789, 505.89pt x 361.35pt>
+File: Chapter9/Figs/two_shower_primary_track_score_precut.png Graphic file (type png)
+<use Chapter9/Figs/two_shower_primary_track_score_precut.png>
+Package pdftex.def Info: Chapter9/Figs/two_shower_primary_track_score_precut.png  used on input line 592.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postrackscore.png, id=2790, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postrackscore.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postrackscore.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postrackscore.png  used on input line 599.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [132]
+<Chapter9/Figs/opt0frac_one_shw_precut.png, id=2800, 505.89pt x 361.35pt>
+File: Chapter9/Figs/opt0frac_one_shw_precut.png Graphic file (type png)
+<use Chapter9/Figs/opt0frac_one_shw_precut.png>
+Package pdftex.def Info: Chapter9/Figs/opt0frac_one_shw_precut.png  used on input line 640.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/opt0frac_two_shw_precut.png, id=2801, 505.89pt x 361.35pt>
+File: Chapter9/Figs/opt0frac_two_shw_precut.png Graphic file (type png)
+<use Chapter9/Figs/opt0frac_two_shw_precut.png>
+Package pdftex.def Info: Chapter9/Figs/opt0frac_two_shw_precut.png  used on input line 646.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postopt0.png, id=2802, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postopt0.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postopt0.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postopt0.png  used on input line 653.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [133 <./Chapter9/Figs/one_shw_track_score.png> <./Chapter9/Figs/two_shower_primary_track_score_precut.png> <./Chapter9/Figs/beam_bucket_postrackscore.png>] [134 <./Chapter9/Figs/opt0frac_one_shw_precut.png> <./Chapter9/Figs/opt0frac_two_shw_precut.png> <./Chapter9/Figs/beam_bucket_postopt0.png>]
+<Chapter9/Figs/one_shower_theta_precut.png, id=2820, 505.89pt x 361.35pt>
+File: Chapter9/Figs/one_shower_theta_precut.png Graphic file (type png)
+<use Chapter9/Figs/one_shower_theta_precut.png>
+Package pdftex.def Info: Chapter9/Figs/one_shower_theta_precut.png  used on input line 682.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/two_shower_primary_theta_precut.png, id=2821, 505.89pt x 361.35pt>
+File: Chapter9/Figs/two_shower_primary_theta_precut.png Graphic file (type png)
+<use Chapter9/Figs/two_shower_primary_theta_precut.png>
+Package pdftex.def Info: Chapter9/Figs/two_shower_primary_theta_precut.png  used on input line 689.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/beam_bucket_postshowertheta.png, id=2822, 505.89pt x 361.35pt>
+File: Chapter9/Figs/beam_bucket_postshowertheta.png Graphic file (type png)
+<use Chapter9/Figs/beam_bucket_postshowertheta.png>
+Package pdftex.def Info: Chapter9/Figs/beam_bucket_postshowertheta.png  used on input line 697.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [135 <./Chapter9/Figs/one_shower_theta_precut.png> <./Chapter9/Figs/two_shower_primary_theta_precut.png> <./Chapter9/Figs/beam_bucket_postshowertheta.png>]
+<Chapter9/Figs/pizero_mass_precut.png, id=2834, 505.89pt x 361.35pt>
+File: Chapter9/Figs/pizero_mass_precut.png Graphic file (type png)
+<use Chapter9/Figs/pizero_mass_precut.png>
+Package pdftex.def Info: Chapter9/Figs/pizero_mass_precut.png  used on input line 739.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+ [136 <./Chapter9/Figs/pizero_mass_precut.png>]
+<Chapter9/Figs/bb_lenient_full.png, id=2847, 505.89pt x 361.35pt>
+File: Chapter9/Figs/bb_lenient_full.png Graphic file (type png)
+<use Chapter9/Figs/bb_lenient_full.png>
+Package pdftex.def Info: Chapter9/Figs/bb_lenient_full.png  used on input line 777.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/bb_stringent_full.png, id=2848, 505.89pt x 361.35pt>
+File: Chapter9/Figs/bb_stringent_full.png Graphic file (type png)
+<use Chapter9/Figs/bb_stringent_full.png>
+Package pdftex.def Info: Chapter9/Figs/bb_stringent_full.png  used on input line 784.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/bb_lenient_edge.png, id=2849, 505.89pt x 361.35pt>
+File: Chapter9/Figs/bb_lenient_edge.png Graphic file (type png)
+<use Chapter9/Figs/bb_lenient_edge.png>
+Package pdftex.def Info: Chapter9/Figs/bb_lenient_edge.png  used on input line 791.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/bb_stringent_edge.png, id=2850, 505.89pt x 361.35pt>
+File: Chapter9/Figs/bb_stringent_edge.png Graphic file (type png)
+<use Chapter9/Figs/bb_stringent_edge.png>
+Package pdftex.def Info: Chapter9/Figs/bb_stringent_edge.png  used on input line 798.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Chapter9/Figs/peff_band.png, id=2851, 867.24pt x 433.62pt>
+File: Chapter9/Figs/peff_band.png Graphic file (type png)
+<use Chapter9/Figs/peff_band.png>
+Package pdftex.def Info: Chapter9/Figs/peff_band.png  used on input line 809.
+(pdftex.def)             Requested size: 437.46112pt x 218.73486pt.
+ [137] [138 <./Chapter9/Figs/bb_lenient_full.png> <./Chapter9/Figs/bb_stringent_full.png> <./Chapter9/Figs/bb_lenient_edge.png> <./Chapter9/Figs/bb_stringent_edge.png> <./Chapter9/Figs/peff_band.png>]
+Overfull \hbox (6.34052pt too wide) in paragraph at lines 828--868
+ [] 
+ []
+
+<Chapter9/Figs/smearing_factors.png, id=2869, 1317.92375pt x 357.335pt>
+File: Chapter9/Figs/smearing_factors.png Graphic file (type png)
+<use Chapter9/Figs/smearing_factors.png>
+Package pdftex.def Info: Chapter9/Figs/smearing_factors.png  used on input line 886.
+(pdftex.def)             Requested size: 437.46112pt x 118.60793pt.
+[139 <./Chapter9/Figs/smearing_factors.png>] [140]
+<Chapter9/Figs/truth_reco_gaus.png, id=2888, 722.7pt x 289.08pt>
+File: Chapter9/Figs/truth_reco_gaus.png Graphic file (type png)
+<use Chapter9/Figs/truth_reco_gaus.png>
+Package pdftex.def Info: Chapter9/Figs/truth_reco_gaus.png  used on input line 918.
+(pdftex.def)             Requested size: 328.09584pt x 131.23605pt.
+ [141 <./Chapter9/Figs/truth_reco_gaus.png>]
+<Chapter9/Figs/truth_smear_reco_gaus.png, id=2900, 1084.05pt x 289.08pt>
+File: Chapter9/Figs/truth_smear_reco_gaus.png Graphic file (type png)
+<use Chapter9/Figs/truth_smear_reco_gaus.png>
+Package pdftex.def Info: Chapter9/Figs/truth_smear_reco_gaus.png  used on input line 950.
+(pdftex.def)             Requested size: 437.46112pt x 116.6577pt.
+ [142]
+<Chapter9/Figs/truth_smear_zoom.png, id=2908, 1368.0711pt x 466.8642pt>
+File: Chapter9/Figs/truth_smear_zoom.png Graphic file (type png)
+<use Chapter9/Figs/truth_smear_zoom.png>
+Package pdftex.def Info: Chapter9/Figs/truth_smear_zoom.png  used on input line 964.
+(pdftex.def)             Requested size: 437.46112pt x 149.28561pt.
+ [143 <./Chapter9/Figs/truth_smear_reco_gaus.png> <./Chapter9/Figs/truth_smear_zoom.png>]) [144]
+\openout2 = `Chapter10/chapter10.aux'.
+
+ (./Chapter10/chapter10.tex
+Chapter 10.
+[145
+
+
+
+] [146
+
+] [147] [148]
+<Chapter10/Figs/hnl_statistics_error.png, id=2972, 505.89pt x 361.35pt>
+File: Chapter10/Figs/hnl_statistics_error.png Graphic file (type png)
+<use Chapter10/Figs/hnl_statistics_error.png>
+Package pdftex.def Info: Chapter10/Figs/hnl_statistics_error.png  used on input line 148.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/hnl_mistagging_error.png, id=2973, 505.89pt x 361.35pt>
+File: Chapter10/Figs/hnl_mistagging_error.png Graphic file (type png)
+<use Chapter10/Figs/hnl_mistagging_error.png>
+Package pdftex.def Info: Chapter10/Figs/hnl_mistagging_error.png  used on input line 155.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/hnl_flux_error.png, id=2974, 505.89pt x 361.35pt>
+File: Chapter10/Figs/hnl_flux_error.png Graphic file (type png)
+<use Chapter10/Figs/hnl_flux_error.png>
+Package pdftex.def Info: Chapter10/Figs/hnl_flux_error.png  used on input line 162.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/hnl_error.png, id=2975, 505.89pt x 505.89pt>
+File: Chapter10/Figs/hnl_error.png Graphic file (type png)
+<use Chapter10/Figs/hnl_error.png>
+Package pdftex.def Info: Chapter10/Figs/hnl_error.png  used on input line 174.
+(pdftex.def)             Requested size: 218.73056pt x 218.73265pt.
+ [149] [150 <./Chapter10/Figs/hnl_statistics_error.png> <./Chapter10/Figs/hnl_mistagging_error.png> <./Chapter10/Figs/hnl_flux_error.png> <./Chapter10/Figs/hnl_error.png>] [151]
+<Chapter10/Figs/bkg_statistics_error.png, id=3009, 505.89pt x 361.35pt>
+File: Chapter10/Figs/bkg_statistics_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_statistics_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_statistics_error.png  used on input line 231.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/bkg_flx_error.png, id=3010, 505.89pt x 361.35pt>
+File: Chapter10/Figs/bkg_flx_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_flx_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_flx_error.png  used on input line 238.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/bkg_xsec_error.png, id=3011, 505.89pt x 361.35pt>
+File: Chapter10/Figs/bkg_xsec_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_xsec_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_xsec_error.png  used on input line 245.
+(pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
+<Chapter10/Figs/bkg_error.png, id=3012, 505.89pt x 505.89pt>
+File: Chapter10/Figs/bkg_error.png Graphic file (type png)
+<use Chapter10/Figs/bkg_error.png>
+Package pdftex.def Info: Chapter10/Figs/bkg_error.png  used on input line 257.
+(pdftex.def)             Requested size: 218.73056pt x 218.73265pt.
+ [152] [153 <./Chapter10/Figs/bkg_statistics_error.png> <./Chapter10/Figs/bkg_flx_error.png> <./Chapter10/Figs/bkg_xsec_error.png> <./Chapter10/Figs/bkg_error.png>] [154] [155] [156]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 417.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 417.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 417.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 417.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 417.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 417.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 417.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 417.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 417.
+
+[157]
+<Chapter10/Figs/asymtotic.png, id=3087, 433.62pt x 289.08pt>
+File: Chapter10/Figs/asymtotic.png Graphic file (type png)
+<use Chapter10/Figs/asymtotic.png>
+Package pdftex.def Info: Chapter10/Figs/asymtotic.png  used on input line 494.
+(pdftex.def)             Requested size: 284.34705pt x 189.57153pt.
+ [158] [159 <./Chapter10/Figs/asymtotic.png>]
+Overfull \vbox (9.13782pt too high) detected at line 542
+ []
+
+
+Overfull \hbox (7.58916pt too wide) in paragraph at lines 552--552
+ []\T1/futs/b/n/12 Background 
+ []
+
+
+Overfull \vbox (11.98282pt too high) detected at line 552
+ []
+
+[160]
+<Chapter10/Figs/relaxed_cut.png, id=3123, 505.89pt x 361.35pt>
+File: Chapter10/Figs/relaxed_cut.png Graphic file (type png)
+<use Chapter10/Figs/relaxed_cut.png>
+Package pdftex.def Info: Chapter10/Figs/relaxed_cut.png  used on input line 584.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+<Chapter10/Figs/relaxed_cut_edge.png, id=3124, 505.89pt x 361.35pt>
+File: Chapter10/Figs/relaxed_cut_edge.png Graphic file (type png)
+<use Chapter10/Figs/relaxed_cut_edge.png>
+Package pdftex.def Info: Chapter10/Figs/relaxed_cut_edge.png  used on input line 585.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+
+Overfull \hbox (1.884pt too wide) in paragraph at lines 584--586
+[][] [] 
+ []
+
+<Chapter10/Figs/strict_cut.png, id=3125, 505.89pt x 361.35pt>
+File: Chapter10/Figs/strict_cut.png Graphic file (type png)
+<use Chapter10/Figs/strict_cut.png>
+Package pdftex.def Info: Chapter10/Figs/strict_cut.png  used on input line 591.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+<Chapter10/Figs/strict_cut_edge.png, id=3126, 505.89pt x 361.35pt>
+File: Chapter10/Figs/strict_cut_edge.png Graphic file (type png)
+<use Chapter10/Figs/strict_cut_edge.png>
+Package pdftex.def Info: Chapter10/Figs/strict_cut_edge.png  used on input line 592.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+
+Overfull \hbox (1.884pt too wide) in paragraph at lines 591--593
+[][] [] 
+ []
+
+<Chapter10/Figs/smeared_truth.png, id=3127, 505.89pt x 361.35pt>
+File: Chapter10/Figs/smeared_truth.png Graphic file (type png)
+<use Chapter10/Figs/smeared_truth.png>
+Package pdftex.def Info: Chapter10/Figs/smeared_truth.png  used on input line 598.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+<Chapter10/Figs/smeared_truth_edge.png, id=3128, 505.89pt x 361.35pt>
+File: Chapter10/Figs/smeared_truth_edge.png Graphic file (type png)
+<use Chapter10/Figs/smeared_truth_edge.png>
+Package pdftex.def Info: Chapter10/Figs/smeared_truth_edge.png  used on input line 599.
+(pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
+
+Overfull \hbox (1.884pt too wide) in paragraph at lines 598--600
+[][] [] 
+ []
+
+<Chapter10/Figs/sensitivity_strict_loose.png, id=3133, 1011.78pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_strict_loose.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_strict_loose.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_loose.png  used on input line 627.
+(pdftex.def)             Requested size: 437.46112pt x 156.23761pt.
+[161] [162 <./Chapter10/Figs/relaxed_cut.png> <./Chapter10/Figs/relaxed_cut_edge.png> <./Chapter10/Figs/strict_cut.png> <./Chapter10/Figs/strict_cut_edge.png> <./Chapter10/Figs/smeared_truth.png> <./Chapter10/Figs/smeared_truth_edge.png>]
+<Chapter10/Figs/sensitivity_full_edge.png, id=3150, 1011.78pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_full_edge.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_full_edge.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_full_edge.png  used on input line 642.
+(pdftex.def)             Requested size: 437.46112pt x 156.23761pt.
+<Chapter10/Figs/sensitivity_strict_loose_truth.png, id=3154, 505.89pt x 361.35pt>
+File: Chapter10/Figs/sensitivity_strict_loose_truth.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity_strict_loose_truth.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_loose_truth.png  used on input line 659.
+(pdftex.def)             Requested size: 284.34705pt x 203.11pt.
+
+Overfull \vbox (16.85246pt too high) detected at line 677
+ []
+
+
+Overfull \vbox (16.85246pt too high) detected at line 687
+ []
+
+
+Overfull \vbox (16.85246pt too high) detected at line 697
+ []
+
+
+Overfull \hbox (12.43149pt too wide) in paragraph at lines 672--708
+ [] 
+ []
+
+[163 <./Chapter10/Figs/sensitivity_strict_loose.png>] [164 <./Chapter10/Figs/sensitivity_full_edge.png> <./Chapter10/Figs/sensitivity_strict_loose_truth.png>]
+<Chapter10/Figs/sensitivity.png, id=3175, 722.7pt x 433.62pt>
+File: Chapter10/Figs/sensitivity.png Graphic file (type png)
+<use Chapter10/Figs/sensitivity.png>
+Package pdftex.def Info: Chapter10/Figs/sensitivity.png  used on input line 724.
+(pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
+ [165] [166 <./Chapter10/Figs/sensitivity.png>]) [167]
+\openout2 = `Chapter11/chapter11.aux'.
+
+ (./Chapter11/chapter11.tex [168
+
+
+
+]
+Chapter 11.
+[169]) [170] [171] [172
+
+
+]
+Overfull \hbox (78.29346pt too wide) in paragraph at lines 202--202
+[]\T1/futs/m/n/12 (-20) L. Hein-rich et al., \T1/futs/m/it/12 (-20) pyhf: v0.7.6\T1/futs/m/n/12 (-20) , ver-sion 0.7.6, https://github.com/scikit-hep/pyhf/releases/tag/v0.7.6. 
+ []
+
+[173
+
+] [174] [175] [176]
+Overfull \hbox (18.52306pt too wide) in paragraph at lines 202--202
+[]\T1/futs/m/n/12 (-20) L. Alvarez-Ruso et al., ``NuSTEC White Pa-per: Sta-tus and chal-lenges of neu-trino^^Unucleus
+ []
+
+[177] [178] [179]
+\openout2 = `Appendix1/appendix1.aux'.
+
+ (./Appendix1/appendix1.tex [180
+
+
+]
+Appendix A.
+[181]
+<Appendix1/Figs/SBND_Trigger.png, id=3433, 1349.04pt x 777.90625pt>
+File: Appendix1/Figs/SBND_Trigger.png Graphic file (type png)
+<use Appendix1/Figs/SBND_Trigger.png>
+Package pdftex.def Info: Appendix1/Figs/SBND_Trigger.png  used on input line 46.
+(pdftex.def)             Requested size: 437.46112pt x 252.24678pt.
+) [182 <./Appendix1/Figs/SBND_Trigger.png>]
+\openout2 = `Appendix2/appendix2.aux'.
+
+ (./Appendix2/appendix2.tex
+Appendix B.
+[183
+
+
+
+]
+<Appendix2/Figs/Grafana.png, id=3450, 1250.6725pt x 464.73625pt>
+File: Appendix2/Figs/Grafana.png Graphic file (type png)
+<use Appendix2/Figs/Grafana.png>
+Package pdftex.def Info: Appendix2/Figs/Grafana.png  used on input line 39.
+(pdftex.def)             Requested size: 437.46112pt x 162.55374pt.
+<Appendix2/Figs/Minargon.png, id=3451, 1422.31375pt x 500.87125pt>
+File: Appendix2/Figs/Minargon.png Graphic file (type png)
+<use Appendix2/Figs/Minargon.png>
+Package pdftex.def Info: Appendix2/Figs/Minargon.png  used on input line 48.
+(pdftex.def)             Requested size: 437.46112pt x 154.05328pt.
+) [184 <./Appendix2/Figs/Grafana.png> <./Appendix2/Figs/Minargon.png>]
+\openout2 = `Appendix3/appendix3.aux'.
+
+ (./Appendix3/appendix3.tex
+Appendix C.
+<Appendix3/Figs/clock_dist.png, id=3458, 1115.16624pt x 412.54124pt>
+File: Appendix3/Figs/clock_dist.png Graphic file (type png)
+<use Appendix3/Figs/clock_dist.png>
+Package pdftex.def Info: Appendix3/Figs/clock_dist.png  used on input line 15.
+(pdftex.def)             Requested size: 437.46112pt x 161.82837pt.
+[185
+
+
+
+ <./Appendix3/Figs/clock_dist.png>]
+<Appendix3/Figs/pps_dist.png, id=3469, 1109.14375pt x 322.20375pt>
+File: Appendix3/Figs/pps_dist.png Graphic file (type png)
+<use Appendix3/Figs/pps_dist.png>
+Package pdftex.def Info: Appendix3/Figs/pps_dist.png  used on input line 40.
+(pdftex.def)             Requested size: 437.46112pt x 127.0798pt.
+) [186 <./Appendix3/Figs/pps_dist.png>]
+\openout2 = `Appendix4/appendix4.aux'.
+
+ (./Appendix4/appendix4.tex
+Appendix D.
+<Appendix4/Figs/m140.png, id=3475, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m140.png Graphic file (type png)
+<use Appendix4/Figs/m140.png>
+Package pdftex.def Info: Appendix4/Figs/m140.png  used on input line 14.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m160.png, id=3476, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m160.png Graphic file (type png)
+<use Appendix4/Figs/m160.png>
+Package pdftex.def Info: Appendix4/Figs/m160.png  used on input line 18.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m180.png, id=3477, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m180.png Graphic file (type png)
+<use Appendix4/Figs/m180.png>
+Package pdftex.def Info: Appendix4/Figs/m180.png  used on input line 22.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m200.png, id=3478, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m200.png Graphic file (type png)
+<use Appendix4/Figs/m200.png>
+Package pdftex.def Info: Appendix4/Figs/m200.png  used on input line 26.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m220.png, id=3479, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m220.png Graphic file (type png)
+<use Appendix4/Figs/m220.png>
+Package pdftex.def Info: Appendix4/Figs/m220.png  used on input line 36.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m240.png, id=3480, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m240.png Graphic file (type png)
+<use Appendix4/Figs/m240.png>
+Package pdftex.def Info: Appendix4/Figs/m240.png  used on input line 41.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix4/Figs/m260.png, id=3481, 505.89pt x 361.35pt>
+File: Appendix4/Figs/m260.png Graphic file (type png)
+<use Appendix4/Figs/m260.png>
+Package pdftex.def Info: Appendix4/Figs/m260.png  used on input line 46.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+) [187
+
+
+
+ <./Appendix4/Figs/m140.png> <./Appendix4/Figs/m160.png> <./Appendix4/Figs/m180.png> <./Appendix4/Figs/m200.png>] [188 <./Appendix4/Figs/m220.png> <./Appendix4/Figs/m240.png> <./Appendix4/Figs/m260.png>]
+\openout2 = `Appendix5/appendix5.aux'.
+
+ (./Appendix5/appendix5.tex
+Appendix E.
+<Appendix5/Figs/m140.png, id=3497, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m140.png Graphic file (type png)
+<use Appendix5/Figs/m140.png>
+Package pdftex.def Info: Appendix5/Figs/m140.png  used on input line 14.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m160.png, id=3498, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m160.png Graphic file (type png)
+<use Appendix5/Figs/m160.png>
+Package pdftex.def Info: Appendix5/Figs/m160.png  used on input line 18.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m180.png, id=3499, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m180.png Graphic file (type png)
+<use Appendix5/Figs/m180.png>
+Package pdftex.def Info: Appendix5/Figs/m180.png  used on input line 22.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m200.png, id=3500, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m200.png Graphic file (type png)
+<use Appendix5/Figs/m200.png>
+Package pdftex.def Info: Appendix5/Figs/m200.png  used on input line 26.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m220.png, id=3501, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m220.png Graphic file (type png)
+<use Appendix5/Figs/m220.png>
+Package pdftex.def Info: Appendix5/Figs/m220.png  used on input line 36.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m240.png, id=3502, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m240.png Graphic file (type png)
+<use Appendix5/Figs/m240.png>
+Package pdftex.def Info: Appendix5/Figs/m240.png  used on input line 41.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix5/Figs/m260.png, id=3503, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m260.png Graphic file (type png)
+<use Appendix5/Figs/m260.png>
+Package pdftex.def Info: Appendix5/Figs/m260.png  used on input line 46.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+) [189
+
+
+
+ <./Appendix5/Figs/m140.png> <./Appendix5/Figs/m160.png> <./Appendix5/Figs/m180.png> <./Appendix5/Figs/m200.png>] [190 <./Appendix5/Figs/m220.png> <./Appendix5/Figs/m240.png> <./Appendix5/Figs/m260.png>]
+\openout2 = `Appendix6/appendix6.aux'.
+
+ (./Appendix6/appendix6.tex
+Appendix F.
+<Appendix6/Figs/m140.png, id=3520, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m140.png Graphic file (type png)
+<use Appendix6/Figs/m140.png>
+Package pdftex.def Info: Appendix6/Figs/m140.png  used on input line 14.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m160.png, id=3521, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m160.png Graphic file (type png)
+<use Appendix6/Figs/m160.png>
+Package pdftex.def Info: Appendix6/Figs/m160.png  used on input line 18.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m180.png, id=3522, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m180.png Graphic file (type png)
+<use Appendix6/Figs/m180.png>
+Package pdftex.def Info: Appendix6/Figs/m180.png  used on input line 22.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m200.png, id=3523, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m200.png Graphic file (type png)
+<use Appendix6/Figs/m200.png>
+Package pdftex.def Info: Appendix6/Figs/m200.png  used on input line 26.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m220.png, id=3524, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m220.png Graphic file (type png)
+<use Appendix6/Figs/m220.png>
+Package pdftex.def Info: Appendix6/Figs/m220.png  used on input line 36.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m240.png, id=3525, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m240.png Graphic file (type png)
+<use Appendix6/Figs/m240.png>
+Package pdftex.def Info: Appendix6/Figs/m240.png  used on input line 41.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m260.png, id=3526, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m260.png Graphic file (type png)
+<use Appendix6/Figs/m260.png>
+Package pdftex.def Info: Appendix6/Figs/m260.png  used on input line 46.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+) [191
+
+
+
+] [192 <./Appendix6/Figs/m140.png> <./Appendix6/Figs/m160.png> <./Appendix6/Figs/m180.png> <./Appendix6/Figs/m200.png>] [193 <./Appendix6/Figs/m220.png> <./Appendix6/Figs/m240.png> <./Appendix6/Figs/m260.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+ (./thesis.aux (./Abstract/abstract.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux) (./Appendix4/appendix4.aux) (./Appendix5/appendix5.aux) (./Appendix6/appendix6.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 0E642110BA80356C510420CFE996402A;31752.
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 29876 strings out of 483065
+ 544891 string characters out of 5963550
+ 1781588 words of memory out of 5000000
+ 43193 multiletter control sequences out of 15000+600000
+ 683134 words of font info for 438 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 60i,15n,109p,1249b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (221 pages, 25250386 bytes).
+PDF statistics:
+ 3734 PDF objects out of 4296 (max. 8388607)
+ 2984 compressed objects within 30 object streams
+ 654 named destinations out of 1000 (max. 500000)
+ 60406 words of extra memory for PDF output out of 61914 (max. 10000000)
+

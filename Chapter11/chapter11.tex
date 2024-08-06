@@ -9,25 +9,28 @@
 %********************************** %First Section  **************************************
 
 This thesis presents the first assessment of the physics capabilities of the Short-Baseline Near Detector (SBND) to search for Heavy Neutral Leptons (HNLs) in the mass range of 140-260 MeV.
-This search for a right-handed heavy neutrino state is motivated to provide a mass mechanism for the left-handed SM neutrinos.
+This right-handed heavy neutrino state is motivated to provide a mass mechanism for the left-handed SM neutrinos.
 HNLs are hypothesised to be produced from the Booster Neutrino Beam (BNB) from meson decays and subsequently decay into SM observables inside SBND. 
-Due to having mass, the two exploitable features of HNLs are their boosted signal topologies and late arrival compared to SM neutrinos.
-Particularly, the late arrival of HNLs can be observed as an excess in the tails of the Gaussian-shaped neutrino beam bucket, which can be reconstructed with a resolution $\mathcal{O}$(2 ns) using the PhotoMultiplier Tubes (PMTs) as part of the Photon Detection System (PDS) of SBND.
+Due to having mass, the two exploitable features of HNLs are their boosted topologies and late arrival compared to SM neutrinos.
+Particularly, the late arrival of HNLs can be observed as an excess in the tails of the Gaussian-shaped neutrino beam bucket.
+The beam bucket can be reconstructed with a resolution $\mathcal{O}$(2 ns) using light signals from the PhotoMultiplier Tubes (PMTs), part of the Photon Detection System (PDS) of SBND.
 
 Towards this goal of achieving nanosecond resolution of SBND, developments in the scope of the timing performance of the Data AcQuisition (DAQ) were performed.
-An overview of the White Rabbit timing system was given, including the description of the SPEC-TDC as a precise timestamping device with a resolution of 700 ps to record important signals like beams and triggers.
+An overview of the White Rabbit timing system was given, including the description of the SPEC-TDC as a precise timestamping device with a resolution of 700 ps to record important signals, including beams and triggers.
 This additional timing information enables many high precision physics analyses.
-For instance, the SPEC-TDC was used to perform the timing characterisation of the readout electronics of the Cosmic Ray Taggers (CRTs), of which clock resolutions were determined to be $\mathcal{O}$(2 ns).
-Moreover, the SPEC-TDC was used to assess the timing synchronisation of the readout electronics of the PDS, which is vitally important to agree $\mathcal{O}$(1 ns) since PMT signals are used for timing reconstruction.
+For instance, the SPEC-TDC was used to perform the timing characterisation of the readout electronics of the Cosmic Ray Taggers (CRTs), of which their clock resolutions were determined to be $\mathcal{O}$(2 ns).
+Moreover, the SPEC-TDC was used to assess the timing synchronisation of the readout electronics of the PDS.
 This resulted in a clock scheme proposal and a correction method to synchronise multiple digitisers.
+It is a vitally important results since PMT signals are the key ingredients for timing reconstruction.
 
 Two selection workflows were additionally developed to identify di-photon showers resulting from HNLs while rejecting backgrounds from SM neutrinos and cosmic muons.
 One selection is more lenient while the other is more stringent in rejecting backgrounds more aggressively.
-Both selections result in a background rejection efficiency $\mathcal{O}(10^{-4})$ while still maintaining the signal efficiency at $\sim$30\%.
-If only bins at the edge of beam bucket distribution are considered, equivalent to the so-called \textit{timing cut}, the background efficiency increases by two orders of magnitude to $\mathcal{O}(10^{-6})$ while the signal efficiency only reduces to 10\%. 
-The timing cut demonstrates the importance of the edge bins having an exceptionally high signal-to-background ratio which is the driving factor for a competitive upper limit.
-This motivates a hypothetical question what if the beam bucket is reconstructed with a better timing resolution and its consequential improvement on the upper limits of HNLs?
-To answer this question, a truth study was also carried out with smearing applied as a pseudo-reconstruction. 
+Both selections result in a background efficiency $\mathcal{O}(10^{-4})$ while still maintaining the signal efficiency at $\sim$30\%.
+If only bins at the edge of beam bucket distribution are considered, equivalent to the so-called \textit{timing cut}, the background efficiency decreases by two orders of magnitude to $\mathcal{O}(10^{-6})$ while the signal efficiency only reduces to 10\%. 
+The timing cut demonstrates the importance of the edge bins having an exceptionally high signal-to-background ratio, which is the driving factor for a competitive sensitivity.
+This motivates an assessment of sensitivity assuming an improvement in timing reconstruction.
+An additional beam bucket distribution was acquired by smearing true variables with an assumption of a smaller Gaussian width.
+
 
 Finally, building upon the selection previously discussed, setting upper limits on the coupling $|U_{\mu4}|^2$ of HNLs at a confidence level of 90\% was performed on three sets of beam bucket distributions after selection on MC samples: (1) lenient, (2) stringent and (3) smeared truth.  
 It was found that the stringent beam bucket distribution results in a more competitive limit than the lenient distribution due to having background-free bins, however, the stringent limit suffers large statistical fluctuations.
@@ -38,9 +41,9 @@ The smeared truth beam bucket distribution led to the most competitive limits ou
 
 The first iteration of this analysis provides some guidelines applicable to future work.
 Firstly, detector systematics should be included in error propagation, with parameters that are impactful to physics measurement identified when SBND is operational.
-Secondly, due to the aggressiveness of the background rejection rate, the analysis should be performed on larger background MC samples, $\mathcal{O}$(10$^6$ events) compared to the present $\mathcal{
+Secondly, due to the aggressive background rejection, the analysis should be performed on larger background MC samples, $\mathcal{O}$(10$^6$ events) compared to the presented $\mathcal{
 O}$(10$^5$ events), to avoid statistical fluctuations.
-Finally, the results of the smeared truth motivate the need for a resolution improvement when reconstructing the beam bucket distribution.
+Finally, the results of the smeared truth distribution motivate the need for a resolution improvement when reconstructing the beam bucket distribution.
 The preparation work towards the nanosecond resolution has already begun with the DAQ readout electronics and the implementation of the SPEC-TDC for high precision timestamping.  
 A more sophisticated timing reconstruction can be developed incorporating the extra timing information of beam and trigger signals.
-This improvement will not only benefit the HNL analysis but any other analysis that exploits the Gaussian tails of the beam bucket to either look for a new signal or to reject cosmogenic backgrounds.
+This improvement will not only benefit the HNL analysis but any other analysis that exploits the Gaussian tails of the beam bucket to either look for a new signal or to reject cosmic backgrounds.

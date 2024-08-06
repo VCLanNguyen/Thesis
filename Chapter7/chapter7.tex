@@ -58,7 +58,7 @@ The first server contains 2 SVEC-FD modules, which are Fine Delay (FD) cards car
 The second server hosts a single SPEC-TDC module, a Time to Digital Converter (TDC) card carried by a Simple PCIe FMC Carrier (SPEC).
 The usage of SVEC-FD modules is discussed here, whilst the usage of the SPEC-TDC will be discussed in Sec. \ref{subsec42TimeRef} next.
 
-\begin{figure}[ht!] 
+\begin{figure}[b!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{time_transfer}
 \caption[White Rabbit Timing System Flow Chart]{
@@ -289,7 +289,15 @@ The CRT hit time T0 was reconstructed using the T0 timestamp whilst the CRT hit 
 Commonly, the timing reconstruction of CRT data only uses the CRT hit time T1 in reference to the beam.
 Here, the timing reconstruction using CRT hit time T0 instead is presented.
 
-\begin{figure}[b!]
+Firstly, the beam spill was reconstructed as shown in Fig. \ref{fig:topHat_T1} and \ref{fig:topHat_T0} using CRT hit time T1 and T0 respectively.
+The beam spill in Fig. \ref{fig:topHat_T1} was plotted directly using CRT hit time T1 since it is a reference to the BES signal.
+The plot shows a beam excess to the cosmic background, corresponding to the BNB beam arriving 333 $\mu$s after the BES signal and lasting for 1.6 $\mu$s.
+On the other hand, CRT hit time T0 is in the reference frame of the PPS and needs to be corrected to the beam arrival time to reconstruct the beam spill.
+The correction was done using BES signals recorded by the SPEC-TDC, of which the timestamps are also with respect to the PPS. %corrected for cable lengths.
+The beam spill structure acquired from this method shows a good agreement as shown in Fig. \ref{fig:topHat_T0}, where the same beam excess can be seen.
+It is important to note that the reconstruction of the beam spill only requires a resolution $\mathcal{O}$(1 $\mu$s), which is satisfied by both the T0 and T1 clock resolution $\mathcal{O}$(2 ns).
+
+\begin{figure}[hb!]
 \begin{subfigure}[h]{0.495\linewidth}
 \centering    
 \includegraphics[width=\linewidth]{CRT_T1_TopHat}
@@ -309,13 +317,6 @@ Beam spill reconstructed using (a) CRT hit time T1 and (b) CRT hit time T0 combi
 \label{fig:topHat}
 \end{figure}
 
-Firstly, the beam spill was reconstructed as shown in Fig. \ref{fig:topHat_T1} and \ref{fig:topHat_T0} using CRT hit time T1 and T0 respectively.
-The beam spill in Fig. \ref{fig:topHat_T1} was plotted directly using CRT hit time T1 since it is a reference to the BES signal.
-The plot shows a beam excess to the cosmic background, corresponding to the BNB beam arriving 333 $\mu$s after the BES signal and lasting for 1.6 $\mu$s.
-On the other hand, CRT hit time T0 is in the reference frame of the PPS and needs to be corrected to the beam arrival time to reconstruct the beam spill.
-The correction was done using BES signals recorded by the SPEC-TDC, of which the timestamps are also with respect to the PPS. %corrected for cable lengths.
-The beam spill structure acquired from this method shows a good agreement as shown in Fig. \ref{fig:topHat_T0}, where the same beam excess can be seen.
-It is important to note that the reconstruction of the beam spill only requires a resolution $\mathcal{O}$(1 $\mu$s), which is satisfied by both the T0 and T1 clock resolution $\mathcal{O}$(2 ns).
 
 %The resolution of the T0 and T1 clock were shown earlier to be $\mathcal{O}$(2 ns), surpassing the requirement.
 %Both methods are able to reconstruct the "top hat" shape of the beam spill and show good agreement with each other.
@@ -586,7 +587,7 @@ Therefore, a jittering correction was devised to account for clock jittering sce
 \end{subfigure}%
 
 \caption[Clock Jitterin Cases]{
-Plots showing (a) full digitised waveforms of trigger signals and (b) zoom into the rising edge.
+Digitised waveforms trigger signals, including (a) full waveforms and (b) zoom into the rising edge.
 }
 \label{fig:trig_wfm}
 \end{figure}
@@ -621,7 +622,7 @@ This is shown in the far right plot, where the difference between the rising edg
 \end{subfigure}%
 
 \caption[Clock Jitterin Cases]{
-Plots showing digitised waveforms of trigger signals zoom into the rising edge (a) before correction and (b) after correction.
+Digitised waveforms of trigger signals zoom into the rising edge (a) before correction and (b) after correction.
 }
 \label{fig:jitterCorr}
 \end{figure}
