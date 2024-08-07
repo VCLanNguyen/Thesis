@@ -47,7 +47,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Annual Review of Nuclear and Particle Science}
+      \field{journaltitle}{Annu. Rev. Nucl. Part. Sci.}
       \field{number}{1}
       \field{title}{{The Short-Baseline Neutrino Program at Fermilab}}
       \field{volume}{69}
@@ -526,7 +526,7 @@
       \field{issue}{7}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{4}
-      \field{title}{Neutrino flux prediction at MiniBooNE}
+      \field{title}{{Neutrino flux prediction at MiniBooNE}}
       \field{volume}{79}
       \field{year}{2009}
       \field{pages}{072002}
@@ -1751,7 +1751,7 @@
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{7}
       \field{number}{07}
       \field{title}{{Ionization electron signal processing in single phase LArTPCs. Part I. Algorithm Description and quantitative evaluation with MicroBooNE simulation}}
@@ -1802,8 +1802,8 @@
       \verb 1506.05348
       \endverb
     \endentry
-    \entry{pyhf}{software}{}
-      \name{author}{3}{}{%
+    \entry{pyhf_joss}{article}{}
+      \name{author}{4}{}{%
         {{hash=726ef4e14751301044bec503a5acda1e}{%
            family={Heinrich},
            familyi={H\bibinitperiod},
@@ -1819,29 +1819,40 @@
            familyi={S\bibinitperiod},
            given={Giordon},
            giveni={G\bibinitperiod}}}%
+        {{hash=0003024ea8011848862cbf896b544a27}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Journal}%
       }
       \strng{namehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{fullhash}{1b9fb92f1d43e979062bdc2f7a6548e0}
+      \strng{fullhash}{df4e94e46a2bedfc882a18238472d93d}
       \strng{bibnamehash}{cdf60499d5c8737aec353f373e48598e}
       \strng{authorbibnamehash}{cdf60499d5c8737aec353f373e48598e}
       \strng{authornamehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{authorfullhash}{1b9fb92f1d43e979062bdc2f7a6548e0}
-      \field{extraname}{1}
+      \strng{authorfullhash}{df4e94e46a2bedfc882a18238472d93d}
       \field{sortinit}{6}
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{https://github.com/scikit-hep/pyhf/releases/tag/v0.7.6}
-      \field{title}{{pyhf: v0.7.6}}
-      \field{version}{0.7.6}
+      \field{journaltitle}{JOSS}
+      \field{number}{58}
+      \field{title}{{pyhf: pure-Python implementation of HistFactory statistical models}}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{2823}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.5281/zenodo.1169739
+      \verb 10.21105/joss.02823
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.5281/zenodo.1169739
+      \verb https://doi.org/10.21105/joss.02823
       \endverb
       \verb{url}
-      \verb https://doi.org/10.5281/zenodo.1169739
+      \verb https://doi.org/10.21105/joss.02823
       \endverb
     \endentry
     \entry{asymptotic_test}{article}{}
@@ -1880,7 +1891,6 @@
       \field{eprintclass}{physics.data-an}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Eur. Phys. J. C}
-      \field{note}{[Erratum: Eur.Phys.J.C 73, 2501 (2013)]}
       \field{title}{{Asymptotic formulae for likelihood-based tests of new physics}}
       \field{volume}{71}
       \field{year}{2011}
@@ -1933,27 +1943,12 @@
            given={Alexander\bibnamedelima L.},
            giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=82517f0fca932d844556ec35c807c36a}{%
-           family={Whalley},
-           familyi={W\bibinitperiod},
-           given={M.\bibnamedelimi R.},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=a41cd02f762a897967d363baf1a68bde}{%
-           family={Lyons},
-           familyi={L\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-      }
       \strng{namehash}{4546957c0bdd56958007167adc7c5ae1}
       \strng{fullhash}{4546957c0bdd56958007167adc7c5ae1}
       \strng{bibnamehash}{4546957c0bdd56958007167adc7c5ae1}
       \strng{authorbibnamehash}{4546957c0bdd56958007167adc7c5ae1}
       \strng{authornamehash}{4546957c0bdd56958007167adc7c5ae1}
       \strng{authorfullhash}{4546957c0bdd56958007167adc7c5ae1}
-      \strng{editorbibnamehash}{f152c9a75d2a00da7e01601c263629d7}
-      \strng{editornamehash}{fca7907b0996f15fe08341afc0dd5a3e}
-      \strng{editorfullhash}{fca7907b0996f15fe08341afc0dd5a3e}
       \field{sortinit}{7}
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
@@ -1975,9 +1970,6 @@
            familyi={T\bibinitperiod},
            given={Mark},
            giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -2041,7 +2033,7 @@
            giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Oxford University Press, Incorporated}%
+        {Oxford University Press}%
       }
       \strng{namehash}{66f73ea8708391cab4ba8046b93bd3a4}
       \strng{fullhash}{66f73ea8708391cab4ba8046b93bd3a4}
@@ -2594,6 +2586,9 @@
       \field{month}{3}
       \field{title}{{White Paper on Light Sterile Neutrino Searches and Related Phenomenology}}
       \field{year}{2022}
+      \verb{doi}
+      \verb arXiv:2203.07323
+      \endverb
       \verb{eprint}
       \verb 2203.07323
       \endverb
@@ -2916,7 +2911,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Lett. B}
-      \field{note}{[Erratum: Phys.Lett.B 106, 513 (1981)]}
       \field{title}{{Search for an Admixture of Heavy Neutrino in Pion Decay}}
       \field{volume}{105}
       \field{year}{1981}
@@ -3230,7 +3224,7 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.49.1305
       \endverb
     \endentry
-    \entry{KEK3}{inproceedings}{}
+    \entry{KEK3}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -3240,32 +3234,17 @@
            given={T.},
            giveni={T\bibinitperiod}}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=8e544b338c93d652a84b44044acdb4eb}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2a5f90d6484b8ff73461f96d0574f17b}{%
-           family={Wieczorek},
-           familyi={W\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
       \strng{namehash}{2e5bb355eff903051c286c95efc4e8d6}
       \strng{fullhash}{2e5bb355eff903051c286c95efc4e8d6}
       \strng{bibnamehash}{2e5bb355eff903051c286c95efc4e8d6}
       \strng{authorbibnamehash}{2e5bb355eff903051c286c95efc4e8d6}
       \strng{authornamehash}{2e5bb355eff903051c286c95efc4e8d6}
       \strng{authorfullhash}{2e5bb355eff903051c286c95efc4e8d6}
-      \strng{editorbibnamehash}{efd47585d1674df393ccd987c916729b}
-      \strng{editornamehash}{0f317271d5d23fbd653bf194fb2fcd28}
-      \strng{editorfullhash}{0f317271d5d23fbd653bf194fb2fcd28}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Proc. of the 22nd International Conference on High Energy Physics}}
+      \field{journaltitle}{Conf. Proc. C}
       \field{title}{{Search for Heavy Neutrinos in Kaon Decay}}
       \field{volume}{840719}
       \field{year}{1984}
@@ -3296,7 +3275,6 @@
       \field{eprintclass}{hep-ex}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Phys. Rev. D}
-      \field{note}{[Erratum: Phys.Rev.D 91, 059903 (2015)]}
       \field{number}{5}
       \field{title}{{Search for heavy neutrinos in $K^+\to\mu^+\nu_H$ decays}}
       \field{volume}{91}
@@ -3465,7 +3443,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{A search to observe neutrino decays has been performed. Its results are used to set limits on the couplings of a hypothetical massive neutrino with the ordinary ve and vμ. An improvement of about two orders of magnitude is obtained over previous limits in a wide range of neutrino masses.}
       \field{issn}{0370-2693}
-      \field{journaltitle}{Physics Letters B}
+      \field{journaltitle}{Phys. Lett. B}
       \field{number}{4}
       \field{title}{{Search for neutrino decay}}
       \field{volume}{166}
@@ -3563,7 +3541,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Limits on leptonic mixing matrix elements are inferred from the results of a dedicated neutrino-decay search; an improvement of more than two orders of magnitude is achieved over previous results for a wide range of the neutrino mass.}
       \field{issn}{0370-2693}
-      \field{journaltitle}{Physics Letters B}
+      \field{journaltitle}{Phys. Lett. B}
       \field{number}{3}
       \field{title}{{Further limits on heavy neutrino couplings}}
       \field{volume}{203}
@@ -3614,7 +3592,7 @@
       \field{issue}{9}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{5}
-      \field{title}{Heavy neutral leptons below the kaon mass at hodoscopic neutrino detectors}
+      \field{title}{{Heavy neutral leptons below the kaon mass at hodoscopic neutrino detectors}}
       \field{volume}{105}
       \field{year}{2022}
       \field{pages}{095006}
@@ -3801,34 +3779,45 @@
       \field{collaboration}{MicroBooNE}
       \field{eprintclass}{hep-ex}
       \field{eprinttype}{arXiv}
-      \field{month}{10}
-      \field{title}{{Search for heavy neutral leptons in electron-positron and neutral-pion final states with the MicroBooNE detector}}
-      \field{year}{2023}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{number}{4}
+      \field{title}{{Search for Heavy Neutral Leptons in Electron-Positron and Neutral-Pion Final States with the MicroBooNE Detector}}
+      \field{volume}{132}
+      \field{year}{2024}
+      \field{pages}{041801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.132.041801
+      \endverb
       \verb{eprint}
       \verb 2310.07660
       \endverb
     \endentry
-    \entry{Rubbia}{article}{}
+    \entry{Rubbia}{report}{}
       \name{author}{1}{}{%
-        {{hash=f49c34855fb8033b24cf737720d45c11}{%
+        {{hash=ef72813d65a25e2225225cb44781da92}{%
            family={Rubbia},
            familyi={R\bibinitperiod},
-           given={C.},
+           given={Carlo},
            giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{f49c34855fb8033b24cf737720d45c11}
-      \strng{fullhash}{f49c34855fb8033b24cf737720d45c11}
-      \strng{bibnamehash}{f49c34855fb8033b24cf737720d45c11}
-      \strng{authorbibnamehash}{f49c34855fb8033b24cf737720d45c11}
-      \strng{authornamehash}{f49c34855fb8033b24cf737720d45c11}
-      \strng{authorfullhash}{f49c34855fb8033b24cf737720d45c11}
+      \strng{namehash}{ef72813d65a25e2225225cb44781da92}
+      \strng{fullhash}{ef72813d65a25e2225225cb44781da92}
+      \strng{bibnamehash}{ef72813d65a25e2225225cb44781da92}
+      \strng{authorbibnamehash}{ef72813d65a25e2225225cb44781da92}
+      \strng{authornamehash}{ef72813d65a25e2225225cb44781da92}
+      \strng{authorfullhash}{ef72813d65a25e2225225cb44781da92}
       \field{sortinit}{6}
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{5}
-      \field{title}{{The Liquid Argon Time Projection Chamber: A New Concept for Neutrino Detectors}}
+      \field{note}{CERN-EP-INT-77-8}
+      \field{title}{{The liquid-argon time projection chamber: a new concept for neutrino detectors}}
+      \field{type}{techreport}
       \field{year}{1977}
+      \verb{doi}
+      \verb https://cds.cern.ch/record/117852
+      \endverb
     \endentry
     \entry{Nygren1}{article}{}
       \name{author}{2}{}{%
@@ -3882,8 +3871,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
-      \field{note}{Advances in Instrumentation and Experimental Methods (Special Issue in Honour of Kai Siegbahn)}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
       \field{title}{{Origin and development of the TPC idea}}
       \field{volume}{907}
       \field{year}{2018}
@@ -3905,8 +3893,8 @@
         {{hash=9b685f33566c0258cb6b5388e80930ca}{%
            family={Willis},
            familyi={W\bibinitperiod},
-           given={W.J.},
-           giveni={W\bibinitperiod}}}%
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=ad39ae25679d426a0837c9f3a7f5829a}{%
            family={Radeka},
            familyi={R\bibinitperiod},
@@ -3923,22 +3911,14 @@
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0029-554X}
-      \field{journaltitle}{Nuclear Instruments and Methods}
-      \field{number}{2}
-      \field{title}{{Liquid-argon ionization chambers as total-absorption detectors}}
+      \field{journaltitle}{Nucl. Instrum. Meth.}
+      \field{title}{{Liquid Argon Ionization Chambers as Total Absorption Detectors}}
       \field{volume}{120}
       \field{year}{1974}
       \field{pages}{221\bibrangedash 236}
       \range{pages}{16}
       \verb{doi}
-      \verb https://doi.org/10.1016/0029-554X(74)90039-1
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/0029554X74900391
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/0029554X74900391
+      \verb 10.1016/0029-554X(74)90039-1
       \endverb
     \endentry
     \entry{ubooneDet}{article}{}
@@ -5157,7 +5137,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes the design and construction of the MicroBooNE liquid argon time projection chamber and associated systems. MicroBooNE is the first phase of the Short Baseline Neutrino program, located at Fermilab, and will utilize the capabilities of liquid argon detectors to examine a rich assortment of physics topics. In this document details of design specifications, assembly procedures, and acceptance tests are reported.}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{2}
       \field{number}{02}
       \field{title}{{Design and construction of the MicroBooNE detector}}
@@ -5269,7 +5249,7 @@
       \field{type}{phdthesis}
       \field{year}{2021}
     \endentry
-    \entry{ubooneEtime}{article}{}
+    \entry{ubooneEtime}{report}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -5291,8 +5271,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{MicroBooNE,}
-      \field{month}{8}
+      \field{note}{FERMILAB-MICROBOONE-NOTE-1026-PUB}
       \field{title}{{A Measurement of the Attenuation of Drifting Electrons in the MicroBooNE LArTPC}}
+      \field{type}{techreport}
       \field{year}{2017}
       \verb{doi}
       \verb 10.2172/1573054
@@ -5327,7 +5308,7 @@
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{The European Physical Journal C - Particles and Fields}
+      \field{journaltitle}{Eur. Phys. J. C}
       \field{title}{{Passage of particles through matter}}
       \field{volume}{15}
       \field{year}{2000}
@@ -5546,7 +5527,7 @@
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{10}
       \field{number}{10}
       \field{title}{{The ArgoNeuT detector in the NuMI low-energy beam line at Fermilab}}
@@ -6525,7 +6506,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{{MicroBooNE}}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{2}
       \field{number}{02}
       \field{title}{{Reconstruction and measurement of $\mathcal{O}$(100) MeV energy electromagnetic activity from $\pi_0 \rightarrow \gamma \gamma$ decays in the MicroBooNE LArTPC}}
@@ -6916,7 +6897,7 @@
       \field{issue}{1}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{1}
-      \field{title}{Calorimetry for low-energy electrons using charge and light in liquid argon}
+      \field{title}{{Calorimetry for low-energy electrons using charge and light in liquid argon}}
       \field{volume}{101}
       \field{year}{2020}
       \field{pages}{012010}
@@ -6980,7 +6961,7 @@
       \field{issue}{9}
       \field{journaltitle}{Phys. Rev. B}
       \field{month}{5}
-      \field{title}{Effect of ionization density on the time dependence of luminescence from liquid argon and xenon}
+      \field{title}{{Effect of ionization density on the time dependence of luminescence from liquid argon and xenon}}
       \field{volume}{27}
       \field{year}{1983}
       \field{pages}{5279\bibrangedash 5285}
@@ -7262,7 +7243,7 @@
       \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{8}
       \field{number}{08}
       \field{title}{{A study of electron recombination using highly ionizing particles in the ArgoNeuT Liquid Argon TPC}}
@@ -7319,7 +7300,7 @@
       \field{issue}{8}
       \field{journaltitle}{Phys. Rev. B}
       \field{month}{10}
-      \field{title}{Dynamical behavior of free electrons in the recombination process in liquid argon, krypton, and xenon}
+      \field{title}{{Dynamical behavior of free electrons in the recombination process in liquid argon, krypton, and xenon}}
       \field{volume}{20}
       \field{year}{1979}
       \field{pages}{3486\bibrangedash 3496}
@@ -7408,8 +7389,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
-      \field{title}{Measurement of longitudinal electron diffusion in liquid argon}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
+      \field{title}{{Measurement of longitudinal electron diffusion in liquid argon}}
       \field{volume}{816}
       \field{year}{2016}
       \field{pages}{160\bibrangedash 170}
@@ -8353,7 +8334,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{MicroBooNE}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{9}
       \field{number}{09}
       \field{title}{{Measurement of the longitudinal diffusion of ionization electrons in the MicroBooNE detector}}
@@ -13396,7 +13377,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{12}
       \field{number}{12}
       \field{title}{{First results on ProtoDUNE-SP liquid argon time projection chamber performance from a beam test at the CERN Neutrino Platform}}
@@ -13667,7 +13648,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{7}
       \field{number}{07}
       \field{title}{{Study of space charge in the ICARUS T600 detector}}
@@ -13685,35 +13666,7 @@
       \verb https://dx.doi.org/10.1088/1748-0221/15/07/P07001
       \endverb
     \endentry
-    \entry{SCE}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=64b34518a1528cff58bf685752f1b4f2}{%
-           family={Mooney},
-           familyi={M\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{64b34518a1528cff58bf685752f1b4f2}
-      \strng{fullhash}{64b34518a1528cff58bf685752f1b4f2}
-      \strng{bibnamehash}{64b34518a1528cff58bf685752f1b4f2}
-      \strng{authorbibnamehash}{64b34518a1528cff58bf685752f1b4f2}
-      \strng{authornamehash}{64b34518a1528cff58bf685752f1b4f2}
-      \strng{authorfullhash}{64b34518a1528cff58bf685752f1b4f2}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{Meeting of the APS Division of Particles and Fields}}
-      \field{eprintclass}{physics.ins-det}
-      \field{eprinttype}{arXiv}
-      \field{month}{11}
-      \field{title}{{The MicroBooNE Experiment and the Impact of Space Charge Effects}}
-      \field{year}{2015}
-      \verb{eprint}
-      \verb 1511.01563
-      \endverb
-    \endentry
-    \entry{sbnd_pds_paper}{article}{}
+    \entry{SCE}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -13734,10 +13687,49 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{collaboration}{MicroBooNE}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JINST}
+      \field{number}{12}
+      \field{title}{{Measurement of space charge effects in the MicroBooNE LArTPC using cosmic muons}}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{P12037}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/15/12/P12037
+      \endverb
+      \verb{eprint}
+      \verb 2008.09765
+      \endverb
+    \endentry
+    \entry{sbnd_pds_paper}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{collaboration}{SBND}
       \field{eprintclass}{physics.ins-det}
       \field{eprinttype}{arXiv}
       \field{month}{6}
+      \field{note}{[Eur. Phys. J. C (to be published)]}
       \field{title}{{Scintillation Light in SBND: Simulation, Reconstruction, and Expected Performance of the Photon Detection System}}
       \field{year}{2024}
       \verb{eprint}
@@ -13865,7 +13857,6 @@
       \field{eprintclass}{physics.ins-det}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{JINST}
-      \field{note}{[Erratum: JINST 8, E09001 (2013)]}
       \field{title}{{A Measurement of the Absorption of Liquid Argon Scintillation Light by Dissolved Nitrogen at the Part-Per-Million Level}}
       \field{volume}{8}
       \field{year}{2013}
@@ -14183,10 +14174,10 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{5}
       \field{number}{05}
-      \field{title}{First liquid argon test of the X-ARAPUCA}
+      \field{title}{{First liquid argon test of the X-ARAPUCA}}
       \field{volume}{15}
       \field{year}{2020}
       \field{pages}{C05045}
@@ -14602,7 +14593,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0370-2693}
-      \field{journaltitle}{Physics Letters B}
+      \field{journaltitle}{Phys. Lett. B}
       \field{number}{1}
       \field{title}{{GALLEX solar neutrino observations: results for GALLEX IV}}
       \field{volume}{447}
@@ -14654,163 +14645,41 @@
       \endverb
     \endentry
     \entry{NuSTECWhitePaper}{article}{}
-      \name{author}{25}{}{%
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
         {{hash=51897ae9f1abbfea4cd65ecfc754833f}{%
            family={Alvarez-Ruso},
            familyi={A\bibinithyphendelim R\bibinitperiod},
            given={L.},
            giveni={L\bibinitperiod}}}%
-        {{hash=3202a7cba745587de54ac16ecabd8e3f}{%
-           family={Athar},
-           familyi={A\bibinitperiod},
-           given={M.\bibnamedelimi Sajjad},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=b3fb93a7ff94565959d876e2c198447c}{%
-           family={Barbaro},
-           familyi={B\bibinitperiod},
-           given={M.B.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=1b383e8788c96a78248e903280083926}{%
-           family={Cherdack},
-           familyi={C\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=79099f7b83de98ead4520234464f6562}{%
-           family={Christy},
-           familyi={C\bibinitperiod},
-           given={M.E.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=99a8517af04154254cc0061955dbee10}{%
-           family={Coloma},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e4cd0d614dfd0189898bf1960f66c19c}{%
-           family={Donnelly},
-           familyi={D\bibinitperiod},
-           given={T.W.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=9018f2b6a0af599cb55d8eef0b8bdf5b}{%
-           family={Dytman},
-           familyi={D\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b1295ffa0333eca0cec14147ab5ecec0}{%
-           family={Gouvêa},
-           familyi={G\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=e2bf3488bb5217edfb09a0cee01bf1a4}{%
-           family={Hill},
-           familyi={H\bibinitperiod},
-           given={R.J.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=1ba21057b04ad3684df5082b4daac92c}{%
-           family={Huber},
-           familyi={H\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=14f32060329392b15a28e45e822b3a4e}{%
-           family={Jachowicz},
-           familyi={J\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod}}}%
-        {{hash=649f8b8970a5d2c70f56ab3f4379ebb4}{%
-           family={Katori},
-           familyi={K\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=047d1436fb78794cedc270f803fc7dca}{%
-           family={Kronfeld},
-           familyi={K\bibinitperiod},
-           given={A.S.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f8e106dabf1b9e08f6daec5d1da8897e}{%
-           family={Mahn},
-           familyi={M\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=89ba584ca6afe0e3c9d37804b8f0e7d3}{%
-           family={Martini},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c994f84e33054e30721a786dae1991b9}{%
-           family={Morfín},
-           familyi={M\bibinitperiod},
-           given={J.G.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8c6ebd57689ec276edf666941f924e9e}{%
-           family={Nieves},
-           familyi={N\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=1ea3d8d6afa7ba5ef1e3e1425aad16bf}{%
-           family={Perdue},
-           familyi={P\bibinitperiod},
-           given={G.N.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=e31fde5cf3d01d08eb46573c0f23191f}{%
-           family={Petti},
-           familyi={P\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=532c926ec533db1d366106bcae39e2eb}{%
-           family={Richards},
-           familyi={R\bibinitperiod},
-           given={D.G.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=17a68d61e96b9cd7b1d9b64d61b8b53f}{%
-           family={Sánchez},
-           familyi={S\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=ca8df0535bc96db6c2cb72a627f3b5ed}{%
-           family={Sato},
-           familyi={S\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=a371e084517e272e045ac5255951d80f}{%
-           family={Sobczyk},
-           familyi={S\bibinitperiod},
-           given={J.T.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=834b4ee4708fb98df856963d25c25e4e}{%
-           family={Zeller},
-           familyi={Z\bibinitperiod},
-           given={G.P.},
-           giveni={G\bibinitperiod}}}%
       }
       \strng{namehash}{7782957fa65f3e2f26594c4c3d018aa7}
-      \strng{fullhash}{993e1ba9d67c21aff2220d7e562af2bf}
+      \strng{fullhash}{7782957fa65f3e2f26594c4c3d018aa7}
       \strng{bibnamehash}{7782957fa65f3e2f26594c4c3d018aa7}
       \strng{authorbibnamehash}{7782957fa65f3e2f26594c4c3d018aa7}
       \strng{authornamehash}{7782957fa65f3e2f26594c4c3d018aa7}
-      \strng{authorfullhash}{993e1ba9d67c21aff2220d7e562af2bf}
+      \strng{authorfullhash}{7782957fa65f3e2f26594c4c3d018aa7}
       \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0146-6410}
-      \field{journaltitle}{Progress in Particle and Nuclear Physics}
-      \field{title}{{NuSTEC White Paper: Status and challenges of neutrino–nucleus scattering}}
+      \field{collaboration}{NuSTEC}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Prog. Part. Nucl. Phys.}
+      \field{title}{{NuSTEC White Paper: Status and challenges of neutrino–{}nucleus scattering}}
       \field{volume}{100}
       \field{year}{2018}
       \field{pages}{1\bibrangedash 68}
       \range{pages}{68}
       \verb{doi}
-      \verb https://doi.org/10.1016/j.ppnp.2018.01.006
+      \verb 10.1016/j.ppnp.2018.01.006
       \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0146641018300061
+      \verb{eprint}
+      \verb 1706.03621
       \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0146641018300061
-      \endverb
-      \keyw{Neutrino,Nucleus,Scattering,Nuclear,Model,Oscillations}
     \endentry
     \entry{LightDarkMatter}{article}{}
       \name{author}{3}{}{%
@@ -14896,8 +14765,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0370-2693}
-      \field{journaltitle}{Physics Letters B}
-      \field{title}{Neutrino masses and mixings dynamically generated by a light dark sector}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Neutrino masses and mixings dynamically generated by a light dark sector}}
       \field{volume}{791}
       \field{year}{2019}
       \field{pages}{210\bibrangedash 214}
@@ -14995,6 +14864,9 @@
       \field{month}{3}
       \field{title}{{A Proposal for a Three Detector Short-Baseline Neutrino Oscillation Program in the Fermilab Booster Neutrino Beam}}
       \field{year}{2015}
+      \verb{doi}
+      \verb arXiv:1503.01520
+      \endverb
       \verb{eprint}
       \verb 1503.01520
       \endverb
@@ -16001,7 +15873,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{6}
       \field{number}{06}
       \field{title}{{Construction of precision wire readout planes for the Short-Baseline Near Detector (SBND)}}
@@ -16050,7 +15922,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Meeting of the Division of Particles and Fields of the American Physical Society}}
+      \field{booktitle}{{APS DPF Meeting}}
       \field{collaboration}{SBND}
       \field{eprintclass}{physics.ins-det}
       \field{eprinttype}{arXiv}
@@ -16105,7 +15977,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{{SBND Collaboration}}
+      \field{collaboration}{{SBND}}
       \field{title}{{SBND CRT Technical Note}}
       \field{type}{techreport}
       \field{year}{2016}
@@ -16128,7 +16000,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{CPAD Workshop 2022}}
+      \field{booktitle}{{CPAD Workshop}}
       \field{title}{{Capabilities of the SBND Trigger System}}
       \field{year}{2022}
       \verb{urlraw}
@@ -16138,7 +16010,7 @@
       \verb https://www.stonybrook.edu/cfns/cpad2022/
       \endverb
     \endentry
-    \entry{artdaq_note}{article}{}
+    \entry{artdaq_note}{inproceedings}{}
       \name{author}{10}{}{%
         {{hash=e874b535c7c886bbd3370b2226bbe00a}{%
            family={Biery},
@@ -16201,17 +16073,13 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{booktitle}{{IEEE Real Time Conference}}
+      \field{eprintclass}{physics.ins-det}
       \field{eprinttype}{arXiv}
       \field{title}{{Flexible and Scalable Data-Acquisition Using the artdaq Toolkit}}
       \field{year}{2018}
       \verb{eprint}
       \verb 1806.07250
-      \endverb
-      \verb{urlraw}
-      \verb https://www.osti.gov/biblio/1460789
-      \endverb
-      \verb{url}
-      \verb https://www.osti.gov/biblio/1460789
       \endverb
     \endentry
     \entry{BNBMiniBooNE}{article}{}
@@ -16658,9 +16526,6 @@
            given={M.},
            giveni={M\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {Fermilab}%
-      }
       \strng{namehash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
       \strng{fullhash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
       \strng{bibnamehash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
@@ -16672,7 +16537,6 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{11}
       \field{title}{{Measuring the Bunch Length of the Booster Neutrino Beamline Beam}}
       \field{type}{techreport}
       \field{year}{2015}
@@ -16685,9 +16549,6 @@
            given={M.},
            giveni={M\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {Fermilab}%
-      }
       \strng{namehash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
       \strng{fullhash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
       \strng{bibnamehash}{45bbff8c526b6b1786d5e8de9ad6f8c9}
@@ -16699,7 +16560,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{11}
+      \field{note}{{FERMILAB-TM-2556-AD}}
       \field{title}{{MiniBooNE Resistive Wall Current Monitor}}
       \field{type}{techreport}
       \field{year}{2015}
@@ -16713,7 +16574,7 @@
            giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {Columbia U.}%
+        {Columbia University}%
       }
       \strng{namehash}{2b4822b2ff1889b3db5a4c4834ce911e}
       \strng{fullhash}{2b4822b2ff1889b3db5a4c4834ce911e}
@@ -16745,27 +16606,12 @@
            given={G.},
            giveni={G\bibinitperiod}}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=976d120e41ea84bdd33a5b1d9794f643}{%
-           family={Mount},
-           familyi={M\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod}}}%
-        {{hash=5a24661292b2237c7196c306ffb45608}{%
-           family={Tull},
-           familyi={T\bibinitperiod},
-           given={Craig},
-           giveni={C\bibinitperiod}}}%
-      }
       \strng{namehash}{854b3243d57e097727209fd098d999d7}
       \strng{fullhash}{854b3243d57e097727209fd098d999d7}
       \strng{bibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
       \strng{authorbibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
       \strng{authornamehash}{854b3243d57e097727209fd098d999d7}
       \strng{authorfullhash}{854b3243d57e097727209fd098d999d7}
-      \strng{editorbibnamehash}{a4afb58528a0208c29fe4774cbd8315b}
-      \strng{editornamehash}{ec10f565605beca4636707a931cd2370}
-      \strng{editorfullhash}{ec10f565605beca4636707a931cd2370}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
@@ -17430,7 +17276,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
       \field{number}{3}
       \field{title}{{Geant4—a simulation toolkit}}
       \field{volume}{506}
@@ -17474,6 +17320,9 @@
       \field{month}{5}
       \field{title}{{Higgs-field portal into hidden sectors}}
       \field{year}{2006}
+      \verb{doi}
+      \verb arXiv:0605188
+      \endverb
       \verb{eprint}
       \verb hep-ph/0605188
       \endverb
@@ -17502,7 +17351,7 @@
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. Lett.}
       \field{month}{1}
-      \field{title}{A New Light Boson?}
+      \field{title}{{A New Light Boson?}}
       \field{volume}{40}
       \field{year}{1978}
       \field{pages}{223\bibrangedash 226}
@@ -17583,30 +17432,30 @@
       \verb 2106.09381
       \endverb
     \endentry
-    \entry{corsika}{book}{}
+    \entry{corsika}{report}{}
       \name{author}{5}{}{%
         {{hash=af5e95eba18d2fb9b0e58d606b26abe9}{%
-           family={{Heck}},
+           family={Heck},
            familyi={H\bibinitperiod},
            given={D.},
            giveni={D\bibinitperiod}}}%
         {{hash=f959e9882e2d49a04fa4a6a59a995ac6}{%
-           family={{Knapp}},
+           family={Knapp},
            familyi={K\bibinitperiod},
            given={J.},
            giveni={J\bibinitperiod}}}%
         {{hash=046d4e46be6194f893544f59ec89198d}{%
-           family={{Capdevielle}},
+           family={Capdevielle},
            familyi={C\bibinitperiod},
            given={J.\bibnamedelimi N.},
            giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
         {{hash=3d718d3b4788491f30523e47bc5d4382}{%
-           family={{Schatz}},
+           family={Schatz},
            familyi={S\bibinitperiod},
            given={G.},
            giveni={G\bibinitperiod}}}%
         {{hash=e3bb56da99517c628608d7df3fe1018e}{%
-           family={{Thouw}},
+           family={Thouw},
            familyi={T\bibinitperiod},
            given={T.},
            giveni={T\bibinitperiod}}}%
@@ -17621,7 +17470,9 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{CORSIKA: a Monte Carlo code to simulate extensive air showers.}}
+      \field{note}{FZKA-6019}
+      \field{title}{{CORSIKA: A Monte Carlo code to simulate extensive air showers}}
+      \field{type}{techreport}
       \field{year}{1998}
     \endentry
     \entry{genie_tune}{article}{}
@@ -17774,21 +17625,9 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevD.106.112001
       \endverb
     \endentry
-    \entry{genie_tune_github}{article}{}
-      \name{author}{1}{}{%
-        {{hash=49c726e2981e9867b826d5b1d5ffa303}{%
-           family={GENIE},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{49c726e2981e9867b826d5b1d5ffa303}
-      \strng{fullhash}{49c726e2981e9867b826d5b1d5ffa303}
-      \strng{bibnamehash}{49c726e2981e9867b826d5b1d5ffa303}
-      \strng{authorbibnamehash}{49c726e2981e9867b826d5b1d5ffa303}
-      \strng{authornamehash}{49c726e2981e9867b826d5b1d5ffa303}
-      \strng{authorfullhash}{49c726e2981e9867b826d5b1d5ffa303}
+    \entry{genie_tune_github}{online}{}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Visited 06/05/2024}
       \field{title}{{Liquid Argon Experiment tune}}
@@ -17799,52 +17638,59 @@
       \verb https://github.com/GENIE-MC/Generator/tree/master/config/AR23_20i
       \endverb
     \endentry
-    \entry{geant4_ions}{article}{}
+    \entry{geant4_ions}{report}{}
       \name{author}{6}{}{%
-        {{hash=4d7ffcb587ca0fd799a036d806b40600}{%
-           family={Giani},
-           familyi={G\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
         {{hash=9ff6ec936978b82af5d26134989ebbf6}{%
            family={Ivanchenko},
            familyi={I\bibinitperiod},
-           given={V.\bibnamedelimi N.},
+           given={V\bibnamedelima N},
            giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=a8ab6211a9d8a1c34420abded40e917f}{%
-           family={Mancinelli},
-           familyi={M\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4bf3129dcea4fdd756de4ded5da1611f}{%
-           family={Nieminen},
-           familyi={N\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
+        {{hash=4d7ffcb587ca0fd799a036d806b40600}{%
+           family={Giani},
+           familyi={G\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
         {{hash=d6e112c878fabb6a97c539ebd49d3aa6}{%
            family={Pia},
            familyi={P\bibinitperiod},
-           given={M.\bibnamedelimi G.},
+           given={M\bibnamedelima G},
            giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=226e1dda5c2a8a195b5a555e43732019}{%
-           family={Urban},
+        {{hash=cd40b0fe7671443f307fcb3caf0539ca}{%
+           family={Urbàn},
            familyi={U\bibinitperiod},
-           given={L.},
+           given={L},
            giveni={L\bibinitperiod}}}%
+        {{hash=4bf3129dcea4fdd756de4ded5da1611f}{%
+           family={Nieminen},
+           familyi={N\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a8ab6211a9d8a1c34420abded40e917f}{%
+           family={Mancinelli},
+           familyi={M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{63c414af9e5fa2018baa06dd07d2463d}
-      \strng{fullhash}{bcefe29103afb9a98f4e0581d01bfc76}
-      \strng{bibnamehash}{63c414af9e5fa2018baa06dd07d2463d}
-      \strng{authorbibnamehash}{63c414af9e5fa2018baa06dd07d2463d}
-      \strng{authornamehash}{63c414af9e5fa2018baa06dd07d2463d}
-      \strng{authorfullhash}{bcefe29103afb9a98f4e0581d01bfc76}
+      \strng{namehash}{45b2dd16b149544ff41ed2a9fc3d4247}
+      \strng{fullhash}{c0b72a89a65e694e6b373a3be3ff81bf}
+      \strng{bibnamehash}{45b2dd16b149544ff41ed2a9fc3d4247}
+      \strng{authorbibnamehash}{45b2dd16b149544ff41ed2a9fc3d4247}
+      \strng{authornamehash}{45b2dd16b149544ff41ed2a9fc3d4247}
+      \strng{authorfullhash}{c0b72a89a65e694e6b373a3be3ff81bf}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{11}
+      \field{note}{CERN-OPEN-99-300}
       \field{title}{{GEANT4 simulation of energy losses of ions}}
+      \field{type}{techreport}
       \field{year}{1999}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/406454
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/406454
+      \endverb
     \endentry
     \entry{pds_sim}{article}{}
       \name{author}{3}{}{%
@@ -17964,10 +17810,10 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Liquid Argon Time Projection Chamber (LArTPC) is an advanced neutrino detector technology widely used in recent and upcoming accelerator neutrino experiments. It features a low energy threshold and high spatial resolution that allow for comprehensive reconstruction of event topologies. In current-generation LArTPCs, the recorded data consist of digitized waveforms on wires produced by induced signal on wires of drifting ionization electrons, which can also be viewed as two-dimensional (2D) (time versus wire) projection images of charged-particle trajectories. For such an imaging detector, one critical step is the signal processing that reconstructs the original charge projections from the recorded 2D images. For the first time, we introduce a deep neural network in LArTPC signal processing to improve the signal region of interest detection. By combining domain knowledge (e.g., matching information from multiple wire planes) and deep learning, this method shows significant improvements over traditional methods. This work details the method, software tools, and performance evaluated with realistic detector simulations.}
-      \field{journaltitle}{Journal of Instrumentation}
+      \field{journaltitle}{JINST}
       \field{month}{1}
       \field{number}{01}
-      \field{title}{Augmented signal processing in Liquid Argon Time Projection Chambers with a deep neural network}
+      \field{title}{{Augmented signal processing in Liquid Argon Time Projection Chambers with a deep neural network}}
       \field{volume}{16}
       \field{year}{2021}
       \field{pages}{P01036}
@@ -18000,7 +17846,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{APS April Meeting 2024}}
+      \field{booktitle}{{APS April Meeting}}
       \field{title}{{Signal Processing in SBND with WireCell}}
       \field{year}{2024}
       \verb{urlraw}
@@ -18010,29 +17856,17 @@
       \verb https://meetings.aps.org/Meeting/APR24/Session/C07.6
       \endverb
     \endentry
-    \entry{gaushitfinder}{article}{}
-      \name{author}{1}{}{%
-        {{hash=68a1ff4fbe67614c09999f2a619d456d}{%
-           family={LArSoft},
-           familyi={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{fullhash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{bibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authorbibnamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authornamehash}{68a1ff4fbe67614c09999f2a619d456d}
-      \strng{authorfullhash}{68a1ff4fbe67614c09999f2a619d456d}
+    \entry{gaushitfinder}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 03/04/2024)}
-      \field{title}{{GausHitFinder module}}
+      \field{title}{{GausHitFinder}}
       \verb{urlraw}
-      \verb https://github.com/LArSoft/larreco/blob/86b7154f11685e67d424b40fe1be97a41bb87473/larreco/HitFinder/GausHitFinder_module.cc
+      \verb https://github.com/LArSoft/larreco/larreco/HitFinder/GausHitFinder_module.cc
       \endverb
       \verb{url}
-      \verb https://github.com/LArSoft/larreco/blob/86b7154f11685e67d424b40fe1be97a41bb87473/larreco/HitFinder/GausHitFinder_module.cc
+      \verb https://github.com/LArSoft/larreco/larreco/HitFinder/GausHitFinder_module.cc
       \endverb
     \endentry
     \entry{EdPhD}{thesis}{}
@@ -18066,26 +17900,12 @@
       \verb https://etheses.whiterose.ac.uk/32440/
       \endverb
     \endentry
-    \entry{warwick_pid}{article}{}
-      \name{author}{1}{}{%
-        {{hash=9214dfc0b404fc31aa053c13714e7df7}{%
-           family={Haigh},
-           familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{9214dfc0b404fc31aa053c13714e7df7}
-      \strng{fullhash}{9214dfc0b404fc31aa053c13714e7df7}
-      \strng{bibnamehash}{9214dfc0b404fc31aa053c13714e7df7}
-      \strng{authorbibnamehash}{9214dfc0b404fc31aa053c13714e7df7}
-      \strng{authornamehash}{9214dfc0b404fc31aa053c13714e7df7}
-      \strng{authorfullhash}{9214dfc0b404fc31aa053c13714e7df7}
+    \entry{warwick_pid}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 21/05/2024)}
-      \field{title}{{MVAAlg module}}
+      \field{title}{{MVAAlg}}
       \verb{urlraw}
       \verb https://github.com/LArSoft/larana/blob/develop/larana/ParticleIdentification/MVAAlg.cxx
       \endverb
@@ -18093,58 +17913,25 @@
       \verb https://github.com/LArSoft/larana/blob/develop/larana/ParticleIdentification/MVAAlg.cxx
       \endverb
     \endentry
-    \entry{opt0finder_module}{article}{}
-      \name{author}{2}{}{%
-        {{hash=430e9101981f5029194e4e842f0925e5}{%
-           family={Tung},
-           familyi={T\bibinitperiod},
-           given={Lynn},
-           giveni={L\bibinitperiod}}}%
-        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
-      }
-      \strng{namehash}{144b9da5b5788564bf3db047a0879a52}
-      \strng{fullhash}{144b9da5b5788564bf3db047a0879a52}
-      \strng{bibnamehash}{089eec2b218dd726d8e4f86b6238e69e}
-      \strng{authorbibnamehash}{089eec2b218dd726d8e4f86b6238e69e}
-      \strng{authornamehash}{144b9da5b5788564bf3db047a0879a52}
-      \strng{authorfullhash}{144b9da5b5788564bf3db047a0879a52}
+    \entry{opt0finder_module}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 22/05/2024)}
-      \field{title}{{OpT0Finder module}}
+      \field{title}{{OpT0Finder}}
       \verb{urlraw}
-      \verb https://github.com/SBNSoftware/sbndcode/blob/fc6ccd23afe1d8ffaf88dbe33784160768726aff/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
+      \verb https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
       \endverb
       \verb{url}
-      \verb https://github.com/SBNSoftware/sbndcode/blob/fc6ccd23afe1d8ffaf88dbe33784160768726aff/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
+      \verb https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/OpT0Finder/SBNDOpT0Finder_module.cc
       \endverb
     \endentry
-    \entry{crumbs}{article}{}
-      \name{author}{1}{}{%
-        {{hash=60ad0bf4ed7332f50b0aa37f2888a209}{%
-           family={Lay},
-           familyi={L\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{60ad0bf4ed7332f50b0aa37f2888a209}
-      \strng{fullhash}{60ad0bf4ed7332f50b0aa37f2888a209}
-      \strng{bibnamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
-      \strng{authorbibnamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
-      \strng{authornamehash}{60ad0bf4ed7332f50b0aa37f2888a209}
-      \strng{authorfullhash}{60ad0bf4ed7332f50b0aa37f2888a209}
+    \entry{crumbs}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 22/05/2024)}
-      \field{title}{{CRUMBS module}}
+      \field{title}{{CRUMBS}}
       \verb{urlraw}
       \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/CosmicID/CRUMBS_module.cc
       \endverb
@@ -18152,31 +17939,12 @@
       \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/CosmicID/CRUMBS_module.cc
       \endverb
     \endentry
-    \entry{razzled}{article}{}
-      \name{author}{2}{}{%
-        {{hash=60ad0bf4ed7332f50b0aa37f2888a209}{%
-           family={Lay},
-           familyi={L\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=60f77f1c5d1f17857a6d7aed77e17559}{%
-           family={Tyley},
-           familyi={T\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
-      \strng{fullhash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
-      \strng{bibnamehash}{8143f626fb67c736800d6756dfa97a47}
-      \strng{authorbibnamehash}{8143f626fb67c736800d6756dfa97a47}
-      \strng{authornamehash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
-      \strng{authorfullhash}{8e490c61f7bf8632c20b4cc9dee6bcf4}
+    \entry{razzled}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 22/05/2024)}
-      \field{title}{{Razzled module}}
+      \field{title}{{Razzled}}
       \verb{urlraw}
       \verb https://github.com/SBNSoftware/sbncode/blob/develop/sbncode/PID/Razzled_module.cc
       \endverb
@@ -18225,7 +17993,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Proceedings of the 12th International Conference on Accelerator and Large Experimental Physics Control Systems}}
+      \field{booktitle}{{ICALEPCS}}
       \field{isbn}{978-4-9905391-0-8}
       \field{title}{{The White Rabbit Project}}
       \field{volume}{1}
@@ -18282,7 +18050,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{2007 IEEE Nuclear Science Symposium Conference Record}}
+      \field{booktitle}{{IEEE Nuclear Science Conference}}
       \field{title}{{FPGA implementation of a high-resolution time-to-digital converter}}
       \field{volume}{1}
       \field{year}{2007}
@@ -19234,7 +19002,7 @@
       \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
       \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
       \strng{authorfullhash}{6d669d45333c12788b44033e6692532e}
-      \field{extraname}{6}
+      \field{extraname}{7}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
@@ -19890,7 +19658,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
       \field{number}{3}
       \field{title}{{Study of electron recombination in liquid argon with the ICARUS TPC}}
       \field{volume}{523}
@@ -19929,7 +19697,7 @@
       \field{labeltitlesource}{title}
       \field{collaboration}{DUNE Collaboration}
       \field{issn}{1434-6052}
-      \field{journaltitle}{The European Physical Journal C}
+      \field{journaltitle}{Eur. Phys. J. C}
       \field{month}{7}
       \field{number}{7}
       \field{title}{{Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora}}
@@ -19969,7 +19737,7 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ex}
       \field{eprinttype}{arXiv}
-      \field{journaltitle}{Instruments}
+      \field{journaltitle}{Instrum.}
       \field{number}{1}
       \field{title}{{A Review of Basic Energy Reconstruction Techniques in Liquid Xenon and Argon Detectors for Dark Matter and Neutrino Physics Using NEST}}
       \field{volume}{5}
@@ -19995,9 +19763,6 @@
            familyi={Z\bibinitperiod},
            given={J.\bibnamedelimi F.},
            giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {United States}%
       }
       \list{publisher}{1}{%
         {Pergamon Press}%
@@ -20094,7 +19859,7 @@
       \field{issue}{3}
       \field{journaltitle}{Phys. Rev. A}
       \field{month}{3}
-      \field{title}{Average energy expended per ion pair in liquid argon}
+      \field{title}{{Average energy expended per ion pair in liquid argon}}
       \field{volume}{9}
       \field{year}{1974}
       \field{pages}{1438\bibrangedash 1443}
@@ -20107,6 +19872,38 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevA.9.1438
+      \endverb
+    \endentry
+    \entry{elipsoid_recomb}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=314d1a55e0190c82b6f1a9f93666f2b0}{%
+           family={Abratenko},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{fullhash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{bibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorbibnamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authornamehash}{88eb69ade9584dd579976f1cdd055047}
+      \strng{authorfullhash}{88eb69ade9584dd579976f1cdd055047}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{ICARUS}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{month}{7}
+      \field{note}{arXiv:2407.12969}
+      \field{title}{{Angular dependent measurement of electron-ion recombination in liquid argon for ionization calorimetry in the ICARUS liquid argon time projection chamber}}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2407.12969
       \endverb
     \endentry
     \entry{cowan_stat}{book}{}
@@ -20131,7 +19928,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780198501558}
-      \field{series}{Oxford science publications}
       \field{title}{Statistical Data Analysis}
       \field{year}{1998}
       \verb{urlraw}
@@ -20141,90 +19937,17 @@
       \verb https://books.google.it/books?id=ff8ZyW0nlJAC
       \endverb
     \endentry
-    \entry{sbnweight_module}{article}{}
-      \name{author}{2}{}{%
-        {{hash=dc59c81b2a0861514c4c7c9a4cd76612}{%
-           family={Duffy},
-           familyi={D\bibinitperiod},
-           given={Kirsty},
-           giveni={K\bibinitperiod}}}%
-        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
-      }
-      \strng{namehash}{f118b0f55cd0d4581ed8ea8c05339999}
-      \strng{fullhash}{f118b0f55cd0d4581ed8ea8c05339999}
-      \strng{bibnamehash}{3070371f66c6eec1e27a9df0e508d116}
-      \strng{authorbibnamehash}{3070371f66c6eec1e27a9df0e508d116}
-      \strng{authornamehash}{f118b0f55cd0d4581ed8ea8c05339999}
-      \strng{authorfullhash}{f118b0f55cd0d4581ed8ea8c05339999}
+    \entry{sbnweight_module}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{(Visited 26/06/2024)}
-      \field{title}{{SBN Event Weighting module}}
+      \field{title}{{SBN Event Weighting}}
       \verb{urlraw}
       \verb https://github.com/SBNSoftware/sbncode/tree/develop/sbncode/SBNEventWeight
       \endverb
       \verb{url}
       \verb https://github.com/SBNSoftware/sbncode/tree/develop/sbncode/SBNEventWeight
-      \endverb
-    \endentry
-    \entry{pyhf_joss}{article}{}
-      \name{author}{4}{}{%
-        {{hash=726ef4e14751301044bec503a5acda1e}{%
-           family={Heinrich},
-           familyi={H\bibinitperiod},
-           given={Lukas},
-           giveni={L\bibinitperiod}}}%
-        {{hash=d8e45db8f35fc5b31f234bef76cd40f6}{%
-           family={Feickert},
-           familyi={F\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ef5d6f4d60c6b75bde7edcca8698df0e}{%
-           family={Stark},
-           familyi={S\bibinitperiod},
-           given={Giordon},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0003024ea8011848862cbf896b544a27}{%
-           family={Cranmer},
-           familyi={C\bibinitperiod},
-           given={Kyle},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Open Journal}%
-      }
-      \strng{namehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{fullhash}{df4e94e46a2bedfc882a18238472d93d}
-      \strng{bibnamehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{authorbibnamehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{authornamehash}{cdf60499d5c8737aec353f373e48598e}
-      \strng{authorfullhash}{df4e94e46a2bedfc882a18238472d93d}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Open Source Software}
-      \field{number}{58}
-      \field{title}{pyhf: pure-Python implementation of HistFactory statistical models}
-      \field{volume}{6}
-      \field{year}{2021}
-      \field{pages}{2823}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.21105/joss.02823
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.21105/joss.02823
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.21105/joss.02823
       \endverb
     \endentry
     \entry{BeestonBarlow}{article}{}
@@ -20279,7 +20002,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2673-9984}
-      \field{journaltitle}{Physical Sciences Forum}
+      \field{journaltitle}{Phys. Sci. Forum}
       \field{number}{1}
       \field{title}{{SBND Trigger System: Status and MTC/A Configuration}}
       \field{volume}{8}
@@ -20292,7 +20015,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{TODO}
 \endrefsection
 \endinput
 

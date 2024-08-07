@@ -14,12 +14,12 @@
 
 %********************************** %Opening  **************************************
 Calibrating the Time Projection Chamber (TPC) is a crucial step to study and correct for physics processes and detector effects impacting the deposited charges on wire planes.
-Key processes affecting the production, propagation and detection of ionisation electrons were detailed in Chapter \ref{Chapter3}, including recombination, diffusion, electron attenuation and Space Charge Effect (SCE).
+Key processes affecting the production, propagation and detection of ionisation electrons are detailed in Chapter \ref{Chapter3}, including recombination, diffusion, electron attenuation and Space Charge Effect (SCE).
 %of which electron attenuation and recombination are discussed in this chapter.
 These effects have been well-studied by other LArTPC experiments like MicroBooNE \cite{uboone_calib, ubooneEtime}, ArgoNeuT \cite{argoneut_recomb}, and ICARUS \cite{icarus_recomb, GrayDiffusion}.
-Their results have demonstrated an improvement in the spatial, temporal, and energy resolution of charge signals after correcting for these effects, illustrating the importance of calibration to achieve high precision measurements.
+Their results have demonstrated an improvement in the spatial, temporal, and energy resolution of charge signals after correcting for these effects, demonstrating the importance of calibration to achieve high precision measurements.
 
-Two Monte Carlo (MC) studies within the scope of charge calibration are presented in this chapter, focusing on electron attenuation and recombination.
+Two Monte Carlo (MC) studies within the scope of charge calibration at the Short-Baseline Near Detector (SBND) are presented in this chapter, focusing on electron attenuation and recombination.
 The first study of electron lifetime measurement is presented in Section \ref{sec7:etime}.
 The second study is an assessment of the impacts of delta ray fluctuations on recombination, given in Section \ref{sec7:delta}.
 Finally, Section \ref{sec:concludeDeltaRay} concludes the chapter with some remarks.
@@ -36,20 +36,20 @@ Finally, Section \ref{sec:concludeDeltaRay} concludes the chapter with some rema
 \section{Electron Lifetime Measurement}
 \label{sec7:etime}
 
-Drifting electrons can be captured by electronegative impurities present in liquid argon, as previously described in Section \ref{sec:edrift}.
+Ionisation electrons can be captured by electronegative impurities present in liquid argon, as previously described in Section \ref{sec:edrift}.
 The reduction of the number of charges collected on a wire can be modelled as an exponential decay function following Eq. \ref{eq:etime}, where the electron lifetime $\tau$ indicates the argon purity level of the detector.
 A higher electron lifetime corresponds to a higher purity and vice versa.
 The electron lifetime can be precisely measured and used to recover the original charge deposition on the wires.
 
-At Short-Baseline Near Detector (SBND), there are several methods to measure the electron lifetime.
+At SBND, there are several methods to measure the electron lifetime.
 Firstly, three purity monitors were installed, two inside the cryostat and one outside, which provide quick and real-time monitoring of the argon purity.
 Another method requires a dedicated extraction of electron lifetime using deposited charges as measured by the wires.
 This calibration procedure is often performed on a sample of cosmic muons that fully cross the drift distance of the TPC, known as \textit{anode-to-cathode} cosmic tracks.
-Since they traverse the whole drift distance, they make a good sample to study the charge per unit length $dQ/dx$ dependency on the drift distance.
+Since they traverse the whole drift distance, they make a good sample to study the charge deposited per unit length $dQ/dx$ dependence on the drift distance.
 The MicroBooNE experiment also employed the same anode-to-cathode-crossing cosmic tracks to study and correct for position- and time-dependent response of their TPCs\cite{uboone_calib}.
 
-The study aims to develop a procedure to measure electron lifetime and investigate detector effects that can introduce biases on the lifetime, such as diffusion and SCE.
-Within the scope of this study, anode-to-cathode cosmic tracks were simulated to perform the lifetime measurement.
+The study aims to develop a procedure to measure electron lifetime and investigate detector effects that can introduce biases in the measurement, such as diffusion and SCE.
+Anode-to-cathode cosmic tracks were simulated to perform the lifetime measurement.
 %MC samples of crossing cosmic tracks were simulated to perform the lifetime measurement.
 The procedure for electron lifetime measurement is outlined in Section \ref{sec7:etime_procedure}, followed by Section \ref{sec7:etime_bias} describing biases in lifetime measurement due to detector effects.
 
@@ -57,14 +57,14 @@ The procedure for electron lifetime measurement is outlined in Section \ref{sec7
 \subsection{Electron Lifetime Extraction Procedure}
 \label{sec7:etime_procedure}
 
-The electron lifetime measurement requires information on the charge per unit length $dQ/dx$ and the respective drift time $t_{drift}$ of that charge cluster arrived at the wire.
+The electron lifetime measurement requires information on the deposited charge per unit length $dQ/dx$ and the respective drift time $t_{drift}$ of that charge cluster arrive at the wire.
 The charge reconstruction follows the workflow described in Section \ref{sec:reco_tpc}, whilst additional calculation is required to deduce the drift time.     
 The drift time is defined as:
 \begin{equation}
         t_{drift} = \frac{x}{v_{d}},
 \end{equation}
-where $x$ is the location the charge deposition in drift direction ($x$-axis) and $v_{d}$ is the drift velocity.
-At SBND, the drift velocity is expected to be at 0.1563 cm/$\mu$s at an electric field of 0.5 kV/cm and temperature of 88.4 K.
+where $x$ is the location the charge deposition in the drift direction ($x$-axis) and $v_{d}$ is the drift velocity.
+At SBND, the drift velocity is expected to be at 0.1563 cm/$\mu$s at an electric field of 0.5 kV/cm and temperature of 88.4 K (See Section \ref{sec:edrift}).
 The drift time can be calculated using the time recorded by the TPC readout when a charge cluster arrives at a wire $t_{m}$ which is defined as \cite{pandora_protodune}:
 \begin{equation}
 \label{eq:t0}
@@ -84,17 +84,16 @@ This method has been implemented in the reconstruction workflow of SBND, and it 
 
 \begin{figure}[h!] 
 \centering    
-\includegraphics[width=0.45\textwidth]{cosmic_stitch}
-\caption[Cathode Stitch Diagram]{
-Diagram depicting the cathode stitching process to determine the $t_{0}$ of cathode-crossing track \cite{pandora_protodune}.
+\includegraphics[width=0.55\textwidth]{cosmic_stitch}
+\caption[Cathode Stitching Diagram]{
+Cathode stitching process to determine the $t_{0}$ of cathode-crossing track \cite{pandora_protodune}.
 }
 \label{fig:cosmic_stitch}
 \end{figure}
 
-
-The next step in the lifetime extraction procedure was to plot the charge per unit length $dQ/dx$ in bins of the drift time $t_{drift}$.
+The next step in the lifetime extraction procedure was to plot the deposited charge per unit length $dQ/dx$ in bins of the drift time $t_{drift}$.
 Fig. \ref{fig:dqdxMPV} shows an example $dQ/dx$ profile in the drift time bin from 0.925 to 0.95 ms.
-A Landau-Gaussian convolution is fitted to the profile to extract the Most Probable Value (MPV) of $dQ/dx$ \cite{Passage}.
+A Landau-Gaussian convolution was fitted to the profile to extract the Most Probable Value (MPV) of $dQ/dx$ \cite{Passage}.
 This process was repeated for every drift time bin across the full drift distance of the TPC.
 
 Fig. \ref{fig:etime_tpc} shows the MPV $dQ/dx$ as a function of drift time, for TPC 0 (east) and 1 (west) of SBND.
@@ -131,26 +130,25 @@ Example of a $dQ/dx$ profile in a drift time bin of 0.925--0.95 ms, fitted with 
         \label{fig:etime_tpc}
 \end{figure}
 
-\subsection{Bias Study From Diffusion and Space Charge Effects}
+\subsection{Bias Study of Diffusion and Space Charge Effects}
 \label{sec7:etime_bias}
 
 Some detector effects can introduce biases to the electron lifetime measurement, specifically those that can influence the propagation path of drifting electrons such as diffusion and SCE.
-Diffusion can smear both spatial and temporal resolution of the drifting electrons, and consequently the number of wires seen by the charge and the arrival time of charge measured by the wires.
-Meanwhile, SCE impacts both the amplitude of the measured charge as well as the temporal and spatial resolution due to electric field distortion.
-In view of this, a study was undertaken to understand how each effect introduces biases to the measurement of electron lifetime.
+Diffusion smears both spatial and temporal resolutions of the drifting electrons, and consequently the number of wires seen by the charge and the arrival time of charge measured by the wires.
+SCE impacts both the amplitude of the deposited charge as well as the temporal and spatial resolution due to electric field distortion.
+A study was undertaken to understand how each effect introduces biases to the measurement of electron lifetime.
 
 Three dedicated MC samples were simulated: (1) No SCE nor diffusion enabled, (2) only diffusion enabled and (3) only SCE enabled.
-In the diffusion-only MC sample, the longitudinal diffusion coefficient was set at $D_{L} = 4.0 $ cm$^{2}$/s, as measured by MicroBooNE \cite{uboone_diff}, and the transverse diffusion coefficient was set at $D_T = 8.8 $ cm$^{2}$/s, as measured by ProtoDUNE \cite{protodune} (See Section \ref{sec:edrift} Chapter \ref{Chapter3}).     
-In the SCE-only MC sample, the simulation of electric field distortion follows the description in Ref. \cite{SCE}.
+In the diffusion-only MC sample, the longitudinal diffusion coefficient was set at $D_{L} = 4.0 $ cm$^{2}$/s, as measured by MicroBooNE \cite{uboone_diff}, and the transverse diffusion coefficient was set at $D_T = 8.8 $ cm$^{2}$/s, as measured by ProtoDUNE \cite{protodune} (See Section \ref{sec:edrift}).     
+In the SCE-only MC sample, the simulation of electric field distortion followed the description in Ref. \cite{SCE}.
 %The electron lifetime was measured for each sample.
 
 Biases in the lifetime compared to the simulated lifetime are shown in Fig. \ref{fig:etime_biases_compare}, for two simulated electron lifetimes at 3 ms (top) and 10 ms (bottom).
-When no detector effects are enabled in the simulation, the determined lifetimes are very similar to the simulated lifetimes, with negative biases well below the 2\% level.
-When either diffusion or SCE was enabled in the simulation, positive biases in the lifetimes can be seen.
+When no detector effects are enabled in the simulation, the determined lifetimes are very similar to the simulated lifetimes, with biases well below the 2\% level.
+When either diffusion or SCE was enabled in the simulation, biases in the lifetimes can be seen.
 Biases due to diffusion are at $\sim 2\%$ and $\sim 4\%$ for the simulated lifetimes of 3 ms and 10 ms respectively.
-On the other hand, biases due to SCE are higher at $\sim 5 \%$ and $\sim22 \%$ at the 3 ms and 10 ms lifetime.
+On the other hand, biases due to SCE are higher at $\sim 5 \%$ and $\sim22 \%$ at the simulated 3 ms and 10 ms lifetime.
 The observed biases are also consistent across the two TPC volumes of SBND.
-
 
 The first observation is that the magnitude of the biases due to SCE is much greater than due to diffusion at both simulated lifetimes.
 This is consistent with the observations from an electron lifetime measurement carried out by MicroBooNE \cite{ubooneEtime}. 
@@ -162,7 +160,7 @@ This is most likely due to the precision of this method worsening with increasin
 Larger lifetime leads to a more uniform $dQ/dx$ distribution across the drift distance, and thus, fitting an exponential function can become less reliable.
 %This is due to more drifting electrons surviving with a larger lifetime and thus, becoming more susceptible to detector effects.
 
-\begin{figure}[ht!] 
+\begin{figure}[t!] 
 \centering    
 \includegraphics[width=0.85\textwidth]{etime_biases_compare}
 \caption[Electron Lifetime Measurement Biases]{
@@ -174,7 +172,7 @@ Biases in electron lifetimes compared to the simulated values at 3 ms (top) and 
 Since the results of this study, an investigation at the ICARUS experiment demonstrated that transverse diffusion breaks down the Landau-Gaussian MPV approximation of the measured charge \cite{GrayDiffusion}, which was employed in this study.
 This is due to transverse diffusion smearing the charge cluster across multiple wires, resulting in a shift in the MPV value. 
 The paper recommends using an averaged $dQ/dx$ from a group of wires instead of $dQ/dx$ from a single wire to mitigate the effect.
-The suggestion has now been implemented at SBND.
+The suggestion has been implemented at SBND.
 
 The study presented here demonstrates a method to measure electron lifetime using a sample of anode-to-cathode crossing cosmic tracks.
 These tracks have the advantage of spanning over a full drift distance and a reconstructable $t_{0}$ time tagging when the particle enters the detector.
@@ -184,7 +182,7 @@ A trigger requiring coincidence in the east and west CRT wall was deployed to pr
 
 %********************************** %First Section  **************************************
 
-\section{Delta Ray Fluctuations on Recombination Simulation}
+\section{Delta Ray Fluctuations on Recombination}
 \label{sec7:delta}
 
 %As discussed in Chapter \ref{ChapterSim}, simulation plays a vital role in neutrino physics.
@@ -202,24 +200,24 @@ This approximation has proven to work well for the MeV to GeV-scale interactions
 %The NEST collaboration pointed out non-linear fluctuations in recombination at increasingly smaller scales that are not well-described by the ModBox model \cite{NEST}.   
 %Moreover, the ArgoNeuT collaboration also proposed that microphysics effects could lead to disagreements in recombination theory and data \cite{argoneut_recomb}.
 
-Delta rays are microphysics processes that can affect recombination, highlighted by NEST \cite{NEST} and ArgoNeuT \cite{argoneut_recomb} collaborations.
+Delta rays are microphysics processes that can affect recombination, highlighted by both NEST \cite{NEST} and ArgoNeuT \cite{argoneut_recomb} collaborations.
 They are knock-out electrons with low energy but high energy loss per unit length $dE/dx$.
-As shown in Fig. \ref{fig:delta_ray_evd}, delta rays are short tracks produced along a longer primary track, in this case, a cosmic muon.                      
+As shown in Fig. \ref{fig:delta_ray_evd}, delta rays are short blip produced along a longer primary track, in this case, a cosmic muon.                      
 Due to their high $dE/dx$, they are associated with a smaller recombination factor $R$ (See Fig. \ref{fig:recomb_graph} Section \ref{sec:recomb}).
 A smaller $R$ corresponds to a smaller probability of ionisation electrons surviving recombination.
 As a result, delta rays can lead to non-linear fluctuations in recombination that is not well-described by the ModBox model.
 %to higher recombination, producing more scintillation photons at the cost of ionisation electrons.
 
-This study is motivated to asses the impacts of delta ray fluctuations on the simulation of recombination, and consequently, the charge to energy loss conversion of different particle types.
-An overview of the simulation framework of delta rays and recombination is given in Section \ref{sec:simDeltaRay}.%, and some concerns with the current framework.
-In following, Section \ref{sec:impactDeltaRayMag} and \ref{sec:impactDeltaRaySmear} provides a description of the delta ray impacts on the recombination magnitude and smearing respectively.
-A summary of recombination studies carried out by the ICARUS collaboration is presented in Section \ref{sec:icarus}.
+This study is motivated to asses the impacts of delta ray fluctuations on recombination, and consequently, the charge to energy loss conversion of different particle types using MC.
+An overview of the simulation of delta rays and recombination is given in Section \ref{sec:simDeltaRay}.%, and some concerns with the current framework.
+Following this, Sections \ref{sec:impactDeltaRayMag} and \ref{sec:impactDeltaRaySmear} provide a description of the delta ray impacts on the recombination magnitude and smearing respectively.
+A summary of recombination studies carried out by the ICARUS collaboration is given in Section \ref{sec:icarus}.
 
 \begin{figure}[hb!] 
 \centering    
 \includegraphics[width=0.85\textwidth]{delta_ray_evd}
 \caption[Event Display of a Cosmic Muon and Delta Rays]{
-Event display of a simulated cosmic muon track segment, with many delta rays produced along the primary track.
+Event display of a simulated cosmic muon track segment, with many delta rays produced along the track.
 }
 \label{fig:delta_ray_evd}
 \end{figure}
@@ -255,8 +253,8 @@ Moreover, the maximum length $dx$ that the particle can propagate per step is co
 This setup allows for a feasible computation of generating delta rays.
 
 %Describe ionandscint module
-For each step $dx$, the number of electron-ion pairs is calculated by dividing the continuous energy loss $dE$ by the ionisation work function of argon $W_{ion} = 23.6$ eV \cite{wion_lar}.
-Then, the recombination factor $R$ is applied to the number of electron-ion pairs according to the charge-light anti-correlation described by Eq. \ref{eq:Q} and \ref{eq:L}, to determine the final charge and light yield resulting from the step $dx$.                                                                                                                                                      
+For each step $dx$, the number of electron-ion pairs resulting from a continuous loss energy deposition $dE$ is calculated by dividing $dE$ by the ionisation work function of argon $W_{ion} = 23.6$ eV \cite{wion_lar}.
+Recombination factor $R$ is applied to the number of electron-ion pairs according to the charge-light anti-correlation described by Eq. \ref{eq:Q} and \ref{eq:L} to determine the number of surviving electrons resulting from the step $dx$.    
 Using the ModBox formalism, $R$ is computed as \cite{argoneut_recomb}:
 \begin{equation}
         \label{eq:R_factor}
@@ -264,7 +262,7 @@ Using the ModBox formalism, $R$ is computed as \cite{argoneut_recomb}:
 \end{equation}
 where $\varepsilon$ (kV/cm) is the electric field at the position of the step, $dE/dx$ (MeV/cm) is the energy loss per unit length, and parameters $\alpha = 0.93\pm0.02$ and $\beta = 0.212\pm0.002$ (kV/cm
 )(g/cm$^{2}$)/MeV were experimentally derived by ArgoNeuT \cite{argoneut_recomb}.
-Eq. \ref{eq:R_factor} is plotted in Fig. \ref{fig:recomb_graph} Section \ref{sec:recomb}.
+Eq. \ref{eq:R_factor} is plotted in Fig. \ref{fig:recomb_graph} in Section \ref{sec:recomb}.
 It is important to note that $R$ is dependent on the electric field and therefore can be influenced by local distortions of the field.
 
 %potential issue
@@ -281,7 +279,7 @@ The study was set up to address the individual concerns outlined above to better
 Identical MC samples of muons and protons were simulated to investigate if recombination is particle-dependent.
 The particles were generated with a fixed energy of 1 GeV, uniform in positional and angular distributions.
 The Geant4 simulation was configured such that the particle can only deposit energy via ionisation.
-The \textit{true} energy per unit length $dE/dx$ was computed from the \textit{true} number of electrons per unit length $dQ/dx$, where \textit{true} indicates no detector simulations were applied. 
+The \textit{true} energy loss per unit length $dE/dx$ was computed from the \textit{true} number of electrons per unit length $dQ/dx$, where \textit{true} indicates no detector simulations were applied. 
 The computation follows the ModBox formalism for charge to energy loss conversion as \cite{argoneut_recomb}:
 \begin{equation}
         \label{eq:recomb_modbox}
@@ -308,7 +306,7 @@ This variation was chosen to study the impacts due to delta ray fluctuations.
 %By re-arranging Eq. \ref{eq:recomb_modbox}, the recombination factor $R$ as a function of $dE/dx$ is derived as
 %where .
 
-\subsection{Impacts of Delta Ray Fluctuations On Recombination Magnitude}
+\subsection{Impacts of Delta Rays on Recombination Magnitude}
 \label{sec:impactDeltaRayMag}
 
 Fig. \ref{fig:proton_2d} shows the simulated charge to energy loss conversion, $dQ/dx$ to $dE/dx$, for protons at the delta ray threshold of 700 $\mu$m and 1 $\mu$m.
@@ -323,11 +321,11 @@ Lowering the delta ray threshold leads to more energy loss carried by the delta 
 At the low $dE/dx$ spectrum of the proton, delta rays have higher $dE/dx$ and a smaller recombination factor $R$ than that of the proton.
 This results in the \textit{effective recombination factor} being reduced, decreasing $dQ/dx$ at the same value of $dE/dx$. 
 The opposite effect is seen at the high $dE/dx$ spectrum of the proton, where $dQ/dx$ is higher than the ModBox model.
-This indicates that the effective recombination factor increases, that accounts for both the primary proton and delta rays.
+This indicates that the effective recombination factor increases, accounting for both the primary proton and delta rays.
 
 %impacts from delta rays fluctuations on the charge to energy loss conversion. 
 
-\begin{figure}[hb!]
+\begin{figure}[ht!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -392,7 +390,7 @@ The same behaviour as protons at the same low $dE/dx$ $<\sim8$ MeV/cm is observe
 %Although, some remnants from the MIP region remains in the .
 %between Fig. \ref{fig:mu_2d_700_lowRR} and \ref{fig:mu_2d_1_lowRR}.
 
-\begin{figure}[hp!]
+\begin{figure}[b!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -425,8 +423,22 @@ The same behaviour as protons at the same low $dE/dx$ $<\sim8$ MeV/cm is observe
         	$dQ/dx$ as a function of $dE/dx$ for a 1 GeV muon at the delta ray threshold of 700 $\mu$m (left) and 1 $\mu$m (right) and for the full residual range (top) and only the stopping range (bottom).
 	}
         \label{fig:muon_2d}
-%\end{figure}
-%\begin{figure}[htbp!]
+\end{figure}
+
+The mean $dQ/dx$ of muons and its percentage difference relative to the ModBox model are also shown in Fig. \ref{fig:mu_range_delta}, at various values of delta thresholds.
+Similar to protons, the effective recombination reduces with lower delta ray KE.
+The recombination factor is also the most affected at the threshold of 1 $\mu$m, as shown in red.
+It is also important to note that the magnitude of the reduction is larger for muons compared to protons, which is likely due to the amount of delta rays produced by each particle type.
+For instance, at the same $dE/dx$ of 3 MeV/cm and the delta ray threshold of 1 $\mu$m, the percentage difference is at $\sim 24\%$ for muons and $\sim16\%$ for protons.  
+
+The study demonstrates that fluctuations of delta rays can affect recombination.
+Delta rays have a different $dE/dx$ compared to the primary particle and therefore, can influence the effective recombination factor.
+At low $dE/dx$ $< \sim 8$ MeV/cm, this results in a reduction of the effective recombination accounting for both the primary particle and delta rays.
+Meanwhile, at high $dE/dx$ $> \sim 8$ MeV/cm, delta rays can increase the effective recombination factor.
+This leads to a distortion of the observed charge to energy loss conversion of a particle. 
+The magnitude of the distortion is more significant for muons than protons.
+
+\begin{figure}[t!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{mu_profile}
@@ -444,25 +456,12 @@ The same behaviour as protons at the same low $dE/dx$ $<\sim8$ MeV/cm is observe
         \label{fig:mu_range_delta}
 \end{figure}
 
-The mean $dQ/dx$ of muons and its percentage difference relative to the ModBox model are also shown in Fig. \ref{fig:mu_range_delta}, at various values of delta thresholds.
-Similar to protons, the magnitude of the effective recombination reduction increases with lower delta ray KE.
-The recombination factor is also the most affected at the threshold of 1 $\mu$m, as shown in red.
-It is also important to note that the magnitude of the reduction is larger for muons compared to protons, which is likely due to the amount of delta rays produced by each particle type.
-For instance, at the same $dE/dx$ of 3 MeV/cm and the threshold of 1 $\mu$m, the percentage difference is at $\sim 24\%$ for muons and $\sim16\%$ for protons.  
-
-The study here demonstrates that fluctuations of delta rays can affect recombination.
-Delta rays have a different $dE/dx$ compared to the primary particle and therefore, can influence the effective recombination factor.
-At low $dE/dx$ $< \sim 8$ MeV/cm, this results in an overall reduction of recombination.
-Meanwhile, at high $dE/dx$ $> \sim 8$ MeV/cm, delta rays can increase the effective recombination factor.
-This leads to a distortion of the observed charge to energy loss conversion of a particle. 
-The magnitude of recombination is more significant for muons than protons.
-
-\subsection{Impacts of Delta Ray Fluctuations On Recombination Smearing}
+\subsection{Impacts of Delta Rays on Recombination Smearing}
 \label{sec:impactDeltaRaySmear}
 
 %The effects of delta rays on recombination also extend to smearing of the charge to energy loss conversion.
-Delta ray fluctuations affect not only the magnitude of the recombination factor but also its smearing, and consequently, the smearing of the charge to energy loss conversion.
-To disentangle how the Geant4 toolkit handles the smearing due to delta rays, an additional study was carried out in which the energy deposition of the primary particle was isolated from delta rays. 
+Delta rays affect not only the magnitude of the recombination factor but also its smearing, and consequently, the smearing of the charge to energy loss conversion.
+To disentangle how Geant4 handles the smearing due to delta rays, an additional study was carried out in which the energy deposition of the primary particle was isolated from delta rays. 
 
 Fig. \ref{fig:proton_derr} shows the simulated $dE/dx$ of the primary proton as a function of its residual range, compared against the Landau-Vavilov distribution \cite{Passage}.
 Energy loss due to delta rays is included in the top two plots, Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1}, for the delta thresholds of 700 $\mu$m and 1 $\mu$m.
@@ -472,12 +471,12 @@ The same set of plots for the case of muons are also shown in Fig. \ref{fig:mu_d
 When delta rays are included in the energy loss, the $dE/dx$ distribution agrees with the Landau-Vavilov distribution with some smearing in $dE/dx$ across all residual range bins.
 The energy distributions are indistinguishable between the delta ray threshold of 700 $\mu$m and 1 $\mu$m.
 This can be seen for both protons, comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1}, and muons, comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_delta_1}. 
-The behaviour is expected since the total energy loss of the primary particle and the delta rays must stay the same regardless of the delta ray threshold.
+This is expected since the total energy loss of the primary particle and the delta rays must stay the same regardless of the delta ray threshold.
 Moreover, comparing the protons and muons, including delta rays in the total energy loss introduces greater smearing in the $dE/dx$ distribution for muons than protons.
 
 %As stated previously, the secondary production threshold changes how much the energy loss is shared between the primary particle and the associated delta rays.
 %This is evident when considering only the energy deposition of from the primary particle. 
-\begin{figure}[ht!]
+\begin{figure}[t!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{derr_proton_delta_700um}
@@ -504,14 +503,14 @@ Moreover, comparing the protons and muons, including delta rays in the total ene
             \caption{1 $\mu$m and delta rays excluded}%
             \label{fig:derr_proton_only_1}
         \end{subfigure}
-	\caption[Energy-Residual Range Scale of Protons at Different Delta Ray Thresholds]{
+	\caption[Energy-Residual Range of Protons at Different Delta Ray Thresholds]{
 	$dE/dx$ as a function of residual range for a 1 GeV proton at the delta ray threshold of 700 $\mu$m (left) and 1 $\mu$m (right), including (top) and excluding (bottom) the energy loss of delta rays. 
 	}
         \label{fig:proton_derr}
 \end{figure}
 
 When delta rays are excluded in the energy loss, some noticeable effects can be seen. 
-At the threshold at 700 $\mu$m, the $dE/dx$ distribution of only the primary particle but no delta rays still follows closely the Landau-Vavilov distribution, similarly to the $dE/dx$ distribution containing both the primary particle and delta ray energy loss.
+At the threshold at 700 $\mu$m, the $dE/dx$ distribution of only the primary particle but no delta rays still follows closely the Landau-Vavilov distribution, similarly to that containing both the primary particle and delta ray energy loss.
 This can be seen comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_only_700} for protons, and comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_only_700} for muons. 
 However, less smearing in $dE/dx$ is observed when delta rays are excluded in the energy loss, especially visible in Fig. \ref{fig:derr_mu_only_700} for muons.
 At this configuration, the majority of the energy loss is carried away by the primary particle, and Geant4 already accounts for delta ray fluctuations when sampling its mean energy loss \cite{geant4}.
@@ -550,13 +549,13 @@ This potentially leads to inaccuracy in simulating the energy loss due to ionisa
             \caption{1 $\mu$m \\ and delta rays excluded}%
             \label{fig:derr_mu_only_1}
         \end{subfigure}
-        \caption[Energy-Residual Range Scale of Muons at Different Delta Ray Thresholds]{
+        \caption[Energy-Residual Range of Muons at Different Delta Ray Thresholds]{
 	$dE/dx$ as a function of residual range for a 1 GeV muon at the delta ray threshold of 700 $\mu$m (left) and 1 $\mu$m (right), including (top) and excluding (bottom) the energy loss of delta rays. 
 	}
         \label{fig:mu_derr}
 \end{figure}
 
-This study here demonstrates another effect of delta ray fluctuations on recombination.
+This study demonstrates another effect of delta ray fluctuations on recombination.
 Having a different $dE/dx$ to the primary particle also means that delta rays can smear the observed charge to energy loss conversion.
 The amount of smearing vary differently between protons and muons, where including delta rays in the energy loss lead to more smearing in the $dE/dx$ distribution for muons than protons. 
 Combining with the results from Section \ref{sec:impactDeltaRayMag}, this suggests a need for a particle-dependent recombination factor.   
@@ -600,7 +599,7 @@ Combining with the results from Section \ref{sec:impactDeltaRayMag}, this sugges
 %Therefore, the simulation workflow of SBND likely only shows a good agreement when using the same configuration as ArgoNeuT.
 %This shows a strong inter-dependency between the detector simulation and experimental data, particularly when it comes to tuning a phenomenological parameter for a simulation workflow.
 
-\subsection{Recombination Studies From The ICARUS Experiment}
+\subsection{Recombination Studies from the ICARUS Experiment}
 \label{sec:icarus}
 
 \begin{figure}[bp!]
@@ -616,7 +615,7 @@ Recombination factor as a function of the delta ray threshold \cite{icarus_recom
 %Fluctuations of delta rays influence the recombination factor.
 A very similar study was carried out by the ICARUS collaboration in 2004 in Italy, to investigate delta ray fluctuations impacting recombination and also to compare against their experimental data \cite{icarus_recomb}. 
 The result is shown in Fig. \ref{fig:icarus_recomb}, showing the recombination factor as a function of the delta ray threshold in MC. 
-The dotted line is the expectation for a MIP muon with a KE of 250 MeV.
+The dotted line is the expected recombination factor for a MIP muon with a KE of 250 MeV.
 The recombination factor increases with the threshold and peaks at $\sim0.7$, then decreases with higher thresholds. 
 This result is similar to the observation of the study described above, where the effective recombination factor reduces at small values of delta ray thresholds.
 
@@ -631,8 +630,8 @@ This number was found to be 3 $\mu$m, equivalent to simulating delta rays having
 
 %gain more understanding in recombination : angular dependency
 %TODO: add ref recombination dependence on angular
-Also recently from the ICARUS collaboration, now with the detector relocated to Fermilab, a study in 2024 of recombination showed a clear dependence of recombination on the angle of the particle track to the drift electric field \cite{TODO}.
-A new ellipsoid modified box model of recombination was proposed and able to describe the data across all measured angles. 
+Also recently from the ICARUS collaboration, now with the detector relocated to Fermilab, a study in 2024 of recombination showed a clear dependence of recombination on the angle of the particle track to the drift electric field \cite{elipsoid_recomb}.
+An ellipsoidal modification to the ModBox recombination model was proposed and able to describe the data across all measured angles. 
 This result has significantly improved the observed charge to energy loss conversion of a particle, which is critical for particle identification of an LArTPC.   
 
 These results from the ICARUS collaboration have collectively enhanced the understanding of recombination, as well as guided how to model recombination at SBND.
@@ -642,10 +641,10 @@ In the scope of calibrating the SBND detector, it is highly recommended to follo
 \label{sec:concludeDeltaRay}
 
 Two studies within the scope of calibrating ionisation electron signals were presented. 
-The first study described a procedure to measure electron lifetime using anode-to-cathode crossing cosmic muons and quantify biases in the acquired lifetime due to SCE and diffusion. 
-The second study examined the simulation of delta rays and recombination, and how delta ray fluctuations can impact the effective recombination factor and consequently, the charge to energy loss conversion of a particle.
+The first study describes a procedure to measure the electron lifetime using anode-to-cathode crossing cosmic muons and quantify biases in the acquired lifetime due to SCE and diffusion. 
+The second study examines the simulation of delta rays and recombination, and how delta ray fluctuations can impact the effective recombination factor and consequently, the charge to energy loss conversion of a particle.
 These studies help understanding how different detector effects and physics processes can impact the charge depositions on wires, which can be pinned down and corrected for.
-This calibration process enables high precision measurements, which are essential for any physics analysis at SBND, including the search for HNLs.
+This calibration process necessitates high precision measurements, which are essential for any physics analysis at SBND, including the search for HNLs.
 The following Chapter \ref{ChapterSelect} focuses on the selection of HNLs, of which many reconstruction variables describing the calorimetry and topology of a particle relies on having an accurate charge information. 
 
 %This simulated study demonstrates a strong inter-dependency between detector simulation and data and therefore, the accuracy of the recombination factor can be improved by using parameters tuned to data measured by SBND.

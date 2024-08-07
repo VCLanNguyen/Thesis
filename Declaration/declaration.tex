@@ -11,44 +11,43 @@ References assign credit for the work and figures presented.
 
 The overview of SBND given in Chapter \ref{ChapterDetector} relies on work performed by the entire SBND collaboration \cite{SBNProgram,sbnd_det}.
 Figures not made by the author are labelled with references to the source.
-In the scope of detector installation, the author helped with the cabling of the Photon Detection System (PDS) boxes and their installation to the detector alongside B. Carlson and B. Bogart.
+In the scope of detector installation, the author carried out with the cabling of the Photon Detection System (PDS) boxes and their installation to the detector alongside B. Carlson and B. Bogart.
 The author also installed the PDS readout electronics, under the guidance of M. Stancari and W. Badgett.
 
 Also in Chapter \ref{ChapterDetector}, the flux prediction employs the Booster Neutrino Beam simulation developed in MiniBooNE \cite{BNBFlux}.
-The flux simulation was performed by Z. Pavlovic and the flux reader was developed by M. Del Tutto. 
-The author assisted with validating the fluxes at SBND after updating to the kaon reweighting scheme from SciBooNE \cite{SciBooNE} .
+The author validated the fluxes at SBND after an update to the kaon weights from SciBooNE \cite{SciBooNE}.
+The flux simulation was performed by Z. Pavlovic and the flux validation tool was developed by M. Del Tutto. 
 
-In the simulation framework of SBND described in Chapter \ref{ChapterSim}, the author contributed to the development of the MeVPrtl generator for simulating beyond standard model particles.
-This generator was a joint effort of SBND and ICARUS collaborators, led by G. Putnam.
-The author developed and validated the physics of HNL simulation with R. Alvarez-Garrote and L. Pelegrina-Gutierrez.
-The implementation of the generator into SBND was performed together with R. Alvarez-Garrote.
-Moreover, the author identified and helped implement a fix in the GENIE generator to enable the timing simulation of neutrino interactions, which necessitated the HNL analysis using Monte Carlo (MC) samples.
+In Chapter \ref{ChapterSim}, the generation of HNLs was done with the MeVPrtl generator, that was developed by SBND and ICARUS collaborators and led by G. Putnam.
+The author implemented the timing simulation and validated the physics of HNL models employed by the generator with R. Alvarez-Garrote and L. Pelegrina-Gutierrez.
+The integration of the generator into SBND was performed together with R. Alvarez-Garrote.
+The author also identified a bug in the GENIE generator, that was fixed to enable the timing simulation of neutrino interactions.
+%These work which necessitated the timing comparison between HNLs and neutrinos using Monte Carlo (MC) samples.
 
-In Chapter \ref{ChapterReco}, the charge reconstruction toolkits, Wirecell \cite{wirecell} and Pandora \cite{pandora}, were developed before the author's involvement.
-The author updated the track-shower separation algorithm within Pandora, with the help of E. Tyley and D. Brailsford.
-The PDS and CRT reconstruction and analysis tools were contributed by SBND collaborators with credits provided in the references.
-Most importantly, the author would like to thank F. Nicolas-Arnaldos, R. Alvarez-Garrote, D. Garcia-Gamez and J. I. Crespo-Anadon, who pioneered the timing reconstruction using the SBND PDS, which the HNL analysis relies on.
+Reconstruction and analysis tools presented in Chapter \ref{ChapterReco} were contributed by SBND collaborators with credits provided in the references.
+The Wirecell \cite{wirecell} and Pandora \cite{pandora} packages were developed before the author's involvement.
+The author updated the track-shower separation algorithm within Pandora, building on earlier work by E. Tyley and D. Brailsford.
+The light reconstruction was pioneered by F. Nicolas-Arnaldos, R. Alvarez-Garrote, D. Garcia-Gamez and J. I. Crespo-Anadon and the cosmic ray tagger reconstruction was developed by H. Lay.  
 
-The study of the DAQ timing performance in Chapter \ref{ChapterDAQ}, relies on work performed by SBND collaborators.
-The hardware and software of the White Rabbit timing system as well as the CRT Sharps was setup before the author's involvement.
-The author contributed in the calibration and installation of the SPEC-TDC module and the cabling of timing signals under the guidance of M. Stancari, G. A. Lukhanin and W. Badgett.
-The timing characterisation of FEB modules was performed with the help of M. Stancari and H. Lay.
-The timing characterisation of CAEN digitisers received inputs from M. Stancari.  
+Assessments of the data acquisition timing performance in Chapter \ref{ChapterDAQ} relied on the setup of the White Rabbit timing system and the CRT Sharps before the author's involvement.
+The author installed and calibrated the SPEC-TDC module, and cabled timing signals under the guidance of M. Stancari, G. A. Lukhanin and W. Badgett.
+The author performed the timing characterisation of FEB modules with the inputs from M. Stancari and H. Lay.
+The author also validated the synchronisation of CAEN digitisers that lead to a new hardware implementation, with advices from M. Stancari.
 
 In Chapter \ref{ChapterCalib}, the presented work in the scope of charge calibration was performed under the guidance of M. Mooney and many discussions with G. Putnam and J. Mueller.
 A summary of results from the ICARUS collaboration is included, with references assigned credit in the work and figures presented.
 
-The selection of HNLs in Chapter \ref{ChapterSelect} contains many elements shared across SBND collaborators.
-MC samples used in the selection were a collaborative work with H. Lay and R. Alvarez-Garrote.
-The selection software was built with help from H. Lay. 
-Moreover, the cosmic rejection tool CRUMBS was developed by H. Lay, the flash matching tool OpT0 was developed by L. Tung and the particle identification tool Razzled was developed by H. Lay with groundwork done by E. Tyley.
-Finally, the selection sparked many useful discussions with R. Alvarez-Garrote, L. Pelegrina-Gutierrez and J. I. Crespo-Anadon.
+The selection of HNLs in Chapter \ref{ChapterSelect} contains many elements shared among SBND collaborators.
+The author generated MC samples used in the selection together with H. Lay and R. Alvarez-Garrote.
+The author built the selection software using the framework from H. Lay. 
+The selection employed the cosmic rejection tool CRUMBS developed by H. Lay, the flash matching tool OpT0 developed by L. Tung and the particle identification tool Razzled developed by H. Lay with groundwork from E. Tyley.
+The author also had many useful discussions with R. Alvarez-Garrote, L. Pelegrina-Gutierrez and J. I. Crespo-Anadon that guided the analysis.
 
 The uncertainty reweighting in Chapter \ref{ChapterResult} was performed using the framework shared across the SBND and ICARUS collaboration, developed before the author's involvement.
 The author would like to thank H. Lay, J. Mueller, and J. Kim for their help in understanding uncertainty treatments.
-The procedure to set upper limits was performed using the \texttt{pyhf} package \cite{pyhf}, with references assign credit for the employed statistical methods \cite{asymptotic_test, CLs_Junk, CLs_Read}.
+The procedure to set upper limits was performed using the \texttt{pyhf} package \cite{pyhf_joss}, with references assign credit for the employed statistical methods \cite{asymptotic_test, CLs_Junk, CLs_Read}.
 %The results of the test statistics were interpreted with advice from T. Junk.
-Finally, the author would like to thank A. M. Szelc, whose idea was to search for HNLs by exploiting their lateness, that started this entire thesis.  
+%Finally, the author would like to thank A. M. Szelc, whose idea was to search for HNLs by exploiting their lateness, that started this entire thesis.  
 
 % Author and date will be inserted automatically from thesis.tex \author \degreedate
 
