@@ -218,7 +218,7 @@ To measure the clock variation, one can simply compare these timestamps with res
 An example is shown in Fig. \ref{fig:UpstreamT0StabilityCombinedBoard79} for a single FEB module numbered 79.
 The left plot shows the timestamp variation with respect to the event number to check for clock stability over a period of time.
 The right plot is a 1D histogram to check for the spread of the distribution.
-The standard deviation (s.d.) of this distribution is a direct measurement of the T0 clock variation.
+The standard deviation of this distribution is a direct measurement of the T0 clock variation.
 It is 2.37 ns with a mean of -1.89 ns, indicating that the FEB module 79 consistently received the PPS signal every second to reset its T0 clock.
 This measurement was repeated for all 8 FEB modules of the CRT Sharps.
 The T0 clock resolution was found to be $\mathcal{O}$(2 ns), consistent across all FEB modules.
@@ -233,9 +233,9 @@ The comparison was motivated since the SPEC-TDC has a higher precision than FEB 
 
 The left plot of Fig. \ref{fig:UpstreamT1StabilityCombinedBoard79} shows the variation of T1 clock with respect to the event number, indicating that the FEB module 79 regularly received BES signals to reset its T1 clock.
 The right plot shows the 1D histogram of the variation.
-The s.d. here is not a direct measurement of the T1 clock resolution.
+The standard deviation here is not a direct measurement of the T1 clock resolution.
 It is expected to be lower than the T0 clock resolution since the T1 clock is reset more frequently at $\sim$5 Hz.
-The s.d. is smaller at 1.95 ns and the mean is closer to 0 at -0.443 ns.
+The standard deviation is smaller at 1.95 ns and the mean is closer to 0 at -0.443 ns.
 This measurement was carried out for all FEB modules and the same results were observed.
 
 \begin{figure}[ht!] 
@@ -471,7 +471,7 @@ The trigger rate was set as 1 Hz for simplicity.
 
 To evaluate the synchronisation of CAEN digitisers, their timestamps of triggered events were directly compared against the same timestamps recorded by the SPEC-TDC since both are referenced to the 
 PPS signal.
-Similar to the approach with the CRT readout electronics, the SPEC-TDC offers a higher level of precision compared to the CAEN digitiser, 700 ps compared to $\mathcal{O}$(1 ns). 
+Similar to the approach with the CRT readout electronics, the SPEC-TDC offers a higher level of precision compared to the CAEN digitiser, 700 ps compared to $\mathcal{O}$(2 ns). 
 For an ideal synchronisation, the timestamps of every triggered event from every digitiser should be identical with respect to each other, and also with respect to the SPEC-TDC after cable correction.
 
 %The trigger signal was also input to the SPEC-TDC for timestamping.
@@ -534,7 +534,7 @@ Differences in trigger timestamps between CAEN digitisers and the SPEC-TDC with 
 \label{fig:fanoutSPEC}
 \end{figure}
 
-The same test was repeated for the fan out fan scheme. % where multiple DAQ runs were conducted over a few days.
+The same test was repeated for the fan out scheme. % where multiple DAQ runs were conducted over a few days.
 Some example results are shown in Fig. \ref{fig:fanoutSPEC} for run 8178 and run 8196.
 Firstly, in both of these runs, board 5 shows the same straddling effect, causing its timestamps to jitter by 8 ns.
 The second observation is that the timestamp differences vary randomly between digitisers and across different runs. 
@@ -557,7 +557,7 @@ However, the clock drift effect was observed during the testing of the daisy cha
 \label{sec:jitter_correction}
 
 %setup
-To further characterise the timing of the CAEN digitiser, another study was carried out to verify if all 8 CAEN digitisers can digitise waveform in synchronisation with each other $\mathcal{O}$ (1 ns). 
+To further characterise the timing of the CAEN digitiser, another study was carried out to verify if all 8 CAEN digitisers can digitise waveform in synchronisation with each other within 1 ns. 
 The same setup was used as described in the previous section, with a new addition of digitising the waveform of the trigger signal in channel 15 of every digitiser.
 All cable lengths were identical so that all trigger signals took the same amount to propagate to the digitisers.
 The daisy chain clock scheme was also calibrated so that the clock propagation from the master clock to the slave clock was delayed by a precise amount so that their clocks were exactly in phase.
@@ -596,7 +596,7 @@ This comparison helps the understanding of the clock jittering behaviour of the 
 Three identified cases of jittering are illustrated in Fig. \ref{subfig:jitter_before}.
 The trigger waveform is plotted in grey, the rising edge is marked with a red cross and the timestamp of the trigger signal recorded by the SPEC-TDC is plotted as the vertical green line.
 
-In the far left plot, the timestamp of the rising edge and the SPEC-TDC agree with each and hence, the red cross and the green line align.
+In the far left plot, the timestamp of the rising edge and the SPEC-TDC agree with each other and hence, the red cross and the green line align.
 The middle left plot shows the first case of clock jittering of one whole sampling tick, equivalent to 2 ns.
 This is due to the ADC sampling clock jitters while the triggering clock remains stable, resulting in a different tick value of the rising edge.
 In the second case, the opposite situation arises such that the tick value of the rising edge timestamp is stable however the trigger clock jitters in the step of 8 ns.
@@ -696,9 +696,11 @@ This ensures to capture of the full shape of the trigger waveforms without damag
 
 The timing system at SBND is outlined, detailing the timing signal distribution to ensure synchronisation across different DAQ subsystems. 
 As part of the timing system, the SPEC-TDC module records extra timing information applicable for versatile usages.
-The SPEC-TDC was demonstrated to characterise the timing precision of the CRT and PMT readout electronics as well as to explore an alternative timing reconstruction to reconstruct the beam structure.
-Most importantly, it was used to examine the clock synchronisation of CAEN digitisers and helped derive a correction method to account for clock jittering. 
-This is a crucial correction as PMT waveforms are the main signals to perform nanosecond timing reconstruction.
+The module was used to characterise the timing precision of the CRT readout electronics, which was determined to be $\mathcal{O}$(2 ns).
+This resolution enables the reconstruction of the beam bucket structure, of which an alternative reconstruction using the T0 timestamps with the SPEC-TDC timing information was demonstrated.
+Most importantly, the module was used to examine the clock synchronisation of CAEN digitisers responsible for sampling PMT signals.
+This work lead to a clock scheme as well as a correction method to account for clock jittering.
+This is a crucial correction to ensure that PMT waveforms are synchronised at the nanosecond level to necessitate the reconstruction of the beam bucket with a high timing resolution.
 In the following, Chapter \ref{ChapterCalib} focuses on the calibration of the TPC of SBND, which is another essential step to pin down detector effects affecting high precision physics measurements.
 
 %The event building process relies heavily on precise timing synchronization across these subsystems, achieved through the implementation of the WR timing system.

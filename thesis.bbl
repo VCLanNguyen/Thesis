@@ -522,7 +522,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{MiniBooNE Collaboration}
+      \field{collaboration}{MiniBooNE}
       \field{issue}{7}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{4}
@@ -872,7 +872,7 @@
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{SciBooNE Collaboration}
+      \field{collaboration}{SciBooNE}
       \field{issue}{1}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{7}
@@ -2271,7 +2271,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{LSND Collaboration}
+      \field{collaboration}{LSND}
       \field{issue}{11}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{11}
@@ -2542,7 +2542,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{MiniBooNE Collaboration}
+      \field{collaboration}{MiniBooNE}
       \field{issue}{22}
       \field{journaltitle}{Phys. Rev. Lett.}
       \field{month}{11}
@@ -6893,7 +6893,7 @@
       \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{LArIAT Collaboration}
+      \field{collaboration}{LArIAT}
       \field{issue}{1}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{1}
@@ -7384,8 +7384,8 @@
       \strng{authorbibnamehash}{37e1747893c573336bcc526a2ef30814}
       \strng{authornamehash}{37e1747893c573336bcc526a2ef30814}
       \strng{authorfullhash}{f005aec2990df9075cb32f8146b5d107}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
@@ -16499,7 +16499,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{MiniBooNE Collaboration}
+      \field{collaboration}{MiniBooNE}
       \field{issue}{7}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{4}
@@ -16564,68 +16564,6 @@
       \field{title}{{MiniBooNE Resistive Wall Current Monitor}}
       \field{type}{techreport}
       \field{year}{2015}
-    \endentry
-    \entry{DavePhd}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=2b4822b2ff1889b3db5a4c4834ce911e}{%
-           family={Schmitz},
-           familyi={S\bibinitperiod},
-           given={David\bibnamedelima W.},
-           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Columbia University}%
-      }
-      \strng{namehash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \strng{fullhash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \strng{bibnamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \strng{authorbibnamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \strng{authornamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \strng{authorfullhash}{2b4822b2ff1889b3db5a4c4834ce911e}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{A Measurement of Hadron Production Cross Sections for the Simulation of Accelerator Neutrino Beams and a Search for $\nu_\mu$ to $\nu_e$ Sscillations in the $\delta m^2$ about equals $1-eV^2$ Region}}
-      \field{type}{phdthesis}
-      \field{year}{2008}
-      \verb{doi}
-      \verb 10.2172/935240
-      \endverb
-    \endentry
-    \entry{larsoft}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a7ad5ad834b26bd47736dc7b6170edec}{%
-           family={Snider},
-           familyi={S\bibinitperiod},
-           given={E.\bibnamedelimi L.},
-           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=5e5d0487424b69f336bf2e52d635446d}{%
-           family={Petrillo},
-           familyi={P\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{854b3243d57e097727209fd098d999d7}
-      \strng{fullhash}{854b3243d57e097727209fd098d999d7}
-      \strng{bibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
-      \strng{authorbibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
-      \strng{authornamehash}{854b3243d57e097727209fd098d999d7}
-      \strng{authorfullhash}{854b3243d57e097727209fd098d999d7}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Phys. Conf. Ser.}
-      \field{number}{4}
-      \field{title}{{LArSoft: Toolkit for Simulation, Reconstruction and Analysis of Liquid Argon TPC Neutrino Detectors}}
-      \field{volume}{898}
-      \field{year}{2017}
-      \field{pages}{042057}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/898/4/042057
-      \endverb
     \endentry
     \entry{geant4}{article}{}
       \name{author}{127}{}{%
@@ -17293,6 +17231,68 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0168900203013688
       \endverb
     \endentry
+    \entry{DavePhd}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=2b4822b2ff1889b3db5a4c4834ce911e}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Columbia University}%
+      }
+      \strng{namehash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \strng{fullhash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \strng{bibnamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \strng{authorbibnamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \strng{authornamehash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \strng{authorfullhash}{2b4822b2ff1889b3db5a4c4834ce911e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A Measurement of Hadron Production Cross Sections for the Simulation of Accelerator Neutrino Beams and a Search for $\nu_\mu$ to $\nu_e$ Sscillations in the $\delta m^2$ about equals $1-eV^2$ Region}}
+      \field{type}{phdthesis}
+      \field{year}{2008}
+      \verb{doi}
+      \verb 10.2172/935240
+      \endverb
+    \endentry
+    \entry{larsoft}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a7ad5ad834b26bd47736dc7b6170edec}{%
+           family={Snider},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5e5d0487424b69f336bf2e52d635446d}{%
+           family={Petrillo},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{854b3243d57e097727209fd098d999d7}
+      \strng{fullhash}{854b3243d57e097727209fd098d999d7}
+      \strng{bibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
+      \strng{authorbibnamehash}{6abdf03b5b90d3be8bba3dbc7332ccfd}
+      \strng{authornamehash}{854b3243d57e097727209fd098d999d7}
+      \strng{authorfullhash}{854b3243d57e097727209fd098d999d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Phys. Conf. Ser.}
+      \field{number}{4}
+      \field{title}{{LArSoft: Toolkit for Simulation, Reconstruction and Analysis of Liquid Argon TPC Neutrino Detectors}}
+      \field{volume}{898}
+      \field{year}{2017}
+      \field{pages}{042057}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/898/4/042057
+      \endverb
+    \endentry
     \entry{higgs_scalar}{article}{}
       \name{author}{2}{}{%
         {{hash=47285c0ad5ec5e6c5966eeb338dc423f}{%
@@ -17606,7 +17606,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{GENIE Collaboration}
+      \field{collaboration}{GENIE}
       \field{issue}{11}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{12}
@@ -17677,8 +17677,8 @@
       \strng{authorbibnamehash}{45b2dd16b149544ff41ed2a9fc3d4247}
       \strng{authornamehash}{45b2dd16b149544ff41ed2a9fc3d4247}
       \strng{authorfullhash}{c0b72a89a65e694e6b373a3be3ff81bf}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{CERN-OPEN-99-300}
@@ -19007,7 +19007,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{MicroBooNE Collaboration}
+      \field{collaboration}{MicroBooNE}
       \field{issue}{5}
       \field{journaltitle}{Phys. Rev. D}
       \field{month}{9}
@@ -19695,7 +19695,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{collaboration}{DUNE Collaboration}
+      \field{collaboration}{DUNE}
       \field{issn}{1434-6052}
       \field{journaltitle}{Eur. Phys. J. C}
       \field{month}{7}

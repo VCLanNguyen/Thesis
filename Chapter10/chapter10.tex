@@ -22,7 +22,7 @@ The limits setting is performed using the likelihood-based hypothesis testing fo
 The arrival time distribution with fully propagated uncertainties is the input of the limits setting, which exploits the exceptionally high signal-to-background ratio of bins at the edge of the distribution to achieve competitive limits.
 
 The following chapter provides details of the analysis steps employing the three arrival time distributions after the selection.
-This includes two acquired from the lenient and stringent selection performed on reconstructed variables and a third acquired by smearing true variables under the assumption of an improved timing resolution as previously discussed in Chapter \ref{ChapterSelect} 
+This includes two acquired from the lenient and stringent selection performed on reconstructed variables and a third acquired by smearing true variables under the assumption of an improved timing resolution as previously discussed in Chapter \ref{ChapterSelect}.
 Section \ref{sec:uncertainty} outlines the assessment of statistical as well as systematics uncertainties. 
 Following that, Section \ref{sec:limit_procedure} delves into the limits setting procedure.
 Results of the upper limits on the coupling $|U_{\mu4}|^{2}$ of HNLs are presented in Section \ref{sec:result}.
@@ -90,7 +90,7 @@ This method is commonly used for assessing detector systematics uncertainties.
 \subsection{Uncertainty Propagation}
 \label{sec:error_prop}
 
-The impact of uncertainties can be evaluated for a distribution of a physics measurement, of which the distribution of interest is the one describing the arrival time at the front face of SBND (See Section \ref{sec:key_dist}).
+The impact of uncertainties can be evaluated for a distribution of a physics measurement, of which the distribution of interest is the arrival time at the front face of SBND (See Section \ref{sec:key_dist}).
 The reweighting method results in a series of observations $n$ of the arrival time distribution, consisting of the CV observation $n^{CV}$ and observations $n^k$ from a total of $U$ universes.
 A covariance matrix $V$ is constructed from these observations, describing the deviation of the value in bins $i$ and $j$ of the observation $n^k$ in the universe $k$ from the CV observation $n^{CV}$, averaged over $U$ universes.
 The matrix is computed as:
@@ -126,7 +126,7 @@ Detector systematics are not reweightable and require fully simulated and recons
 At the time of writing, the SBND detector is not yet operational, and it is undetermined which detector parameters are impactful on physics measurements.
 Thus, detector systematics are not included in this work but should be included in future iterations.
 
-Uncertainties discussed here were assessed using the arrival time distributions that describe the arrival time at the front face of SBND (See Section \ref{sec:key_dist}).
+Uncertainties discussed here were assessed using the arrival time distribution (See Section \ref{sec:key_dist}).
 The following plots show the arrival time distribution after the lenient selection, with the HNL mass of 200 MeV and normalised to the coupling $|U_{\mu4}|^2 = 1 \times 10^{-7}$.
 
 Statistical uncertainty indicates the statistical fluctuation of the MC sample.
@@ -288,7 +288,7 @@ The SM neutrino cross section uncertainty was assessed using the reweighting met
 Fig. \ref{fig:bkg_xsec} shows the resulting combined uncertainty of all the SM neutrino interaction cross section systematics.
 Compared to statistical and flux uncertainties, the magnitude of the cross section uncertainty is significantly larger.
 This is due to the primary background after selection being Neutral Current (NC) $\pi^0$, of which the cross section is not well-measured.  
-Uncertainties associated with NC Cohenrent and NC Resonant scattering are the main contributors to this channel.
+Uncertainties associated with NC cohenrent and NC resonant scattering are the main contributors to this channel.
 Moreover, a small fraction of Charged Current (CC) $\nu_e$ interactions remains after selection and the cross section is also not well-measured.
 For this channel, uncertainties associated with CC quasi-elastic scattering systematics contribute the most.
 Finally, uncertainties for modelling hadron transport interactions are significant contributors to the cross section uncertainty.
@@ -518,7 +518,7 @@ As previously stated as the timing cut (See Section \ref{sec:select_result}), th
 
 Three arrival time distributions were used in the limits setting.
 Appendix \ref{appendix_lenient} and \ref{appendix_stringent} contain the arrival time distributions for signals and backgrounds after the lenient and stringent cut respectively (See Section \ref{sec:select_result}), with all uncertainties propagated (See Section \ref{sec:uncertainty}) . 
-Additionally, appendix \ref{appendix_smeared} contains the smeared true distributions under the assumption of a timing reconstruction improvement (See Section \ref{sec:truth_bucket}).
+Additionally, Appendix \ref{appendix_smeared} contains the smeared true distributions under the assumption of a timing reconstruction improvement (See Section \ref{sec:truth_bucket}).
 %, also used in the same limits setting.
 
 The uncertainties of the arrival time distribution discussed in Section \ref{sec:uncertainty} are the constraints on the nuisance parameters $c_\theta(a_\theta|\theta)$ in the second product Eq. \ref{eq:LLH_func}.
@@ -535,7 +535,7 @@ The modifier in this case follows a Gaussian shape for bins with high statistics
 Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian-shaped modifier, however, with correlation bin-by-bin.
 
 \begin{table}[htbp!]
-\caption[Summary of Uncertainty Constraints]{Table summarising modifiers used to constrain uncertainties.}
+\caption[Summary of Uncertainty Constraints]{Summary of modifiers used to constrain uncertainties.}
 \label{table:constraint}
 \begin{center}
 \begin{tabular}{|c| c | c | c | c |} 
@@ -603,7 +603,7 @@ The third distribution is the smeared true as shown in Fig. \ref{fig:final_truth
         \caption[Arrival Time Distributions input to the Limits Setting]{
 	Arrival time distributions used in the limits setting, including (a) the lenient, (b) the stringent and (c) the smeared true distribution,
 	normalised to the exposure of $1 \times 10^{21}$ POT.
-	HNLs are normalised to $m_N = 200$ MeV and $|U_{\mu4}|^2 = 3.16 \times 10{-7}$.
+	HNLs of mass 200 MeV is normalised to the coupling $|U_{\mu4}|^2 = 3.16 \times 10{-7}$.
 	}
 \end{figure}
 The smeared true distribution is motivated by a better timing reconstruction to resolve the beam bucket with a resolution of 1.73 ns.
@@ -683,7 +683,7 @@ Particularly, this can be done with a more sophisticated timing reconstruction t
 The expected upper limits at the 90\% C.L. and the Brazil bands acquired from the three arrival time distributions are summarised below in Table \ref{table:result}.  
 
 \begin{table}[htbp!]
-	\caption[Summary of Expected Limits on the Coupling $|U_{\mu4}|^2$ of Majorana HNLs]{Table summarising expected upper limits on the coupling $|U_{\mu4}|^2$ of Majorana HNLs at the C.L. of 90\% predicted for SBND.}
+	\caption[Summary of Expected Limits on the Coupling $|U_{\mu4}|^2$ of Majorana HNLs]{Summary of expected limits on the coupling $|U_{\mu4}|^2$ of Majorana HNLs at the C.L. of 90\% predicted for SBND.}
 \label{table:result}
 \begin{center}
 	\begin{tabular}{|c| c | c | c | c | c | c|} 

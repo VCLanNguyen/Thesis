@@ -1,49 +1,49 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[61] biber:322> INFO - === Wed Aug  7, 2024, 17:11:17
-[74] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[175] Biber.pm:943> INFO - Found 133 citekeys in bib section 0
-[186] Biber.pm:4256> INFO - Processing section 0
-[187] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
-[187] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
-[194] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
-[203] bibtex.pm:1653> INFO - LaTeX decoding ...
-[418] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
-[518] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBFlux' is not an integer - this will probably not sort properly.
-[577] Utils.pm:293> WARN - month field 'Jul' in entry 'SciBooNE' is not an integer - this will probably not sort properly.
-[798] Utils.pm:293> WARN - month field 'Nov' in entry 'LSND_anomaly' is not an integer - this will probably not sort properly.
-[843] Utils.pm:293> WARN - month field 'Nov' in entry 'Miniboone_anomaly' is not an integer - this will probably not sort properly.
-[888] Utils.pm:293> WARN - month field 'Mar' in entry 'SIN2' is not an integer - this will probably not sort properly.
-[896] Utils.pm:293> WARN - month field 'Nov' in entry 'SIN3' is not an integer - this will probably not sort properly.
-[916] Utils.pm:293> WARN - month field 'Nov' in entry 'KEK2' is not an integer - this will probably not sort properly.
-[960] Utils.pm:293> WARN - month field 'May' in entry 'PS191C' is not an integer - this will probably not sort properly.
-[987] Utils.pm:293> WARN - month field 'feb' in entry 'ubooneDet' is not an integer - this will probably not sort properly.
-[1218] Utils.pm:293> WARN - month field 'oct' in entry 'argoneut' is not an integer - this will probably not sort properly.
-[1254] Utils.pm:293> WARN - month field 'feb' in entry 'uboone_gamma' is not an integer - this will probably not sort properly.
-[1486] Utils.pm:293> WARN - month field 'Jan' in entry 'Lariat' is not an integer - this will probably not sort properly.
-[1493] Utils.pm:293> WARN - month field 'May' in entry 'photon_lifetime' is not an integer - this will probably not sort properly.
-[1504] Utils.pm:293> WARN - month field 'aug' in entry 'argoneut_recomb' is not an integer - this will probably not sort properly.
-[1539] Utils.pm:293> WARN - month field 'Oct' in entry 'QLAnti' is not an integer - this will probably not sort properly.
-[1552] Utils.pm:293> WARN - month field 'sep' in entry 'uboone_diff' is not an integer - this will probably not sort properly.
-[1721] Utils.pm:293> WARN - month field 'dec' in entry 'protodune' is not an integer - this will probably not sort properly.
-[2620] Utils.pm:293> WARN - month field 'jul' in entry 'icarus_sce' is not an integer - this will probably not sort properly.
-[2715] Utils.pm:293> WARN - month field 'may' in entry 'xarapuca' is not an integer - this will probably not sort properly.
-[2738] Utils.pm:293> WARN - month field 'Apr' in entry 'reactor_anomaly_1' is not an integer - this will probably not sort properly.
-[2740] Utils.pm:293> WARN - month field 'Aug' in entry 'reactor_anomaly_2' is not an integer - this will probably not sort properly.
-[2800] Utils.pm:293> WARN - month field 'Nov' in entry 'LightDarkMatter' is not an integer - this will probably not sort properly.
-[2810] Utils.pm:293> WARN - month field 'Dec' in entry 'DarkNeutrinoLEE' is not an integer - this will probably not sort properly.
-[2814] Utils.pm:293> WARN - month field 'jun' in entry 'SBND_Wires' is not an integer - this will probably not sort properly.
-[3084] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBMiniBooNE' is not an integer - this will probably not sort properly.
-[3216] Utils.pm:293> WARN - month field 'Jan' in entry 'qcd_axion' is not an integer - this will probably not sort properly.
-[3250] Utils.pm:293> WARN - month field 'Dec' in entry 'genie_tune' is not an integer - this will probably not sort properly.
-[3262] Utils.pm:293> WARN - month field 'jan' in entry 'wirecell_protodune' is not an integer - this will probably not sort properly.
-[3578] Utils.pm:293> WARN - month field 'Jul' in entry 'pandora_protodune' is not an integer - this will probably not sort properly.
-[3594] Utils.pm:293> WARN - month field 'Mar' in entry 'wion_lar' is not an integer - this will probably not sort properly.
-[3605] Utils.pm:293> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[3761] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3761] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3761] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[3761] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[3882] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[8292] bbl.pm:755> INFO - Output to thesis.bbl
-[8292] Biber.pm:128> INFO - WARNINGS: 31
+[60] biber:322> INFO - === Thu Aug  8, 2024, 00:42:33
+[71] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[166] Biber.pm:943> INFO - Found 133 citekeys in bib section 0
+[177] Biber.pm:4256> INFO - Processing section 0
+[178] Utils.pm:75> INFO - Globbing data source 'References/references.bib'
+[178] Utils.pm:91> INFO - Globbed data source 'References/references.bib' to References/references.bib
+[185] Biber.pm:4455> INFO - Looking for bibtex format file 'References/references.bib' for section 0
+[194] bibtex.pm:1653> INFO - LaTeX decoding ...
+[402] bibtex.pm:1471> INFO - Found BibTeX data source 'References/references.bib'
+[503] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBFlux' is not an integer - this will probably not sort properly.
+[572] Utils.pm:293> WARN - month field 'Jul' in entry 'SciBooNE' is not an integer - this will probably not sort properly.
+[845] Utils.pm:293> WARN - month field 'Nov' in entry 'LSND_anomaly' is not an integer - this will probably not sort properly.
+[898] Utils.pm:293> WARN - month field 'Nov' in entry 'Miniboone_anomaly' is not an integer - this will probably not sort properly.
+[952] Utils.pm:293> WARN - month field 'Mar' in entry 'SIN2' is not an integer - this will probably not sort properly.
+[961] Utils.pm:293> WARN - month field 'Nov' in entry 'SIN3' is not an integer - this will probably not sort properly.
+[981] Utils.pm:293> WARN - month field 'Nov' in entry 'KEK2' is not an integer - this will probably not sort properly.
+[1021] Utils.pm:293> WARN - month field 'May' in entry 'PS191C' is not an integer - this will probably not sort properly.
+[1046] Utils.pm:293> WARN - month field 'feb' in entry 'ubooneDet' is not an integer - this will probably not sort properly.
+[1274] Utils.pm:293> WARN - month field 'oct' in entry 'argoneut' is not an integer - this will probably not sort properly.
+[1309] Utils.pm:293> WARN - month field 'feb' in entry 'uboone_gamma' is not an integer - this will probably not sort properly.
+[1552] Utils.pm:293> WARN - month field 'Jan' in entry 'Lariat' is not an integer - this will probably not sort properly.
+[1560] Utils.pm:293> WARN - month field 'May' in entry 'photon_lifetime' is not an integer - this will probably not sort properly.
+[1574] Utils.pm:293> WARN - month field 'aug' in entry 'argoneut_recomb' is not an integer - this will probably not sort properly.
+[1614] Utils.pm:293> WARN - month field 'Oct' in entry 'QLAnti' is not an integer - this will probably not sort properly.
+[1629] Utils.pm:293> WARN - month field 'sep' in entry 'uboone_diff' is not an integer - this will probably not sort properly.
+[1823] Utils.pm:293> WARN - month field 'dec' in entry 'protodune' is not an integer - this will probably not sort properly.
+[2795] Utils.pm:293> WARN - month field 'jul' in entry 'icarus_sce' is not an integer - this will probably not sort properly.
+[2883] Utils.pm:293> WARN - month field 'may' in entry 'xarapuca' is not an integer - this will probably not sort properly.
+[2902] Utils.pm:293> WARN - month field 'Apr' in entry 'reactor_anomaly_1' is not an integer - this will probably not sort properly.
+[2904] Utils.pm:293> WARN - month field 'Aug' in entry 'reactor_anomaly_2' is not an integer - this will probably not sort properly.
+[2957] Utils.pm:293> WARN - month field 'Nov' in entry 'LightDarkMatter' is not an integer - this will probably not sort properly.
+[2967] Utils.pm:293> WARN - month field 'Dec' in entry 'DarkNeutrinoLEE' is not an integer - this will probably not sort properly.
+[2971] Utils.pm:293> WARN - month field 'jun' in entry 'SBND_Wires' is not an integer - this will probably not sort properly.
+[3228] Utils.pm:293> WARN - month field 'Apr' in entry 'BNBMiniBooNE' is not an integer - this will probably not sort properly.
+[3353] Utils.pm:293> WARN - month field 'Jan' in entry 'qcd_axion' is not an integer - this will probably not sort properly.
+[3386] Utils.pm:293> WARN - month field 'Dec' in entry 'genie_tune' is not an integer - this will probably not sort properly.
+[3397] Utils.pm:293> WARN - month field 'jan' in entry 'wirecell_protodune' is not an integer - this will probably not sort properly.
+[3707] Utils.pm:293> WARN - month field 'Jul' in entry 'pandora_protodune' is not an integer - this will probably not sort properly.
+[3722] Utils.pm:293> WARN - month field 'Mar' in entry 'wion_lar' is not an integer - this will probably not sort properly.
+[3733] Utils.pm:293> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[3873] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3873] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3873] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[3873] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[3984] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[8180] bbl.pm:755> INFO - Output to thesis.bbl
+[8180] Biber.pm:128> INFO - WARNINGS: 31
