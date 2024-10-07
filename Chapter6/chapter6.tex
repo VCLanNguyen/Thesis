@@ -75,7 +75,7 @@ Signal processing is the first crucial step of TPC reconstruction, which is to d
 At SBND, signal processing is implemented using the WireCell tool kit \cite{wirecell}, which has been employed and developed by Liquid Argon Time Projection Chamber (LArTPC) experiments like MicroBooNE \cite{wirecell} and ProtoDUNE \cite{wirecell_protodune}.
 %Both implementations here have demonstrated excellent performance to acquire deconvolved charge by performing deconvolution in time and wire dimension over the traditional deconvolution in time dimension only. 
 
-The first step is noise filtering to remove excess and correlated noise from raw waveforms.
+The first step is noise filtering to remove excess and coherent noise from raw waveforms.
 A 2D deconvolution of the field and electronics response is applied to recover the original charge deposited on the wire, where response functions consider the time response of a single wire as well as of neighbouring wires.
 This step is particularly important for the induction planes to convert bipolar into unipolar signals, so that the integral of the waveform can be used for charge estimation.
 High frequency filters are applied next to attenuate noise that is artificially amplified.
@@ -153,9 +153,9 @@ Output from Pandora represents an interaction, referred to as a \textit{slice}, 
 The reconstruction begins with a workflow to reconstruct cosmic-like objects that leave long tracks inside the detector.
 Hits on each wire plane independently are grouped together to form 2D clusters.
 Clusters across planes are matched to perform 3D reconstruction under the assumption that all clusters are track-like.
-A cosmic rejection is performed to identify if a cluster is cosmic-like or neutrino-like, although it is deliberately cautious at this stage so that only very unambiguous cosmic-like clusters in nature are removed.
+A cosmic rejection is performed to identify if a 3D cluster is cosmic-like or neutrino-like, although it is deliberately cautious at this stage so that only very unambiguous cosmic-like clusters in nature are removed.
 
-The remaining clusters are input into a second workflow dedicated towards neutrino reconstruction.
+The remaining neutrino-like clusters are input into a second workflow dedicated towards neutrino reconstruction.
 It begins with a slicing algorithm that group clusters into \textit{slices}, where each slice encapsulates hits coming from a single origin, representing an interaction.
 2D clustering is re-performed on each wire plane independently, with a new assumption that clusters can be both track-like and shower-like.
 A vertexing algorithm identifies the interaction vertex of the slice and its associated clusters.
@@ -327,13 +327,13 @@ The fast response of PMT signals plays a key role in the nanosecond timing resol
 
 Fig. \ref{fig:pds_reco_deconvolution} depicts an example of a simulated PMT waveform before and after the deconvolution.% and baseline determination.
 The top panel shows the number of \textit{true} PhotoElectrons (PEs) seen by a PMT as a function of time in green.
-The middle panel figure shows the raw waveform in blue, convolved with the PMT response and noise.
+The middle panel shows the raw waveform in blue, convolved with the PMT response and noise.
 %The AC circuits of PMTs lead to over/undershoot features across the raw waveform with respect to the baseline (See Section \ref{sec:pds_response}).
 A 1D deconvolution and a high frequency filter are applied subsequently for noise removal.
 The deconvolved waveform is shown in orange in the bottom panel, demonstrating that over/undershoot features are removed while peaks' magnitudes and positions are maintained.
 
 Baseline of deconvolved PMT waveforms is estimated using the 400 ns portion at the start and end of the waveform.
-Optical hits are identified after baseline subtraction, by finding pulses above the threshold of $1/4$ the amplitude of the deconvolved SER and 3 times the standard deviation of the baseline root mean square.
+Optical hits are identified after baseline subtraction, by finding pulses above the threshold of $1/4$ the amplitude of the deconvolved SER and 3 times the baseline root mean square.
 Fig. \ref{fig:pds_reco_hit_finding} depicts a simulated deconvolved and baseline-subtracted PMT waveform with five identified optical hits.
 Peak times, corresponding to the maximum of an optical hit, are denoted with red triangles.
 The first optical hit contains multiple peaks merged into a single optical hit due to multiple photons arriving very closely in time to the PMT.
@@ -374,9 +374,9 @@ The start time of the optical flash represents the start time of an interaction,
 The flash start time is the average of the rise time of optical hits in a flash, only considering PMTs that contribute 50\% of the prompt light in the 30 ns window of the largest number of PEs.
 A correction is applied for the propagation of the photons from the scintillation location to the PMTs.
 
-The correction is computed by exploiting the high density of PMTs as well as having coated and uncoated PMTs sensitive to direct VUV light and reflected visible light (See Section \ref{sec:sbnd_pds}).
-Fig. \ref{fig:light_yield_Diego} shows the reconstructed light yield seen by coated and uncoated PMTs based on simulation, as a function of the photon mean drift distance, $d_{drift}$.
-The error bars show the uncertainty due to the geometrical effects of the detector.
+The correction is computed by exploiting the high density of PMTs as well as having (un)coated PMTs sensitive to direct VUV light and reflected visible light (See Section \ref{sec:sbnd_pds}).
+Fig. \ref{fig:light_yield_Diego} shows the reconstructed light yield seen by (un)coated PMTs based on simulation, as a function of the photon mean drift distance, $d_{drift}$.
+The error bars show the uncertainty due to the border effects, where the amount of collected light varies greatly depending on the position of energy deposition relative to the detector edge.
 
 Closer to the anode at $d_{drift} = 0 $ cm, the light yield primarily comes from direct VUV photons, detected by coated PMTs as shown in purple.
 Closer to the cathode at $d_{drift} = 200 $ cm, and hence to the reflective foils, the light yield from reflected visible photons increases, detected by uncoated PMTs as shown in red.
@@ -484,8 +484,8 @@ For each reconstructed particle, Razzled outputs a score for each particle type 
 \section{Concluding Remarks}
 \label{sec:reco_concluding_remarks}
 
-The reconstruction workflow of SBND is described, outlining the reconstruction process for each detection system: the TPC, PDS and CRTs.
-The three detection subsystems together provide complementary information regarding the underlying reconstructed interaction and are used collectively by different analysis tools for various purposes.
+The reconstruction workflow of SBND is described, outlining the reconstruction process for each detection subsystem: the TPC, PDS and CRTs.
+The three subsystems provide complementary information regarding the underlying reconstructed interaction and are used collectively by different analysis tools for various purposes.
 Focusing on the selection of HNLs, the background rejection and signal selection employ the tools described here to achieve a high signal-to-background ratio as discussed later in Chapter \ref{ChapterSelect}.
 
 Particularly, the most important variable is the reconstructed interaction time, $t_0$, which is used to compute the arrival time at the front face of SBND.
