@@ -202,13 +202,13 @@ This approximation has proven to work well for the MeV to GeV-scale interactions
 
 Delta rays are microphysics processes that can affect recombination, highlighted by both NEST \cite{NEST} and ArgoNeuT \cite{argoneut_recomb} collaborations.
 They are knock-out electrons with low energy but high energy loss per unit length $dE/dx$.
-As shown in Fig. \ref{fig:delta_ray_evd}, delta rays are short blip produced along a longer primary track, in this case, a cosmic muon.                      
+As shown in Fig. \ref{fig:delta_ray_evd}, delta rays are short blips produced along a longer primary track, in this case, a cosmic muon.                      
 Due to their high $dE/dx$, they are associated with a smaller recombination factor $R$ (See Fig. \ref{fig:recomb_graph} Section \ref{sec:recomb}).
 A smaller $R$ corresponds to a smaller probability of ionisation electrons surviving recombination.
 As a result, delta rays can lead to non-linear fluctuations in recombination that is not well-described by the ModBox model.
 %to higher recombination, producing more scintillation photons at the cost of ionisation electrons.
 
-This study is motivated to asses the impacts of delta ray fluctuations on recombination, and consequently, the charge to energy loss conversion of different particle types using MC.
+This study is motivated to assess the impacts of delta ray fluctuations on recombination, and consequently, the charge to energy loss conversion of different particle types using MC.
 An overview of the simulation of delta rays and recombination is given in Section \ref{sec:simDeltaRay}.%, and some concerns with the current framework.
 Following this, Sections \ref{sec:impactDeltaRayMag} and \ref{sec:impactDeltaRaySmear} provide a description of the delta ray impacts on the recombination magnitude and smearing respectively.
 A summary of recombination studies carried out by the ICARUS collaboration is given in Section \ref{sec:icarus}.
@@ -253,8 +253,8 @@ Moreover, the maximum length $dx$ that the particle can propagate per step is co
 This setup allows for a feasible computation of generating delta rays.
 
 %Describe ionandscint module
-For each step $dx$, the number of electron-ion pairs resulting from a continuous loss energy deposition $dE$ is calculated by dividing $dE$ by the ionisation work function of argon $W_{ion} = 23.6$ eV \cite{wion_lar}.
-Recombination factor $R$ is applied to the number of electron-ion pairs according to the charge-light anti-correlation described by Eq. \ref{eq:Q} and \ref{eq:L} to determine the number of surviving electrons resulting from the step $dx$.    
+For each step $dx$, the number of electron-ion pairs $N_i$ resulting from a continuous loss energy deposition $dE$ is calculated by dividing $dE$ by the ionisation work function of argon $W_{ion} = 23.6$ eV \cite{wion_lar}.
+The recombination factor $R$ is applied $N_i$ according to the charge-light anti-correlation described by Eq. \ref{eq:Q} and \ref{eq:L} to determine the number of surviving electrons resulting from the step $dx$.    
 Using the ModBox formalism, $R$ is computed as \cite{argoneut_recomb}:
 \begin{equation}
         \label{eq:R_factor}

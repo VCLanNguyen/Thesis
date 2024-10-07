@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  7 OCT 2024 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  7 OCT 2024 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1198,7 +1198,7 @@ Overfull \hbox (1.19994pt too wide) detected at line 85
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 86
- [][][]\T1/futs/m/n/12 106[][]
+ [][][]\T1/futs/m/n/12 105[][]
  []
 
 
@@ -2341,39 +2341,39 @@ File: Chapter8/Figs/mu_1um_lowRR.png Graphic file (type png)
 <use Chapter8/Figs/mu_1um_lowRR.png>
 Package pdftex.def Info: Chapter8/Figs/mu_1um_lowRR.png  used on input line 418.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [107 <./Chapter8/Figs/proton_700um.png> <./Chapter8/Figs/proton_1um.png> <./Chapter8/Figs/proton_profile.png> <./Chapter8/Figs/proton_profile_diff.png>] [108 <./Chapter8/Figs/mu_700um.png> <./Chapter8/Figs/mu_1um.png> <./Chapter8/Figs/mu_700um_lowRR.png> <./Chapter8/Figs/mu_1um_lowRR.png>]
-<Chapter8/Figs/mu_profile.png, id=2466, 700.6175pt x 477.785pt>
+ [107 <./Chapter8/Figs/proton_700um.png> <./Chapter8/Figs/proton_1um.png> <./Chapter8/Figs/proton_profile.png> <./Chapter8/Figs/proton_profile_diff.png>]
+<Chapter8/Figs/mu_profile.png, id=2462, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_profile.png Graphic file (type png)
 <use Chapter8/Figs/mu_profile.png>
 Package pdftex.def Info: Chapter8/Figs/mu_profile.png  used on input line 444.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/mu_profile_diff.png, id=2467, 700.6175pt x 477.785pt>
+<Chapter8/Figs/mu_profile_diff.png, id=2463, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_profile_diff.png Graphic file (type png)
 <use Chapter8/Figs/mu_profile_diff.png>
 Package pdftex.def Info: Chapter8/Figs/mu_profile_diff.png  used on input line 451.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [109 <./Chapter8/Figs/mu_profile.png> <./Chapter8/Figs/mu_profile_diff.png>]
-<Chapter8/Figs/derr_proton_delta_700um.png, id=2483, 700.6175pt x 477.785pt>
+ [108 <./Chapter8/Figs/mu_700um.png> <./Chapter8/Figs/mu_1um.png> <./Chapter8/Figs/mu_700um_lowRR.png> <./Chapter8/Figs/mu_1um_lowRR.png>]
+<Chapter8/Figs/derr_proton_delta_700um.png, id=2479, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_delta_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_delta_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_700um.png  used on input line 482.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_delta_1um.png, id=2484, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_delta_1um.png, id=2480, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_delta_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_delta_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_1um.png  used on input line 489.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_only_700um.png, id=2485, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_only_700um.png, id=2481, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_only_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_only_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_only_700um.png  used on input line 495.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_only_1um.png, id=2486, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_only_1um.png, id=2482, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_only_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_only_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_only_1um.png  used on input line 502.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [110 <./Chapter8/Figs/derr_proton_delta_700um.png> <./Chapter8/Figs/derr_proton_delta_1um.png> <./Chapter8/Figs/derr_proton_only_700um.png> <./Chapter8/Figs/derr_proton_only_1um.png>]
+ [109 <./Chapter8/Figs/mu_profile.png> <./Chapter8/Figs/mu_profile_diff.png>] [110 <./Chapter8/Figs/derr_proton_delta_700um.png> <./Chapter8/Figs/derr_proton_delta_1um.png> <./Chapter8/Figs/derr_proton_only_700um.png> <./Chapter8/Figs/derr_proton_only_1um.png>]
 <Chapter8/Figs/derr_mu_delta_700um.png, id=2501, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_mu_delta_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_delta_700um.png>
@@ -2394,13 +2394,12 @@ File: Chapter8/Figs/derr_mu_only_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_only_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_mu_only_1um.png  used on input line 548.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [111 <./Chapter8/Figs/derr_mu_delta_700um.png> <./Chapter8/Figs/derr_mu_delta_1um.png> <./Chapter8/Figs/derr_mu_only_700um.png> <./Chapter8/Figs/derr_mu_only_1um.png>]
-<Chapter8/Figs/icarus_recomb.png, id=2510, 814.04124pt x 782.925pt>
+<Chapter8/Figs/icarus_recomb.png, id=2506, 814.04124pt x 782.925pt>
 File: Chapter8/Figs/icarus_recomb.png Graphic file (type png)
 <use Chapter8/Figs/icarus_recomb.png>
 Package pdftex.def Info: Chapter8/Figs/icarus_recomb.png  used on input line 607.
 (pdftex.def)             Requested size: 218.73056pt x 210.36517pt.
- [112 <./Chapter8/Figs/icarus_recomb.png>]) [113]
+ [111 <./Chapter8/Figs/derr_mu_delta_700um.png> <./Chapter8/Figs/derr_mu_delta_1um.png> <./Chapter8/Figs/derr_mu_only_700um.png> <./Chapter8/Figs/derr_mu_only_1um.png>] [112 <./Chapter8/Figs/icarus_recomb.png>]) [113]
 \openout2 = `Chapter9/chapter9.aux'.
 
  (./Chapter9/chapter9.tex [114
@@ -3068,13 +3067,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  29856 strings out of 483065
  545047 string characters out of 5963550
- 1779043 words of memory out of 5000000
+ 1778043 words of memory out of 5000000
  43194 multiletter control sequences out of 15000+600000
  681550 words of font info for 426 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,15n,109p,1249b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (214 pages, 24765188 bytes).
+Output written on thesis.pdf (214 pages, 24765115 bytes).
 PDF statistics:
  3681 PDF objects out of 4296 (max. 8388607)
  2969 compressed objects within 30 object streams

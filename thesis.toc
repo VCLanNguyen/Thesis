@@ -83,7 +83,7 @@
 \contentsline {subsection}{\numberline {8.1.2}Bias Study of Diffusion and Space Charge Effects}{101}{subsection.8.1.2}%
 \contentsline {section}{\numberline {8.2}Delta Ray Fluctuations on Recombination}{103}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Simulation of Delta Rays and Recombination}{104}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{106}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{105}{subsection.8.2.2}%
 \contentsline {subsection}{\numberline {8.2.3}Impacts of Delta Rays on Recombination Smearing}{109}{subsection.8.2.3}%
 \contentsline {subsection}{\numberline {8.2.4}Recombination Studies from the ICARUS Experiment}{112}{subsection.8.2.4}%
 \contentsline {section}{\numberline {8.3}Concluding Remarks}{113}{section.8.3}%
