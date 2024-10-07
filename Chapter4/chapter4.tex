@@ -194,7 +194,7 @@ This ratio of coated to uncoated PMTs (4:1) is chosen to optimize light collecti
 
 Having TPB is utilised at two locations: (1) evaporated onto reflective foils at the cathode, and (2) coated on the optical windows of the PMTs, leads to a difference in the spatial and arrival time distributions for direct VUV and reflected visible photons.
 Direct VUV photons arriving at coated PMTs are immediately wavelength shifted into the detectable range of PMTs.
-Reflected visible photons, resulting from VUV photons being wavelength shifted and reflected at the cathode, have to travel a longer distance before being detected by uncoated PMTs.
+Reflected visible photons, resulting from VUV photons being wavelength shifted and reflected at the cathode, have to travel a longer distance before being detected by (un)coated PMTs.
 The spatial distribution of reflected visible photons is more diffused and spread across a larger number of optical detectors compared to direct VUV photons \cite{PatrickPhD}.
 %However, reflected visible photons have a faster group velocity (See Fig. \ref{fig:vuv_visible} Section \ref{sec:photonprop}) and arrive at detection earlier than some direct VUV photons.
 Such difference can be exploited to perform the timing reconstruction using only PMT signals, which is further discussed in Section \ref{sec:reco_pds}.
@@ -272,8 +272,8 @@ The main hardware trigger component in SBND is the Penn Trigger Board (PTB).
 It applies a programmable trigger logic based on external inputs and issues a trigger to the Data Acquisition (DAQ) subsystem if the conditions are met.
 Details of the hardware trigger at SBND is given in Appendix \ref{appendix_hardware_trigger}, while a short summary is provided here.
 
-In order to form a trigger, the PTB requires signals from the three subsystems: (1) beam system, (2) PMTs, and (3) CRTs.
-The beam system informs the PTB on the status on the BNB beam, and whether the beam has arrived at the detector hall.
+In order to form a trigger, the PTB requires signals from the three subsystems: (1) beam subsystem, (2) PMTs, and (3) CRTs.
+The beam subsystem informs the PTB on the status on the BNB beam, and whether the beam has arrived at the detector hall.
 Signals from PMTs provides information regarding the intensity and locality of the energy deposited inside the detector, and whether it is consistent with a neutrino event.
 Signals from CRTs provides information of the energy deposited outside of the detector in the CRT walls, and whether it is consistent with a cosmic muon. 
 The readout electronics of PMTs and CRTs are equipped with timing resolution $\mathcal{O}$(2 ns) and their output signals can quickly inform the PTB to form a trigger.
@@ -487,9 +487,12 @@ Diagram showing the particle production in the BNB.
 %beam simulation
 %Explain what meson is in the flux, what tuning is used, 
 The beam is simulated using Geant4 \cite{geant4} with different tunings for the composition of the secondary mesons and hadrons produced from $p\ +\ $Be interactions \cite{BNBMiniBooNE}.
-The $\pi^{\pm}$ production is tuned to the HARP data set using Sanford-Wang parametrisation.
-The $K^{+}$ production is extrapolated to the global $K^{+}$ production data using Feynman scaling-based parametrisation, and further constrained by SciBooNE's direct measurements of $K^{+}$ production from the BNB \cite{SciBooNE}. 
-Other secondary hadrons and mesons such as $p$, $n$ and $K^{-}$ are modelled using the MARS hadronic interactions, however, their overall contribution to the neutrino flux is small. 
+The $\pi^{\pm}$ production is tuned to the HARP and E910 data sets using Sanford-Wang parametrisation.
+The $K^{+}$ production is extrapolated to the global $K^{+}$ data using Feynman scaling-based parametrisation, and further constrained by SciBooNE's direct measurements of $K^{+}$ production from the BNB \cite{SciBooNE}. 
+The $K^0_L$ production is fit to data from the E910 and KEK experiments using Sanford-Wang parametrisation.
+The productions of $K^{-}$, $p$ and $n$ are modelled using the MARS hadronic interactions.
+%Other secondary hadrons and mesons such as  and 
+%, however, their overall contribution to the neutrino flux is small. 
 Interaction cross sections of $p/n\ +\ $ Be and $\pi^{\pm}\ +\ $ Be are also incorporated in flux predictions \cite{DavePhd}.
 Uncertainties associated with the flux modelling are discussed in Section \ref{sec:signal_error}.
 %The systematics uncertainties associated with the BNB flux are calculated by a re-weighting process, which will be presented in Chapter \ref{ChapterResult}.
