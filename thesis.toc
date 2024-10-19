@@ -121,7 +121,7 @@
 \contentsline {subsection}{\numberline {10.2.2}Likelihood-based Test Statistic}{153}{subsection.10.2.2}%
 \contentsline {subsection}{\numberline {10.2.3}The CL$_{\mathrm {s}}$ Method}{155}{subsection.10.2.3}%
 \contentsline {subsection}{\numberline {10.2.4}Computing Test Statistic Distributions}{156}{subsection.10.2.4}%
-\contentsline {subsection}{\numberline {10.2.5}Setting the Upper Limits}{157}{subsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.2.5}Setting the Upper Limits}{156}{subsection.10.2.5}%
 \contentsline {section}{\numberline {10.3}Results}{158}{section.10.3}%
 \contentsline {subsection}{\numberline {10.3.1}Comparison Across Different Arrival Time Distributions}{160}{subsection.10.3.1}%
 \contentsline {subsection}{\numberline {10.3.2}Comparison With Other Experiments}{162}{subsection.10.3.2}%
