@@ -1068,6 +1068,8 @@ INPUT ./Chapter10/Figs/sensitivity.png
 OUTPUT Chapter11/chapter11.aux
 INPUT Chapter11/chapter11.tex
 INPUT Chapter11/chapter11.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
 OUTPUT Appendix1/appendix1.aux
 INPUT Appendix1/appendix1.tex
 INPUT Appendix1/appendix1.tex
@@ -1098,6 +1100,9 @@ INPUT Appendix4/appendix4.tex
 INPUT Appendix4/Figs/m140.png
 INPUT ./Appendix4/Figs/m140.png
 INPUT ./Appendix4/Figs/m140.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
 INPUT Appendix4/Figs/m160.png
 INPUT ./Appendix4/Figs/m160.png
 INPUT ./Appendix4/Figs/m160.png

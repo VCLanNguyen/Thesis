@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  19 OCT 2024 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  20 OCT 2024 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,223 +1182,228 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ] [10] [11]
-Overfull \hbox (1.19994pt too wide) detected at line 83
- [][][]\T1/futs/m/n/12 101[][]
+Overfull \hbox (1.19994pt too wide) detected at line 82
+ [][][]\T1/futs/m/n/12 100[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 84
+Overfull \hbox (1.19994pt too wide) detected at line 83
  [][][]\T1/futs/m/n/12 103[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 85
- [][][]\T1/futs/m/n/12 104[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 86
+Overfull \hbox (1.19994pt too wide) detected at line 84
  [][][]\T1/futs/m/n/12 105[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 85
+ [][][]\T1/futs/m/n/12 106[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 86
+ [][][]\T1/futs/m/n/12 107[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 87
- [][][]\T1/futs/m/n/12 109[][]
+ [][][]\T1/futs/m/n/12 111[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 88
- [][][]\T1/futs/m/n/12 112[][]
+ [][][]\T1/futs/m/n/12 114[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 89
- [][][]\T1/futs/m/n/12 113[][]
+ [][][]\T1/futs/m/n/12 115[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 91
- [][][]\T1/futs/m/n/12 116[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 92
- [][][]\T1/futs/m/n/12 116[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 93
  [][][]\T1/futs/m/n/12 118[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 94
- [][][]\T1/futs/m/n/12 119[][]
+Overfull \hbox (1.19994pt too wide) detected at line 92
+ [][][]\T1/futs/m/n/12 118[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 95
+Overfull \hbox (1.19994pt too wide) detected at line 93
  [][][]\T1/futs/m/n/12 120[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 96
+Overfull \hbox (1.19994pt too wide) detected at line 94
  [][][]\T1/futs/m/n/12 121[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 95
+ [][][]\T1/futs/m/n/12 122[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 96
+ [][][]\T1/futs/m/n/12 123[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 97
- [][][]\T1/futs/m/n/12 121[][]
+ [][][]\T1/futs/m/n/12 123[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 98
- [][][]\T1/futs/m/n/12 122[][]
+ [][][]\T1/futs/m/n/12 124[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 99
- [][][]\T1/futs/m/n/12 122[][]
+ [][][]\T1/futs/m/n/12 124[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 100
- [][][]\T1/futs/m/n/12 123[][]
+ [][][]\T1/futs/m/n/12 125[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 101
- [][][]\T1/futs/m/n/12 123[][]
+ [][][]\T1/futs/m/n/12 125[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 102
- [][][]\T1/futs/m/n/12 125[][]
+ [][][]\T1/futs/m/n/12 127[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 103
- [][][]\T1/futs/m/n/12 125[][]
+ [][][]\T1/futs/m/n/12 127[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 104
- [][][]\T1/futs/m/n/12 129[][]
+ [][][]\T1/futs/m/n/12 131[][]
  []
 
 [12]
 Overfull \hbox (1.19994pt too wide) detected at line 105
- [][][]\T1/futs/m/n/12 129[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 106
- [][][]\T1/futs/m/n/12 130[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 107
  [][][]\T1/futs/m/n/12 131[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 108
+Overfull \hbox (1.19994pt too wide) detected at line 106
+ [][][]\T1/futs/m/n/12 132[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 107
  [][][]\T1/futs/m/n/12 133[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 109
- [][][]\T1/futs/m/n/12 134[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 110
+Overfull \hbox (1.19994pt too wide) detected at line 108
  [][][]\T1/futs/m/n/12 135[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 109
+ [][][]\T1/futs/m/n/12 136[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 110
+ [][][]\T1/futs/m/n/12 137[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 111
- [][][]\T1/futs/m/n/12 138[][]
+ [][][]\T1/futs/m/n/12 140[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 112
- [][][]\T1/futs/m/n/12 142[][]
+ [][][]\T1/futs/m/n/12 144[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 114
- [][][]\T1/futs/m/n/12 144[][]
+ [][][]\T1/futs/m/n/12 146[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 115
- [][][]\T1/futs/m/n/12 144[][]
+ [][][]\T1/futs/m/n/12 146[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 116
- [][][]\T1/futs/m/n/12 146[][]
+ [][][]\T1/futs/m/n/12 148[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 117
- [][][]\T1/futs/m/n/12 146[][]
+ [][][]\T1/futs/m/n/12 148[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 118
- [][][]\T1/futs/m/n/12 149[][]
+ [][][]\T1/futs/m/n/12 151[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 119
- [][][]\T1/futs/m/n/12 152[][]
+ [][][]\T1/futs/m/n/12 154[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 120
- [][][]\T1/futs/m/n/12 152[][]
+ [][][]\T1/futs/m/n/12 154[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 121
- [][][]\T1/futs/m/n/12 153[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 122
  [][][]\T1/futs/m/n/12 155[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 122
+ [][][]\T1/futs/m/n/12 157[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 123
- [][][]\T1/futs/m/n/12 156[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 124
- [][][]\T1/futs/m/n/12 156[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 125
  [][][]\T1/futs/m/n/12 158[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 126
+Overfull \hbox (1.19994pt too wide) detected at line 124
+ [][][]\T1/futs/m/n/12 158[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 125
  [][][]\T1/futs/m/n/12 160[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 127
+Overfull \hbox (1.19994pt too wide) detected at line 126
  [][][]\T1/futs/m/n/12 162[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 127
+ [][][]\T1/futs/m/n/12 164[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 128
- [][][]\T1/futs/m/n/12 165[][]
+ [][][]\T1/futs/m/n/12 167[][]
  []
 
 [13])
@@ -1408,203 +1413,208 @@ Overfull \hbox (1.19994pt too wide) detected at line 128
  [14] (./thesis.lof [15
 
 ] [16]
+Overfull \hbox (1.19994pt too wide) detected at line 68
+ [][][]\T1/futs/m/n/12 101[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 69
- [][][]\T1/futs/m/n/12 100[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 70
- [][][]\T1/futs/m/n/12 100[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 71
  [][][]\T1/futs/m/n/12 102[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 70
+ [][][]\T1/futs/m/n/12 102[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 71
+ [][][]\T1/futs/m/n/12 104[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 72
- [][][]\T1/futs/m/n/12 103[][]
+ [][][]\T1/futs/m/n/12 105[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 73
- [][][]\T1/futs/m/n/12 107[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 74
- [][][]\T1/futs/m/n/12 107[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 75
- [][][]\T1/futs/m/n/12 108[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 76
  [][][]\T1/futs/m/n/12 109[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 77
+Overfull \hbox (1.19994pt too wide) detected at line 74
+ [][][]\T1/futs/m/n/12 109[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 75
  [][][]\T1/futs/m/n/12 110[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 78
+Overfull \hbox (1.19994pt too wide) detected at line 76
  [][][]\T1/futs/m/n/12 111[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 79
+Overfull \hbox (1.19994pt too wide) detected at line 77
  [][][]\T1/futs/m/n/12 112[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 78
+ [][][]\T1/futs/m/n/12 113[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 79
+ [][][]\T1/futs/m/n/12 114[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 81
- [][][]\T1/futs/m/n/12 117[][]
+ [][][]\T1/futs/m/n/12 119[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 82
- [][][]\T1/futs/m/n/12 117[][]
+ [][][]\T1/futs/m/n/12 119[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 83
- [][][]\T1/futs/m/n/12 118[][]
+ [][][]\T1/futs/m/n/12 120[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 84
- [][][]\T1/futs/m/n/12 122[][]
+ [][][]\T1/futs/m/n/12 124[][]
  []
 
 [17]
 Overfull \hbox (1.19994pt too wide) detected at line 85
- [][][]\T1/futs/m/n/12 123[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 86
- [][][]\T1/futs/m/n/12 124[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 87
  [][][]\T1/futs/m/n/12 125[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 88
+Overfull \hbox (1.19994pt too wide) detected at line 86
  [][][]\T1/futs/m/n/12 126[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 89
+Overfull \hbox (1.19994pt too wide) detected at line 87
+ [][][]\T1/futs/m/n/12 127[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 88
  [][][]\T1/futs/m/n/12 128[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 90
- [][][]\T1/futs/m/n/12 129[][]
+Overfull \hbox (1.19994pt too wide) detected at line 89
+ [][][]\T1/futs/m/n/12 130[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 91
+Overfull \hbox (1.19994pt too wide) detected at line 90
  [][][]\T1/futs/m/n/12 131[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 92
- [][][]\T1/futs/m/n/12 132[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 93
+Overfull \hbox (1.19994pt too wide) detected at line 91
  [][][]\T1/futs/m/n/12 133[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 94
+Overfull \hbox (1.19994pt too wide) detected at line 92
  [][][]\T1/futs/m/n/12 134[][]
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 93
+ [][][]\T1/futs/m/n/12 135[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 94
+ [][][]\T1/futs/m/n/12 136[][]
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 95
- [][][]\T1/futs/m/n/12 137[][]
+ [][][]\T1/futs/m/n/12 139[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 96
- [][][]\T1/futs/m/n/12 138[][]
+ [][][]\T1/futs/m/n/12 140[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 97
- [][][]\T1/futs/m/n/12 139[][]
+ [][][]\T1/futs/m/n/12 141[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 98
- [][][]\T1/futs/m/n/12 139[][]
+ [][][]\T1/futs/m/n/12 141[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 99
- [][][]\T1/futs/m/n/12 141[][]
+ [][][]\T1/futs/m/n/12 143[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 100
- [][][]\T1/futs/m/n/12 141[][]
+ [][][]\T1/futs/m/n/12 143[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 102
- [][][]\T1/futs/m/n/12 148[][]
+ [][][]\T1/futs/m/n/12 150[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 103
- [][][]\T1/futs/m/n/12 148[][]
+ [][][]\T1/futs/m/n/12 150[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 104
- [][][]\T1/futs/m/n/12 151[][]
+ [][][]\T1/futs/m/n/12 153[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 105
- [][][]\T1/futs/m/n/12 151[][]
+ [][][]\T1/futs/m/n/12 153[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 106
- [][][]\T1/futs/m/n/12 156[][]
+ [][][]\T1/futs/m/n/12 158[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 107
- [][][]\T1/futs/m/n/12 159[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 108
- [][][]\T1/futs/m/n/12 160[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 109
  [][][]\T1/futs/m/n/12 161[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 110
+Overfull \hbox (1.19994pt too wide) detected at line 108
  [][][]\T1/futs/m/n/12 162[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 109
+ [][][]\T1/futs/m/n/12 163[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 110
+ [][][]\T1/futs/m/n/12 164[][]
  []
 
 
@@ -1619,62 +1629,62 @@ Overfull \hbox (2.06392pt too wide) detected at line 111
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 111
- [][][]\T1/futs/m/n/12 164[][]
+ [][][]\T1/futs/m/n/12 166[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 114
- [][][]\T1/futs/m/n/12 178[][]
+ [][][]\T1/futs/m/n/12 180[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 116
- [][][]\T1/futs/m/n/12 180[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 117
- [][][]\T1/futs/m/n/12 180[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 119
- [][][]\T1/futs/m/n/12 181[][]
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 120
  [][][]\T1/futs/m/n/12 182[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 122
+Overfull \hbox (1.19994pt too wide) detected at line 117
+ [][][]\T1/futs/m/n/12 182[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 119
  [][][]\T1/futs/m/n/12 183[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 123
+Overfull \hbox (1.19994pt too wide) detected at line 120
  [][][]\T1/futs/m/n/12 184[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 125
+Overfull \hbox (1.19994pt too wide) detected at line 122
  [][][]\T1/futs/m/n/12 185[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 126
+Overfull \hbox (1.19994pt too wide) detected at line 123
  [][][]\T1/futs/m/n/12 186[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 128
+Overfull \hbox (1.19994pt too wide) detected at line 125
  [][][]\T1/futs/m/n/12 187[][]
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 129
+Overfull \hbox (1.19994pt too wide) detected at line 126
  [][][]\T1/futs/m/n/12 188[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 128
+ [][][]\T1/futs/m/n/12 189[][]
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 129
+ [][][]\T1/futs/m/n/12 190[][]
  []
 
 )
@@ -1685,17 +1695,17 @@ Overfull \hbox (1.19994pt too wide) detected at line 129
 
 ] (./thesis.lot
 Overfull \hbox (1.19994pt too wide) detected at line 11
- [][][]\T1/futs/m/n/12 136[][]
+ [][][]\T1/futs/m/n/12 138[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 13
- [][][]\T1/futs/m/n/12 158[][]
+ [][][]\T1/futs/m/n/12 160[][]
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 14
- [][][]\T1/futs/m/n/12 163[][]
+ [][][]\T1/futs/m/n/12 165[][]
  []
 
 )
@@ -1727,42 +1737,42 @@ Chapter 2.
 
 
 
-] [4] [5]
-<Chapter2/Figs/K_to_nu.png, id=1110, 446.66875pt x 225.84375pt>
+] [4] [5] [6]
+<Chapter2/Figs/K_to_nu.png, id=1121, 446.66875pt x 225.84375pt>
 File: Chapter2/Figs/K_to_nu.png Graphic file (type png)
 <use Chapter2/Figs/K_to_nu.png>
-Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 152.
+Package pdftex.def Info: Chapter2/Figs/K_to_nu.png  used on input line 167.
 (pdftex.def)             Requested size: 174.98177pt x 88.47499pt.
-<Chapter2/Figs/K_to_HNL.png, id=1111, 446.66875pt x 222.8325pt>
+<Chapter2/Figs/K_to_HNL.png, id=1122, 446.66875pt x 222.8325pt>
 File: Chapter2/Figs/K_to_HNL.png Graphic file (type png)
 <use Chapter2/Figs/K_to_HNL.png>
-Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 159.
+Package pdftex.def Info: Chapter2/Figs/K_to_HNL.png  used on input line 174.
 (pdftex.def)             Requested size: 174.98177pt x 87.29533pt.
- [6] [7 <./Chapter2/Figs/K_to_nu.png> <./Chapter2/Figs/K_to_HNL.png>]
-<Chapter2/Figs/kinematics_factor.png, id=1134, 722.7pt x 433.62pt>
+ [7 <./Chapter2/Figs/K_to_nu.png> <./Chapter2/Figs/K_to_HNL.png>]
+<Chapter2/Figs/kinematics_factor.png, id=1137, 722.7pt x 433.62pt>
 File: Chapter2/Figs/kinematics_factor.png Graphic file (type png)
 <use Chapter2/Figs/kinematics_factor.png>
-Package pdftex.def Info: Chapter2/Figs/kinematics_factor.png  used on input line 212.
+Package pdftex.def Info: Chapter2/Figs/kinematics_factor.png  used on input line 227.
 (pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
- [8 <./Chapter2/Figs/kinematics_factor.png>]
-<Chapter2/Figs/branching_ratio.png, id=1148, 722.7pt x 433.62pt>
+ [8] [9 <./Chapter2/Figs/kinematics_factor.png>]
+<Chapter2/Figs/branching_ratio.png, id=1162, 722.7pt x 433.62pt>
 File: Chapter2/Figs/branching_ratio.png Graphic file (type png)
 <use Chapter2/Figs/branching_ratio.png>
-Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 270.
+Package pdftex.def Info: Chapter2/Figs/branching_ratio.png  used on input line 288.
 (pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
- [9]
-<Chapter2/Figs/N_to_pi0_edit.png, id=1166, 951.555pt x 476.78125pt>
+ [10 <./Chapter2/Figs/branching_ratio.png>]
+<Chapter2/Figs/N_to_pi0_edit.png, id=1177, 951.555pt x 476.78125pt>
 File: Chapter2/Figs/N_to_pi0_edit.png Graphic file (type png)
 <use Chapter2/Figs/N_to_pi0_edit.png>
-Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 312.
+Package pdftex.def Info: Chapter2/Figs/N_to_pi0_edit.png  used on input line 330.
 (pdftex.def)             Requested size: 214.35834pt x 107.4021pt.
-<Chapter2/Figs/pi0_to_gam.png, id=1167, 635.37375pt x 282.05376pt>
+<Chapter2/Figs/pi0_to_gam.png, id=1178, 635.37375pt x 282.05376pt>
 File: Chapter2/Figs/pi0_to_gam.png Graphic file (type png)
 <use Chapter2/Figs/pi0_to_gam.png>
-Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 319.
+Package pdftex.def Info: Chapter2/Figs/pi0_to_gam.png  used on input line 337.
 (pdftex.def)             Requested size: 214.35834pt x 95.15675pt.
- [10 <./Chapter2/Figs/branching_ratio.png>] [11 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 382.
+ [11 <./Chapter2/Figs/N_to_pi0_edit.png> <./Chapter2/Figs/pi0_to_gam.png>] [12]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 400.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -1770,412 +1780,412 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12] [13] [14]
-<Chapter2/Figs/sensitivity.png, id=1235, 722.7pt x 433.62pt>
+ [13] [14]
+<Chapter2/Figs/sensitivity.png, id=1237, 722.7pt x 433.62pt>
 File: Chapter2/Figs/sensitivity.png Graphic file (type png)
 <use Chapter2/Figs/sensitivity.png>
-Package pdftex.def Info: Chapter2/Figs/sensitivity.png  used on input line 457.
+Package pdftex.def Info: Chapter2/Figs/sensitivity.png  used on input line 475.
 (pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
- [15 <./Chapter2/Figs/sensitivity.png>]) [16]
+ [15] [16 <./Chapter2/Figs/sensitivity.png>]) [17]
 \openout2 = `Chapter3/chapter3.aux'.
 
- (./Chapter3/chapter3.tex
-Chapter 3.
-[17
+ (./Chapter3/chapter3.tex [18
 
 
 
 ]
-<Chapter3/Figs/LARTPC.png, id=1303, 1331.97626pt x 892.33376pt>
+Chapter 3.
+[19]
+<Chapter3/Figs/LARTPC.png, id=1325, 1331.97626pt x 892.33376pt>
 File: Chapter3/Figs/LARTPC.png Graphic file (type png)
 <use Chapter3/Figs/LARTPC.png>
 Package pdftex.def Info: Chapter3/Figs/LARTPC.png  used on input line 58.
 (pdftex.def)             Requested size: 371.84462pt x 249.10287pt.
- [18] [19 <./Chapter3/Figs/LARTPC.png>]
-<Chapter3/Figs/BetheBloch.png, id=1329, 1294.8375pt x 816.04875pt>
+ [20] [21 <./Chapter3/Figs/LARTPC.png>]
+<Chapter3/Figs/BetheBloch.png, id=1351, 1294.8375pt x 816.04875pt>
 File: Chapter3/Figs/BetheBloch.png Graphic file (type png)
 <use Chapter3/Figs/BetheBloch.png>
 Package pdftex.def Info: Chapter3/Figs/BetheBloch.png  used on input line 108.
 (pdftex.def)             Requested size: 371.84462pt x 234.34448pt.
- [20]
-<Chapter3/Figs/uboone_gamma.png, id=1343, 396.48125pt x 374.39874pt>
+ [22]
+<Chapter3/Figs/uboone_gamma.png, id=1365, 396.48125pt x 374.39874pt>
 File: Chapter3/Figs/uboone_gamma.png Graphic file (type png)
 <use Chapter3/Figs/uboone_gamma.png>
 Package pdftex.def Info: Chapter3/Figs/uboone_gamma.png  used on input line 134.
 (pdftex.def)             Requested size: 174.98177pt x 165.23868pt.
- [21 <./Chapter3/Figs/BetheBloch.png>]
-<Chapter3/Figs/event_display.png, id=1353, 857.2025pt x 429.605pt>
+ [23 <./Chapter3/Figs/BetheBloch.png>]
+<Chapter3/Figs/event_display.png, id=1376, 857.2025pt x 429.605pt>
 File: Chapter3/Figs/event_display.png Graphic file (type png)
 <use Chapter3/Figs/event_display.png>
 Package pdftex.def Info: Chapter3/Figs/event_display.png  used on input line 152.
 (pdftex.def)             Requested size: 371.84462pt x 186.3588pt.
- [22 <./Chapter3/Figs/uboone_gamma.png> <./Chapter3/Figs/event_display.png>]
-<Chapter3/Figs/recomb_diagram.png, id=1362, 653.44125pt x 457.71pt>
+ [24 <./Chapter3/Figs/uboone_gamma.png> <./Chapter3/Figs/event_display.png>]
+<Chapter3/Figs/recomb_diagram.png, id=1385, 653.44125pt x 457.71pt>
 File: Chapter3/Figs/recomb_diagram.png Graphic file (type png)
 <use Chapter3/Figs/recomb_diagram.png>
 Package pdftex.def Info: Chapter3/Figs/recomb_diagram.png  used on input line 176.
 (pdftex.def)             Requested size: 218.73056pt x 153.20982pt.
- [23 <./Chapter3/Figs/recomb_diagram.png>]
-<Chapter3/Figs/recomb_graph.png, id=1378, 1038.88126pt x 873.2625pt>
+ [25 <./Chapter3/Figs/recomb_diagram.png>]
+<Chapter3/Figs/recomb_graph.png, id=1400, 1038.88126pt x 873.2625pt>
 File: Chapter3/Figs/recomb_graph.png Graphic file (type png)
 <use Chapter3/Figs/recomb_graph.png>
 Package pdftex.def Info: Chapter3/Figs/recomb_graph.png  used on input line 206.
 (pdftex.def)             Requested size: 218.73056pt x 183.8569pt.
- [24 <./Chapter3/Figs/recomb_graph.png>]
-<Chapter3/Figs/QLAnti.png, id=1393, 1500.60625pt x 923.45pt>
+ [26 <./Chapter3/Figs/recomb_graph.png>]
+<Chapter3/Figs/QLAnti.png, id=1415, 1500.60625pt x 923.45pt>
 File: Chapter3/Figs/QLAnti.png Graphic file (type png)
 <use Chapter3/Figs/QLAnti.png>
 Package pdftex.def Info: Chapter3/Figs/QLAnti.png  used on input line 242.
 (pdftex.def)             Requested size: 306.22144pt x 188.43484pt.
- [25 <./Chapter3/Figs/QLAnti.png>] [26]
-<Chapter3/Figs/SCE.png, id=1432, 1225.57875pt x 369.38pt>
+ [27 <./Chapter3/Figs/QLAnti.png>] [28]
+<Chapter3/Figs/SCE.png, id=1455, 1225.57875pt x 369.38pt>
 File: Chapter3/Figs/SCE.png Graphic file (type png)
 <use Chapter3/Figs/SCE.png>
 Package pdftex.def Info: Chapter3/Figs/SCE.png  used on input line 338.
 (pdftex.def)             Requested size: 371.84462pt x 112.07173pt.
- [27] [28 <./Chapter3/Figs/SCE.png>]
-<Chapter3/Figs/vuv_visible.png, id=1464, 1488.56125pt x 654.445pt>
+ [29] [30 <./Chapter3/Figs/SCE.png>]
+<Chapter3/Figs/vuv_visible.png, id=1487, 1488.56125pt x 654.445pt>
 File: Chapter3/Figs/vuv_visible.png Graphic file (type png)
 <use Chapter3/Figs/vuv_visible.png>
 Package pdftex.def Info: Chapter3/Figs/vuv_visible.png  used on input line 387.
 (pdftex.def)             Requested size: 437.46112pt x 192.33061pt.
- [29 <./Chapter3/Figs/vuv_visible.png>]
-<Chapter3/Figs/wire_current.png, id=1489, 459.7175pt x 272.01625pt>
+ [31 <./Chapter3/Figs/vuv_visible.png>]
+<Chapter3/Figs/wire_current.png, id=1511, 459.7175pt x 272.01625pt>
 File: Chapter3/Figs/wire_current.png Graphic file (type png)
 <use Chapter3/Figs/wire_current.png>
 Package pdftex.def Info: Chapter3/Figs/wire_current.png  used on input line 429.
 (pdftex.def)             Requested size: 249.35603pt x 147.54652pt.
- [30 <./Chapter3/Figs/wire_current.png>] [31]) [32]
+ [32 <./Chapter3/Figs/wire_current.png>] [33]) [34]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex
 Chapter 4.
-[33
+[35
 
 
 
 ]
-<Chapter4/Figs/SBN_program.jpg, id=1544, 803.0pt x 313.17pt>
+<Chapter4/Figs/SBN_program.jpg, id=1567, 803.0pt x 313.17pt>
 File: Chapter4/Figs/SBN_program.jpg Graphic file (type jpg)
 <use Chapter4/Figs/SBN_program.jpg>
 Package pdftex.def Info: Chapter4/Figs/SBN_program.jpg  used on input line 53.
 (pdftex.def)             Requested size: 437.46112pt x 170.61452pt.
- [34] [35 <./Chapter4/Figs/SBN_program.jpg>]
-<Chapter4/Figs/SBND_Pretty.png, id=1575, 851.18pt x 751.80875pt>
+ [36] [37 <./Chapter4/Figs/SBN_program.jpg>]
+<Chapter4/Figs/SBND_Pretty.png, id=1597, 851.18pt x 751.80875pt>
 File: Chapter4/Figs/SBND_Pretty.png Graphic file (type png)
 <use Chapter4/Figs/SBND_Pretty.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_Pretty.png  used on input line 99.
 (pdftex.def)             Requested size: 393.71233pt x 347.75198pt.
- [36 <./Chapter4/Figs/SBND_Pretty.png>]
-<Chapter4/Figs/SBND_APA.png, id=1587, 780.9175pt x 705.63625pt>
+ [38 <./Chapter4/Figs/SBND_Pretty.png>]
+<Chapter4/Figs/SBND_APA.png, id=1609, 780.9175pt x 705.63625pt>
 File: Chapter4/Figs/SBND_APA.png Graphic file (type png)
 <use Chapter4/Figs/SBND_APA.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_APA.png  used on input line 123.
 (pdftex.def)             Requested size: 284.34705pt x 256.93597pt.
- [37 <./Chapter4/Figs/SBND_APA.png>]
-<Chapter4/Figs/SBND_APA_PDS.png, id=1599, 1293.83376pt x 968.61874pt>
+ [39 <./Chapter4/Figs/SBND_APA.png>]
+<Chapter4/Figs/SBND_APA_PDS.png, id=1621, 1293.83376pt x 968.61874pt>
 File: Chapter4/Figs/SBND_APA_PDS.png Graphic file (type png)
 <use Chapter4/Figs/SBND_APA_PDS.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_APA_PDS.png  used on input line 145.
 (pdftex.def)             Requested size: 218.73056pt x 163.74664pt.
-<Chapter4/Figs/SBND_CPA.png, id=1600, 1293.83376pt x 965.6075pt>
+<Chapter4/Figs/SBND_CPA.png, id=1622, 1293.83376pt x 965.6075pt>
 File: Chapter4/Figs/SBND_CPA.png Graphic file (type png)
 <use Chapter4/Figs/SBND_CPA.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_CPA.png  used on input line 152.
 (pdftex.def)             Requested size: 218.73056pt x 163.2376pt.
- [38 <./Chapter4/Figs/SBND_APA_PDS.png> <./Chapter4/Figs/SBND_CPA.png>]
-<Chapter4/Figs/SBND_PDS.png, id=1615, 1689.31125pt x 814.04124pt>
+ [40 <./Chapter4/Figs/SBND_APA_PDS.png> <./Chapter4/Figs/SBND_CPA.png>]
+<Chapter4/Figs/SBND_PDS.png, id=1637, 1689.31125pt x 814.04124pt>
 File: Chapter4/Figs/SBND_PDS.png Graphic file (type png)
 <use Chapter4/Figs/SBND_PDS.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_PDS.png  used on input line 183.
 (pdftex.def)             Requested size: 371.84462pt x 179.17657pt.
- [39 <./Chapter4/Figs/SBND_PDS.png>]
-<Chapter4/Figs/SBND_CRT.png, id=1628, 1465.475pt x 482.80376pt>
+ [41 <./Chapter4/Figs/SBND_PDS.png>]
+<Chapter4/Figs/SBND_CRT.png, id=1651, 1465.475pt x 482.80376pt>
 File: Chapter4/Figs/SBND_CRT.png Graphic file (type png)
 <use Chapter4/Figs/SBND_CRT.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_CRT.png  used on input line 211.
 (pdftex.def)             Requested size: 437.46112pt x 144.12027pt.
- [40 <./Chapter4/Figs/SBND_CRT.png>] [41] [42]
-<Chapter4/Figs/DAQ_Overview.png, id=1670, 1158.3275pt x 616.3025pt>
+ [42 <./Chapter4/Figs/SBND_CRT.png>] [43] [44]
+<Chapter4/Figs/DAQ_Overview.png, id=1692, 1158.3275pt x 616.3025pt>
 File: Chapter4/Figs/DAQ_Overview.png Graphic file (type png)
 <use Chapter4/Figs/DAQ_Overview.png>
 Package pdftex.def Info: Chapter4/Figs/DAQ_Overview.png  used on input line 330.
 (pdftex.def)             Requested size: 437.46112pt x 232.75856pt.
- [43]
-<Chapter4/Figs/SBND_Event_Structure.png, id=1678, 1231.60126pt x 683.55376pt>
+ [45]
+<Chapter4/Figs/SBND_Event_Structure.png, id=1701, 1231.60126pt x 683.55376pt>
 File: Chapter4/Figs/SBND_Event_Structure.png Graphic file (type png)
 <use Chapter4/Figs/SBND_Event_Structure.png>
 Package pdftex.def Info: Chapter4/Figs/SBND_Event_Structure.png  used on input line 400.
 (pdftex.def)             Requested size: 371.84462pt x 206.37148pt.
- [44 <./Chapter4/Figs/DAQ_Overview.png>] [45 <./Chapter4/Figs/SBND_Event_Structure.png>]
-<Chapter4/Figs/CRT2017.png, id=1701, 1449.415pt x 760.8425pt>
+ [46 <./Chapter4/Figs/DAQ_Overview.png>] [47 <./Chapter4/Figs/SBND_Event_Structure.png>]
+<Chapter4/Figs/CRT2017.png, id=1724, 1449.415pt x 760.8425pt>
 File: Chapter4/Figs/CRT2017.png Graphic file (type png)
 <use Chapter4/Figs/CRT2017.png>
 Package pdftex.def Info: Chapter4/Figs/CRT2017.png  used on input line 451.
 (pdftex.def)             Requested size: 371.84462pt x 195.19063pt.
- [46 <./Chapter4/Figs/CRT2017.png>]
-<Chapter4/Figs/BNBDiagram.png, id=1714, 1190.4475pt x 475.7775pt>
+ [48 <./Chapter4/Figs/CRT2017.png>]
+<Chapter4/Figs/BNBDiagram.png, id=1737, 1190.4475pt x 475.7775pt>
 File: Chapter4/Figs/BNBDiagram.png Graphic file (type png)
 <use Chapter4/Figs/BNBDiagram.png>
 Package pdftex.def Info: Chapter4/Figs/BNBDiagram.png  used on input line 480.
 (pdftex.def)             Requested size: 437.46112pt x 174.83705pt.
- [47 <./Chapter4/Figs/BNBDiagram.png>]
-<Chapter4/Figs/BNB_Meson_Pion_Flux.png, id=1731, 505.89pt x 361.35pt>
+ [49 <./Chapter4/Figs/BNBDiagram.png>]
+<Chapter4/Figs/BNB_Meson_Pion_Flux.png, id=1753, 505.89pt x 361.35pt>
 File: Chapter4/Figs/BNB_Meson_Pion_Flux.png Graphic file (type png)
 <use Chapter4/Figs/BNB_Meson_Pion_Flux.png>
 Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Pion_Flux.png  used on input line 510.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
-<Chapter4/Figs/BNB_Meson_Kaon_Flux.png, id=1732, 505.89pt x 361.35pt>
+<Chapter4/Figs/BNB_Meson_Kaon_Flux.png, id=1754, 505.89pt x 361.35pt>
 File: Chapter4/Figs/BNB_Meson_Kaon_Flux.png Graphic file (type png)
 <use Chapter4/Figs/BNB_Meson_Kaon_Flux.png>
 Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Kaon_Flux.png  used on input line 516.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
-<Chapter4/Figs/BNB_Meson_Muon_Flux.png, id=1733, 505.89pt x 361.35pt>
+<Chapter4/Figs/BNB_Meson_Muon_Flux.png, id=1755, 505.89pt x 361.35pt>
 File: Chapter4/Figs/BNB_Meson_Muon_Flux.png Graphic file (type png)
 <use Chapter4/Figs/BNB_Meson_Muon_Flux.png>
 Package pdftex.def Info: Chapter4/Figs/BNB_Meson_Muon_Flux.png  used on input line 522.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
- [48 <./Chapter4/Figs/BNB_Meson_Pion_Flux.png> <./Chapter4/Figs/BNB_Meson_Kaon_Flux.png> <./Chapter4/Figs/BNB_Meson_Muon_Flux.png>]
-<Chapter4/Figs/BNB_combined_neutrino_flux.png, id=1743, 855.195pt x 659.46375pt>
+ [50 <./Chapter4/Figs/BNB_Meson_Pion_Flux.png> <./Chapter4/Figs/BNB_Meson_Kaon_Flux.png> <./Chapter4/Figs/BNB_Meson_Muon_Flux.png>]
+<Chapter4/Figs/BNB_combined_neutrino_flux.png, id=1765, 855.195pt x 659.46375pt>
 File: Chapter4/Figs/BNB_combined_neutrino_flux.png Graphic file (type png)
 <use Chapter4/Figs/BNB_combined_neutrino_flux.png>
 Package pdftex.def Info: Chapter4/Figs/BNB_combined_neutrino_flux.png  used on input line 543.
 (pdftex.def)             Requested size: 218.73056pt x 168.66919pt.
-) [49 <./Chapter4/Figs/BNB_combined_neutrino_flux.png>]
+) [51 <./Chapter4/Figs/BNB_combined_neutrino_flux.png>]
 \openout2 = `Chapter5/chapter5.aux'.
 
- (./Chapter5/chapter5.tex [50
+ (./Chapter5/chapter5.tex [52
 
 
 
 ]
 Chapter 5.
-[51]
-<Chapter5/Figs/Sim_Workflow.png, id=1770, 1172.38pt x 363.3575pt>
+[53]
+<Chapter5/Figs/Sim_Workflow.png, id=1793, 1172.38pt x 363.3575pt>
 File: Chapter5/Figs/Sim_Workflow.png Graphic file (type png)
 <use Chapter5/Figs/Sim_Workflow.png>
 Package pdftex.def Info: Chapter5/Figs/Sim_Workflow.png  used on input line 57.
 (pdftex.def)             Requested size: 437.46112pt x 135.5823pt.
- [52 <./Chapter5/Figs/Sim_Workflow.png>]
-<Chapter5/Figs/MeVPrtl_Workflow.png, id=1781, 854.19125pt x 113.42375pt>
+ [54 <./Chapter5/Figs/Sim_Workflow.png>]
+<Chapter5/Figs/MeVPrtl_Workflow.png, id=1804, 854.19125pt x 113.42375pt>
 File: Chapter5/Figs/MeVPrtl_Workflow.png Graphic file (type png)
 <use Chapter5/Figs/MeVPrtl_Workflow.png>
 Package pdftex.def Info: Chapter5/Figs/MeVPrtl_Workflow.png  used on input line 78.
 (pdftex.def)             Requested size: 437.46112pt x 58.08763pt.
- [53 <./Chapter5/Figs/MeVPrtl_Workflow.png>]
-<Chapter5/Figs/HNL_Energy_Spectrum.png, id=1799, 578.16pt x 433.62pt>
+ [55 <./Chapter5/Figs/MeVPrtl_Workflow.png>]
+<Chapter5/Figs/HNL_Energy_Spectrum.png, id=1822, 578.16pt x 433.62pt>
 File: Chapter5/Figs/HNL_Energy_Spectrum.png Graphic file (type png)
 <use Chapter5/Figs/HNL_Energy_Spectrum.png>
 Package pdftex.def Info: Chapter5/Figs/HNL_Energy_Spectrum.png  used on input line 134.
 (pdftex.def)             Requested size: 284.34705pt x 213.25641pt.
-<Chapter5/Figs/pi0_energy.png, id=1803, 578.16pt x 433.62pt>
+<Chapter5/Figs/pi0_energy.png, id=1826, 578.16pt x 433.62pt>
 File: Chapter5/Figs/pi0_energy.png Graphic file (type png)
 <use Chapter5/Figs/pi0_energy.png>
 Package pdftex.def Info: Chapter5/Figs/pi0_energy.png  used on input line 161.
 (pdftex.def)             Requested size: 216.5411pt x 162.40198pt.
-<Chapter5/Figs/pi0_angle2Beam.png, id=1804, 578.16pt x 433.62pt>
+<Chapter5/Figs/pi0_angle2Beam.png, id=1827, 578.16pt x 433.62pt>
 File: Chapter5/Figs/pi0_angle2Beam.png Graphic file (type png)
 <use Chapter5/Figs/pi0_angle2Beam.png>
 Package pdftex.def Info: Chapter5/Figs/pi0_angle2Beam.png  used on input line 168.
 (pdftex.def)             Requested size: 216.5411pt x 162.40198pt.
- [54 <./Chapter5/Figs/HNL_Energy_Spectrum.png>]
-<Chapter5/Figs/tof_beam_to_detector.png, id=1812, 1089.06876pt x 300.12125pt>
+ [56 <./Chapter5/Figs/HNL_Energy_Spectrum.png>]
+<Chapter5/Figs/tof_beam_to_detector.png, id=1835, 1089.06876pt x 300.12125pt>
 File: Chapter5/Figs/tof_beam_to_detector.png Graphic file (type png)
 <use Chapter5/Figs/tof_beam_to_detector.png>
 Package pdftex.def Info: Chapter5/Figs/tof_beam_to_detector.png  used on input line 206.
 (pdftex.def)             Requested size: 437.46112pt x 120.55011pt.
- [55 <./Chapter5/Figs/pi0_energy.png> <./Chapter5/Figs/pi0_angle2Beam.png>]
-<Chapter5/Figs/full_beam.png, id=1821, 1430.58466pt x 419.8887pt>
+ [57 <./Chapter5/Figs/pi0_energy.png> <./Chapter5/Figs/pi0_angle2Beam.png>]
+<Chapter5/Figs/full_beam.png, id=1844, 1430.58466pt x 419.8887pt>
 File: Chapter5/Figs/full_beam.png Graphic file (type png)
 <use Chapter5/Figs/full_beam.png>
 Package pdftex.def Info: Chapter5/Figs/full_beam.png  used on input line 215.
 (pdftex.def)             Requested size: 437.46112pt x 128.39583pt.
- [56 <./Chapter5/Figs/tof_beam_to_detector.png> <./Chapter5/Figs/full_beam.png>]
-<Chapter5/Figs/beam_modulus.png, id=1833, 418.08195pt x 346.53465pt>
+ [58 <./Chapter5/Figs/tof_beam_to_detector.png> <./Chapter5/Figs/full_beam.png>]
+<Chapter5/Figs/beam_modulus.png, id=1855, 418.08195pt x 346.53465pt>
 File: Chapter5/Figs/beam_modulus.png Graphic file (type png)
 <use Chapter5/Figs/beam_modulus.png>
 Package pdftex.def Info: Chapter5/Figs/beam_modulus.png  used on input line 235.
 (pdftex.def)             Requested size: 216.5411pt x 179.47992pt.
- [57 <./Chapter5/Figs/beam_modulus.png>]
-<Chapter5/Figs/Rockbox_Volume.png, id=1850, 1091.07625pt x 499.8675pt>
+ [59 <./Chapter5/Figs/beam_modulus.png>]
+<Chapter5/Figs/Rockbox_Volume.png, id=1873, 1091.07625pt x 499.8675pt>
 File: Chapter5/Figs/Rockbox_Volume.png Graphic file (type png)
 <use Chapter5/Figs/Rockbox_Volume.png>
 Package pdftex.def Info: Chapter5/Figs/Rockbox_Volume.png  used on input line 274.
 (pdftex.def)             Requested size: 328.09584pt x 150.31226pt.
- [58 <./Chapter5/Figs/Rockbox_Volume.png>]
+ [60 <./Chapter5/Figs/Rockbox_Volume.png>]
 Overfull \hbox (8.55261pt too wide) in paragraph at lines 316--316
 []\T1/futs/b/n/17.28 Particle Prop-a-ga-tion and De-tec-tor Re-sponse Sim-u-la-tion 
  []
 
-[59] [60] [61]) [62]
+[61] [62] [63]) [64]
 \openout2 = `Chapter6/chapter6.aux'.
 
  (./Chapter6/chapter6.tex
 Chapter 6.
-[63
+[65
 
 
 
 ]
-<Chapter6/Figs/Reco_Workflow.png, id=1910, 931.48pt x 333.245pt>
+<Chapter6/Figs/Reco_Workflow.png, id=1933, 931.48pt x 333.245pt>
 File: Chapter6/Figs/Reco_Workflow.png Graphic file (type png)
 <use Chapter6/Figs/Reco_Workflow.png>
 Package pdftex.def Info: Chapter6/Figs/Reco_Workflow.png  used on input line 57.
 (pdftex.def)             Requested size: 437.46112pt x 156.50313pt.
- [64 <./Chapter6/Figs/Reco_Workflow.png>]
-<Chapter6/Figs/signal_processing_waveform.png, id=1922, 726.715pt x 384.43625pt>
+ [66 <./Chapter6/Figs/Reco_Workflow.png>]
+<Chapter6/Figs/signal_processing_waveform.png, id=1946, 726.715pt x 384.43625pt>
 File: Chapter6/Figs/signal_processing_waveform.png Graphic file (type png)
 <use Chapter6/Figs/signal_processing_waveform.png>
 Package pdftex.def Info: Chapter6/Figs/signal_processing_waveform.png  used on input line 99.
 (pdftex.def)             Requested size: 371.84462pt x 196.71101pt.
- [65 <./Chapter6/Figs/signal_processing_waveform.png>]
-<Chapter6/Figs/gaushit.png, id=1937, 823.075pt x 710.655pt>
+ [67 <./Chapter6/Figs/signal_processing_waveform.png>]
+<Chapter6/Figs/gaushit.png, id=1960, 823.075pt x 710.655pt>
 File: Chapter6/Figs/gaushit.png Graphic file (type png)
 <use Chapter6/Figs/gaushit.png>
 Package pdftex.def Info: Chapter6/Figs/gaushit.png  used on input line 137.
 (pdftex.def)             Requested size: 196.85616pt x 169.96428pt.
- [66 <./Chapter6/Figs/gaushit.png>] [67] [68]
-<Chapter6/Figs/HaloTotalRatio.png, id=1971, 894.34125pt x 625.33624pt>
+ [68 <./Chapter6/Figs/gaushit.png>] [69] [70]
+<Chapter6/Figs/HaloTotalRatio.png, id=1993, 894.34125pt x 625.33624pt>
 File: Chapter6/Figs/HaloTotalRatio.png Graphic file (type png)
 <use Chapter6/Figs/HaloTotalRatio.png>
 Package pdftex.def Info: Chapter6/Figs/HaloTotalRatio.png  used on input line 225.
 (pdftex.def)             Requested size: 216.5411pt x 151.41008pt.
-<Chapter6/Figs/Concentration.png, id=1972, 898.35625pt x 617.30624pt>
+<Chapter6/Figs/Concentration.png, id=1994, 898.35625pt x 617.30624pt>
 File: Chapter6/Figs/Concentration.png Graphic file (type png)
 <use Chapter6/Figs/Concentration.png>
 Package pdftex.def Info: Chapter6/Figs/Concentration.png  used on input line 232.
 (pdftex.def)             Requested size: 216.5411pt x 148.79703pt.
-<Chapter6/Figs/Conicalness.png, id=1973, 900.36375pt x 610.28pt>
+<Chapter6/Figs/Conicalness.png, id=1995, 900.36375pt x 610.28pt>
 File: Chapter6/Figs/Conicalness.png Graphic file (type png)
 <use Chapter6/Figs/Conicalness.png>
 Package pdftex.def Info: Chapter6/Figs/Conicalness.png  used on input line 239.
 (pdftex.def)             Requested size: 216.5411pt x 146.76817pt.
-<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=1975, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=1997, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Halo_Total_Ratio.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Halo_Total_Ratio.png>
 Package pdftex.def Info: Chapter6/Figs/Feature_Halo_Total_Ratio.png  used on input line 259.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Concentration.png, id=1976, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Concentration.png, id=1998, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Concentration.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Concentration.png>
 Package pdftex.def Info: Chapter6/Figs/Feature_Concentration.png  used on input line 265.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Conicalness.png, id=1977, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Conicalness.png, id=1999, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Conicalness.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Conicalness.png>
 Package pdftex.def Info: Chapter6/Figs/Feature_Conicalness.png  used on input line 271.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=1978, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=2000, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>
 Package pdftex.def Info: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png  used on input line 277.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
- [69 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
-<Chapter6/Figs/bdt_score_trk_shw.png, id=1992, 900.36375pt x 572.1375pt>
+ [71 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
+<Chapter6/Figs/bdt_score_trk_shw.png, id=2015, 900.36375pt x 572.1375pt>
 File: Chapter6/Figs/bdt_score_trk_shw.png Graphic file (type png)
 <use Chapter6/Figs/bdt_score_trk_shw.png>
 Package pdftex.def Info: Chapter6/Figs/bdt_score_trk_shw.png  used on input line 299.
 (pdftex.def)             Requested size: 216.5411pt x 137.59515pt.
-<Chapter6/Figs/bdt_score_particle.png, id=1993, 900.36375pt x 574.145pt>
+<Chapter6/Figs/bdt_score_particle.png, id=2016, 900.36375pt x 574.145pt>
 File: Chapter6/Figs/bdt_score_particle.png Graphic file (type png)
 <use Chapter6/Figs/bdt_score_particle.png>
 Package pdftex.def Info: Chapter6/Figs/bdt_score_particle.png  used on input line 305.
 (pdftex.def)             Requested size: 216.5411pt x 138.07796pt.
- [70 <./Chapter6/Figs/Feature_Halo_Total_Ratio.png> <./Chapter6/Figs/Feature_Concentration.png> <./Chapter6/Figs/Feature_Conicalness.png> <./Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>] [71 <./Chapter6/Figs/bdt_score_trk_shw.png> <./Chapter6/Figs/bdt_score_particle.png>]
-<Chapter6/Figs/pds_reco_deconvolution.pdf, id=2014, 646.69699pt x 492.56131pt>
+ [72 <./Chapter6/Figs/Feature_Halo_Total_Ratio.png> <./Chapter6/Figs/Feature_Concentration.png> <./Chapter6/Figs/Feature_Conicalness.png> <./Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>] [73 <./Chapter6/Figs/bdt_score_trk_shw.png> <./Chapter6/Figs/bdt_score_particle.png>]
+<Chapter6/Figs/pds_reco_deconvolution.pdf, id=2036, 646.69699pt x 492.56131pt>
 File: Chapter6/Figs/pds_reco_deconvolution.pdf Graphic file (type pdf)
 <use Chapter6/Figs/pds_reco_deconvolution.pdf>
 Package pdftex.def Info: Chapter6/Figs/pds_reco_deconvolution.pdf  used on input line 350.
 (pdftex.def)             Requested size: 258.10045pt x 196.58511pt.
-<Chapter6/Figs/pds_reco_hit_finding.png, id=2015, 515.9275pt x 431.6125pt>
+<Chapter6/Figs/pds_reco_hit_finding.png, id=2037, 515.9275pt x 431.6125pt>
 File: Chapter6/Figs/pds_reco_hit_finding.png Graphic file (type png)
 <use Chapter6/Figs/pds_reco_hit_finding.png>
 Package pdftex.def Info: Chapter6/Figs/pds_reco_hit_finding.png  used on input line 357.
 (pdftex.def)             Requested size: 174.98177pt x 146.38408pt.
- [72 <./Chapter6/Figs/pds_reco_deconvolution.pdf> <./Chapter6/Figs/pds_reco_hit_finding.png>]
-<Chapter6/Figs/light_yield_sim.png, id=2069, 455.7025pt x 305.14pt>
+ [74 <./Chapter6/Figs/pds_reco_deconvolution.pdf> <./Chapter6/Figs/pds_reco_hit_finding.png>]
+<Chapter6/Figs/light_yield_sim.png, id=2091, 455.7025pt x 305.14pt>
 File: Chapter6/Figs/light_yield_sim.png Graphic file (type png)
 <use Chapter6/Figs/light_yield_sim.png>
 Package pdftex.def Info: Chapter6/Figs/light_yield_sim.png  used on input line 388.
 (pdftex.def)             Requested size: 240.60495pt x 161.11346pt.
- [73 <./Chapter6/Figs/light_yield_sim.png>] [74] [75]) [76]
+ [75 <./Chapter6/Figs/light_yield_sim.png>] [76] [77]) [78]
 \openout2 = `Chapter7/chapter7.aux'.
 
  (./Chapter7/chapter7.tex
 Chapter 7.
-[77
+[79
 
 
 
 ]
-<Chapter7/Figs/time_transfer.png, id=2122, 1203.49625pt x 334.24875pt>
+<Chapter7/Figs/time_transfer.png, id=2144, 1203.49625pt x 334.24875pt>
 File: Chapter7/Figs/time_transfer.png Graphic file (type png)
 <use Chapter7/Figs/time_transfer.png>
 Package pdftex.def Info: Chapter7/Figs/time_transfer.png  used on input line 63.
 (pdftex.def)             Requested size: 437.46112pt x 121.4974pt.
- [78 <./Chapter7/Figs/time_transfer.png>] [79]
-<Chapter7/Figs/SPEC_TDC.png, id=2140, 1039.885pt x 406.51875pt>
+ [80 <./Chapter7/Figs/time_transfer.png>] [81]
+<Chapter7/Figs/SPEC_TDC.png, id=2162, 1039.885pt x 406.51875pt>
 File: Chapter7/Figs/SPEC_TDC.png Graphic file (type png)
 <use Chapter7/Figs/SPEC_TDC.png>
 Package pdftex.def Info: Chapter7/Figs/SPEC_TDC.png  used on input line 118.
 (pdftex.def)             Requested size: 437.46112pt x 171.01584pt.
- [80 <./Chapter7/Figs/SPEC_TDC.png>]
-<Chapter7/Figs/crt_sharps.png, id=2154, 893.3375pt x 702.625pt>
+ [82 <./Chapter7/Figs/SPEC_TDC.png>]
+<Chapter7/Figs/crt_sharps.png, id=2176, 893.3375pt x 702.625pt>
 File: Chapter7/Figs/crt_sharps.png Graphic file (type png)
 <use Chapter7/Figs/crt_sharps.png>
 Package pdftex.def Info: Chapter7/Figs/crt_sharps.png  used on input line 205.
 (pdftex.def)             Requested size: 262.47934pt x 206.44704pt.
- [81]
-<Chapter7/Figs/upstream_T0stability_combined_board79.png, id=2162, 867.24pt x 433.62pt>
+ [83]
+<Chapter7/Figs/upstream_T0stability_combined_board79.png, id=2185, 867.24pt x 433.62pt>
 File: Chapter7/Figs/upstream_T0stability_combined_board79.png Graphic file (type png)
 <use Chapter7/Figs/upstream_T0stability_combined_board79.png>
 Package pdftex.def Info: Chapter7/Figs/upstream_T0stability_combined_board79.png  used on input line 243.
 (pdftex.def)             Requested size: 371.84462pt x 185.92365pt.
-<Chapter7/Figs/upstream_T1stability_combined_board79.png, id=2163, 867.24pt x 433.62pt>
+<Chapter7/Figs/upstream_T1stability_combined_board79.png, id=2186, 867.24pt x 433.62pt>
 File: Chapter7/Figs/upstream_T1stability_combined_board79.png Graphic file (type png)
 <use Chapter7/Figs/upstream_T1stability_combined_board79.png>
 Package pdftex.def Info: Chapter7/Figs/upstream_T1stability_combined_board79.png  used on input line 251.
 (pdftex.def)             Requested size: 371.84462pt x 185.92365pt.
- [82 <./Chapter7/Figs/crt_sharps.png>] [83 <./Chapter7/Figs/upstream_T0stability_combined_board79.png> <./Chapter7/Figs/upstream_T1stability_combined_board79.png>]
-<Chapter7/Figs/board79_T1drift_2d.png, id=2177, 668.4975pt x 433.62pt>
+ [84 <./Chapter7/Figs/crt_sharps.png>] [85 <./Chapter7/Figs/upstream_T0stability_combined_board79.png> <./Chapter7/Figs/upstream_T1stability_combined_board79.png>]
+<Chapter7/Figs/board79_T1drift_2d.png, id=2199, 668.4975pt x 433.62pt>
 File: Chapter7/Figs/board79_T1drift_2d.png Graphic file (type png)
 <use Chapter7/Figs/board79_T1drift_2d.png>
 Package pdftex.def Info: Chapter7/Figs/board79_T1drift_2d.png  used on input line 269.
 (pdftex.def)             Requested size: 306.22144pt x 198.63394pt.
- [84 <./Chapter7/Figs/board79_T1drift_2d.png>]
-<Chapter7/Figs/CRT_T1_TopHat.png, id=2189, 505.89pt x 433.62pt>
+ [86 <./Chapter7/Figs/board79_T1drift_2d.png>]
+<Chapter7/Figs/CRT_T1_TopHat.png, id=2211, 505.89pt x 433.62pt>
 File: Chapter7/Figs/CRT_T1_TopHat.png Graphic file (type png)
 <use Chapter7/Figs/CRT_T1_TopHat.png>
 Package pdftex.def Info: Chapter7/Figs/CRT_T1_TopHat.png  used on input line 302.
 (pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
-<Chapter7/Figs/CRTT0_SPEC_TopHat.png, id=2190, 505.89pt x 433.62pt>
+<Chapter7/Figs/CRTT0_SPEC_TopHat.png, id=2212, 505.89pt x 433.62pt>
 File: Chapter7/Figs/CRTT0_SPEC_TopHat.png Graphic file (type png)
 <use Chapter7/Figs/CRTT0_SPEC_TopHat.png>
 Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_TopHat.png  used on input line 309.
 (pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
-<Chapter7/Figs/CRT_T1_Bucket.png, id=2193, 505.89pt x 433.62pt>
+<Chapter7/Figs/CRT_T1_Bucket.png, id=2215, 505.89pt x 433.62pt>
 File: Chapter7/Figs/CRT_T1_Bucket.png Graphic file (type png)
 <use Chapter7/Figs/CRT_T1_Bucket.png>
 Package pdftex.def Info: Chapter7/Figs/CRT_T1_Bucket.png  used on input line 334.
 (pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
-<Chapter7/Figs/CRTT0_SPEC_Bucket.png, id=2194, 505.89pt x 433.62pt>
+<Chapter7/Figs/CRTT0_SPEC_Bucket.png, id=2216, 505.89pt x 433.62pt>
 File: Chapter7/Figs/CRTT0_SPEC_Bucket.png Graphic file (type png)
 <use Chapter7/Figs/CRTT0_SPEC_Bucket.png>
 Package pdftex.def Info: Chapter7/Figs/CRTT0_SPEC_Bucket.png  used on input line 341.
 (pdftex.def)             Requested size: 216.5411pt x 185.60605pt.
- [85 <./Chapter7/Figs/CRT_T1_TopHat.png> <./Chapter7/Figs/CRTT0_SPEC_TopHat.png>] [86 <./Chapter7/Figs/CRT_T1_Bucket.png> <./Chapter7/Figs/CRTT0_SPEC_Bucket.png>]
-<Chapter7/Figs/TTT_diagram.png, id=2213, 626.34pt x 212.795pt>
+ [87 <./Chapter7/Figs/CRT_T1_TopHat.png> <./Chapter7/Figs/CRTT0_SPEC_TopHat.png>] [88 <./Chapter7/Figs/CRT_T1_Bucket.png> <./Chapter7/Figs/CRTT0_SPEC_Bucket.png>]
+<Chapter7/Figs/TTT_diagram.png, id=2236, 626.34pt x 212.795pt>
 File: Chapter7/Figs/TTT_diagram.png Graphic file (type png)
 <use Chapter7/Figs/TTT_diagram.png>
 Package pdftex.def Info: Chapter7/Figs/TTT_diagram.png  used on input line 396.
 (pdftex.def)             Requested size: 437.46112pt x 148.62752pt.
- [87 <./Chapter7/Figs/TTT_diagram.png>]
-<Chapter7/Figs/fanout.png, id=2223, 738.76pt x 321.2pt>
+ [89 <./Chapter7/Figs/TTT_diagram.png>]
+<Chapter7/Figs/fanout.png, id=2247, 738.76pt x 321.2pt>
 File: Chapter7/Figs/fanout.png Graphic file (type png)
 <use Chapter7/Figs/fanout.png>
 Package pdftex.def Info: Chapter7/Figs/fanout.png  used on input line 433.
 (pdftex.def)             Requested size: 216.5411pt x 94.14543pt.
-<Chapter7/Figs/daisychain.png, id=2224, 738.76pt x 315.1775pt>
+<Chapter7/Figs/daisychain.png, id=2248, 738.76pt x 315.1775pt>
 File: Chapter7/Figs/daisychain.png Graphic file (type png)
 <use Chapter7/Figs/daisychain.png>
 Package pdftex.def Info: Chapter7/Figs/daisychain.png  used on input line 440.
@@ -2185,110 +2195,110 @@ Underfull \hbox (badness 1052) in paragraph at lines 446--446
 []\T1/futs/b/n/12 Fig. 7.10 |\T1/futs/m/n/12 (+20) Di-a-gram il-lus-trat-ing two clock syn-chro-ni-sa-tion schemes for
  []
 
-[88 <./Chapter7/Figs/fanout.png> <./Chapter7/Figs/daisychain.png>]
-<Chapter7/Figs/TTT_SPEC_diff_run7980.png, id=2235, 1734.48pt x 433.62pt>
+[90 <./Chapter7/Figs/fanout.png> <./Chapter7/Figs/daisychain.png>]
+<Chapter7/Figs/TTT_SPEC_diff_run7980.png, id=2258, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/TTT_SPEC_diff_run7980.png Graphic file (type png)
 <use Chapter7/Figs/TTT_SPEC_diff_run7980.png>
 Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run7980.png  used on input line 502.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8060.png, id=2236, 1734.48pt x 433.62pt>
+<Chapter7/Figs/TTT_SPEC_diff_run8060.png, id=2259, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/TTT_SPEC_diff_run8060.png Graphic file (type png)
 <use Chapter7/Figs/TTT_SPEC_diff_run8060.png>
 Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8060.png  used on input line 509.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8178.png, id=2237, 1734.48pt x 433.62pt>
+<Chapter7/Figs/TTT_SPEC_diff_run8178.png, id=2260, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/TTT_SPEC_diff_run8178.png Graphic file (type png)
 <use Chapter7/Figs/TTT_SPEC_diff_run8178.png>
 Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8178.png  used on input line 522.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/TTT_SPEC_diff_run8196.png, id=2238, 1734.48pt x 433.62pt>
+<Chapter7/Figs/TTT_SPEC_diff_run8196.png, id=2261, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/TTT_SPEC_diff_run8196.png Graphic file (type png)
 <use Chapter7/Figs/TTT_SPEC_diff_run8196.png>
 Package pdftex.def Info: Chapter7/Figs/TTT_SPEC_diff_run8196.png  used on input line 528.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
- [89] [90 <./Chapter7/Figs/TTT_SPEC_diff_run7980.png> <./Chapter7/Figs/TTT_SPEC_diff_run8060.png> <./Chapter7/Figs/TTT_SPEC_diff_run8178.png> <./Chapter7/Figs/TTT_SPEC_diff_run8196.png>]
-<Chapter7/Figs/jitter_before_unzoom.png, id=2255, 1734.48pt x 433.62pt>
+ [91] [92 <./Chapter7/Figs/TTT_SPEC_diff_run7980.png> <./Chapter7/Figs/TTT_SPEC_diff_run8060.png> <./Chapter7/Figs/TTT_SPEC_diff_run8178.png> <./Chapter7/Figs/TTT_SPEC_diff_run8196.png>]
+<Chapter7/Figs/jitter_before_unzoom.png, id=2277, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/jitter_before_unzoom.png Graphic file (type png)
 <use Chapter7/Figs/jitter_before_unzoom.png>
 Package pdftex.def Info: Chapter7/Figs/jitter_before_unzoom.png  used on input line 576.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/jitter_before_zoom.png, id=2256, 1734.48pt x 433.62pt>
+<Chapter7/Figs/jitter_before_zoom.png, id=2278, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/jitter_before_zoom.png Graphic file (type png)
 <use Chapter7/Figs/jitter_before_zoom.png>
 Package pdftex.def Info: Chapter7/Figs/jitter_before_zoom.png  used on input line 583.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
- [91]
-<Chapter7/Figs/jitter_before.png, id=2262, 1734.48pt x 433.62pt>
+ [93]
+<Chapter7/Figs/jitter_before.png, id=2284, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/jitter_before.png Graphic file (type png)
 <use Chapter7/Figs/jitter_before.png>
 Package pdftex.def Info: Chapter7/Figs/jitter_before.png  used on input line 610.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/jitter_after.png, id=2263, 1734.48pt x 433.62pt>
+<Chapter7/Figs/jitter_after.png, id=2285, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/jitter_after.png Graphic file (type png)
 <use Chapter7/Figs/jitter_after.png>
 Package pdftex.def Info: Chapter7/Figs/jitter_after.png  used on input line 617.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
- [92 <./Chapter7/Figs/jitter_before_unzoom.png> <./Chapter7/Figs/jitter_before_zoom.png>]
-<Chapter7/Figs/Tickts_spec.png, id=2274, 1734.48pt x 433.62pt>
+ [94 <./Chapter7/Figs/jitter_before_unzoom.png> <./Chapter7/Figs/jitter_before_zoom.png>]
+<Chapter7/Figs/Tickts_spec.png, id=2296, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/Tickts_spec.png Graphic file (type png)
 <use Chapter7/Figs/Tickts_spec.png>
 Package pdftex.def Info: Chapter7/Figs/Tickts_spec.png  used on input line 653.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/Tickts_spec_corrEbyE.png, id=2275, 1734.48pt x 433.62pt>
+<Chapter7/Figs/Tickts_spec_corrEbyE.png, id=2297, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/Tickts_spec_corrEbyE.png Graphic file (type png)
 <use Chapter7/Figs/Tickts_spec_corrEbyE.png>
 Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrEbyE.png  used on input line 660.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
-<Chapter7/Figs/Tickts_spec_corrRbyR.png, id=2276, 1734.48pt x 433.62pt>
+<Chapter7/Figs/Tickts_spec_corrRbyR.png, id=2298, 1734.48pt x 433.62pt>
 File: Chapter7/Figs/Tickts_spec_corrRbyR.png Graphic file (type png)
 <use Chapter7/Figs/Tickts_spec_corrRbyR.png>
 Package pdftex.def Info: Chapter7/Figs/Tickts_spec_corrRbyR.png  used on input line 667.
 (pdftex.def)             Requested size: 437.46112pt x 109.36412pt.
- [93 <./Chapter7/Figs/jitter_before.png> <./Chapter7/Figs/jitter_after.png>] [94 <./Chapter7/Figs/Tickts_spec.png> <./Chapter7/Figs/Tickts_spec_corrEbyE.png> <./Chapter7/Figs/Tickts_spec_corrRbyR.png>]) [95]
+ [95 <./Chapter7/Figs/jitter_before.png> <./Chapter7/Figs/jitter_after.png>] [96 <./Chapter7/Figs/Tickts_spec.png> <./Chapter7/Figs/Tickts_spec_corrEbyE.png> <./Chapter7/Figs/Tickts_spec_corrRbyR.png>]) [97]
 \openout2 = `Chapter8/chapter8.aux'.
 
- (./Chapter8/chapter8.tex [96
+ (./Chapter8/chapter8.tex [98
 
 
 
 ]
 Chapter 8.
-[97] [98]
-<Chapter8/Figs/cosmic_stitch.png, id=2340, 603.25375pt x 585.18625pt>
+[99] [100]
+<Chapter8/Figs/cosmic_stitch.png, id=2362, 603.25375pt x 585.18625pt>
 File: Chapter8/Figs/cosmic_stitch.png Graphic file (type png)
 <use Chapter8/Figs/cosmic_stitch.png>
 Package pdftex.def Info: Chapter8/Figs/cosmic_stitch.png  used on input line 87.
 (pdftex.def)             Requested size: 240.60495pt x 233.39172pt.
- [99 <./Chapter8/Figs/cosmic_stitch.png>]
-<Chapter8/Figs/dqdxMPV.png, id=2353, 520.94624pt x 317.185pt>
+ [101 <./Chapter8/Figs/cosmic_stitch.png>]
+<Chapter8/Figs/dqdxMPV.png, id=2377, 520.94624pt x 317.185pt>
 File: Chapter8/Figs/dqdxMPV.png Graphic file (type png)
 <use Chapter8/Figs/dqdxMPV.png>
 Package pdftex.def Info: Chapter8/Figs/dqdxMPV.png  used on input line 107.
 (pdftex.def)             Requested size: 240.60495pt x 146.49731pt.
-<Chapter8/Figs/etime_tpc0.png, id=2354, 1170.3725pt x 815.045pt>
+<Chapter8/Figs/etime_tpc0.png, id=2378, 1170.3725pt x 815.045pt>
 File: Chapter8/Figs/etime_tpc0.png Graphic file (type png)
 <use Chapter8/Figs/etime_tpc0.png>
 Package pdftex.def Info: Chapter8/Figs/etime_tpc0.png  used on input line 118.
 (pdftex.def)             Requested size: 216.5411pt x 150.7934pt.
-<Chapter8/Figs/etime_tpc1.png, id=2355, 1178.4025pt x 822.07124pt>
+<Chapter8/Figs/etime_tpc1.png, id=2379, 1178.4025pt x 822.07124pt>
 File: Chapter8/Figs/etime_tpc1.png Graphic file (type png)
 <use Chapter8/Figs/etime_tpc1.png>
 Package pdftex.def Info: Chapter8/Figs/etime_tpc1.png  used on input line 125.
 (pdftex.def)             Requested size: 216.5411pt x 151.0522pt.
- [100 <./Chapter8/Figs/dqdxMPV.png> <./Chapter8/Figs/etime_tpc0.png> <./Chapter8/Figs/etime_tpc1.png>]
-<Chapter8/Figs/etime_biases_compare.png, id=2366, 722.7pt x 578.16pt>
+ [102 <./Chapter8/Figs/dqdxMPV.png> <./Chapter8/Figs/etime_tpc0.png> <./Chapter8/Figs/etime_tpc1.png>]
+<Chapter8/Figs/etime_biases_compare.png, id=2390, 722.7pt x 578.16pt>
 File: Chapter8/Figs/etime_biases_compare.png Graphic file (type png)
 <use Chapter8/Figs/etime_biases_compare.png>
 Package pdftex.def Info: Chapter8/Figs/etime_biases_compare.png  used on input line 165.
 (pdftex.def)             Requested size: 371.84462pt x 297.47783pt.
- [101] [102 <./Chapter8/Figs/etime_biases_compare.png>]
-<Chapter8/Figs/delta_ray_evd.png, id=2390, 1205.50375pt x 384.43625pt>
+ [103] [104 <./Chapter8/Figs/etime_biases_compare.png>]
+<Chapter8/Figs/delta_ray_evd.png, id=2412, 1205.50375pt x 384.43625pt>
 File: Chapter8/Figs/delta_ray_evd.png Graphic file (type png)
 <use Chapter8/Figs/delta_ray_evd.png>
 Package pdftex.def Info: Chapter8/Figs/delta_ray_evd.png  used on input line 218.
 (pdftex.def)             Requested size: 371.84462pt x 118.58153pt.
- [103 <./Chapter8/Figs/delta_ray_evd.png>] [104] [105]
-<Chapter8/Figs/proton_700um.png, id=2433, 700.6175pt x 477.785pt>
+ [105 <./Chapter8/Figs/delta_ray_evd.png>] [106] [107]
+<Chapter8/Figs/proton_700um.png, id=2456, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/proton_700um.png Graphic file (type png)
 <use Chapter8/Figs/proton_700um.png>
 Package pdftex.def Info: Chapter8/Figs/proton_700um.png  used on input line 332.
@@ -2305,324 +2315,324 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 333.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 333.
-<Chapter8/Figs/proton_1um.png, id=2434, 700.6175pt x 477.785pt>
+<Chapter8/Figs/proton_1um.png, id=2457, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/proton_1um.png Graphic file (type png)
 <use Chapter8/Figs/proton_1um.png>
 Package pdftex.def Info: Chapter8/Figs/proton_1um.png  used on input line 339.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/proton_profile.png, id=2435, 700.6175pt x 477.785pt>
+<Chapter8/Figs/proton_profile.png, id=2458, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/proton_profile.png Graphic file (type png)
 <use Chapter8/Figs/proton_profile.png>
 Package pdftex.def Info: Chapter8/Figs/proton_profile.png  used on input line 349.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/proton_profile_diff.png, id=2436, 700.6175pt x 477.785pt>
+<Chapter8/Figs/proton_profile_diff.png, id=2459, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/proton_profile_diff.png Graphic file (type png)
 <use Chapter8/Figs/proton_profile_diff.png>
 Package pdftex.def Info: Chapter8/Figs/proton_profile_diff.png  used on input line 356.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [106]
-<Chapter8/Figs/mu_700um.png, id=2452, 700.6175pt x 477.785pt>
+ [108]
+<Chapter8/Figs/mu_700um.png, id=2475, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_700um.png Graphic file (type png)
 <use Chapter8/Figs/mu_700um.png>
 Package pdftex.def Info: Chapter8/Figs/mu_700um.png  used on input line 397.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/mu_1um.png, id=2453, 700.6175pt x 477.785pt>
+<Chapter8/Figs/mu_1um.png, id=2476, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_1um.png Graphic file (type png)
 <use Chapter8/Figs/mu_1um.png>
 Package pdftex.def Info: Chapter8/Figs/mu_1um.png  used on input line 404.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/mu_700um_lowRR.png, id=2454, 700.6175pt x 477.785pt>
+<Chapter8/Figs/mu_700um_lowRR.png, id=2477, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_700um_lowRR.png Graphic file (type png)
 <use Chapter8/Figs/mu_700um_lowRR.png>
 Package pdftex.def Info: Chapter8/Figs/mu_700um_lowRR.png  used on input line 411.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/mu_1um_lowRR.png, id=2455, 700.6175pt x 477.785pt>
+<Chapter8/Figs/mu_1um_lowRR.png, id=2478, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_1um_lowRR.png Graphic file (type png)
 <use Chapter8/Figs/mu_1um_lowRR.png>
 Package pdftex.def Info: Chapter8/Figs/mu_1um_lowRR.png  used on input line 418.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [107 <./Chapter8/Figs/proton_700um.png> <./Chapter8/Figs/proton_1um.png> <./Chapter8/Figs/proton_profile.png> <./Chapter8/Figs/proton_profile_diff.png>]
-<Chapter8/Figs/mu_profile.png, id=2462, 700.6175pt x 477.785pt>
+ [109 <./Chapter8/Figs/proton_700um.png> <./Chapter8/Figs/proton_1um.png> <./Chapter8/Figs/proton_profile.png> <./Chapter8/Figs/proton_profile_diff.png>]
+<Chapter8/Figs/mu_profile.png, id=2484, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_profile.png Graphic file (type png)
 <use Chapter8/Figs/mu_profile.png>
 Package pdftex.def Info: Chapter8/Figs/mu_profile.png  used on input line 444.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/mu_profile_diff.png, id=2463, 700.6175pt x 477.785pt>
+<Chapter8/Figs/mu_profile_diff.png, id=2485, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/mu_profile_diff.png Graphic file (type png)
 <use Chapter8/Figs/mu_profile_diff.png>
 Package pdftex.def Info: Chapter8/Figs/mu_profile_diff.png  used on input line 451.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [108 <./Chapter8/Figs/mu_700um.png> <./Chapter8/Figs/mu_1um.png> <./Chapter8/Figs/mu_700um_lowRR.png> <./Chapter8/Figs/mu_1um_lowRR.png>]
-<Chapter8/Figs/derr_proton_delta_700um.png, id=2479, 700.6175pt x 477.785pt>
+ [110 <./Chapter8/Figs/mu_700um.png> <./Chapter8/Figs/mu_1um.png> <./Chapter8/Figs/mu_700um_lowRR.png> <./Chapter8/Figs/mu_1um_lowRR.png>]
+<Chapter8/Figs/derr_proton_delta_700um.png, id=2501, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_delta_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_delta_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_700um.png  used on input line 482.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_delta_1um.png, id=2480, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_delta_1um.png, id=2502, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_delta_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_delta_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_delta_1um.png  used on input line 489.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_only_700um.png, id=2481, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_only_700um.png, id=2503, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_only_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_only_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_only_700um.png  used on input line 495.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_proton_only_1um.png, id=2482, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_proton_only_1um.png, id=2504, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_proton_only_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_proton_only_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_proton_only_1um.png  used on input line 502.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
- [109 <./Chapter8/Figs/mu_profile.png> <./Chapter8/Figs/mu_profile_diff.png>] [110 <./Chapter8/Figs/derr_proton_delta_700um.png> <./Chapter8/Figs/derr_proton_delta_1um.png> <./Chapter8/Figs/derr_proton_only_700um.png> <./Chapter8/Figs/derr_proton_only_1um.png>]
-<Chapter8/Figs/derr_mu_delta_700um.png, id=2501, 700.6175pt x 477.785pt>
+ [111 <./Chapter8/Figs/mu_profile.png> <./Chapter8/Figs/mu_profile_diff.png>] [112 <./Chapter8/Figs/derr_proton_delta_700um.png> <./Chapter8/Figs/derr_proton_delta_1um.png> <./Chapter8/Figs/derr_proton_only_700um.png> <./Chapter8/Figs/derr_proton_only_1um.png>]
+<Chapter8/Figs/derr_mu_delta_700um.png, id=2523, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_mu_delta_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_delta_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_mu_delta_700um.png  used on input line 528.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_mu_delta_1um.png, id=2502, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_mu_delta_1um.png, id=2524, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_mu_delta_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_delta_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_mu_delta_1um.png  used on input line 535.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_mu_only_700um.png, id=2503, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_mu_only_700um.png, id=2525, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_mu_only_700um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_only_700um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_mu_only_700um.png  used on input line 541.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/derr_mu_only_1um.png, id=2504, 700.6175pt x 477.785pt>
+<Chapter8/Figs/derr_mu_only_1um.png, id=2526, 700.6175pt x 477.785pt>
 File: Chapter8/Figs/derr_mu_only_1um.png Graphic file (type png)
 <use Chapter8/Figs/derr_mu_only_1um.png>
 Package pdftex.def Info: Chapter8/Figs/derr_mu_only_1um.png  used on input line 548.
 (pdftex.def)             Requested size: 216.5411pt x 147.6671pt.
-<Chapter8/Figs/icarus_recomb.png, id=2506, 814.04124pt x 782.925pt>
+<Chapter8/Figs/icarus_recomb.png, id=2528, 814.04124pt x 782.925pt>
 File: Chapter8/Figs/icarus_recomb.png Graphic file (type png)
 <use Chapter8/Figs/icarus_recomb.png>
 Package pdftex.def Info: Chapter8/Figs/icarus_recomb.png  used on input line 607.
 (pdftex.def)             Requested size: 218.73056pt x 210.36517pt.
- [111 <./Chapter8/Figs/derr_mu_delta_700um.png> <./Chapter8/Figs/derr_mu_delta_1um.png> <./Chapter8/Figs/derr_mu_only_700um.png> <./Chapter8/Figs/derr_mu_only_1um.png>] [112 <./Chapter8/Figs/icarus_recomb.png>]) [113]
+ [113 <./Chapter8/Figs/derr_mu_delta_700um.png> <./Chapter8/Figs/derr_mu_delta_1um.png> <./Chapter8/Figs/derr_mu_only_700um.png> <./Chapter8/Figs/derr_mu_only_1um.png>] [114 <./Chapter8/Figs/icarus_recomb.png>]) [115]
 \openout2 = `Chapter9/chapter9.aux'.
 
- (./Chapter9/chapter9.tex [114
+ (./Chapter9/chapter9.tex [116
 
 
 
 ]
 Chapter 9.
-[115]
-<Chapter9/Figs/hnl_2shw.png, id=2555, 783.92876pt x 268.00125pt>
+[117]
+<Chapter9/Figs/hnl_2shw.png, id=2577, 783.92876pt x 268.00125pt>
 File: Chapter9/Figs/hnl_2shw.png Graphic file (type png)
 <use Chapter9/Figs/hnl_2shw.png>
 Package pdftex.def Info: Chapter9/Figs/hnl_2shw.png  used on input line 61.
 (pdftex.def)             Requested size: 371.84462pt x 127.12198pt.
-<Chapter9/Figs/hnl_1shw.png, id=2556, 785.93625pt x 270.00874pt>
+<Chapter9/Figs/hnl_1shw.png, id=2578, 785.93625pt x 270.00874pt>
 File: Chapter9/Figs/hnl_1shw.png Graphic file (type png)
 <use Chapter9/Figs/hnl_1shw.png>
 Package pdftex.def Info: Chapter9/Figs/hnl_1shw.png  used on input line 68.
 (pdftex.def)             Requested size: 371.84462pt x 127.74872pt.
-<Chapter9/Figs/ncpi0.png, id=2557, 785.93625pt x 269.005pt>
+<Chapter9/Figs/ncpi0.png, id=2579, 785.93625pt x 269.005pt>
 File: Chapter9/Figs/ncpi0.png Graphic file (type png)
 <use Chapter9/Figs/ncpi0.png>
 Package pdftex.def Info: Chapter9/Figs/ncpi0.png  used on input line 80.
 (pdftex.def)             Requested size: 371.84462pt x 127.27382pt.
- [116] [117 <./Chapter9/Figs/hnl_2shw.png> <./Chapter9/Figs/hnl_1shw.png> <./Chapter9/Figs/ncpi0.png>]
-<Chapter9/Figs/1m1p_cos.png, id=2577, 785.93625pt x 270.00874pt>
+ [118] [119 <./Chapter9/Figs/hnl_2shw.png> <./Chapter9/Figs/hnl_1shw.png> <./Chapter9/Figs/ncpi0.png>]
+<Chapter9/Figs/1m1p_cos.png, id=2600, 785.93625pt x 270.00874pt>
 File: Chapter9/Figs/1m1p_cos.png Graphic file (type png)
 <use Chapter9/Figs/1m1p_cos.png>
 Package pdftex.def Info: Chapter9/Figs/1m1p_cos.png  used on input line 113.
 (pdftex.def)             Requested size: 371.84462pt x 127.74872pt.
- [118 <./Chapter9/Figs/1m1p_cos.png>] [119] [120] [121]
-<Chapter9/Figs/beamspill.png, id=2630, 505.89pt x 361.35pt>
+ [120 <./Chapter9/Figs/1m1p_cos.png>] [121] [122] [123]
+<Chapter9/Figs/beamspill.png, id=2652, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beamspill.png Graphic file (type png)
 <use Chapter9/Figs/beamspill.png>
 Package pdftex.def Info: Chapter9/Figs/beamspill.png  used on input line 258.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_post_beamspill.png, id=2631, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_post_beamspill.png, id=2653, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_post_beamspill.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_post_beamspill.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_beamspill.png  used on input line 265.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [122 <./Chapter9/Figs/beamspill.png> <./Chapter9/Figs/beam_bucket_post_beamspill.png>]
-<Chapter9/Figs/crumbs_precut.png, id=2642, 505.89pt x 361.35pt>
+ [124 <./Chapter9/Figs/beamspill.png> <./Chapter9/Figs/beam_bucket_post_beamspill.png>]
+<Chapter9/Figs/crumbs_precut.png, id=2664, 505.89pt x 361.35pt>
 File: Chapter9/Figs/crumbs_precut.png Graphic file (type png)
 <use Chapter9/Figs/crumbs_precut.png>
 Package pdftex.def Info: Chapter9/Figs/crumbs_precut.png  used on input line 291.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_post_crumbs.png, id=2643, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_post_crumbs.png, id=2665, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_post_crumbs.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_post_crumbs.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_crumbs.png  used on input line 298.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [123 <./Chapter9/Figs/crumbs_precut.png> <./Chapter9/Figs/beam_bucket_post_crumbs.png>]
-<Chapter9/Figs/fv_precut.png, id=2656, 505.89pt x 361.35pt>
+ [125 <./Chapter9/Figs/crumbs_precut.png> <./Chapter9/Figs/beam_bucket_post_crumbs.png>]
+<Chapter9/Figs/fv_precut.png, id=2679, 505.89pt x 361.35pt>
 File: Chapter9/Figs/fv_precut.png Graphic file (type png)
 <use Chapter9/Figs/fv_precut.png>
 Package pdftex.def Info: Chapter9/Figs/fv_precut.png  used on input line 342.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_post_fv.png, id=2657, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_post_fv.png, id=2680, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_post_fv.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_post_fv.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_post_fv.png  used on input line 349.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [124 <./Chapter9/Figs/fv_precut.png> <./Chapter9/Figs/beam_bucket_post_FV.png>]
-<Chapter9/Figs/nHits.png, id=2668, 505.89pt x 361.35pt>
+ [126 <./Chapter9/Figs/fv_precut.png> <./Chapter9/Figs/beam_bucket_post_FV.png>]
+<Chapter9/Figs/nHits.png, id=2691, 505.89pt x 361.35pt>
 File: Chapter9/Figs/nHits.png Graphic file (type png)
 <use Chapter9/Figs/nHits.png>
 Package pdftex.def Info: Chapter9/Figs/nHits.png  used on input line 377.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postNhits.png, id=2669, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postNhits.png, id=2692, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postNhits.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postNhits.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postNhits.png  used on input line 384.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [125 <./Chapter9/Figs/nHits.png> <./Chapter9/Figs/beam_bucket_postNhits.png>]
-<Chapter9/Figs/nrazzled_muon_precut.png, id=2684, 505.89pt x 361.35pt>
+ [127 <./Chapter9/Figs/nHits.png> <./Chapter9/Figs/beam_bucket_postNhits.png>]
+<Chapter9/Figs/nrazzled_muon_precut.png, id=2706, 505.89pt x 361.35pt>
 File: Chapter9/Figs/nrazzled_muon_precut.png Graphic file (type png)
 <use Chapter9/Figs/nrazzled_muon_precut.png>
 Package pdftex.def Info: Chapter9/Figs/nrazzled_muon_precut.png  used on input line 412.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/razzled_muon_score_precut.png, id=2685, 505.89pt x 361.35pt>
+<Chapter9/Figs/razzled_muon_score_precut.png, id=2707, 505.89pt x 361.35pt>
 File: Chapter9/Figs/razzled_muon_score_precut.png Graphic file (type png)
 <use Chapter9/Figs/razzled_muon_score_precut.png>
 Package pdftex.def Info: Chapter9/Figs/razzled_muon_score_precut.png  used on input line 419.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postmuon.png, id=2686, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postmuon.png, id=2708, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postmuon.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postmuon.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postmuon.png  used on input line 427.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [126 <./Chapter9/Figs/nrazzled_muon_precut.png> <./Chapter9/Figs/razzled_muon_score_precut.png> <./Chapter9/Figs/beam_bucket_postmuon.png>]
-<Chapter9/Figs/nrazzled_proton_precut.png, id=2700, 505.89pt x 361.35pt>
+ [128 <./Chapter9/Figs/nrazzled_muon_precut.png> <./Chapter9/Figs/razzled_muon_score_precut.png> <./Chapter9/Figs/beam_bucket_postmuon.png>]
+<Chapter9/Figs/nrazzled_proton_precut.png, id=2722, 505.89pt x 361.35pt>
 File: Chapter9/Figs/nrazzled_proton_precut.png Graphic file (type png)
 <use Chapter9/Figs/nrazzled_proton_precut.png>
 Package pdftex.def Info: Chapter9/Figs/nrazzled_proton_precut.png  used on input line 476.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/razzled_proton_score_precut.png, id=2701, 505.89pt x 361.35pt>
+<Chapter9/Figs/razzled_proton_score_precut.png, id=2723, 505.89pt x 361.35pt>
 File: Chapter9/Figs/razzled_proton_score_precut.png Graphic file (type png)
 <use Chapter9/Figs/razzled_proton_score_precut.png>
 Package pdftex.def Info: Chapter9/Figs/razzled_proton_score_precut.png  used on input line 483.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/nrazzled_pion_precut.png, id=2702, 505.89pt x 361.35pt>
+<Chapter9/Figs/nrazzled_pion_precut.png, id=2724, 505.89pt x 361.35pt>
 File: Chapter9/Figs/nrazzled_pion_precut.png Graphic file (type png)
 <use Chapter9/Figs/nrazzled_pion_precut.png>
 Package pdftex.def Info: Chapter9/Figs/nrazzled_pion_precut.png  used on input line 490.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/razzled_pion_score_precut.png, id=2703, 505.89pt x 361.35pt>
+<Chapter9/Figs/razzled_pion_score_precut.png, id=2725, 505.89pt x 361.35pt>
 File: Chapter9/Figs/razzled_pion_score_precut.png Graphic file (type png)
 <use Chapter9/Figs/razzled_pion_score_precut.png>
 Package pdftex.def Info: Chapter9/Figs/razzled_pion_score_precut.png  used on input line 497.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postproton.png, id=2704, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postproton.png, id=2726, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postproton.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postproton.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postproton.png  used on input line 504.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postpion.png, id=2705, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postpion.png, id=2727, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postpion.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postpion.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postpion.png  used on input line 511.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [127]
+ [129]
 
-LaTeX Warning: Text page 128 contains only floats.
+LaTeX Warning: Text page 130 contains only floats.
 
-[128 <./Chapter9/Figs/nrazzled_proton_precut.png> <./Chapter9/Figs/razzled_proton_score_precut.png> <./Chapter9/Figs/nrazzled_pion_precut.png> <./Chapter9/Figs/razzled_pion_score_precut.png> <./Chapter9/Figs/beam_bucket_postproton.png> <./Chapter9/Figs/beam_bucket_postpion.png>]
-<Chapter9/Figs/razzled_electron_score_prim_shw_precut.png, id=2729, 505.89pt x 361.35pt>
+[130 <./Chapter9/Figs/nrazzled_proton_precut.png> <./Chapter9/Figs/razzled_proton_score_precut.png> <./Chapter9/Figs/nrazzled_pion_precut.png> <./Chapter9/Figs/razzled_pion_score_precut.png> <./Chapter9/Figs/beam_bucket_postproton.png> <./Chapter9/Figs/beam_bucket_postpion.png>]
+<Chapter9/Figs/razzled_electron_score_prim_shw_precut.png, id=2752, 505.89pt x 361.35pt>
 File: Chapter9/Figs/razzled_electron_score_prim_shw_precut.png Graphic file (type png)
 <use Chapter9/Figs/razzled_electron_score_prim_shw_precut.png>
 Package pdftex.def Info: Chapter9/Figs/razzled_electron_score_prim_shw_precut.png  used on input line 553.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postelectron.png, id=2730, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postelectron.png, id=2753, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postelectron.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postelectron.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postelectron.png  used on input line 560.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [129 <./Chapter9/Figs/razzled_electron_score_prim_shw_precut.png> <./Chapter9/Figs/beam_bucket_postelectron.png>]
-<Chapter9/Figs/one_shw_track_score.png, id=2739, 505.89pt x 361.35pt>
+ [131 <./Chapter9/Figs/razzled_electron_score_prim_shw_precut.png> <./Chapter9/Figs/beam_bucket_postelectron.png>]
+<Chapter9/Figs/one_shw_track_score.png, id=2762, 505.89pt x 361.35pt>
 File: Chapter9/Figs/one_shw_track_score.png Graphic file (type png)
 <use Chapter9/Figs/one_shw_track_score.png>
 Package pdftex.def Info: Chapter9/Figs/one_shw_track_score.png  used on input line 591.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/two_shower_primary_track_score_precut.png, id=2740, 505.89pt x 361.35pt>
+<Chapter9/Figs/two_shower_primary_track_score_precut.png, id=2763, 505.89pt x 361.35pt>
 File: Chapter9/Figs/two_shower_primary_track_score_precut.png Graphic file (type png)
 <use Chapter9/Figs/two_shower_primary_track_score_precut.png>
 Package pdftex.def Info: Chapter9/Figs/two_shower_primary_track_score_precut.png  used on input line 597.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postrackscore.png, id=2741, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postrackscore.png, id=2764, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postrackscore.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postrackscore.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postrackscore.png  used on input line 604.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [130]
-<Chapter9/Figs/opt0frac_one_shw_precut.png, id=2751, 505.89pt x 361.35pt>
+ [132]
+<Chapter9/Figs/opt0frac_one_shw_precut.png, id=2774, 505.89pt x 361.35pt>
 File: Chapter9/Figs/opt0frac_one_shw_precut.png Graphic file (type png)
 <use Chapter9/Figs/opt0frac_one_shw_precut.png>
 Package pdftex.def Info: Chapter9/Figs/opt0frac_one_shw_precut.png  used on input line 644.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/opt0frac_two_shw_precut.png, id=2752, 505.89pt x 361.35pt>
+<Chapter9/Figs/opt0frac_two_shw_precut.png, id=2775, 505.89pt x 361.35pt>
 File: Chapter9/Figs/opt0frac_two_shw_precut.png Graphic file (type png)
 <use Chapter9/Figs/opt0frac_two_shw_precut.png>
 Package pdftex.def Info: Chapter9/Figs/opt0frac_two_shw_precut.png  used on input line 650.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postopt0.png, id=2753, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postopt0.png, id=2776, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postopt0.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postopt0.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postopt0.png  used on input line 657.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [131 <./Chapter9/Figs/one_shw_track_score.png> <./Chapter9/Figs/two_shower_primary_track_score_precut.png> <./Chapter9/Figs/beam_bucket_postrackscore.png>] [132 <./Chapter9/Figs/opt0frac_one_shw_precut.png> <./Chapter9/Figs/opt0frac_two_shw_precut.png> <./Chapter9/Figs/beam_bucket_postopt0.png>]
-<Chapter9/Figs/one_shower_theta_precut.png, id=2772, 505.89pt x 361.35pt>
+ [133 <./Chapter9/Figs/one_shw_track_score.png> <./Chapter9/Figs/two_shower_primary_track_score_precut.png> <./Chapter9/Figs/beam_bucket_postrackscore.png>] [134 <./Chapter9/Figs/opt0frac_one_shw_precut.png> <./Chapter9/Figs/opt0frac_two_shw_precut.png> <./Chapter9/Figs/beam_bucket_postopt0.png>]
+<Chapter9/Figs/one_shower_theta_precut.png, id=2794, 505.89pt x 361.35pt>
 File: Chapter9/Figs/one_shower_theta_precut.png Graphic file (type png)
 <use Chapter9/Figs/one_shower_theta_precut.png>
 Package pdftex.def Info: Chapter9/Figs/one_shower_theta_precut.png  used on input line 686.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/two_shower_primary_theta_precut.png, id=2773, 505.89pt x 361.35pt>
+<Chapter9/Figs/two_shower_primary_theta_precut.png, id=2795, 505.89pt x 361.35pt>
 File: Chapter9/Figs/two_shower_primary_theta_precut.png Graphic file (type png)
 <use Chapter9/Figs/two_shower_primary_theta_precut.png>
 Package pdftex.def Info: Chapter9/Figs/two_shower_primary_theta_precut.png  used on input line 693.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/beam_bucket_postshowertheta.png, id=2774, 505.89pt x 361.35pt>
+<Chapter9/Figs/beam_bucket_postshowertheta.png, id=2796, 505.89pt x 361.35pt>
 File: Chapter9/Figs/beam_bucket_postshowertheta.png Graphic file (type png)
 <use Chapter9/Figs/beam_bucket_postshowertheta.png>
 Package pdftex.def Info: Chapter9/Figs/beam_bucket_postshowertheta.png  used on input line 701.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [133 <./Chapter9/Figs/one_shower_theta_precut.png> <./Chapter9/Figs/two_shower_primary_theta_precut.png> <./Chapter9/Figs/beam_bucket_postshowertheta.png>]
-<Chapter9/Figs/pizero_mass_precut.png, id=2784, 505.89pt x 361.35pt>
+ [135 <./Chapter9/Figs/one_shower_theta_precut.png> <./Chapter9/Figs/two_shower_primary_theta_precut.png> <./Chapter9/Figs/beam_bucket_postshowertheta.png>]
+<Chapter9/Figs/pizero_mass_precut.png, id=2806, 505.89pt x 361.35pt>
 File: Chapter9/Figs/pizero_mass_precut.png Graphic file (type png)
 <use Chapter9/Figs/pizero_mass_precut.png>
 Package pdftex.def Info: Chapter9/Figs/pizero_mass_precut.png  used on input line 726.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [134 <./Chapter9/Figs/pizero_mass_precut.png>]
+ [136 <./Chapter9/Figs/pizero_mass_precut.png>]
 Overfull \hbox (6.34052pt too wide) in paragraph at lines 779--819
  [] 
  []
 
-<Chapter9/Figs/bb_lenient_full.png, id=2798, 505.89pt x 361.35pt>
+<Chapter9/Figs/bb_lenient_full.png, id=2820, 505.89pt x 361.35pt>
 File: Chapter9/Figs/bb_lenient_full.png Graphic file (type png)
 <use Chapter9/Figs/bb_lenient_full.png>
 Package pdftex.def Info: Chapter9/Figs/bb_lenient_full.png  used on input line 826.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/bb_stringent_full.png, id=2799, 505.89pt x 361.35pt>
+<Chapter9/Figs/bb_stringent_full.png, id=2821, 505.89pt x 361.35pt>
 File: Chapter9/Figs/bb_stringent_full.png Graphic file (type png)
 <use Chapter9/Figs/bb_stringent_full.png>
 Package pdftex.def Info: Chapter9/Figs/bb_stringent_full.png  used on input line 833.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/bb_lenient_edge.png, id=2800, 505.89pt x 361.35pt>
+<Chapter9/Figs/bb_lenient_edge.png, id=2822, 505.89pt x 361.35pt>
 File: Chapter9/Figs/bb_lenient_edge.png Graphic file (type png)
 <use Chapter9/Figs/bb_lenient_edge.png>
 Package pdftex.def Info: Chapter9/Figs/bb_lenient_edge.png  used on input line 840.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter9/Figs/bb_stringent_edge.png, id=2801, 505.89pt x 361.35pt>
+<Chapter9/Figs/bb_stringent_edge.png, id=2823, 505.89pt x 361.35pt>
 File: Chapter9/Figs/bb_stringent_edge.png Graphic file (type png)
 <use Chapter9/Figs/bb_stringent_edge.png>
 Package pdftex.def Info: Chapter9/Figs/bb_stringent_edge.png  used on input line 847.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-[135] [136]
-<Chapter9/Figs/peff_band.png, id=2813, 867.24pt x 433.62pt>
+[137] [138]
+<Chapter9/Figs/peff_band.png, id=2836, 867.24pt x 433.62pt>
 File: Chapter9/Figs/peff_band.png Graphic file (type png)
 <use Chapter9/Figs/peff_band.png>
 Package pdftex.def Info: Chapter9/Figs/peff_band.png  used on input line 866.
 (pdftex.def)             Requested size: 437.46112pt x 218.73486pt.
- [137 <./Chapter9/Figs/bb_lenient_full.png> <./Chapter9/Figs/bb_stringent_full.png> <./Chapter9/Figs/bb_lenient_edge.png> <./Chapter9/Figs/bb_stringent_edge.png>]
-<Chapter9/Figs/smearing_factors.png, id=2825, 1317.92375pt x 357.335pt>
+ [139 <./Chapter9/Figs/bb_lenient_full.png> <./Chapter9/Figs/bb_stringent_full.png> <./Chapter9/Figs/bb_lenient_edge.png> <./Chapter9/Figs/bb_stringent_edge.png>]
+<Chapter9/Figs/smearing_factors.png, id=2847, 1317.92375pt x 357.335pt>
 File: Chapter9/Figs/smearing_factors.png Graphic file (type png)
 <use Chapter9/Figs/smearing_factors.png>
 Package pdftex.def Info: Chapter9/Figs/smearing_factors.png  used on input line 890.
@@ -2631,51 +2641,51 @@ Package pdftex.def Info: Chapter9/Figs/smearing_factors.png  used on input line 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Chapter9/Figs/truth_reco_gaus.png, id=2826, 722.7pt x 361.35pt>
+<Chapter9/Figs/truth_reco_gaus.png, id=2848, 722.7pt x 361.35pt>
 File: Chapter9/Figs/truth_reco_gaus.png Graphic file (type png)
 <use Chapter9/Figs/truth_reco_gaus.png>
 Package pdftex.def Info: Chapter9/Figs/truth_reco_gaus.png  used on input line 897.
 (pdftex.def)             Requested size: 328.09584pt x 164.04509pt.
-[138 <./Chapter9/Figs/peff_band.png>] [139 <./Chapter9/Figs/smearing_factors.png> <./Chapter9/Figs/truth_reco_gaus.png>]
-<Chapter9/Figs/truth_smear_reco_gaus.png, id=2850, 1156.32pt x 361.35pt>
+[140 <./Chapter9/Figs/peff_band.png>] [141 <./Chapter9/Figs/smearing_factors.png> <./Chapter9/Figs/truth_reco_gaus.png>]
+<Chapter9/Figs/truth_smear_reco_gaus.png, id=2872, 1156.32pt x 361.35pt>
 File: Chapter9/Figs/truth_smear_reco_gaus.png Graphic file (type png)
 <use Chapter9/Figs/truth_smear_reco_gaus.png>
 Package pdftex.def Info: Chapter9/Figs/truth_smear_reco_gaus.png  used on input line 951.
 (pdftex.def)             Requested size: 437.46112pt x 136.7024pt.
- [140]
-<Chapter9/Figs/truth_smear_zoom.png, id=2858, 1370.2392pt x 503.36055pt>
+ [142]
+<Chapter9/Figs/truth_smear_zoom.png, id=2881, 1370.2392pt x 503.36055pt>
 File: Chapter9/Figs/truth_smear_zoom.png Graphic file (type png)
 <use Chapter9/Figs/truth_smear_zoom.png>
 Package pdftex.def Info: Chapter9/Figs/truth_smear_zoom.png  used on input line 970.
 (pdftex.def)             Requested size: 437.46112pt x 160.7023pt.
- [141 <./Chapter9/Figs/truth_smear_reco_gaus.png> <./Chapter9/Figs/truth_smear_zoom.png>]) [142]
+ [143 <./Chapter9/Figs/truth_smear_reco_gaus.png> <./Chapter9/Figs/truth_smear_zoom.png>]) [144]
 \openout2 = `Chapter10/chapter10.aux'.
 
  (./Chapter10/chapter10.tex
 Chapter 10.
-[143
+[145
 
 
 
-] [144
+] [146
 
-] [145] [146]
-<Chapter10/Figs/hnl_statistics_error.png, id=2919, 505.89pt x 361.35pt>
+] [147] [148]
+<Chapter10/Figs/hnl_statistics_error.png, id=2941, 505.89pt x 361.35pt>
 File: Chapter10/Figs/hnl_statistics_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_statistics_error.png>
 Package pdftex.def Info: Chapter10/Figs/hnl_statistics_error.png  used on input line 153.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/hnl_mistagging_error.png, id=2920, 505.89pt x 361.35pt>
+<Chapter10/Figs/hnl_mistagging_error.png, id=2942, 505.89pt x 361.35pt>
 File: Chapter10/Figs/hnl_mistagging_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_mistagging_error.png>
 Package pdftex.def Info: Chapter10/Figs/hnl_mistagging_error.png  used on input line 160.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/hnl_flux_error.png, id=2921, 505.89pt x 361.35pt>
+<Chapter10/Figs/hnl_flux_error.png, id=2943, 505.89pt x 361.35pt>
 File: Chapter10/Figs/hnl_flux_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_flux_error.png>
 Package pdftex.def Info: Chapter10/Figs/hnl_flux_error.png  used on input line 167.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/hnl_error.png, id=2922, 505.89pt x 505.89pt>
+<Chapter10/Figs/hnl_error.png, id=2944, 505.89pt x 505.89pt>
 File: Chapter10/Figs/hnl_error.png Graphic file (type png)
 <use Chapter10/Figs/hnl_error.png>
 Package pdftex.def Info: Chapter10/Figs/hnl_error.png  used on input line 179.
@@ -2684,23 +2694,23 @@ Package pdftex.def Info: Chapter10/Figs/hnl_error.png  used on input line 179.
 
 LaTeX Warning: Float too large for page by 21.48395pt on input line 184.
 
-[147] [148 <./Chapter10/Figs/hnl_statistics_error.png> <./Chapter10/Figs/hnl_mistagging_error.png> <./Chapter10/Figs/hnl_flux_error.png> <./Chapter10/Figs/hnl_error.png>] [149]
-<Chapter10/Figs/bkg_statistics_error.png, id=2956, 505.89pt x 361.35pt>
+[149] [150 <./Chapter10/Figs/hnl_statistics_error.png> <./Chapter10/Figs/hnl_mistagging_error.png> <./Chapter10/Figs/hnl_flux_error.png> <./Chapter10/Figs/hnl_error.png>] [151]
+<Chapter10/Figs/bkg_statistics_error.png, id=2978, 505.89pt x 361.35pt>
 File: Chapter10/Figs/bkg_statistics_error.png Graphic file (type png)
 <use Chapter10/Figs/bkg_statistics_error.png>
 Package pdftex.def Info: Chapter10/Figs/bkg_statistics_error.png  used on input line 235.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/bkg_flx_error.png, id=2957, 505.89pt x 361.35pt>
+<Chapter10/Figs/bkg_flx_error.png, id=2979, 505.89pt x 361.35pt>
 File: Chapter10/Figs/bkg_flx_error.png Graphic file (type png)
 <use Chapter10/Figs/bkg_flx_error.png>
 Package pdftex.def Info: Chapter10/Figs/bkg_flx_error.png  used on input line 242.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/bkg_xsec_error.png, id=2958, 505.89pt x 361.35pt>
+<Chapter10/Figs/bkg_xsec_error.png, id=2980, 505.89pt x 361.35pt>
 File: Chapter10/Figs/bkg_xsec_error.png Graphic file (type png)
 <use Chapter10/Figs/bkg_xsec_error.png>
 Package pdftex.def Info: Chapter10/Figs/bkg_xsec_error.png  used on input line 249.
 (pdftex.def)             Requested size: 196.85616pt x 140.61165pt.
-<Chapter10/Figs/bkg_error.png, id=2959, 505.89pt x 505.89pt>
+<Chapter10/Figs/bkg_error.png, id=2981, 505.89pt x 505.89pt>
 File: Chapter10/Figs/bkg_error.png Graphic file (type png)
 <use Chapter10/Figs/bkg_error.png>
 Package pdftex.def Info: Chapter10/Figs/bkg_error.png  used on input line 261.
@@ -2709,7 +2719,7 @@ Package pdftex.def Info: Chapter10/Figs/bkg_error.png  used on input line 261.
 
 LaTeX Warning: Float too large for page by 18.6385pt on input line 266.
 
-[150] [151 <./Chapter10/Figs/bkg_statistics_error.png> <./Chapter10/Figs/bkg_flx_error.png> <./Chapter10/Figs/bkg_xsec_error.png> <./Chapter10/Figs/bkg_error.png>] [152] [153] [154]
+[152] [153 <./Chapter10/Figs/bkg_statistics_error.png> <./Chapter10/Figs/bkg_flx_error.png> <./Chapter10/Figs/bkg_xsec_error.png> <./Chapter10/Figs/bkg_error.png>] [154] [155] [156]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 422.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -2735,13 +2745,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 422.
 
-[155]
-<Chapter10/Figs/asymtotic.png, id=3033, 433.62pt x 289.08pt>
+[157]
+<Chapter10/Figs/asymtotic.png, id=3055, 433.62pt x 289.08pt>
 File: Chapter10/Figs/asymtotic.png Graphic file (type png)
 <use Chapter10/Figs/asymtotic.png>
 Package pdftex.def Info: Chapter10/Figs/asymtotic.png  used on input line 488.
 (pdftex.def)             Requested size: 240.60495pt x 160.406pt.
- [156 <./Chapter10/Figs/asymtotic.png>]
+ [158 <./Chapter10/Figs/asymtotic.png>]
 Overfull \vbox (9.13782pt too high) detected at line 546
  []
 
@@ -2754,13 +2764,13 @@ Overfull \hbox (7.58916pt too wide) in paragraph at lines 556--556
 Overfull \vbox (11.98282pt too high) detected at line 556
  []
 
-[157]
-<Chapter10/Figs/relaxed_cut.png, id=3061, 505.89pt x 361.35pt>
+[159]
+<Chapter10/Figs/relaxed_cut.png, id=3083, 505.89pt x 361.35pt>
 File: Chapter10/Figs/relaxed_cut.png Graphic file (type png)
 <use Chapter10/Figs/relaxed_cut.png>
 Package pdftex.def Info: Chapter10/Figs/relaxed_cut.png  used on input line 583.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
-<Chapter10/Figs/relaxed_cut_edge.png, id=3062, 505.89pt x 361.35pt>
+<Chapter10/Figs/relaxed_cut_edge.png, id=3084, 505.89pt x 361.35pt>
 File: Chapter10/Figs/relaxed_cut_edge.png Graphic file (type png)
 <use Chapter10/Figs/relaxed_cut_edge.png>
 Package pdftex.def Info: Chapter10/Figs/relaxed_cut_edge.png  used on input line 584.
@@ -2770,12 +2780,12 @@ Overfull \hbox (1.884pt too wide) in paragraph at lines 583--585
 [][] [] 
  []
 
-<Chapter10/Figs/strict_cut.png, id=3063, 505.89pt x 361.35pt>
+<Chapter10/Figs/strict_cut.png, id=3085, 505.89pt x 361.35pt>
 File: Chapter10/Figs/strict_cut.png Graphic file (type png)
 <use Chapter10/Figs/strict_cut.png>
 Package pdftex.def Info: Chapter10/Figs/strict_cut.png  used on input line 590.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
-<Chapter10/Figs/strict_cut_edge.png, id=3064, 505.89pt x 361.35pt>
+<Chapter10/Figs/strict_cut_edge.png, id=3086, 505.89pt x 361.35pt>
 File: Chapter10/Figs/strict_cut_edge.png Graphic file (type png)
 <use Chapter10/Figs/strict_cut_edge.png>
 Package pdftex.def Info: Chapter10/Figs/strict_cut_edge.png  used on input line 591.
@@ -2785,12 +2795,12 @@ Overfull \hbox (1.884pt too wide) in paragraph at lines 590--592
 [][] [] 
  []
 
-<Chapter10/Figs/smeared_truth.png, id=3065, 505.89pt x 361.35pt>
+<Chapter10/Figs/smeared_truth.png, id=3087, 505.89pt x 361.35pt>
 File: Chapter10/Figs/smeared_truth.png Graphic file (type png)
 <use Chapter10/Figs/smeared_truth.png>
 Package pdftex.def Info: Chapter10/Figs/smeared_truth.png  used on input line 597.
 (pdftex.def)             Requested size: 218.73056pt x 156.23761pt.
-<Chapter10/Figs/smeared_truth_edge.png, id=3066, 505.89pt x 361.35pt>
+<Chapter10/Figs/smeared_truth_edge.png, id=3088, 505.89pt x 361.35pt>
 File: Chapter10/Figs/smeared_truth_edge.png Graphic file (type png)
 <use Chapter10/Figs/smeared_truth_edge.png>
 Package pdftex.def Info: Chapter10/Figs/smeared_truth_edge.png  used on input line 598.
@@ -2803,34 +2813,34 @@ Overfull \hbox (1.884pt too wide) in paragraph at lines 597--599
 
 LaTeX Warning: Float too large for page by 6.40675pt on input line 608.
 
-[158] [159 <./Chapter10/Figs/relaxed_cut.png> <./Chapter10/Figs/relaxed_cut_edge.png> <./Chapter10/Figs/strict_cut.png> <./Chapter10/Figs/strict_cut_edge.png> <./Chapter10/Figs/smeared_truth.png> <./Chapter10/Figs/smeared_truth_edge.png>]
-<Chapter10/Figs/sensitivity_loose.png, id=3084, 505.89pt x 361.35pt>
+[160] [161 <./Chapter10/Figs/relaxed_cut.png> <./Chapter10/Figs/relaxed_cut_edge.png> <./Chapter10/Figs/strict_cut.png> <./Chapter10/Figs/strict_cut_edge.png> <./Chapter10/Figs/smeared_truth.png> <./Chapter10/Figs/smeared_truth_edge.png>]
+<Chapter10/Figs/sensitivity_loose.png, id=3107, 505.89pt x 361.35pt>
 File: Chapter10/Figs/sensitivity_loose.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity_loose.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity_loose.png  used on input line 627.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter10/Figs/sensitivity_strict.png, id=3085, 505.89pt x 361.35pt>
+<Chapter10/Figs/sensitivity_strict.png, id=3108, 505.89pt x 361.35pt>
 File: Chapter10/Figs/sensitivity_strict.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity_strict.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity_strict.png  used on input line 631.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
- [160 <./Chapter10/Figs/sensitivity_loose.png> <./Chapter10/Figs/sensitivity_strict.png>]
-<Chapter10/Figs/sensitivity_loose_full_edge.png, id=3095, 505.89pt x 361.35pt>
+ [162 <./Chapter10/Figs/sensitivity_loose.png> <./Chapter10/Figs/sensitivity_strict.png>]
+<Chapter10/Figs/sensitivity_loose_full_edge.png, id=3118, 505.89pt x 361.35pt>
 File: Chapter10/Figs/sensitivity_loose_full_edge.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity_loose_full_edge.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity_loose_full_edge.png  used on input line 654.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter10/Figs/sensitivity_strict_full_edge.png, id=3096, 505.89pt x 361.35pt>
+<Chapter10/Figs/sensitivity_strict_full_edge.png, id=3119, 505.89pt x 361.35pt>
 File: Chapter10/Figs/sensitivity_strict_full_edge.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity_strict_full_edge.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_full_edge.png  used on input line 658.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Chapter10/Figs/sensitivity_strict_loose_truth.png, id=3100, 505.89pt x 361.35pt>
+<Chapter10/Figs/sensitivity_strict_loose_truth.png, id=3123, 505.89pt x 361.35pt>
 File: Chapter10/Figs/sensitivity_strict_loose_truth.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity_strict_loose_truth.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity_strict_loose_truth.png  used on input line 676.
 (pdftex.def)             Requested size: 284.34705pt x 203.11pt.
- [161 <./Chapter10/Figs/sensitivity_loose_full_edge.png> <./Chapter10/Figs/sensitivity_strict_full_edge.png>]
+ [163 <./Chapter10/Figs/sensitivity_loose_full_edge.png> <./Chapter10/Figs/sensitivity_strict_full_edge.png>]
 Overfull \vbox (16.85246pt too high) detected at line 694
  []
 
@@ -2847,212 +2857,212 @@ Overfull \hbox (12.43149pt too wide) in paragraph at lines 689--725
  [] 
  []
 
-[162 <./Chapter10/Figs/sensitivity_strict_loose_truth.png>] [163]
-<Chapter10/Figs/sensitivity.png, id=3126, 722.7pt x 433.62pt>
+[164 <./Chapter10/Figs/sensitivity_strict_loose_truth.png>] [165]
+<Chapter10/Figs/sensitivity.png, id=3148, 722.7pt x 433.62pt>
 File: Chapter10/Figs/sensitivity.png Graphic file (type png)
 <use Chapter10/Figs/sensitivity.png>
 Package pdftex.def Info: Chapter10/Figs/sensitivity.png  used on input line 746.
 (pdftex.def)             Requested size: 437.46112pt x 262.47655pt.
- [164 <./Chapter10/Figs/sensitivity.png>]) [165]
+ [166 <./Chapter10/Figs/sensitivity.png>]) [167]
 \openout2 = `Chapter11/chapter11.aux'.
 
- (./Chapter11/chapter11.tex [166
+ (./Chapter11/chapter11.tex [168
 
 
 
 ]
 Chapter 11.
-[167]) [168] [169
+[169]) [170] [171
 
 
 
-] [170] [171] [172] [173] [174] [175]
+] [172] [173] [174] [175] [176] [177] [178]
 \openout2 = `Appendix1/appendix1.aux'.
 
- (./Appendix1/appendix1.tex [176
+ (./Appendix1/appendix1.tex
+Appendix A.
+[179
 
 
 ]
-Appendix A.
-[177]
-<Appendix1/Figs/SBND_Trigger.png, id=3379, 1349.04pt x 777.90625pt>
+<Appendix1/Figs/SBND_Trigger.png, id=3406, 1349.04pt x 777.90625pt>
 File: Appendix1/Figs/SBND_Trigger.png Graphic file (type png)
 <use Appendix1/Figs/SBND_Trigger.png>
 Package pdftex.def Info: Appendix1/Figs/SBND_Trigger.png  used on input line 46.
 (pdftex.def)             Requested size: 437.46112pt x 252.24678pt.
-) [178 <./Appendix1/Figs/SBND_Trigger.png>]
+) [180 <./Appendix1/Figs/SBND_Trigger.png>]
 \openout2 = `Appendix2/appendix2.aux'.
 
  (./Appendix2/appendix2.tex
 Appendix B.
-[179
-
-
-
-]
-<Appendix2/Figs/Grafana.png, id=3397, 1250.6725pt x 464.73625pt>
-File: Appendix2/Figs/Grafana.png Graphic file (type png)
-<use Appendix2/Figs/Grafana.png>
-Package pdftex.def Info: Appendix2/Figs/Grafana.png  used on input line 39.
-(pdftex.def)             Requested size: 437.46112pt x 162.55374pt.
-<Appendix2/Figs/Minargon.png, id=3398, 1422.31375pt x 500.87125pt>
-File: Appendix2/Figs/Minargon.png Graphic file (type png)
-<use Appendix2/Figs/Minargon.png>
-Package pdftex.def Info: Appendix2/Figs/Minargon.png  used on input line 48.
-(pdftex.def)             Requested size: 437.46112pt x 154.05328pt.
-) [180 <./Appendix2/Figs/Grafana.png> <./Appendix2/Figs/Minargon.png>]
-\openout2 = `Appendix3/appendix3.aux'.
-
- (./Appendix3/appendix3.tex
-Appendix C.
-<Appendix3/Figs/clock_dist.png, id=3405, 1108.14pt x 410.53375pt>
-File: Appendix3/Figs/clock_dist.png Graphic file (type png)
-<use Appendix3/Figs/clock_dist.png>
-Package pdftex.def Info: Appendix3/Figs/clock_dist.png  used on input line 15.
-(pdftex.def)             Requested size: 437.46112pt x 162.06822pt.
 [181
 
 
 
+]
+<Appendix2/Figs/Grafana.png, id=3423, 1250.6725pt x 464.73625pt>
+File: Appendix2/Figs/Grafana.png Graphic file (type png)
+<use Appendix2/Figs/Grafana.png>
+Package pdftex.def Info: Appendix2/Figs/Grafana.png  used on input line 39.
+(pdftex.def)             Requested size: 437.46112pt x 162.55374pt.
+<Appendix2/Figs/Minargon.png, id=3424, 1422.31375pt x 500.87125pt>
+File: Appendix2/Figs/Minargon.png Graphic file (type png)
+<use Appendix2/Figs/Minargon.png>
+Package pdftex.def Info: Appendix2/Figs/Minargon.png  used on input line 48.
+(pdftex.def)             Requested size: 437.46112pt x 154.05328pt.
+) [182 <./Appendix2/Figs/Grafana.png> <./Appendix2/Figs/Minargon.png>]
+\openout2 = `Appendix3/appendix3.aux'.
+
+ (./Appendix3/appendix3.tex
+Appendix C.
+<Appendix3/Figs/clock_dist.png, id=3432, 1108.14pt x 410.53375pt>
+File: Appendix3/Figs/clock_dist.png Graphic file (type png)
+<use Appendix3/Figs/clock_dist.png>
+Package pdftex.def Info: Appendix3/Figs/clock_dist.png  used on input line 15.
+(pdftex.def)             Requested size: 437.46112pt x 162.06822pt.
+[183
+
+
+
  <./Appendix3/Figs/clock_dist.png>]
-<Appendix3/Figs/pps_dist.png, id=3416, 1109.14375pt x 322.20375pt>
+<Appendix3/Figs/pps_dist.png, id=3443, 1109.14375pt x 322.20375pt>
 File: Appendix3/Figs/pps_dist.png Graphic file (type png)
 <use Appendix3/Figs/pps_dist.png>
 Package pdftex.def Info: Appendix3/Figs/pps_dist.png  used on input line 40.
 (pdftex.def)             Requested size: 437.46112pt x 127.0798pt.
-) [182 <./Appendix3/Figs/pps_dist.png>]
+) [184 <./Appendix3/Figs/pps_dist.png>]
 \openout2 = `Appendix4/appendix4.aux'.
 
  (./Appendix4/appendix4.tex
 Appendix D.
-<Appendix4/Figs/m140.png, id=3424, 505.89pt x 361.35pt>
+<Appendix4/Figs/m140.png, id=3451, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m140.png Graphic file (type png)
 <use Appendix4/Figs/m140.png>
 Package pdftex.def Info: Appendix4/Figs/m140.png  used on input line 17.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m160.png, id=3425, 505.89pt x 361.35pt>
+<Appendix4/Figs/m160.png, id=3452, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m160.png Graphic file (type png)
 <use Appendix4/Figs/m160.png>
 Package pdftex.def Info: Appendix4/Figs/m160.png  used on input line 21.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m180.png, id=3426, 505.89pt x 361.35pt>
+<Appendix4/Figs/m180.png, id=3453, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m180.png Graphic file (type png)
 <use Appendix4/Figs/m180.png>
 Package pdftex.def Info: Appendix4/Figs/m180.png  used on input line 32.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m200.png, id=3427, 505.89pt x 361.35pt>
+<Appendix4/Figs/m200.png, id=3454, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m200.png Graphic file (type png)
 <use Appendix4/Figs/m200.png>
 Package pdftex.def Info: Appendix4/Figs/m200.png  used on input line 36.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m220.png, id=3428, 505.89pt x 361.35pt>
+<Appendix4/Figs/m220.png, id=3455, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m220.png Graphic file (type png)
 <use Appendix4/Figs/m220.png>
 Package pdftex.def Info: Appendix4/Figs/m220.png  used on input line 40.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m240.png, id=3429, 505.89pt x 361.35pt>
+<Appendix4/Figs/m240.png, id=3456, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m240.png Graphic file (type png)
 <use Appendix4/Figs/m240.png>
 Package pdftex.def Info: Appendix4/Figs/m240.png  used on input line 44.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix4/Figs/m260.png, id=3430, 505.89pt x 361.35pt>
+<Appendix4/Figs/m260.png, id=3457, 505.89pt x 361.35pt>
 File: Appendix4/Figs/m260.png Graphic file (type png)
 <use Appendix4/Figs/m260.png>
 Package pdftex.def Info: Appendix4/Figs/m260.png  used on input line 49.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-) [183
-
-
-
- <./Appendix4/Figs/m140.png> <./Appendix4/Figs/m160.png>] [184 <./Appendix4/Figs/m180.png> <./Appendix4/Figs/m200.png> <./Appendix4/Figs/m220.png> <./Appendix4/Figs/m240.png> <./Appendix4/Figs/m260.png>]
-\openout2 = `Appendix5/appendix5.aux'.
-
- (./Appendix5/appendix5.tex
-Appendix E.
-<Appendix5/Figs/m140.png, id=3449, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m140.png Graphic file (type png)
-<use Appendix5/Figs/m140.png>
-Package pdftex.def Info: Appendix5/Figs/m140.png  used on input line 17.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m160.png, id=3450, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m160.png Graphic file (type png)
-<use Appendix5/Figs/m160.png>
-Package pdftex.def Info: Appendix5/Figs/m160.png  used on input line 21.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m180.png, id=3451, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m180.png Graphic file (type png)
-<use Appendix5/Figs/m180.png>
-Package pdftex.def Info: Appendix5/Figs/m180.png  used on input line 32.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m200.png, id=3452, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m200.png Graphic file (type png)
-<use Appendix5/Figs/m200.png>
-Package pdftex.def Info: Appendix5/Figs/m200.png  used on input line 36.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m220.png, id=3453, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m220.png Graphic file (type png)
-<use Appendix5/Figs/m220.png>
-Package pdftex.def Info: Appendix5/Figs/m220.png  used on input line 40.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m240.png, id=3454, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m240.png Graphic file (type png)
-<use Appendix5/Figs/m240.png>
-Package pdftex.def Info: Appendix5/Figs/m240.png  used on input line 44.
-(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix5/Figs/m260.png, id=3455, 505.89pt x 361.35pt>
-File: Appendix5/Figs/m260.png Graphic file (type png)
-<use Appendix5/Figs/m260.png>
-Package pdftex.def Info: Appendix5/Figs/m260.png  used on input line 49.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
 ) [185
 
 
 
- <./Appendix5/Figs/m140.png> <./Appendix5/Figs/m160.png>] [186 <./Appendix5/Figs/m180.png> <./Appendix5/Figs/m200.png> <./Appendix5/Figs/m220.png> <./Appendix5/Figs/m240.png> <./Appendix5/Figs/m260.png>]
-\openout2 = `Appendix6/appendix6.aux'.
+ <./Appendix4/Figs/m140.png> <./Appendix4/Figs/m160.png>] [186 <./Appendix4/Figs/m180.png> <./Appendix4/Figs/m200.png> <./Appendix4/Figs/m220.png> <./Appendix4/Figs/m240.png> <./Appendix4/Figs/m260.png>]
+\openout2 = `Appendix5/appendix5.aux'.
 
- (./Appendix6/appendix6.tex
-Appendix F.
-<Appendix6/Figs/m140.png, id=3474, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m140.png Graphic file (type png)
-<use Appendix6/Figs/m140.png>
-Package pdftex.def Info: Appendix6/Figs/m140.png  used on input line 17.
+ (./Appendix5/appendix5.tex
+Appendix E.
+<Appendix5/Figs/m140.png, id=3476, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m140.png Graphic file (type png)
+<use Appendix5/Figs/m140.png>
+Package pdftex.def Info: Appendix5/Figs/m140.png  used on input line 17.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m160.png, id=3475, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m160.png Graphic file (type png)
-<use Appendix6/Figs/m160.png>
-Package pdftex.def Info: Appendix6/Figs/m160.png  used on input line 21.
+<Appendix5/Figs/m160.png, id=3477, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m160.png Graphic file (type png)
+<use Appendix5/Figs/m160.png>
+Package pdftex.def Info: Appendix5/Figs/m160.png  used on input line 21.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m180.png, id=3476, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m180.png Graphic file (type png)
-<use Appendix6/Figs/m180.png>
-Package pdftex.def Info: Appendix6/Figs/m180.png  used on input line 32.
+<Appendix5/Figs/m180.png, id=3478, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m180.png Graphic file (type png)
+<use Appendix5/Figs/m180.png>
+Package pdftex.def Info: Appendix5/Figs/m180.png  used on input line 32.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m200.png, id=3477, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m200.png Graphic file (type png)
-<use Appendix6/Figs/m200.png>
-Package pdftex.def Info: Appendix6/Figs/m200.png  used on input line 36.
+<Appendix5/Figs/m200.png, id=3479, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m200.png Graphic file (type png)
+<use Appendix5/Figs/m200.png>
+Package pdftex.def Info: Appendix5/Figs/m200.png  used on input line 36.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m220.png, id=3478, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m220.png Graphic file (type png)
-<use Appendix6/Figs/m220.png>
-Package pdftex.def Info: Appendix6/Figs/m220.png  used on input line 40.
+<Appendix5/Figs/m220.png, id=3480, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m220.png Graphic file (type png)
+<use Appendix5/Figs/m220.png>
+Package pdftex.def Info: Appendix5/Figs/m220.png  used on input line 40.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m240.png, id=3479, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m240.png Graphic file (type png)
-<use Appendix6/Figs/m240.png>
-Package pdftex.def Info: Appendix6/Figs/m240.png  used on input line 44.
+<Appendix5/Figs/m240.png, id=3481, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m240.png Graphic file (type png)
+<use Appendix5/Figs/m240.png>
+Package pdftex.def Info: Appendix5/Figs/m240.png  used on input line 44.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
-<Appendix6/Figs/m260.png, id=3480, 505.89pt x 361.35pt>
-File: Appendix6/Figs/m260.png Graphic file (type png)
-<use Appendix6/Figs/m260.png>
-Package pdftex.def Info: Appendix6/Figs/m260.png  used on input line 49.
+<Appendix5/Figs/m260.png, id=3482, 505.89pt x 361.35pt>
+File: Appendix5/Figs/m260.png Graphic file (type png)
+<use Appendix5/Figs/m260.png>
+Package pdftex.def Info: Appendix5/Figs/m260.png  used on input line 49.
 (pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
 ) [187
 
 
 
- <./Appendix6/Figs/m140.png> <./Appendix6/Figs/m160.png>] [188 <./Appendix6/Figs/m180.png> <./Appendix6/Figs/m200.png> <./Appendix6/Figs/m220.png> <./Appendix6/Figs/m240.png> <./Appendix6/Figs/m260.png>]
+ <./Appendix5/Figs/m140.png> <./Appendix5/Figs/m160.png>] [188 <./Appendix5/Figs/m180.png> <./Appendix5/Figs/m200.png> <./Appendix5/Figs/m220.png> <./Appendix5/Figs/m240.png> <./Appendix5/Figs/m260.png>]
+\openout2 = `Appendix6/appendix6.aux'.
+
+ (./Appendix6/appendix6.tex
+Appendix F.
+<Appendix6/Figs/m140.png, id=3500, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m140.png Graphic file (type png)
+<use Appendix6/Figs/m140.png>
+Package pdftex.def Info: Appendix6/Figs/m140.png  used on input line 17.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m160.png, id=3501, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m160.png Graphic file (type png)
+<use Appendix6/Figs/m160.png>
+Package pdftex.def Info: Appendix6/Figs/m160.png  used on input line 21.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m180.png, id=3502, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m180.png Graphic file (type png)
+<use Appendix6/Figs/m180.png>
+Package pdftex.def Info: Appendix6/Figs/m180.png  used on input line 32.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m200.png, id=3503, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m200.png Graphic file (type png)
+<use Appendix6/Figs/m200.png>
+Package pdftex.def Info: Appendix6/Figs/m200.png  used on input line 36.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m220.png, id=3504, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m220.png Graphic file (type png)
+<use Appendix6/Figs/m220.png>
+Package pdftex.def Info: Appendix6/Figs/m220.png  used on input line 40.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m240.png, id=3505, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m240.png Graphic file (type png)
+<use Appendix6/Figs/m240.png>
+Package pdftex.def Info: Appendix6/Figs/m240.png  used on input line 44.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+<Appendix6/Figs/m260.png, id=3506, 505.89pt x 361.35pt>
+File: Appendix6/Figs/m260.png Graphic file (type png)
+<use Appendix6/Figs/m260.png>
+Package pdftex.def Info: Appendix6/Figs/m260.png  used on input line 49.
+(pdftex.def)             Requested size: 216.5411pt x 154.6717pt.
+) [189
+
+
+
+ <./Appendix6/Figs/m140.png> <./Appendix6/Figs/m160.png>] [190 <./Appendix6/Figs/m180.png> <./Appendix6/Figs/m200.png> <./Appendix6/Figs/m220.png> <./Appendix6/Figs/m240.png> <./Appendix6/Figs/m260.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./thesis.aux (./Abstract/abstract.aux) (./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux) (./Nomenclature/nomenclature.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux) (./Chapter9/chapter9.aux) (./Chapter10/chapter10.aux) (./Chapter11/chapter11.aux) (./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux) (./Appendix3/appendix3.aux) (./Appendix4/appendix4.aux) (./Appendix5/appendix5.aux) (./Appendix6/appendix6.aux))
@@ -3065,18 +3075,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29856 strings out of 483065
- 545047 string characters out of 5963550
- 1778043 words of memory out of 5000000
- 43194 multiletter control sequences out of 15000+600000
- 681550 words of font info for 426 fonts, out of 8000000 for 9000
+ 29881 strings out of 483065
+ 545573 string characters out of 5963550
+ 1781641 words of memory out of 5000000
+ 43210 multiletter control sequences out of 15000+600000
+ 702420 words of font info for 433 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,15n,109p,1249b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,109p,1249b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (214 pages, 24765236 bytes).
+Output written on thesis.pdf (216 pages, 24784756 bytes).
 PDF statistics:
- 3681 PDF objects out of 4296 (max. 8388607)
- 2969 compressed objects within 30 object streams
- 649 named destinations out of 1000 (max. 500000)
- 60408 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 3707 PDF objects out of 4296 (max. 8388607)
+ 2992 compressed objects within 30 object streams
+ 654 named destinations out of 1000 (max. 500000)
+ 64504 words of extra memory for PDF output out of 74296 (max. 10000000)
 

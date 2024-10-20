@@ -2872,6 +2872,93 @@
       \verb https://dx.doi.org/10.1088/1361-6471/ac98f9
       \endverb
     \endentry
+    \entry{nuMSM1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=16316353f8ea3393e775098b032730db}{%
+           family={Asaka},
+           familyi={A\bibinitperiod},
+           given={Takehiko},
+           giveni={T\bibinitperiod}}}%
+        {{hash=543ebbc17d1d862bd919e730ae5fef7d}{%
+           family={Blanchet},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ef97acce6bf6c9917f17cc1a9192f794}{%
+           family={Shaposhnikov},
+           familyi={S\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{fullhash}{3ea8eb13328bb9a14c741f9270eb6d9b}
+      \strng{bibnamehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{authorbibnamehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{authornamehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{authorfullhash}{3ea8eb13328bb9a14c741f9270eb6d9b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{number}{4}
+      \field{title}{{The $\mathit{\nu}$MSM, dark matter and neutrino masses}}
+      \field{volume}{631}
+      \field{year}{2005}
+      \field{pages}{151\bibrangedash 156}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physletb.2005.09.070
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269305013675
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269305013675
+      \endverb
+    \endentry
+    \entry{nuMSM2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=16316353f8ea3393e775098b032730db}{%
+           family={Asaka},
+           familyi={A\bibinitperiod},
+           given={Takehiko},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ef97acce6bf6c9917f17cc1a9192f794}{%
+           family={Shaposhnikov},
+           familyi={S\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3aaa095c24576db5954976ad22139cca}
+      \strng{fullhash}{3aaa095c24576db5954976ad22139cca}
+      \strng{bibnamehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{authorbibnamehash}{d776d453a29408b0b1459a98f44259e7}
+      \strng{authornamehash}{3aaa095c24576db5954976ad22139cca}
+      \strng{authorfullhash}{3aaa095c24576db5954976ad22139cca}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{number}{1}
+      \field{title}{{The $\mathit{\nu}$MSM, dark matter and baryon asymmetry of the universe}}
+      \field{volume}{620}
+      \field{year}{2005}
+      \field{pages}{17\bibrangedash 26}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physletb.2005.06.020
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269305008087
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269305008087
+      \endverb
+    \endentry
     \entry{HNLKelly}{article}{}
       \name{author}{6}{}{%
         {{hash=8e82c0488b427c7f938821c5efafc7c1}{%
@@ -3716,8 +3803,8 @@
       \strng{authornamehash}{5a72049d6b9bb7d94861c03877b52542}
       \strng{authorfullhash}{b21c1f8c4f0de89e580a2df3133622ab}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A search to observe neutrino decays has been performed. Its results are used to set limits on the couplings of a hypothetical massive neutrino with the ordinary ve and vμ. An improvement of about two orders of magnitude is obtained over previous limits in a wide range of neutrino masses.}
@@ -3814,8 +3901,8 @@
       \strng{authornamehash}{5a72049d6b9bb7d94861c03877b52542}
       \strng{authorfullhash}{b21c1f8c4f0de89e580a2df3133622ab}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Limits on leptonic mixing matrix elements are inferred from the results of a dedicated neutrino-decay search; an improvement of more than two orders of magnitude is achieved over previous results for a wide range of the neutrino mass.}
@@ -4072,6 +4159,43 @@
       \verb 2310.07660
       \endverb
     \endentry
+    \entry{DUNEND}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f28499faac47f0a7f026506b171bdc33}{%
+           family={Hewes},
+           familyi={H\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{10d93af6f82dd0d68862ac5886f2f662}
+      \strng{fullhash}{10d93af6f82dd0d68862ac5886f2f662}
+      \strng{bibnamehash}{10d93af6f82dd0d68862ac5886f2f662}
+      \strng{authorbibnamehash}{10d93af6f82dd0d68862ac5886f2f662}
+      \strng{authornamehash}{10d93af6f82dd0d68862ac5886f2f662}
+      \strng{authorfullhash}{10d93af6f82dd0d68862ac5886f2f662}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{DUNE}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Instruments}
+      \field{number}{4}
+      \field{title}{{Deep Underground Neutrino Experiment (DUNE) Near Detector Conceptual Design Report}}
+      \field{volume}{5}
+      \field{year}{2021}
+      \field{pages}{31}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/instruments5040031
+      \endverb
+      \verb{eprint}
+      \verb 2103.13910
+      \endverb
+    \endentry
     \entry{Rubbia}{report}{}
       \name{author}{1}{}{%
         {{hash=ef72813d65a25e2225225cb44781da92}{%
@@ -4117,8 +4241,8 @@
       \strng{authorbibnamehash}{f80dd3bc93c45bfeda99316805517171}
       \strng{authornamehash}{6b4250892b98fb1e9681a741e247df3f}
       \strng{authorfullhash}{6b4250892b98fb1e9681a741e247df3f}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Today}
@@ -4145,8 +4269,8 @@
       \strng{authorbibnamehash}{f9d5904b63def203b0e3e47a051799f9}
       \strng{authornamehash}{f9d5904b63def203b0e3e47a051799f9}
       \strng{authorfullhash}{f9d5904b63def203b0e3e47a051799f9}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-9002}
@@ -4186,8 +4310,8 @@
       \strng{authorbibnamehash}{9897b8754ff01a1cc84e855c0d68a114}
       \strng{authornamehash}{0d8820d09eafdb10e10ce0692b88939e}
       \strng{authorfullhash}{0d8820d09eafdb10e10ce0692b88939e}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nucl. Instrum. Meth.}
@@ -5411,8 +5535,8 @@
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{707cfc6a72cbb341f3db31a8e7196ad3}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes the design and construction of the MicroBooNE liquid argon time projection chamber and associated systems. MicroBooNE is the first phase of the Short Baseline Neutrino program, located at Fermilab, and will utilize the capabilities of liquid argon detectors to examine a rich assortment of physics topics. In this document details of design specifications, assembly procedures, and acceptance tests are reported.}
@@ -5583,8 +5707,8 @@
       \strng{authorbibnamehash}{30b2ce4fd64b5a56875ea34701e9bb51}
       \strng{authornamehash}{1d4518b6db3d6478f22d2de32df00340}
       \strng{authorfullhash}{1d4518b6db3d6478f22d2de32df00340}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Eur. Phys. J. C}
@@ -5802,8 +5926,8 @@
       \strng{authorbibnamehash}{8aafb116946b674df93765b572056402}
       \strng{authornamehash}{8aafb116946b674df93765b572056402}
       \strng{authorfullhash}{3a55cd2877f02783f440c775783ea7b5}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{JINST}
@@ -7168,8 +7292,8 @@
       \strng{authorbibnamehash}{126b17d6a05d37bbab355410f599f3d4}
       \strng{authornamehash}{126b17d6a05d37bbab355410f599f3d4}
       \strng{authorfullhash}{0669482380eea78c56493d9b45ca52c8}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{LArIAT}
@@ -7233,8 +7357,8 @@
       \strng{authorbibnamehash}{da4cc1c272b64fe4e857c244f964e794}
       \strng{authornamehash}{da4cc1c272b64fe4e857c244f964e794}
       \strng{authorfullhash}{c41d5ac721219e21fa7c2c22d0274de8}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{9}
@@ -7572,8 +7696,8 @@
       \strng{authorbibnamehash}{c1d3e20cfc17a61943263883d50afa70}
       \strng{authornamehash}{c1d3e20cfc17a61943263883d50afa70}
       \strng{authorfullhash}{0818da2208cf51d1bdc9d8708863134d}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{8}
@@ -17881,8 +18005,8 @@
       \strng{authorbibnamehash}{89657b0aa095a02ff1f1b2c21bbd8be5}
       \strng{authornamehash}{89657b0aa095a02ff1f1b2c21bbd8be5}
       \strng{authorfullhash}{69fb4c24e66ccbf6016d4b6fb6827cbb}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{GENIE}
@@ -17905,8 +18029,8 @@
       \endverb
     \endentry
     \entry{genie_tune_github}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{note}{Visited 06/05/2024}
       \field{title}{{Liquid Argon Experiment tune}}
@@ -20248,8 +20372,8 @@
       \strng{authorbibnamehash}{3e514de2fdce437a46fa9ec01b8dcfe4}
       \strng{authornamehash}{562a6142a4aa3d0ec0ae74d1adb714be}
       \strng{authorfullhash}{562a6142a4aa3d0ec0ae74d1adb714be}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Comput. Phys. Commun.}
