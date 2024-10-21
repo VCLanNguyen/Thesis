@@ -64,13 +64,18 @@ Diagram illustrating the operating principles of a LArTPC \cite{RhiannonPhD}.
 
 \newpage
 %add why argon as target material
-Liquid argon makes an excellent medium for TPCs in neutrino experiments.
+Liquid argon makes an excellent medium for TPCs. %in neutrino experiments.
 Given that liquid argon has a reasonably high density of 1.39 g$\cdot$cm$^{-3}$ and an atomic mass of 40, it enables a high rate of neutrino interactions since the probability of neutrino interactions increases with the number of nucleons in the detector volume.
 Since argon is a noble element, most of the energy deposited by particles traversing through the medium is used for ionising and exciting atoms, producing ionisation electrons and scintillation photons in the processes.
-This maximises the efficiency of energy transfer into detectable signals as well as enables a low energy threshold for detection $\mathcal{O}$(10) MeV.
-In addition to argon being an abundant and cheap material for scaling the detector target mass, recent technology advancements in purifying liquid argon have resulted in a stable and pure liquid argon condition for LArTPC operations.
+This maximises the efficiency of energy transfer into detectable signals.
+In addition to argon being an abundant and cheap material for scaling the detector target mass, recent technology advancements in purification have resulted in a stable and pure liquid argon condition for LArTPC operations.
 This ensures that electrons and photons can traverse the drift distance towards detection without being captured by contaminants \cite{ubooneEtime}.
-Consequently, liquid argon continues to stand out as an advantageous target material for neutrino experiments. 
+
+Having ionisation electrons as detectable signals enables a wide range of energy thresholds for physics applications \cite{LEB_LARTPC}.
+For energy ranging from > 100 MeV to GeV, LArTPC makes an excellent fine-grained detector for studying neutrino interactions.
+In the tens of MeV, LArTPC is able to detect electrons resulting from absorption interactions of supernova $\nu_e$ on argon nuclei.
+In the sub-MeV threshold, LArTPC can identify keV-signatures from solar neutrinos or radiogenic $^{39}$Ar beta decay with further advancements in energy reconstruction.
+Consequently, LArTPCs stand out as an advantageous technology for neutrino experiments.
 
 %Additionally, liquid argon has a very high electron mobility, allowing for ionisation electrons to quickly drift under an electric field.
 
@@ -237,15 +242,6 @@ The modified Box model, as shown by the dotted red line, also contains experimen
 %ArgoNeuT experiment recently conducted a data-driven study on recombination in LArTPC, resulting in the ``Modified Box Model" with parameter $\alpha = 0.93$ and $\beta = 0.30 $ MeV/cm \cite{argoneut_recomb}.
 %If not taken into account, the recombination can result in underestimating energy loss due to ionisation.
 
-\begin{figure}[b!] 
-\centering    
-\includegraphics[width=0.70\textwidth]{QLAnti}
-\caption[Charge and Light Yield as a Function of Electric Field]{
-Anti-correlation of charge yield $Q$ and light yield $L$ as a function of the electric field strength \cite{QLAnti}.
-}
-\label{fig:QLAnti}
-\end{figure}
-
 The dependence of recombination on the electric field leads to an anti-correlation between the charge and light yield $Q$ and $L$ respectively, such that \cite{Lariat}:
 \begin{gather}
         \label{eq:Q}
@@ -254,6 +250,9 @@ The dependence of recombination on the electric field leads to an anti-correlati
         L = N_{ex} + N_{i}(1 - R),
 \end{gather}
 where $N_{i}$ is the number of electron-ion pairs and $N_{ex}$ is the number of argon excitons.
+The charge yield $Q$ results from the number of electrons $N_i$ surviving recombination.
+The light yield $L$ depends on the number of excitons $N_{ex}$ and the number of electrons that recombine $N_{i}(1 - R)$ to produce scintillation photons, assuming 100\% light efficiency. 
+
 Fig. \ref{fig:QLAnti} illustrates the anti-correlation as a function of the electric field strength for various noble elements, of which argon is shown as dashed lines.
 A stronger electric field results in a higher number of ionisation electrons being separated from argon ions and drifting towards the anode for detection before recombination can occur, thus increasing the charge yield. 
 Conversely, scintillation photons are produced from the recombination process.
@@ -261,6 +260,15 @@ In the presence of an electric field, recombination decreases, leading to a redu
 Furthermore, recombination can be influenced at a local scale due to ionisation density resulting from interacting particles.
 SBND is expected to operate with an electric field of 500 V/cm, a region where yields of ionisation electrons and scintillation electrons are approximately equal as can be seen in Fig. \ref{fig:QLAnti}.
 The impact of recombination on the observed physics is further discussed in Section \ref{sec7:delta}.
+
+\begin{figure}[ht!] 
+\centering    
+\includegraphics[width=0.70\textwidth]{QLAnti}
+\caption[Charge and Light Yield as a Function of Electric Field]{
+Anti-correlation of charge yield $Q$ and light yield $L$ as a function of the electric field strength \cite{QLAnti}.
+}
+\label{fig:QLAnti}
+\end{figure}
 
 \section{Particle Propagation in Liquid Argon}
 \label{sec3:propagation}
@@ -305,12 +313,12 @@ At the conditions expected for the SBND detector, the diffusion coefficients hav
 In addition to diffusion, drifting electrons undergo attenuation.  
 In this process, electrons are captured by electronegative impurities present in the liquid argon, most commonly oxygen and water \cite{protodune}.
 This results in a reduction of electrons arriving at the wires, proportional to the drift distance. 
-The number of charges collected on a wire $Q_{wire}$ is typically modelled as an exponential suppression:
+The number of charges collected on a wire $Q_{\mathrm{Wire}}$ is typically modelled as an exponential suppression:
 \begin{equation}
-	Q_{Wire} (t) = Q_{Dep} \cdot \exp\left(\frac{-t}{\tau}\right),
+	Q_{\mathrm{Wire}} (t) = Q_{\mathrm{Dep}} \cdot \exp\left(\frac{-t}{\tau}\right),
 \label{eq:etime}
 \end{equation}
-where $Q_{Dep}$ is the original number of deposited charges, $t$ (ms) is the drift time and $\tau$ (ms) is the electron lifetime characterising the level of charge attenuation.
+where $Q_{\mathrm{Dep}}$ is the original number of deposited charges, $t$ (ms) is the drift time and $\tau$ (ms) is the electron lifetime characterising the level of charge attenuation.
 
 A high electron lifetime, resulting from a low level of contamination, is a critical operational factor for achieving high efficiency in energy reconstruction.
 Recently reported from ProtoDUNE, which utilised the same membrane cryostat technology as SBND, the experiment measured a lifetime of $\sim$10 ms, equivalent to an oxygen purity of 3.4 ppt \cite{protodune}.
@@ -330,8 +338,11 @@ The resulting accumulation of slow-moving argon ions distorts the uniformity of 
 
 Fig. \ref{fig:SCE} illustrates the deformation of tracks drifting in the distorted electric field due to SCE.
 Track trajectories are impacted two-fold: (1) bending away towards the detector edges as shown by the middle plot and (2) bowing towards the cathode as shown by the right plot \cite{SCE}.
-Moreover, distortions of the electric field also affect recombination previously discussed in Section \ref{sec:recomb}, since the recombination factor is dependent on the electric field strength.
+Track deformations smear both spatial and temporal resolutions.
+For instance, temporal smearing can introduce uncertainties $\mathcal{O}$(1 cm) in reconstructing the $x$-position of a track.
+Moreover, distortions of the electric field also affect recombination previously discussed in Section \ref{sec:recomb}, since the recombination factor depends on the electric field strength.
 Local fluctuations of recombination can subsequently impact the local charge yield resulting from an energy deposition.
+Careful calibration at SBND will be required to better understand the magnitude of SCE.
 
 \begin{figure}[htbp] 
 \centering    
@@ -401,7 +412,7 @@ The vertical dashed blue and red lines at 128 and 430 nm respectively are the wa
 Here, it can seen that the group velocity of VUV photons is slower than that of visible photons.
 Moreover, the Rayleigh scattering length of VUV photons is two orders of magnitude smaller compared to visible photons.
 This results in VUV photons being more susceptible to Rayleigh scattering and having a higher probability of absorption \cite{PatrickPhD}.
-The difference in the propagation between VUV and visible photons provides extra handles for light reconstruction, of which the improvement is discussed in Section \ref{sec:reco_pds}.
+Differences between the propagation of VUV and visible photons provides extra handles for timing recontruction using the light information, which is further discussed in Section \ref{sec:reco_pds}.
 
 \section{Detection of Electrons and Photons}
 
@@ -414,10 +425,11 @@ Following that, Section \ref{sec:pmtarapuca} provides a description of two diffe
 \subsection{Wire Planes}
 \label{sec:wire}
 
-Upon arrival at the anode, ionisation electrons induce signals on the wire planes, which are made up of three planes separated by a few mm as previously depicted in Fig. \ref{fig:LARTPC}.
-A bias voltage is applied to each wire plane to create a drift field across the three planes.
-This allows for electron transparency for the two innermost planes, referred to as induction planes, where drifting electrons induce bipolar signals on the wires.
-The electrons are finally collected on the outermost plane producing a unipolar signal, of which the plane is referred to as the collection plane.
+Upon arrival at the anode, ionisation electrons produce signals on the wire planes, which are made up of three planes separated by a few mm as previously depicted in Fig. \ref{fig:LARTPC}.
+A bias voltage is applied to each plane to create a drift field across the three planes.
+This ensures wire transparency so that all ionisation electrons can reach the third plane without being collected by the two innermost planes.
+As electrons drift towards and pass the two innermost planes, they induce bipolar signals, of which the planes are referred to as induction planes.
+Finally, electrons are collected on the outermost plane producing a unipolar signal, of which the plane is referred to as the collection plane.
 Fig. \ref{fig:wire_current} shows an example of induced currents on a wire as a function of time.
 Here, it can be seen a bipolar signal on an induction plane in red and a unipolar signal on a collection plane in blue.
 
@@ -438,9 +450,12 @@ Current signals on the induction and collection wire plane induced by a point-li
 %The signals induced or collected on the wire planes are then shaped, amplified, and digitised by cold electronics submerged in liquid argon to minimise noise.
 %The data is then acquired by electronics locating outside of the cryostat. 
 
-The signals induced or collected on the wire planes are then shaped, amplified, and digitised before acquisition.
-The measured signals are deconvolved for noise removal and the amount of charge collected is correlated with the energy deposited in the detector.
-Finally, the reconstruction of spatial and energy information is performed, which allows for high level analysis like particle identification.
+The signals induced or collected on the wire planes are shaped, amplified, and digitised before acquisition.
+Signal processing is then applied to the measured charge per wire, including noise removal, field and electronic response deconvolution and baseline removal.
+The amount of charge collected is correlated with the energy deposited in the detector.
+This step is crucial as the energy reconstruction requires charge depositions on at least two or more wires to deduce the wire pitch, thus requiring careful consideration of the angle of
+ the charge deposition to the wire.
+Finally, the 3D spatial reconstruction is performed, which allows for high level analysis like particle identification.
 The reconstruction of charge signals at SBND is further discussed in Section \ref{sec:reco_tpc}.
 
 \subsection{Photomultiplier Tubes and X-ARAPUCAs}
@@ -477,11 +492,12 @@ The re-emitted light direction is isotropic, causing coated optical detectors to
 PMTs are coated specifically with TPB, which also impacts the detection time as the emission of visible photons is not instantaneous.
 Multiple time components of re-emitted photons from TPB have been observed, with the majority of photons re-emitted within nanoseconds and a subset re-emitted as long as a few microseconds \cite{tpb_time}.
 
-Photon signals measured by PMTs are digitised and readout with a very high sampling frequency of 500 MHz \cite{sbnd_det}.
-This gives the light signal a better timing resolution compared to the charge signal.
-Since it provides the most precise timing information available in the detector, it is crucially important across different areas of SBND.
+Photon signals measured by PMTs are digitised and readout with a very high sampling frequency of 500 MHz \cite{sbnd_det}, 
+where the timing resolution attributed to the electronics is $\mathcal{O}(0.6~\mathrm{ns})$.
+%This gives the light signal a better timing resolution compared to the charge signal.
+Since PMT signals provide the most precise timing information available in the detector, they are crucially important across different areas of SBND.
 PMT signals are utilised for triggering to determine in real-time if a neutrino interaction occurs, to be discussed in Section \ref{sec:sbnd_trigger}.
-The signals also enable the timing resolution of the light reconstruction to reach $\mathcal{O}$(2) ns, to be covered in Chapter \ref{sec:reco_pds}.
+The signals also enable the timing resolution of the light reconstruction using PMT signals to reach $\mathcal{O}$(2 ns), to be covered in Chapter \ref{sec:reco_pds}.
 The timing performance of the data acquisition to enable a stable and high frequency sampling of PMT signals is assessed in Chapter \ref{ChapterDAQ}.
 All of these pave the way for the search for HNLs which is the focus in this thesis, exploiting the timing difference between HNL signals and SM neutrino backgrounds with more details covered in Chapters \ref{ChapterSelect} and \ref{ChapterResult}.
 

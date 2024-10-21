@@ -16,9 +16,9 @@
 \contentsline {section}{\numberline {2.5}Concluding Remarks}{17}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Physics of Liquid Argon Time Projection Chambers}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of Liquid Argon Time Projection Chambers}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Particle Interactions in Liquid Argon}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Particle Interactions in Liquid Argon}{22}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Production of Ionisation Electrons}{22}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Production of Scintillation Photons}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Production of Scintillation Photons}{24}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Recombination}{26}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Particle Propagation in Liquid Argon}{28}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Ionisation Electron Drift}{28}{subsection.3.3.1}%

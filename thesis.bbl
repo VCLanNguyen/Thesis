@@ -5688,6 +5688,210 @@
       \verb https://www.osti.gov/biblio/1573054
       \endverb
     \endentry
+    \entry{LEB_LARTPC}{article}{}
+      \name{author}{34}{}{%
+        {{hash=4b71071681cec0a78796ab240e34d474}{%
+           family={Andringa},
+           familyi={A\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bd121cabc46049d9711ea16a8853d1e2}{%
+           family={Asaadi},
+           familyi={A\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=73c085838b5cae22c8c71c3d08ebc9bb}{%
+           family={Bezerra},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima T\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=395d9b4609b5115c3e9a6eecd94dd06c}{%
+           family={Capozzi},
+           familyi={C\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=eb5d0e01e96c2caa71ffe8e2d9e25e84}{%
+           family={Caratelli},
+           familyi={C\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ec74adc3706199c619b296e2992bfde2}{%
+           family={Cavanna},
+           familyi={C\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=86835fef06174a211bad05618b4efa07}{%
+           family={Church},
+           familyi={C\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=874ebc8031e76655702b42418c6acfc4}{%
+           family={Efremenko},
+           familyi={E\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=abd2dcd3db85df6a9eba29b8d8f7bcfa}{%
+           family={Foreman},
+           familyi={F\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=14be69e69e27c8b27d3340b92c10b57c}{%
+           family={Friedland},
+           familyi={F\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=071e5f3208f5cf247e3684562e8e6e0e}{%
+           family={Gardiner},
+           familyi={G\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=47d5eaba17d05514a981019ede7c9373}{%
+           family={Gil-Botella},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ff7019eb102c0057377dd6d06c166b81}{%
+           family={Himmel},
+           familyi={H\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2e7b2a77eb16895725764173b18b9460}{%
+           family={Junk},
+           familyi={J\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0024e6bc88e7f0c88ba3fb5ef13428a7}{%
+           family={Karagiorgi},
+           familyi={K\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=248ea829d72f29f62cdd15194de0b262}{%
+           family={Kirby},
+           familyi={K\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=650e1b6aabbb468fa24c5df75c76371e}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=05c63da12c318f7aa46899399b8c83af}{%
+           family={Lehmann-Miotto},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fcfc329a095083dc0d1373a8df7b1eb9}{%
+           family={Lepetic},
+           familyi={L\bibinitperiod},
+           given={I\bibnamedelima T},
+           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=0ee6724aae227dcac2949962d898b300}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c0ca9dbacd870d159ede25f1efcb1df4}{%
+           family={Littlejohn},
+           familyi={L\bibinitperiod},
+           given={B\bibnamedelima R},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=98795cfcdbd1f372017295cd81674ddc}{%
+           family={Mooney},
+           familyi={M\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd5fdef6512323fe0fae18b3d13ac396}{%
+           family={Reichenbacher},
+           familyi={R\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51c8e52bd7a7386362b282955f708050}{%
+           family={Sala},
+           familyi={S\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=567243c4a50dea47200f33abaa9971ee}{%
+           family={Schellman},
+           familyi={S\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e1bfeee6bc32e7b1b67dc2b83c5ce504}{%
+           family={Scholberg},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=583c5de255b11e2994f70607cc1f5afc}{%
+           family={Sorel},
+           familyi={S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1085e7b94588308ef37c7727145214d8}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3702f1c146e64a6c91fc47b81ea59fc7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb5c6310894d08fbb5d049871c82f621}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={M\bibnamedelima H\bibnamedelimb L\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6b1da9f8985789afeb993c58dfa1c05b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=89b432fa4bb24ef9e7312fd806fb771b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=84c7288c6b3f93ef543e0189210bbdf2}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0e71d748d1516feb0e904fa58057f761}{%
+           family={Zennamo},
+           familyi={Z\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{7c27ddaf4f8e6eeac9b65d87bdd5a80c}
+      \strng{fullhash}{4423ffd8cc6dcdf33686cccb431508ef}
+      \strng{bibnamehash}{7c27ddaf4f8e6eeac9b65d87bdd5a80c}
+      \strng{authorbibnamehash}{7c27ddaf4f8e6eeac9b65d87bdd5a80c}
+      \strng{authornamehash}{7c27ddaf4f8e6eeac9b65d87bdd5a80c}
+      \strng{authorfullhash}{4423ffd8cc6dcdf33686cccb431508ef}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{JPhysG}}
+      \field{month}{2}
+      \field{number}{3}
+      \field{title}{{Low-energy physics in neutrino LArTPCs}}
+      \field{volume}{50}
+      \field{year}{2023}
+      \field{pages}{033001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6471/acad17
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1361-6471/acad17
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1361-6471/acad17
+      \endverb
+    \endentry
     \entry{Passage}{article}{}
       \name{author}{2}{}{%
         {{hash=2523910bab939c1849988103a22b30d9}{%
@@ -17869,8 +18073,8 @@
       \strng{authorbibnamehash}{9a11f39373d77189f572e63015ba14d1}
       \strng{authornamehash}{9a11f39373d77189f572e63015ba14d1}
       \strng{authorfullhash}{e5ed0af7ee7b686332d421d040b6bdaf}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{FZKA-6019}
@@ -18212,7 +18416,6 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Liquid Argon Time Projection Chamber (LArTPC) is an advanced neutrino detector technology widely used in recent and upcoming accelerator neutrino experiments. It features a low energy threshold and high spatial resolution that allow for comprehensive reconstruction of event topologies. In current-generation LArTPCs, the recorded data consist of digitized waveforms on wires produced by induced signal on wires of drifting ionization electrons, which can also be viewed as two-dimensional (2D) (time versus wire) projection images of charged-particle trajectories. For such an imaging detector, one critical step is the signal processing that reconstructs the original charge projections from the recorded 2D images. For the first time, we introduce a deep neural network in LArTPC signal processing to improve the signal region of interest detection. By combining domain knowledge (e.g., matching information from multiple wire planes) and deep learning, this method shows significant improvements over traditional methods. This work details the method, software tools, and performance evaluated with realistic detector simulations.}
       \field{journaltitle}{JINST}
       \field{month}{1}
       \field{number}{01}
