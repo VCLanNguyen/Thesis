@@ -372,26 +372,44 @@ The number of PEs in a flash is the total PEs of hits clustered in that flash.
 
 The start time of the optical flash represents the start time of an interaction, $t_0$, which is the key variable of the HNL search, and therefore requires great care in reconstruction.
 The flash start time is the average of the rise time of optical hits in a flash, only considering PMTs that contribute 50\% of the prompt light in the 30 ns window of the largest number of PEs.
-A correction is applied for the propagation of the photons from the scintillation location to the PMTs.
+This ensures that the scintillation photons originates close to the interaction vertex.
 
-The correction is computed by exploiting the high density of PMTs as well as having (un)coated PMTs sensitive to direct VUV light and reflected visible light (See Section \ref{sec:sbnd_pds}).
+A correction is applied to the flash start time to account for the propagation time of the photons from the scintillation location to PMTs for detection.
+The propagation time depends on the drift distance of the photons relative to the anode or the cathode.
+Closer to the anode at $d_{drift} = 0~\mathrm{cm}$, the first photons arriving at PMTs are direct VUV components.
+The propagation time increases from $\sim4~\mathrm{ns}$ to $\sim15~\mathrm{ns}$ with drift distance for $0~\mathrm{cm} < d_{drift} < 145~\mathrm{cm}$.
+At $d_{drift} = 145~\mathrm{cm}$, this is the tipping point where the propagation time of the direct and reflected components is identical and reaches its maximum.
+Closer to the cathode at $d_{drift} = 200 $ cm, and hence the reflective foils, the first photons arriving at PMTs are instead the reflected visible component due to their faster group velocity (See Section \ref{sec:photonprop}, Fig.\ref{fig:vuv_visible}).
+In the region $145~\mathrm{cm} < d_{drift} < 200~\mathrm{cm}$, the propagation time decreases from $\sim15~\mathrm{ns}$ to $\sim8~\mathrm{ns}$ with drift distance.
+
+The propagation correction is computed by exploiting the high density of PMTs as well as having (un)coated PMTs sensitive to direct VUV light and reflected visible light (See Section \ref{sec:sbnd_pds}).
 Fig. \ref{fig:light_yield_Diego} shows the reconstructed light yield seen by (un)coated PMTs based on simulation, as a function of the photon mean drift distance, $d_{drift}$.
 The error bars show the uncertainty due to the border effects, where the amount of collected light varies greatly depending on the position of energy deposition relative to the detector edge.
 
 Closer to the anode at $d_{drift} = 0 $ cm, the light yield primarily comes from direct VUV photons, detected by coated PMTs as shown in purple.
-Closer to the cathode at $d_{drift} = 200 $ cm, and hence to the reflective foils, the light yield from reflected visible photons increases, detected by uncoated PMTs as shown in red.
-For a given scintillation location, the amount of direct VUV and visible photons leads to a specific ratio of the two components, which is used to compute the correction for the drift propagation effect.
-The resulting timing resolution of the flash time is $\mathcal{O}$(2 ns) across the drift distance, demonstrating the excellent capability of the PDS reconstruction at SBND \cite{sbnd_pds_paper}.
+Closer to the cathode at $d_{drift} = 200 $ cm, the light yield from reflected visible photons increases, detected by uncoated PMTs as shown in red.
+For a given scintillation location, the amount of direct VUV and visible photons leads to a specific ratio of the two components, which is used to compute the correction for propagation time.
+Fig. \ref{fig:light_reco_err} shows the resulting timing resolutions and biases of the flash start time as a function of the mean drift distance after applying the correction, based on simulation.
+The timing resolution stays relatively constant at $\mathcal{O}$(2 ns) across the entire drift distance, demonstrating the excellent capability of the PDS reconstruction at SBND \cite{sbnd_pds_paper}.
 
-\begin{figure}[hb!]
-\centering    
-\includegraphics[width=0.55\textwidth]{light_yield_sim}
-\caption[Reconstructed Light Yield at SBND]{
-Reconstructed light yield as a function of the mean drift distance based on simulation \cite{sbnd_pds_paper}. 
-}
-\label{fig:light_yield_Diego}
+\begin{figure}[ht!]
+        \begin{subfigure}[b]{0.555\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{light_yield_sim}
+            \caption{Reconstructed light yield}%
+	    \label{fig:light_yield_Diego}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.445\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{light_reco_err}
+            \caption{Timing resolutions and biases}%
+            \label{fig:light_reco_err}
+        \end{subfigure}
+	\caption[Reconstructed Light Yield and Reconstructed Timing Resolutions and Biases at SBND]{
+		(a) Reconstructed light yield and (b) timing biases and resolutions of reconstructed $t_0$ after propagation correction as a function of the mean drift distance based on simulation \cite{sbnd_pds_paper}. 
+	}
 \end{figure}
-
 
 \subsection{Cosmic Ray Tagger Reconstruction}
 \label{sec:crt_reco}

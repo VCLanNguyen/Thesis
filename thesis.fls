@@ -653,6 +653,9 @@ INPUT ./Chapter6/Figs/pds_reco_hit_finding.png
 INPUT Chapter6/Figs/light_yield_sim.png
 INPUT ./Chapter6/Figs/light_yield_sim.png
 INPUT ./Chapter6/Figs/light_yield_sim.png
+INPUT Chapter6/Figs/light_reco_err.png
+INPUT ./Chapter6/Figs/light_reco_err.png
+INPUT ./Chapter6/Figs/light_reco_err.png
 OUTPUT Chapter7/chapter7.aux
 INPUT Chapter7/chapter7.tex
 INPUT Chapter7/chapter7.tex
