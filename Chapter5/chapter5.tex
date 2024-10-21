@@ -42,9 +42,9 @@ For example, the generator used to simulate HNLs, presented in Section \ref{sec:
 
 %Describe the overall workflow
 The simulation workflow of SBND under LArSoft is depicted in Fig. \ref{fig:Sim_Workflow}.
-The process begins with a generator to produce primary particles that enter the detector, as shown by the purple box.
+The process begins with a generator to produce primary particles that enter the TPC, as shown by the purple box.
 The primary particles can be final states of neutrino interactions, cosmic muons or BSM particles depending on the generator type.
-The propagation of the primary particle inside and outside the detector, and the resulting energy deposition is simulated using the Geant4 toolkit \cite{geant4}, as shown by the green boxes.
+The propagation of the primary particle inside and outside the TPC, and the resulting energy deposition is simulated using the Geant4 toolkit \cite{geant4}, as shown by the green boxes.
 For interactions inside the detector, the charge and light yield are calculated from the energy deposition.
 Ionisation electrons are propagated through the detector to the wire planes using the Wirecell toolkit \cite{wirecell}, as shown by the red boxes.
 Scintillation photons are propagated to the photodetectors using a combination of a semi-analytical model and an optical library \cite{sbnd_pds_paper}, as shown by the blue boxes.
@@ -89,7 +89,7 @@ The daughter HNL and lepton are simulated using the two-body decay at rest in th
 Due to HNLs having relatively high mass, the boost results in HNLs having less transverse momentum than the SM neutrinos, travelling preferably to the parent kaon direction.
 The boost can also flip the directions of HNLs that are emitted backwards, mostly originating from low energy kaons \cite{DavidePhD}.
 
-HNLs are then propagated to the detector by the ray tracing method, which forces HNLs to hit SBND by picking a direction that impinges the particles at the detector's front face.  
+HNLs are then propagated to the detector by the ray tracing method, which picks a direction forcing HNLs to intersect SBND, defined as the TPC volume.  
 %The probability of enforcing the detector intersection is also computed.
 The acceptance angle of HNLs to hit the detector is very beam-collimated at $< \sim 5^\circ$ with respect to the beam direction.
 This implies that only very forward-going HNLs are most likely to intersect the detector.
@@ -138,7 +138,7 @@ Simulated energy spectra of HNLs decaying inside SBND.
 \label{fig:HNL_Energy_Spectrum}
 \end{figure}
 
-Upon their arrival at the detector, HNLs decay back into the SM observables.
+HNLs are then simulated to decay back into the SM observables inside the TPC volume.
 For the $\nu\pi^{0}$ final state, the width of the decay is defined by Eq. \ref{eq:pi0} (See Section \ref{sec2Decay}).
 The kinematics of the decay products are simulated for HNLs isotropically decaying in the rest frame and then boosted to the lab frame by Lorentz boost.
 %Since the parent HNL is very forward-going, the daughter $\pi^0$ is also forward-going, with momenta dependence on the mass of the parent HNL. 
@@ -291,7 +291,8 @@ The background rejection of dirt neutrinos is covered in Chapter \ref{ChapterSel
 \label{sec:gen_corsika}
 
 Cosmic interactions are simulated using the CORSIKA generator \cite{corsika}.
-The generation begins with producing high energy primary particles incident in the Earth's atmosphere, of which only primary protons are kept. 
+The generation begins with producing high energy primary particles incident in the Earth's atmosphere.
+The simulation adopts the same approach as the MicroBooNE experiment where primary particles are modelled as cosmic protons, motivated by a better data agreement as seen by MicroBooNE \cite{corsika_uboone}.
 The primaries are then propagated through the atmosphere, interacting with the air to produce secondary hardons that decay into long-lived particles reaching the Earth's surface.
 Within the SBND simulation geometry, this surface is specified to be just above the roof of the detector building.
 The surviving particles are then propagated to the SBND detector.
