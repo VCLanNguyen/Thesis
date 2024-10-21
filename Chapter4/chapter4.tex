@@ -18,7 +18,6 @@ The program is motivated by anomalous results observed across various detectors 
 For instance, the low energy excess in the $\nu_e$ and $\overline{\nu}_e$ interaction measurement observed by both LSND and MiniBooNE experiments is an outstanding anomaly for the past decade \cite{LSND_anomaly, Miniboone_anomaly}.
 In addition to being part of the SBN program, SBND also has its own extensive physics program focusing on high precision $\nu$-Ar cross section measurements and physics beyond the Standard Model. 
 This will not only benefit future long baseline neutrino experiments such as the DUNE but also significantly advance the field of neutrino physics as a whole.
-At the time of writing, SBND has entered its commissioning phase, in preparation for calibration and physics data taking.
 
 This chapter contains an overview of the SBND detector and the Booster Neutrino Beam (BNB), which are the detector and beam source used in the search for Heavy Neutral Leptons (HNLs) in this thesis.
 The chapter begins with a discussion on the physics program of the SBND experiment in Section \ref{sec4PhysicsProgram}. 
@@ -34,28 +33,28 @@ Finally, Sec \ref{sec:sbnd_conclude} provides some concluding remarks.
 
 %0: SBND, as part of the SBN Program
 %Neutrino Oscillation
-SBND is part of the Short-Baseline Neutrino (SBN) program located at Fermilab \cite{SBNProgram}. 
-The program consists of three Liquid Argon Time Projection Chamber (LArTPC) detectors: SBND, MicroBooNE, and ICARUS, positioned at distances of 110 m, 470 m, and 600 m on-axis to the target of the BNB as shown in Fig. \ref{fig:SBN_program}.
-The near-far detector setup was designed to search for the potential existence of sterile neutrinos in the mass $\mathcal{O}$(1 eV) that is briefly mentioned in Chapter \ref{ChapterHNL}, driven by a series of anomalies observed by previous short baseline experiments.
+SBND is part of the Short-Baseline Neutrino (SBN) program located at Fermilab \cite{SBNProgram}, consisting of three Liquid Argon Time Projection Chambers (LArTPCs): SBND, MicroBooNE, and ICARUS, positioned at distances of 110 m, 470 m, and 600 m on-axis to the target of the BNB as shown in Fig. \ref{fig:SBN_program}.
+The near-far detector setup is located on the same baseline and beam source as the MiniBooNE detector. 
+This was designed to search for the potential existence of sterile neutrinos in the mass $\mathcal{O}(1~\mathrm{eV})$, driven by a series of anomalies observed not only by MiniBooNE but also by previous short baseline experiments.
 
-Amongst these earlier experiments was the LSND experiment which utilised a stopping pion source to probe $\overline{\nu}_{e}$ via inverse $\beta$-decay and reported an excess of signal to the background at low energies with a 3.8$\sigma$ level \cite{LSND_anomaly}. 
-The MiniBooNE experiment was a neutrino accelerator experiment designed to measure the entire phase space covered by the LSND result \cite{Miniboone_anomaly}.
-This detector observed an excess of $\nu_{e}$ ($\overline{\nu}_{e}$) in $\nu_{\mu}$ ($\overline{\nu}_{\mu}$) beam mode showing a discrepancy from the SM with a significance level of 4.5$\sigma$ (2.8$\sigma$), reaching 6.0$\sigma$ when combined with the LSND data.
-Additionally, a re-evaluation of results from the nuclear reactor experiments indicated a deficit of $\overline{\nu}_{e}$ fluxes to the theoretical expectation at a 3$\sigma$ level \cite{reactor_anomaly_1, reactor_anomaly_2}. 
-%and spectral features consistent with an eV-scale sterile neutrino addition \cite{reactor_anomaly_3, reactor_anomaly_4}.
-Furthermore, gallium solar neutrino experiments observed an overall deficit in $\nu_{e}$ fluxes at a 3$\sigma$ level during calibrations using radioactive neutrino sources \cite{galium_anomaly_1, galium_anomaly_2}.
-These main anomalous results collectively suggest the mass mixing of SM neutrinos with an addition eV-scale sterile neutrino at a short baseline to energy ratio of $L/E \approx 1 $ m/MeV.
-This can enhance or reduce the number of observed neutrino interactions for a given channel \cite{SBNProgram}.
-The goal of the SBN program is to pioneer the search for eV-scale sterile neutrino oscillations, covering the parameter phase space previously allowed by past experiments but at a significance level of $\geq 5 \sigma$.
-
-\begin{figure}[htbp] 
+\begin{figure}[hb!] 
 \centering    
-\includegraphics[width=1.0\textwidth]{SBN_program}
+\includegraphics[width=0.85\textwidth]{SBN_program}
 \caption[Short-Baseline Neutrino Program]{
 Graphic showing the three LArTPC detectors made up the Short-Baseline Neutrino program: SBND, MicroBooNE and ICARUS \cite{SBNProgram}.
 }
 \label{fig:SBN_program}
 \end{figure}
+
+Amongst these earlier experiments was LSND which utilised a stopping pion source to probe $\overline{\nu}_{e}$ via inverse $\beta$-decay and reported an excess of signal to the background at low energies with a 3.8$\sigma$ level \cite{LSND_anomaly}. 
+MiniBooNE was a neutrino accelerator experiment designed to measure the entire phase space covered by the LSND result \cite{Miniboone_anomaly}.
+It observed an excess of $\nu_{e}$ ($\overline{\nu}_{e}$) in $\nu_{\mu}$ ($\overline{\nu}_{\mu}$) beam mode showing a discrepancy from the SM with a significance level of 4.5$\sigma$ (2.8$\sigma$), reaching 6.0$\sigma$ when combined with the LSND data.
+Additionally, a re-evaluation of results from nuclear reactor experiments indicated a deficit of $\overline{\nu}_{e}$ fluxes to the theoretical expectation at a 3$\sigma$ level \cite{reactor_anomaly_1, reactor_anomaly_2}. 
+%and spectral features consistent with an eV-scale sterile neutrino addition \cite{reactor_anomaly_3, reactor_anomaly_4}.
+Moreover, gallium solar neutrino experiments observed an overall deficit in $\nu_{e}$ fluxes at a 3$\sigma$ level during calibration using radioactive neutrino sources \cite{galium_anomaly_1, galium_anomaly_2}.
+These anomalous results collectively suggest the mass mixing of SM neutrinos with an addition eV-scale sterile neutrino at a short baseline to energy ratio of $L/E \approx~1~\mathrm{m/MeV}$.
+This can enhance or reduce the number of observed neutrino interactions for a given channel \cite{SBNProgram}.
+The goal of the SBN program is to pioneer the search for eV-scale sterile neutrino oscillations, covering the parameter phase space previously allowed by past experiments but at a significance level of $\geq 5 \sigma$.
 
 %Neutrino Cross Section
 Additionally, precise measurements of $\nu$-Ar interactions play a crucial role in the physics program of SBND, serving as a critical element in understanding neutrino oscillations \cite{NuSTECWhitePaper}. 
@@ -70,7 +69,7 @@ Finally, a key aspect of the physics program at SBND is the exploration of new s
 Proximity to a high intensity beam and the resulting large statistics enable searches for very weakly coupled interactions coming from the BNB \cite{SBNProgram}.
 %HNL
 A key example is HNLs, the primary focus of this thesis.
-These can be produced from meson decays in the BNB and subsequently decay in flight into SM observables for detection (See Chapter \ref{ChapterHNL}).
+These can be produced from meson decays in the BNB and decay in flight into SM observables for detection (See Chapter \ref{ChapterHNL}).
 %Light Dark Matter
 Another compelling BSM candidate is light dark matter, which can be produced from neutral meson decay or proton bremsstrahlung \cite{LightDarkMatter}. 
 %As postulated by thermal relic models, these light dark matter particles could reach sub-GeV-scale masses. 
@@ -80,7 +79,12 @@ Moreover, the dynamic mass mechanism of SM neutrinos opens avenues for new physi
 The dark neutrino model proposes that right-handed neutrinos can scatter with nuclei to produce dark gauge bosons, subsequently decaying into di-lepton pairs \cite{DarkNeutrino}. 
 In the case where the leptons are electrons, this could potentially explain the low energy excess anomalies observed by LSND and MiniBooNE \cite{DarkNeutrinoLEE}.
 These represent just a few examples of the diverse BSM scenarios that can be explored at SBND. 
-Other unmentioned possibilities such as new interactions, extra dimensions, and violations of Lorentz and charge parity time symmetries, among others, contribute to the rich physics program of SBND \cite{SBNProgram}.
+Other unmentioned possibilities such as new interactions, extra dimensions, and violations of Lorentz and CPT symmetries, among others, contribute to the rich physics program of SBND \cite{SBNProgram}.
+
+%Run plan of SBND
+At the time of writing, SBND is currently in its commissioning phase, in preparation for physics data taking when the BNB beam returns in November 2024.
+The physics run is planned to begin shortly after the beam return and will last for three years.
+During the period, the delivery of the BNB is projected to be $1 \times 10^{21}$ POT, which provides an immense statistics to carry out the physics program of SBND.
 
 %********************************** %First Section  **************************************
 \section{The Short-Baseline Near Detector}
@@ -106,8 +110,8 @@ The following sections provide an overview of each of the main subsystems of SBN
 \subsection{Time Projection Chamber}
 
 Fig. \ref{fig:SBND_APA_diag} shows a complete APAs, of which each plane of APAs is located on the east and west sides of SBND.
-The plane is made up of two coupled APAs, where an APA measures 4 m $\times$ 2.5 m and comprises a steel frame supporting three wire planes: two induction planes, denoted as U and V, oriented at angles of $\pm 60^{\circ}$ to the vertical collection plane denoted as Y. 
-These wire planes U, V and Y are colour-coded as green, blue, and red, respectively.
+The plane is made up of two coupled APAs, where an APA measures $4~\mathrm{m} \times 2.5~\mathrm{m}$ and comprises a steel frame supporting three wire planes: two induction planes, denoted as U and V, oriented at angles of $\pm 60^{\circ}$ to the vertical collection plane denoted as Y. 
+These wire planes U, V and Y are coloured as green, blue, and red, respectively.
 Each wire plane is constructed with 150 $\mu$m diameter copper-beryllium wires, with a wire pitch and plane spacing of 3 mm. 
 The wires are tensioned to 7 N to prevent slackening when cooled down to a temperature at 88.4 K \cite{SBND_Wires}.
 To maintain charge transparency for the induction planes and collection efficiency for the collection plane, a biased voltage of -200 V, 0 V, and 500 V is applied to planes U, V, and Y, respectively.
@@ -129,7 +133,7 @@ Schematic showing two coupled APAs to form a complete APAs \cite{SBNProposal}.
 
 Fig. \ref{fig:SBND_CPA} shows a photograph of the fully assembled CPA.                                                                                                                                 
 The plane consists of two steel frames, each containing 8 windows, adding to a total of 16 windows.
-Each window, measuring 60 cm $\times$ 50 cm, houses a fibreglass plate laminated on both sides with non-conductive reflective foils of $> 99\%$ specular reflection in the visible range and coated with TetraPhenyl Butadiene (TPB).
+Each window, measuring $60~\mathrm{cm} \times 50~\mathrm{cm}$, houses a fibreglass plate laminated on both sides with non-conductive reflective foils of $> 99\%$ specular reflection in the visible range and coated with TetraPhenyl Butadiene (TPB).
 Furthermore, the plate is covered by a wire mesh, providing a high voltage at -100 kV supplied by a feedthrough donut from outside the cryostat.
 
 %Field Cage
@@ -205,7 +209,7 @@ Such difference can be exploited to perform the timing reconstruction using only
 Since SBND is a surface detector, it utilises a Cosmic Ray Tagger (CRT) system to effectively reject background from cosmic muons.
 Fig. \ref{fig:SBND_CRT} shows the operating principles of CRT strips and their orientation \cite{RhiannonPhD}.
 As shown in the middle diagram, each CRT strip consists of a plastic scintillator strip with a width of 10.8 cm, connected to a pair of SiPMs via wavelength shifting optical fibres.       
-The right diagram shows a coincident hit from perpendicular strips that allows for a 2D reconstruction of the hit location, and the number of photons collected for each strip improves the precision of the location tagging.
+The right diagram shows a coincident hit from perpendicular strips that allows for a 2D reconstruction of the hit location with a spatial resolution $\mathcal{O}(2~\mathrm{cm})$, and the number of photons collected for each strip improves the precision of the location tagging.
 \begin{figure}[b!] 
 \centering    
 \includegraphics[width=1.0\textwidth]{SBND_CRT}
@@ -250,7 +254,7 @@ Regarding the readout electronics of the PDS, CAEN digitisers are employed. % de
 192 X-ARAPUCAs are digitised by another model called V1740 \cite{caen1740}, that can readout 64 channels at a lower sampling frequency of 62.5 MHz.
 Both models feature deep buffers to store longer waveforms and handle higher data rates.
 Additionally, the V1730SB model offers better waveform baseline stability against temperature fluctuations.
-Multiple CAEN digitisers can be synchronised so that they collectively behave as a single digitiser, which is critical to maintaining the timing resolution of the electronics $\mathcal{O}$(1 ns).
+Multiple V1730SB digitisers to read out PMTs are synchronised so that they collectively behave as a single digitiser, which is critical to maintain the electronics timing resolution $\mathcal{O}$(0.6 ns).
 The characterisation of synchronisation across multiple V1730SB digitisers is detailed in Section \ref{sec4PMT}.
 
 %The timing resolution of the CRT readout electronics is evaluated in the following section.
@@ -260,6 +264,7 @@ Each module is a multifunctional board capable of reading out 32 channels, with 
 The module provides a bias voltage, adjustable for individual SiPMs, as well as signal amplification and shaping.
 Once the signal is shaped, the module applies signal discrimination and self-triggering, such as coincidence for each pair of SiPMs in a CRT strip or coincidence across multiple modules for orthogonal CRT strips. 
 Once the signal passes the self-trigger, it is digitised and timestamped with respect to an input reference clock. 
+The clock frequency is 1 GHz and thus, the electronics timing resolution is $\mathcal{O}$(0.3 ns).
 The data is stored in a buffer and sent via an Ethernet connection. 
 The characterisation of the timing resolution of FEB modules is detailed in Section \ref{sec4InternalClock}
 %The following section focuses on the characterisation on the timing resolution of the FEB module.
@@ -276,7 +281,7 @@ In order to form a trigger, the PTB requires signals from the three subsystems: 
 The beam subsystem informs the PTB on the status on the BNB beam, and whether the beam has arrived at the detector hall.
 Signals from PMTs provides information regarding the intensity and locality of the energy deposited inside the detector, and whether it is consistent with a neutrino event.
 Signals from CRTs provides information of the energy deposited outside of the detector in the CRT walls, and whether it is consistent with a cosmic muon. 
-The readout electronics of PMTs and CRTs are equipped with timing resolution $\mathcal{O}$(2 ns) and their output signals can quickly inform the PTB to form a trigger.
+The readout electronics of PMTs and CRTs are equipped with sub-nanosecond timing resolutions and their output signals can quickly inform the PTB to form a trigger.
 Additionally, incorporating CRT signals marks SBND as the first instance of a LArTPC to employ CRTs as part of its triggering scheme \cite{CPAD2022}.
 
 Different combinations of signal inputs described here can form different \textit{flavours} of triggers.
