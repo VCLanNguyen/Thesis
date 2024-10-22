@@ -12,10 +12,14 @@
 \fi
 
 %********************************** %Opening  **************************************
-Achieving a timing precision $\mathcal{O}$(1 ns) is a pivotal goal for the Data Acquisition (DAQ) at the Short-Baseline Near Detector (SBND) as it is essential for high precision physics analysis. 
-Most importantly, the Cosmic Ray Taggers (CRTs) and PhotoMultiplier Tubes (PMTs) are the two detection subsystems with sufficient timing resolution to resolve the nanosecond bucket structure of the Booster Neutrino Beam (BNB).
-Their readout electronics must have sufficient timing resolution to record the signals with a high level of precision and minimal smearing.
-It is therefore important to characterise the timing performance of the readout electronics to identify areas of improvement in preparation for the nanosecond goal. 
+A pivotal goal for the Data Acquisition (DAQ) at the Short-Baseline Near Detector (SBND) is to achieve and maintain the electronics timing resolution $\mathcal{O}(1~\mathrm{ns})$ or less.
+Cosmic Ray Taggers (CRTs) and PhotoMultiplier Tubes (PMTs) are the two detection subsystems with sub-nanosecond electronics timing resolution that can resolve the nanosecond bucket structure of the Booster Neutrino Beam (BNB).
+More importantly, PMT signals are used to reconstruct the interaction start time with a reconstruction timing resolution $\mathcal{O}(2~\mathrm{ns})$ as demonstrated in Section \ref{sec:reco_pds}, ba
+sed on the simulation having an assumption that the PMT readout electronics have a resolution $\mathcal{O}(0.6~\mathrm{ns})$ at a sampling rate of $500~\mathrm{Hz}$.
+Therefore, it is crucial to validate and characterise the timing performance of the readout electronics so that areas for improvement can be identified in preparation for the nanosecond goal.
+
+%It is essential for high precision physics analysis. 
+%Their readout electronics must have sufficient timing resolution to record the signals with a high level of precision and minimal smearing.
 
 The work undertaken to assess the timing performance of the DAQ electronics is outlined in this chapter.
 An overview of the timing system at SBND is first given in Section \ref{sec4TimeRef}. 
@@ -95,7 +99,8 @@ This level of precision of fragment timestamp necessitates the event building pr
 %Precision Timestamp concept
 %description of SPEC TDC
 Also shown in Fig. \ref{fig:timeTransfer}, another component of the WR timing system is the SPEC-TDC module.
-This module timestamps signals with a precision of 700 ps, and outputs timestamps in the UTC format.
+This module timestamps signals in tick of 2 ps with a precision of 700 ps.
+The output timestamps are in the UTC format.
 The timestamps can be acquired by the DAQ and be built within a physics event, as shown by the dotted and solid purple arrows. 
 
 % SPEC TDC
@@ -226,7 +231,7 @@ The T0 clock resolution was found to be $\mathcal{O}$(2 ns), consistent across a
 The characterisation of the T1 clock is less trivial since its T1 timestamps do not share the same reference frame with any other readout electronics.
 The only direct comparison is via T0 timestamps, which contain the T0 clock resolution. 
 T0 timestamps of T1 clock reset events were compared against the SPEC-TDC timestamps of the BES signal since they both measured the same signal and reference to the PPS.
-The comparison was motivated since the SPEC-TDC has a higher precision than FEB clocks, 700 ps compared to $\mathcal{O}$(1 ns).
+The comparison was motivated since the SPEC-TDC has a higher precision than FEB clocks.
 
 %When this happeThe variation of T0 timestamps of T1 clock reset events, or BES signals, as compared to the SPEC-TDC is shown in Fig. \ref{fig:UpstreamT1StabilityCombinedBoard79} for the FEB module 79.
 %ns, the FEB modules can flag these events and their timestamps need to be invalidated.
@@ -457,7 +462,7 @@ The cable length of each clock signal is identical so that all clock signals arr
 
 In daisy chain mode, the first CAEN digitiser in the daisy chain receives the 10 MHz clock, referred to as the master clock.
 Its clock is then propagated to the next digitiser in the chain, referred to as the slave clock.
-The master clock can be precisely programmed with a delay $\mathcal{O}$ (300 ps) to account for cable lengths, ensuring that the master and slave clocks are in phase with each other.
+The master clock can be precisely programmed with a delay in step of 300 ps to account for cable lengths, ensuring that the master and slave clocks are in phase with each other.
 The clock propagation continues from one digitiser to the next digitiser in the chain, until the last digitiser in the chain is in the same clock phase as the first one.  
 
 %set up
@@ -471,7 +476,7 @@ The trigger rate was set as 1 Hz for simplicity.
 
 To evaluate the synchronisation of CAEN digitisers, their timestamps of triggered events were directly compared against the same timestamps recorded by the SPEC-TDC since both are referenced to the 
 PPS signal.
-Similar to the approach with the CRT readout electronics, the SPEC-TDC offers a higher level of precision compared to the CAEN digitiser, 700 ps compared to $\mathcal{O}$(2 ns). 
+Similar to the approach with the CRT readout electronics, the SPEC-TDC offers a higher level of precision compared to the CAEN digitiser. 
 For an ideal synchronisation, the timestamps of every triggered event from every digitiser should be identical with respect to each other, and also with respect to the SPEC-TDC after cable correction.
 
 %The trigger signal was also input to the SPEC-TDC for timestamping.
@@ -695,11 +700,22 @@ This ensures to capture of the full shape of the trigger waveforms without damag
 \label{sec5Remarks}
 
 The timing system at SBND is outlined, detailing the timing signal distribution to ensure synchronisation across different DAQ subsystems. 
-As part of the timing system, the SPEC-TDC module records extra timing information applicable for versatile usages.
-The module was used to characterise the timing precision of the CRT readout electronics, which was determined to be $\mathcal{O}$(2 ns).
-This resolution enables the reconstruction of the beam bucket structure, of which an alternative reconstruction using the T0 timestamps with the SPEC-TDC timing information was demonstrated.
-Most importantly, the module was used to examine the clock synchronisation of CAEN digitisers responsible for sampling PMT signals.
-This work lead to a clock scheme as well as a correction method to account for clock jittering.
+As part of the timing system, the SPEC-TDC module records extra timing information applicable for versatile usages with a high timing precision of 700 ps.
+The module was used to characterise the timing performance of the CRT and PMT readout electronics.
+
+FEB modules, readout electronics of CRTs, contain two internal clocks T0 and T1, where the T0 (T1) clock is reset with a PPS (BES) signal of the frequency $1~\mathrm{Hz}$ ($\sim5~\mathrm{Hz}$).
+The resolution of T0 clocks was directly measured to be $\mathcal{O}(2~\mathrm{ns})$. 
+The clock drift effect was also observed with the T0 clock, such that the precision of T0 timestamps decreased since the last clock reset.
+On the other hand, the resolution of T1 clocks could not be directly measured and was determined via T0 timestamps.
+The determined T1 resolution containing some smearing from the T0 clock was found to be slightly less than $\mathcal{O}(2~\mathrm{ns})$ due to a higher reset frequency.
+Both T0 and T1 clock resolutions enable the reconstruction of the beam bucket structure, of which an alternative reconstruction using the T0 timestamps with the SPEC-TDC timing information was demonstrated.
+
+The clock synchronisation of CAENV1730 digitisers, readout electronics of PMTs, was examined.
+Of the digitiser clock distribution, the two most important clocks are the ADC sampling clock ($500~\mathrm{MHz}$) and the trigger clock ($125~\mathrm{MHz}$).
+This work led to a fan out clock scheme, where each receives an external clock of $6.25~\mathrm{MHz}$.
+This frequency was chosen so that the sampling and trigger clocks can be locked in phase with the external clock.
+Additionally, a correction method to account for clock jittering was to digitise the trigger waveform in channel 15 of every digitiser.
+Digitised waveforms can be aligned with respect to the trigger timestamp measured by the SPEC-TDC.
 This is a crucial correction to ensure that PMT waveforms are synchronised at the nanosecond level to necessitate the reconstruction of the beam bucket with a high timing resolution.
 In the following, Chapter \ref{ChapterCalib} focuses on the calibration of the TPC of SBND, which is another essential step to pin down detector effects affecting high precision physics measurements.
 
