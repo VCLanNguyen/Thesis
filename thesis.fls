@@ -793,6 +793,10 @@ INPUT ./Chapter8/Figs/proton_profile.png
 INPUT Chapter8/Figs/proton_profile_diff.png
 INPUT ./Chapter8/Figs/proton_profile_diff.png
 INPUT ./Chapter8/Figs/proton_profile_diff.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/fourier/futmii.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT Chapter8/Figs/mu_700um.png
 INPUT ./Chapter8/Figs/mu_700um.png
 INPUT ./Chapter8/Figs/mu_700um.png
@@ -805,10 +809,6 @@ INPUT ./Chapter8/Figs/mu_700um_lowRR.png
 INPUT Chapter8/Figs/mu_1um_lowRR.png
 INPUT ./Chapter8/Figs/mu_1um_lowRR.png
 INPUT ./Chapter8/Figs/mu_1um_lowRR.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/fourier/futmii.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT Chapter8/Figs/mu_profile.png
 INPUT ./Chapter8/Figs/mu_profile.png
 INPUT ./Chapter8/Figs/mu_profile.png

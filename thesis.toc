@@ -83,9 +83,9 @@
 \contentsline {subsection}{\numberline {8.1.2}Bias Study of Diffusion and Space Charge Effects}{105}{subsection.8.1.2}%
 \contentsline {section}{\numberline {8.2}Delta Ray Fluctuations on Recombination}{107}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Simulation of Delta Rays and Recombination}{108}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{109}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{110}{subsection.8.2.2}%
 \contentsline {subsection}{\numberline {8.2.3}Impacts of Delta Rays on Recombination Smearing}{113}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Recombination Studies from the ICARUS Experiment}{116}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.4}Recombination Studies from the ICARUS Experiment}{115}{subsection.8.2.4}%
 \contentsline {section}{\numberline {8.3}Concluding Remarks}{117}{section.8.3}%
 \contentsline {chapter}{\numberline {9}Selection of Heavy Neutral Leptons}{119}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Selection Introduction}{120}{section.9.1}%
@@ -127,7 +127,7 @@
 \contentsline {subsection}{\numberline {10.3.2}Comparison With Other Experiments}{166}{subsection.10.3.2}%
 \contentsline {section}{\numberline {10.4}Concluding Remarks}{169}{section.10.4}%
 \contentsline {chapter}{\numberline {11}Conclusions}{171}{chapter.11}%
-\contentsline {chapter}{References}{173}{chapter*.106}%
+\contentsline {chapter}{References}{173}{chapter*.107}%
 \contentsline {chapter}{Appendix \numberline {A}Hardware Triggering at SBND}{181}{appendix.a.A}%
 \contentsline {chapter}{Appendix \numberline {B}Data Streaming at SBND}{183}{appendix.a.B}%
 \contentsline {chapter}{Appendix \numberline {C}Timing Distribution at SBND}{185}{appendix.a.C}%

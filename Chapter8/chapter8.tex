@@ -77,32 +77,32 @@ On the other hand, a cosmic muon can occur anytime within the readout window and
 A \textit{cathode stitching} process was developed by the ProtoDUNE and Pandora collaboration to determine the $t_{0}$ of cosmic muons that cross the cathode \cite{pandora_protodune}.
 This can be applied to any LArTPC experiments that have two TPCs sharing the same cathode.
 Fig. \ref{fig:cosmic_stitch} depicts the \textit{stitching} process.
-The reconstruction algorithm begins with an initial and incorrect assumption of $t_{0} = 0$ \cite{pandora_protodune}, so that two cosmic track segments, shown by the red and blue lines, appear at the wrong positions in both drift volumes.
+The reconstruction algorithm begins with an initial and incorrect assumption of $t_{0} = 0$, so that two cosmic track segments, shown by the red and blue lines, appear at the wrong positions in both drift volumes.
 The algorithm then shifts the drift coordinate in each TPC by an equal and opposite amount until the two segments are \textit{stitched} at the cathode, shown by the black line, to recover the correct $t_{0}$.
-This method has been implemented in the reconstruction workflow of SBND, and it was applied to reconstruct the sample of anode-to-cathode-crossing tracks in this study.
-%Once $t_{0}$ is determined, the drift time can then be calculated using Eq. \ref{eq:t0}. 
 
-\begin{figure}[h!] 
+\begin{figure}[hb!] 
 \centering    
-\includegraphics[width=0.55\textwidth]{cosmic_stitch}
+\includegraphics[width=0.65\textwidth]{cosmic_stitch}
 \caption[Cathode Stitching Diagram]{
 Cathode stitching process to determine the $t_{0}$ of cathode-crossing track \cite{pandora_protodune}.
 }
 \label{fig:cosmic_stitch}
 \end{figure}
 
+The performance of the stitching method was validated by ProtoDUNE, considering biases introduced by SCE \cite{pandora_protodune}.
+It is important to note that ProtoDUNE shares many similarities with SBND, including a TPC drift distance of 3.1~m, a nominal drift velocity of 0.159~cm/$\mu$s and being an above ground detector highly susceptible to SCE.
+As demonstrated by ProtoDUNE, the stitching method achieves almost zero biases without SCE.
+When SCE is present, the reconstructed $t_0$ contains a bias $\mathcal{O}(10~\mu\mathrm{s})$.
+This method has been implemented in the reconstruction workflow of SBND, and it was applied to reconstruct the sample of anode-to-cathode-crossing tracks in this study.
+
+%Once $t_{0}$ is determined, the drift time can then be calculated using Eq. \ref{eq:t0}. 
+
 The next step in the lifetime extraction procedure was to plot the deposited charge per unit length $dQ/dx$ in bins of the drift time $t_{drift}$.
 Fig. \ref{fig:dqdxMPV} shows an example $dQ/dx$ profile in the drift time bin from 0.925 to 0.95 ms.
 A Landau-Gaussian convolution was fitted to the profile to extract the Most Probable Value (MPV) of $dQ/dx$ \cite{Passage}.
 This process was repeated for every drift time bin across the full drift distance of the TPC.
 
-Fig. \ref{fig:etime_tpc} shows the MPV $dQ/dx$ as a function of drift time, for TPC 0 (east) and 1 (west) of SBND.
-Bins of drift time less than 0.25 ms and larger than 1.15 ms were excluded due to the close proximity to the anode and cathode respectively, which can introduce some boundary effects.
-The MPV $dQ/dx$ distribution is fitted with Eq. \ref{eq:etime} to determine the electron lifetime constant.
-The MC sample input to Fig. \ref{fig:etime_tpc} was simulated with a lifetime of 10 ms and no detector effects enabled to validate the procedure.                                       
-The lifetimes were determined to be $10.12\pm0.24$ and $10.40\pm0.29$ ms, for TPC 0 and 1 respectively, showing a good agreement between the result and the simulation. 
-
-\begin{figure}[hb!] 
+\begin{figure}[ht!] 
 \centering    
 \includegraphics[width=0.55\textwidth]{dqdxMPV}
 \caption[dQ/dx Profile Fitted With a Laundau-Gaussian]{
@@ -110,8 +110,17 @@ Example of a $dQ/dx$ profile in a drift time bin of 0.925--0.95 ms, fitted with 
 }
 \label{fig:dqdxMPV}
 \vspace{0.5cm}
-%\end{figure}
-%\begin{figure}[htbp!]
+\end{figure}
+
+Fig. \ref{fig:etime_tpc} shows the MPV $dQ/dx$ as a function of drift time, for TPC 0 (east) and 1 (west) of SBND.
+Bins of drift time less than 0.25 ms and larger than 1.15 ms were excluded due to the close proximity to the anode and cathode respectively.
+Close to the anode, the local field around the wire planes can introduce some boundary effects on charge depositions. 
+Close to cathode, charge depositions electrons have to traverse the whole drift distance and therefore, are more susceptible to smearing due to diffusion and SCE.
+The MPV $dQ/dx$ distribution is fitted with Eq. \ref{eq:etime} to determine the electron lifetime constant.
+The MC sample input to Fig. \ref{fig:etime_tpc} was simulated with a lifetime of 10 ms and no detector effects enabled to validate the procedure.                                       
+The lifetimes were determined to be $10.12\pm0.24$ and $10.40\pm0.29$ ms, for TPC 0 and 1 respectively, showing a good agreement between the result and the simulation. 
+
+\begin{figure}[htbp!]
         \centering
         \begin{subfigure}[b]{0.495\textwidth}
             \centering
@@ -160,7 +169,7 @@ This is most likely due to the precision of this method worsening with increasin
 Larger lifetime leads to a more uniform $dQ/dx$ distribution across the drift distance, and thus, fitting an exponential function can become less reliable.
 %This is due to more drifting electrons surviving with a larger lifetime and thus, becoming more susceptible to detector effects.
 
-\begin{figure}[t!] 
+\begin{figure}[b!] 
 \centering    
 \includegraphics[width=0.85\textwidth]{etime_biases_compare}
 \caption[Electron Lifetime Measurement Biases]{
@@ -177,8 +186,10 @@ The suggestion has been implemented at SBND.
 The study presented here demonstrates a method to measure electron lifetime using a sample of anode-to-cathode crossing cosmic tracks.
 These tracks have the advantage of spanning over a full drift distance and a reconstructable $t_{0}$ time tagging when the particle enters the detector.
 The electron lifetime measured by this method is the most affected by SCE, followed by diffusion, which is consistent with the results from MicroBooNE.
-This procedure has now been replicated in preparation for the calibration run of SBND at the time of writing.
-A trigger requiring coincidence in the east and west CRT wall was deployed to produce dedicated samples containing crossing cosmic muon tracks that can be used for electron lifetime measurement.
+At the time of writing, this procedure has now been replicated in preparation for the calibration run of SBND.
+A trigger requiring coincidence in the east and west CRT wall was deployed to produce dedicated samples containing anode-to-cathode crossing cosmic muon tracks.
+Additionally, a new method of reconstructing $t_0$ time using CRT information only has been developed, applicable for cosmic tracks crossing opposite CRT walls surrounding the TPC.
+This new method will also be studied as part of electron lifetime measurement.  
 
 %********************************** %First Section  **************************************
 
@@ -602,14 +613,6 @@ Combining with the results from Section \ref{sec:impactDeltaRayMag}, this sugges
 \subsection{Recombination Studies from the ICARUS Experiment}
 \label{sec:icarus}
 
-\begin{figure}[bp!]
-\centering 
-\includegraphics[width=0.5\textwidth]{icarus_recomb}
-\caption[Recombination Factor Against Delta Ray Threshold]{
-Recombination factor as a function of the delta ray threshold \cite{icarus_recomb}.
-}
-\label{fig:icarus_recomb}
-\end{figure}
 
 %ICARUS paper and why using 700 $\mu$m
 %Fluctuations of delta rays influence the recombination factor.
@@ -637,12 +640,28 @@ This result has significantly improved the observed charge to energy loss conver
 These results from the ICARUS collaboration have collectively enhanced the understanding of recombination, as well as guided how to model recombination at SBND.
 In the scope of calibrating the SBND detector, it is highly recommended to follow a data-driven approach such that the simulation of delta rays and recombination should be tuned to best match the observed data, as done by earlier experiments like ICARUS and ArgoNeuT.
 
+\begin{figure}[hb!]
+\centering 
+\includegraphics[width=0.5\textwidth]{icarus_recomb}
+\caption[Recombination Factor Against Delta Ray Threshold]{
+Recombination factor as a function of the delta ray threshold \cite{icarus_recomb}.
+}
+\label{fig:icarus_recomb}
+\end{figure}
+
 \section{Concluding Remarks}
 \label{sec:concludeDeltaRay}
 
 Two studies within the scope of calibrating ionisation electron signals were presented. 
 The first study describes a procedure to measure the electron lifetime using anode-to-cathode crossing cosmic muons and quantify biases in the acquired lifetime due to SCE and diffusion. 
-The second study examines the simulation of delta rays and recombination, and how delta ray fluctuations can impact the effective recombination factor and consequently, the charge to energy loss conversion of a particle.
+At the simulated lifetimes of 3 ms (10 ms), SCE was found to introduce a large bias than diffusion in the electron life time measurement, $\sim5~\%$ compared to $\sim2\%$ ($\sim22~\%$ compared to $\sim4\%$).
+This strongly suggests for a need to apply a correction for SCE before performing the electron lifetime measurement. 
+
+The second study based on simulation examines the simulation of delta rays and recombination.
+Since delta rays have a different $dE/dx$ to the primary particle, fluctuations in delta rays can influence the effective recombination factor, consequently, distorting and smearing the energy loss profile of the primary particle.
+The magnitude of the effects was determined to be particle-dependent when comparing between protons and muons.
+Following earlier experiments like ICARUS and ArgoNeuT, it is highly recommended for SBND to tune the simulation of delta rays to best match data.
+
 These studies help understanding how different detector effects and physics processes can impact the charge depositions on wires, which can be pinned down and corrected for.
 This calibration process necessitates high precision measurements, which are essential for any physics analysis at SBND, including the search for HNLs.
 The following Chapter \ref{ChapterSelect} focuses on the selection of HNLs, of which many reconstruction variables describing the energy deposition and topology of a particle relies on having an accurate charge information. 
