@@ -158,31 +158,49 @@ The selection is performed on slices, where slices are accepted or rejected base
 \subsection{Selection Efficiency Definition}
 \label{sec:select_eff}
 
+%\begin{equation}
+%	\label{eq:sig_eff}
+	%\mathrm{Signal\ Efficiency = \frac{Number\ of\ selected\ signal\ slices\ with\ completeness\ >\ 50\ \%}{Number\ of\ signal\ slices\ reconstructed\ as\ neutrinos}}. \\
+%\end{equation}
+%\begin{equation}
+%	\label{eq:bkg_eff}
+%	\mathrm{Background\ Efficiency = \frac{Number\ of\ selected\ background\ slices}{Number\ of\ background\ slices\ reconstructed\ as\ neutrinos}}.
+%\end{equation}
+
+%In the numerator, the requirement of $> 50\%$ completeness implies that at least 50\% of the slice energy must be deposited by a HNL.
+%This prevents double counting so that only well-reconstructed signal slices are considered.
+%In the denominator, the requirement for slices to be reconstructed as neutrinos is embedded by the Pandora workflow.
+%As stated in Section \ref{sec:pandora}, Pandora performs a cosmic rejection to identify cosmic-like and neutrino-like slices, and only neutrino-like slices are fully reconstructed.
+%The Pandora cosmic rejection is also employed as the first cosmic cut detailed in Section \ref{sec:cosmic_pandora}.
+%The denominator describes the starting number of signal slides and the numerator describes the number of selected signal slices.
+%Thus, Eq. \ref{eq:sig_eff} describes the efficiency of signals remained after selection. 
+%
+%On the other hand, the background efficiency is defined as:
+%Here, the background slides comprise both SM neutrino and cosmic slices, that are reconstructed by Pandora as neutrino-like slices.
+%The denominator describes the starting number of background slides and the numerator describes number of selected background slices. 
+%Eq. \ref{eq:bkg_eff} therefore describe the efficiency of background slices being selected as signals.
+%
+%The selection aims for a high background \textit{rejection} without compromising the signal \textit{efficiency}.        
+%This is equivalent to achieving a low background efficiency defined in Eq. \ref{eq:bkg_eff} and a high signal efficiency defined in Eq. \ref{eq:sig_eff}.
+%Both efficiencies are discussed for each cut and included in the legends of the upcoming plots.                                                                                             
+
 For monitoring and quantifying the impacts of selection cuts, selection efficiencies are defined for signals and backgrounds respectively.
-The selection efficiency is defined as:
-\begin{equation}
-	\label{eq:sig_eff}
-	\mathrm{Signal\ Efficiency = \frac{Number\ of\ selected\ signal\ slices\ with\ completeness\ >\ 50\ \%}{Number\ of\ signal\ slices\ reconstructed\ as\ neutrinos}}. \\
-\end{equation}
-In the numerator, the requirement of $> 50\%$ completeness implies that at least 50\% of the slice energy must be deposited by a HNL.
-This prevents double counting so that only well-reconstructed signal slices are considered.
-In the denominator, the requirement for slices to be reconstructed as neutrinos is embedded by the Pandora workflow.
+Selection efficiencies are defined as:
+\begin{coloritemize}
+	\item \textbf{Signal Efficiency}: The fraction of reconstructed signal slices that are selected with completeness ~>~50\%.
+
+	\item \textbf{Background Efficiency}: The fraction of reconstructed background slices that are selected.
+\end{coloritemize}
+
+
+The requirement of reconstructed slices indicates that they are reconstructed as neutrino-like by the Pandora workflow.
 As stated in Section \ref{sec:pandora}, Pandora performs a cosmic rejection to identify cosmic-like and neutrino-like slices, and only neutrino-like slices are fully reconstructed.
 The Pandora cosmic rejection is also employed as the first cosmic cut detailed in Section \ref{sec:cosmic_pandora}.
-The denominator describes the starting number of signal slides and the numerator describes the number of selected signal slices.
-Thus, Eq. \ref{eq:sig_eff} describes the efficiency of signals remained after selection. 
-
-On the other hand, the background efficiency is defined as:
-\begin{equation}
-	\label{eq:bkg_eff}
-	\mathrm{Background\ Efficiency = \frac{Number\ of\ selected\ background\ slices}{Number\ of\ background\ slices\ reconstructed\ as\ neutrinos}}.
-\end{equation}
-Here, the background slides comprise both SM neutrino and cosmic slices, that are reconstructed by Pandora as neutrino-like slices.
-The denominator describes the starting number of background slides and the numerator describes number of selected background slices. 
-Eq. \ref{eq:bkg_eff} therefore describe the efficiency of background slices being selected as signals.
+Additionally for the signal efficiency, the requirement of $> 50\%$ completeness implies that at least 50\% of the slice energy must be deposited by a HNL.
+This prevents double counting so that only well-reconstructed signal slices are considered.
 
 The selection aims for a high background \textit{rejection} without compromising the signal \textit{efficiency}.        
-This is equivalent to achieving a low background efficiency defined in Eq. \ref{eq:bkg_eff} and a high signal efficiency defined in Eq. \ref{eq:sig_eff}.
+This is equivalent to achieving a low background efficiency and a high signal efficiency defined here.
 Both efficiencies are discussed for each cut and included in the legends of the upcoming plots.                                                                                             
 
 \subsection{The Arrival Time Distribution}
@@ -547,7 +565,7 @@ The conversion gap describes the gap between the interaction vertex and the star
 The $dE/dx$ describes the energy loss distribution per unit length, such that the $dE/dx$ of a photon shower is twice that of an electron shower since a photon shower is from pair production.
 Both these shower characteristics are provided during the training of the Razzled BDT for classifying photons and electrons. 
 
-\begin{figure}[b!]
+\begin{figure}[bp!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{razzled_electron_score_prim_shw_precut}
@@ -585,7 +603,7 @@ The distribution of signal and background slices in the phase space of the cut v
 This results in a different signal-to-background ratio across the distribution for each case.
 From this cut onwards, individual cut is examined per case to optimise the efficiency of background rejection and signal selection. 
 
-\begin{figure}[ht!]
+\begin{figure}[b!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{one_shw_track_score}
@@ -610,6 +628,7 @@ From this cut onwards, individual cut is examined per case to optimise the effic
 	}
         \label{fig:track_score_cut}
 \end{figure}
+
 
 The second cut of the HNL shower selection employs the track-shower separation BDT, that outputs a track score to a particle indicating if it is track-like or shower-like (See Section \ref{sec:trkshwbdt}).
 The track score is  examined for the primary shower that deposits the most energy in a slice.  
@@ -638,7 +657,14 @@ Very forward-going HNL showers are likely to overlap and reconstructed as a sing
 The reconstructed charge of the merged HNL shower tends to be much higher than that for SM neutrinos.
 The number of PEs predicted from the reconstructed charge $L_{\mathrm{Q}}$ is therefore likely to be overestimated compared to the number of PEs measured by PMTs $L$.
 
-\begin{figure}[bp!]
+The overestimation is demonstrated in Fig. \ref{fig:opt0_cut}, where it can be seen that HNL slices mainly concentrate in the region $\frac{(L_{\mathrm{Q}} - L)}{L} \geq 0$. 
+The calorimetry cut exploits this feature and is optimised for the single shower as well as the multiple shower case.
+For slices containing a single shower, the requirement on the fraction is between -0.1 and 0.4 to select well-predicted showers with the fraction centred around 0, as well as overestimated showers with the fraction $> 0$. 
+For slices containing multiple showers, the requirement on the fraction is restricted to between 0.04 and 0.3 to select only overestimated showers, rejecting backgrounds more aggressively.
+The arrival time distribution after the cut is shown in Fig. \ref{fig:bb_opt0}, demonstrating the effectiveness of the cut as the background efficiency decreases by a whole order of magnitude from $\mathcal{O}(10^{-3})$ to $\mathcal{O}(10^{-4})$. 
+Meanwhile, the signal selection efficiency only decreases from 43\% to 35\%.
+
+\begin{figure}[hb!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{opt0frac_one_shw_precut}
@@ -663,13 +689,6 @@ The number of PEs predicted from the reconstructed charge $L_{\mathrm{Q}}$ is th
 	}
         \label{fig:opt0_cut}
 \end{figure}
-
-The overestimation is demonstrated in Fig. \ref{fig:opt0_cut}, where it can be seen that HNL slices mainly concentrate in the region $\frac{(L_{\mathrm{Q}} - L)}{L} \geq 0$. 
-The calorimetry cut exploits this feature and is optimised for the single shower as well as the multiple shower case.
-For slices containing a single shower, the requirement on the fraction is between -0.1 and 0.4 to select well-predicted showers with the fraction centred around 0, as well as overestimated showers with the fraction $> 0$. 
-For slices containing multiple showers, the requirement on the fraction is restricted to between 0.04 and 0.3 to select only overestimated showers, rejecting backgrounds more aggressively.
-The arrival time distribution after the cut is shown in Fig. \ref{fig:bb_opt0}, demonstrating the effectiveness of the cut as the background efficiency decreases by a whole order of magnitude from $\mathcal{O}(10^{-3})$ to $\mathcal{O}(10^{-4})$. 
-Meanwhile, the signal selection efficiency only decreases from 43\% to 35\%.
 
 \subsection{Theta Angle Cut}
 \label{sec:theta_cut}
@@ -721,21 +740,13 @@ The signal efficiency of HNL slices only drops from 35\% to 32\%.
 \subsection{Neutral Pion Invariant Mass Cut}
 \label{sec:mass_cut}
 
-\begin{figure}[b!]
-        \centering 
-        \includegraphics[width=0.495\textwidth]{pizero_mass_precut}
-	\caption[Neutral Pion Invariant Mass Cut]{
-	$\pi^0$ invariant mass distribution with the cut applied to the multiple showers case.
-	}
-        \label{fig:mass_cut}
-\end{figure}
-
 The final cut of the HNL shower selection exploits the fact that di-photon showers originate from a $\pi^0$ decay, allowing for the reconstruction of $\pi^0$ invariant mass, $m_{\pi^0}$.
 For slices containing multiple showers, the invariant mass is reconstructed using the reconstructed momenta of any two shower combination in the slice.
 For two massless photon showers with an opening angle $\alpha$ and a total energy $E_1$ and $E_2$ respectively, $m_{\pi^0}$ is computed as:
 \begin{equation}
 	m_{\pi^0} = \sqrt{2 E_1 E_2 \times (1 - \mbox{cos}\alpha)}.
 \end{equation}
+
 For a given slice, the $\pi^0$ invariant mass was reconstructed for all combinations of two showers, and the best mass was considered for the cut.
 The cut is illustrated in Fig. \ref{fig:mass_cut}, where the solid red line indicates the $\pi^0$ mass of 135 MeV.
 A cut is applied to select slices corresponding to a reconstructed invariant mass of 300 MeV or less.
@@ -744,6 +755,14 @@ SM neutrino interactions such as CC $\nu_\mu$, Other NC, Non-FV and dirt as well
 However, poor shower reconstruction can also result in di-photon showers from $\pi^0$ getting mistakenly rejected by this cut, as it is evident that some NC $\pi^0$ interactions and HNL signals are affected.
 This cut reduces both signal and background slices by $< 3 \%$.
 
+\begin{figure}[hb!]
+        \centering 
+        \includegraphics[width=0.495\textwidth]{pizero_mass_precut}
+	\caption[Neutral Pion Invariant Mass Cut]{
+	$\pi^0$ invariant mass distribution with the cut applied to the multiple showers case.
+	}
+        \label{fig:mass_cut}
+\end{figure}
 
 \section{Selection Results}
 \label{sec:select_result}
@@ -819,7 +838,7 @@ The two selections are summarised in Table \ref{table:cut_summary}.
 \end{center}
 \end{table}
 
-\begin{figure}[ht!]
+\begin{figure}[bp!]
 	\hfill
 	\begin{subfigure}[b]{0.495\textwidth}   
             \centering 
@@ -852,16 +871,8 @@ The two selections are summarised in Table \ref{table:cut_summary}.
 	Arrival time distributions after the lenient (left) and stringent cut (right).
 	}
         \label{fig:timing_cut}
-\end{figure}
-
-Fig. \ref{fig:eff} shows the signal and background rejection efficiency cut by cut.
-The signal efficiency, Eq. \ref{eq:sig_eff}, is plotted using the left axis in pink and the background efficiency, Eq. \ref{eq:bkg_eff}, is plotted using the right axis in blue.
-It is important to note that the right axis is in the logarithm scale as the background rejection is very aggressive.
-The band of signal efficiency corresponds to the efficiency across the entire mass range of HNLs from 140 to 260 MeV, with efficiency increasing with masses. 
-The selection differs from the calorimetry cut onwards, where the lenient cut is shown in solid line and the stringent cut is shown in dotted line.
-Overall, the most significant cuts are the muon/proton/pion cut for track removal, followed by the calorimetry and theta angle cut by exploiting the boosted topology of HNLs that significantly reject backgrounds without compromising signal efficiency.
-
-\begin{figure}[ht!]
+%\end{figure}
+%\begin{figure}[ht!]
     \centering 
     \includegraphics[width=1.0\textwidth]{peff_band}
     \caption[Summary of Selection Efficiency.]{
@@ -869,6 +880,13 @@ Overall, the most significant cuts are the muon/proton/pion cut for track remova
 	}
         \label{fig:eff}
 \end{figure}
+
+Fig. \ref{fig:eff} shows the signal and background rejection efficiency cut by cut.
+The signal efficiency is plotted using the left axis in pink and the background efficiency is plotted using the right axis in blue.
+It is important to note that the right axis is in the logarithm scale as the background rejection is very aggressive.
+The band of signal efficiency corresponds to the efficiency across the entire mass range of HNLs from 140 to 260 MeV, with efficiency increasing with masses. 
+The selection differs from the calorimetry cut onwards, where the lenient cut is shown in solid line and the stringent cut is shown in dotted line.
+Overall, the most significant cuts are the muon/proton/pion cut for track removal, followed by the calorimetry and theta angle cut by exploiting the boosted topology of HNLs that significantly reject backgrounds without compromising signal efficiency.
 
 
 %********************************** %First Section  **************************************
@@ -892,7 +910,7 @@ The second one is the time of flight of the photon from the production to the de
     \label{fig:smearing_factors}
 \end{figure}
 
-\begin{figure}[b!]
+\begin{figure}[hb!]
     \centering
     \includegraphics[width=0.75\textwidth]{truth_reco_gaus.png}
     \caption[Arrival Time of SM Neutrinos from True and Reconstructed Variables]{
@@ -978,12 +996,16 @@ Thus, it is also used for determining the sensitivity alongside the reconstructe
 \label{sec:select_conclude}
 
 The selection of HNLs using MC samples is provided in this chapter, as a procedure to identify HNL signals from SM neutrino and cosmic backgrounds.
-Two selection procedures on reconstructed variables are presented, the lenient and stringent cut, with the stringent rejecting backgrounds more aggressively than the lenient.
-Both exploit the highly energetic and forward-going features of HNL showers to achieve an excellent background rejection without compromising signal efficiency.
+The selection exploits the highly energetic and forward-going features of HNL showers to achieve an excellent background rejection without compromising signal efficiency.
+One of the strongest separation variables is reconstructed energies using charge and light information.
+As HNL showers are forward-going, they tend to be reconstructed as a single shower merged from multiple showers, resulting in higher reconstructed energies.
+Another useful variable is the shower angle to the beam direction as HNL showers are very beam-collimated.
+These two key variables provide some guidelines for future work on improving shower reconstruction, specifically on shower energies and topologies.
 
-The resulting background efficiency is $\mathcal{O}(10^{-4})$ while the signal selection efficiency still maintains at 30\%. 
+Two selection procedures on reconstructed variables are presented, the lenient and stringent cut, with the stringent rejecting backgrounds more aggressively than the lenient.
+For both approaches, the resulting background efficiency is $\mathcal{O}(10^{-4})$ while the signal selection efficiency still maintains at $\sim30\%$. 
 When considering only bins at the edge of the arrival time distribution, or the so-called \textit{timing cut}, the background efficiency decreases significantly by two orders of magnitude to $\mathcal{O}(10^{-6})$.
-Meanwhile, the signal efficiency only decreases from 30\% to 10\%. 
+Meanwhile, the signal efficiency only decreases from $\sim30\%$ to $\sim10\%$. 
 This demonstrates that these edge bins contain an exceptional signal-to-background ratio, which is the main factor driving the sensitivity.
 
 Furthermore, a study was motivated to explore the impact on sensitivity if a better timing reconstruction is achieved.

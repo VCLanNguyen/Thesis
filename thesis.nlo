@@ -64,14 +64,4 @@
 \nomenclatureentry{TDC\boldvio{TDC}@[{\boldvio{TDC}}]\begingroup Time to Digital Converter\nomeqref {0}|nompageref}{xxii}
 \nomenclatureentry{FMC\boldvio{FMC}@[{\boldvio{FMC}}]\begingroup Field programmable gate arrays Mezzanine Card\nomeqref {0}|nompageref}{xxii}
 \nomenclatureentry{NTP\boldvio{NTP}@[{\boldvio{NTP}}]\begingroup Network Time Protocol\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{UTC\boldvio{UTC}@[{\boldvio{UTC}}]\begingroup International Atomic Time\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{TAI\boldvio{TAI}@[{\boldvio{TAI}}]\begingroup Coordinated Universal Time\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{CERN\boldvio{CERN}@[{\boldvio{CERN}}]\begingroup European Organisation for Nuclear Research\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{CV\boldvio{CV}@[{\boldvio{CV}}]\begingroup Central Value\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{KE\boldvio{KE}@[{\boldvio{KE}}]\begingroup Kinetic Energy\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{AV\boldvio{AV}@[{\boldvio{AV}}]\begingroup Active Volume\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{FV\boldvio{FV}@[{\boldvio{FV}}]\begingroup Fiducial Volume\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{QCD\boldvio{QCD}@[{\boldvio{QCD}}]\begingroup Quantum Chromodynamics\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{ModBox\boldvio{ModBox}@[{\boldvio{ModBox}}]\begingroup Modified Box\nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{\boldvio{}@[{\boldvio{}}]\begingroup \nomeqref {0}|nompageref}{xxii}
-\nomenclatureentry{\boldvio{}@[{\boldvio{}}]\begingroup \nomeqref {0}|nompageref}{xxii}
+\nomenclatureentry{UTC\boldvio{UTC}@[{\boldv
