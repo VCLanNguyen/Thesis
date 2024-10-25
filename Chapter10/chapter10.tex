@@ -740,13 +740,14 @@ The limits acquired from the smeared true distribution, as shown by the green li
 The limits are projected to exclude a new region beyond the existing limits from the MicroBooNE, E949 and NA62 experiments.
 This demonstrates the potential of the physics capability of SBND, under the assumption of an exposure of $1 \times 10^{21}$ POT and an exceptional timing reconstruction with a resolution of 1.73 ns.
 The POT exposure presented here is equivalent to 3 years of physics data taking, which allows for a lot of time and opportunities to work on improving the timing reconstruction of SBND to achieve the target resolution from the time of writing.
+In comparison to the future DUNE experiment \cite{HNLSilvia}, DUNE is projected to have statistics to set upper limits surpassing SBND and nearly all existing limits in this mass range.
 
-\begin{figure}[htb!]
+\begin{figure}[b!]
     \centering
     \includegraphics[width=\textwidth]{sensitivity}
     \caption[Comparison Between SBND Expected Limits and Existing Limits]{
-    Upper limits on the coupling $|U_{\mu4}|^{2}$ at the 90\% confidence level for Majorana HNLs in the mass range of $0 < m_{N} < 265$ MeV.
-SBND expected limits are compared with existing experimental results, including SIN \cite{SIN3}, PIENU \cite{PIENU}, MicroBooNE \cite{uboone1, uboone2, uboone3}, KEK E89 \cite{KEK2}, KEK E89/E104 \cite{KEK3}, PS191 \cite{PS191C}, E949 \cite{E949}, NA62 \cite{NA62B}, NuTeV \cite{NuTeV} and T2K \cite{t2k}.
+Upper limits on the coupling $|U_{\mu4}|^{2}$ at the 90\% confidence level for Majorana HNLs in the mass range of $0 < m_{N} < 265$ MeV.
+SBND expected limits are compared with existing experimental results, including SIN \cite{SIN3}, PIENU \cite{PIENU}, MicroBooNE \cite{uboone1, uboone2, uboone3}, KEK E89 \cite{KEK2}, KEK E89/E104 \cite{KEK3}, PS191 \cite{PS191C}, E949 \cite{E949}, NA62 \cite{NA62B}, NuTeV \cite{NuTeV}, T2K \cite{t2k} and expected results from DUNE \cite{HNLSilvia}.
 }
 \label{fig:sensitivity}
 \end{figure}
@@ -759,7 +760,14 @@ Three expected upper limits on the coupling $|U_{\mu4}|^2$ of Majorana HNLs are 
 The limits from the lenient and stringent arrival time distribution demonstrate the current performance of SBND, which is currently comparable to existing experimental limits.
 The limits from the smeared true distribution are the most competitive that can probe region not yet explored by other experiments.
 These limits also demonstrate the potential that SBND can achieve if the timing reconstruction is improved with a better resolution.
-Although ambitious, this goal is within reach in the next couple of years given the ongoing work towards a nanosecond timing resolution at SBND, one of which was presented in Chapter \ref{ChapterDAQ} and many more to be expected in the near future.
- 
 
+The first iteration of this analysis provides some guidelines applicable to future work in the next couple of years to further the search for HNLs at SBND.
+Detector systematics should be included in uncertainty propagation, with parameters that are impactful to physics measurements identified when SBND is operational.
+Secondly, due to the aggressive background rejection, the analysis should be performed on larger background MC samples, $\mathcal{O}$(10$^6$ events) compared to the present $\mathcal{O}$(10$^5$ events), to avoid statistical fluctuations.
+Moreover, improving the shower reconstructions will enable better identification of the boosted features of HNL showers, including high energy profiles and forward-going angles.
+Finally, developing a more sophisticated method incorporating the extra timing information of beam arrival and trigger signals can further improve the resolution of the timing reconstruction.
+These improvements will benefit not only the HNL analysis but any other analysis that exploits the Gaussian tails of the beam bucket to either look for a new signal or reject cosmic backgrounds.
 
+%Although ambitious, this goal is within reach in the next couple of years given the ongoing work towards a nanosecond timing resolution at SBND, one of which was presented in Chapter \ref{ChapterDAQ} and many more to be expected in the near future.
+%Finally, the results of the smeared true distribution also motivate the need for a resolution improvement when reconstructing the arrival time distribution.
+%The preparation work towards the nanosecond resolution has already begun with the DAQ readout electronics and the implementation of the SPEC-TDC for high precision timestamping.  
