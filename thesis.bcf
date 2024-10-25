@@ -2572,9 +2572,11 @@
     <bcf:citekey order="333">NA62A</bcf:citekey>
     <bcf:citekey order="333">NA62B</bcf:citekey>
     <bcf:citekey order="334">E949</bcf:citekey>
-    <bcf:citekey order="335">ptb_gvs</bcf:citekey>
+    <bcf:citekey order="335">HNLSilvia</bcf:citekey>
+    <bcf:citekey order="335">HNLPresentFuture</bcf:citekey>
     <bcf:citekey order="336">ptb_gvs</bcf:citekey>
-    <bcf:citekey order="337">artdaq_note</bcf:citekey>
+    <bcf:citekey order="337">ptb_gvs</bcf:citekey>
+    <bcf:citekey order="338">artdaq_note</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
