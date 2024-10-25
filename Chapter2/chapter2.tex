@@ -16,8 +16,8 @@
 
 The Standard Model (SM) of particle physics is a successful theory describing the fundamental particles and the forces that govern them.
 Neutrinos are the neutral particles of the lepton family, only interacting via weak and gravitational forces.
-The mixing between the flavour and mass eigenstates of neutrinos leads to neutrino oscillations.
-This is the key evidence suggesting that neutrinos have mass, a phenomenon that the SM cannot currently explain.
+Observations of neutrino flavour oscillations arise from the mixing between the flavour and mass neutrino eigenstates, implying that neutrinos have mass. 
+However, the mass generation of neutrinos remains a phenomenon that cannot be explained the SM.
 
 The mass generation of neutrinos motivates a new neutrino state.
 If the new state is right-handed, the Dirac mass term can be constructed via the Higgs mechanism.
@@ -38,17 +38,20 @@ Finally, Section \ref{sec2conclude} provides some concluding remarks.
 \section{Motivation of Heavy Neutral Leptons}
 \label{sec2Overview}
 
-%Motivation for HNL theory: neutrino oscillation -> right handed Dirac mass term
-%The first hints of neutrino oscillation emerged in 1968, when an anomaly in solar neutrino was observed by Davis et al. in the Homestake experiment \cite{Homestake}.
-%Subsequent reinforcing results quickly came from Kamiokande \cite{Kamiokande}, SAGE \cite{SAGE} and GALLEX \cite{GALLEX} experiments.
-%It was not until 1998 that neutrino oscillation was conclusively measured by the Super Kamiokande collaboration \cite{superK}, followed by confirmation from the SNO collaboration in 2001 \cite{SNO}. 
-
-%However, the Standard Model (SM) is incomplete, and currently provides no mass generation for the neutrinos.
-%SM neutrinos interact weakly, indicating the existence of left-handed chiral neutrino fields, but their right-handed counterparts still remain absent. 
-
 The phenomenon of three-flavour neutrino oscillation is well-established.
-Active neutrinos are produced and detected as their flavour states $\nu_\mu$, $\nu_e$ and $\nu_\tau$.
-Neutrino oscillations describe the neutrino flavour states changing from one flavour to another as the neutrinos propagate across a distance, thereby directly implying the existence of non-zero mass for at least two out of the three neutrino states.
+Neutrinos are produced and detected as their flavour eigenstates $\nu_\mu$, $\nu_e$, $\nu_\tau$, where the flavour eigenstate is a linear combination of mass eigenstates $\nu_1$, $\nu_2$, $\nu_3$.
+Neutrino oscillations are a consequence of the mixing between the flavour and mass eigenstates \cite{Thomson}.
+The mass eigenstate dictates the propagation of neutrinos in space and time.
+Over a propagation distance, each mass eigenstate evolves at a different rate due to their momenta differences, resulting in a different composition of mass eigenstates, and consequently, a different flavour eigenstate.
+
+The three-flavour oscillations can be alternatively approximated to two-flavour oscillations, involving only two flavour eigenstates and two mass eigenstates.
+In this simplified model, the probability of detecting the neutrino flavour $\nu_{\alpha}$ as another neutrino flavour $\nu_{\beta}$ with energy $E$ after travelling a distance $L$ is as follows \cite{Thomson}:
+\begin{equation}
+        P\left(\nu_{\alpha} \rightarrow \nu_{\beta}\right) = \mathrm{sin}^2(2\theta) \mathrm{sin}^2 \left( \frac{\Delta m^2 L}{4E} \right),
+\end{equation}
+where $\theta$ is the mixing angle describing how different the flavour eigenstate is to the mass eigenstate and $\Delta m^2$ is the mass squared difference of the two mass eigenstates.
+For neutrino oscillations to occur,  $\Delta m^2$ must be non-zero, directly implying that neutrinos must have mass.
+In the context of the three-flavour oscillations, this requires the existence of non-zero mass for at least two out of the three neutrino eigenstates.
 Whilst the SM of particle physics has proved extremely successful, unfortunately, it currently provides no mechanism for the mass generation of neutrinos.
 The absence of a right-handed chiral partner to the left-handed chiral neutrino means that no Dirac mass term can be built via the Yukawa coupling of the Higgs to the opposite chirality fields.
 
@@ -222,9 +225,9 @@ On the other hand, the kinematic factor of $K^+ \rightarrow N \mu^+ $ only peaks
 
 %The kinematic factor $\rho_{N}$ from Eq. \ref{eq:KinematicsFactor}, which also accounts for this enhancement, is plotted against the mass of HNLs in Fig. \ref{fig:KinematicsFactor}.
 
-\begin{figure}[t] 
+\begin{figure}[ht] 
 \centering    
-\includegraphics[width=1.0\textwidth]{kinematics_factor}
+\includegraphics[width=0.85\textwidth]{kinematics_factor}
 \caption[Kinematic Factor of Heavy Neutral Leptons]{
 Kinematic factor of the HNL production from meson decays that are probable from the BNB.
 %as compared to the analogous SM neutrino production.
@@ -285,7 +288,7 @@ Finally, both channels $N\rightarrow \nu \mu^{-}e^{+}$ and $N\rightarrow \nu \mu
 
 \begin{figure}[ht!] 
 \centering    
-\includegraphics[width=1.0\textwidth]{branching_ratio}
+\includegraphics[width=0.85\textwidth]{branching_ratio}
 \caption[Branching Ratio of Heavy Neutral Leptons]
 {
 Branching ratios of probable decay channels of an HNL produced from the BNB, with the $U_{\mu4}$ ($U_{e4}$) coupling plotted as solid (dashed) lines.

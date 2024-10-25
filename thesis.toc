@@ -7,7 +7,7 @@
 \contentsline {chapter}{\numberline {2}Heavy Neutral Leptons}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Motivation of Heavy Neutral Leptons}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Production of Heavy Neutral Leptons}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Decay Channels of Heavy Neutral Leptons}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Decay Channels of Heavy Neutral Leptons}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Previous Searches For Heavy Neutral Leptons}{12}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Peak Searches}{13}{subsection.2.4.1}%
 \contentsline {subsubsection}{Pion Decay Spectrum Peak Searches}{13}{section*.12}%

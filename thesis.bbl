@@ -2005,8 +2005,8 @@
       \strng{authorbibnamehash}{aaadf7ff4ae686b63f5713ce905b654c}
       \strng{authornamehash}{aaadf7ff4ae686b63f5713ce905b654c}
       \strng{authorfullhash}{aaadf7ff4ae686b63f5713ce905b654c}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nuovo Cim.}
@@ -2850,8 +2850,8 @@
       \strng{authorbibnamehash}{72b4bb8e20dfa65a975528ed4f1b48bd}
       \strng{authornamehash}{72b4bb8e20dfa65a975528ed4f1b48bd}
       \strng{authorfullhash}{0875365ff61182adf46522c99127de41}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{JPhysG}
@@ -3633,8 +3633,8 @@
       \strng{authorbibnamehash}{d9b163f9962aa8427d79540147979b0b}
       \strng{authornamehash}{d9b163f9962aa8427d79540147979b0b}
       \strng{authorfullhash}{d9b163f9962aa8427d79540147979b0b}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{E949}
@@ -3671,8 +3671,8 @@
       \strng{authornamehash}{fcc004d8313205fb67f18d8a3712ecbb}
       \strng{authorfullhash}{fcc004d8313205fb67f18d8a3712ecbb}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{NA62}
@@ -3708,8 +3708,8 @@
       \strng{authornamehash}{fcc004d8313205fb67f18d8a3712ecbb}
       \strng{authorfullhash}{fcc004d8313205fb67f18d8a3712ecbb}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{NA62}
@@ -4210,8 +4210,8 @@
       \strng{authorbibnamehash}{ef72813d65a25e2225225cb44781da92}
       \strng{authornamehash}{ef72813d65a25e2225225cb44781da92}
       \strng{authorfullhash}{ef72813d65a25e2225225cb44781da92}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{CERN-EP-INT-77-8}
@@ -5669,8 +5669,8 @@
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{2ba87cf330a684a777011657033fd39c}
       \field{extraname}{3}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{MicroBooNE,}
@@ -7148,8 +7148,8 @@
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{2ba87cf330a684a777011657033fd39c}
       \field{extraname}{4}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{MicroBooNE}
@@ -7846,8 +7846,8 @@
       \strng{authornamehash}{2ba87cf330a684a777011657033fd39c}
       \strng{authorfullhash}{a66f8987273641594b5e08a2b9e152c0}
       \field{extraname}{5}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{JINST}
@@ -18018,8 +18018,8 @@
       \strng{authornamehash}{99a9e03bda6b405f4cbab04cf2556813}
       \strng{authorfullhash}{99a9e03bda6b405f4cbab04cf2556813}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{GENIE}
