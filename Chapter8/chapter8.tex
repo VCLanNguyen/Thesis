@@ -474,20 +474,7 @@ The magnitude of the distortion is more significant for muons than protons.
 Delta rays affect not only the magnitude of the recombination factor but also its smearing, and consequently, the smearing of the charge to energy loss conversion.
 To disentangle how Geant4 handles the smearing due to delta rays, an additional study was carried out in which the energy deposition of the primary particle was isolated from delta rays. 
 
-Fig. \ref{fig:proton_derr} shows the simulated $dE/dx$ of the primary proton as a function of its residual range, compared against the Landau-Vavilov distribution \cite{Passage}.
-Energy loss due to delta rays is included in the top two plots, Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1}, for the delta thresholds of 700 $\mu$m and 1 $\mu$m.
-Meanwhile, the bottom two plots, Fig. \ref{fig:derr_proton_only_700} and Fig. \ref{fig:derr_proton_only_1}, only include the energy loss of the primary proton and do not account for the energy loss of delta rays.
-The same set of plots for the case of muons are also shown in Fig. \ref{fig:mu_derr}.
-
-When delta rays are included in the energy loss, the $dE/dx$ distribution agrees with the Landau-Vavilov distribution with some smearing in $dE/dx$ across all residual range bins.
-The energy distributions are indistinguishable between the delta ray threshold of 700 $\mu$m and 1 $\mu$m.
-This can be seen for both protons, comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1}, and muons, comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_delta_1}. 
-This is expected since the total energy loss of the primary particle and the delta rays must stay the same regardless of the delta ray threshold.
-Moreover, comparing the protons and muons, including delta rays in the total energy loss introduces greater smearing in the $dE/dx$ distribution for muons than protons.
-
-%As stated previously, the secondary production threshold changes how much the energy loss is shared between the primary particle and the associated delta rays.
-%This is evident when considering only the energy deposition of from the primary particle. 
-\begin{figure}[t!]
+\begin{figure}[b!]
         \begin{subfigure}[b]{0.495\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{derr_proton_delta_700um}
@@ -520,18 +507,16 @@ Moreover, comparing the protons and muons, including delta rays in the total ene
         \label{fig:proton_derr}
 \end{figure}
 
-When delta rays are excluded in the energy loss, some noticeable effects can be seen. 
-At the threshold at 700 $\mu$m, the $dE/dx$ distribution of only the primary particle but no delta rays still follows closely the Landau-Vavilov distribution, similarly to that containing both the primary particle and delta ray energy loss.
-This can be seen comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_only_700} for protons, and comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_only_700} for muons. 
-However, less smearing in $dE/dx$ is observed when delta rays are excluded in the energy loss, especially visible in Fig. \ref{fig:derr_mu_only_700} for muons.
-At this configuration, the majority of the energy loss is carried away by the primary particle, and Geant4 already accounts for delta ray fluctuations when sampling its mean energy loss \cite{geant4}.
-Introducing energy loss by delta rays only adds some additional smearing to the total $dE/dx$ distribution.
+Fig. \ref{fig:proton_derr} shows the simulated $dE/dx$ of the primary proton as a function of its residual range, compared against the Landau-Vavilov distribution \cite{Passage}.
+The total energy loss including both the primary proton and delta rays are shown in the top two plots, Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1} for the delta thresholds of 700 $\mu$m and 1 $\mu$m.
+In the bottom two plots, Fig. \ref{fig:derr_proton_only_700} and Fig. \ref{fig:derr_proton_only_1}, the energy loss of delta rays are subtracted from the total energy loss, showing only energy loss of the primary proton.
+The same set of plots for the case of muons are also shown in Fig. \ref{fig:mu_derr}.
 
-On the other hand, when the delta ray threshold is set to 1 $\mu$m and no delta rays are considered, the $dE/dx$ distribution of only the primary particle becomes narrow without any smearing and fails to follow the Landau-Vavilov distribution.
-This can be seen in Fig. \ref{fig:derr_proton_only_1} for protons and Fig. \ref{fig:derr_mu_only_1} for muons. 
-Isolating only the energy deposition of the primary particle is equivalent to observing a \textit{bare} proton or muon track without any delta rays produced along its path, which has not been experimentally measured before.
-In this case, the stopping power distribution of the primary particle is computed by Geant4 using interpolation instead of using data-based parametrisation \cite{geant4}.
-This potentially leads to inaccuracy in simulating the energy loss due to ionisation.
+When delta rays are included in the total energy loss, the $dE/dx$ distribution agrees with the Landau-Vavilov distribution with some smearing in $dE/dx$ across all residual range bins.
+The energy distributions are indistinguishable between the delta ray threshold of 700 $\mu$m and 1 $\mu$m.
+This can be seen for both protons, comparing Fig. \ref{fig:derr_proton_delta_700} and Fig. \ref{fig:derr_proton_delta_1}, and muons, comparing Fig. \ref{fig:derr_mu_delta_700} and \ref{fig:derr_mu_delta_1}. 
+This is expected since the total energy loss of the primary particle and the delta rays must stay the same regardless of the delta ray threshold.
+Moreover, comparing the protons and muons, including delta rays in the total energy loss introduces greater smearing in the $dE/dx$ distribution for muons than protons.
 
 \begin{figure}[t!]
         \begin{subfigure}[b]{0.495\textwidth}   
@@ -565,6 +550,20 @@ This potentially leads to inaccuracy in simulating the energy loss due to ionisa
 	}
         \label{fig:mu_derr}
 \end{figure}
+%As stated previously, the secondary production threshold changes how much the energy loss is shared between the primary particle and the associated delta rays.
+%This is evident when considering only the energy deposition of from the primary particle. 
+
+When delta rays are excluded from the total energy loss, the $dE/dx$ distribution shows only the energy loss of the primary particle but no delta rays. 
+At the threshold at 700 $\mu$m, the $dE/dx$ distribution still follows closely the Landau-Vavilov distribution as can be seen in Fig. \ref{fig:derr_proton_only_700} for protons and  Fig. \ref{fig:derr_mu_only_700} for muons.
+However in this case, less smearing in $dE/dx$ is observed when compared against the $dE/dx$ distribution of the total energy loss.
+At this configuration, the majority of the energy loss is carried away by the primary particle, and Geant4 already accounts for delta ray fluctuations when sampling its mean energy loss \cite{geant4}.
+Introducing energy loss of delta rays only adds some additional smearing to the total $dE/dx$ distribution.
+
+On the other hand, when the delta ray threshold is set to 1 $\mu$m and the energy loss of delta rays is excluded, the $dE/dx$ distribution of only the primary particle becomes narrow without any smearing and fails to follow the Landau-Vavilov distribution.
+This can be seen in Fig. \ref{fig:derr_proton_only_1} for protons and Fig. \ref{fig:derr_mu_only_1} for muons. 
+Isolating only the energy deposition of the primary particle is equivalent to observing a \textit{bare} proton or muon track without any delta rays produced along its path, which has not been experimentally measured before.
+In this case, the stopping power distribution of the primary particle is computed by Geant4 using interpolation instead of using data-based parametrisation \cite{geant4}.
+This potentially leads to inaccuracy in simulating the energy loss due to ionisation.
 
 This study demonstrates another effect of delta ray fluctuations on recombination.
 Having a different $dE/dx$ to the primary particle also means that delta rays can smear the observed charge to energy loss conversion.
