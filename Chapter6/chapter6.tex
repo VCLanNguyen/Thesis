@@ -195,10 +195,12 @@ There are three variables: (1) halo-total ratio, (2) concentration and (3) conic
 The diagrams depict the hit distribution of a particle, where each circle represents a hit associated with a charge value and the star represents the vertex of the hit cluster.
 The illustration is in 2D for simplicity, however the variables are computed in 3D.
 
-The first variable is the halo-total ratio, illustrated in Fig. \ref{fig:halototalratio}.
-The Moliere radius in liquid argon is 10 cm, defined such that average 90\% of a cylindrical energy deposition is contained within this radius \cite{Passage}.
-The region outside the Moliere radius is considered the halo region.
-The hits in the halo are shown as green circles whereas any other hits are shown as grey circles.
+The first variable is the halo-total ratio.
+The halo region is defined as outside the Molière radius, which is a characteristic constant of a material.
+It is defined as the radius of a cylinder containing on average 90\% of energy deposition from an electromagnetic shower.
+For liquid argon, the Molière radius is 10 cm \cite{Passage}.
+No additional tuning was applied to modify the radius.
+As illustrated in Fig. \ref{fig:halototalratio}, the hits in the halo region are shown as green circles whereas any other hits are shown as grey circles.
 The halo-total ratio is then defined as:
 \begin{equation}
 	\mathrm{Halo\ - Total\ Ratio = \frac{Charges\ in\ the\ Halo}{Total\ Charges}}.

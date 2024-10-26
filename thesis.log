@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  26 OCT 2024 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.14)  26 OCT 2024 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2079,73 +2079,73 @@ Package pdftex.def Info: Chapter6/Figs/gaushit.png  used on input line 137.
 <Chapter6/Figs/HaloTotalRatio.png, id=2028, 894.34125pt x 625.33624pt>
 File: Chapter6/Figs/HaloTotalRatio.png Graphic file (type png)
 <use Chapter6/Figs/HaloTotalRatio.png>
-Package pdftex.def Info: Chapter6/Figs/HaloTotalRatio.png  used on input line 225.
+Package pdftex.def Info: Chapter6/Figs/HaloTotalRatio.png  used on input line 227.
 (pdftex.def)             Requested size: 216.5411pt x 151.41008pt.
 <Chapter6/Figs/Concentration.png, id=2029, 898.35625pt x 617.30624pt>
 File: Chapter6/Figs/Concentration.png Graphic file (type png)
 <use Chapter6/Figs/Concentration.png>
-Package pdftex.def Info: Chapter6/Figs/Concentration.png  used on input line 232.
+Package pdftex.def Info: Chapter6/Figs/Concentration.png  used on input line 234.
 (pdftex.def)             Requested size: 216.5411pt x 148.79703pt.
 <Chapter6/Figs/Conicalness.png, id=2030, 900.36375pt x 610.28pt>
 File: Chapter6/Figs/Conicalness.png Graphic file (type png)
 <use Chapter6/Figs/Conicalness.png>
-Package pdftex.def Info: Chapter6/Figs/Conicalness.png  used on input line 239.
+Package pdftex.def Info: Chapter6/Figs/Conicalness.png  used on input line 241.
 (pdftex.def)             Requested size: 216.5411pt x 146.76817pt.
-<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=2032, 433.62pt x 289.08pt>
+ [75 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
+<Chapter6/Figs/Feature_Halo_Total_Ratio.png, id=2041, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Halo_Total_Ratio.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Halo_Total_Ratio.png>
-Package pdftex.def Info: Chapter6/Figs/Feature_Halo_Total_Ratio.png  used on input line 259.
+Package pdftex.def Info: Chapter6/Figs/Feature_Halo_Total_Ratio.png  used on input line 261.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Concentration.png, id=2033, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Concentration.png, id=2042, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Concentration.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Concentration.png>
-Package pdftex.def Info: Chapter6/Figs/Feature_Concentration.png  used on input line 265.
+Package pdftex.def Info: Chapter6/Figs/Feature_Concentration.png  used on input line 267.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Conicalness.png, id=2034, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Conicalness.png, id=2043, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Conicalness.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Conicalness.png>
-Package pdftex.def Info: Chapter6/Figs/Feature_Conicalness.png  used on input line 271.
+Package pdftex.def Info: Chapter6/Figs/Feature_Conicalness.png  used on input line 273.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
-<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=2035, 433.62pt x 289.08pt>
+<Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png, id=2044, 433.62pt x 289.08pt>
 File: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png Graphic file (type png)
 <use Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>
-Package pdftex.def Info: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png  used on input line 277.
+Package pdftex.def Info: Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png  used on input line 279.
 (pdftex.def)             Requested size: 196.85616pt x 131.23605pt.
- [75 <./Chapter6/Figs/HaloTotalRatio.png> <./Chapter6/Figs/Concentration.png> <./Chapter6/Figs/Conicalness.png>]
 <Chapter6/Figs/bdt_score_trk_shw.png, id=2049, 900.36375pt x 572.1375pt>
 File: Chapter6/Figs/bdt_score_trk_shw.png Graphic file (type png)
 <use Chapter6/Figs/bdt_score_trk_shw.png>
-Package pdftex.def Info: Chapter6/Figs/bdt_score_trk_shw.png  used on input line 299.
+Package pdftex.def Info: Chapter6/Figs/bdt_score_trk_shw.png  used on input line 301.
 (pdftex.def)             Requested size: 216.5411pt x 137.59515pt.
 <Chapter6/Figs/bdt_score_particle.png, id=2050, 900.36375pt x 574.145pt>
 File: Chapter6/Figs/bdt_score_particle.png Graphic file (type png)
 <use Chapter6/Figs/bdt_score_particle.png>
-Package pdftex.def Info: Chapter6/Figs/bdt_score_particle.png  used on input line 305.
+Package pdftex.def Info: Chapter6/Figs/bdt_score_particle.png  used on input line 307.
 (pdftex.def)             Requested size: 216.5411pt x 138.07796pt.
  [76 <./Chapter6/Figs/Feature_Halo_Total_Ratio.png> <./Chapter6/Figs/Feature_Concentration.png> <./Chapter6/Figs/Feature_Conicalness.png> <./Chapter6/Figs/Feature_Number_Of_Daughter_Hits.png>] [77 <./Chapter6/Figs/bdt_score_trk_shw.png> <./Chapter6/Figs/bdt_score_particle.png>]
 <Chapter6/Figs/pds_reco_deconvolution.pdf, id=2071, 646.69699pt x 492.56131pt>
 File: Chapter6/Figs/pds_reco_deconvolution.pdf Graphic file (type pdf)
 <use Chapter6/Figs/pds_reco_deconvolution.pdf>
-Package pdftex.def Info: Chapter6/Figs/pds_reco_deconvolution.pdf  used on input line 350.
+Package pdftex.def Info: Chapter6/Figs/pds_reco_deconvolution.pdf  used on input line 352.
 (pdftex.def)             Requested size: 258.10045pt x 196.58511pt.
 <Chapter6/Figs/pds_reco_hit_finding.png, id=2072, 515.9275pt x 431.6125pt>
 File: Chapter6/Figs/pds_reco_hit_finding.png Graphic file (type png)
 <use Chapter6/Figs/pds_reco_hit_finding.png>
-Package pdftex.def Info: Chapter6/Figs/pds_reco_hit_finding.png  used on input line 357.
+Package pdftex.def Info: Chapter6/Figs/pds_reco_hit_finding.png  used on input line 359.
 (pdftex.def)             Requested size: 174.98177pt x 146.38408pt.
  [78 <./Chapter6/Figs/pds_reco_deconvolution.pdf> <./Chapter6/Figs/pds_reco_hit_finding.png>]
 <Chapter6/Figs/light_yield_sim.png, id=2130, 455.7025pt x 305.14pt>
 File: Chapter6/Figs/light_yield_sim.png Graphic file (type png)
 <use Chapter6/Figs/light_yield_sim.png>
-Package pdftex.def Info: Chapter6/Figs/light_yield_sim.png  used on input line 398.
+Package pdftex.def Info: Chapter6/Figs/light_yield_sim.png  used on input line 400.
 (pdftex.def)             Requested size: 242.7877pt x 162.57547pt.
 <Chapter6/Figs/light_reco_err.png, id=2131, 312.16624pt x 252.945pt>
 File: Chapter6/Figs/light_reco_err.png Graphic file (type png)
 <use Chapter6/Figs/light_reco_err.png>
-Package pdftex.def Info: Chapter6/Figs/light_reco_err.png  used on input line 405.
+Package pdftex.def Info: Chapter6/Figs/light_reco_err.png  used on input line 407.
 (pdftex.def)             Requested size: 194.6734pt x 157.74286pt.
 
-Overfull \hbox (1.88399pt too wide) in paragraph at lines 396--411
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 398--413
 [][]  [] 
  []
 
@@ -3121,7 +3121,7 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,15n,109p,989b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (224 pages, 24949629 bytes).
+Output written on thesis.pdf (224 pages, 24949874 bytes).
 PDF statistics:
  3775 PDF objects out of 4296 (max. 8388607)
  3045 compressed objects within 31 object streams
