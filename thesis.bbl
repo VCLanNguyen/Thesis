@@ -14611,6 +14611,46 @@
       \field{type}{phdthesis}
       \field{year}{2022}
     \endentry
+    \entry{TPBresponse}{article}{}
+      \name{author}{1}{}{%
+        {{hash=23145b984aab9777175bbabfaa61d8ea}{%
+           family={Segreto},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{23145b984aab9777175bbabfaa61d8ea}
+      \strng{fullhash}{23145b984aab9777175bbabfaa61d8ea}
+      \strng{bibnamehash}{23145b984aab9777175bbabfaa61d8ea}
+      \strng{authorbibnamehash}{23145b984aab9777175bbabfaa61d8ea}
+      \strng{authornamehash}{23145b984aab9777175bbabfaa61d8ea}
+      \strng{authorfullhash}{23145b984aab9777175bbabfaa61d8ea}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev. C}
+      \field{month}{3}
+      \field{title}{Evidence of delayed light emission of tetraphenyl-butadiene excited by liquid-argon scintillation light}
+      \field{volume}{91}
+      \field{year}{2015}
+      \field{pages}{035503}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevC.91.035503
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevC.91.035503
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevC.91.035503
+      \endverb
+    \endentry
     \entry{pmt_qe}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -14813,6 +14853,7 @@
       \strng{authorbibnamehash}{23145b984aab9777175bbabfaa61d8ea}
       \strng{authornamehash}{23145b984aab9777175bbabfaa61d8ea}
       \strng{authorfullhash}{23145b984aab9777175bbabfaa61d8ea}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
@@ -17919,8 +17960,8 @@
       \strng{authorbibnamehash}{b243a4742c9719fcde69bdf864b66a53}
       \strng{authornamehash}{3ebbd3d43858c06ec678bbcd7b6a69b7}
       \strng{authorfullhash}{3ebbd3d43858c06ec678bbcd7b6a69b7}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -17951,8 +17992,8 @@
       \strng{authorbibnamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{4}
@@ -17990,8 +18031,8 @@
       \strng{authorbibnamehash}{c0d52af51563b118b00145e14752741d}
       \strng{authornamehash}{c0d52af51563b118b00145e14752741d}
       \strng{authorfullhash}{c0d52af51563b118b00145e14752741d}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Searches for Heavy Neutral Lepton Decays in the MicroBooNE Detector}}

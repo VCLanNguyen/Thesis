@@ -406,13 +406,15 @@ Group velocity (left) and the Rayleigh scattering length (right) as a function o
 Finally, an enhancement method for light collection efficiency in LArTPC is wavelength shifting scintillation photons.
 Specifically at SBND, TetraPhenyl Butadiene (TPB) is employed to shift the wavelength of VUV photon from 128 nm to 430 nm, which falls within the visible light range.
 This is to better match the detection spectrum of optical detectors installed at SBND \cite{sbnd_pds_paper}, of which a description of the SBND PDS is detailed in Section \ref{sec:sbnd_pds}.
+The time delay of TPB emission of visible photons has been been reported to contain several time constants, of which the most dominant constants are 10~ns (60\%) and 49~ns (30\%) and the rests are $\mathcal{O}$(300-3000 ns) \cite{TPBresponse}.
+The direction of emitted photons from TPB is isotropic.
 
 Fig. \ref{fig:vuv_visible} shows the group velocity on the left and the Rayleigh scattering length on the right as a function of the photon wavelength in liquid argon.
 The vertical dashed blue and red lines at 128 and 430 nm respectively are the wavelengths of scintillation photons in liquid argon and of photons re-emitted by TPB wavelength shifting. 
 Here, it can seen that the group velocity of VUV photons is slower than that of visible photons.
 Moreover, the Rayleigh scattering length of VUV photons is two orders of magnitude smaller compared to visible photons.
 This results in VUV photons being more susceptible to Rayleigh scattering and having a higher probability of absorption \cite{PatrickPhD}.
-Differences between the propagation of VUV and visible photons provides extra handles for timing recontruction using the light information, which is further discussed in Section \ref{sec:reco_pds}.
+Differences between the propagation of VUV and visible photons provides extra handles for timing reconstruction using the light information, which is further discussed in Section \ref{sec:reco_pds}.
 
 \section{Detection of Electrons and Photons}
 
@@ -467,25 +469,24 @@ For SBND, the primary PDS detection technology is Photomultiplier Tubes (PMTs), 
 However, PMTs are typically large and require sufficient volume inside the detector for installation. 
 Current and future LArTPC experiments are adopting Silicon PhotoMultipliers (SiPMs) due to their advantageous smaller size, lower power consumption, excellent signal-to-noise ratio, and a high QE of up to 40\% \cite{PatrickPhD, sipm_qe}.
 The X-ARAPUCA device is a novel light collection technology utilising SiPMs, currently developed by Unicamp and being tested at SBND. 
-Further description of X-ARAPUCA can be found in Ref. \cite{xarapuca} and \cite{sbnd_pds_paper}.
+Details of X-ARAPUCA can be found in Ref. \cite{xarapuca} and \cite{sbnd_pds_paper}, while a short description is provided below.
 
-%As shown in Fig. \ref{fig:xarapuca}, it is a light guide designed to trap light through a combination of a wavelength shifter and dichroic filters.
-%The dichroic filter is transparent to a narrow range of wavelengths and reflective otherwise, allowing only photons of specific wavelengths to pass through the filter and preventing their escape.
-%The photons are internally reflected in the trap until they are detected by the SiPMs.
-%The P-Therphenyl layer shifts 128 nm wavelength photons to 350 nm, allowing them to pass through the dichroic filter with a cut-off at 400 nm.
-%The 350 nm photons are trapped inside the reflective cavity until detected by SiPM (right).
-%The wavelength shifter plate converts the photons to 430 nm, trapping them by total internal reflection (left).
-%
-%\begin{figure}[htbp] 
-%\centering    
-%\includegraphics[width=1.0\textwidth]{xarapuca}
-%\caption[xarapuca]{
-%Diagram showing operating principles of a X-ARAPUCA \cite{xarapuca}.
-%\hfill
-%\break
-%}
-%\label{fig:xarapuca}
-%\end{figure}
+X-ARAPUCA is a light guide designed to trap light through a combination of dichroic filters and wavelength shifters.
+The dichroic filter is transparent to a narrow range of wavelengths and reflective otherwise, allowing only photons of specific wavelengths to pass through the filter and preventing their escape.
+Fig. \ref{fig:xarapuca} illustrates a device with dichroic filters for detecting VUV photons with a cut-off at 400~nm.
+The para-terphenyl layer first shifts 128~nm photons to 350~nm, allowing them to pass through the dichroic filter.
+Once the photons are trapped, there are two main mechanisms for detection.
+As shown in the left panel, the wavelength shifter plate converts 350~nm photons to 430~nm, trapping them by total internal reflection until reaching the SiPM.
+As shown in the right panel, 350 nm photons are captured inside the reflective cavity until absorbed or detected.
+
+\begin{figure}[htbp] 
+\centering    
+\includegraphics[width=1.0\textwidth]{xarapuca}
+\caption[X-ARAPUCA Diagram]{
+Diagram illustrating the operating principles of a X-ARAPUCA \cite{xarapuca}.
+}
+\label{fig:xarapuca}
+\end{figure}
 
 Both PMTs and X-ARAPUCAs are coated with wavelength shifting materials.
 The re-emitted light direction is isotropic, causing coated optical detectors to suffer a 50\% reduction in efficiency due to photons being emitted away from the detection surface.

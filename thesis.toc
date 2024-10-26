@@ -26,111 +26,111 @@
 \contentsline {section}{\numberline {3.4}Detection of Electrons and Photons}{32}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Wire Planes}{32}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Photomultiplier Tubes and X-ARAPUCAs}{33}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Concluding Remarks}{34}{section.3.5}%
-\contentsline {chapter}{\numberline {4}The Short-Baseline Near Detector and Booster Neutrino Beam}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Short-Baseline Near Detector Physics Program}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}The Short-Baseline Near Detector}{38}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Time Projection Chamber}{39}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Photon Detection System}{40}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Cosmic Ray Tagger}{42}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Readout Electronics}{43}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Hardware Trigger}{44}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Data Acquisition}{45}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Event Building}{46}{subsection.4.2.7}%
-\contentsline {section}{\numberline {4.3}The Booster Neutrino Beam}{48}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Concluding Remarks}{51}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Simulation Framework of SBND}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview of the Simulation Framework}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}HNL Generator: MeVPrtl}{54}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Standard Model Generators}{59}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Neutrino Generator: GENIE}{59}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Cosmic Generator: CORSIKA}{61}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Particle Propagation and Detector Response Simulation}{62}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Particle Propagation Simulation}{62}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Wire Response Simulation}{62}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Photon Detection System Response Simulation}{63}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Cosmic Ray Tagger Response Simulation}{64}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Concluding Remarks}{64}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Reconstruction Framework of SBND}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview of the Reconstruction Framework}{66}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Time Projection Chamber Reconstruction}{66}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Signal Processing and Hit Finding}{67}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Pandora Pattern Recognition}{68}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Track-Shower Separation Boosted Decision Tree}{69}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Photon Detection System and Cosmic Ray Tagger Reconstruction}{73}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Photon Detection System Reconstruction}{73}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Cosmic Ray Tagger Reconstruction}{75}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}High Level Analysis Tools}{76}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Subsystem Matching}{77}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Cosmic Rejection}{78}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}Particle Identification}{78}{subsection.6.4.3}%
-\contentsline {section}{\numberline {6.5}Concluding Remarks}{79}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Timing Performance of the Data Acquisition System}{81}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Timing Reference System of the Data Acquisition}{81}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Time and Frequency Transfer to Subsystems}{82}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Precise Timestamping}{83}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Timing Performance of Front End Board Modules}{85}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Evaluation of Internal Clock Resolution}{85}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Alternative Timing Reconstruction}{88}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Timing Performance of CAENV1730 Digitisers}{90}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Internal Clock and Timestamp Structure}{90}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Evaluation of Clock Synchronisation}{92}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Clock Jittering Correction}{95}{subsection.7.3.3}%
-\contentsline {section}{\numberline {7.4}Concluding Remarks}{99}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Calibration of Time Projection Chambers}{101}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Electron Lifetime Measurement}{101}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Electron Lifetime Extraction Procedure}{102}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Bias Study of Diffusion and Space Charge Effects}{105}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Delta Ray Fluctuations on Recombination}{107}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Simulation of Delta Rays and Recombination}{108}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{110}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Impacts of Delta Rays on Recombination Smearing}{113}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Recombination Studies from the ICARUS Experiment}{115}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Concluding Remarks}{117}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Selection of Heavy Neutral Leptons}{119}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Selection Introduction}{120}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Signal and Background Definitions}{120}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Description of Monte Carlo Samples}{122}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Selection Efficiency Definition}{123}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}The Arrival Time Distribution}{124}{subsection.9.1.4}%
-\contentsline {section}{\numberline {9.2}Cosmic Background Removal}{125}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Pandora Cosmic Removal}{125}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Beam Spill Cut}{125}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}CRUMBS Cut}{126}{subsection.9.2.3}%
-\contentsline {section}{\numberline {9.3}Neutrino Background Removal}{127}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Fiducial Volume Cut}{127}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Number of Hits Cut}{128}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}Neutrino Track Removal}{129}{subsection.9.3.3}%
-\contentsline {section}{\numberline {9.4}Heavy Neutral Lepton Shower Selection}{131}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Electron Shower Removal}{133}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Track Score Cut}{134}{subsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.4.3}Calorimetry Cut}{135}{subsection.9.4.3}%
-\contentsline {subsection}{\numberline {9.4.4}Theta Angle Cut}{136}{subsection.9.4.4}%
-\contentsline {subsection}{\numberline {9.4.5}Neutral Pion Invariant Mass Cut}{138}{subsection.9.4.5}%
-\contentsline {section}{\numberline {9.5}Selection Results}{138}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Study of Timing Resolution Improvement}{142}{section.9.6}%
-\contentsline {section}{\numberline {9.7}Concluding Remarks}{145}{section.9.7}%
-\contentsline {chapter}{\numberline {10}Limits Predictions for Heavy Neutral Leptons at SBND}{147}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Uncertainty Assessment}{148}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}The Reweighting Method}{148}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Uncertainty Propagation}{150}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Uncertainties of Heavy Neutral Leptons}{150}{subsection.10.1.3}%
-\contentsline {subsection}{\numberline {10.1.4}Uncertainties of Neutrino and Cosmic Backgrounds}{153}{subsection.10.1.4}%
-\contentsline {section}{\numberline {10.2}Limits Setting Procedure}{156}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Hypothesis Definition}{156}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Likelihood-based Test Statistic}{157}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}The CL$_{\mathrm {s}}$ Method}{159}{subsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.2.4}Computing Test Statistic Distributions}{160}{subsection.10.2.4}%
-\contentsline {subsection}{\numberline {10.2.5}Setting the Upper Limits}{160}{subsection.10.2.5}%
-\contentsline {section}{\numberline {10.3}Results}{162}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}Comparison Across Different Arrival Time Distributions}{164}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.3.2}Comparison With Other Experiments}{166}{subsection.10.3.2}%
-\contentsline {section}{\numberline {10.4}Concluding Remarks}{169}{section.10.4}%
-\contentsline {chapter}{\numberline {11}Conclusions}{171}{chapter.11}%
-\contentsline {chapter}{References}{175}{chapter*.106}%
-\contentsline {chapter}{Appendix \numberline {A}Hardware Triggering at SBND}{183}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Data Streaming at SBND}{185}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Timing Distribution at SBND}{187}{appendix.a.C}%
-\contentsline {chapter}{Appendix \numberline {D}Lenient Arrival Time Distributions}{189}{appendix.a.D}%
-\contentsline {chapter}{Appendix \numberline {E}Stringent Arrival Time Distributions}{191}{appendix.a.E}%
-\contentsline {chapter}{Appendix \numberline {F}Smeared True Arrival Time Distributions}{193}{appendix.a.F}%
+\contentsline {section}{\numberline {3.5}Concluding Remarks}{35}{section.3.5}%
+\contentsline {chapter}{\numberline {4}The Short-Baseline Near Detector and Booster Neutrino Beam}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Short-Baseline Near Detector Physics Program}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The Short-Baseline Near Detector}{40}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Time Projection Chamber}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Photon Detection System}{42}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Cosmic Ray Tagger}{44}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Readout Electronics}{45}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Hardware Trigger}{46}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Data Acquisition}{47}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Event Building}{48}{subsection.4.2.7}%
+\contentsline {section}{\numberline {4.3}The Booster Neutrino Beam}{50}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Concluding Remarks}{53}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Simulation Framework of SBND}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview of the Simulation Framework}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}HNL Generator: MeVPrtl}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Standard Model Generators}{61}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Neutrino Generator: GENIE}{61}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Cosmic Generator: CORSIKA}{63}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Particle Propagation and Detector Response Simulation}{64}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Particle Propagation Simulation}{64}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Wire Response Simulation}{64}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Photon Detection System Response Simulation}{65}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Cosmic Ray Tagger Response Simulation}{66}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Concluding Remarks}{66}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Reconstruction Framework of SBND}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview of the Reconstruction Framework}{68}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Time Projection Chamber Reconstruction}{68}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Signal Processing and Hit Finding}{69}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Pandora Pattern Recognition}{70}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Track-Shower Separation Boosted Decision Tree}{71}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Photon Detection System and Cosmic Ray Tagger Reconstruction}{75}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Photon Detection System Reconstruction}{75}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Cosmic Ray Tagger Reconstruction}{77}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}High Level Analysis Tools}{78}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Subsystem Matching}{79}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Cosmic Rejection}{80}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Particle Identification}{80}{subsection.6.4.3}%
+\contentsline {section}{\numberline {6.5}Concluding Remarks}{81}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Timing Performance of the Data Acquisition System}{83}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Timing Reference System of the Data Acquisition}{83}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Time and Frequency Transfer to Subsystems}{84}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Precise Timestamping}{85}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Timing Performance of Front End Board Modules}{87}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Evaluation of Internal Clock Resolution}{87}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Alternative Timing Reconstruction}{90}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Timing Performance of CAENV1730 Digitisers}{92}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Internal Clock and Timestamp Structure}{92}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Evaluation of Clock Synchronisation}{94}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Clock Jittering Correction}{97}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Concluding Remarks}{101}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Calibration of Time Projection Chambers}{103}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Electron Lifetime Measurement}{103}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Electron Lifetime Extraction Procedure}{104}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Bias Study of Diffusion and Space Charge Effects}{107}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Delta Ray Fluctuations on Recombination}{109}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Simulation of Delta Rays and Recombination}{110}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Impacts of Delta Rays on Recombination Magnitude}{112}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Impacts of Delta Rays on Recombination Smearing}{115}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Recombination Studies from the ICARUS Experiment}{117}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}Concluding Remarks}{119}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Selection of Heavy Neutral Leptons}{121}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Selection Introduction}{122}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Signal and Background Definitions}{122}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Description of Monte Carlo Samples}{124}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Selection Efficiency Definition}{125}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}The Arrival Time Distribution}{126}{subsection.9.1.4}%
+\contentsline {section}{\numberline {9.2}Cosmic Background Removal}{127}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Pandora Cosmic Removal}{127}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Beam Spill Cut}{127}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}CRUMBS Cut}{128}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Neutrino Background Removal}{129}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Fiducial Volume Cut}{129}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Number of Hits Cut}{130}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Neutrino Track Removal}{131}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Heavy Neutral Lepton Shower Selection}{133}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Electron Shower Removal}{135}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Track Score Cut}{136}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Calorimetry Cut}{137}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}Theta Angle Cut}{138}{subsection.9.4.4}%
+\contentsline {subsection}{\numberline {9.4.5}Neutral Pion Invariant Mass Cut}{140}{subsection.9.4.5}%
+\contentsline {section}{\numberline {9.5}Selection Results}{140}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Study of Timing Resolution Improvement}{144}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Concluding Remarks}{147}{section.9.7}%
+\contentsline {chapter}{\numberline {10}Limits Predictions for Heavy Neutral Leptons at SBND}{149}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Uncertainty Assessment}{150}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}The Reweighting Method}{150}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Uncertainty Propagation}{152}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Uncertainties of Heavy Neutral Leptons}{152}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Uncertainties of Neutrino and Cosmic Backgrounds}{155}{subsection.10.1.4}%
+\contentsline {section}{\numberline {10.2}Limits Setting Procedure}{158}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Hypothesis Definition}{158}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Likelihood-based Test Statistic}{159}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}The CL$_{\mathrm {s}}$ Method}{161}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}Computing Test Statistic Distributions}{162}{subsection.10.2.4}%
+\contentsline {subsection}{\numberline {10.2.5}Setting the Upper Limits}{162}{subsection.10.2.5}%
+\contentsline {section}{\numberline {10.3}Results}{164}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Comparison Across Different Arrival Time Distributions}{166}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Comparison With Other Experiments}{168}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Concluding Remarks}{171}{section.10.4}%
+\contentsline {chapter}{\numberline {11}Conclusions}{173}{chapter.11}%
+\contentsline {chapter}{References}{177}{chapter*.107}%
+\contentsline {chapter}{Appendix \numberline {A}Hardware Triggering at SBND}{185}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Data Streaming at SBND}{187}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Timing Distribution at SBND}{189}{appendix.a.C}%
+\contentsline {chapter}{Appendix \numberline {D}Lenient Arrival Time Distributions}{191}{appendix.a.D}%
+\contentsline {chapter}{Appendix \numberline {E}Stringent Arrival Time Distributions}{193}{appendix.a.E}%
+\contentsline {chapter}{Appendix \numberline {F}Smeared True Arrival Time Distributions}{195}{appendix.a.F}%

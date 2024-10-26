@@ -524,6 +524,9 @@ INPUT ./Chapter3/Figs/vuv_visible.png
 INPUT Chapter3/Figs/wire_current.png
 INPUT ./Chapter3/Figs/wire_current.png
 INPUT ./Chapter3/Figs/wire_current.png
+INPUT Chapter3/Figs/xarapuca.png
+INPUT ./Chapter3/Figs/xarapuca.png
+INPUT ./Chapter3/Figs/xarapuca.png
 OUTPUT Chapter4/chapter4.aux
 INPUT Chapter4/chapter4.tex
 INPUT Chapter4/chapter4.tex
