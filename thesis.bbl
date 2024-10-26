@@ -18286,6 +18286,50 @@
       \verb https://github.com/GENIE-MC/Generator/tree/master/config/AR23_20i
       \endverb
     \endentry
+    \entry{piontune}{article}{}
+      \name{author}{2}{}{%
+        {{hash=11511fb46e480768268694af7b108209}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Ch.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=331880336d8fb8ad47f0a087ade0bba9}{%
+           family={Sehgal},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{caa20c9da3b562bcfa31a9c4d1666ab1}
+      \strng{fullhash}{caa20c9da3b562bcfa31a9c4d1666ab1}
+      \strng{bibnamehash}{e43d5447f6e38ead89f68747402a111e}
+      \strng{authorbibnamehash}{e43d5447f6e38ead89f68747402a111e}
+      \strng{authornamehash}{caa20c9da3b562bcfa31a9c4d1666ab1}
+      \strng{authorfullhash}{caa20c9da3b562bcfa31a9c4d1666ab1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{3}
+      \field{title}{Erratum: Lepton mass effects in single pion production by neutrinos [Phys. Rev. D 76, 113004 (2007)]}
+      \field{volume}{77}
+      \field{year}{2008}
+      \field{pages}{059901}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.77.059901
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.77.059901
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.77.059901
+      \endverb
+    \endentry
     \entry{corsika_uboone}{article}{}
       \name{author}{185}{}{%
         {{hash=b7b8d074f312676edc09efe355a3ce96}{%
