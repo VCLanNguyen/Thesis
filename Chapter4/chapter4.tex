@@ -199,7 +199,8 @@ This ratio of coated to uncoated PMTs (4:1) is chosen to optimize light collecti
 Having TPB is utilised at two locations: (1) evaporated onto reflective foils at the cathode, and (2) coated on the optical windows of the PMTs, leads to a difference in the spatial and arrival time distributions for direct VUV and reflected visible photons.
 Direct VUV photons arriving at coated PMTs are immediately wavelength shifted into the detectable range of PMTs.
 Reflected visible photons, resulting from VUV photons being wavelength shifted and reflected at the cathode, have to travel a longer distance before being detected by (un)coated PMTs.
-The spatial distribution of reflected visible photons is more diffused and spread across a larger number of optical detectors compared to direct VUV photons \cite{PatrickPhD}.
+The TPB emission time increases the arrival time of reflected photons from fast components by 50\% and from slow components by 10\%.
+Additionally, the spatial distribution of reflected visible photons is more diffused and spread across a larger number of optical detectors compared to direct VUV photons \cite{PatrickPhD}.
 %However, reflected visible photons have a faster group velocity (See Fig. \ref{fig:vuv_visible} Section \ref{sec:photonprop}) and arrive at detection earlier than some direct VUV photons.
 Such difference can be exploited to perform the timing reconstruction using only PMT signals, which is further discussed in Section \ref{sec:reco_pds}.
 
@@ -233,8 +234,8 @@ This configuration enables a comprehensive strategy for cosmic background reject
 
 %Cold Electronic
 The readout electronics of each detection subsystem are detailed next.
-Firstly, TPC readouts comprise four components: (1) Cold Electronics (CE), (2) Warm Interface Boards (WIBs), (3) TPC crates and (4) Nevis Trigger Board (NTB).%, shown as the red boxes from left to right respectively in Fig. \ref{fig:daqOverview}.
-As shown in Fig. \ref{fig:SBND_APA_diag}, the wires are connected to CE readout boards on the APAs.
+Firstly, TPC readouts comprise four components: (1) Cold Electronics (CE), (2) Warm Interface Boards (WIBs), (3) TPC crates and (4) Nevis Trigger Board (NTB). %, shown as the red boxes from left to right respectively in Fig. \ref{fig:daqOverview}.
+\ As shown in Fig. \ref{fig:SBND_APA_diag}, the wires are connected to CE readout boards on the APAs.
 Located inside the cryostat, CE are submerged in liquid argon to reduce thermal noise as well as cable lengths \cite{SBND_CE}.
 They amplify and digitise signals at a sampling frequency of 2 MHz. 
 Data from CE is sent outside of the cryostat to the WIBs via copper cold cables.              
@@ -463,7 +464,8 @@ The buckets of the BNB measured by the SBND CRTs during 2017--2018 \cite{CPAD202
 %hardware structure
 The particle production in the BNB is illustrated in Fig. \ref{fig:BNBDiagram}.
 Protons are injected into the Booster synchrotron and accelerated from 400 MeV to 8 GeV kinetic energy, as shown by the red arrows. 
-Their intensity is measured by two toroids, while their positioning and timing are monitored by beam position monitors and Resistive Wall Monitors (RWM) \cite{BNBRWM}.
+Their intensity is measured by two toroids, while their positioning and timing are monitored by beam position monitors and Resistive Wall Monitors (RWMs).
+RWMs measure the current produced by protons travelling pass the beam pipe wall, and is able to capture the bunch structure of the BNB \cite{BNBRWM}.
 Upon exiting the Booster, the proton beam traverses focusing and defocusing quadrupole and dipole magnets before being focused onto the target of the BNB.
 
 The protons collide on the target to produce secondary mesons, as shown by the blue arrows.

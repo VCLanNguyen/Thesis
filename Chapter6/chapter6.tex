@@ -374,12 +374,12 @@ The start time of the optical flash represents the start time of an interaction,
 The flash start time is the average of the rise time of optical hits in a flash, only considering PMTs that contribute 50\% of the prompt light in the 30 ns window of the largest number of PEs.
 This ensures that the scintillation photons originates close to the interaction vertex.
 
-A correction is applied to the flash start time to account for the propagation time of the photons from the scintillation location to PMTs for detection.
-The propagation time depends on the drift distance of the photons relative to the anode or the cathode.
+A correction is applied to the flash start time to account for the propagation time of the photons from the scintillation location to PMTs for detection, which heavily depends on the drift distance in relation to the anode or the cathode.
 Closer to the anode at $d_{drift} = 0~\mathrm{cm}$, the first photons arriving at PMTs are direct VUV components.
-The propagation time increases from $\sim4~\mathrm{ns}$ to $\sim15~\mathrm{ns}$ with drift distance for $0~\mathrm{cm} < d_{drift} < 145~\mathrm{cm}$.
+In the region of $0~\mathrm{cm} < d_{drift} < 145~\mathrm{cm}$, the propagation time increases from $\sim4~\mathrm{ns}$ to $\sim15~\mathrm{ns}$.
 At $d_{drift} = 145~\mathrm{cm}$, this is the tipping point where the propagation time of the direct and reflected components is identical and reaches its maximum.
-Closer to the cathode at $d_{drift} = 200 $ cm, and hence the reflective foils, the first photons arriving at PMTs are instead the reflected visible component due to their faster group velocity (See Section \ref{sec:photonprop}, Fig.\ref{fig:vuv_visible}).
+Closer to the cathode at $d_{drift} = 200 $ cm, and hence the reflective foils, the first photons arriving at PMTs are instead the reflected visible component.
+VUV photons arriving at cathode are wavelength shifted with an averaged time constant of 10~ns, and then reflected backwards to PMTs with a faster group velocity (See Section \ref{sec:photonprop}, Fig. \ref{fig:vuv_visible}).
 In the region $145~\mathrm{cm} < d_{drift} < 200~\mathrm{cm}$, the propagation time decreases from $\sim15~\mathrm{ns}$ to $\sim8~\mathrm{ns}$ with drift distance.
 
 The propagation correction is computed by exploiting the high density of PMTs as well as having (un)coated PMTs sensitive to direct VUV light and reflected visible light (See Section \ref{sec:sbnd_pds}).
