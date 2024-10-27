@@ -214,20 +214,20 @@ The detector systematics uncertainty is not included but should be considered in
 A new addition is the SM neutrino cross section uncertainty, of which the impact due to the cross section modelling is evaluated using the reweighting method.
 Similarly to HNLs, background uncertainties were assessed using the arrival time distribution.  
 
-The statistical uncertainty of the background was computed using using Eq. \ref{eq:stat_err}, taking the number of SM neutrinos and cosmic muons remained after the selection and binned to the arrival time distribution.
+The statistical uncertainty of the background was computed using Eq. \ref{eq:stat_err}, taking the number of SM neutrinos and cosmic muons that remained after the selection and binned to the arrival
+ time distribution.
 Fig. \ref{fig:bkg_stat} shows the statistical uncertainty of the background.
-It can be seen that the background statistics are abundant for bins at the centre of the distribution however, limited for bins at the edge.
-Therefore, the statistical uncertainty is better constrained for bins at the centre, while bins at the edge have 
-a higher statistical fluctuation.
+Background statistics are abundant for bins at the centre of the distribution since it is the peak of the beam bucket.
+However, limited statistics can be seen for bins at the edge, where some SM neutrinos remain after the selection.
+This can be due to reconstruction failures.
+As discussed in Section \ref{sec:truth_bucket}, the reconstruction of arrival time depends on several reconstruction variables working cohesively together, including the interaction vertex reconstruction.
+Since the selection only requires final states containing only one or more showers without any hadrons, the lack of tracks can cause difficulties in identifying the correct vertex.
+Misplaced vertices can place the interaction at the wrong location in the arrival time distribution, such as at the tails of the beam bucket.
+
+Overall, the statistical uncertainty is better constrained for bins at the centre, while bins at the edge have a higher statistical fluctuation.
 This is also visually evident in the statistical fractional uncertainty plotted in the blue line in the bottom panel of Fig. \ref{fig:bkg_total_error}.
 For bins at the centre of the distribution, the statistical fractional uncertainty is constrained at $< 20\%$.
 For bins at the edge of the arrival time distribution, particularly the first and last 4 bins, the statistical fractional uncertainty reaches the level about $100\%$.
-
-The flux systematics of the background was measured using the reweighting method similar to HNLs.
-One key difference in the flux systematics is that unlike HNLs coming from only $K^+$, SM neutrinos can result from $\pi^\pm$, $K^\pm$ and $K^0_L$.% as previously plotted in Fig. \ref{fig:BNB_neutrino_flux}.
-Particularly, the Sanford-Wang parametrisation for modelling the $\pi^+$ production introduces large biases for Neutral Current (NC) $\pi^0$ interactions \cite{EdPhD}, which is the main background contributor.
-The resulting flux uncertainty of the background is plotted in Fig. \ref{fig:bkg_flux} and the flux fractional uncertainty is plotted in the green line in the bottom panel of Fig. \ref{fig:bkg_total_error}.
-The flux fractional uncertainty is constrained $<20 \%$ and consistent across the entire arrival time distribution.
 
 \begin{figure}[htbp!]
         \begin{subfigure}[b]{0.45\textwidth}   
@@ -284,14 +284,26 @@ Arrival time distributions of SM neutrino and cosmic backgrounds with the total 
 %\item\textbf{Angular Distribution}: The angular distribution of $\gamma$ and $\pi$ are varied.
 %\item\textbf{Branching Fraction}: The branching fraction scale factor for resonant  decays with either a single $\gamma$ or $\pi$ are varied.
 %\end{coloritemize}
+
+As discussed in Section \ref{sec:select_result}, the main background contributors from SM neutrino interactions remained after the selection are Neutral Current (NC) $\pi^0$ and Charged Current (CC) $\nu_e$.
+NC $\pi^0$ interactions contain di-photon showers without any hadrons in the final state while CC $\nu_e$ interactions produce a single single shower in cases where the hadrons do not deposit energy.  
+Both these interaction modes introduce significant uncertainties in both flux and cross section predictions.
+
+The flux systematics of the background was measured using the reweighting method similar to HNLs.
+One key difference in the flux systematics is that unlike HNLs coming from only $K^+$, SM neutrinos can result from $\pi^\pm$, $K^\pm$ and $K^0_L$. % as previously plotted in Fig. \ref{fig:BNB_neutrino_flux}.
+\ For the NC $\pi^0$ and CC $\nu_e$ interactions, the main meson parent is $\pi^+$, of which the Sanford-Wang parametrisation for modelling leads to large biases.
+The resulting flux uncertainty of the background is plotted in Fig. \ref{fig:bkg_flux} and the flux fractional uncertainty is plotted in the green line in the bottom panel of Fig. \ref{fig:bkg_total_error}.
+The flux fractional uncertainty is constrained $<20 \%$ and consistent across the entire arrival time distribution.
+
 The SM neutrino cross section uncertainty was assessed using the reweighting method, with systematics of models employed by the GENIE generator provided in Ref. \cite{genie_tune}.
 Fig. \ref{fig:bkg_xsec} shows the resulting combined uncertainty of all the SM neutrino interaction cross section systematics.
 Compared to statistical and flux uncertainties, the magnitude of the cross section uncertainty is significantly larger.
-This is due to the primary background after selection being NC $\pi^0$, of which the cross section is not well-measured.  
-Uncertainties associated with NC cohenrent and NC resonant scattering are the main contributors to this channel.
-Moreover, a small fraction of Charged Current (CC) $\nu_e$ interactions remains after selection and the cross section is also not well-measured.
+This is due to the cross section of NC $\pi^0$ interaction is not well-measured.  
+Uncertainties associated with NC coherent and NC resonant scattering are the main contributors to this channel.
+Moreover, a small fraction of CC $\nu_e$ interactions remains after selection and the cross section is also not well-measured.
 For this channel, uncertainties associated with CC quasi-elastic scattering systematics contribute the most.
 Finally, uncertainties for modelling hadron transport interactions are significant contributors to the cross section uncertainty.
+
 %and NonRES backgrounds of NC1$\pi$ interactions 
 
 The cross section fractional uncertainty is plotted in the orange line in the bottom figure of Fig. \ref{fig:bkg_total_error}.
@@ -300,6 +312,12 @@ The uncertainty increases towards the bins at the edge of the distribution, reac
 
 The total fractional uncertainty combining the statistical, flux and cross section uncertainty, is plotted in purple in the bottom panel of Fig. \ref{fig:bkg_total_error}.
 For bins at the edge of the distribution, which are the bins driving the limits, the total uncertainty is particularly high at $> 100\%$ due to the combined contribution from all three uncertainty sources.
+
+The examination of background uncertainties indicates that the SM neutrino cross section remains the largest uncertainty source.
+At SBND, this will be resolved as BSM searches benefit from neutrino cross section measurements.
+Particularly, SBND is expected to collect high statistics of $\sim$331,000 NC $\pi^0$ interactions.
+This will enable high precision measurements of NC $\pi^0$ inclusive and exclusive channels that can significantly improve the prediction uncertainty.
+Moreover, once data is available, side-band measurements should be performed to better constrain backgrounds in the signal-rich region, reducing dependence on SM neutrino cross section predictions.
 
 %********************************** %First Section  **************************************
 
@@ -483,13 +501,6 @@ This approach assumes that $\hat{\mu}$ follows a Gaussian distribution around a 
 Via the \texttt{pyhf} package, PDFs are computed according to the formulae provided by Ref. \cite{asymptotic_test}.
 To determine CL$_s < 0.1$, \texttt{pyhf} scans over a range of $\mu$ and the best value is calculated using interpolation.
 
-\begin{figure}[b!] 
-\centering    
-\includegraphics[width=0.55\textwidth]{asymtotic}
-\caption[Distribution of Test Statistics Acquired from Asymptotic Approximation]{Example of $\Tilde{q}_\mu$ distributions using the asymptotic approximation.}
-\label{fig:stat_asymptotic}
-\end{figure}
-
 For a study using MC samples without having the observed data to determine $\hat{q}$, one can consider the distribution under the assumption of the background-only hypothesis $H_b$.
 In this case, $\hat{q} = \hat{q}_{expected}$ represents the \textit{expectation} given the model prediction and is taken as the median of the $H_b$ test statistic distribution, equivalent to assuming the observed data is the same as the background-only model. 
 
@@ -498,6 +509,13 @@ The expected $\hat{q}_{expected}$ is plotted as the dashed red line.
 The median $p$-values under the $H_{s+b}$ and $H_b$ hypotheses are plotted as shaded green and yellow areas respectively.
 The test signal strength $\mu$ shown here gives CL$_s < 0.1$.
 Standard deviations of the CL$_s$ can also be computed by substituting $\mu^\prime$ with $\mu^{\prime} \pm N\sigma$, where $N\sigma$ is the number of standard deviations away from the mean $\mu^{\prime}$. 
+
+\begin{figure}[hb!] 
+\centering    
+\includegraphics[width=0.55\textwidth]{asymtotic}
+\caption[Distribution of Test Statistics Acquired from Asymptotic Approximation]{Example of $\Tilde{q}_\mu$ distributions using the asymptotic approximation.}
+\label{fig:stat_asymptotic}
+\end{figure}
 %A validation was also carried out to compare the signal strength $\mu$ resulting from the toy throwing and asymptotic approximation.
 %Both approaches returned $\mu$ values within 5\% of each other, showing a good agreement.
 
@@ -521,20 +539,7 @@ Appendix \ref{appendix_lenient} and \ref{appendix_stringent} contain the arrival
 Additionally, Appendix \ref{appendix_smeared} contains the smeared true distributions under the assumption of a timing reconstruction improvement (See Section \ref{sec:truth_bucket}).
 %, also used in the same limits setting.
 
-The uncertainties of the arrival time distribution discussed in Section \ref{sec:uncertainty} are the constraints on the nuisance parameters $c_\theta(a_\theta|\theta)$ in the second product Eq. \ref{eq:LLH_func}.
-Different types of constraints can take different statistical shapes, which are called \textit{modifiers} in the \texttt{pyhf} package \cite{pyhf_joss}.
-Table \ref{table:constraint} summarises the uncertainties and their corresponding modifiers of the signal and background distribution.
-
-For the HNL signal distribution, the assumption is that the signal rate is relatively low and expected to follow a Poisson distribution.
-Similarly, the cosmic mistagging rate falls under the same assumption since it is proportional to the signal rate. 
-Thus, the modifier for both statistical and cosmic mistagging uncertainties of the signal distribution follows a Poisson shape, treating each bin uncorrelated. 
-The flux uncertainty of the signal distribution uses a Gaussian-shaped modifier instead, to enable correlation bin-wise.
-
-For the background distribution, the treatment of statistical uncertainty employs a modified version of the Beeston-Barlow method \cite{BeestonBarlow} to account for statistical fluctuations due to finite statistics.
-The modifier in this case follows a Gaussian shape for bins with high statistics and falls back to a Poisson shape for bins with low statistics while treating each bin uncorrelated.
-Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian-shaped modifier, however, with correlation bin-by-bin.
-
-\begin{table}[htbp!]
+\begin{table}[b!]
 \caption[Summary of Uncertainty Constraints]{Summary of modifiers used to constrain uncertainties.}
 \label{table:constraint}
 \begin{center}
@@ -564,6 +569,19 @@ Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian
 \end{tabular}
 \end{center}
 \end{table}
+
+The uncertainties of the arrival time distribution discussed in Section \ref{sec:uncertainty} are the constraints on the nuisance parameters $c_\theta(a_\theta|\theta)$ in the second product Eq. \ref{eq:LLH_func}.
+Different types of constraints can take different statistical shapes, which are called \textit{modifiers} in the \texttt{pyhf} package \cite{pyhf_joss}.
+Table \ref{table:constraint} summarises the uncertainties and their corresponding modifiers of the signal and background distribution.
+
+For the HNL signal distribution, the assumption is that the signal rate is relatively low and expected to follow a Poisson distribution.
+Similarly, the cosmic mistagging rate falls under the same assumption since it is proportional to the signal rate. 
+Thus, the modifier for both statistical and cosmic mistagging uncertainties of the signal distribution follows a Poisson shape, treating each bin uncorrelated. 
+The flux uncertainty of the signal distribution uses a Gaussian-shaped modifier instead, to enable correlation bin-wise.
+
+For the background distribution, the treatment of statistical uncertainty employs a modified version of the Beeston-Barlow method \cite{BeestonBarlow} to account for statistical fluctuations due to finite statistics.
+The modifier in this case follows a Gaussian shape for bins with high statistics and falls back to a Poisson shape for bins with low statistics while treating each bin uncorrelated.
+Moreover, the flux and SM neutrino cross section uncertainty also use a Gaussian-shaped modifier, however, with correlation bin-by-bin.
 
 For a single mass point, \texttt{pyhf} performs a scanning of signal strength $\mu$ until the desired $\mu$ value giving the 90\% C.L. is determined. 
 To infer from the signal strength $\mu$ to the coupling $|U_{\mu4}|^{2}$, the proportionality $\sqrt{\mu} \propto |U_{\mu4}|^{2}$ is employed.
@@ -622,7 +640,12 @@ This is due to the stringent distribution having a better signal-to-background r
 This is evident when comparing between Fig. \ref{fig:final_relaxed} and \ref{fig:final_strict}, where the signal rate is very similar across the two distributions but the background rate is much lower in the stringent than the lenient distribution.
 Particularly, the first two bins of the stringent distribution are background-free, thus, driving the limits significantly.
 
-\begin{figure}[b!]
+However, the width of the Brazil band of the stringent result is larger than the lenient result, indicating that the stringent result has larger uncertainties.
+This is likely due to the limited statistics of the background MC samples after the stringent selection.
+As can be observed from bins at the edge of the arrival time distribution shown in Fig. \ref{fig:final_strict}, the limited background statistics might be insufficient to describe the underlying distribution, which can lead to large statistical fluctuations.                                  
+Although the stringent distribution leads to a more competitive result, a future iteration of this selection is recommended to perform on larger statistics MC samples so that the statistical uncertainty can be better constrained.
+
+\begin{figure}[hb!]
         \begin{subfigure}[b]{0.495\textwidth}
             \includegraphics[width=\textwidth]{sensitivity_loose}
             \caption{The lenient distribution}%
@@ -636,11 +659,6 @@ Particularly, the first two bins of the stringent distribution are background-fr
     }
     \label{fig:nupi0_reco_result}
 \end{figure}
-
-However, the width of the Brazil band of the stringent result is larger than the lenient result, indicating that the stringent result has larger uncertainties.
-This is likely due to the limited statistics of the background MC samples after the stringent selection.
-As can be observed from bins at the edge of the arrival time distribution shown in Fig. \ref{fig:final_strict}, the limited background statistics might be insufficient to describe the underlying distribution, which can lead to large statistical fluctuations.                                  
-Although the stringent distribution leads to a more competitive result, a future iteration of this selection is recommended to perform on larger statistics MC samples so that the statistical uncertainty can be better constrained.
 
 Fig. \ref{fig:nupi0_reco_full_edge} shows the comparison between limits setting using the entire distribution and only the first and last 4 bins, which are referred to as the timing cut (See Section \ref{sec:select_result}). 
 The expected limits are the same for both cases.
@@ -681,6 +699,17 @@ The exceptionally high signal-to-background ratios of the edge bins therefore dr
 This presents a positive outlook as an area for improvement for SBND to achieve more competitive results in the search for HNLs.
 Particularly, this can be done with a more sophisticated timing reconstruction that can resolve the beam bucket with higher resolution $< 2$ ns.
 The expected upper limits at the 90\% C.L. and the Brazil bands acquired from the three arrival time distributions are summarised below in Table \ref{table:result}.  
+
+\subsection{Comparison With Other Experiments}
+
+Fig. \ref{fig:sensitivity} shows the expected upper limits of SBND on the coupling $|U_{\mu4}|^2$ of Majorana HNLs, comparing against existing experimental results as previously discussed in Section \ref{sec2Previous}.
+All limits presented here are at the 90\% C.L.
+
+For the limits acquired from the lenient and stringent distributions, as shown by the solid red and blue line respectively, they are comparable to existing limits.
+The lenient limit is almost the same as the limit achieved by the MicroBooNE experiment \cite{uboone1, uboone2, uboone3}, as shown by the solid light blue line.
+On the other hand, the stringent limit is slightly more competitive than MicroBooNe, excluding a new region of the coupling in the mass range $< 200$ MeV.
+However, in the mass range $> 200$ MeV, the phase space is already excluded by the E949 \cite{E949} and NA62 experiments \cite{NA62A, NA62B}, as shown by the dashed pink and orange lines.
+These two limits feature the first benchmark of SBND in the HNL regime as compared to other experiments, given the current detector and reconstruction capabilities.
 
 \begin{table}[htbp!]
 	\caption[Summary of Expected Limits on the Coupling $|U_{\mu4}|^2$ of Majorana HNLs]{Summary of expected limits on the coupling $|U_{\mu4}|^2$ of Majorana HNLs at the C.L. of 90\% predicted for SBND.}
@@ -725,16 +754,6 @@ The expected upper limits at the 90\% C.L. and the Brazil bands acquired from th
 \end{center}
 \end{table}
 
-\subsection{Comparison With Other Experiments}
-
-Fig. \ref{fig:sensitivity} shows the expected upper limits of SBND on the coupling $|U_{\mu4}|^2$ of Majorana HNLs, comparing against existing experimental results as previously discussed in Section \ref{sec2Previous}.
-All limits presented here are at the 90\% C.L.
-
-For the limits acquired from the lenient and stringent distributions, as shown by the solid red and blue line respectively, they are comparable to existing limits.
-The lenient limit is almost the same as the limit achieved by the MicroBooNE experiment \cite{uboone1, uboone2, uboone3}, as shown by the solid light blue line.
-On the other hand, the stringent limit is slightly more competitive than MicroBooNe, excluding a new region of the coupling in the mass range $< 200$ MeV.
-However, in the mass range $> 200$ MeV, the phase space is already excluded by the E949 \cite{E949} and NA62 experiments \cite{NA62A, NA62B}, as shown by the dashed pink and orange lines.
-These two limits feature the first benchmark of SBND in the HNL regime as compared to other experiments, given the current detector and reconstruction capabilities.
 
 The limits acquired from the smeared true distribution, as shown by the green line, is the most competitive out of the three limits presented here.
 The limits are projected to exclude a new region beyond the existing limits from the MicroBooNE, E949 and NA62 experiments.
@@ -742,7 +761,7 @@ This demonstrates the potential of the physics capability of SBND, under the ass
 The POT exposure presented here is equivalent to 3 years of physics data taking, which allows for a lot of time and opportunities to work on improving the timing reconstruction of SBND to achieve the target resolution from the time of writing.
 In comparison to the future DUNE experiment \cite{HNLSilvia}, DUNE is projected to have statistics to set upper limits surpassing SBND and nearly all existing limits in this mass range.
 
-\begin{figure}[b!]
+\begin{figure}[hb!]
     \centering
     \includegraphics[width=\textwidth]{sensitivity}
     \caption[Comparison Between SBND Expected Limits and Existing Limits]{
@@ -761,10 +780,14 @@ The limits from the lenient and stringent arrival time distribution demonstrate 
 The limits from the smeared true distribution are the most competitive that can probe region not yet explored by other experiments.
 These limits also demonstrate the potential that SBND can achieve if the timing reconstruction is improved with a better resolution.
 
-The first iteration of this analysis provides some guidelines applicable to future work in the next couple of years to further the search for HNLs at SBND.
-Detector systematics should be included in uncertainty propagation, with parameters that are impactful to physics measurements identified when SBND is operational.
-Secondly, due to the aggressive background rejection, the analysis should be performed on larger background MC samples, $\mathcal{O}$(10$^6$ events) compared to the present $\mathcal{O}$(10$^5$ events), to avoid statistical fluctuations.
-Moreover, improving the shower reconstructions will enable better identification of the boosted features of HNL showers, including high energy profiles and forward-going angles.
-Finally, developing a more sophisticated method incorporating the extra timing information of beam arrival and trigger signals can further improve the resolution of the timing reconstruction.
+The first iteration of this analysis provides some guidelines applicable to further the search for HNLs at SBND.
+Until data is fully collected, the next steps should be to improve the reconstruction.
+Firstly, improving the shower reconstructions will enable better identification of the boosted features of HNL showers, including high energy profiles and forward-going angles.
+The vertex reconstruction for final states without hadrons should also be a focus as the arrival time reconstruction relies on placing the interaction correctly inside the TPC.
+Developing a more sophisticated method incorporating the extra timing information of beam arrival and trigger signals can further improve the resolution of the timing reconstruction.
 These improvements will benefit not only the HNL analysis but any other analysis that exploits the Gaussian tails of the beam bucket to either look for a new signal or reject cosmic backgrounds.
 
+Once data becomes available, NC $\pi^0$ cross section will be the key measurement to improve uncertainties of SM neutrino cross section modelling.
+Detector systematics should be included in uncertainty propagation, with parameters that are impactful to physics measurements identified when SBND is operational.
+Side-band measurements using data should be performed to better constrain backgrounds in the signal-rich region.
+Finally, due to the aggressive background rejection, the complete analysis should be performed on a large background MC samples, $\mathcal{O}$(10$^6$ events) compared to the present $\mathcal{O}$(10$^5$ events), to prevent MC statistical fluctuations.
